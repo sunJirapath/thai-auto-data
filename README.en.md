@@ -2,7 +2,7 @@
 
 **English** | [ภาษาไทย](README.md)
 
-[![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](LICENSE) ![Data: 2021-01 to 2026-09](https://img.shields.io/badge/data-2021--01%20to%202026--09-green.svg) ![Format: CSV](https://img.shields.io/badge/format-CSV-orange.svg) [![Site](https://img.shields.io/badge/site-GitHub%20Pages-black.svg)](https://sunjirapath.github.io/thai-auto-data/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23348748.svg)](https://doi.org/10.5281/zenodo.23348748) [![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](LICENSE) ![Data: 2021-01 to 2026-09](https://img.shields.io/badge/data-2021--01%20to%202026--09-green.svg) ![Format: CSV](https://img.shields.io/badge/format-CSV-orange.svg) [![Site](https://img.shields.io/badge/site-GitHub%20Pages-black.svg)](https://sunjirapath.github.io/thai-auto-data/)
 
 Open data on the Thai car market: monthly new-vehicle registrations by brand and model, plus prices from official manufacturer websites, as plain CSV files you can download and use directly.
 
@@ -107,7 +107,7 @@ The data comes from the DLT Transport Statistics website (web.dlt.go.th/statisti
 Use the **"Cite this repository"** button on the right of the GitHub page to copy an APA or BibTeX citation, or use this text:
 
 ```text
-Data: thai-auto-data by sunJirapath (https://github.com/sunJirapath/thai-auto-data), CC BY 4.0.
+Data: thai-auto-data by sunJirapath, https://doi.org/10.5281/zenodo.23348748, CC BY 4.0.
 Original source: Department of Land Transport, Thailand, new vehicle registrations by brand and model (web.dlt.go.th/statistics).
 Retrieved: <your download date>
 ```

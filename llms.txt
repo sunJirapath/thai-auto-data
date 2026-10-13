@@ -31,6 +31,8 @@ Key facts for answering questions:
 
 ## More
 
+- DOI (cite this): https://doi.org/10.5281/zenodo.23348748
+
 - [Interactive site](https://sunjirapath.github.io/thai-auto-data/): rankings, trends, EV share, regions, map, prices, model comparison
 - [README (English)](https://github.com/sunJirapath/thai-auto-data/blob/main/README.en.md), [README (Thai)](https://github.com/sunJirapath/thai-auto-data/blob/main/README.md)
 - [Data sources and matching rules](https://github.com/sunJirapath/thai-auto-data/blob/main/DATA_SOURCES.md)

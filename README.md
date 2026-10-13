@@ -2,7 +2,7 @@
 
 [English](README.en.md) | **ภาษาไทย**
 
-[![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](LICENSE) ![Data: 2021-01 to 2026-09](https://img.shields.io/badge/data-2021--01%20to%202026--09-green.svg) ![Format: CSV](https://img.shields.io/badge/format-CSV-orange.svg) [![Site](https://img.shields.io/badge/site-GitHub%20Pages-black.svg)](https://sunjirapath.github.io/thai-auto-data/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23348748.svg)](https://doi.org/10.5281/zenodo.23348748) [![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](LICENSE) ![Data: 2021-01 to 2026-09](https://img.shields.io/badge/data-2021--01%20to%202026--09-green.svg) ![Format: CSV](https://img.shields.io/badge/format-CSV-orange.svg) [![Site](https://img.shields.io/badge/site-GitHub%20Pages-black.svg)](https://sunjirapath.github.io/thai-auto-data/)
 
 *Thailand new car registration open data (monthly, by brand, model, province and fuel type, 2021 to now) with official car prices, as CSV. English: [README.en.md](README.en.md)*
 
@@ -109,13 +109,13 @@ ORDER BY period;
 กดปุ่ม **"Cite this repository"** ทางขวาของหน้า GitHub เพื่อคัดลอกรูปแบบ APA หรือ BibTeX หรือใช้ข้อความนี้ (ภาษาไทยหรืออังกฤษ):
 
 ```text
-ข้อมูลจาก thai-auto-data โดย sunJirapath (https://github.com/sunJirapath/thai-auto-data), สัญญาอนุญาต CC BY 4.0
+ข้อมูลจาก thai-auto-data โดย sunJirapath, https://doi.org/10.5281/zenodo.23348748, สัญญาอนุญาต CC BY 4.0
 ข้อมูลต้นฉบับ: กรมการขนส่งทางบก, สถิติการจดทะเบียนรถใหม่ จำแนกตามยี่ห้อรถและรุ่นรถ (web.dlt.go.th/statistics)
 ดึงข้อมูลเมื่อ: <วันที่ที่คุณดาวน์โหลด>
 ```
 
 ```text
-Data: thai-auto-data by sunJirapath (https://github.com/sunJirapath/thai-auto-data), CC BY 4.0.
+Data: thai-auto-data by sunJirapath, https://doi.org/10.5281/zenodo.23348748, CC BY 4.0.
 Original source: Department of Land Transport, Thailand, new vehicle registrations by brand and model (web.dlt.go.th/statistics).
 Retrieved: <your download date>
 ```
