@@ -1,0 +1,29 @@
+{
+  "upload_type": "dataset",
+  "title": "thai-auto-data: Thailand new vehicle registrations and car prices",
+  "description": "<p>Monthly new vehicle registrations in Thailand (Department of Land Transport categories RY1, RY2 and RY3) by brand, model, province and fuel type from January 2021, with stable brand and model IDs, market, brand, model, province and area summary tables, province population, and prices from official manufacturer websites with source links.</p><p>Figures are registrations, not sales. Missing data is left empty, never 0. Each release archives the data as of its date; the latest data and an interactive site are at <a href=\"https://sunjirapath.github.io/thai-auto-data/\">sunjirapath.github.io/thai-auto-data</a>.</p><p>ยอดจดทะเบียนรถใหม่รายเดือนในประเทศไทย แยกยี่ห้อ รุ่น จังหวัด และชนิดเชื้อเพลิง จากกรมการขนส่งทางบก พร้อมราคาจากเว็บไซต์ทางการของค่ายรถ</p><p>Please credit both thai-auto-data and the Department of Land Transport, Thailand (กรมการขนส่งทางบก).</p>",
+  "creators": [
+    { "name": "sunJirapath" }
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": [
+    "Thailand",
+    "vehicle registrations",
+    "new car registrations",
+    "automotive",
+    "car market",
+    "electric vehicles",
+    "market share",
+    "car prices",
+    "open data",
+    "Department of Land Transport"
+  ],
+  "related_identifiers": [
+    { "identifier": "https://github.com/sunJirapath/thai-auto-data", "relation": "isSupplementTo", "resource_type": "dataset" },
+    { "identifier": "https://sunjirapath.github.io/thai-auto-data/", "relation": "isDocumentedBy", "resource_type": "other" },
+    { "identifier": "https://web.dlt.go.th/statistics/", "relation": "isDerivedFrom", "resource_type": "dataset" }
+  ],
+  "notes": "Source data: Department of Land Transport, Thailand, new vehicle registration statistics (Open Data Common licence). Province boundaries in site/th-provinces.geojson are from geoBoundaries / OpenStreetMap contributors under ODbL 1.0 and are not covered by CC BY 4.0."
+}
