@@ -1,0 +1,495 @@
+period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
+2024-04,RY1,ABARTH,595 COMPETIZIONE,1,abarth,,dlt-1e6dfbea
+2024-04,RY1,AION,AION ES,2,aion,aion-es,dlt-1e6dfbea
+2024-04,RY1,AION,AION Y PLUS,294,aion,aion-y-plus,dlt-1e6dfbea
+2024-04,RY1,AIWAYS,U6,1,aiways,,dlt-1e6dfbea
+2024-04,RY1,ALPINE,A110 S,1,alpine,,dlt-1e6dfbea
+2024-04,RY1,ASTON MARTIN,DB11,1,aston-martin,,dlt-1e6dfbea
+2024-04,RY1,AUDI,A4 AV 45 TFSI q S line IB,3,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,A5 CP 40 TFSI S line,7,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,A5 CP 45 TFSI q S line BE,3,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,A5 SB 40 TFSI S line,8,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,A5 SB 45 TFSI q S line BE,1,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,A7 SB 55 TFSI q S line,1,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,A7 SB 55 TFSIe q Sline BE,1,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,A8 L TFSI E QUATTRO,1,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,Q3 35 TFSI S line,1,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,Q3 40 TFSI q S line BE,1,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,Q3 SB 40 TFSI q S line BE,3,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,Q5 55 TFSI e q S line,3,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,Q5 55 TFSI e q S line BE,2,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,Q5 SB 55 TFSIe q S lineBE,3,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,Q7 45 TDI q,1,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,Q7 60 TFSI e q S line BE,2,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,Q8 60 TFSI e q S line BE,8,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,Q8 SB etron 55 q Sline BE,3,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,Q8 etron 55 q BE,1,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,RS 5 Coupe q competition,1,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,RS Q3 Sportback quattro,1,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,TT COUPE 2.0 TFSI,1,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,TT Coupe 45 TFSI q S line,2,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,TT Coupe Final Icon Black,7,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,TT RD Final Icon Black,1,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,TT RS Coupe q,2,audi,,dlt-1e6dfbea
+2024-04,RY1,AUDI,e-tron SB 55 q S line,1,audi,,dlt-1e6dfbea
+2024-04,RY1,BENTLEY,BENTAYGA HYBRID,1,bentley,,dlt-1e6dfbea
+2024-04,RY1,BENTLEY,CONTINENTAL GTC AZURE V8,1,bentley,,dlt-1e6dfbea
+2024-04,RY1,BENTLEY,FLYING SPUR AZURE HYBRID,1,bentley,,dlt-1e6dfbea
+2024-04,RY1,BENTLEY,FLYING SPUR HYBRID,1,bentley,,dlt-1e6dfbea
+2024-04,RY1,BENTLEY,FLYING SPUR S HYBRID,1,bentley,,dlt-1e6dfbea
+2024-04,RY1,BMW,220i Gran Coupe M Sport,56,bmw,bmw-2-series-gran-coupe,dlt-1e6dfbea
+2024-04,RY1,BMW,320Li,1,bmw,bmw-3-series,dlt-1e6dfbea
+2024-04,RY1,BMW,320Li Limousine LWB RHD,9,bmw,bmw-3-series,dlt-1e6dfbea
+2024-04,RY1,BMW,320d GT Sport,1,bmw,bmw-3-series,dlt-1e6dfbea
+2024-04,RY1,BMW,320d M Sport,108,bmw,bmw-3-series,dlt-1e6dfbea
+2024-04,RY1,BMW,330Li,13,bmw,bmw-3-series,dlt-1e6dfbea
+2024-04,RY1,BMW,330Li Limousine RHD,5,bmw,bmw-3-series,dlt-1e6dfbea
+2024-04,RY1,BMW,330e M Sport,72,bmw,bmw-3-series,dlt-1e6dfbea
+2024-04,RY1,BMW,420i Coupe RHD,6,bmw,bmw-4-series,dlt-1e6dfbea
+2024-04,RY1,BMW,430i Cabrio RHD,4,bmw,bmw-4-series,dlt-1e6dfbea
+2024-04,RY1,BMW,430i Coupe RHD,8,bmw,bmw-4-series,dlt-1e6dfbea
+2024-04,RY1,BMW,520d M Sport,59,bmw,bmw-5-series,dlt-1e6dfbea
+2024-04,RY1,BMW,520d M Sport Pro,1,bmw,bmw-5-series,dlt-1e6dfbea
+2024-04,RY1,BMW,530e Elite,2,bmw,bmw-5-series,dlt-1e6dfbea
+2024-04,RY1,BMW,530e Luxury,21,bmw,bmw-5-series,dlt-1e6dfbea
+2024-04,RY1,BMW,530e M Sport,39,bmw,bmw-5-series,dlt-1e6dfbea
+2024-04,RY1,BMW,530e M Sport Pro,1,bmw,bmw-5-series,dlt-1e6dfbea
+2024-04,RY1,BMW,630i Gran Turismo RHD,27,bmw,,dlt-1e6dfbea
+2024-04,RY1,BMW,730Ld M Sport,1,bmw,,dlt-1e6dfbea
+2024-04,RY1,BMW,740d M Sport,3,bmw,,dlt-1e6dfbea
+2024-04,RY1,BMW,745Le xDrive M Sport,1,bmw,,dlt-1e6dfbea
+2024-04,RY1,BMW,750e xDrive M Sport,7,bmw,,dlt-1e6dfbea
+2024-04,RY1,BMW,M2 Coupe RHD MX,2,bmw,,dlt-1e6dfbea
+2024-04,RY1,BMW,M240i xDrive Coupe RHD MX,5,bmw,,dlt-1e6dfbea
+2024-04,RY1,BMW,M340i xDrive,10,bmw,bmw-3-series,dlt-1e6dfbea
+2024-04,RY1,BMW,M4 CSL,1,bmw,,dlt-1e6dfbea
+2024-04,RY1,BMW,M4 Competition M xDrive C,2,bmw,,dlt-1e6dfbea
+2024-04,RY1,BMW,M440i xDrive Coupe RHD,2,bmw,bmw-4-series,dlt-1e6dfbea
+2024-04,RY1,BMW,M760e xDrive,2,bmw,,dlt-1e6dfbea
+2024-04,RY1,BMW,M850i xDrive RHD,1,bmw,,dlt-1e6dfbea
+2024-04,RY1,BMW,X1 sDrive18i,5,bmw,bmw-x1,dlt-1e6dfbea
+2024-04,RY1,BMW,X1 sDrive20d M Sport,6,bmw,bmw-x1,dlt-1e6dfbea
+2024-04,RY1,BMW,X1 sDrive20d xLine,18,bmw,bmw-x1,dlt-1e6dfbea
+2024-04,RY1,BMW,X1 sDrive20i M Sport,109,bmw,bmw-x1,dlt-1e6dfbea
+2024-04,RY1,BMW,X1 sDrive20i xLine,17,bmw,bmw-x1,dlt-1e6dfbea
+2024-04,RY1,BMW,X1 xDrive30e,3,bmw,bmw-x1,dlt-1e6dfbea
+2024-04,RY1,BMW,X3 xDrive20d M Sport,33,bmw,bmw-x3,dlt-1e6dfbea
+2024-04,RY1,BMW,X3 xDrive30e M Sport,5,bmw,bmw-x3,dlt-1e6dfbea
+2024-04,RY1,BMW,X4 xDrive20d RHD,15,bmw,bmw-x4,dlt-1e6dfbea
+2024-04,RY1,BMW,X5 xDrive30d M Sport,23,bmw,bmw-x5,dlt-1e6dfbea
+2024-04,RY1,BMW,X5 xDrive45e M Sport,10,bmw,bmw-x5,dlt-1e6dfbea
+2024-04,RY1,BMW,X5 xDrive50e RHD,11,bmw,bmw-x5,dlt-1e6dfbea
+2024-04,RY1,BMW,X6 xDrive40i M Sport,26,bmw,bmw-x6,dlt-1e6dfbea
+2024-04,RY1,BMW,X7 xDrive40d M Sport,18,bmw,bmw-x7,dlt-1e6dfbea
+2024-04,RY1,BMW,XM 50e RHD,6,bmw,,dlt-1e6dfbea
+2024-04,RY1,BMW,Z4 M40i RHD,2,bmw,bmw-z4,dlt-1e6dfbea
+2024-04,RY1,BMW,Z4 M40i Roadster RHD,1,bmw,bmw-z4,dlt-1e6dfbea
+2024-04,RY1,BMW,Z4 sDrive30i RHD,6,bmw,bmw-z4,dlt-1e6dfbea
+2024-04,RY1,BMW,i4 M50 Gran Coupe RHD,3,bmw,bmw-i4,dlt-1e6dfbea
+2024-04,RY1,BMW,i4 eDrive35 Gran Coupe RH,14,bmw,bmw-i4,dlt-1e6dfbea
+2024-04,RY1,BMW,i5 M60 xDrive RHD,10,bmw,bmw-i5,dlt-1e6dfbea
+2024-04,RY1,BMW,i5 eDrive40 RHD,1,bmw,bmw-i5,dlt-1e6dfbea
+2024-04,RY1,BMW,i7 xDrive60 Limousine RHD,4,bmw,bmw-i7,dlt-1e6dfbea
+2024-04,RY1,BMW,i8 Roadster RHD,1,bmw,,dlt-1e6dfbea
+2024-04,RY1,BMW,iX xDrive40 RHD,24,bmw,bmw-ix,dlt-1e6dfbea
+2024-04,RY1,BMW,iX xDrive50 RHD,9,bmw,bmw-ix,dlt-1e6dfbea
+2024-04,RY1,BMW,iX3 M Sport RHD,46,bmw,bmw-ix3,dlt-1e6dfbea
+2024-04,RY1,BYD,BYD ATTO 3,202,byd,byd-atto-3,dlt-1e6dfbea
+2024-04,RY1,BYD,BYD ATTO 3 (410KM),2,byd,byd-atto-3,dlt-1e6dfbea
+2024-04,RY1,BYD,BYD ATTO3 (480KM-EXT),13,byd,byd-atto-3,dlt-1e6dfbea
+2024-04,RY1,BYD,BYD DOLPHIN EXD,132,byd,byd-dolphin,dlt-1e6dfbea
+2024-04,RY1,BYD,BYD DOLPHIN STD,368,byd,byd-dolphin,dlt-1e6dfbea
+2024-04,RY1,BYD,BYD SEAL EXD AWD,35,byd,byd-seal,dlt-1e6dfbea
+2024-04,RY1,BYD,BYD SEAL EXD RWD,93,byd,byd-seal,dlt-1e6dfbea
+2024-04,RY1,BYD,BYD SEAL STD RWD,52,byd,byd-seal,dlt-1e6dfbea
+2024-04,RY1,CHEVROLET,CORVETTE STINGRAY CONVERTIBLE,1,chevrolet,,dlt-1e6dfbea
+2024-04,RY1,CHEVROLET,CORVETTE STINGRAY COUPE,1,chevrolet,,dlt-1e6dfbea
+2024-04,RY1,CHEVROLET,CORVETTE STINGRAY COUPE 2LT,1,chevrolet,,dlt-1e6dfbea
+2024-04,RY1,CHEVROLET,TRAILBLAZER,2,chevrolet,,dlt-1e6dfbea
+2024-04,RY1,DAIHATSU,MOVE CANBUS STRIPES G TURBO,2,daihatsu,,dlt-1e6dfbea
+2024-04,RY1,DEEPAL,L07,47,deepal,deepal-l07,dlt-1e6dfbea
+2024-04,RY1,DEEPAL,S07,754,deepal,deepal-s07,dlt-1e6dfbea
+2024-04,RY1,DFSK,GLORY 560,1,dfsk,,dlt-1e6dfbea
+2024-04,RY1,FERRARI,296 GTB,1,ferrari,,dlt-1e6dfbea
+2024-04,RY1,FERRARI,296 GTS,1,ferrari,,dlt-1e6dfbea
+2024-04,RY1,FERRARI,SF90 STRADALE,1,ferrari,,dlt-1e6dfbea
+2024-04,RY1,FOMM,FOMM ONE,1,fomm,,dlt-1e6dfbea
+2024-04,RY1,FORD,EVEREST,660,ford,ford-everest,dlt-1e6dfbea
+2024-04,RY1,FORD,MUSTANG,3,ford,ford-mustang,dlt-1e6dfbea
+2024-04,RY1,FORD,MUSTANG MACH 1,1,ford,ford-mustang,dlt-1e6dfbea
+2024-04,RY1,FORD,MUSTANG MACH-E EXTENDED RANGE,1,ford,ford-mustang-mach-e,dlt-1e6dfbea
+2024-04,RY1,FORD,RANGER,989,ford,ford-ranger,dlt-1e6dfbea
+2024-04,RY1,FORD,RANGER RAPTOR,165,ford,ford-ranger-raptor,dlt-1e6dfbea
+2024-04,RY1,GWM TANK,300 HYBRID,60,gwm,gwm-tank-300,dlt-1e6dfbea
+2024-04,RY1,GWM TANK,500 HYBRID,20,gwm,gwm-tank-500,dlt-1e6dfbea
+2024-04,RY1,HAVAL,H6 HEV PRO,8,haval,haval-h6,dlt-1e6dfbea
+2024-04,RY1,HAVAL,H6 HEV ULTRA,62,haval,haval-h6,dlt-1e6dfbea
+2024-04,RY1,HAVAL,H6 PLUG-IN HYBRID,33,haval,haval-h6,dlt-1e6dfbea
+2024-04,RY1,HAVAL,JOLION HYBRID,194,haval,haval-jolion,dlt-1e6dfbea
+2024-04,RY1,HONDA,ACCORD,267,honda,honda-accord,dlt-1e6dfbea
+2024-04,RY1,HONDA,ACCORD HYBRID,1,honda,,dlt-1e6dfbea
+2024-04,RY1,HONDA,BR-V,30,honda,honda-br-v,dlt-1e6dfbea
+2024-04,RY1,HONDA,CITY,1629,honda,honda-city,dlt-1e6dfbea
+2024-04,RY1,HONDA,CITY HATCHBACK,1027,honda,honda-city-hatchback,dlt-1e6dfbea
+2024-04,RY1,HONDA,CIVIC,885,honda,honda-civic,dlt-1e6dfbea
+2024-04,RY1,HONDA,CIVIC TYPE R,7,honda,honda-civic-type-r,dlt-1e6dfbea
+2024-04,RY1,HONDA,CR-V,840,honda,honda-cr-v,dlt-1e6dfbea
+2024-04,RY1,HONDA,HR-V,1862,honda,honda-hr-v,dlt-1e6dfbea
+2024-04,RY1,HONDA,JAZZ,1,honda,honda-jazz,dlt-1e6dfbea
+2024-04,RY1,HONDA,ODYSSEY e-HEV ABSOLUTE EX,1,honda,honda-odyssey,dlt-1e6dfbea
+2024-04,RY1,HONDA,STEP WGN SPADA HYBRID PREMIUM,1,honda,honda-step-wgn,dlt-1e6dfbea
+2024-04,RY1,HONDA,STEP WGN e-HEV AIR,1,honda,honda-step-wgn,dlt-1e6dfbea
+2024-04,RY1,HONDA,STEP WGN e-HEV SPADA PREMIUM,7,honda,honda-step-wgn,dlt-1e6dfbea
+2024-04,RY1,HONDA,STEPWAGON e:HEV SPADA PREMIUM,1,honda,,dlt-1e6dfbea
+2024-04,RY1,HONDA,WR-V,104,honda,honda-wr-v,dlt-1e6dfbea
+2024-04,RY1,HONDA,e:N1,63,honda,honda-e-n1,dlt-1e6dfbea
+2024-04,RY1,HYUNDAI,CRETA,48,hyundai,hyundai-creta,dlt-1e6dfbea
+2024-04,RY1,HYUNDAI,IONIQ5,3,hyundai,hyundai-ioniq-5,dlt-1e6dfbea
+2024-04,RY1,HYUNDAI,STARGAZER,117,hyundai,hyundai-stargazer,dlt-1e6dfbea
+2024-04,RY1,ISUZU,D-MAX,3367,isuzu,isuzu-d-max,dlt-1e6dfbea
+2024-04,RY1,ISUZU,MU-X,1065,isuzu,isuzu-mu-x,dlt-1e6dfbea
+2024-04,RY1,JAC,EVO-T8,1,jac,,dlt-1e6dfbea
+2024-04,RY1,JAGUAR,F-PACE 2.0 LITRE T/C PETROL,1,jaguar,,dlt-1e6dfbea
+2024-04,RY1,JAGUAR,F-TYPE 2.0 LITRE T/C PETROL,1,jaguar,,dlt-1e6dfbea
+2024-04,RY1,JAGUAR,XF PRESTIGE 2.0 DIESEL,1,jaguar,,dlt-1e6dfbea
+2024-04,RY1,JEEP,GLADIATOR RUBICON,1,jeep,,dlt-1e6dfbea
+2024-04,RY1,JEEP,WRANGLER RUBICON 2 DOOR,1,jeep,,dlt-1e6dfbea
+2024-04,RY1,LAMBORGHINI,HURACAN STERRATO,1,lamborghini,,dlt-1e6dfbea
+2024-04,RY1,LAMBORGHINI,HURACAN STO,1,lamborghini,,dlt-1e6dfbea
+2024-04,RY1,LAMBORGHINI,HURACAN TECNICA,1,lamborghini,,dlt-1e6dfbea
+2024-04,RY1,LAMBORGHINI,URUS,1,lamborghini,,dlt-1e6dfbea
+2024-04,RY1,LAMBORGHINI,URUS PERFORMANTE,1,lamborghini,,dlt-1e6dfbea
+2024-04,RY1,LAND ROVER,DEFENDER 2.0L T/C AWD AUTO SE,1,land-rover,,dlt-1e6dfbea
+2024-04,RY1,LAND ROVER,DEFENDER 2.0L T/C PETROL PHEV,3,land-rover,,dlt-1e6dfbea
+2024-04,RY1,LAND ROVER,DEFENDER 90 STATION WAGON,1,land-rover,,dlt-1e6dfbea
+2024-04,RY1,LAND ROVER,RANGE ROVER 2.0L T/C PETROL,1,land-rover,,dlt-1e6dfbea
+2024-04,RY1,LAND ROVER,RANGE ROVER 3.0 LITRE T/C,5,land-rover,,dlt-1e6dfbea
+2024-04,RY1,LAND ROVER,RANGE ROVER SPORT 3.0 LITRE,1,land-rover,,dlt-1e6dfbea
+2024-04,RY1,LEXUS,ES300H,6,lexus,,dlt-1e6dfbea
+2024-04,RY1,LEXUS,IS300H,1,lexus,,dlt-1e6dfbea
+2024-04,RY1,LEXUS,LM300h,3,lexus,,dlt-1e6dfbea
+2024-04,RY1,LEXUS,LM350H,49,lexus,,dlt-1e6dfbea
+2024-04,RY1,LEXUS,NX350H,6,lexus,,dlt-1e6dfbea
+2024-04,RY1,LEXUS,NX450H+,8,lexus,,dlt-1e6dfbea
+2024-04,RY1,LEXUS,RX200t,1,lexus,,dlt-1e6dfbea
+2024-04,RY1,LEXUS,RX300,2,lexus,,dlt-1e6dfbea
+2024-04,RY1,LEXUS,RX350H,1,lexus,,dlt-1e6dfbea
+2024-04,RY1,LEXUS,RX450H+,13,lexus,,dlt-1e6dfbea
+2024-04,RY1,LEXUS,RX500H,2,lexus,,dlt-1e6dfbea
+2024-04,RY1,LEXUS,RZ450E,3,lexus,,dlt-1e6dfbea
+2024-04,RY1,LEXUS,UX250H,2,lexus,,dlt-1e6dfbea
+2024-04,RY1,MASERATI,GRECALE GT HYBRID,1,maserati,,dlt-1e6dfbea
+2024-04,RY1,MASERATI,LEVANTE DIESEL GRANLUSSO,1,maserati,,dlt-1e6dfbea
+2024-04,RY1,MASERATI,LEVANTE DIESEL GRANSPORT,1,maserati,,dlt-1e6dfbea
+2024-04,RY1,MASERATI,MC20,1,maserati,,dlt-1e6dfbea
+2024-04,RY1,MAZDA,MAZDA 2,394,mazda,mazda-mazda2,dlt-1e6dfbea
+2024-04,RY1,MAZDA,MAZDA 3,42,mazda,mazda-mazda3,dlt-1e6dfbea
+2024-04,RY1,MAZDA,MAZDA BT-50,26,mazda,mazda-bt-50,dlt-1e6dfbea
+2024-04,RY1,MAZDA,MAZDA CX-3,101,mazda,mazda-cx-3,dlt-1e6dfbea
+2024-04,RY1,MAZDA,MAZDA CX-30,174,mazda,mazda-cx-30,dlt-1e6dfbea
+2024-04,RY1,MAZDA,MAZDA CX-5,26,mazda,mazda-cx-5,dlt-1e6dfbea
+2024-04,RY1,MAZDA,MAZDA CX-8,38,mazda,mazda-cx-8,dlt-1e6dfbea
+2024-04,RY1,MAZDA,ROADSTER,1,mazda,,dlt-1e6dfbea
+2024-04,RY1,MAZDA,ROADSTER 990S,1,mazda,,dlt-1e6dfbea
+2024-04,RY1,MAZDA,ROADSTER NR-A,1,mazda,,dlt-1e6dfbea
+2024-04,RY1,MAZDA,ROADSTER RF S,1,mazda,,dlt-1e6dfbea
+2024-04,RY1,MCLAREN,720S COUPE,1,mclaren,,dlt-1e6dfbea
+2024-04,RY1,MCLAREN,ARTURA-COUPE,1,mclaren,,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,,2,mercedes-benz,,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,A 200,51,mercedes-benz,mercedes-benz-a-class,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,AMG C 43 4MATIC,1,mercedes-benz,,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,AMG C43 4MATIC Coupe,1,mercedes-benz,,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,AMG CLA 35 4MATIC Coupe,1,mercedes-benz,,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,AMG CLS 53 4MATIC,5,mercedes-benz,,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,AMG EQE 53 4MATIC+,1,mercedes-benz,,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,AMG G 63,2,mercedes-benz,,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,AMG G63 BRABUS,1,mercedes-benz,,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,AMG GLA 35 4MATIC,2,mercedes-benz,,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,AMG GLC 43 4MATIC Coupe,7,mercedes-benz,,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,AMG GLE 53 4MATIC+,2,mercedes-benz,,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,AMG GT 53 4MATIC+,1,mercedes-benz,,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,C 200 Coupe,15,mercedes-benz,mercedes-benz-c-class,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,C 220 d,72,mercedes-benz,mercedes-benz-c-class,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,C 300 e,3,mercedes-benz,mercedes-benz-c-class,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,C 350 e,44,mercedes-benz,mercedes-benz-c-class,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,CLS 220 d,28,mercedes-benz,mercedes-benz-cls,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,CLS 300 d,2,mercedes-benz,mercedes-benz-cls,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,E 200 Coupe,2,mercedes-benz,mercedes-benz-e-class,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,E 220 d,20,mercedes-benz,mercedes-benz-e-class,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,E 300 Coupe,1,mercedes-benz,mercedes-benz-e-class,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,E 300 e,52,mercedes-benz,mercedes-benz-e-class,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,EQS 500 4MATIC,1,mercedes-benz,,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,G400 D,5,mercedes-benz,,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,G400 D AMG,1,mercedes-benz,,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,G63 AMG,1,mercedes-benz,,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,GLA 200,64,mercedes-benz,mercedes-benz-gla,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,GLA 250,1,mercedes-benz,mercedes-benz-gla,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,GLB 200,3,mercedes-benz,,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,GLC 220 d,18,mercedes-benz,mercedes-benz-glc,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,GLC 220 d 4MATIC,21,mercedes-benz,mercedes-benz-glc,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,GLC 220 d 4MATIC Coupe,12,mercedes-benz,mercedes-benz-glc,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,GLC 250 4MATIC Coupe,1,mercedes-benz,mercedes-benz-glc,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,GLC 250 d 4MATIC,1,mercedes-benz,mercedes-benz-glc,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,GLC 300 e 4MATIC,9,mercedes-benz,mercedes-benz-glc,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,GLC 300 e 4MATIC Coupe,8,mercedes-benz,mercedes-benz-glc,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,GLC 350 e 4MATIC,36,mercedes-benz,mercedes-benz-glc,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,GLE 300 d 4MATIC,17,mercedes-benz,mercedes-benz-gle,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,GLE 350 de 4MATIC,5,mercedes-benz,mercedes-benz-gle,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,GLS 350 d 4MATIC,3,mercedes-benz,mercedes-benz-gls,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,Maybach S 580 4MATIC,2,mercedes-benz,,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,Maybach S 580 e,3,mercedes-benz,,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,S 350 d,3,mercedes-benz,mercedes-benz-s-class,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,S 560 e,4,mercedes-benz,mercedes-benz-s-class,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,S 580 e,9,mercedes-benz,mercedes-benz-s-class,dlt-1e6dfbea
+2024-04,RY1,MERCEDES BENZ,V 250 d,4,mercedes-benz,,dlt-1e6dfbea
+2024-04,RY1,MG,EP,63,mg,mg-ep,dlt-1e6dfbea
+2024-04,RY1,MG,ES,9,mg,mg-es,dlt-1e6dfbea
+2024-04,RY1,MG,HS,78,mg,mg-hs,dlt-1e6dfbea
+2024-04,RY1,MG,HS PHEV,26,mg,mg-hs,dlt-1e6dfbea
+2024-04,RY1,MG,MAXUS 9,44,mg,mg-maxus-9,dlt-1e6dfbea
+2024-04,RY1,MG,MG EXTENDER,43,mg,mg-extender,dlt-1e6dfbea
+2024-04,RY1,MG,MG4 ELECTRIC,476,mg,mg-mg4,dlt-1e6dfbea
+2024-04,RY1,MG,MG5,468,mg,mg-mg5,dlt-1e6dfbea
+2024-04,RY1,MG,VS HEV,77,mg,mg-vs,dlt-1e6dfbea
+2024-04,RY1,MG,ZS,111,mg,mg-zs,dlt-1e6dfbea
+2024-04,RY1,MG,ZS EV,31,mg,mg-zs-ev,dlt-1e6dfbea
+2024-04,RY1,MINI,Cooper Hatch RHD,2,mini,,dlt-1e6dfbea
+2024-04,RY1,MINI,Cooper S Cabrio RHD,1,mini,,dlt-1e6dfbea
+2024-04,RY1,MINI,Cooper S Clubman RHD,11,mini,,dlt-1e6dfbea
+2024-04,RY1,MINI,Cooper S Countryman,3,mini,,dlt-1e6dfbea
+2024-04,RY1,MINI,Cooper S Countryman RHD,50,mini,,dlt-1e6dfbea
+2024-04,RY1,MINI,Cooper S Hatch RHD,4,mini,,dlt-1e6dfbea
+2024-04,RY1,MINI,Cooper SE Hatch RHD,14,mini,,dlt-1e6dfbea
+2024-04,RY1,MINI,John Cooper Works ALL4 Cl,2,mini,,dlt-1e6dfbea
+2024-04,RY1,MITSUBISHI,ATTRAGE,341,mitsubishi,mitsubishi-attrage,dlt-1e6dfbea
+2024-04,RY1,MITSUBISHI,MIRAGE,238,mitsubishi,mitsubishi-mirage,dlt-1e6dfbea
+2024-04,RY1,MITSUBISHI,OUTLANDER PHEV,4,mitsubishi,mitsubishi-outlander,dlt-1e6dfbea
+2024-04,RY1,MITSUBISHI,PAJERO SPORT,225,mitsubishi,mitsubishi-pajero-sport,dlt-1e6dfbea
+2024-04,RY1,MITSUBISHI,TRITON,322,mitsubishi,mitsubishi-triton,dlt-1e6dfbea
+2024-04,RY1,MITSUBISHI,XPANDER,306,mitsubishi,mitsubishi-xpander,dlt-1e6dfbea
+2024-04,RY1,MITSUBISHI,XPANDER CROSS HEV,464,mitsubishi,mitsubishi-xpander-cross,dlt-1e6dfbea
+2024-04,RY1,MITSUBISHI,XPANDER HEV,129,mitsubishi,mitsubishi-xpander,dlt-1e6dfbea
+2024-04,RY1,NETA,NETA V,381,neta,neta-v,dlt-1e6dfbea
+2024-04,RY1,NEX,XML6593JEVJ0,1,nex,,dlt-1e6dfbea
+2024-04,RY1,NISSAN,ALMERA,267,nissan,nissan-almera,dlt-1e6dfbea
+2024-04,RY1,NISSAN,GT-R PREMIUM EDITION T-SPEC,1,nissan,,dlt-1e6dfbea
+2024-04,RY1,NISSAN,GT-R PURE EDITION,1,nissan,,dlt-1e6dfbea
+2024-04,RY1,NISSAN,KICKS,290,nissan,nissan-kicks,dlt-1e6dfbea
+2024-04,RY1,NISSAN,LEAF,1,nissan,,dlt-1e6dfbea
+2024-04,RY1,NISSAN,NAVARA,89,nissan,nissan-navara,dlt-1e6dfbea
+2024-04,RY1,NISSAN,TERRA,41,nissan,nissan-terra,dlt-1e6dfbea
+2024-04,RY1,ORA,GOOD CAT,169,ora,ora-good-cat,dlt-1e6dfbea
+2024-04,RY1,ORA,ORA 07,129,ora,ora-07,dlt-1e6dfbea
+2024-04,RY1,PEUGEOT,2008 P24 BG,8,peugeot,,dlt-1e6dfbea
+2024-04,RY1,PEUGEOT,3008 P84 BG,4,peugeot,,dlt-1e6dfbea
+2024-04,RY1,PEUGEOT,5008 P87 BG,1,peugeot,,dlt-1e6dfbea
+2024-04,RY1,POCCO,DD K,1,pocco,,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,718 BOXSTER T,2,porsche,,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,718 CAYMAN STYLE EDITION,8,porsche,,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,911 CARRERA,2,porsche,,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,911 CARRERA 4 GTS,2,porsche,,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,911 CARRERA 4S,1,porsche,,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,911 CARRERA GTS,4,porsche,,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,911 CARRERA S,2,porsche,,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,911 CARRERA T,3,porsche,,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,911 GT3 RS,3,porsche,,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,911 GT3 WITH T.P.,1,porsche,,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,911 SPORT CLASSIC,1,porsche,,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,911 TARGA 4,1,porsche,,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,911 TARGA 4S,2,porsche,,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,911 TARGA 4S HERITAGE,1,porsche,,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,911 TURBO S,1,porsche,,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,CAYENNE E-HYBRID,15,porsche,porsche-cayenne,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,CAYENNE E-HYBRID COUPE,24,porsche,porsche-cayenne,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,CAYENNE E-HYBRID COUPE P.,13,porsche,porsche-cayenne,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,CAYENNE E-HYBRID P.E.,3,porsche,porsche-cayenne,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,CAYENNE E-HYBRID PLATINUM,3,porsche,porsche-cayenne,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,MACAN,17,porsche,porsche-macan,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,MACAN GTS,3,porsche,porsche-macan,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,MACAN S,1,porsche,porsche-macan,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,PANAMERA 4 E-HYBRID,1,porsche,porsche-panamera,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,PANAMERA 4 E-HYBRID EXEC.,7,porsche,porsche-panamera,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,PANAMERA 4 E-HYBRID EXECUTIVE,1,porsche,porsche-panamera,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,PANAMERA 4 E-HYBRID P.E.,9,porsche,porsche-panamera,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,PANAMERA 4 E-HYBRID PLATINUM,1,porsche,porsche-panamera,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,TAYCAN,17,porsche,porsche-taycan,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,TAYCAN 4 CROSS TURISMO,1,porsche,porsche-taycan,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,TAYCAN 4S,6,porsche,porsche-taycan,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,TAYCAN GTS,3,porsche,porsche-taycan,dlt-1e6dfbea
+2024-04,RY1,PORSCHE,TAYCAN TURBO S,1,porsche,porsche-taycan,dlt-1e6dfbea
+2024-04,RY1,ROLLS-ROYCE,CULLINAN,1,rolls-royce,,dlt-1e6dfbea
+2024-04,RY1,ROLLS-ROYCE,Ghost Extended,1,rolls-royce,,dlt-1e6dfbea
+2024-04,RY1,SMART,FORTWO COUPE,1,smart,,dlt-1e6dfbea
+2024-04,RY1,SUBARU,BRZ CUP CAR BASIC,1,subaru,,dlt-1e6dfbea
+2024-04,RY1,SUBARU,FORESTER 2.0i-L ES,40,subaru,subaru-forester,dlt-1e6dfbea
+2024-04,RY1,SUBARU,FORESTER 2.0i-S ES,32,subaru,subaru-forester,dlt-1e6dfbea
+2024-04,RY1,SUBARU,XV 2.0i-P,1,subaru,subaru-xv,dlt-1e6dfbea
+2024-04,RY1,SUBARU,XV 2.0i-P ES,13,subaru,subaru-xv,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,CELERIO GA 1.0L MT,18,suzuki,suzuki-celerio,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,CELERIO GL 1.0L,9,suzuki,suzuki-celerio,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,CELERIO GL 1.0L CVT,29,suzuki,suzuki-celerio,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,CELERIO GL UP 1.0L CVT,22,suzuki,suzuki-celerio,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,CELERIO GX 1.0L CVT,16,suzuki,suzuki-celerio,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,CIAZ GL CVT,114,suzuki,suzuki-ciaz,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,CIAZ GL MT,6,suzuki,suzuki-ciaz,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,CIAZ GLX 1.25L CVT,1,suzuki,suzuki-ciaz,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,CIAZ GLX CVT,12,suzuki,suzuki-ciaz,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,CIAZ RS CVT,14,suzuki,suzuki-ciaz,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,ERTIGA GL 1.5L,5,suzuki,suzuki-ertiga,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,ERTIGA GX 1.5L,6,suzuki,suzuki-ertiga,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,JIMNY 1.5L 4AT,2,suzuki,,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,JIMNY SIERRA,4,suzuki,,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,JIMNY SIERRA 4WD,1,suzuki,,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,JIMNY SIERRA JC,3,suzuki,,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,JIMNY SIERRA JC 1.5L,3,suzuki,,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,JIMNY SIERRA JC 4WD,6,suzuki,,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,SWIFT GL 1.2L CVT,75,suzuki,suzuki-swift,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,SWIFT GL NEXT 1.2L CVT,52,suzuki,suzuki-swift,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,SWIFT GL PLUS 1.2L CVT,3,suzuki,suzuki-swift,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,SWIFT GLX 1.2L CVT,101,suzuki,suzuki-swift,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,SWIFT GLX-Navi 1.2L CVT,1,suzuki,suzuki-swift,dlt-1e6dfbea
+2024-04,RY1,SUZUKI,XL7 1.5L,44,suzuki,suzuki-xl7,dlt-1e6dfbea
+2024-04,RY1,TATA,XENON,1,tata,,dlt-1e6dfbea
+2024-04,RY1,TESLA,MODEL 3 LONG RANGE,56,tesla,tesla-model-3,dlt-1e6dfbea
+2024-04,RY1,TESLA,MODEL 3 PERFORMANCE,1,tesla,tesla-model-3,dlt-1e6dfbea
+2024-04,RY1,TESLA,MODEL Y LONG RANGE,14,tesla,tesla-model-y,dlt-1e6dfbea
+2024-04,RY1,TESLA,MODEL Y PERFORMANCE,20,tesla,tesla-model-y,dlt-1e6dfbea
+2024-04,RY1,TESLA,MODEL Y STANDARD,1,tesla,tesla-model-y,dlt-1e6dfbea
+2024-04,RY1,TESLA,Model 3 Performance,5,tesla,tesla-model-3,dlt-1e6dfbea
+2024-04,RY1,TESLA,Model 3 Rear-Wheel Drive,97,tesla,tesla-model-3,dlt-1e6dfbea
+2024-04,RY1,TESLA,Model Y Rear-Wheel Drive,30,tesla,tesla-model-y,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,ALPHARD,24,toyota,toyota-alphard,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,ALPHARD 2.5 HYBRID EXECUTIVE,1,toyota,toyota-alphard,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,ALPHARD 2.5 HYBRID G F PACKAGE,1,toyota,toyota-alphard,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,ALPHARD 2.5 HYBRID S TYPE GOLD,1,toyota,toyota-alphard,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,ALPHARD 2.5 HYBRID SRC PACKAGE,9,toyota,toyota-alphard,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,ALPHARD 2.5 SC PACKAGE,43,toyota,toyota-alphard,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,ALPHARD 2.5 Z,8,toyota,toyota-alphard,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,ALPHARD 2.5L SC PACKAGE,12,toyota,toyota-alphard,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,ALPHARD HYBRID EXECUTIVE,3,toyota,toyota-alphard,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,ALPHARD HYBRID SRC PACKAGE,3,toyota,toyota-alphard,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,ALPHARD HYBRID Z,10,toyota,toyota-alphard,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,ALPHARD HYBRID Z E-FOUR,3,toyota,toyota-alphard,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,"ALPHARD S ""TYPE GOLD III""",2,toyota,toyota-alphard,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,ALPHARD SC PACKAGE,27,toyota,toyota-alphard,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,ALPHARD SC PACKAGE 2.5L,40,toyota,toyota-alphard,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,ALPHARD SRC HYBRID 2.5L,1,toyota,toyota-alphard,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,ALPHARD Z,4,toyota,toyota-alphard,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,ALPHARD Z 2.5L,10,toyota,toyota-alphard,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,ALPHARD Z 2WD,44,toyota,toyota-alphard,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,ALPHARD Z 2WD 2.5L,5,toyota,toyota-alphard,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,ALPHARD Z 4WD,1,toyota,toyota-alphard,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,ALPHARD Z HYBRID,1,toyota,toyota-alphard,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,ALPHARD Z HYBRID 2.5L,1,toyota,toyota-alphard,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,C-HR,3,toyota,toyota-c-hr,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,CAMRY,160,toyota,toyota-camry,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,COMMUTER,33,toyota,toyota-commuter,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,COROLLA,220,toyota,toyota-corolla,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,COROLLA CROSS,1303,toyota,toyota-corolla-cross,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,CROWN CROSSOVER G ADVANCED,2,toyota,,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,CROWN CROSSOVER RS ADVANCE,3,toyota,,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,CROWN CROSSOVER RS ADVANCED,2,toyota,,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,FORTUNER,1241,toyota,toyota-fortuner,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,GR COROLLA RZ,1,toyota,,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,GR YARIS,1,toyota,toyota-gr-yaris,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,GR YARIS RC,2,toyota,toyota-gr-yaris,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,GR86,1,toyota,,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,GR86 RC,4,toyota,,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,GR86 RZ 10th ANNIVERSARY,2,toyota,,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,GT86 14R-60 TRD,1,toyota,,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,HARRIER HYBRID Z LEATHER,1,toyota,,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,HIACE,1,toyota,toyota-hiace,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,HILUX REVO,2301,toyota,toyota-hilux-revo,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,INNOVA,227,toyota,toyota-innova,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,KUN51R-NKASYT  A8,1,toyota,,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,LAND CRUISER 3.3L  GR SPORT,1,toyota,,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,LAND CRUISER 300 GR SPORT,1,toyota,,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,LAND CRUISER PRADO TX 7 SEAT,1,toyota,,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,LAND CRUISER PRADO TZ G 2.8L,1,toyota,,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,LANDCRUISER LC300 ZX,1,toyota,,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,LANDCRUISER PRADO 2.8 TZG,1,toyota,,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,NOAH HYBRID S-Z,1,toyota,,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,NOAH HYBRID X,10,toyota,,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,SIENTA,1,toyota,toyota-sienta,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,SUPRA,1,toyota,,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,TGN61R-NKPSKT  A5,1,toyota,,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,VELLFIRE,5,toyota,toyota-vellfire,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,VELLFIRE 2.5 HYBRID X E-FOUR,1,toyota,toyota-vellfire,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,VELLFIRE 2.5 HYBRID Z PREMIER,1,toyota,toyota-vellfire,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,VELLFIRE HYBRID Z PREMIER,13,toyota,toyota-vellfire,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,VELLFIRE Z PREMIER,2,toyota,toyota-vellfire,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,VELLFIRE Z PREMIER HYBRID,2,toyota,toyota-vellfire,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,VELLFIRE Z PREMIER HYBRID 2.5L,1,toyota,toyota-vellfire,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,VELOZ,257,toyota,toyota-veloz,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,VOXY HYBRID S-Z,11,toyota,toyota-voxy,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,VOXY HYBRID SZ 1.8L,1,toyota,toyota-voxy,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,VOXY S-Z 2WD,1,toyota,toyota-voxy,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,YARIS,811,toyota,toyota-yaris,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,YARIS ATIV,3798,toyota,toyota-yaris-ativ,dlt-1e6dfbea
+2024-04,RY1,TOYOTA,YARIS CROSS,3058,toyota,toyota-yaris-cross,dlt-1e6dfbea
+2024-04,RY1,VOLKSWAGEN,ID BUZZ,3,volkswagen,,dlt-1e6dfbea
+2024-04,RY1,VOLT,VOLT FOR FOUR,4,volt,,dlt-1e6dfbea
+2024-04,RY1,VOLVO,C40,97,volvo,volvo-c40,dlt-1e6dfbea
+2024-04,RY1,VOLVO,S60,7,volvo,volvo-s60,dlt-1e6dfbea
+2024-04,RY1,VOLVO,S90,5,volvo,volvo-s90,dlt-1e6dfbea
+2024-04,RY1,VOLVO,V60,10,volvo,volvo-v60,dlt-1e6dfbea
+2024-04,RY1,VOLVO,XC40,142,volvo,volvo-xc40,dlt-1e6dfbea
+2024-04,RY1,VOLVO,XC60,25,volvo,volvo-xc60,dlt-1e6dfbea
+2024-04,RY1,VOLVO,XC90,15,volvo,volvo-xc90,dlt-1e6dfbea
+2024-04,RY1,WULING,Air EV LR,30,wuling,,dlt-1e6dfbea
+2024-04,RY1,WULING,Air EV SR,8,wuling,,dlt-1e6dfbea
+2024-04,RY2,FORD,RANGER,5,ford,ford-ranger,dlt-1e6dfbea
+2024-04,RY2,FORD,RANGER RAPTOR,11,ford,ford-ranger-raptor,dlt-1e6dfbea
+2024-04,RY2,HYUNDAI,H-1,86,hyundai,hyundai-h-1,dlt-1e6dfbea
+2024-04,RY2,HYUNDAI,STARIA,101,hyundai,hyundai-staria,dlt-1e6dfbea
+2024-04,RY2,ISUZU,D-MAX,9,isuzu,isuzu-d-max,dlt-1e6dfbea
+2024-04,RY2,KIA,CARNIVAL,59,kia,kia-carnival,dlt-1e6dfbea
+2024-04,RY2,MERCEDES BENZ,SPRINTER 319 CDI,1,mercedes-benz,,dlt-1e6dfbea
+2024-04,RY2,MERCEDES BENZ,SPRINTER 419 CDI VAN,17,mercedes-benz,,dlt-1e6dfbea
+2024-04,RY2,MERCEDES BENZ,VITO 119 CDI,13,mercedes-benz,,dlt-1e6dfbea
+2024-04,RY2,MITSUBISHI,TRITON,1,mitsubishi,mitsubishi-triton,dlt-1e6dfbea
+2024-04,RY2,NISSAN,NAVARA,18,nissan,nissan-navara,dlt-1e6dfbea
+2024-04,RY2,NISSAN,UVL4RDRE26KWDDER-C,1,nissan,,dlt-1e6dfbea
+2024-04,RY2,SUZUKI,CARRY 1.5L MT,11,suzuki,suzuki-carry,dlt-1e6dfbea
+2024-04,RY2,TOYOTA,,1,toyota,,dlt-1e6dfbea
+2024-04,RY2,TOYOTA,COMMUTER,459,toyota,toyota-commuter,dlt-1e6dfbea
+2024-04,RY2,TOYOTA,HIACE,39,toyota,toyota-hiace,dlt-1e6dfbea
+2024-04,RY2,TOYOTA,HIACE MAJESTY,1,toyota,toyota-hiace-majesty,dlt-1e6dfbea
+2024-04,RY2,TOYOTA,HILUX CHAMP,4,toyota,toyota-hilux-champ,dlt-1e6dfbea
+2024-04,RY2,TOYOTA,HILUX REVO,87,toyota,toyota-hilux-revo,dlt-1e6dfbea
+2024-04,RY2,TOYOTA,KDH222R-LEMDYT A4,1,toyota,,dlt-1e6dfbea
+2024-04,RY2,TOYOTA,KDH222R-LEMDYT A6,1,toyota,,dlt-1e6dfbea
+2024-04,RY2,VOLKSWAGEN,CARAVELLE COMFORTLINE2.0L,6,volkswagen,,dlt-1e6dfbea
+2024-04,RY2,VOLKSWAGEN,TRANSPORTER,2,volkswagen,,dlt-1e6dfbea
+2024-04,RY3,CHEVROLET,COLORADO X-CAB,2,chevrolet,,dlt-1e6dfbea
+2024-04,RY3,DAIHATSU,HIJET CARGO,8,daihatsu,,dlt-1e6dfbea
+2024-04,RY3,DAIHATSU,HIJET CARGO CRUISE TURBO,1,daihatsu,,dlt-1e6dfbea
+2024-04,RY3,FORD,RANGER,225,ford,ford-ranger,dlt-1e6dfbea
+2024-04,RY3,FORD,RANGER SWB,6,ford,ford-ranger,dlt-1e6dfbea
+2024-04,RY3,FOTON,BJ1031EVJA3,3,foton,,dlt-1e6dfbea
+2024-04,RY3,FOTON,BJ1045V8JD3-FA,2,foton,,dlt-1e6dfbea
+2024-04,RY3,HINO,FG8JJ1A-JJT,1,hino,,dlt-1e6dfbea
+2024-04,RY3,HINO,FM8JN1D-SGT,1,hino,,dlt-1e6dfbea
+2024-04,RY3,HINO,XZU600R-HKMLKT3,47,hino,,dlt-1e6dfbea
+2024-04,RY3,HINO,XZU650R-HKMRLT3,1,hino,,dlt-1e6dfbea
+2024-04,RY3,ISUZU,D-MAX,2577,isuzu,isuzu-d-max,dlt-1e6dfbea
+2024-04,RY3,ISUZU,FTR34JXXXU,3,isuzu,,dlt-1e6dfbea
+2024-04,RY3,ISUZU,FTR34LXXXU,2,isuzu,,dlt-1e6dfbea
+2024-04,RY3,ISUZU,FVM34QNXXU,1,isuzu,,dlt-1e6dfbea
+2024-04,RY3,ISUZU,FVM34QSXXU,1,isuzu,,dlt-1e6dfbea
+2024-04,RY3,ISUZU,FVZ34QNDXU,4,isuzu,,dlt-1e6dfbea
+2024-04,RY3,ISUZU,FXZ77QXDFV,1,isuzu,,dlt-1e6dfbea
+2024-04,RY3,ISUZU,NLR77EXXXW,2,isuzu,,dlt-1e6dfbea
+2024-04,RY3,ISUZU,NLR85EXSXY,7,isuzu,,dlt-1e6dfbea
+2024-04,RY3,ISUZU,NLR85EXXXU,92,isuzu,,dlt-1e6dfbea
+2024-04,RY3,MAZDA,MAZDA BT-50,14,mazda,mazda-bt-50,dlt-1e6dfbea
+2024-04,RY3,MG,MG EXTENDER,11,mg,mg-extender,dlt-1e6dfbea
+2024-04,RY3,MITSUBISHI,TRITON,295,mitsubishi,mitsubishi-triton,dlt-1e6dfbea
+2024-04,RY3,NISSAN,BVL2RDYD23FHN---CA,1,nissan,,dlt-1e6dfbea
+2024-04,RY3,NISSAN,NAVARA,115,nissan,nissan-navara,dlt-1e6dfbea
+2024-04,RY3,SOKON,CRC5023XXY,1,sokon,,dlt-1e6dfbea
+2024-04,RY3,SUZUKI,CARRY 1.5L MT,96,suzuki,suzuki-carry,dlt-1e6dfbea
+2024-04,RY3,TOYOTA,COMMUTER,4,toyota,toyota-commuter,dlt-1e6dfbea
+2024-04,RY3,TOYOTA,HIACE,6,toyota,toyota-hiace,dlt-1e6dfbea
+2024-04,RY3,TOYOTA,HILUX CHAMP,741,toyota,toyota-hilux-champ,dlt-1e6dfbea
+2024-04,RY3,TOYOTA,HILUX REVO,3762,toyota,toyota-hilux-revo,dlt-1e6dfbea

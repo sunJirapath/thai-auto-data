@@ -1,0 +1,522 @@
+period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
+2023-02,RY1,ASTON MARTIN,VANTAGE COUPE,1,aston-martin,,dlt-94b8a69a
+2023-02,RY1,AUDI,A5 CP 40 TFSI S line,20,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,A5 CP 45 TFSI q S line BE,3,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,A5 SB 40 TFSI S line,24,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,A5 SB 45 TFSI q S line BE,3,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,A6 40 TFSI S line,2,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,A8 L 55 TFSI q Pg S line,1,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,Q3 35 TFSI S line,2,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,Q3 40 TFSI q S line BE,8,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,Q3 SB 35 TFSI S line,2,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,Q3 SB 40 TFSI q S line BE,10,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,Q5 40 TDI q,1,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,Q5 55 TFSI e q S line,2,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,Q5 55 TFSI e q S line BE,3,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,Q7 45 TDI q S line,1,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,Q7 60 TFSI e q S line BE,1,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,Q8 60 TFSI e q S line BE,1,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,RS 3 Sportback quattro,1,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,RS 4 AV q,2,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,RS 5 Coupe quattro,2,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,RS 6 Avant quattro,1,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,RS Q3 Sportback quattro,1,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,RS Q8 TFSI QUATTRO,1,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,S3 Sportback quattro,1,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,TT Coupe 45 TFSI q S line,26,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,TT RD 45 TFSI q S line,1,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,TT RS Coupe q,4,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,e-tron GT quattro,1,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,e-tron GT quattro PF,3,audi,,dlt-94b8a69a
+2023-02,RY1,AUDI,e-tron SB 55 q S line,1,audi,,dlt-94b8a69a
+2023-02,RY1,BENTLEY,BENTAYGA HYBRID,10,bentley,,dlt-94b8a69a
+2023-02,RY1,BENTLEY,CONTINENTAL GT V8,5,bentley,,dlt-94b8a69a
+2023-02,RY1,BENTLEY,CONTINENTAL GTC V8,1,bentley,,dlt-94b8a69a
+2023-02,RY1,BENTLEY,FLYING SPUR,1,bentley,,dlt-94b8a69a
+2023-02,RY1,BENTLEY,FLYING SPUR HYBRID,6,bentley,,dlt-94b8a69a
+2023-02,RY1,BENTLEY,FLYING SPUR MULLINER HYBRID,1,bentley,,dlt-94b8a69a
+2023-02,RY1,BMW,118i M Sport,1,bmw,,dlt-94b8a69a
+2023-02,RY1,BMW,218i Gran Coupe RHD,1,bmw,bmw-2-series-gran-coupe,dlt-94b8a69a
+2023-02,RY1,BMW,220i Gran Coupe M Sport,140,bmw,bmw-2-series-gran-coupe,dlt-94b8a69a
+2023-02,RY1,BMW,220i Gran Coupe Sport,5,bmw,bmw-2-series-gran-coupe,dlt-94b8a69a
+2023-02,RY1,BMW,320Li Limousine RHD,6,bmw,bmw-3-series,dlt-94b8a69a
+2023-02,RY1,BMW,320d GT Luxury,2,bmw,bmw-3-series,dlt-94b8a69a
+2023-02,RY1,BMW,320d GT M Sport,1,bmw,bmw-3-series,dlt-94b8a69a
+2023-02,RY1,BMW,320d GT Sport,4,bmw,bmw-3-series,dlt-94b8a69a
+2023-02,RY1,BMW,320d Limousine RHD,3,bmw,bmw-3-series,dlt-94b8a69a
+2023-02,RY1,BMW,320d M Sport,130,bmw,bmw-3-series,dlt-94b8a69a
+2023-02,RY1,BMW,320d Sport,2,bmw,bmw-3-series,dlt-94b8a69a
+2023-02,RY1,BMW,330Li Limousine RHD,35,bmw,bmw-3-series,dlt-94b8a69a
+2023-02,RY1,BMW,330e M Sport,165,bmw,bmw-3-series,dlt-94b8a69a
+2023-02,RY1,BMW,330i Limousine RHD,1,bmw,bmw-3-series,dlt-94b8a69a
+2023-02,RY1,BMW,430i Cabrio RHD,4,bmw,bmw-4-series,dlt-94b8a69a
+2023-02,RY1,BMW,430i Coupe RHD,14,bmw,bmw-4-series,dlt-94b8a69a
+2023-02,RY1,BMW,520d M Sport,60,bmw,bmw-5-series,dlt-94b8a69a
+2023-02,RY1,BMW,520d Sport,3,bmw,bmw-5-series,dlt-94b8a69a
+2023-02,RY1,BMW,530e Elite,25,bmw,bmw-5-series,dlt-94b8a69a
+2023-02,RY1,BMW,530e Highline,1,bmw,bmw-5-series,dlt-94b8a69a
+2023-02,RY1,BMW,530e M Sport,91,bmw,bmw-5-series,dlt-94b8a69a
+2023-02,RY1,BMW,630d Gran Turismo RHD,2,bmw,,dlt-94b8a69a
+2023-02,RY1,BMW,630i Gran Turismo RHD,15,bmw,,dlt-94b8a69a
+2023-02,RY1,BMW,730Ld M Sport,7,bmw,,dlt-94b8a69a
+2023-02,RY1,BMW,745Le xDrive M Sport,10,bmw,,dlt-94b8a69a
+2023-02,RY1,BMW,M340i xDrive,11,bmw,bmw-3-series,dlt-94b8a69a
+2023-02,RY1,BMW,M4 CSL Coupe RHD,1,bmw,,dlt-94b8a69a
+2023-02,RY1,BMW,X1 sDrive18d xLine,3,bmw,bmw-x1,dlt-94b8a69a
+2023-02,RY1,BMW,X1 sDrive20d M Sport,132,bmw,bmw-x1,dlt-94b8a69a
+2023-02,RY1,BMW,X1 sDrive20d xLine,137,bmw,bmw-x1,dlt-94b8a69a
+2023-02,RY1,BMW,X3 xDrive20d M Sport,53,bmw,bmw-x3,dlt-94b8a69a
+2023-02,RY1,BMW,X3 xDrive20d xLine,2,bmw,bmw-x3,dlt-94b8a69a
+2023-02,RY1,BMW,X3 xDrive30e M Sport,57,bmw,bmw-x3,dlt-94b8a69a
+2023-02,RY1,BMW,X3 xDrive30e xLine,2,bmw,bmw-x3,dlt-94b8a69a
+2023-02,RY1,BMW,X4 xDrive20d RHD,55,bmw,bmw-x4,dlt-94b8a69a
+2023-02,RY1,BMW,X5 xDrive30d M Sport,27,bmw,bmw-x5,dlt-94b8a69a
+2023-02,RY1,BMW,X5 xDrive30d RHD,2,bmw,bmw-x5,dlt-94b8a69a
+2023-02,RY1,BMW,X5 xDrive40e M Sport,1,bmw,bmw-x5,dlt-94b8a69a
+2023-02,RY1,BMW,X5 xDrive45e M Sport,48,bmw,bmw-x5,dlt-94b8a69a
+2023-02,RY1,BMW,X6 xDrive40i M Sport,30,bmw,bmw-x6,dlt-94b8a69a
+2023-02,RY1,BMW,X7 xDrive30d M Sport,4,bmw,bmw-x7,dlt-94b8a69a
+2023-02,RY1,BMW,X7 xDrive40d M Sport,27,bmw,bmw-x7,dlt-94b8a69a
+2023-02,RY1,BMW,Z4 M40i Roadster RHD,3,bmw,bmw-z4,dlt-94b8a69a
+2023-02,RY1,BMW,Z4 sDrive30i RHD,4,bmw,bmw-z4,dlt-94b8a69a
+2023-02,RY1,BMW,i4 M50 Gran Coupe RHD,1,bmw,bmw-i4,dlt-94b8a69a
+2023-02,RY1,BMW,i7 xDrive60 Limousine RHD,11,bmw,bmw-i7,dlt-94b8a69a
+2023-02,RY1,BMW,iX xDrive40 RHD,17,bmw,bmw-ix,dlt-94b8a69a
+2023-02,RY1,BMW,iX xDrive50 RHD,3,bmw,bmw-ix,dlt-94b8a69a
+2023-02,RY1,BMW,iX3 M Sport RHD,42,bmw,bmw-ix3,dlt-94b8a69a
+2023-02,RY1,BYD,BYD ATTO 3,1795,byd,byd-atto-3,dlt-94b8a69a
+2023-02,RY1,BYD,BYD ATTO 3 (410KM),273,byd,byd-atto-3,dlt-94b8a69a
+2023-02,RY1,BYD,DOLPHIN FREEDOM,1,byd,byd-dolphin,dlt-94b8a69a
+2023-02,RY1,BYD,E6,1,byd,byd-e6,dlt-94b8a69a
+2023-02,RY1,CHEVROLET,CAPTIVA,4,chevrolet,,dlt-94b8a69a
+2023-02,RY1,CHEVROLET,CORVETTE STINGRAY COUPE,1,chevrolet,,dlt-94b8a69a
+2023-02,RY1,DAIHATSU,MOVE CANBUS G MAKEUP LIMITED,1,daihatsu,,dlt-94b8a69a
+2023-02,RY1,DFSK,EC36,7,dfsk,,dlt-94b8a69a
+2023-02,RY1,DFSK,GLORY 580 I-AUTO,1,dfsk,,dlt-94b8a69a
+2023-02,RY1,FERRARI,F8 SPIDER,1,ferrari,,dlt-94b8a69a
+2023-02,RY1,FERRARI,F8 TRIBUTO,1,ferrari,,dlt-94b8a69a
+2023-02,RY1,FERRARI,PORTOFINO,1,ferrari,,dlt-94b8a69a
+2023-02,RY1,FERRARI,PORTOFINO M,1,ferrari,,dlt-94b8a69a
+2023-02,RY1,FERRARI,ROMA,1,ferrari,,dlt-94b8a69a
+2023-02,RY1,FERRARI,SF90 SPIDER,1,ferrari,,dlt-94b8a69a
+2023-02,RY1,FORD,EVEREST,1447,ford,ford-everest,dlt-94b8a69a
+2023-02,RY1,FORD,FORD EVEREST,1,ford,,dlt-94b8a69a
+2023-02,RY1,FORD,FORD EVEREST zFAE9BC,2,ford,,dlt-94b8a69a
+2023-02,RY1,FORD,FORD RANGER,1,ford,,dlt-94b8a69a
+2023-02,RY1,FORD,FORD RANGER iJBW9B4,1,ford,,dlt-94b8a69a
+2023-02,RY1,FORD,MUSTANG,3,ford,ford-mustang,dlt-94b8a69a
+2023-02,RY1,FORD,MUSTANG 2.3L ECOBOOST,1,ford,ford-mustang,dlt-94b8a69a
+2023-02,RY1,FORD,MUSTANG 2.3L ECOBOOST FASTBACK,1,ford,ford-mustang,dlt-94b8a69a
+2023-02,RY1,FORD,MUSTANG ECOBOOST FASTBACK,1,ford,ford-mustang,dlt-94b8a69a
+2023-02,RY1,FORD,MUSTANG HIGH PERFORMANCE,1,ford,ford-mustang,dlt-94b8a69a
+2023-02,RY1,FORD,MUSTANG HIGH PERFORMANCE 2.3L,1,ford,ford-mustang,dlt-94b8a69a
+2023-02,RY1,FORD,MUSTANG MACH-E EXTENDED RANGE,2,ford,ford-mustang-mach-e,dlt-94b8a69a
+2023-02,RY1,FORD,RANGER,2473,ford,ford-ranger,dlt-94b8a69a
+2023-02,RY1,FORD,RANGER RAPTOR,539,ford,ford-ranger-raptor,dlt-94b8a69a
+2023-02,RY1,HAVAL,H6 HEV PRO,11,haval,haval-h6,dlt-94b8a69a
+2023-02,RY1,HAVAL,H6 HEV ULTRA,365,haval,haval-h6,dlt-94b8a69a
+2023-02,RY1,HAVAL,H6 PLUG-IN HYBRID,145,haval,haval-h6,dlt-94b8a69a
+2023-02,RY1,HAVAL,JOLION HYBRID,395,haval,haval-jolion,dlt-94b8a69a
+2023-02,RY1,HONDA,ACCORD,328,honda,honda-accord,dlt-94b8a69a
+2023-02,RY1,HONDA,ACCORD HYBRID,5,honda,,dlt-94b8a69a
+2023-02,RY1,HONDA,BR-V,134,honda,honda-br-v,dlt-94b8a69a
+2023-02,RY1,HONDA,CITY,2307,honda,honda-city,dlt-94b8a69a
+2023-02,RY1,HONDA,CITY HATCHBACK,2513,honda,honda-city-hatchback,dlt-94b8a69a
+2023-02,RY1,HONDA,CIVIC,889,honda,honda-civic,dlt-94b8a69a
+2023-02,RY1,HONDA,CIVIC TYPE R,2,honda,honda-civic-type-r,dlt-94b8a69a
+2023-02,RY1,HONDA,CR-V,188,honda,honda-cr-v,dlt-94b8a69a
+2023-02,RY1,HONDA,HR-V,2007,honda,honda-hr-v,dlt-94b8a69a
+2023-02,RY1,HONDA,HR-V'15,1,honda,,dlt-94b8a69a
+2023-02,RY1,HONDA,JAZZ,14,honda,honda-jazz,dlt-94b8a69a
+2023-02,RY1,HONDA,MOBILIO,1,honda,,dlt-94b8a69a
+2023-02,RY1,HONDA,ODYSSEY ABSOLUTE EX,1,honda,honda-odyssey,dlt-94b8a69a
+2023-02,RY1,HONDA,ODYSSEY e-HEV ABSOLUTE EX,3,honda,honda-odyssey,dlt-94b8a69a
+2023-02,RY1,HONDA,STEP WGN E HEV SPADA G EX,2,honda,honda-step-wgn,dlt-94b8a69a
+2023-02,RY1,HONDA,STEP WGN SPADA PREMIUM LINE,1,honda,honda-step-wgn,dlt-94b8a69a
+2023-02,RY1,HONDA,STEP WGN e-HEV SPADA PREMIUM,6,honda,honda-step-wgn,dlt-94b8a69a
+2023-02,RY1,HONDA,STEPWAGON SPADA2.0 HYBRID,1,honda,,dlt-94b8a69a
+2023-02,RY1,HONDA,STEPWGN e:HEV AIR,2,honda,,dlt-94b8a69a
+2023-02,RY1,HONDA,STEPWGN e:HEV SPADA,7,honda,,dlt-94b8a69a
+2023-02,RY1,HYUNDAI,CRETA,198,hyundai,hyundai-creta,dlt-94b8a69a
+2023-02,RY1,HYUNDAI,GRAND STAREX,2,hyundai,,dlt-94b8a69a
+2023-02,RY1,ISUZU,D-MAX,8210,isuzu,isuzu-d-max,dlt-94b8a69a
+2023-02,RY1,ISUZU,MU-X,2400,isuzu,isuzu-mu-x,dlt-94b8a69a
+2023-02,RY1,ISUZU,TFR54HY,1,isuzu,,dlt-94b8a69a
+2023-02,RY1,JAGUAR,F-PACE 2.0 LITRE T/C PETROL,1,jaguar,,dlt-94b8a69a
+2023-02,RY1,JAGUAR,F-PACE 2.0L T/C AWD AUTO,1,jaguar,,dlt-94b8a69a
+2023-02,RY1,JEEP,WRANGLER 80TH ANNIVERSARY,1,jeep,,dlt-94b8a69a
+2023-02,RY1,JEEP,WRANGLER RUBICON 2 DOOR,1,jeep,,dlt-94b8a69a
+2023-02,RY1,JEEP,WRANGLER RUBICON 2dr 2.0,1,jeep,,dlt-94b8a69a
+2023-02,RY1,JEEP,WRANGLER RUBICON 4 DOOR,10,jeep,,dlt-94b8a69a
+2023-02,RY1,LAMBORGHINI,HURACAN EVO RWD,1,lamborghini,,dlt-94b8a69a
+2023-02,RY1,LAMBORGHINI,HURACAN EVO RWD SPYDER,1,lamborghini,,dlt-94b8a69a
+2023-02,RY1,LAMBORGHINI,HURACAN STO,3,lamborghini,,dlt-94b8a69a
+2023-02,RY1,LAMBORGHINI,URUS,3,lamborghini,,dlt-94b8a69a
+2023-02,RY1,LAND ROVER,DEFENDER 2.0L T/C AWD,1,land-rover,,dlt-94b8a69a
+2023-02,RY1,LAND ROVER,DEFENDER 2.0L T/C AWD AUTO SE,2,land-rover,,dlt-94b8a69a
+2023-02,RY1,LAND ROVER,DEFENDER 2.0L T/C PETROL PHEV,2,land-rover,,dlt-94b8a69a
+2023-02,RY1,LAND ROVER,DEFENDER 3.0 LITRE T/C AWD,1,land-rover,,dlt-94b8a69a
+2023-02,RY1,LAND ROVER,RANGE ROVER 2.0L T/C PETROL,1,land-rover,,dlt-94b8a69a
+2023-02,RY1,LAND ROVER,RANGE ROVER 2.0L T/C PHEV,1,land-rover,,dlt-94b8a69a
+2023-02,RY1,LAND ROVER,RANGE ROVER 3.0 LITRE T/C,1,land-rover,,dlt-94b8a69a
+2023-02,RY1,LAND ROVER,RANGE ROVER 3.0 LITRE T/C AWD,2,land-rover,,dlt-94b8a69a
+2023-02,RY1,LAND ROVER,RANGE ROVER EVOQUE 1.5LITRE,3,land-rover,,dlt-94b8a69a
+2023-02,RY1,LAND ROVER,RANGE ROVER EVOQUE 2.0L,1,land-rover,,dlt-94b8a69a
+2023-02,RY1,LAND ROVER,RANGE ROVER SPORT 2.0L T/C,2,land-rover,,dlt-94b8a69a
+2023-02,RY1,LAND ROVER,RANGEROVER EVOQUE1.5LITRE T/C,1,land-rover,,dlt-94b8a69a
+2023-02,RY1,LEXUS,,1,lexus,,dlt-94b8a69a
+2023-02,RY1,LEXUS,ES300H,14,lexus,,dlt-94b8a69a
+2023-02,RY1,LEXUS,IS300H,8,lexus,,dlt-94b8a69a
+2023-02,RY1,LEXUS,LM300h,15,lexus,,dlt-94b8a69a
+2023-02,RY1,LEXUS,LS500H,1,lexus,,dlt-94b8a69a
+2023-02,RY1,LEXUS,LX600 EXECUTIVE,1,lexus,,dlt-94b8a69a
+2023-02,RY1,LEXUS,LX600 F SPORT,1,lexus,,dlt-94b8a69a
+2023-02,RY1,LEXUS,NX350H,4,lexus,,dlt-94b8a69a
+2023-02,RY1,LEXUS,NX450H+,1,lexus,,dlt-94b8a69a
+2023-02,RY1,LEXUS,RX300,1,lexus,,dlt-94b8a69a
+2023-02,RY1,LEXUS,RX450H+,1,lexus,,dlt-94b8a69a
+2023-02,RY1,LEXUS,UX250H,11,lexus,,dlt-94b8a69a
+2023-02,RY1,LUMIN,CHANGAN LUMIN SWEET,1,changan,,dlt-94b8a69a
+2023-02,RY1,MASERATI,LEVANTE DIESEL GRANLUSSO,1,maserati,,dlt-94b8a69a
+2023-02,RY1,MASERATI,LEVANTE GRANSPORT,1,maserati,,dlt-94b8a69a
+2023-02,RY1,MASERATI,MC20,1,maserati,,dlt-94b8a69a
+2023-02,RY1,MASERATI,MC20 COUPE,1,maserati,,dlt-94b8a69a
+2023-02,RY1,MASERATI,QUATTROPORTE DIESEL GRANL,1,maserati,,dlt-94b8a69a
+2023-02,RY1,MAZDA,MAZDA 2,1077,mazda,mazda-mazda2,dlt-94b8a69a
+2023-02,RY1,MAZDA,MAZDA 3,158,mazda,mazda-mazda3,dlt-94b8a69a
+2023-02,RY1,MAZDA,MAZDA BT-50,83,mazda,mazda-bt-50,dlt-94b8a69a
+2023-02,RY1,MAZDA,MAZDA CX-3,309,mazda,mazda-cx-3,dlt-94b8a69a
+2023-02,RY1,MAZDA,MAZDA CX-30,609,mazda,mazda-cx-30,dlt-94b8a69a
+2023-02,RY1,MAZDA,MAZDA CX-5,88,mazda,mazda-cx-5,dlt-94b8a69a
+2023-02,RY1,MAZDA,MAZDA CX-8,136,mazda,mazda-cx-8,dlt-94b8a69a
+2023-02,RY1,MAZDA,MAZDA MX-5,1,mazda,mazda-mx-5,dlt-94b8a69a
+2023-02,RY1,MAZDA,MX-5 ROADSTER 990S,1,mazda,,dlt-94b8a69a
+2023-02,RY1,MCLAREN,720S COUPE,1,mclaren,,dlt-94b8a69a
+2023-02,RY1,MCLAREN,ARTURA-COUPE,2,mclaren,,dlt-94b8a69a
+2023-02,RY1,MCLAREN,GT,1,mclaren,,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,A 180,1,mercedes-benz,mercedes-benz-a-class,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,A 200,103,mercedes-benz,mercedes-benz-a-class,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,AMG C 43 4MATIC,1,mercedes-benz,,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,AMG C43 4MATIC Coupe,12,mercedes-benz,,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,AMG CLS 53 4MATIC,33,mercedes-benz,,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,AMG G 63,3,mercedes-benz,,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,AMG G400D LINE PREMIUM PLUS,1,mercedes-benz,,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,AMG GLA 35 4MATIC,10,mercedes-benz,,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,AMG GLC 43 4MATIC Coupe,10,mercedes-benz,,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,AMG GLE 53 4MATIC+,11,mercedes-benz,,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,AMG GT C,1,mercedes-benz,,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,C 200 Coupe,48,mercedes-benz,mercedes-benz-c-class,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,C 220 d,247,mercedes-benz,mercedes-benz-c-class,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,C 300 e,34,mercedes-benz,mercedes-benz-c-class,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,C 350 e,66,mercedes-benz,mercedes-benz-c-class,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,C250 COUPE,3,mercedes-benz,,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,CLA250,1,mercedes-benz,,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,CLS 220 d,94,mercedes-benz,mercedes-benz-cls,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,CLS 250 d COUPE,1,mercedes-benz,mercedes-benz-cls,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,CLS 300 d,9,mercedes-benz,mercedes-benz-cls,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,E 200 Coupe,15,mercedes-benz,mercedes-benz-e-class,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,E 220 d,87,mercedes-benz,mercedes-benz-e-class,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,E 300 Cabriolet,1,mercedes-benz,mercedes-benz-e-class,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,E 300 e,139,mercedes-benz,mercedes-benz-e-class,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,E 350 e,7,mercedes-benz,mercedes-benz-e-class,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,E300 Coupe,1,mercedes-benz,,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,G 350 d,3,mercedes-benz,,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,G400 D,11,mercedes-benz,,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,G63 AMG,1,mercedes-benz,,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,GLA 200,203,mercedes-benz,mercedes-benz-gla,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,GLA 250,5,mercedes-benz,mercedes-benz-gla,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,GLB 200,14,mercedes-benz,,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,GLC 220 d,121,mercedes-benz,mercedes-benz-glc,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,GLC 220 d 4MATIC Coupe,36,mercedes-benz,mercedes-benz-glc,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,GLC 250 d 4MATIC,6,mercedes-benz,mercedes-benz-glc,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,GLC 300 e 4MATIC,59,mercedes-benz,mercedes-benz-glc,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,GLC 300 e 4MATIC Coupe,30,mercedes-benz,mercedes-benz-glc,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,GLE 300 d 4MATIC,35,mercedes-benz,mercedes-benz-gle,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,GLE 350 d 4MATIC Coupe,1,mercedes-benz,mercedes-benz-gle,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,GLE 350 de 4MATIC,28,mercedes-benz,mercedes-benz-gle,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,GLE 500 e 4MATIC,1,mercedes-benz,mercedes-benz-gle,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,GLS 350 d 4MATIC,12,mercedes-benz,mercedes-benz-gls,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,Maybach GLS 600 4MATIC,1,mercedes-benz,,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,S 350 d,19,mercedes-benz,mercedes-benz-s-class,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,S 500 e,2,mercedes-benz,mercedes-benz-s-class,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,S 560 e,9,mercedes-benz,mercedes-benz-s-class,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,S 580 e,28,mercedes-benz,mercedes-benz-s-class,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,SPRINTER 316 CDI,2,mercedes-benz,,dlt-94b8a69a
+2023-02,RY1,MERCEDES BENZ,V 250 d,1,mercedes-benz,,dlt-94b8a69a
+2023-02,RY1,MG,EP,300,mg,mg-ep,dlt-94b8a69a
+2023-02,RY1,MG,HS,133,mg,mg-hs,dlt-94b8a69a
+2023-02,RY1,MG,HS PHEV,126,mg,mg-hs,dlt-94b8a69a
+2023-02,RY1,MG,MG EXTENDER,92,mg,mg-extender,dlt-94b8a69a
+2023-02,RY1,MG,MG GS,3,mg,,dlt-94b8a69a
+2023-02,RY1,MG,MG4 ELECTRIC,318,mg,mg-mg4,dlt-94b8a69a
+2023-02,RY1,MG,MG5,939,mg,mg-mg5,dlt-94b8a69a
+2023-02,RY1,MG,NEW MG3,7,mg,mg-mg3,dlt-94b8a69a
+2023-02,RY1,MG,VS HEV,168,mg,mg-vs,dlt-94b8a69a
+2023-02,RY1,MG,ZS,339,mg,mg-zs,dlt-94b8a69a
+2023-02,RY1,MG,ZS EV,241,mg,mg-zs-ev,dlt-94b8a69a
+2023-02,RY1,MINI,COOPER SD ALL4 COUNTRYMAN,1,mini,,dlt-94b8a69a
+2023-02,RY1,MINI,Cooper Clubman RHD,1,mini,,dlt-94b8a69a
+2023-02,RY1,MINI,Cooper D 5-Turer RHD,1,mini,,dlt-94b8a69a
+2023-02,RY1,MINI,Cooper Hatch RHD,6,mini,,dlt-94b8a69a
+2023-02,RY1,MINI,Cooper S Cabrio RHD,1,mini,,dlt-94b8a69a
+2023-02,RY1,MINI,Cooper S Clubman RHD,2,mini,,dlt-94b8a69a
+2023-02,RY1,MINI,Cooper S Countryman RHD,94,mini,,dlt-94b8a69a
+2023-02,RY1,MINI,Cooper S Hatch RHD,7,mini,,dlt-94b8a69a
+2023-02,RY1,MINI,Cooper SE Hatch RHD,23,mini,,dlt-94b8a69a
+2023-02,RY1,MINI,JOHN COOPER WORKS GP,1,mini,,dlt-94b8a69a
+2023-02,RY1,MINI,John Cooper Works ALL4 Cl,1,mini,,dlt-94b8a69a
+2023-02,RY1,MINI,John Cooper Works ALL4 Co,3,mini,,dlt-94b8a69a
+2023-02,RY1,MINI,John Cooper Works Hatch R,1,mini,,dlt-94b8a69a
+2023-02,RY1,MINI,John Cooper Works cabrio,1,mini,,dlt-94b8a69a
+2023-02,RY1,MITSUBISHI,ATTRAGE,364,mitsubishi,mitsubishi-attrage,dlt-94b8a69a
+2023-02,RY1,MITSUBISHI,MIRAGE,319,mitsubishi,mitsubishi-mirage,dlt-94b8a69a
+2023-02,RY1,MITSUBISHI,OUTLANDER PHEV,16,mitsubishi,mitsubishi-outlander,dlt-94b8a69a
+2023-02,RY1,MITSUBISHI,PAJERO SPORT,694,mitsubishi,mitsubishi-pajero-sport,dlt-94b8a69a
+2023-02,RY1,MITSUBISHI,TRITON,840,mitsubishi,mitsubishi-triton,dlt-94b8a69a
+2023-02,RY1,MITSUBISHI,XPANDER,1432,mitsubishi,mitsubishi-xpander,dlt-94b8a69a
+2023-02,RY1,NETA,NETA V,1254,neta,neta-v,dlt-94b8a69a
+2023-02,RY1,NISSAN,ALMERA,642,nissan,nissan-almera,dlt-94b8a69a
+2023-02,RY1,NISSAN,BDBARGZL33MHA---A-,1,nissan,,dlt-94b8a69a
+2023-02,RY1,NISSAN,BDWARBZN17XHAY114Z,1,nissan,,dlt-94b8a69a
+2023-02,RY1,NISSAN,BDWARGZN17XHAY124Z,1,nissan,,dlt-94b8a69a
+2023-02,RY1,NISSAN,FDWURVZK13EH5-----,1,nissan,,dlt-94b8a69a
+2023-02,RY1,NISSAN,GT-R,1,nissan,,dlt-94b8a69a
+2023-02,RY1,NISSAN,GT-R NISMO,1,nissan,,dlt-94b8a69a
+2023-02,RY1,NISSAN,GT-R PURE EDITION,1,nissan,,dlt-94b8a69a
+2023-02,RY1,NISSAN,GTR BLACK EDITION,2,nissan,,dlt-94b8a69a
+2023-02,RY1,NISSAN,GTR NISMO SPECIAL EDITION,1,nissan,,dlt-94b8a69a
+2023-02,RY1,NISSAN,GTR TRACK EDITION,2,nissan,,dlt-94b8a69a
+2023-02,RY1,NISSAN,KICKS,901,nissan,nissan-kicks,dlt-94b8a69a
+2023-02,RY1,NISSAN,LEAF,6,nissan,,dlt-94b8a69a
+2023-02,RY1,NISSAN,MARCH,23,nissan,nissan-march,dlt-94b8a69a
+2023-02,RY1,NISSAN,NAVARA,150,nissan,nissan-navara,dlt-94b8a69a
+2023-02,RY1,NISSAN,NOTE,6,nissan,nissan-note,dlt-94b8a69a
+2023-02,RY1,NISSAN,SERENA HYBRID 2.0 HIGHWAY STAR,1,nissan,,dlt-94b8a69a
+2023-02,RY1,NISSAN,SYLPHY 1.6 E CVT,1,nissan,,dlt-94b8a69a
+2023-02,RY1,NISSAN,TERRA,118,nissan,nissan-terra,dlt-94b8a69a
+2023-02,RY1,NISSAN,UVL4RDRE26KHE-----,1,nissan,,dlt-94b8a69a
+2023-02,RY1,NISSAN,X-TRAIL,3,nissan,,dlt-94b8a69a
+2023-02,RY1,ORA,GOOD CAT,282,ora,ora-good-cat,dlt-94b8a69a
+2023-02,RY1,PEUGEOT,2008 P24 BG,15,peugeot,,dlt-94b8a69a
+2023-02,RY1,PEUGEOT,3008 P84 BG,26,peugeot,,dlt-94b8a69a
+2023-02,RY1,PEUGEOT,5008 P87 BG,7,peugeot,,dlt-94b8a69a
+2023-02,RY1,PORSCHE,718 BOXSTER T,2,porsche,,dlt-94b8a69a
+2023-02,RY1,PORSCHE,718 CAYMAN,1,porsche,,dlt-94b8a69a
+2023-02,RY1,PORSCHE,911 CARRERA,5,porsche,,dlt-94b8a69a
+2023-02,RY1,PORSCHE,911 CARRERA 4 GTS,1,porsche,,dlt-94b8a69a
+2023-02,RY1,PORSCHE,911 CARRERA GTS,1,porsche,,dlt-94b8a69a
+2023-02,RY1,PORSCHE,911 CARRERA S,1,porsche,,dlt-94b8a69a
+2023-02,RY1,PORSCHE,911 TARGA 4 GTS,1,porsche,,dlt-94b8a69a
+2023-02,RY1,PORSCHE,911 TARGA 4S,1,porsche,,dlt-94b8a69a
+2023-02,RY1,PORSCHE,911 TARGA 4S PDK,1,porsche,,dlt-94b8a69a
+2023-02,RY1,PORSCHE,CAYENNE E-HYBRID,9,porsche,porsche-cayenne,dlt-94b8a69a
+2023-02,RY1,PORSCHE,CAYENNE E-HYBRID COUPE,41,porsche,porsche-cayenne,dlt-94b8a69a
+2023-02,RY1,PORSCHE,CAYENNE E-HYBRID COUPE P.,18,porsche,porsche-cayenne,dlt-94b8a69a
+2023-02,RY1,PORSCHE,CAYENNE E-HYBRID P.E.,7,porsche,porsche-cayenne,dlt-94b8a69a
+2023-02,RY1,PORSCHE,CAYENNE E-HYBRID PLATINUM,1,porsche,porsche-cayenne,dlt-94b8a69a
+2023-02,RY1,PORSCHE,CAYENNE GTS,1,porsche,porsche-cayenne,dlt-94b8a69a
+2023-02,RY1,PORSCHE,CAYENNE TURBO GT,1,porsche,porsche-cayenne,dlt-94b8a69a
+2023-02,RY1,PORSCHE,MACAN,23,porsche,porsche-macan,dlt-94b8a69a
+2023-02,RY1,PORSCHE,MACAN 2.0,1,porsche,porsche-macan,dlt-94b8a69a
+2023-02,RY1,PORSCHE,MACAN 2.0 PDK,5,porsche,porsche-macan,dlt-94b8a69a
+2023-02,RY1,PORSCHE,MACAN T 2.0,1,porsche,porsche-macan,dlt-94b8a69a
+2023-02,RY1,PORSCHE,PANAMERA 4 E-HYBRID,7,porsche,porsche-panamera,dlt-94b8a69a
+2023-02,RY1,PORSCHE,PANAMERA 4 E-HYBRID EXEC.,2,porsche,porsche-panamera,dlt-94b8a69a
+2023-02,RY1,PORSCHE,PANAMERA 4 E-HYBRID EXECUTIVE,2,porsche,porsche-panamera,dlt-94b8a69a
+2023-02,RY1,PORSCHE,PANAMERA 4 E-HYBRID P.E.,6,porsche,porsche-panamera,dlt-94b8a69a
+2023-02,RY1,PORSCHE,PANAMERA 4 E-HYBRID PLATINUM,3,porsche,porsche-panamera,dlt-94b8a69a
+2023-02,RY1,PORSCHE,PANAMERA 4 E-HYBRID S.T.,1,porsche,porsche-panamera,dlt-94b8a69a
+2023-02,RY1,PORSCHE,PANAMERA 4 E-HYBRID SPORT,1,porsche,porsche-panamera,dlt-94b8a69a
+2023-02,RY1,PORSCHE,TAYCAN,3,porsche,porsche-taycan,dlt-94b8a69a
+2023-02,RY1,PORSCHE,TAYCAN 4 CROSS TURISMO,1,porsche,porsche-taycan,dlt-94b8a69a
+2023-02,RY1,PORSCHE,TAYCAN 4S,10,porsche,porsche-taycan,dlt-94b8a69a
+2023-02,RY1,PORSCHE,TAYCAN 4S CROSS TURISMO,1,porsche,porsche-taycan,dlt-94b8a69a
+2023-02,RY1,PORSCHE,TAYCAN GTS,2,porsche,porsche-taycan,dlt-94b8a69a
+2023-02,RY1,PORSCHE,TAYCAN SPORT TURISMO,3,porsche,porsche-taycan,dlt-94b8a69a
+2023-02,RY1,PORSCHE,TAYCAN TURBO S,2,porsche,porsche-taycan,dlt-94b8a69a
+2023-02,RY1,ROLLS-ROYCE,Cullinan,1,rolls-royce,,dlt-94b8a69a
+2023-02,RY1,ROLLS-ROYCE,Ghost,3,rolls-royce,,dlt-94b8a69a
+2023-02,RY1,ROLLS-ROYCE,Ghost Extended Wheelbase,1,rolls-royce,,dlt-94b8a69a
+2023-02,RY1,ROLLS-ROYCE,Wraith,1,rolls-royce,,dlt-94b8a69a
+2023-02,RY1,SUBARU,BRZ 2.4 RWD 6MT,1,subaru,,dlt-94b8a69a
+2023-02,RY1,SUBARU,BRZ 2.4 RWD EyeSight 6AT,3,subaru,,dlt-94b8a69a
+2023-02,RY1,SUBARU,FORESTER 2.0i-S,4,subaru,subaru-forester,dlt-94b8a69a
+2023-02,RY1,SUBARU,FORESTER 2.0i-S ES,215,subaru,subaru-forester,dlt-94b8a69a
+2023-02,RY1,SUBARU,OUTBACK 2.5i-T EyeSight,5,subaru,,dlt-94b8a69a
+2023-02,RY1,SUBARU,WRX 4D 2.4 EyeSight AWD CVT,2,subaru,,dlt-94b8a69a
+2023-02,RY1,SUBARU,XV 2.0i-P,1,subaru,subaru-xv,dlt-94b8a69a
+2023-02,RY1,SUBARU,XV 2.0i-P ES,37,subaru,subaru-xv,dlt-94b8a69a
+2023-02,RY1,SUZUKI,CELERIO GA 1.0L,74,suzuki,suzuki-celerio,dlt-94b8a69a
+2023-02,RY1,SUZUKI,CELERIO GL 1.0L,137,suzuki,suzuki-celerio,dlt-94b8a69a
+2023-02,RY1,SUZUKI,CELERIO GX 1.0L,73,suzuki,suzuki-celerio,dlt-94b8a69a
+2023-02,RY1,SUZUKI,CIAZ GL CVT,65,suzuki,suzuki-ciaz,dlt-94b8a69a
+2023-02,RY1,SUZUKI,CIAZ GL MT,5,suzuki,suzuki-ciaz,dlt-94b8a69a
+2023-02,RY1,SUZUKI,CIAZ GLX 1.25L CVT,1,suzuki,suzuki-ciaz,dlt-94b8a69a
+2023-02,RY1,SUZUKI,CIAZ GLX CVT,1,suzuki,suzuki-ciaz,dlt-94b8a69a
+2023-02,RY1,SUZUKI,CIAZ RS CVT,9,suzuki,suzuki-ciaz,dlt-94b8a69a
+2023-02,RY1,SUZUKI,ERTIGA GL 1.5L,2,suzuki,suzuki-ertiga,dlt-94b8a69a
+2023-02,RY1,SUZUKI,ERTIGA GX 1.4L,1,suzuki,suzuki-ertiga,dlt-94b8a69a
+2023-02,RY1,SUZUKI,ERTIGA GX 1.5L,54,suzuki,suzuki-ertiga,dlt-94b8a69a
+2023-02,RY1,SUZUKI,JIMNY 1.5L 4AT,3,suzuki,,dlt-94b8a69a
+2023-02,RY1,SUZUKI,JIMNY SIERRA,1,suzuki,,dlt-94b8a69a
+2023-02,RY1,SUZUKI,JIMNY SIERRA JC,3,suzuki,,dlt-94b8a69a
+2023-02,RY1,SUZUKI,SPACIA GEAR HYBRID XZ TURBO,2,suzuki,,dlt-94b8a69a
+2023-02,RY1,SUZUKI,SPACIA GEAR MY STYLE HYBRID,1,suzuki,,dlt-94b8a69a
+2023-02,RY1,SUZUKI,SWIFT GA 1.25L CVT,1,suzuki,suzuki-swift,dlt-94b8a69a
+2023-02,RY1,SUZUKI,SWIFT GL 1.2L CVT,129,suzuki,suzuki-swift,dlt-94b8a69a
+2023-02,RY1,SUZUKI,SWIFT GL MAX EDITION,2,suzuki,suzuki-swift,dlt-94b8a69a
+2023-02,RY1,SUZUKI,SWIFT GL PLUS 1.2L CVT,338,suzuki,suzuki-swift,dlt-94b8a69a
+2023-02,RY1,SUZUKI,SWIFT GLX 1.2L CVT,234,suzuki,suzuki-swift,dlt-94b8a69a
+2023-02,RY1,SUZUKI,SWIFT GLX-Navi 1.2L CVT,2,suzuki,suzuki-swift,dlt-94b8a69a
+2023-02,RY1,SUZUKI,XL7 1.5L,149,suzuki,suzuki-xl7,dlt-94b8a69a
+2023-02,RY1,TESLA,MODEL 3 LONG RANGE,103,tesla,tesla-model-3,dlt-94b8a69a
+2023-02,RY1,TESLA,MODEL 3 PERFORMANCE,2,tesla,tesla-model-3,dlt-94b8a69a
+2023-02,RY1,TESLA,MODEL 3 STANDARD RANGE PLUS,1,tesla,tesla-model-3,dlt-94b8a69a
+2023-02,RY1,TESLA,MODEL Y LONG RANGE,322,tesla,tesla-model-y,dlt-94b8a69a
+2023-02,RY1,TESLA,MODEL Y LONG RANGE DUAL MOTOR,1,tesla,tesla-model-y,dlt-94b8a69a
+2023-02,RY1,TESLA,MODEL Y PERFORMANCE,139,tesla,tesla-model-y,dlt-94b8a69a
+2023-02,RY1,TESLA,MODEL Y STANDARD,1,tesla,tesla-model-y,dlt-94b8a69a
+2023-02,RY1,TESLA,MODEL Y STANDARD RANGE,2,tesla,tesla-model-y,dlt-94b8a69a
+2023-02,RY1,TESLA,Model 3 Performance,40,tesla,tesla-model-3,dlt-94b8a69a
+2023-02,RY1,TESLA,Model 3 Rear-Wheel Drive,29,tesla,tesla-model-3,dlt-94b8a69a
+2023-02,RY1,TESLA,Model Y Rear-Wheel Drive,69,tesla,tesla-model-y,dlt-94b8a69a
+2023-02,RY1,TOYOTA,2.0G Extremo,1,toyota,,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD,13,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD 2.5 HYBRID EXECUTIVE,1,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD 2.5 HYBRID G F,3,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD 2.5 HYBRID G F PACKAGE,10,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD 2.5 HYBRID S E-FOUR,1,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD 2.5 HYBRID S TYPE GOLD,3,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD 2.5 HYBRID SR C,5,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD 2.5 HYBRID SR C PACKAG,4,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD 2.5 HYBRID SRC PACKAGE,16,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD 2.5 HYBRID X E-FOUR,7,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD 2.5 SC PACKAGE,116,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD 2.5L SC PACKAGE,29,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,"ALPHARD 2.5S ""TYPE GOLD III""",2,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD HYBRID GF 2.5L,4,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD HYBRID GF PACKAGE,1,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD HYBRID GF PACKAGE 2.5L,3,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD HYBRID S TYPE GOLD,1,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD HYBRID S TYPE GOLD III,3,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD HYBRID SR C,4,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD HYBRID SRC 2.5L,14,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD HYBRID SRC PACKAGE,27,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD HYBRID X,6,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD HYBRID X 2.5L,10,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD HYBRID X E-FOUR,3,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,"ALPHARD S ""TYPE GOLD III""",1,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD SC PACKAGE,68,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD SC PACKAGE 2.5L,76,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD SRC HYBRID 2.5L,8,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,ALPHARD X HYBRID 2.5L,1,toyota,toyota-alphard,dlt-94b8a69a
+2023-02,RY1,TOYOTA,BZ4X,5,toyota,toyota-bz4x,dlt-94b8a69a
+2023-02,RY1,TOYOTA,C-HR,96,toyota,toyota-c-hr,dlt-94b8a69a
+2023-02,RY1,TOYOTA,CAMRY,601,toyota,toyota-camry,dlt-94b8a69a
+2023-02,RY1,TOYOTA,COMMUTER,44,toyota,toyota-commuter,dlt-94b8a69a
+2023-02,RY1,TOYOTA,COROLLA,468,toyota,toyota-corolla,dlt-94b8a69a
+2023-02,RY1,TOYOTA,COROLLA CROSS,2186,toyota,toyota-corolla-cross,dlt-94b8a69a
+2023-02,RY1,TOYOTA,CROWN RS LIMITED II,1,toyota,,dlt-94b8a69a
+2023-02,RY1,TOYOTA,FJ CRUISER 4.0L,1,toyota,,dlt-94b8a69a
+2023-02,RY1,TOYOTA,FORTUNER,3065,toyota,toyota-fortuner,dlt-94b8a69a
+2023-02,RY1,TOYOTA,GR 86 RZ,3,toyota,,dlt-94b8a69a
+2023-02,RY1,TOYOTA,GR COROLLA,1,toyota,,dlt-94b8a69a
+2023-02,RY1,TOYOTA,GR YARIS,1,toyota,toyota-gr-yaris,dlt-94b8a69a
+2023-02,RY1,TOYOTA,GR86,4,toyota,,dlt-94b8a69a
+2023-02,RY1,TOYOTA,GR86 RZ 2WD,2,toyota,,dlt-94b8a69a
+2023-02,RY1,TOYOTA,HARRIER HYBRID G,2,toyota,,dlt-94b8a69a
+2023-02,RY1,TOYOTA,HARRIER HYBRID Z,1,toyota,,dlt-94b8a69a
+2023-02,RY1,TOYOTA,HILUX REVO,4764,toyota,toyota-hilux-revo,dlt-94b8a69a
+2023-02,RY1,TOYOTA,INNOVA,31,toyota,toyota-innova,dlt-94b8a69a
+2023-02,RY1,TOYOTA,LAND CRUISER 300 GR SPORT,2,toyota,,dlt-94b8a69a
+2023-02,RY1,TOYOTA,LAND CRUISER 300 SERIES GR,1,toyota,,dlt-94b8a69a
+2023-02,RY1,TOYOTA,LAND CRUISER 300 ZX,1,toyota,,dlt-94b8a69a
+2023-02,RY1,TOYOTA,LAND CRUISER PRADO TX,1,toyota,,dlt-94b8a69a
+2023-02,RY1,TOYOTA,LANDCRUISER PRADO 2.8,1,toyota,,dlt-94b8a69a
+2023-02,RY1,TOYOTA,LANDCRUISER PRADO 2.8 TXL,2,toyota,,dlt-94b8a69a
+2023-02,RY1,TOYOTA,NOAH SZ,1,toyota,,dlt-94b8a69a
+2023-02,RY1,TOYOTA,NOAH SZ HYBRID,2,toyota,,dlt-94b8a69a
+2023-02,RY1,TOYOTA,NSP152R-AHXRKT CA,1,toyota,,dlt-94b8a69a
+2023-02,RY1,TOYOTA,SIENTA,69,toyota,toyota-sienta,dlt-94b8a69a
+2023-02,RY1,TOYOTA,TR TRANSFORMER,4,toyota,,dlt-94b8a69a
+2023-02,RY1,TOYOTA,VELLFIRE,1,toyota,toyota-vellfire,dlt-94b8a69a
+2023-02,RY1,TOYOTA,VELLFIRE 2.5 HYBRID ZR G,1,toyota,toyota-vellfire,dlt-94b8a69a
+2023-02,RY1,TOYOTA,VELLFIRE 2.5Z G EDITION,2,toyota,toyota-vellfire,dlt-94b8a69a
+2023-02,RY1,TOYOTA,VELLFIRE HYBRID E-FOUR,1,toyota,toyota-vellfire,dlt-94b8a69a
+2023-02,RY1,TOYOTA,VELLFIRE HYBRID X 2.5L,2,toyota,toyota-vellfire,dlt-94b8a69a
+2023-02,RY1,TOYOTA,VELOZ,1435,toyota,toyota-veloz,dlt-94b8a69a
+2023-02,RY1,TOYOTA,VIOS,13,toyota,toyota-vios,dlt-94b8a69a
+2023-02,RY1,TOYOTA,VOXY,1,toyota,toyota-voxy,dlt-94b8a69a
+2023-02,RY1,TOYOTA,VOXY HYBRID S-G,1,toyota,toyota-voxy,dlt-94b8a69a
+2023-02,RY1,TOYOTA,VOXY HYBRID S-Z,4,toyota,toyota-voxy,dlt-94b8a69a
+2023-02,RY1,TOYOTA,VOXY HYBRID SZ 1.8L,1,toyota,toyota-voxy,dlt-94b8a69a
+2023-02,RY1,TOYOTA,VOXY S-Z 2WD,2,toyota,toyota-voxy,dlt-94b8a69a
+2023-02,RY1,TOYOTA,YARIS,1767,toyota,toyota-yaris,dlt-94b8a69a
+2023-02,RY1,TOYOTA,YARIS ATIV,4958,toyota,toyota-yaris-ativ,dlt-94b8a69a
+2023-02,RY1,VOLVO,C40,39,volvo,volvo-c40,dlt-94b8a69a
+2023-02,RY1,VOLVO,S60,29,volvo,volvo-s60,dlt-94b8a69a
+2023-02,RY1,VOLVO,S90,14,volvo,volvo-s90,dlt-94b8a69a
+2023-02,RY1,VOLVO,V60,35,volvo,volvo-v60,dlt-94b8a69a
+2023-02,RY1,VOLVO,XC40,76,volvo,volvo-xc40,dlt-94b8a69a
+2023-02,RY1,VOLVO,XC60,79,volvo,volvo-xc60,dlt-94b8a69a
+2023-02,RY1,VOLVO,XC90,38,volvo,volvo-xc90,dlt-94b8a69a
+2023-02,RY2,FORD,RANGER,14,ford,ford-ranger,dlt-94b8a69a
+2023-02,RY2,FORD,RANGER RAPTOR,3,ford,ford-ranger-raptor,dlt-94b8a69a
+2023-02,RY2,HINO,XZB70R-ZEMHY,1,hino,,dlt-94b8a69a
+2023-02,RY2,HYUNDAI,H-1,113,hyundai,hyundai-h-1,dlt-94b8a69a
+2023-02,RY2,HYUNDAI,STARIA,406,hyundai,hyundai-staria,dlt-94b8a69a
+2023-02,RY2,ISUZU,D-MAX,23,isuzu,isuzu-d-max,dlt-94b8a69a
+2023-02,RY2,KIA,CARNIVAL,184,kia,kia-carnival,dlt-94b8a69a
+2023-02,RY2,KIA,GRAND CARNIVAL,8,kia,,dlt-94b8a69a
+2023-02,RY2,MG,MG EXTENDER,30,mg,mg-extender,dlt-94b8a69a
+2023-02,RY2,MG,V80,4,mg,,dlt-94b8a69a
+2023-02,RY2,MITSUBISHI,TRITON,10,mitsubishi,mitsubishi-triton,dlt-94b8a69a
+2023-02,RY2,NISSAN,NAVARA,9,nissan,nissan-navara,dlt-94b8a69a
+2023-02,RY2,NISSAN,UDB4RDRE26EWDDER-C,1,nissan,,dlt-94b8a69a
+2023-02,RY2,NISSAN,URVAN,9,nissan,,dlt-94b8a69a
+2023-02,RY2,NISSAN,UVL4RDRE26KHE-----,14,nissan,,dlt-94b8a69a
+2023-02,RY2,SSANGYONG,STAVIC SV200,1,ssangyong,,dlt-94b8a69a
+2023-02,RY2,SUZUKI,CARRY 1.5L MT,11,suzuki,suzuki-carry,dlt-94b8a69a
+2023-02,RY2,TOYOTA,COMMUTER,531,toyota,toyota-commuter,dlt-94b8a69a
+2023-02,RY2,TOYOTA,HIACE,24,toyota,toyota-hiace,dlt-94b8a69a
+2023-02,RY2,TOYOTA,HIACE MAJESTY,13,toyota,toyota-hiace-majesty,dlt-94b8a69a
+2023-02,RY2,TOYOTA,HILUX REVO,89,toyota,toyota-hilux-revo,dlt-94b8a69a
+2023-02,RY2,TOYOTA,TR TRANSFORMER,3,toyota,,dlt-94b8a69a
+2023-02,RY2,VOLKSWAGEN,CARAVELLE T69 2.0 L,9,volkswagen,,dlt-94b8a69a
+2023-02,RY3,BYD,T3,8,byd,byd-t3,dlt-94b8a69a
+2023-02,RY3,CHEVROLET,COLORADO X-CAB,1,chevrolet,,dlt-94b8a69a
+2023-02,RY3,DAIHATSU,HIJET CARGO,21,daihatsu,,dlt-94b8a69a
+2023-02,RY3,DFSK,EQ1021GF24Q7,1,dfsk,,dlt-94b8a69a
+2023-02,RY3,FORD,FORD RANGER iJCT9AH,1,ford,,dlt-94b8a69a
+2023-02,RY3,FORD,RANGER,433,ford,ford-ranger,dlt-94b8a69a
+2023-02,RY3,FORD,RANGER SWB,11,ford,ford-ranger,dlt-94b8a69a
+2023-02,RY3,FOTON,BJ1041V8JD3-RF,1,foton,,dlt-94b8a69a
+2023-02,RY3,FOTON,BJ1045V8JD3-FA,6,foton,,dlt-94b8a69a
+2023-02,RY3,HINO,FG8JF1D-JJT,1,hino,,dlt-94b8a69a
+2023-02,RY3,HINO,XZU600R-HKMLKT3,48,hino,,dlt-94b8a69a
+2023-02,RY3,ISUZU,D-MAX,6552,isuzu,isuzu-d-max,dlt-94b8a69a
+2023-02,RY3,ISUZU,FTR34JXXXU,3,isuzu,,dlt-94b8a69a
+2023-02,RY3,ISUZU,FTR34LXXXU,2,isuzu,,dlt-94b8a69a
+2023-02,RY3,ISUZU,FVZ34QNDXU,1,isuzu,,dlt-94b8a69a
+2023-02,RY3,ISUZU,NLR77EXXXW,10,isuzu,,dlt-94b8a69a
+2023-02,RY3,ISUZU,NLR85EXSXY,20,isuzu,,dlt-94b8a69a
+2023-02,RY3,ISUZU,NLR85EXXXU,182,isuzu,,dlt-94b8a69a
+2023-02,RY3,KIA,K2500(COOL BOX),1,kia,,dlt-94b8a69a
+2023-02,RY3,MAZDA,MAZDA BT-50,83,mazda,mazda-bt-50,dlt-94b8a69a
+2023-02,RY3,MG,MG EXTENDER,43,mg,mg-extender,dlt-94b8a69a
+2023-02,RY3,MITSUBISHI,KP3TEYJFPRU,1,mitsubishi,,dlt-94b8a69a
+2023-02,RY3,MITSUBISHI,TRITON,832,mitsubishi,mitsubishi-triton,dlt-94b8a69a
+2023-02,RY3,NISSAN,,1,nissan,,dlt-94b8a69a
+2023-02,RY3,NISSAN,NAVARA,171,nissan,nissan-navara,dlt-94b8a69a
+2023-02,RY3,SOKON,CRC5020CLS,2,sokon,,dlt-94b8a69a
+2023-02,RY3,SUZUKI,AQ416PUM14058,1,suzuki,,dlt-94b8a69a
+2023-02,RY3,SUZUKI,CARRY 1.5L MT,252,suzuki,suzuki-carry,dlt-94b8a69a
+2023-02,RY3,SUZUKI,SUPER CARRY X PICK UP,1,suzuki,,dlt-94b8a69a
+2023-02,RY3,TOYOTA,,1,toyota,,dlt-94b8a69a
+2023-02,RY3,TOYOTA,B-Cab 4X2 2.7J,1,toyota,,dlt-94b8a69a
+2023-02,RY3,TOYOTA,COMMUTER,3,toyota,toyota-commuter,dlt-94b8a69a
+2023-02,RY3,TOYOTA,HIACE,47,toyota,toyota-hiace,dlt-94b8a69a
+2023-02,RY3,TOYOTA,HIACE DIESEL COMMUTER,1,toyota,,dlt-94b8a69a
+2023-02,RY3,TOYOTA,HILUX REVO,6658,toyota,toyota-hilux-revo,dlt-94b8a69a
+2023-02,RY3,TOYOTA,KUN15R-TRMDHT  B8,1,toyota,,dlt-94b8a69a
+2023-02,RY3,TOYOTA,LAND CRUISER 79 PICK UP 4.2,1,toyota,,dlt-94b8a69a

@@ -1,0 +1,475 @@
+period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
+2022-01,RY1,AUDI,A4 AV 45 TFSI q S line BE,1,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,A5 CP 40 TFSI S line,15,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,A5 CP 45 TFSI q S line BE,8,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,A5 SB 40 TFSI S line,22,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,A5 SB 45 TFSI q S line BE,4,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,A6 40 TFSI S line,1,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,A6 AV 45 TFSI q S line BE,1,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,A7 SB 45 TFSI q,1,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,A7 SB 55 TFSI q S line,1,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,Q2 35 TFSI,2,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,Q3 35 TFSI S line,2,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,Q3 40 TFSI q S line BE,4,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,Q3 SB 35 TFSI S line,4,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,Q3 SB 40 TFSI q S line BE,3,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,Q5 45 TFSI q S line BE,2,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,Q7 45 TDI q S line,1,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,RS 4 AV q,1,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,RS 5 Coupe quattro,1,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,RS Q3 Sportback quattro,3,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,RS e-tron GT quattro,1,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,S8 TFSI QUATTRO,1,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,TT Coupe 45 TFSI q S line,12,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,TT RD 45 TFSI q S line,1,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,TT RS Coupe q,3,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,e-tron 55 q,2,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,e-tron GT quattro PF,2,audi,,dlt-eed0f591
+2022-01,RY1,AUDI,e-tron SB 55 q S line,2,audi,,dlt-eed0f591
+2022-01,RY1,BENTLEY,BENTAYGA HYBRID,4,bentley,,dlt-eed0f591
+2022-01,RY1,BENTLEY,BENTAYGA V8,1,bentley,,dlt-eed0f591
+2022-01,RY1,BENTLEY,CONTINENTAL GT V8,3,bentley,,dlt-eed0f591
+2022-01,RY1,BENTLEY,CONTINENTAL GT V8 AWD,1,bentley,,dlt-eed0f591
+2022-01,RY1,BENTLEY,FLYING SPUR,2,bentley,,dlt-eed0f591
+2022-01,RY1,BMW,118i M Sport,2,bmw,,dlt-eed0f591
+2022-01,RY1,BMW,218i Gran Coupe RHD,2,bmw,bmw-2-series-gran-coupe,dlt-eed0f591
+2022-01,RY1,BMW,220i Gran Coupe M Sport,71,bmw,bmw-2-series-gran-coupe,dlt-eed0f591
+2022-01,RY1,BMW,220i Gran Coupe Sport,9,bmw,bmw-2-series-gran-coupe,dlt-eed0f591
+2022-01,RY1,BMW,320Li Limousine RHD,10,bmw,bmw-3-series,dlt-eed0f591
+2022-01,RY1,BMW,320d GT Luxury,3,bmw,bmw-3-series,dlt-eed0f591
+2022-01,RY1,BMW,320d GT M Sport,1,bmw,bmw-3-series,dlt-eed0f591
+2022-01,RY1,BMW,320d GT Sport,5,bmw,bmw-3-series,dlt-eed0f591
+2022-01,RY1,BMW,320d Limousine RHD,2,bmw,bmw-3-series,dlt-eed0f591
+2022-01,RY1,BMW,320d M Sport,117,bmw,bmw-3-series,dlt-eed0f591
+2022-01,RY1,BMW,330Li Limousine RHD,9,bmw,bmw-3-series,dlt-eed0f591
+2022-01,RY1,BMW,330e M Sport,64,bmw,bmw-3-series,dlt-eed0f591
+2022-01,RY1,BMW,330i Limousine RHD,1,bmw,bmw-3-series,dlt-eed0f591
+2022-01,RY1,BMW,430i Cabrio RHD,1,bmw,bmw-4-series,dlt-eed0f591
+2022-01,RY1,BMW,430i Coupe RHD,17,bmw,bmw-4-series,dlt-eed0f591
+2022-01,RY1,BMW,520d M Sport,85,bmw,bmw-5-series,dlt-eed0f591
+2022-01,RY1,BMW,520d Sport,1,bmw,bmw-5-series,dlt-eed0f591
+2022-01,RY1,BMW,530e Elite,27,bmw,bmw-5-series,dlt-eed0f591
+2022-01,RY1,BMW,530e Highline,1,bmw,bmw-5-series,dlt-eed0f591
+2022-01,RY1,BMW,530e Luxury,1,bmw,bmw-5-series,dlt-eed0f591
+2022-01,RY1,BMW,530e M Sport,61,bmw,bmw-5-series,dlt-eed0f591
+2022-01,RY1,BMW,630d Gran Turismo RHD,1,bmw,,dlt-eed0f591
+2022-01,RY1,BMW,630i Gran Turismo RHD,8,bmw,,dlt-eed0f591
+2022-01,RY1,BMW,730Ld M Sport,11,bmw,,dlt-eed0f591
+2022-01,RY1,BMW,730Ld Pure Excellence,1,bmw,,dlt-eed0f591
+2022-01,RY1,BMW,740Le xDrive iPerformance RHD,1,bmw,,dlt-eed0f591
+2022-01,RY1,BMW,745Le xDrive M Sport,4,bmw,,dlt-eed0f591
+2022-01,RY1,BMW,840D XDRIVE,1,bmw,,dlt-eed0f591
+2022-01,RY1,BMW,M2 CS,1,bmw,,dlt-eed0f591
+2022-01,RY1,BMW,M340i xDrive,8,bmw,bmw-3-series,dlt-eed0f591
+2022-01,RY1,BMW,M4 COMPETITION COUPE,1,bmw,,dlt-eed0f591
+2022-01,RY1,BMW,M4 Competition Coupe RHD,1,bmw,,dlt-eed0f591
+2022-01,RY1,BMW,M8 Coupe RHD,1,bmw,,dlt-eed0f591
+2022-01,RY1,BMW,X1 sDrive18d M Sport,1,bmw,bmw-x1,dlt-eed0f591
+2022-01,RY1,BMW,X1 sDrive18d xLine,7,bmw,bmw-x1,dlt-eed0f591
+2022-01,RY1,BMW,X1 sDrive18i,2,bmw,bmw-x1,dlt-eed0f591
+2022-01,RY1,BMW,X1 sDrive20d M Sport,56,bmw,bmw-x1,dlt-eed0f591
+2022-01,RY1,BMW,X1 sDrive20d xLine,62,bmw,bmw-x1,dlt-eed0f591
+2022-01,RY1,BMW,X2 sDrive20i RHD,2,bmw,,dlt-eed0f591
+2022-01,RY1,BMW,X3 xDrive20d M Sport,38,bmw,bmw-x3,dlt-eed0f591
+2022-01,RY1,BMW,X3 xDrive20d RHD,1,bmw,bmw-x3,dlt-eed0f591
+2022-01,RY1,BMW,X3 xDrive20d xLine,3,bmw,bmw-x3,dlt-eed0f591
+2022-01,RY1,BMW,X3 xDrive30e M Sport,21,bmw,bmw-x3,dlt-eed0f591
+2022-01,RY1,BMW,X3 xDrive30e xLine,20,bmw,bmw-x3,dlt-eed0f591
+2022-01,RY1,BMW,X4 M RHD,1,bmw,bmw-x4,dlt-eed0f591
+2022-01,RY1,BMW,X4 xDrive20d RHD,14,bmw,bmw-x4,dlt-eed0f591
+2022-01,RY1,BMW,X5 sDrive25d Pure Experie,3,bmw,bmw-x5,dlt-eed0f591
+2022-01,RY1,BMW,X5 xDrive30d M Sport,33,bmw,bmw-x5,dlt-eed0f591
+2022-01,RY1,BMW,X5 xDrive30d RHD,4,bmw,bmw-x5,dlt-eed0f591
+2022-01,RY1,BMW,X5 xDrive30d xLine,1,bmw,bmw-x5,dlt-eed0f591
+2022-01,RY1,BMW,X5 xDrive40e M Sport,1,bmw,bmw-x5,dlt-eed0f591
+2022-01,RY1,BMW,X5 xDrive45e M Sport,31,bmw,bmw-x5,dlt-eed0f591
+2022-01,RY1,BMW,X6 xDrive30d RHD,1,bmw,bmw-x6,dlt-eed0f591
+2022-01,RY1,BMW,X7 xDrive30d M Sport,15,bmw,bmw-x7,dlt-eed0f591
+2022-01,RY1,BMW,Z4 M40i RHD,1,bmw,bmw-z4,dlt-eed0f591
+2022-01,RY1,BMW,Z4 M40i Roadster RHD,2,bmw,bmw-z4,dlt-eed0f591
+2022-01,RY1,BMW,Z4 sDrive30i RHD,7,bmw,bmw-z4,dlt-eed0f591
+2022-01,RY1,BMW,iX3 M Sport RHD,14,bmw,bmw-ix3,dlt-eed0f591
+2022-01,RY1,BYD,E6,3,byd,byd-e6,dlt-eed0f591
+2022-01,RY1,BYD,M3,2,byd,,dlt-eed0f591
+2022-01,RY1,CHEVROLET,CAPTIVA,3,chevrolet,,dlt-eed0f591
+2022-01,RY1,CHEVROLET,COLORADO C-CAB,3,chevrolet,,dlt-eed0f591
+2022-01,RY1,CHEVROLET,COLORADO C-CAB TRAIL BOSS,1,chevrolet,,dlt-eed0f591
+2022-01,RY1,CHEVROLET,TRAILBLAZER,2,chevrolet,,dlt-eed0f591
+2022-01,RY1,DFSK,GLORY 580 I-AUTO,1,dfsk,,dlt-eed0f591
+2022-01,RY1,FERRARI,488 PISTA,2,ferrari,,dlt-eed0f591
+2022-01,RY1,FERRARI,F8 SPIDER,1,ferrari,,dlt-eed0f591
+2022-01,RY1,FERRARI,F8 TRIBUTO,3,ferrari,,dlt-eed0f591
+2022-01,RY1,FORD,EVEREST,426,ford,ford-everest,dlt-eed0f591
+2022-01,RY1,FORD,FORD EVEREST zFAE9GD,1,ford,,dlt-eed0f591
+2022-01,RY1,FORD,FORD EVEREST zJAE9BC,1,ford,,dlt-eed0f591
+2022-01,RY1,FORD,FORD RANGER iJBW9AR,1,ford,,dlt-eed0f591
+2022-01,RY1,FORD,FORD RANGER iJBW9B4,1,ford,,dlt-eed0f591
+2022-01,RY1,FORD,Focus,1,ford,,dlt-eed0f591
+2022-01,RY1,FORD,Ford Focus,1,ford,,dlt-eed0f591
+2022-01,RY1,FORD,MUSTANG,6,ford,ford-mustang,dlt-eed0f591
+2022-01,RY1,FORD,MUSTANG 2.3 ECOBOOST PREMIUM,3,ford,ford-mustang,dlt-eed0f591
+2022-01,RY1,FORD,MUSTANG 2.3L CONVERTIBLE,2,ford,ford-mustang,dlt-eed0f591
+2022-01,RY1,FORD,MUSTANG 2.3L ECOBOOST FASTBACK,1,ford,ford-mustang,dlt-eed0f591
+2022-01,RY1,FORD,MUSTANG 5.0 GT V8 PREMIUM,1,ford,ford-mustang,dlt-eed0f591
+2022-01,RY1,FORD,MUSTANG 5.0L V8 GT,1,ford,ford-mustang,dlt-eed0f591
+2022-01,RY1,FORD,MUSTANG ECOBOOST PREMIUM,2,ford,ford-mustang,dlt-eed0f591
+2022-01,RY1,FORD,MUSTANG GT FASTBACK 5.0L,1,ford,ford-mustang,dlt-eed0f591
+2022-01,RY1,FORD,MUSTANG MACH 1,1,ford,ford-mustang,dlt-eed0f591
+2022-01,RY1,FORD,MUSTANG MACH-E RWD,1,ford,ford-mustang-mach-e,dlt-eed0f591
+2022-01,RY1,FORD,RANGER,1523,ford,ford-ranger,dlt-eed0f591
+2022-01,RY1,FORD,RANGER RAPTOR,96,ford,ford-ranger-raptor,dlt-eed0f591
+2022-01,RY1,FOTON,TUNLAND DC 4X2 S PREMIUM,1,foton,,dlt-eed0f591
+2022-01,RY1,HAVAL,H6 HEV PRO,41,haval,haval-h6,dlt-eed0f591
+2022-01,RY1,HAVAL,H6 HEV ULTRA,296,haval,haval-h6,dlt-eed0f591
+2022-01,RY1,HAVAL,JOLION HYBRID,44,haval,haval-jolion,dlt-eed0f591
+2022-01,RY1,HONDA,ACCORD,475,honda,honda-accord,dlt-eed0f591
+2022-01,RY1,HONDA,ACCORD HYBRID,20,honda,,dlt-eed0f591
+2022-01,RY1,HONDA,BR-V,117,honda,honda-br-v,dlt-eed0f591
+2022-01,RY1,HONDA,CITY,2592,honda,honda-city,dlt-eed0f591
+2022-01,RY1,HONDA,CITY HATCHBACK,2549,honda,honda-city-hatchback,dlt-eed0f591
+2022-01,RY1,HONDA,CIVIC,1646,honda,honda-civic,dlt-eed0f591
+2022-01,RY1,HONDA,CIVIC TYPE R,1,honda,honda-civic-type-r,dlt-eed0f591
+2022-01,RY1,HONDA,CIVIC TYPE R GT,1,honda,honda-civic-type-r,dlt-eed0f591
+2022-01,RY1,HONDA,CR-V,437,honda,honda-cr-v,dlt-eed0f591
+2022-01,RY1,HONDA,HR-V,637,honda,honda-hr-v,dlt-eed0f591
+2022-01,RY1,HONDA,HR-V'15,1,honda,,dlt-eed0f591
+2022-01,RY1,HONDA,JAZZ,781,honda,honda-jazz,dlt-eed0f591
+2022-01,RY1,HONDA,MOBILIO,12,honda,,dlt-eed0f591
+2022-01,RY1,HONDA,N BOX CUSTOM L TURBO,1,honda,,dlt-eed0f591
+2022-01,RY1,HONDA,ODYSSEY ABSOLUTE EX,2,honda,honda-odyssey,dlt-eed0f591
+2022-01,RY1,HONDA,ODYSSEY ABSOLUTE EX HYBRID,1,honda,honda-odyssey,dlt-eed0f591
+2022-01,RY1,HONDA,ODYSSEY e-HEV ABSOLUTE EX,2,honda,honda-odyssey,dlt-eed0f591
+2022-01,RY1,HONDA,S660 6AT,1,honda,,dlt-eed0f591
+2022-01,RY1,HONDA,S660 6MT,1,honda,,dlt-eed0f591
+2022-01,RY1,HONDA,STEP WGN E HEV SPADA G EX,2,honda,honda-step-wgn,dlt-eed0f591
+2022-01,RY1,HONDA,STEPWAGON SPADA HYBRID eHEV G,3,honda,,dlt-eed0f591
+2022-01,RY1,HONDA,STEPWAGON SPADA2.0 HYBRID,1,honda,,dlt-eed0f591
+2022-01,RY1,HONDA,STEPWGN SPADA HYBRID G,1,honda,,dlt-eed0f591
+2022-01,RY1,HONDA,STEPWGN e:HEV SPADA G EX,2,honda,,dlt-eed0f591
+2022-01,RY1,HYUNDAI,GRAND STAREX,2,hyundai,,dlt-eed0f591
+2022-01,RY1,ISUZU,,2,isuzu,,dlt-eed0f591
+2022-01,RY1,ISUZU,D-MAX,7327,isuzu,isuzu-d-max,dlt-eed0f591
+2022-01,RY1,ISUZU,MU-X,1374,isuzu,isuzu-mu-x,dlt-eed0f591
+2022-01,RY1,JAGUAR,XF 2.0L T/C RWD AUTO PORTFOLIO,1,jaguar,,dlt-eed0f591
+2022-01,RY1,JEEP,,1,jeep,,dlt-eed0f591
+2022-01,RY1,JEEP,GLADIATOR RUBICON,3,jeep,,dlt-eed0f591
+2022-01,RY1,JEEP,WRANGLER RUBICON,4,jeep,,dlt-eed0f591
+2022-01,RY1,JEEP,WRANGLER SAHARA 4DR,1,jeep,,dlt-eed0f591
+2022-01,RY1,KIA,SOUL,1,kia,,dlt-eed0f591
+2022-01,RY1,LAMBORGHINI,HURACAN EVO RWD,1,lamborghini,,dlt-eed0f591
+2022-01,RY1,LAND ROVER,DEFENDER 110 X 3.0 MHEV,1,land-rover,,dlt-eed0f591
+2022-01,RY1,LAND ROVER,DEFENDER 2.0L T/C AWD AUTO SE,2,land-rover,,dlt-eed0f591
+2022-01,RY1,LAND ROVER,RANGE ROVER 2.0L T/C PHEV,2,land-rover,,dlt-eed0f591
+2022-01,RY1,LAND ROVER,RANGE ROVER SPORT 2.0L T/C,2,land-rover,,dlt-eed0f591
+2022-01,RY1,LAND ROVER,RANGEROVER EVOQUE1.5LITRE T/C,1,land-rover,,dlt-eed0f591
+2022-01,RY1,LAND ROVER,RANGEROVER2.0L T/C PETROL PHEV,1,land-rover,,dlt-eed0f591
+2022-01,RY1,LEXUS,ES300H,2,lexus,,dlt-eed0f591
+2022-01,RY1,LEXUS,GS250,1,lexus,,dlt-eed0f591
+2022-01,RY1,LEXUS,IS300H,3,lexus,,dlt-eed0f591
+2022-01,RY1,LEXUS,LM300h,28,lexus,,dlt-eed0f591
+2022-01,RY1,LEXUS,NX300h,1,lexus,,dlt-eed0f591
+2022-01,RY1,LEXUS,RX300,7,lexus,,dlt-eed0f591
+2022-01,RY1,LEXUS,UX250H,1,lexus,,dlt-eed0f591
+2022-01,RY1,LEXUS,UX300E,1,lexus,,dlt-eed0f591
+2022-01,RY1,MASERATI,GHIBLI MILD HYBRID GRANSPORT,1,maserati,,dlt-eed0f591
+2022-01,RY1,MASERATI,LEVANTE HYBRID GT,1,maserati,,dlt-eed0f591
+2022-01,RY1,MAZDA,MAZDA 2,1810,mazda,mazda-mazda2,dlt-eed0f591
+2022-01,RY1,MAZDA,MAZDA 3,152,mazda,mazda-mazda3,dlt-eed0f591
+2022-01,RY1,MAZDA,MAZDA BT-50,51,mazda,mazda-bt-50,dlt-eed0f591
+2022-01,RY1,MAZDA,MAZDA CX-3,478,mazda,mazda-cx-3,dlt-eed0f591
+2022-01,RY1,MAZDA,MAZDA CX-30,577,mazda,mazda-cx-30,dlt-eed0f591
+2022-01,RY1,MAZDA,MAZDA CX-5,90,mazda,mazda-cx-5,dlt-eed0f591
+2022-01,RY1,MAZDA,MAZDA CX-8,122,mazda,mazda-cx-8,dlt-eed0f591
+2022-01,RY1,MCLAREN,720S COUPE,1,mclaren,,dlt-eed0f591
+2022-01,RY1,MCLAREN,GT,1,mclaren,,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,A 200,66,mercedes-benz,mercedes-benz-a-class,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,AMG C 43 4MATIC,2,mercedes-benz,,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,AMG C43 4MATIC Coupe,11,mercedes-benz,,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,AMG CLA 35 4MATIC Coupe,2,mercedes-benz,,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,AMG CLA 45 S 4MATIC+,2,mercedes-benz,,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,AMG CLS 53 4MATIC,18,mercedes-benz,,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,AMG E 53 4MATIC+,1,mercedes-benz,,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,AMG E53 CABRIOLET,1,mercedes-benz,,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,AMG G 63,7,mercedes-benz,,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,AMG GLA 35 4MATIC,5,mercedes-benz,,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,AMG GLC 43 4MATIC Coupe,11,mercedes-benz,,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,AMG GT 53 4MATIC+,1,mercedes-benz,,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,C 200 Coupe,23,mercedes-benz,mercedes-benz-c-class,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,C 220 d,105,mercedes-benz,mercedes-benz-c-class,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,C 300 e,53,mercedes-benz,mercedes-benz-c-class,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,C 350 e,3,mercedes-benz,mercedes-benz-c-class,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,C250 COUPE,2,mercedes-benz,,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,CLA200,1,mercedes-benz,,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,CLA250,3,mercedes-benz,,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,CLS 220 d,29,mercedes-benz,mercedes-benz-cls,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,CLS 300 d,16,mercedes-benz,mercedes-benz-cls,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,CLS 300 d Coupe,2,mercedes-benz,mercedes-benz-cls,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,E 200 Coupe,15,mercedes-benz,mercedes-benz-e-class,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,E 220 d,53,mercedes-benz,mercedes-benz-e-class,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,E 300 e,108,mercedes-benz,mercedes-benz-e-class,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,E 350 e,9,mercedes-benz,mercedes-benz-e-class,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,E200 CGI SALOON,1,mercedes-benz,,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,E400d CABRIOLET,1,mercedes-benz,,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,G 350 d,3,mercedes-benz,,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,G 350 d AMG,1,mercedes-benz,,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,G400 D,3,mercedes-benz,,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,GLA 200,119,mercedes-benz,mercedes-benz-gla,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,GLA 250,4,mercedes-benz,mercedes-benz-gla,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,GLB 200,8,mercedes-benz,,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,GLC 220 d,70,mercedes-benz,mercedes-benz-glc,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,GLC 220 d 4MATIC Coupe,34,mercedes-benz,mercedes-benz-glc,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,GLC 250 d 4MATIC,2,mercedes-benz,mercedes-benz-glc,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,GLC 250 d 4MATIC Coupe,3,mercedes-benz,mercedes-benz-glc,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,GLC 300 e 4MATIC,35,mercedes-benz,mercedes-benz-glc,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,GLC 300 e 4MATIC Coupe,27,mercedes-benz,mercedes-benz-glc,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,GLE 300 d 4MATIC,28,mercedes-benz,mercedes-benz-gle,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,GLE 350 de 4MATIC,19,mercedes-benz,mercedes-benz-gle,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,GLS 350 d 4MATIC,11,mercedes-benz,mercedes-benz-gls,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,R35HP1CZAA04E2,1,mercedes-benz,,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,S 300 BLUETEC HYBRID,1,mercedes-benz,mercedes-benz-s-class,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,S 350 d,6,mercedes-benz,mercedes-benz-s-class,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,S 500 e,2,mercedes-benz,mercedes-benz-s-class,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,S 500L MILD HYBRID,1,mercedes-benz,,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,S 560 e,9,mercedes-benz,mercedes-benz-s-class,dlt-eed0f591
+2022-01,RY1,MERCEDES BENZ,V 250 d,11,mercedes-benz,,dlt-eed0f591
+2022-01,RY1,MG,EP,120,mg,mg-ep,dlt-eed0f591
+2022-01,RY1,MG,HS,297,mg,mg-hs,dlt-eed0f591
+2022-01,RY1,MG,HS PHEV,99,mg,mg-hs,dlt-eed0f591
+2022-01,RY1,MG,MG EXTENDER,255,mg,mg-extender,dlt-eed0f591
+2022-01,RY1,MG,MG GS,2,mg,,dlt-eed0f591
+2022-01,RY1,MG,MG5,948,mg,mg-mg5,dlt-eed0f591
+2022-01,RY1,MG,MG6,2,mg,,dlt-eed0f591
+2022-01,RY1,MG,NEW MG3,187,mg,mg-mg3,dlt-eed0f591
+2022-01,RY1,MG,ZS,909,mg,mg-zs,dlt-eed0f591
+2022-01,RY1,MG,ZS EV,16,mg,mg-zs-ev,dlt-eed0f591
+2022-01,RY1,MINI,COOPER ELECTRIC,1,mini,,dlt-eed0f591
+2022-01,RY1,MINI,COOPER ELECTRIC LEVEL 3,1,mini,,dlt-eed0f591
+2022-01,RY1,MINI,Cooper Hatch RHD,2,mini,,dlt-eed0f591
+2022-01,RY1,MINI,Cooper S 5-Turer RHD,1,mini,,dlt-eed0f591
+2022-01,RY1,MINI,Cooper S Cabrio RHD,2,mini,,dlt-eed0f591
+2022-01,RY1,MINI,Cooper S Countryman RHD,35,mini,,dlt-eed0f591
+2022-01,RY1,MINI,Cooper S Hatch RHD,8,mini,,dlt-eed0f591
+2022-01,RY1,MINI,Cooper SE Hatch RHD,9,mini,,dlt-eed0f591
+2022-01,RY1,MINI,John Cooper Works Hatch R,1,mini,,dlt-eed0f591
+2022-01,RY1,MINI,John Cooper Works cabrio,2,mini,,dlt-eed0f591
+2022-01,RY1,MITSUBISHI,,29,mitsubishi,,dlt-eed0f591
+2022-01,RY1,MITSUBISHI,ATTRAGE,517,mitsubishi,mitsubishi-attrage,dlt-eed0f591
+2022-01,RY1,MITSUBISHI,L200 P 2.5 S-CAB LOW,1,mitsubishi,,dlt-eed0f591
+2022-01,RY1,MITSUBISHI,MIRAGE,429,mitsubishi,mitsubishi-mirage,dlt-eed0f591
+2022-01,RY1,MITSUBISHI,OUTLANDER PHEV,17,mitsubishi,mitsubishi-outlander,dlt-eed0f591
+2022-01,RY1,MITSUBISHI,PAJERO SPORT,624,mitsubishi,mitsubishi-pajero-sport,dlt-eed0f591
+2022-01,RY1,MITSUBISHI,TRITON,849,mitsubishi,mitsubishi-triton,dlt-eed0f591
+2022-01,RY1,MITSUBISHI,XPANDER,1034,mitsubishi,mitsubishi-xpander,dlt-eed0f591
+2022-01,RY1,NISSAN,,5,nissan,,dlt-eed0f591
+2022-01,RY1,NISSAN,ALMERA,1419,nissan,nissan-almera,dlt-eed0f591
+2022-01,RY1,NISSAN,BDTARCFB172HA-----,1,nissan,,dlt-eed0f591
+2022-01,RY1,NISSAN,FDWURTZK13EH5--BA-,1,nissan,,dlt-eed0f591
+2022-01,RY1,NISSAN,GT-R,1,nissan,,dlt-eed0f591
+2022-01,RY1,NISSAN,GT-R RECARO,2,nissan,,dlt-eed0f591
+2022-01,RY1,NISSAN,GT-R RECARO 3.8L,1,nissan,,dlt-eed0f591
+2022-01,RY1,NISSAN,GT-R RECARO 3.8L V6,1,nissan,,dlt-eed0f591
+2022-01,RY1,NISSAN,GTR TRACK EDITION,1,nissan,,dlt-eed0f591
+2022-01,RY1,NISSAN,KICKS,141,nissan,nissan-kicks,dlt-eed0f591
+2022-01,RY1,NISSAN,LEAF,7,nissan,,dlt-eed0f591
+2022-01,RY1,NISSAN,MARCH,237,nissan,nissan-march,dlt-eed0f591
+2022-01,RY1,NISSAN,NAVARA,236,nissan,nissan-navara,dlt-eed0f591
+2022-01,RY1,NISSAN,NOTE,208,nissan,nissan-note,dlt-eed0f591
+2022-01,RY1,NISSAN,SYLPHY,1,nissan,,dlt-eed0f591
+2022-01,RY1,NISSAN,SYLPHY 1.6 E CVT,1,nissan,,dlt-eed0f591
+2022-01,RY1,NISSAN,TEANA,3,nissan,,dlt-eed0f591
+2022-01,RY1,NISSAN,TERRA,161,nissan,nissan-terra,dlt-eed0f591
+2022-01,RY1,NISSAN,X-TRAIL,3,nissan,,dlt-eed0f591
+2022-01,RY1,ORA,GOOD CAT,34,ora,ora-good-cat,dlt-eed0f591
+2022-01,RY1,PEUGEOT,3008 P84 AG,5,peugeot,,dlt-eed0f591
+2022-01,RY1,PEUGEOT,3008 P84 BG,9,peugeot,,dlt-eed0f591
+2022-01,RY1,PEUGEOT,5008 P87 AG,3,peugeot,,dlt-eed0f591
+2022-01,RY1,PEUGEOT,5008 P87 BG,1,peugeot,,dlt-eed0f591
+2022-01,RY1,PORSCHE,718 BOXSTER,1,porsche,,dlt-eed0f591
+2022-01,RY1,PORSCHE,718 BOXSTER PDK,1,porsche,,dlt-eed0f591
+2022-01,RY1,PORSCHE,718 BOXSTER T,1,porsche,,dlt-eed0f591
+2022-01,RY1,PORSCHE,718 CAYMAN,1,porsche,,dlt-eed0f591
+2022-01,RY1,PORSCHE,911 CARRERA,1,porsche,,dlt-eed0f591
+2022-01,RY1,PORSCHE,911 CARRERA 4S,1,porsche,,dlt-eed0f591
+2022-01,RY1,PORSCHE,911 CARRERA COUPE PDK,1,porsche,,dlt-eed0f591
+2022-01,RY1,PORSCHE,911 CARRERA S,4,porsche,,dlt-eed0f591
+2022-01,RY1,PORSCHE,911 CARRERA S COUPE PDK,2,porsche,,dlt-eed0f591
+2022-01,RY1,PORSCHE,911 GT3,1,porsche,,dlt-eed0f591
+2022-01,RY1,PORSCHE,911 GT3 RS,1,porsche,,dlt-eed0f591
+2022-01,RY1,PORSCHE,911 TARGA 4,1,porsche,,dlt-eed0f591
+2022-01,RY1,PORSCHE,911 TARGA 4S PDK,3,porsche,,dlt-eed0f591
+2022-01,RY1,PORSCHE,CAYENNE COUPE,1,porsche,porsche-cayenne,dlt-eed0f591
+2022-01,RY1,PORSCHE,CAYENNE E-HYBRID,33,porsche,porsche-cayenne,dlt-eed0f591
+2022-01,RY1,PORSCHE,CAYENNE E-HYBRID COUPE,23,porsche,porsche-cayenne,dlt-eed0f591
+2022-01,RY1,PORSCHE,CAYENNE TURBO,1,porsche,porsche-cayenne,dlt-eed0f591
+2022-01,RY1,PORSCHE,MACAN,5,porsche,porsche-macan,dlt-eed0f591
+2022-01,RY1,PORSCHE,PANAMERA 4 E-HYBRID,9,porsche,porsche-panamera,dlt-eed0f591
+2022-01,RY1,PORSCHE,PANAMERA 4 E-HYBRID 10YR,2,porsche,porsche-panamera,dlt-eed0f591
+2022-01,RY1,PORSCHE,PANAMERA 4 E-HYBRID EXEC.,2,porsche,porsche-panamera,dlt-eed0f591
+2022-01,RY1,PORSCHE,PANAMERA 4S E-HYBRID,1,porsche,porsche-panamera,dlt-eed0f591
+2022-01,RY1,PORSCHE,TAYCAN,4,porsche,porsche-taycan,dlt-eed0f591
+2022-01,RY1,PORSCHE,TAYCAN 4 CROSS TURISMO,1,porsche,porsche-taycan,dlt-eed0f591
+2022-01,RY1,PORSCHE,TAYCAN 4S,15,porsche,porsche-taycan,dlt-eed0f591
+2022-01,RY1,PORSCHE,TAYCAN TURBO,2,porsche,porsche-taycan,dlt-eed0f591
+2022-01,RY1,ROLLS-ROYCE,Ghost,1,rolls-royce,,dlt-eed0f591
+2022-01,RY1,ROLLS-ROYCE,Wraith,1,rolls-royce,,dlt-eed0f591
+2022-01,RY1,SOKON,CRC5021CLS,1,sokon,,dlt-eed0f591
+2022-01,RY1,SUBARU,FORESTER 2.0i-S,5,subaru,subaru-forester,dlt-eed0f591
+2022-01,RY1,SUBARU,FORESTER 2.0i-S ES,131,subaru,subaru-forester,dlt-eed0f591
+2022-01,RY1,SUBARU,OUTBACK 2.5i-T EyeSight,6,subaru,,dlt-eed0f591
+2022-01,RY1,SUBARU,WRX + L 2.0 AWD CVT,1,subaru,,dlt-eed0f591
+2022-01,RY1,SUBARU,XV 2.0i-P,33,subaru,subaru-xv,dlt-eed0f591
+2022-01,RY1,SUZUKI,,2,suzuki,,dlt-eed0f591
+2022-01,RY1,SUZUKI,CELERIO GA 1.0L,107,suzuki,suzuki-celerio,dlt-eed0f591
+2022-01,RY1,SUZUKI,CELERIO GL 1.0L,231,suzuki,suzuki-celerio,dlt-eed0f591
+2022-01,RY1,SUZUKI,CELERIO GX 1.0L,69,suzuki,suzuki-celerio,dlt-eed0f591
+2022-01,RY1,SUZUKI,CIAZ GL CVT,117,suzuki,suzuki-ciaz,dlt-eed0f591
+2022-01,RY1,SUZUKI,CIAZ GL MT,6,suzuki,suzuki-ciaz,dlt-eed0f591
+2022-01,RY1,SUZUKI,CIAZ GLX CVT,2,suzuki,suzuki-ciaz,dlt-eed0f591
+2022-01,RY1,SUZUKI,CIAZ RS CVT,7,suzuki,suzuki-ciaz,dlt-eed0f591
+2022-01,RY1,SUZUKI,ERTIGA GL 1.5L,34,suzuki,suzuki-ertiga,dlt-eed0f591
+2022-01,RY1,SUZUKI,ERTIGA GX 1.5L,44,suzuki,suzuki-ertiga,dlt-eed0f591
+2022-01,RY1,SUZUKI,JIMNY 1.5L 4AT,1,suzuki,,dlt-eed0f591
+2022-01,RY1,SUZUKI,SWIFT GL 1.2L CVT,391,suzuki,suzuki-swift,dlt-eed0f591
+2022-01,RY1,SUZUKI,SWIFT GL MAX EDITION,9,suzuki,suzuki-swift,dlt-eed0f591
+2022-01,RY1,SUZUKI,SWIFT GL PLUS 1.2L CVT,338,suzuki,suzuki-swift,dlt-eed0f591
+2022-01,RY1,SUZUKI,SWIFT GLX 1.2L CVT,280,suzuki,suzuki-swift,dlt-eed0f591
+2022-01,RY1,SUZUKI,SWIFT GLX-Navi 1.2L CVT,3,suzuki,suzuki-swift,dlt-eed0f591
+2022-01,RY1,SUZUKI,XL7 1.5L,301,suzuki,suzuki-xl7,dlt-eed0f591
+2022-01,RY1,TESLA,MODEL 3 LONG RANGE,4,tesla,tesla-model-3,dlt-eed0f591
+2022-01,RY1,TESLA,MODEL 3 LONG RANGE PLUS,3,tesla,tesla-model-3,dlt-eed0f591
+2022-01,RY1,TESLA,MODEL 3 PERFORMANCE,2,tesla,tesla-model-3,dlt-eed0f591
+2022-01,RY1,TESLA,MODEL 3 STANDARD PLUS,2,tesla,tesla-model-3,dlt-eed0f591
+2022-01,RY1,TESLA,MODEL 3 STANDARD RANGE PLUS,1,tesla,tesla-model-3,dlt-eed0f591
+2022-01,RY1,TESLA,MODEL X LONG RANGE,1,tesla,,dlt-eed0f591
+2022-01,RY1,TESLA,MODEL Y LONG RANGE,1,tesla,tesla-model-y,dlt-eed0f591
+2022-01,RY1,TESLA,MODEL Y STANDARD,2,tesla,tesla-model-y,dlt-eed0f591
+2022-01,RY1,TESLA,MODEL Y STANDARD RANGE,1,tesla,tesla-model-y,dlt-eed0f591
+2022-01,RY1,TOYOTA,,1,toyota,,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD,18,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD 2.5 HYBRID G F,1,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD 2.5 HYBRID G F PACKAGE,10,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD 2.5 HYBRID S E-FOUR,6,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD 2.5 HYBRID S TYPE GOLD,4,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD 2.5 HYBRID SR C,5,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD 2.5 HYBRID SR C PACKAG,1,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD 2.5 HYBRID SRC PACKAGE,17,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD 2.5 HYBRID X,2,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD 2.5 HYBRID X E-FOUR,19,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD 2.5 SC PACKAGE,98,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD 2.5L SC PACKAGE,6,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,"ALPHARD 2.5S ""TYPE GOLD""",1,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD 2.5X SIDE LIFT UP SEAT,1,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD GF HYBRID 2.5L,1,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD HYBRID 2.5 GF,1,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD HYBRID GF 2.5L,7,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD HYBRID S 2.5L,2,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD HYBRID SRC,3,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD HYBRID SRC 2.5L,11,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD HYBRID SRC PACKAGE,25,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD HYBRID X,1,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD HYBRID X 2.5L,2,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD HYBRID X E-FOUR,9,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD SC PACKAGE,97,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD SC PACKAGE 2.5L,39,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD SRC HYBRID 2.5L,1,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ALPHARD X HYBRID 2.5L,3,toyota,toyota-alphard,dlt-eed0f591
+2022-01,RY1,TOYOTA,ASV50R-JETEKT  A1,1,toyota,,dlt-eed0f591
+2022-01,RY1,TOYOTA,AVANZA,13,toyota,,dlt-eed0f591
+2022-01,RY1,TOYOTA,C-HR,135,toyota,toyota-c-hr,dlt-eed0f591
+2022-01,RY1,TOYOTA,CAMRY,453,toyota,toyota-camry,dlt-eed0f591
+2022-01,RY1,TOYOTA,COMMUTER,103,toyota,toyota-commuter,dlt-eed0f591
+2022-01,RY1,TOYOTA,COROLLA,484,toyota,toyota-corolla,dlt-eed0f591
+2022-01,RY1,TOYOTA,COROLLA CROSS,1864,toyota,toyota-corolla-cross,dlt-eed0f591
+2022-01,RY1,TOYOTA,FJ CRUISER,2,toyota,,dlt-eed0f591
+2022-01,RY1,TOYOTA,FORTUNER,2296,toyota,toyota-fortuner,dlt-eed0f591
+2022-01,RY1,TOYOTA,GR YARIS,6,toyota,toyota-gr-yaris,dlt-eed0f591
+2022-01,RY1,TOYOTA,HARRIER 2.0 G LEATHER PACKAGE,1,toyota,,dlt-eed0f591
+2022-01,RY1,TOYOTA,HARRIER 2.5 HYBRID G,3,toyota,,dlt-eed0f591
+2022-01,RY1,TOYOTA,HARRIER HYBRID G,5,toyota,,dlt-eed0f591
+2022-01,RY1,TOYOTA,HARRIER HYBRID Z,1,toyota,,dlt-eed0f591
+2022-01,RY1,TOYOTA,HILUX REVO,4642,toyota,toyota-hilux-revo,dlt-eed0f591
+2022-01,RY1,TOYOTA,INNOVA,32,toyota,toyota-innova,dlt-eed0f591
+2022-01,RY1,TOYOTA,KUN35R-PRMSHT  A8,1,toyota,,dlt-eed0f591
+2022-01,RY1,TOYOTA,LAND CRUISER AX G SELECTION,1,toyota,,dlt-eed0f591
+2022-01,RY1,TOYOTA,LANDCRUISER PRADO 2.8 DIESEL,1,toyota,,dlt-eed0f591
+2022-01,RY1,TOYOTA,SIENTA,90,toyota,toyota-sienta,dlt-eed0f591
+2022-01,RY1,TOYOTA,VELLFIRE,1,toyota,toyota-vellfire,dlt-eed0f591
+2022-01,RY1,TOYOTA,VELLFIRE 2.5 HYBRID X E-FOUR,3,toyota,toyota-vellfire,dlt-eed0f591
+2022-01,RY1,TOYOTA,VELLFIRE 2.5 HYBRID ZR G,2,toyota,toyota-vellfire,dlt-eed0f591
+2022-01,RY1,TOYOTA,VELLFIRE 2.5Z G EDITION,7,toyota,toyota-vellfire,dlt-eed0f591
+2022-01,RY1,TOYOTA,VELLFIRE HYBRID E-FOUR,2,toyota,toyota-vellfire,dlt-eed0f591
+2022-01,RY1,TOYOTA,VELLFIRE HYBRID V L EDITION,1,toyota,toyota-vellfire,dlt-eed0f591
+2022-01,RY1,TOYOTA,VELLFIRE Z G EDITION,3,toyota,toyota-vellfire,dlt-eed0f591
+2022-01,RY1,TOYOTA,VELLFIRE Z GOLDEN EYES 2.5L,1,toyota,toyota-vellfire,dlt-eed0f591
+2022-01,RY1,TOYOTA,VIOS,298,toyota,toyota-vios,dlt-eed0f591
+2022-01,RY1,TOYOTA,VIOS 1.5E A/T,1,toyota,toyota-vios,dlt-eed0f591
+2022-01,RY1,TOYOTA,YARIS,3071,toyota,toyota-yaris,dlt-eed0f591
+2022-01,RY1,TOYOTA,YARIS ATIV,2246,toyota,toyota-yaris-ativ,dlt-eed0f591
+2022-01,RY1,VOLVO,S60,25,volvo,volvo-s60,dlt-eed0f591
+2022-01,RY1,VOLVO,S90,6,volvo,volvo-s90,dlt-eed0f591
+2022-01,RY1,VOLVO,V60,27,volvo,volvo-v60,dlt-eed0f591
+2022-01,RY1,VOLVO,XC40,48,volvo,volvo-xc40,dlt-eed0f591
+2022-01,RY1,VOLVO,XC60,35,volvo,volvo-xc60,dlt-eed0f591
+2022-01,RY1,VOLVO,XC90,19,volvo,volvo-xc90,dlt-eed0f591
+2022-01,RY2,FORD,RANGER,1,ford,ford-ranger,dlt-eed0f591
+2022-01,RY2,HYUNDAI,H-1,234,hyundai,hyundai-h-1,dlt-eed0f591
+2022-01,RY2,HYUNDAI,STARIA,275,hyundai,hyundai-staria,dlt-eed0f591
+2022-01,RY2,ISUZU,D-MAX,9,isuzu,isuzu-d-max,dlt-eed0f591
+2022-01,RY2,KIA,CARNIVAL,161,kia,kia-carnival,dlt-eed0f591
+2022-01,RY2,KIA,GRAND CARNIVAL,40,kia,,dlt-eed0f591
+2022-01,RY2,MAXUS,V80,1,maxus,,dlt-eed0f591
+2022-01,RY2,MERCEDES BENZ,SPRINTER 319 CDI,1,mercedes-benz,,dlt-eed0f591
+2022-01,RY2,MERCEDES BENZ,SPRINTER 319 CDI VAN,1,mercedes-benz,,dlt-eed0f591
+2022-01,RY2,MERCEDES BENZ,SPRINTER 419 CDI (907),1,mercedes-benz,,dlt-eed0f591
+2022-01,RY2,MG,V80,7,mg,,dlt-eed0f591
+2022-01,RY2,MITSUBISHI,TRITON,2,mitsubishi,mitsubishi-triton,dlt-eed0f591
+2022-01,RY2,NISSAN,NAVARA,3,nissan,nissan-navara,dlt-eed0f591
+2022-01,RY2,NISSAN,UVL4RDRE26KHE-----,9,nissan,,dlt-eed0f591
+2022-01,RY2,NISSAN,UVL4RDRE26KWDMERCE,1,nissan,,dlt-eed0f591
+2022-01,RY2,SUZUKI,CARRY 1.5L MT,3,suzuki,suzuki-carry,dlt-eed0f591
+2022-01,RY2,TOYOTA,COMMUTER,293,toyota,toyota-commuter,dlt-eed0f591
+2022-01,RY2,TOYOTA,HIACE,12,toyota,toyota-hiace,dlt-eed0f591
+2022-01,RY2,TOYOTA,HIACE MAJESTY,46,toyota,toyota-hiace-majesty,dlt-eed0f591
+2022-01,RY2,TOYOTA,HILUX REVO,89,toyota,toyota-hilux-revo,dlt-eed0f591
+2022-01,RY2,TOYOTA,KDH223R-LEMDYT A2,3,toyota,,dlt-eed0f591
+2022-01,RY2,TOYOTA,KDH223R-LEMDYT B2,1,toyota,,dlt-eed0f591
+2022-01,RY2,TOYOTA,TR TRANSFORMER,1,toyota,,dlt-eed0f591
+2022-01,RY2,VOLKSWAGEN,CARAVELLE COMFORTLINE 2,1,volkswagen,,dlt-eed0f591
+2022-01,RY2,VOLKSWAGEN,CARAVELLE T69 2.0 L,17,volkswagen,,dlt-eed0f591
+2022-01,RY3,CHEVROLET,COLORADO,1,chevrolet,,dlt-eed0f591
+2022-01,RY3,CHEVROLET,COLORADO X-CAB,9,chevrolet,,dlt-eed0f591
+2022-01,RY3,DAIHATSU,HIJET CARGO,3,daihatsu,,dlt-eed0f591
+2022-01,RY3,FORD,,1,ford,,dlt-eed0f591
+2022-01,RY3,FORD,RANGER,1034,ford,ford-ranger,dlt-eed0f591
+2022-01,RY3,FOTON,BJ1041V8JD3-RF,1,foton,,dlt-eed0f591
+2022-01,RY3,HINO,FG8JF1D-JJT,1,hino,,dlt-eed0f591
+2022-01,RY3,HINO,FM8JN1D-SGT,1,hino,,dlt-eed0f591
+2022-01,RY3,HINO,XZU600R-HKMLKT3,48,hino,,dlt-eed0f591
+2022-01,RY3,ISUZU,,3,isuzu,,dlt-eed0f591
+2022-01,RY3,ISUZU,D-MAX,8212,isuzu,isuzu-d-max,dlt-eed0f591
+2022-01,RY3,ISUZU,FTR34JXXXU,3,isuzu,,dlt-eed0f591
+2022-01,RY3,ISUZU,FTR34LXXXU,10,isuzu,,dlt-eed0f591
+2022-01,RY3,ISUZU,FVZ34QNDXU,3,isuzu,,dlt-eed0f591
+2022-01,RY3,ISUZU,NLR77EXXXW,28,isuzu,,dlt-eed0f591
+2022-01,RY3,ISUZU,NLR85EXXXU,222,isuzu,,dlt-eed0f591
+2022-01,RY3,ISUZU,NPR75HXXXU,1,isuzu,,dlt-eed0f591
+2022-01,RY3,ISUZU,NQR75HXXXU,1,isuzu,,dlt-eed0f591
+2022-01,RY3,ISUZU,TFS86JEQH3 (M),1,isuzu,,dlt-eed0f591
+2022-01,RY3,KIA,K2500,2,kia,,dlt-eed0f591
+2022-01,RY3,KIA,K2500(DRY BOX),2,kia,,dlt-eed0f591
+2022-01,RY3,MAZDA,MAZDA BT-50,72,mazda,mazda-bt-50,dlt-eed0f591
+2022-01,RY3,MG,MG EXTENDER,121,mg,mg-extender,dlt-eed0f591
+2022-01,RY3,MITSUBISHI,TRITON,1336,mitsubishi,mitsubishi-triton,dlt-eed0f591
+2022-01,RY3,NISSAN,BVL2RWLD23FHP----A,1,nissan,,dlt-eed0f591
+2022-01,RY3,NISSAN,NAVARA,537,nissan,nissan-navara,dlt-eed0f591
+2022-01,RY3,SOKON,CRC5020CLS,3,sokon,,dlt-eed0f591
+2022-01,RY3,SOKON,CRC5023XXY,3,sokon,,dlt-eed0f591
+2022-01,RY3,SUZUKI,CARRY 1.5L MT,284,suzuki,suzuki-carry,dlt-eed0f591
+2022-01,RY3,TATA,XENON,1,tata,,dlt-eed0f591
+2022-01,RY3,TOYOTA,COMMUTER,3,toyota,toyota-commuter,dlt-eed0f591
+2022-01,RY3,TOYOTA,HIACE,85,toyota,toyota-hiace,dlt-eed0f591
+2022-01,RY3,TOYOTA,HILUX REVO,9694,toyota,toyota-hilux-revo,dlt-eed0f591
+2022-01,RY3,TOYOTA,KDH222R-LEMDYT A1,1,toyota,,dlt-eed0f591
+2022-01,RY3,TOYOTA,LAND CRUISER 79 PICK UP 4.2,2,toyota,,dlt-eed0f591
+2022-01,RY3,UD TRUCKS,PKE250ELRM,1,ud-trucks,,dlt-eed0f591
+2022-01,RY3,WULING,GXA5032XXYEV,1,wuling,,dlt-eed0f591

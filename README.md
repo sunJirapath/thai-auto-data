@@ -1,0 +1,117 @@
+# thai-auto-data
+
+ข้อมูลเปิด (open data) ตลาดรถยนต์ไทย: ยอดรถจดทะเบียนครั้งแรกรายเดือน แยกยี่ห้อและรุ่น ในรูปแบบ CSV ที่ดาวน์โหลดและนำไปใช้ต่อได้ทันที
+
+Open data on the Thai car market: monthly first registrations by brand and model, as plain CSV files you can download and use directly. [English summary below](#english).
+
+> **กรุณาอ้างอิงเมื่อนำไปใช้** ข้อมูลชุดนี้เผยแพร่ภายใต้ [CC BY 4.0](LICENSE) หากนำข้อมูลไปใช้ เผยแพร่ต่อ หรือนำไปสร้างงานใหม่ ต้องระบุที่มาทั้ง **thai-auto-data** และ **กรมการขนส่งทางบก** ดู [การอ้างอิง](#การอ้างอิง--how-to-cite)
+>
+> **Please cite this dataset.** It is published under CC BY 4.0, and attribution to both thai-auto-data and the Department of Land Transport is required.
+
+## มีอะไรบ้าง
+
+| ไฟล์ | เนื้อหา |
+|---|---|
+| [`summaries/market_monthly.csv`](summaries/market_monthly.csv) | ยอดจดทะเบียนรวมรายเดือน แยกประเภท ร.ย.1 / ร.ย.2 / ร.ย.3 พร้อม MoM และ YoY |
+| [`summaries/brand_monthly.csv`](summaries/brand_monthly.csv) | ยอดรายยี่ห้อต่อเดือน ส่วนแบ่งตลาด อันดับ และ YoY |
+| [`summaries/model_monthly.csv`](summaries/model_monthly.csv) | ยอดรายรุ่น (ระดับ model) ต่อเดือน ส่วนแบ่งตลาด อันดับ และ YoY |
+| [`data/registrations/YYYY-MM.csv`](data/registrations) | ข้อมูลรายเดือนระดับแถว ตามที่กรมการขนส่งทางบกเผยแพร่ เก็บชื่อต้นฉบับไว้คู่กับรหัสที่จับคู่แล้ว |
+| [`data/brands.csv`](data/brands.csv) | รายชื่อยี่ห้อ รหัสถาวร (`brand_id`) และชื่อที่กรมการขนส่งทางบกใช้ |
+| [`data/models.csv`](data/models.csv) | รายชื่อรุ่น รหัสถาวร (`model_id`) |
+| [`data/aliases.csv`](data/aliases.csv) | ตารางจับคู่ชื่อรุ่นต้นฉบับของกรมการขนส่งทางบก กับ `model_id` (จับคู่แบบตรงตัวเท่านั้น) |
+| [`data/sources.csv`](data/sources.csv) | ทะเบียนแหล่งข้อมูล: URL ต้นฉบับ, วันที่ดึง, SHA-256, สถานะรับ/ปฏิเสธ พร้อมเหตุผล |
+
+**ช่วงข้อมูล:** มกราคม 2565 ถึง มกราคม 2569 (2022-01 ถึง 2026-01), 48 เดือน
+
+**เดือนที่ไม่มีข้อมูล:** ธันวาคม 2566 (ไฟล์ที่กรมฯ เผยแพร่เป็นข้อมูลของ ธ.ค. 2565) และกุมภาพันธ์ 2569 (ไฟล์ที่เผยแพร่มีเพียง 6 แถว) สองเดือนนี้แสดงเป็น `status=missing` และเว้นตัวเลขว่าง **ไม่ใช่ 0** รายละเอียดอยู่ใน [DATA_SOURCES.md](DATA_SOURCES.md)
+
+## เริ่มใช้งาน
+
+ทุกไฟล์ดาวน์โหลดตรงจาก GitHub ได้ ไม่ต้องสมัครหรือใช้ API key
+
+```text
+https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/summaries/brand_monthly.csv
+```
+
+Python (pandas):
+
+```python
+import pandas as pd
+
+base = "https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/"
+brands = pd.read_csv(base + "summaries/brand_monthly.csv")
+print(brands[brands.period == "2026-01"].head(10))   # 10 ยี่ห้อแรก ม.ค. 2569
+```
+
+DuckDB / SQL:
+
+```sql
+SELECT period, units, share_pct
+FROM read_csv_auto('https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/summaries/model_monthly.csv')
+WHERE model_id = 'toyota-yaris-ativ'
+ORDER BY period;
+```
+
+หรือ clone ทั้ง repo: `git clone https://github.com/sunJirapath/thai-auto-data.git`
+
+## ความหมายของข้อมูล
+
+- **เป็นยอดจดทะเบียนครั้งแรก ไม่ใช่ยอดขาย** รถที่ขายแล้วอาจจดทะเบียนในเดือนถัดไป ตัวเลขนี้จึงไม่ตรงกับยอดขายของ ส.อ.ท. หรือของค่ายรถ
+- **ประเภทรถ:** `RY1` = รถยนต์นั่งส่วนบุคคลไม่เกิน 7 คน (ร.ย.1), `RY2` = รถยนต์นั่งส่วนบุคคลเกิน 7 คน (ร.ย.2), `RY3` = รถยนต์บรรทุกส่วนบุคคล (ร.ย.3 รวมกระบะ) ไม่รวมรถจักรยานยนต์และรถประเภทอื่น
+- **ระดับรุ่น (model) เท่านั้น** กรมการขนส่งทางบกใช้ชื่อไม่สม่ำเสมอ บางค่ายแจ้งระดับรุ่น (`YARIS ATIV`) บางค่ายแจ้งระดับรุ่นย่อย (`BYD ATTO3 (480KM-EXT)`) เราจึงรวมเป็นระดับ model และไม่แบ่งยอดลงระดับรุ่นย่อย (trim)
+- **`model_id` ว่าง** หมายถึงยังไม่ได้จับคู่ชื่อนั้น ยอดเหล่านี้ยังนับรวมในยอดทั้งตลาดและยอดรายยี่ห้อ แต่ไม่อยู่ในอันดับรายรุ่น สัดส่วนที่ยังไม่จับคู่แสดงในคอลัมน์ `unmatched_model_units` (รวมทั้งช่วงจับคู่ได้ 98.1% ของยอด)
+- **ส่วนแบ่งตลาด (`share_pct`)** คิดจากยอดรวม ร.ย.1 ถึง ร.ย.3 ของเดือนนั้นทั้งหมด
+- **`yoy_pct` / `mom_pct` ว่าง** เมื่อเดือนที่ใช้เปรียบเทียบไม่มีข้อมูล หรือเดือนนั้นยอดเป็นศูนย์
+- **ปี:** ไฟล์ต้นฉบับใช้ พ.ศ. ไฟล์ในนี้ใช้ ค.ศ. รูปแบบ `YYYY-MM`
+- **รหัส (`brand_id`, `model_id`) ถาวร** ไม่เปลี่ยนแม้ชื่อแสดงผลจะเปลี่ยน
+- สถานะรุ่นใน `models.csv` เป็น `unverified` ทั้งหมด การมีรถจดทะเบียนไม่ได้แปลว่ารุ่นนั้นยังวางขายอยู่
+
+## การอัปเดต
+
+ข้อมูลจะอัปเดตเมื่อกรมการขนส่งทางบกเผยแพร่ไฟล์รายเดือนใหม่ ทุกไฟล์ผ่านการตรวจก่อนรับเข้า: จำนวนแถวต้องไม่น้อยผิดปกติ, เดือนในเนื้อหาต้องตรงกับชื่อไฟล์, ตัวเลขต้องเป็นจำนวนเต็มไม่ติดลบ ไฟล์ที่ไม่ผ่านจะถูกบันทึกใน `data/sources.csv` พร้อมเหตุผลและไม่นำมาใช้
+
+ณ วันที่ 13 ต.ค. 2569 ไฟล์ล่าสุดที่กรมฯ เผยแพร่คือเดือนกุมภาพันธ์ 2569 (อัปโหลด 17 มี.ค. 2569)
+
+## การอ้างอิง / How to cite
+
+กดปุ่ม **"Cite this repository"** ทางขวาของหน้า GitHub เพื่อคัดลอกรูปแบบ APA หรือ BibTeX หรือใช้ข้อความนี้:
+
+```text
+ข้อมูลจาก thai-auto-data โดย sunJirapath (https://github.com/sunJirapath/thai-auto-data), สัญญาอนุญาต CC BY 4.0
+ข้อมูลต้นฉบับ: กรมการขนส่งทางบก, สถิติจำนวนรถจดทะเบียนครั้งแรก จำแนกตามยี่ห้อและรุ่น (gdcatalog.dlt.go.th)
+ดึงข้อมูลเมื่อ: <วันที่ที่คุณดาวน์โหลด>
+```
+
+```text
+Data: thai-auto-data by sunJirapath (https://github.com/sunJirapath/thai-auto-data), CC BY 4.0.
+Original source: Department of Land Transport, Thailand, first vehicle registrations by brand and model (gdcatalog.dlt.go.th).
+Retrieved: <your download date>
+```
+
+ในกราฟ บทความ หรือแอป ใส่บรรทัด "ที่มา: thai-auto-data / กรมการขนส่งทางบก" ใกล้กับข้อมูลที่แสดงก็เพียงพอ
+
+## พบข้อมูลผิด / Corrections
+
+เปิด [Issue](https://github.com/sunJirapath/thai-auto-data/issues) พร้อมระบุไฟล์ แถว และแหล่งอ้างอิงที่ตรวจสอบได้ เช่น ชื่อรุ่นที่จับคู่ผิด หรือชื่อรุ่นที่ควรเพิ่มใน `aliases.csv`
+
+## สัญญาอนุญาต / License
+
+- งานรวบรวม จัดระเบียบ รหัส และไฟล์สรุปในที่นี้: [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE)
+- ข้อมูลต้นฉบับเป็นของกรมการขนส่งทางบก เผยแพร่ภายใต้สัญญาอนุญาต "Open Data Common" ของภาครัฐ ผู้ใช้ต้องอ้างอิงกรมการขนส่งทางบกด้วย ดู [DATA_SOURCES.md](DATA_SOURCES.md)
+- ชื่อยี่ห้อและรุ่นรถเป็นเครื่องหมายการค้าของเจ้าของ ใช้เพื่อระบุตัวรถเท่านั้น
+
+---
+
+## English
+
+**What:** monthly first-registration counts of new cars in Thailand (passenger cars ≤7 seats, >7 seats, and private pickups), by brand and model, January 2022 to January 2026. Source: Thailand's Department of Land Transport (DLT) open data portal.
+
+**Files:** start with `summaries/` (market, brand and model trend tables with share, rank, MoM and YoY). `data/registrations/` has the row-level monthly data with DLT's original brand/model strings next to the matched IDs. `data/sources.csv` records every source file with URL, retrieval date, SHA-256 and acceptance status.
+
+**Read this before using:**
+- These are **registrations, not sales**.
+- Two months are **missing, not zero**: December 2023 (DLT published the December 2022 file under that title) and February 2026 (the published file has 6 rows).
+- Matching is **exact-only, at model level**. Unmatched strings keep an empty `model_id`. They still count toward market and brand totals but not toward model rankings. Across the whole period, 98.1% of units are matched.
+- IDs are stable slugs. Model `status` is `unverified` throughout; a registration does not prove a model is on sale.
+
+**Cite:** use GitHub's "Cite this repository" button, or the text above. Attribution to both this repository and the DLT is required under CC BY 4.0.

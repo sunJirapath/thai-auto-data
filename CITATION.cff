@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: >-
+  หากนำข้อมูลนี้ไปใช้ กรุณาอ้างอิง thai-auto-data และกรมการขนส่งทางบก /
+  If you use this dataset, please cite it as below and also credit the
+  Department of Land Transport, Thailand.
+type: dataset
+title: "thai-auto-data: Thai car registration open data"
+abstract: >-
+  Monthly first-registration counts of new cars in Thailand (DLT categories
+  RY1, RY2, RY3) by brand and model from January 2022, normalized with stable
+  brand and model IDs, plus market, brand and model trend tables.
+authors:
+  - name: sunJirapath
+repository: "https://github.com/sunJirapath/thai-auto-data"
+url: "https://github.com/sunJirapath/thai-auto-data"
+license: CC-BY-4.0
+keywords:
+  - Thailand
+  - automotive
+  - vehicle registrations
+  - open data
+references:
+  - type: dataset
+    title: "สถิติจำนวนรถจดทะเบียนครั้งแรก ตามกฎหมายว่าด้วยรถยนต์ (จำแนกตามยี่ห้อและรุ่น)"
+    authors:
+      - name: "กรมการขนส่งทางบก (Department of Land Transport, Thailand)"
+    url: "https://gdcatalog.dlt.go.th/dataset/stat_1_1_01_first_regis_vehicles_car"
