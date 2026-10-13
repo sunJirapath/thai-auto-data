@@ -15,8 +15,10 @@
 
 ### What we keep
 
+- **New vehicles only** (สถิติการจดทะเบียนรถใหม่). The DLT's other series, สถิติการจดทะเบียนรถ, also counts used vehicles registered again and is not used anywhere in this project.
 - Categories รย.1 (`RY1`), รย.2 (`RY2`) and รย.3 (`RY3`) only. Motorcycles, tractors, trailers and commercial categories are dropped at import.
-- National totals per month, category, brand and model. Province detail is summed and not stored yet.
+- National totals per month, category, brand and model (`data/registrations/`).
+- Totals per month, province and category (`data/registrations_by_province.csv`). For every month and category, the provinces add up exactly to the national total; `validate.py` checks this.
 - The DLT's brand and model strings are kept unchanged (`brand_raw`, `model_raw`) next to the matched IDs.
 
 ### Checks applied to every import
@@ -30,6 +32,17 @@ The whole file is rejected, logged in `data/sources.csv` with the reason, and no
 5. a count is negative or not a whole number.
 
 The import also reports which already-published months changed, so DLT revisions are visible in review.
+
+### Verification (13–14 October 2026)
+
+- Every month from January 2024 to September 2026 matches, for RY1, RY2 and RY3, the "ทั่วประเทศ" column of the DLT's yearly new-registration-by-province files (newcar_2024, newcar_2025, newcar_2026). The 2021, 2022 and 2023 annual totals match the DLT's yearly files for those years.
+- 2025 and 2026 months also match the DLT's monthly totals file used as the import gate.
+
+### Patterns that look odd but are in the DLT data
+
+- **January is almost double December, every year.** For example, December 2025 had 42,309 and January 2026 had 90,733, and the jump is spread across almost every brand. The same December dip and January jump appear in every year since 2021. These are registrations, not sales, so registration timing shows up directly.
+- **Many pickups are รย.1.** Four-door and other passenger-configured pickups are often registered as รย.1 (private car, up to 7 seats), not รย.3. About half of D-Max, Hilux, Ranger and Triton registrations are รย.1, and pickups are about 11% of all รย.1 in the latest 12 months. So รย.1 does not mean "sedans and SUVs" and รย.3 does not mean "all pickups".
+- **Bangkok is more than half the country.** Vehicles are counted in the province where they are registered. Company, fleet and leasing vehicles registered in Bangkok inflate Bangkok and understate other provinces compared with where the cars are actually used.
 
 ### Why not the DLT open-data portal
 
@@ -61,6 +74,12 @@ Notes:
 - Price history only starts from the first observation. For example, Honda's press release of 1 August 2024 gives the City e:HEV RS at 799,000 baht, and the Honda City page on 13 October 2026 shows 769,000 baht. What happened in between is not recorded.
 - Third-party price sites are not used as sources. They often disagree with each other and with the manufacturer.
 - Dealer discounts are out of scope.
+
+## Provinces and regions
+
+`data/provinces.csv` lists the 77 provinces with their ISO 3166-2 code (`TH-10` = Bangkok), Thai and English names, and region. Regions follow Thailand's six-region geographic system (ภาคกลาง, ภาคตะวันออก, ภาคตะวันออกเฉียงเหนือ, ภาคเหนือ, ภาคตะวันตก, ภาคใต้), in which Bangkok is part of ภาคกลาง. The website shows Bangkok on its own because it is so large.
+
+The website map uses province boundaries from [geoBoundaries](https://www.geoboundaries.org/) (gbOpen THA ADM1, built 12 December 2023), which are derived from OpenStreetMap: © OpenStreetMap contributors, licensed under the [Open Database License (ODbL) 1.0](https://opendatacommons.org/licenses/odbl/1-0/). The simplified copy in `site/th-provinces.geojson` keeps that license; it is not covered by this repository's CC BY 4.0.
 
 ## Brand and model identities
 

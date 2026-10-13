@@ -17,6 +17,8 @@ Open data on the Thai car market: monthly new-vehicle registrations by brand and
 | [`summaries/model_monthly.csv`](summaries/model_monthly.csv) | Registrations per model per month, market share, rank and YoY |
 | [`summaries/variant_monthly.csv`](summaries/variant_monthly.csv) | Registrations per month by the variant name the DLT records (matched models only) |
 | [`data/prices.csv`](data/prices.csv) | Prices from official manufacturer websites by variant, append-only, every row linked to its source |
+| [`data/registrations_by_province.csv`](data/registrations_by_province.csv) | Registrations per month by province and category (77 provinces; they add up to the national total every month) |
+| [`data/provinces.csv`](data/provinces.csv) | Province ISO 3166-2 codes, Thai and English names, and region |
 | [`data/registrations/YYYY-MM.csv`](data/registrations) | Row-level monthly data as published by the DLT, with the original strings kept next to the matched IDs |
 | [`data/brands.csv`](data/brands.csv) | Brands, stable IDs (`brand_id`) and the names the DLT uses for them |
 | [`data/models.csv`](data/models.csv) | Models and stable IDs (`model_id`) |
@@ -61,7 +63,10 @@ Or clone the whole repository: `git clone https://github.com/sunJirapath/thai-au
 ## What the data means
 
 - **These are new-vehicle registrations, not sales.** A car sold in one month may be registered the next, so these numbers will not match sales figures from the Federation of Thai Industries or the manufacturers.
-- **Vehicle categories:** `RY1` = private passenger car, up to 7 seats (ร.ย.1); `RY2` = private passenger car, more than 7 seats (ร.ย.2); `RY3` = private pickup / truck (ร.ย.3). Motorcycles and all other categories are excluded.
+- **Vehicle categories:** `RY1` = private passenger car, up to 7 seats (ร.ย.1); `RY2` = private passenger car, more than 7 seats (ร.ย.2); `RY3` = private truck (ร.ย.3). Motorcycles and all other categories are excluded. Many four-door pickups are registered as RY1.
+- **New vehicles only.** Only the DLT's new-registration statistics are used, never its general registration statistics (which include used vehicles registered again).
+- **January is almost double December every year.** This pattern is in the DLT data itself, not an error.
+- **Provinces count where a vehicle is registered.** Company and leasing vehicles registered in Bangkok make Bangkok more than half the country.
 - **Model level only.** The DLT names vehicles inconsistently. Some brands report the model (`YARIS ATIV`), others report a variant (`BYD ATTO3 (480KM-EXT)`). Everything is grouped at model level, and counts are never split down to trims.
 - **An empty `model_id`** means the string has not been matched yet. Those units still count toward market and brand totals, but not toward model rankings. The unmatched amount is in the `unmatched_model_units` column; across the whole period 98.2% of units are matched (recent months are lower until new models get aliases).
 - **Market share (`share_pct`)** is calculated against the month's total of RY1 to RY3.
@@ -96,4 +101,5 @@ Open an [issue](https://github.com/sunJirapath/thai-auto-data/issues) with the f
 
 - The compilation, normalization, IDs and summary files in this repository: [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE).
 - The original data belongs to the Department of Land Transport and is published under the Thai government "Open Data Common" license. Users must also credit the DLT. See [DATA_SOURCES.md](DATA_SOURCES.md).
+- The province boundaries used by the map (`site/th-provinces.geojson`) come from geoBoundaries / © OpenStreetMap contributors under ODbL 1.0, not this repository's CC BY 4.0.
 - Brand and model names are trademarks of their owners and are used only to identify vehicles.

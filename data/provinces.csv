@@ -1,0 +1,78 @@
+province_iso,name_th,name_en,region,region_th
+TH-10,กรุงเทพมหานคร,Bangkok,central,ภาคกลาง
+TH-11,สมุทรปราการ,Samut Prakan,central,ภาคกลาง
+TH-12,นนทบุรี,Nonthaburi,central,ภาคกลาง
+TH-13,ปทุมธานี,Pathum Thani,central,ภาคกลาง
+TH-14,พระนครศรีอยุธยา,Phra Nakhon Si Ayutthaya,central,ภาคกลาง
+TH-15,อ่างทอง,Ang Thong,central,ภาคกลาง
+TH-16,ลพบุรี,Lop Buri,central,ภาคกลาง
+TH-17,สิงห์บุรี,Sing Buri,central,ภาคกลาง
+TH-18,ชัยนาท,Chai Nat,central,ภาคกลาง
+TH-19,สระบุรี,Saraburi,central,ภาคกลาง
+TH-20,ชลบุรี,Chon Buri,east,ภาคตะวันออก
+TH-21,ระยอง,Rayong,east,ภาคตะวันออก
+TH-22,จันทบุรี,Chanthaburi,east,ภาคตะวันออก
+TH-23,ตราด,Trat,east,ภาคตะวันออก
+TH-24,ฉะเชิงเทรา,Chachoengsao,east,ภาคตะวันออก
+TH-25,ปราจีนบุรี,Prachin Buri,east,ภาคตะวันออก
+TH-26,นครนายก,Nakhon Nayok,central,ภาคกลาง
+TH-27,สระแก้ว,Sa Kaeo,east,ภาคตะวันออก
+TH-30,นครราชสีมา,Nakhon Ratchasima,northeast,ภาคตะวันออกเฉียงเหนือ
+TH-31,บุรีรัมย์,Buri Ram,northeast,ภาคตะวันออกเฉียงเหนือ
+TH-32,สุรินทร์,Surin,northeast,ภาคตะวันออกเฉียงเหนือ
+TH-33,ศรีสะเกษ,Si Sa Ket,northeast,ภาคตะวันออกเฉียงเหนือ
+TH-34,อุบลราชธานี,Ubon Ratchathani,northeast,ภาคตะวันออกเฉียงเหนือ
+TH-35,ยโสธร,Yasothon,northeast,ภาคตะวันออกเฉียงเหนือ
+TH-36,ชัยภูมิ,Chaiyaphum,northeast,ภาคตะวันออกเฉียงเหนือ
+TH-37,อำนาจเจริญ,Amnat Charoen,northeast,ภาคตะวันออกเฉียงเหนือ
+TH-38,บึงกาฬ,Bueng Kan,northeast,ภาคตะวันออกเฉียงเหนือ
+TH-39,หนองบัวลำภู,Nong Bua Lam Phu,northeast,ภาคตะวันออกเฉียงเหนือ
+TH-40,ขอนแก่น,Khon Kaen,northeast,ภาคตะวันออกเฉียงเหนือ
+TH-41,อุดรธานี,Udon Thani,northeast,ภาคตะวันออกเฉียงเหนือ
+TH-42,เลย,Loei,northeast,ภาคตะวันออกเฉียงเหนือ
+TH-43,หนองคาย,Nong Khai,northeast,ภาคตะวันออกเฉียงเหนือ
+TH-44,มหาสารคาม,Maha Sarakham,northeast,ภาคตะวันออกเฉียงเหนือ
+TH-45,ร้อยเอ็ด,Roi Et,northeast,ภาคตะวันออกเฉียงเหนือ
+TH-46,กาฬสินธุ์,Kalasin,northeast,ภาคตะวันออกเฉียงเหนือ
+TH-47,สกลนคร,Sakon Nakhon,northeast,ภาคตะวันออกเฉียงเหนือ
+TH-48,นครพนม,Nakhon Phanom,northeast,ภาคตะวันออกเฉียงเหนือ
+TH-49,มุกดาหาร,Mukdahan,northeast,ภาคตะวันออกเฉียงเหนือ
+TH-50,เชียงใหม่,Chiang Mai,north,ภาคเหนือ
+TH-51,ลำพูน,Lamphun,north,ภาคเหนือ
+TH-52,ลำปาง,Lampang,north,ภาคเหนือ
+TH-53,อุตรดิตถ์,Uttaradit,north,ภาคเหนือ
+TH-54,แพร่,Phrae,north,ภาคเหนือ
+TH-55,น่าน,Nan,north,ภาคเหนือ
+TH-56,พะเยา,Phayao,north,ภาคเหนือ
+TH-57,เชียงราย,Chiang Rai,north,ภาคเหนือ
+TH-58,แม่ฮ่องสอน,Mae Hong Son,north,ภาคเหนือ
+TH-60,นครสวรรค์,Nakhon Sawan,central,ภาคกลาง
+TH-61,อุทัยธานี,Uthai Thani,central,ภาคกลาง
+TH-62,กำแพงเพชร,Kamphaeng Phet,central,ภาคกลาง
+TH-63,ตาก,Tak,west,ภาคตะวันตก
+TH-64,สุโขทัย,Sukhothai,central,ภาคกลาง
+TH-65,พิษณุโลก,Phitsanulok,central,ภาคกลาง
+TH-66,พิจิตร,Phichit,central,ภาคกลาง
+TH-67,เพชรบูรณ์,Phetchabun,central,ภาคกลาง
+TH-70,ราชบุรี,Ratchaburi,west,ภาคตะวันตก
+TH-71,กาญจนบุรี,Kanchanaburi,west,ภาคตะวันตก
+TH-72,สุพรรณบุรี,Suphan Buri,central,ภาคกลาง
+TH-73,นครปฐม,Nakhon Pathom,central,ภาคกลาง
+TH-74,สมุทรสาคร,Samut Sakhon,central,ภาคกลาง
+TH-75,สมุทรสงคราม,Samut Songkhram,central,ภาคกลาง
+TH-76,เพชรบุรี,Phetchaburi,west,ภาคตะวันตก
+TH-77,ประจวบคีรีขันธ์,Prachuap Khiri Khan,west,ภาคตะวันตก
+TH-80,นครศรีธรรมราช,Nakhon Si Thammarat,south,ภาคใต้
+TH-81,กระบี่,Krabi,south,ภาคใต้
+TH-82,พังงา,Phangnga,south,ภาคใต้
+TH-83,ภูเก็ต,Phuket,south,ภาคใต้
+TH-84,สุราษฎร์ธานี,Surat Thani,south,ภาคใต้
+TH-85,ระนอง,Ranong,south,ภาคใต้
+TH-86,ชุมพร,Chumphon,south,ภาคใต้
+TH-90,สงขลา,Songkhla,south,ภาคใต้
+TH-91,สตูล,Satun,south,ภาคใต้
+TH-92,ตรัง,Trang,south,ภาคใต้
+TH-93,พัทลุง,Phatthalung,south,ภาคใต้
+TH-94,ปัตตานี,Pattani,south,ภาคใต้
+TH-95,ยะลา,Yala,south,ภาคใต้
+TH-96,นราธิวาส,Narathiwat,south,ภาคใต้

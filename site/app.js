@@ -4,7 +4,7 @@
   'use strict';
 
   var TH_MONTHS = ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.', 'ต.ค.', 'พ.ย.', 'ธ.ค.'];
-  var CATS = [['ry1', 'ร.ย.1 รถเก๋ง/SUV ≤7 ที่นั่ง'], ['ry2', 'ร.ย.2 รถนั่ง >7 ที่นั่ง'], ['ry3', 'ร.ย.3 กระบะ/บรรทุกส่วนบุคคล']];
+  var CATS = [['ry1', 'ร.ย.1 รถยนต์นั่งส่วนบุคคลไม่เกิน 7 คน'], ['ry2', 'ร.ย.2 รถยนต์นั่งส่วนบุคคลเกิน 7 คน'], ['ry3', 'ร.ย.3 รถยนต์บรรทุกส่วนบุคคล']];
   var CAT_LABEL = { RY1: 'ร.ย.1', RY2: 'ร.ย.2', RY3: 'ร.ย.3' };
   var MAX_SERIES = 8, MAX_COMPARE = 4;
   var charts = {};
@@ -305,43 +305,360 @@
         (missing.length ? ' · ขาด ' + missing.length + ' เดือน' : ' · ครบทุกเดือน')));
   }
 
-  function renderMarket() {
-    var surface = css('--surface');
-    var datasets = CATS.map(function (c, k) {
-      return {
-        label: c[1], data: D.market.map(function (r) { return r.status === 'ok' ? +r[c[0]] : null; }),
-        backgroundColor: seriesColor(k), borderColor: surface, borderWidth: { top: 2 }, borderSkipped: 'start',
-        borderRadius: k === CATS.length - 1 ? { topLeft: 4, topRight: 4 } : 0, maxBarThickness: 18, stack: 'm'
-      };
+  // ---------- market explorer (home): filters, stacked bars vs last year, regions, map ----------
+  var REGION_GROUPS = [['bkk', 'กรุงเทพมหานคร'], ['central', 'ภาคกลาง (ไม่รวมกรุงเทพฯ)'], ['east', 'ภาคตะวันออก'],
+    ['northeast', 'ภาคตะวันออกเฉียงเหนือ'], ['north', 'ภาคเหนือ'], ['west', 'ภาคตะวันตก'], ['south', 'ภาคใต้']];
+  var RANGES = [['12', '12 เดือน'], ['24', '24 เดือน'], ['36', '3 ปี'], ['ytd', 'ปีนี้'], ['all', 'ทั้งหมด'], ['custom', 'กำหนดเอง']];
+  var GRAINS = [['m', 'รายเดือน'], ['q', 'รายไตรมาส'], ['y', 'รายปี']];
+  var M = { range: '12', grain: 'm', cats: { RY1: true, RY2: true, RY3: true }, area: 'all', from: null, to: null };
+
+  function regionGroup(iso) { return iso === 'TH-10' ? 'bkk' : D.provinceInfo[iso].region; }
+  function areaProvinces(area) {
+    if (area === 'all') return null;
+    var all = Object.keys(D.provinceInfo);
+    if (area === 'bkk') return ['TH-10'];
+    if (area === 'upcountry') return all.filter(function (i) { return i !== 'TH-10'; });
+    if (area.indexOf('region:') === 0) { var rg = area.slice(7); return all.filter(function (i) { return D.provinceInfo[i].region === rg; }); }
+    return [area.slice(5)];   // 'prov:TH-50'
+  }
+  function areaLabel(area) {
+    if (area === 'all') return 'ทั้งประเทศ';
+    if (area === 'bkk') return 'กรุงเทพมหานคร';
+    if (area === 'upcountry') return 'ต่างจังหวัด (ไม่รวมกรุงเทพฯ)';
+    if (area.indexOf('region:') === 0) return D.regionName[area.slice(7)] + (area === 'region:central' ? ' (รวมกรุงเทพฯ)' : '');
+    return 'จ.' + D.provinceInfo[area.slice(5)].name_th;
+  }
+  function selCats() { return ['RY1', 'RY2', 'RY3'].filter(function (c) { return M.cats[c]; }); }
+  // units for one month, area and category (0 when absent from a published month)
+  function unitsFor(period, isos, cat) {
+    if (!isos) return +D.marketBy[period][cat.toLowerCase()];
+    var byIso = D.provBy[period] || {}, s = 0;
+    isos.forEach(function (i) { s += (byIso[i] && byIso[i][cat]) || 0; });
+    return s;
+  }
+  function selectedMonths() {
+    var ps = okPeriods(), last = ps[ps.length - 1];
+    if (M.range === 'all') return ps;
+    if (M.range === 'ytd') return ps.filter(function (p) { return p.slice(0, 4) === last.slice(0, 4); });
+    if (M.range === 'custom') return ps.filter(function (p) { return p >= M.from && p <= M.to; });
+    return ps.slice(-(+M.range));
+  }
+  function shiftMonth(p, n) {
+    var y = +p.slice(0, 4), m = +p.slice(5, 7) + n;
+    while (m < 1) { m += 12; y--; }
+    while (m > 12) { m -= 12; y++; }
+    return y + '-' + (m < 10 ? '0' : '') + m;
+  }
+  function bucketKey(p) {
+    if (M.grain === 'm') return p;
+    if (M.grain === 'q') return p.slice(0, 4) + '-Q' + Math.ceil(+p.slice(5, 7) / 3);
+    return p.slice(0, 4);
+  }
+  function bucketLabel(k, n) {
+    var y = +k.slice(0, 4) + 543;
+    if (M.grain === 'm') return monthLabel(k);
+    if (M.grain === 'q') return 'Q' + k.slice(6) + '/' + String(y).slice(2) + (n < 3 ? '*' : '');
+    return String(y) + (n < 12 ? ' (' + n + ' ด.)' : '');
+  }
+
+  function buildMarketControls() {
+    function seg(id, items, key) {
+      var box = document.getElementById(id);
+      box.textContent = '';
+      items.forEach(function (it) {
+        var b = el('button', { type: 'button', 'aria-pressed': String(M[key] === it[0]) }, it[1]);
+        b.addEventListener('click', function () {
+          M[key] = it[0];
+          box.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+          document.getElementById('fCustom').hidden = M.range !== 'custom';
+          renderExplorer();
+        });
+        box.appendChild(b);
+      });
+    }
+    seg('fRange', RANGES, 'range');
+    seg('fGrain', GRAINS, 'grain');
+    var cats = document.getElementById('fCats');
+    cats.textContent = '';
+    CATS.forEach(function (c, k) {
+      var code = c[0].toUpperCase();
+      var b = el('button', { type: 'button', class: 'chip toggle', 'aria-pressed': String(M.cats[code]), title: c[1] });
+      var dot = el('i'); dot.style.background = seriesColor(k);
+      add(b, dot, document.createTextNode(CAT_LABEL[code]));
+      b.addEventListener('click', function () {
+        if (M.cats[code] && selCats().length === 1) return;   // keep at least one category
+        M.cats[code] = !M.cats[code]; b.setAttribute('aria-pressed', String(M.cats[code])); renderExplorer();
+      });
+      cats.appendChild(b);
     });
+    var area = document.getElementById('fArea');
+    area.textContent = '';
+    [['all', 'ทั้งประเทศ'], ['bkk', 'กรุงเทพมหานคร'], ['upcountry', 'ต่างจังหวัด (ไม่รวมกรุงเทพฯ)']].forEach(function (o) {
+      area.appendChild(el('option', { value: o[0] }, o[1]));
+    });
+    var og = el('optgroup', { label: 'ภูมิภาค' });
+    Object.keys(D.regionName).forEach(function (r) { og.appendChild(el('option', { value: 'region:' + r }, areaLabel('region:' + r))); });
+    area.appendChild(og);
+    var op = el('optgroup', { label: 'จังหวัด' });
+    Object.keys(D.provinceInfo).sort(function (a, b) { return D.provinceInfo[a].name_th.localeCompare(D.provinceInfo[b].name_th, 'th'); })
+      .forEach(function (i) { op.appendChild(el('option', { value: 'prov:' + i }, D.provinceInfo[i].name_th)); });
+    area.appendChild(op);
+    area.value = M.area;
+    area.onchange = function () { M.area = area.value; renderExplorer(); };
+    var ps = okPeriods(), from = document.getElementById('fFrom'), to = document.getElementById('fTo');
+    from.textContent = ''; to.textContent = '';
+    ps.forEach(function (p) {
+      from.appendChild(el('option', { value: p }, monthLabel(p, true)));
+      to.appendChild(el('option', { value: p }, monthLabel(p, true)));
+    });
+    M.from = M.from || ps[Math.max(0, ps.length - 12)]; M.to = M.to || ps[ps.length - 1];
+    from.value = M.from; to.value = M.to;
+    function onRange() {
+      M.from = from.value; M.to = to.value;
+      if (M.from > M.to) { var t = M.from; M.from = M.to; M.to = t; from.value = M.from; to.value = M.to; }
+      renderExplorer();
+    }
+    from.onchange = onRange; to.onchange = onRange;
+    document.getElementById('fCustom').hidden = M.range !== 'custom';
+  }
+
+  // total above each stacked bar when there are few enough bars to read them
+  var totalLabels = {
+    id: 'totalLabels',
+    afterDatasetsDraw: function (chart, args, opts) {
+      if (!opts || !opts.totals || chart.chartArea.width / chart.data.labels.length < 34) return;   // too crowded to read
+      var ctx = chart.ctx, meta = chart.getDatasetMeta(opts.topIndex);
+      ctx.save();
+      ctx.fillStyle = css('--ink-2'); ctx.font = '11px ' + css('--font'); ctx.textAlign = 'center';
+      opts.totals.forEach(function (t, i) {
+        if (!meta.data[i]) return;
+        var y = chart.scales.y.getPixelForValue(t);
+        ctx.fillText(t >= 10000 ? (t / 1000).toFixed(t >= 100000 ? 0 : 1) + 'k' : fmt(t), meta.data[i].x, y - 5);
+      });
+      ctx.restore();
+    }
+  };
+
+  function renderExplorer() {
+    var isos = areaProvinces(M.area), cats = selCats(), months = selectedMonths();
+    var order = [], buckets = {};
+    months.forEach(function (p) {
+      var k = bucketKey(p);
+      if (!buckets[k]) { buckets[k] = { months: [], cat: {}, total: 0, prev: 0, prevOk: true }; order.push(k); }
+      var b = buckets[k];
+      b.months.push(p);
+      cats.forEach(function (c) { var v = unitsFor(p, isos, c); b.cat[c] = (b.cat[c] || 0) + v; b.total += v; });
+      var q = shiftMonth(p, -12);
+      if (!D.okSet[q]) b.prevOk = false;
+      else cats.forEach(function (c) { b.prev += unitsFor(q, isos, c); });
+    });
+    var total = 0, prev = 0, prevOk = true;
+    order.forEach(function (k) { total += buckets[k].total; prev += buckets[k].prev; prevOk = prevOk && buckets[k].prevOk; });
+
+    // stats
+    var last = months[months.length - 1], before = shiftMonth(last, -1), lastV = 0, beforeV = null;
+    cats.forEach(function (c) { lastV += unitsFor(last, isos, c); });
+    if (D.okSet[before]) { beforeV = 0; cats.forEach(function (c) { beforeV += unitsFor(before, isos, c); }); }
+    function stat(label, value, detail, cls) {
+      return add(el('div', { class: 'stat' }), el('span', { class: 'label' }, label), el('span', { class: 'value' }, value),
+        el('span', { class: 'detail ' + (cls || '') }, detail));
+    }
+    var yoy = prevOk && prev ? 100 * (total - prev) / prev : null;
+    var mom = beforeV ? 100 * (lastV - beforeV) / beforeV : null;
+    var stats = document.getElementById('mStats');
+    stats.textContent = '';
+    add(stats,
+      stat('รวม · ' + areaLabel(M.area), fmt(total) + ' คัน', monthLabel(months[0]) + ' – ' + monthLabel(last)),
+      stat('เทียบช่วงเดียวกันปีก่อน', yoy === null ? '—' : pctText(yoy), prevOk ? 'ปีก่อน ' + fmt(prev) + ' คัน' : 'ไม่มีข้อมูลปีก่อนครบช่วง', yoy === null ? '' : yoy >= 0 ? 'up' : 'down'),
+      stat('เฉลี่ยต่อเดือน', fmt(Math.round(total / months.length)) + ' คัน', months.length + ' เดือน'),
+      stat('เดือนล่าสุด · ' + monthLabel(last, true), fmt(lastV) + ' คัน', mom === null ? '' : 'จากเดือนก่อน ' + pctText(mom), mom === null ? '' : mom >= 0 ? 'up' : 'down'));
+
+    // main chart: stacked categories + same period last year (one axis, same unit)
+    var surface = css('--surface'), datasets = [];
+    CATS.forEach(function (c, k) {
+      var code = c[0].toUpperCase();
+      if (!M.cats[code]) return;
+      datasets.push({ type: 'bar', label: c[1], data: order.map(function (key) { return buckets[key].cat[code]; }),
+        backgroundColor: seriesColor(k), borderColor: surface, borderWidth: { top: 2 }, borderSkipped: 'start', maxBarThickness: 34, stack: 'm', order: 2 });
+    });
+    datasets[datasets.length - 1].borderRadius = { topLeft: 4, topRight: 4 };
+    var topIndex = datasets.length - 1;
+    datasets.push({ type: 'line', label: 'ช่วงเดียวกันปีก่อน (รวม)', data: order.map(function (key) { return buckets[key].prevOk ? buckets[key].prev : null; }),
+      borderColor: css('--ink-2'), backgroundColor: css('--ink-2'), borderDash: [5, 4], borderWidth: 2, pointRadius: order.length > 26 ? 0 : 3,
+      pointBackgroundColor: surface, pointBorderWidth: 2, pointHoverRadius: 5, spanGaps: false, order: 1 });
     var opt = baseOptions();
     opt.scales.x.stacked = true; opt.scales.y.stacked = true;
     opt.scales.y.ticks.callback = kTicks;
-    opt.plugins.missingBands = { indices: missingIndices() };
+    opt.layout = { padding: { top: 18 } };
+    opt.plugins.totalLabels = { totals: order.map(function (k) { return buckets[k].total; }), topIndex: topIndex };
     opt.plugins.tooltip.callbacks = {
-      label: function (c) { return ' ' + c.dataset.label + ': ' + fmt(c.raw) + ' คัน'; },
+      title: function (items) {
+        var b = buckets[order[items[0].dataIndex]];
+        return items[0].label + (b.months.length > 1 ? ' (' + monthLabel(b.months[0]) + '–' + monthLabel(b.months[b.months.length - 1]) + ')' : '');
+      },
+      label: function (c) { return c.raw === null ? ' ' + c.dataset.label + ': ไม่มีข้อมูล' : ' ' + c.dataset.label + ': ' + fmt(c.raw) + ' คัน'; },
       footer: function (items) {
-        var r = D.market[items[0].dataIndex];
-        return 'รวม ' + fmt(r.total) + ' คัน' + (r.yoy_pct ? ' · YoY ' + pctText(r.yoy_pct) : '');
+        var b = buckets[order[items[0].dataIndex]];
+        return 'รวม ' + fmt(b.total) + ' คัน' + (b.prevOk && b.prev ? ' · เทียบปีก่อน ' + pctText(100 * (b.total - b.prev) / b.prev) : '');
       }
     };
     if (charts.market) charts.market.destroy();
     charts.market = new Chart(document.getElementById('marketChart'), {
-      type: 'bar', data: { labels: D.market.map(function (r) { return monthLabel(r.period); }), datasets: datasets },
-      options: opt, plugins: [missingBands]
+      data: { labels: order.map(function (k) { return bucketLabel(k, buckets[k].months.length); }), datasets: datasets },
+      options: opt, plugins: [totalLabels]
     });
+    var notes = ['ยอดเดือนมกราคมสูงกว่าธันวาคมเกือบเท่าตัวทุกปี เป็นรูปแบบที่อยู่ในข้อมูลของกรมฯ เอง',
+      'กระบะ 4 ประตูจำนวนมากจดเป็น ร.ย.1'];
+    if (M.grain !== 'm') notes.push('* หรือ (n ด.) คือช่วงที่มีข้อมูลไม่ครบในตัวกรองที่เลือก');
+    if (M.area !== 'all') notes.push('รถนับตามจังหวัดที่จดทะเบียน รถของบริษัทและลีสซิ่งที่จดในกรุงเทพฯ ทำให้ยอดกรุงเทพฯ สูงกว่าจำนวนผู้ใช้จริงในพื้นที่');
+    document.getElementById('mNote').textContent = notes.join(' · ');
 
-    var rows = D.market.slice().reverse().map(function (r) {
-      var tr = el('tr', r.status === 'ok' ? {} : { class: 'missing' });
-      tr.appendChild(el('td', {}, monthLabel(r.period, true)));
-      if (r.status !== 'ok') { tr.appendChild(el('td', { colspan: '6' }, 'ไม่มีข้อมูล · ' + r.note)); return tr; }
-      ['ry1', 'ry2', 'ry3', 'total'].forEach(function (k) { tr.appendChild(el('td', { class: 'n' }, fmt(r[k]))); });
-      tr.appendChild(pctCell(r.mom_pct)); tr.appendChild(pctCell(r.yoy_pct));
+    var trs = order.slice().reverse().map(function (k) {
+      var b = buckets[k], tr = el('tr');
+      tr.appendChild(el('td', {}, bucketLabel(k, b.months.length)));
+      ['RY1', 'RY2', 'RY3'].forEach(function (c) { tr.appendChild(el('td', { class: 'n' }, M.cats[c] ? fmt(b.cat[c]) : '—')); });
+      tr.appendChild(el('td', { class: 'n' }, fmt(b.total)));
+      tr.appendChild(el('td', { class: 'n' }, b.prevOk ? fmt(b.prev) : '—'));
+      tr.appendChild(pctCell(b.prevOk && b.prev ? (100 * (b.total - b.prev) / b.prev).toFixed(2) : ''));
       return tr;
     });
-    var box = document.getElementById('marketTable');
-    box.textContent = '';
-    box.appendChild(table([['เดือน'], ['ร.ย.1', 1], ['ร.ย.2', 1], ['ร.ย.3', 1], ['รวม', 1], ['MoM', 1], ['YoY', 1]], rows));
+    var tb = document.getElementById('marketTable');
+    tb.textContent = '';
+    tb.appendChild(table([['ช่วง'], ['ร.ย.1', 1], ['ร.ย.2', 1], ['ร.ย.3', 1], ['รวม', 1], ['ปีก่อน', 1], ['YoY', 1]], trs));
+
+    renderGeo(months, cats);
+  }
+
+  function renderGeo(months, cats) {
+    // per-province totals for the selected months and categories; always the whole country, for context
+    var byIso = {}, prevIso = {}, grand = 0;
+    var prevOk = months.every(function (p) { return D.okSet[shiftMonth(p, -12)]; });
+    Object.keys(D.provinceInfo).forEach(function (i) { byIso[i] = 0; prevIso[i] = 0; });
+    months.forEach(function (p) {
+      var rows = D.provBy[p] || {}, prows = D.provBy[shiftMonth(p, -12)] || {};
+      Object.keys(byIso).forEach(function (i) {
+        cats.forEach(function (c) {
+          byIso[i] += (rows[i] && rows[i][c]) || 0;
+          prevIso[i] += (prows[i] && prows[i][c]) || 0;
+        });
+      });
+    });
+    Object.keys(byIso).forEach(function (i) { grand += byIso[i]; });
+    var selSet = {};
+    (areaProvinces(M.area) || []).forEach(function (i) { selSet[i] = true; });
+
+    // region bars (Bangkok shown on its own: it is about half the country)
+    var groups = {};
+    REGION_GROUPS.forEach(function (g) { groups[g[0]] = 0; });
+    Object.keys(byIso).forEach(function (i) { groups[regionGroup(i)] += byIso[i]; });
+    function activeGroup(g) {
+      if (M.area === 'all') return true;
+      if (M.area === 'bkk') return g === 'bkk';
+      if (M.area === 'upcountry') return g !== 'bkk';
+      if (M.area.indexOf('region:') === 0) return g === M.area.slice(7) || (M.area === 'region:central' && g === 'bkk');
+      return g === regionGroup(M.area.slice(5));
+    }
+    var accent = css('--accent'), dim = css('--axis');
+    var ro = baseOptions();
+    ro.indexAxis = 'y';
+    ro.interaction = { mode: 'nearest', intersect: true, axis: 'y' };
+    ro.plugins.legend.display = false;
+    ro.scales.x.grid = { color: css('--grid') }; ro.scales.x.ticks.callback = kTicks;
+    ro.scales.y.grid = { display: false };
+    ro.plugins.tooltip.callbacks = { label: function (c) { return ' ' + fmt(c.raw) + ' คัน · ' + (grand ? (100 * c.raw / grand).toFixed(1) : 0) + '% ของทั้งประเทศ'; } };
+    ro.onClick = function (e, els) {
+      if (!els.length) return;
+      var g = REGION_GROUPS[els[0].index][0], next = g === 'bkk' ? 'bkk' : 'region:' + g;
+      M.area = M.area === next ? 'all' : next;
+      document.getElementById('fArea').value = M.area;
+      renderExplorer();
+    };
+    if (charts.region) charts.region.destroy();
+    charts.region = new Chart(document.getElementById('regionChart'), {
+      type: 'bar', options: ro,
+      data: { labels: REGION_GROUPS.map(function (g) { return g[1]; }),
+        datasets: [{ data: REGION_GROUPS.map(function (g) { return groups[g[0]]; }),
+          backgroundColor: REGION_GROUPS.map(function (g) { return activeGroup(g[0]) ? accent : dim; }),
+          borderRadius: 4, borderSkipped: 'start', maxBarThickness: 22 }] }
+    });
+
+    // choropleth with 5 quantile classes (Bangkok would flatten a linear scale)
+    var vals = Object.keys(byIso).map(function (i) { return byIso[i]; }).filter(function (v) { return v > 0; }).sort(function (a, b) { return a - b; });
+    var breaks = [0.2, 0.4, 0.6, 0.8].map(function (q) { return vals[Math.floor(q * (vals.length - 1))]; });
+    function cls(v) { if (!v) return -1; var k = 0; while (k < breaks.length && v > breaks[k]) k++; return k; }
+    var colors = [1, 2, 3, 4, 5].map(function (n) { return css('--q' + n); });
+    var rank = Object.keys(byIso).sort(function (a, b) { return byIso[b] - byIso[a]; });
+    var wrap = document.getElementById('mapWrap');
+    wrap.textContent = '';
+    var NS = 'http://www.w3.org/2000/svg', svg = document.createElementNS(NS, 'svg');
+    svg.setAttribute('viewBox', D.map.viewBox); svg.setAttribute('role', 'img');
+    svg.setAttribute('aria-label', 'แผนที่ยอดจดทะเบียนรายจังหวัด');
+    var tip = el('div', { class: 'map-tip' });
+    tip.hidden = true;
+    D.map.paths.forEach(function (f) {
+      var path = document.createElementNS(NS, 'path'), v = byIso[f.iso], k = cls(v), info = D.provinceInfo[f.iso];
+      path.setAttribute('d', f.d);
+      path.setAttribute('fill', k < 0 ? css('--grid') : colors[k]);
+      path.setAttribute('class', 'prov' + (selSet[f.iso] ? ' sel' : ''));
+      path.setAttribute('tabindex', '0');
+      var change = prevOk && prevIso[f.iso] ? pctText(100 * (v - prevIso[f.iso]) / prevIso[f.iso]) : '—';
+      var text = info.name_th + ': ' + fmt(v) + ' คัน · ' + (grand ? (100 * v / grand).toFixed(1) : 0) + '% · อันดับ ' + (rank.indexOf(f.iso) + 1) + ' · YoY ' + change;
+      path.setAttribute('aria-label', text);
+      path.addEventListener('pointermove', function (e) {
+        tip.textContent = text; tip.hidden = false;
+        var r = wrap.getBoundingClientRect();
+        tip.style.left = Math.max(0, Math.min(e.clientX - r.left + 12, r.width - 200)) + 'px';
+        tip.style.top = (e.clientY - r.top + 14) + 'px';
+      });
+      path.addEventListener('pointerleave', function () { tip.hidden = true; });
+      function pick() { M.area = M.area === 'prov:' + f.iso ? 'all' : 'prov:' + f.iso; document.getElementById('fArea').value = M.area; renderExplorer(); }
+      path.addEventListener('click', pick);
+      path.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(); } });
+      svg.appendChild(path);
+    });
+    // draw selected provinces last so their outline sits on top
+    Array.prototype.slice.call(svg.querySelectorAll('.prov.sel')).forEach(function (p) { svg.appendChild(p); });
+    add(wrap, svg, tip);
+    var legend = document.getElementById('mapLegend');
+    legend.textContent = '';
+    var edges = [vals[0]].concat(breaks).concat([vals[vals.length - 1]]);
+    colors.forEach(function (c, k) {
+      var sw = el('i'); sw.style.background = c;
+      legend.appendChild(add(el('span'), sw, document.createTextNode(fmt(edges[k]) + '–' + fmt(edges[k + 1]))));
+    });
+
+    var trs = rank.map(function (i, n) {
+      var v = byIso[i], info = D.provinceInfo[i], tr = el('tr', selSet[i] ? { class: 'sel-row' } : {});
+      add(tr, el('td', { class: 'n' }, String(n + 1)), el('td', {}, info.name_th), el('td', {}, D.regionName[info.region]),
+        el('td', { class: 'n' }, fmt(v)), el('td', { class: 'n' }, (grand ? 100 * v / grand : 0).toFixed(2) + '%'),
+        pctCell(prevOk && prevIso[i] ? (100 * (v - prevIso[i]) / prevIso[i]).toFixed(2) : ''));
+      return tr;
+    });
+    var pt = document.getElementById('provinceTable');
+    pt.textContent = '';
+    pt.appendChild(table([['#', 1], ['จังหวัด'], ['ภาค'], ['คัน', 1], ['ส่วนแบ่ง', 1], ['YoY', 1]], trs));
+  }
+
+  // equirectangular projection scaled by cos(latitude); fine for a country Thailand's size
+  function prepareMap(geo) {
+    var minX = 999, minY = 999, maxX = -999, maxY = -999;
+    geo.features.forEach(function (f) {
+      f.geometry.coordinates.forEach(function (poly) {
+        poly[0].forEach(function (pt) {
+          minX = Math.min(minX, pt[0]); maxX = Math.max(maxX, pt[0]); minY = Math.min(minY, pt[1]); maxY = Math.max(maxY, pt[1]);
+        });
+      });
+    });
+    var k = Math.cos((minY + maxY) / 2 * Math.PI / 180), W = 300, s = W / ((maxX - minX) * k), H = (maxY - minY) * s;
+    return {
+      viewBox: '0 0 ' + W + ' ' + H.toFixed(1),
+      paths: geo.features.map(function (f) {
+        var d = f.geometry.coordinates.map(function (poly) {
+          return 'M' + poly[0].map(function (pt) { return ((pt[0] - minX) * k * s).toFixed(1) + ',' + ((maxY - pt[1]) * s).toFixed(1); }).join('L') + 'Z';
+        }).join('');
+        return { iso: f.properties.province_iso, d: d };
+      })
+    };
   }
 
   function renderRanking(period) {
@@ -371,7 +688,8 @@
 
   function renderHome() {
     renderTiles();
-    renderMarket();
+    buildMarketControls();
+    renderExplorer();
     var sel = document.getElementById('monthSelect');
     ['brandTrend', 'modelTrend'].forEach(function (id) { document.getElementById(id).textContent = ''; });
     function topIds(rows, key, n) {
@@ -730,9 +1048,18 @@
   // ---------- boot ----------
   Promise.all([
     load('summaries/market_monthly.csv'), load('summaries/brand_monthly.csv'), load('summaries/model_monthly.csv'),
-    load('data/brands.csv'), load('data/models.csv'), load('data/prices.csv')
+    load('data/brands.csv'), load('data/models.csv'), load('data/prices.csv'),
+    load('data/registrations_by_province.csv'), load('data/provinces.csv'),
+    fetch('site/th-provinces.geojson').then(function (r) { if (!r.ok) throw new Error('site/th-provinces.geojson'); return r.json(); })
   ]).then(function (res) {
+    D.provBy = {};
+    res[6].forEach(function (r) { var p = D.provBy[r.period] = D.provBy[r.period] || {}; (p[r.province_iso] = p[r.province_iso] || {})[r.category] = +r.count; });
+    D.provinceInfo = {}; D.regionName = {};
+    res[7].forEach(function (p) { D.provinceInfo[p.province_iso] = p; D.regionName[p.region] = p.region_th; });
+    D.map = prepareMap(res[8]);
     D.market = res[0]; D.brand = res[1]; D.model = res[2];
+    D.okSet = {}; D.marketBy = {};
+    D.market.forEach(function (r) { D.marketBy[r.period] = r; if (r.status === 'ok') D.okSet[r.period] = true; });
     D.brandName = {}; res[3].forEach(function (b) { D.brandName[b.brand_id] = b.name; });
     D.modelInfo = {}; res[4].forEach(function (m) { D.modelInfo[m.model_id] = m; });
     D.pricesBy = {}; res[5].forEach(function (p) { (D.pricesBy[p.model_id] = D.pricesBy[p.model_id] || []).push(p); });
