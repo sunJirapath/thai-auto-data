@@ -145,3 +145,7 @@ td.move.up { color: var(--up); } td.move.down { color: var(--down); }
 .geo-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; }
 .filters .share { margin-left: auto; }
 @media (max-width: 520px) { .tiles { grid-template-columns: 1fr 1fr; gap: 8px; } .tile .value { font-size: 1.15rem; } .tile { padding: 10px; } }
+.lang-switch { display: inline-flex; border: 1px solid var(--axis); border-radius: 6px; overflow: hidden; }
+.lang-switch a { padding: 2px 9px; text-decoration: none; color: var(--ink-2); font-size: .82rem; }
+.lang-switch a[aria-pressed="true"] { background: var(--accent); color: #fff; }
+.links { align-items: center; }
