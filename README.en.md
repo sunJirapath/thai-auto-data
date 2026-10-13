@@ -4,6 +4,8 @@
 
 Open data on the Thai car market: monthly first registrations of new vehicles by brand and model, as plain CSV files you can download and use directly.
 
+**Interactive charts and rankings:** https://sunjirapath.github.io/thai-auto-data/
+
 > **Please cite this dataset when you use it.** It is published under [CC BY 4.0](LICENSE). If you use, republish or build on this data, you must credit both **thai-auto-data** and the **Department of Land Transport (กรมการขนส่งทางบก)**. See [How to cite](#how-to-cite).
 
 ## What's inside
