@@ -129,3 +129,5 @@ td.move { font-size: .8rem; }
 td.move.up { color: var(--up); } td.move.down { color: var(--down); }
 #rankChart, #hotChart { cursor: pointer; }
 @media (max-width: 700px) { .filterbar { position: static; border-bottom: 0; } }
+/* grid children must be allowed to shrink, or a wide table pushes the card (and the page) wider */
+.card > *, details { min-width: 0; }
