@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ตลาดรถยนต์ไทย · thai-auto-data</title>
 <meta name="description" content="ยอดรถจดทะเบียนใหม่รายเดือนในประเทศไทย แยกยี่ห้อ รุ่น ภูมิภาค และจังหวัด พร้อมราคาจากเว็บไซต์ทางการ จากข้อมูลของกรมการขนส่งทางบก">
-<link rel="stylesheet" href="site/style.css?v=10">
+<link rel="stylesheet" href="site/style.css?v=11">
 </head>
 <body>
 <div class="page">
@@ -24,6 +24,7 @@
     <a href="#/" data-nav="overview">ภาพรวม</a>
     <a href="#/ranking" data-nav="ranking">อันดับ</a>
     <a href="#/trends" data-nav="trends">เทรนด์</a>
+    <a href="#/powertrain" data-nav="powertrain">พลังงาน / EV</a>
     <a href="#/origin" data-nav="origin">สัญชาติแบรนด์</a>
     <a href="#/regions" data-nav="regions">ภูมิภาค</a>
     <a href="#/seasonality" data-nav="seasonality">ฤดูกาล</a>
@@ -61,14 +62,14 @@
     <p class="note" id="mNote"></p>
     <div class="two">
       <div>
-        <h3>แยกตามภูมิภาค <span class="sub">กดแถบเพื่อกรอง</span></h3>
+        <div class="geo-head"><h3>แยกตามภูมิภาค <span class="sub">กดแถบเพื่อกรอง</span></h3><div class="seg" id="geoMetric" role="group" aria-label="หน่วยของแผนที่และภูมิภาค"></div></div>
         <div class="chart-box" id="regionBox"><canvas id="regionChart" aria-label="ยอดจดทะเบียนแยกตามภูมิภาค"></canvas></div>
       </div>
       <div>
         <h3>แผนที่รายจังหวัด <span class="sub">กดจังหวัดเพื่อกรอง</span></h3>
         <div class="map-wrap" id="mapWrap"></div>
         <div class="map-legend" id="mapLegend"></div>
-        <p class="note map-credit">ขอบเขตจังหวัด: <a href="https://www.geoboundaries.org/">geoBoundaries</a> © ผู้ร่วมพัฒนา <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> (ODbL)</p>
+        <p class="note map-credit">ขอบเขตจังหวัด: <a href="https://www.geoboundaries.org/">geoBoundaries</a> © ผู้ร่วมพัฒนา <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> (ODbL) · ประชากร: กรมการปกครอง (ทะเบียนราษฎร ธ.ค. 2567)</p>
       </div>
     </div>
     <details><summary>ดูเป็นตาราง · Table</summary><div class="table-wrap" id="marketTable"></div></details>
@@ -126,6 +127,33 @@
   </section>
   <section class="card" id="brandTrend" data-page="trends" hidden></section>
   <section class="card" id="modelTrend" data-page="trends" hidden></section>
+
+  <!-- พลังงาน -->
+  <section class="card" data-page="powertrain" hidden>
+    <div class="card-head">
+      <div>
+        <h2>สัดส่วนตามชนิดเชื้อเพลิง <span class="sub">Powertrain mix</span></h2>
+        <p class="note filter-echo"></p>
+      </div>
+    </div>
+    <div class="stats" id="fuelStats"></div>
+    <div class="chart-box tall"><canvas id="fuelChart" aria-label="สัดส่วนยอดจดทะเบียนตามชนิดเชื้อเพลิงตามเวลา"></canvas></div>
+    <p class="note">ชนิดเชื้อเพลิงตามที่กรมการขนส่งทางบกบันทึก: ไฟฟ้า = BEV · เบนซิน/ดีเซล-ไฟฟ้าแบบเสียบปลั๊ก = PHEV · เบนซิน/ดีเซล-ไฟฟ้า = HEV (กรมฯ ไม่แยกไฮบริดเต็มรูปแบบกับไมลด์ไฮบริด) · เทียบปีก่อนเป็นจุดเปอร์เซ็นต์</p>
+  </section>
+  <div class="two wide-left" data-page="powertrain" hidden>
+    <section class="card">
+      <div class="card-head"><div><h2>ยี่ห้อรถไฟฟ้า (BEV) <span class="sub">BEV brands</span></h2><p class="note filter-echo"></p></div></div>
+      <div class="chart-box"><canvas id="bevChart" aria-label="ยี่ห้อที่มียอดจดทะเบียนรถไฟฟ้ามากที่สุด"></canvas></div>
+    </section>
+    <section class="card">
+      <div class="card-head"><div><h2>เชื้อเพลิงของแต่ละยี่ห้อ <span class="sub">Mix by brand</span></h2><p class="note">12 ยี่ห้อที่ยอดสูงสุดในตัวกรองนี้</p></div></div>
+      <div class="chart-box"><canvas id="brandFuelChart" aria-label="สัดส่วนชนิดเชื้อเพลิงของแต่ละยี่ห้อ"></canvas></div>
+    </section>
+  </div>
+  <section class="card" data-page="powertrain" hidden>
+    <div class="card-head"><div><h2>เชื้อเพลิงแยกตามภูมิภาค <span class="sub">By region</span></h2><p class="note">ช่วงเวลาและประเภทรถตามตัวกรอง แสดงทุกภูมิภาค</p></div></div>
+    <div class="chart-box tall"><canvas id="fuelRegionChart" aria-label="สัดส่วนชนิดเชื้อเพลิงในแต่ละภูมิภาค"></canvas></div>
+  </section>
 
   <!-- สัญชาติแบรนด์ -->
   <section class="card" data-page="origin" hidden>
@@ -239,6 +267,8 @@ Original source: Department of Land Transport, Thailand (web.dlt.go.th/statistic
       <li><a href="summaries/province_monthly.csv">province_monthly.csv</a> ยอดรายจังหวัดรายเดือน (<a href="data/provinces.csv">provinces.csv</a> รหัสจังหวัดและภาค)</li>
       <li><a href="https://github.com/sunJirapath/thai-auto-data/tree/main/summaries/areas">summaries/areas/</a> ยอดรายยี่ห้อ/รุ่นแยกพื้นที่ (ประเทศ ภาค จังหวัด)</li>
       <li><a href="data/brands.csv">brands.csv</a> ยี่ห้อ รหัส และประเทศของบริษัทแม่</li>
+      <li><a href="https://github.com/sunJirapath/thai-auto-data/tree/main/data/registrations_by_fuel">data/registrations_by_fuel/</a> ยอดรายยี่ห้อตามชนิดเชื้อเพลิงและจังหวัด (<a href="data/fuel_types.csv">fuel_types.csv</a>)</li>
+      <li><a href="data/population.csv">population.csv</a> ประชากรรายจังหวัด จากกรมการปกครอง</li>
       <li><a href="data/prices.csv">prices.csv</a> ราคาจากเว็บไซต์ทางการ พร้อมแหล่งอ้างอิง</li>
       <li><a href="https://github.com/sunJirapath/thai-auto-data/tree/main/data">data/</a> ข้อมูลระดับแถว รหัสยี่ห้อ/รุ่น และทะเบียนแหล่งข้อมูล</li>
     </ul>
@@ -248,6 +278,6 @@ Original source: Department of Land Transport, Thailand (web.dlt.go.th/statistic
   <footer class="foot">ที่มา: thai-auto-data / กรมการขนส่งทางบก · CC BY 4.0 · <a href="#/data">อ้างอิงและดาวน์โหลด</a></footer>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<script src="site/app.js?v=10"></script>
+<script src="site/app.js?v=12"></script>
 </body>
 </html>

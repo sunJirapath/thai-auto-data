@@ -142,3 +142,4 @@ td.move.up { color: var(--up); } td.move.down { color: var(--down); }
 .heatmap th[scope="row"] { position: static; text-align: left; color: var(--ink); font-size: .85rem; }
 .heat-wrap { max-height: none; }
 .prose p { margin: 4px 0; font-size: .88rem; }
+.geo-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; }

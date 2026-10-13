@@ -58,6 +58,17 @@ Those portal files are still listed in `data/sources.csv` with status `supersede
 
 The statistics web page does not state a license. The same DLT statistics appear on the DLT open-data portal labeled "Open Data Common", the Thai government open-data license for data.go.th catalogs. Thai open government data is published under open, non-exclusive licenses that allow reuse ([data.go.th FAQ](https://data.go.th/pages/about-open-data)). **The full text of "Open Data Common" has not been located yet.** This project treats the data as redistributable with attribution and always credits the DLT. For commercial use, confirm with the DLT (itc@dlt.mail.go.th) or the Digital Government Development Agency (di@dga.or.th).
 
+## 1b. Fuel type: กรมการขนส่งทางบก, สถิติการจดทะเบียนรถใหม่ จำแนกตามยี่ห้อรถ ชนิดเชื้อเพลิง และจังหวัด
+
+| | |
+|---|---|
+| Where | Same DLT page as section 1: "รถใหม่ (พ.ร.บ.รถยนต์) จำแนกตามยี่ห้อรถ ชนิดเชื้อเพลิง และจังหวัด" |
+| Fields | Year (BE), month, category, province, brand, fuel type, count |
+| Used for | `data/registrations_by_fuel/`, fuel rows (`kind` `f` and `bf`) in `summaries/areas/` |
+| Check | Imported only if, for every month, category and brand, it adds up exactly to `data/registrations/`. It did for all 69 months on 14 October 2026. |
+
+The DLT's fuel names are kept as published and mapped to six groups in `data/fuel_types.csv`: ไฟฟ้า = BEV; เบนซิน/ดีเซล-ไฟฟ้าแบบเสียบปลั๊ก = PHEV; เบนซิน/ดีเซล-ไฟฟ้า = HEV; เบนซิน; ดีเซล; and LPG/CNG combinations as gas. The DLT does not separate full hybrids from mild hybrids, or range extenders from plug-in hybrids, so neither does this dataset. Fuel is recorded per brand, not per model.
+
 ## 2. Prices: official manufacturer websites
 
 | | |
@@ -74,6 +85,18 @@ Notes:
 - Price history only starts from the first observation. For example, Honda's press release of 1 August 2024 gives the City e:HEV RS at 799,000 baht, and the Honda City page on 13 October 2026 shows 769,000 baht. What happened in between is not recorded.
 - Third-party price sites are not used as sources. They often disagree with each other and with the manufacturer.
 - Dealer discounts are out of scope.
+
+## Population: กรมการปกครอง
+
+| | |
+|---|---|
+| Publisher | กรมการปกครอง (Department of Provincial Administration, DOPA) |
+| Dataset | "สถิติจำนวนประชากร" on [catalog.dopa.go.th](https://catalog.dopa.go.th/dataset/dopa-star), Open Data Common |
+| Used | Registered population (ทะเบียนราษฎร) per province, December 2024 (BE 2567), the latest year in the catalog on 14 October 2026 |
+| Used for | `data/population.csv` and the "per 1,000 people" view of the website map |
+| Check | 77 provinces that add up to the national row of the same file (65,951,210) |
+
+Registered population counts people by house registration, not where they actually live, and vehicles are counted where they are registered, so per-capita figures for Bangkok and some industrial provinces are high.
 
 ## Brand parent-company country
 

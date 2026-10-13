@@ -293,7 +293,7 @@
     ['northeast', 'ภาคตะวันออกเฉียงเหนือ'], ['north', 'ภาคเหนือ'], ['west', 'ภาคตะวันตก'], ['south', 'ภาคใต้']];
   var RANGES = [['12', '12 เดือน'], ['24', '24 เดือน'], ['36', '3 ปี'], ['ytd', 'ปีนี้'], ['all', 'ทั้งหมด'], ['custom', 'กำหนดเอง']];
   var GRAINS = [['m', 'รายเดือน'], ['q', 'รายไตรมาส'], ['y', 'รายปี']];
-  var M = { range: '12', grain: 'm', cats: { RY1: true, RY2: true, RY3: true }, area: 'all', from: null, to: null };
+  var M = { range: '12', grain: 'm', cats: { RY1: true, RY2: true, RY3: true }, area: 'all', from: null, to: null, metric: 'units' };
 
   function regionGroup(iso) { return iso === 'TH-10' ? 'bkk' : D.provinceInfo[iso].region; }
   function areaProvinces(area) {
@@ -527,6 +527,8 @@
       });
     });
     Object.keys(byIso).forEach(function (i) { grand += byIso[i]; });
+    var percap = M.metric === 'percap';
+    function per1000(i) { return 1000 * byIso[i] / D.population[i]; }
     var selSet = {};
     (areaProvinces(M.area) || []).forEach(function (i) { selSet[i] = true; });
 
@@ -548,7 +550,15 @@
     ro.plugins.legend.display = false;
     ro.scales.x.grid = { color: css('--grid') }; ro.scales.x.ticks.callback = kTicks;
     ro.scales.y.grid = { display: false };
-    ro.plugins.tooltip.callbacks = { label: function (c) { return ' ' + fmt(c.raw) + ' คัน · ' + (grand ? (100 * c.raw / grand).toFixed(1) : 0) + '% ของทั้งประเทศ'; } };
+    var groupPop = {};
+    REGION_GROUPS.forEach(function (g) { groupPop[g[0]] = 0; });
+    Object.keys(byIso).forEach(function (i) { groupPop[regionGroup(i)] += D.population[i]; });
+    ro.plugins.tooltip.callbacks = { label: function (c) {
+      var g = REGION_GROUPS[c.dataIndex][0];
+      return percap ? ' ' + c.raw.toFixed(1) + ' คันต่อประชากร 1,000 คน · รวม ' + fmt(groups[g]) + ' คัน'
+        : ' ' + fmt(c.raw) + ' คัน · ' + (grand ? (100 * c.raw / grand).toFixed(1) : 0) + '% ของทั้งประเทศ';
+    } };
+    if (percap) ro.scales.x.ticks.callback = function (v) { return v; };
     ro.onClick = function (e, els) {
       if (!els.length) return;
       var g = REGION_GROUPS[els[0].index][0], next = g === 'bkk' ? 'bkk' : 'region:' + g;
@@ -560,17 +570,18 @@
     charts.region = new Chart(document.getElementById('regionChart'), {
       type: 'bar', options: ro,
       data: { labels: REGION_GROUPS.map(function (g) { return g[1]; }),
-        datasets: [{ data: REGION_GROUPS.map(function (g) { return groups[g[0]]; }),
+        datasets: [{ data: REGION_GROUPS.map(function (g) { return percap ? 1000 * groups[g[0]] / groupPop[g[0]] : groups[g[0]]; }),
           backgroundColor: REGION_GROUPS.map(function (g) { return activeGroup(g[0]) ? accent : dim; }),
           borderRadius: 4, borderSkipped: 'start', maxBarThickness: 22 }] }
     });
 
     // choropleth with 5 quantile classes (Bangkok would flatten a linear scale)
-    var vals = Object.keys(byIso).map(function (i) { return byIso[i]; }).filter(function (v) { return v > 0; }).sort(function (a, b) { return a - b; });
+    function metric(i) { return percap ? per1000(i) : byIso[i]; }
+    var vals = Object.keys(byIso).map(metric).filter(function (v) { return v > 0; }).sort(function (a, b) { return a - b; });
     var breaks = [0.2, 0.4, 0.6, 0.8].map(function (q) { return vals[Math.floor(q * (vals.length - 1))]; });
     function cls(v) { if (!v) return -1; var k = 0; while (k < breaks.length && v > breaks[k]) k++; return k; }
     var colors = [1, 2, 3, 4, 5].map(function (n) { return css('--q' + n); });
-    var rank = Object.keys(byIso).sort(function (a, b) { return byIso[b] - byIso[a]; });
+    var rank = Object.keys(byIso).sort(function (a, b) { return metric(b) - metric(a); });
     var wrap = document.getElementById('mapWrap');
     wrap.textContent = '';
     var NS = 'http://www.w3.org/2000/svg', svg = document.createElementNS(NS, 'svg');
@@ -579,13 +590,13 @@
     var tip = el('div', { class: 'map-tip' });
     tip.hidden = true;
     D.map.paths.forEach(function (f) {
-      var path = document.createElementNS(NS, 'path'), v = byIso[f.iso], k = cls(v), info = D.provinceInfo[f.iso];
+      var path = document.createElementNS(NS, 'path'), v = byIso[f.iso], k = cls(metric(f.iso)), info = D.provinceInfo[f.iso];
       path.setAttribute('d', f.d);
       path.setAttribute('fill', k < 0 ? css('--grid') : colors[k]);
       path.setAttribute('class', 'prov' + (selSet[f.iso] ? ' sel' : ''));
       path.setAttribute('tabindex', '0');
       var change = prevOk && prevIso[f.iso] ? pctText(100 * (v - prevIso[f.iso]) / prevIso[f.iso]) : '—';
-      var text = info.name_th + ': ' + fmt(v) + ' คัน · ' + (grand ? (100 * v / grand).toFixed(1) : 0) + '% · อันดับ ' + (rank.indexOf(f.iso) + 1) + ' · YoY ' + change;
+      var text = info.name_th + ': ' + fmt(v) + ' คัน · ' + per1000(f.iso).toFixed(1) + ' ต่อ 1,000 คน · ' + (grand ? (100 * v / grand).toFixed(1) : 0) + '% · อันดับ ' + (rank.indexOf(f.iso) + 1) + ' · YoY ' + change;
       path.setAttribute('aria-label', text);
       path.addEventListener('pointermove', function (e) {
         tip.textContent = text; tip.hidden = false;
@@ -607,19 +618,20 @@
     var edges = [vals[0]].concat(breaks).concat([vals[vals.length - 1]]);
     colors.forEach(function (c, k) {
       var sw = el('i'); sw.style.background = c;
-      legend.appendChild(add(el('span'), sw, document.createTextNode(fmt(edges[k]) + '–' + fmt(edges[k + 1]))));
+      var lo = percap ? edges[k].toFixed(1) : fmt(edges[k]), hi = percap ? edges[k + 1].toFixed(1) : fmt(edges[k + 1]);
+      legend.appendChild(add(el('span'), sw, document.createTextNode(lo + '–' + hi)));
     });
 
     var trs = rank.map(function (i, n) {
       var v = byIso[i], info = D.provinceInfo[i], tr = el('tr', selSet[i] ? { class: 'sel-row' } : {});
       add(tr, el('td', { class: 'n' }, String(n + 1)), el('td', {}, info.name_th), el('td', {}, D.regionName[info.region]),
-        el('td', { class: 'n' }, fmt(v)), el('td', { class: 'n' }, (grand ? 100 * v / grand : 0).toFixed(2) + '%'),
+        el('td', { class: 'n' }, fmt(v)), el('td', { class: 'n' }, per1000(i).toFixed(1)), el('td', { class: 'n' }, (grand ? 100 * v / grand : 0).toFixed(2) + '%'),
         pctCell(prevOk && prevIso[i] ? (100 * (v - prevIso[i]) / prevIso[i]).toFixed(2) : ''));
       return tr;
     });
     var pt = document.getElementById('provinceTable');
     pt.textContent = '';
-    pt.appendChild(table([['#', 1], ['จังหวัด'], ['ภาค'], ['คัน', 1], ['ส่วนแบ่ง', 1], ['YoY', 1]], trs));
+    pt.appendChild(table([['#', 1], ['จังหวัด'], ['ภาค'], ['คัน', 1], ['ต่อ 1,000 คน', 1], ['ส่วนแบ่ง', 1], ['YoY', 1]], trs));
   }
 
   // equirectangular projection scaled by cos(latitude); fine for a country Thailand's size
@@ -661,7 +673,8 @@
         var idx = {};
         rows.forEach(function (r) {
           var p = idx[r.period] = idx[r.period] || { b: {}, m: {} };
-          var o = p[r.kind][r.id] = p[r.kind][r.id] || {};
+          var k = p[r.kind] = p[r.kind] || {};   // b, m, f (fuel) or bf (brand|fuel)
+          var o = k[r.id] = k[r.id] || {};
           o[r.category] = +r.units;
         });
         return idx;
@@ -882,6 +895,7 @@
     seg('regionMode', [['share', 'ส่วนแบ่ง'], ['index', 'เทียบค่าเฉลี่ยประเทศ']], function () { return RG.mode; }, function (v) { RG.mode = v; });
     seg('regionKind', [['b', 'ยี่ห้อ'], ['m', 'รุ่น']], function () { return RG.kind; }, function (v) { RG.kind = v; });
     seg('seasonMode', [['units', 'จำนวนคัน'], ['index', 'เทียบค่าเฉลี่ยของปี']], function () { return SE.mode; }, function (v) { SE.mode = v; });
+    seg('geoMetric', [['units', 'จำนวนคัน'], ['percap', 'ต่อประชากร 1,000 คน']], function () { return M.metric; }, function (v) { M.metric = v; });
   }
 
   function buildControlsOnce() {
@@ -901,9 +915,10 @@
     regions: function (idx) { renderRegions(idx); },
     seasonality: function () { renderSeasonality(); },
     prices: function (idx) { renderPricePage(idx); },
-    launches: function (idx) { renderLaunches(idx); }
+    launches: function (idx) { renderLaunches(idx); },
+    powertrain: function (idx) { renderPowertrain(idx); }
   };
-  var NEEDS_AREA = { ranking: 1, trends: 1, origin: 1, regions: 1, prices: 1, launches: 1 };
+  var NEEDS_AREA = { ranking: 1, trends: 1, origin: 1, regions: 1, prices: 1, launches: 1, powertrain: 1 };
   function renderExplorer() {
     var page = D.page, token = ++A.token;
     document.querySelectorAll('.filter-echo').forEach(function (e) { e.textContent = filterText(); });
@@ -1267,6 +1282,83 @@
       : el('p', { class: 'note' }, 'ไม่มีรุ่นที่เริ่มมีทะเบียนในช่วงที่เลือก ลองเลือกช่วงที่ยาวขึ้น'));
   }
 
+  // ----- powertrain page: fuel types from the DLT brand x fuel file -----
+  var FUELS = [['bev', 'ไฟฟ้า (BEV)'], ['phev', 'ปลั๊กอินไฮบริด (PHEV)'], ['hev', 'ไฮบริด (HEV)'], ['petrol', 'เบนซิน'], ['diesel', 'ดีเซล'], ['gas', 'ก๊าซ (LPG/CNG)']];
+  function fuelMix(idx, months, cats) {
+    var s = sumById(idx, 'f', months, cats), o = {};
+    FUELS.forEach(function (f) { o[f[0]] = s[f[0]] || 0; });
+    return o;
+  }
+  function renderPowertrain(idx) {
+    var b = buckets(), cats = selCats(), months = selectedMonths();
+    var per = b.order.map(function (k) { return fuelMix(idx, b.months[k], cats); }), tot = per.map(sumValues);
+    stackedArea('fuel', document.getElementById('fuelChart'), b.labels, FUELS.map(function (f, i) {
+      return { label: f[1], color: seriesColor(i), data: per.map(function (o, j) { return tot[j] ? 100 * o[f[0]] / tot[j] : 0; }) };
+    }), { units: FUELS.map(function (f) { return per.map(function (o) { return o[f[0]]; }); }) });
+
+    var cur = fuelMix(idx, months, cats), pm = months.map(function (p) { return shiftMonth(p, -12); });
+    var prevOk = pm.every(function (p) { return D.okSet[p]; }), prev = prevOk ? fuelMix(idx, pm, cats) : null;
+    var ct = sumValues(cur), pt = prev ? sumValues(prev) : 0;
+    var box = document.getElementById('fuelStats');
+    box.textContent = '';
+    FUELS.forEach(function (f, i) {
+      var share = ct ? 100 * cur[f[0]] / ct : 0, ps = pt ? 100 * prev[f[0]] / pt : null;
+      var st = add(el('div', { class: 'stat' }), el('span', { class: 'label' }, f[1]), el('span', { class: 'value' }, share.toFixed(1) + '%'),
+        el('span', { class: 'detail ' + (ps === null ? '' : share >= ps ? 'up' : 'down') },
+          ps === null ? fmt(cur[f[0]]) + ' คัน' : (share - ps >= 0 ? '▲ +' : '▼ ') + (share - ps).toFixed(1) + ' จุด · ' + fmt(cur[f[0]]) + ' คัน'));
+      st.style.borderLeftColor = seriesColor(i);
+      box.appendChild(st);
+    });
+
+    // BEV brands: top 10 by battery-electric registrations in the range
+    var bf = sumById(idx, 'bf', months, cats), bev = {}, bevTot = 0;
+    Object.keys(bf).forEach(function (k) { var p = k.split('|'); if (p[1] === 'bev') { bev[p[0]] = bf[k]; bevTot += bf[k]; } });
+    var topBev = sortedIds(bev).slice(0, 12);
+    hbar('bevRank', document.getElementById('bevChart'), topBev.map(brandLabel), topBev.map(function (id) { return bev[id]; }),
+      topBev.map(function (id) { return fmt(bev[id]) + ' คัน · ' + (100 * bev[id] / bevTot).toFixed(1) + '% ของ BEV'; }),
+      function (i) { location.hash = '#/brand/' + topBev[i]; },
+      topBev.map(function (id) { return fmt(bev[id]) + ' · ' + (100 * bev[id] / bevTot).toFixed(0) + '%'; }));
+
+    // powertrain mix of the 12 biggest brands
+    var brandTot = sumById(idx, 'b', months, cats), top = sortedIds(brandTot).slice(0, 12);
+    var o = baseOptions();
+    o.indexAxis = 'y';
+    o.scales.x.stacked = true; o.scales.y.stacked = true; o.scales.x.max = 100;
+    o.scales.x.ticks.callback = function (v) { return v + '%'; };
+    o.scales.y.grid = { display: false };
+    o.interaction = { mode: 'index', intersect: false, axis: 'y' };
+    o.plugins.tooltip.callbacks.label = function (c) { return c.raw ? ' ' + c.dataset.label + ': ' + c.raw.toFixed(1) + '%' : null; };
+    if (charts.brandFuel) charts.brandFuel.destroy();
+    document.getElementById('brandFuelChart').parentNode.style.height = (60 + 30 * top.length) + 'px';
+    charts.brandFuel = new Chart(document.getElementById('brandFuelChart'), {
+      type: 'bar', options: o,
+      data: { labels: top.map(brandLabel), datasets: FUELS.map(function (f, i) {
+        return { label: f[1], backgroundColor: seriesColor(i), borderColor: css('--surface'), borderWidth: { right: 1 }, borderSkipped: false, barPercentage: 0.75,
+          data: top.map(function (id) { return brandTot[id] ? 100 * (bf[id + '|' + f[0]] || 0) / brandTot[id] : 0; }) };
+      }) }
+    });
+
+    // by region
+    loadRegionGroups().then(function (groups) {
+      var gt = groupTotals(groups, 'f', months, cats);
+      var ro = baseOptions();
+      ro.indexAxis = 'y';
+      ro.scales.x.stacked = true; ro.scales.y.stacked = true; ro.scales.x.max = 100;
+      ro.scales.x.ticks.callback = function (v) { return v + '%'; };
+      ro.scales.y.grid = { display: false };
+      ro.interaction = { mode: 'index', intersect: false, axis: 'y' };
+      ro.plugins.tooltip.callbacks.label = function (c) { return ' ' + c.dataset.label + ': ' + c.raw.toFixed(1) + '%'; };
+      if (charts.fuelRegion) charts.fuelRegion.destroy();
+      charts.fuelRegion = new Chart(document.getElementById('fuelRegionChart'), {
+        type: 'bar', options: ro,
+        data: { labels: REGION_GROUPS.map(function (r) { return r[1]; }), datasets: FUELS.map(function (f, i) {
+          return { label: f[1], backgroundColor: seriesColor(i), borderColor: css('--surface'), borderWidth: { right: 1 }, borderSkipped: false, barPercentage: 0.75,
+            data: REGION_GROUPS.map(function (r) { var t = sumValues(gt[r[0]]); return t ? 100 * (gt[r[0]][f[0]] || 0) / t : 0; }) };
+        }) }
+      });
+    });
+  }
+
   // ---------- brand page ----------
   function renderBrand(root, brandId) {
     var byP = D.brandRows[brandId];
@@ -1572,7 +1664,7 @@
   }
 
   // ---------- router ----------
-  var PAGES = ['overview', 'ranking', 'trends', 'origin', 'regions', 'seasonality', 'prices', 'launches', 'data'];
+  var PAGES = ['overview', 'ranking', 'trends', 'powertrain', 'origin', 'regions', 'seasonality', 'prices', 'launches', 'data'];
   function route() {
     var h = location.hash || '#/';
     var m = h.match(/^#\/(brand|model|compare)\/?([^?]*)$/);
@@ -1616,14 +1708,15 @@
   Promise.all([
     load('summaries/market_monthly.csv'), load('summaries/brand_monthly.csv'), load('summaries/model_monthly.csv'),
     load('data/brands.csv'), load('data/models.csv'), load('data/prices.csv'),
-    load('summaries/province_monthly.csv'), load('data/provinces.csv'),
+    load('summaries/province_monthly.csv'), load('data/provinces.csv'), load('data/population.csv'),
     fetch('site/th-provinces.geojson').then(function (r) { if (!r.ok) throw new Error('site/th-provinces.geojson'); return r.json(); })
   ]).then(function (res) {
     D.provBy = {};
     res[6].forEach(function (r) { var p = D.provBy[r.period] = D.provBy[r.period] || {}; (p[r.province_iso] = p[r.province_iso] || {})[r.category] = +r.units; });
     D.provinceInfo = {}; D.regionName = {};
     res[7].forEach(function (p) { D.provinceInfo[p.province_iso] = p; D.regionName[p.region] = p.region_th; });
-    D.map = prepareMap(res[8]);
+    D.map = prepareMap(res[9]);
+    D.population = {}; res[8].forEach(function (p) { D.population[p.province_iso] = +p.population; D.populationAsOf = p.as_of; });
     D.market = res[0]; D.brand = res[1]; D.model = res[2];
     D.okSet = {}; D.marketBy = {};
     D.market.forEach(function (r) { D.marketBy[r.period] = r; if (r.status === 'ok') D.okSet[r.period] = true; });

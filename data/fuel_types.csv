@@ -1,0 +1,15 @@
+fuel_th,fuel_code,label_th,label_en
+ไฟฟ้า,bev,ไฟฟ้า (BEV),Battery electric (BEV)
+เบนซิน-ไฟฟ้าแบบเสียบปลั๊ก,phev,ปลั๊กอินไฮบริด (PHEV),Plug-in hybrid (PHEV)
+ดีเซล-ไฟฟ้าแบบเสียบปลั๊ก,phev,ปลั๊กอินไฮบริด (PHEV),Plug-in hybrid (PHEV)
+เบนซิน-ไฟฟ้า,hev,ไฮบริด (HEV),Hybrid (HEV)
+ดีเซล-ไฟฟ้า,hev,ไฮบริด (HEV),Hybrid (HEV)
+LPG-เบนซิน-ไฟฟ้า,hev,ไฮบริด (HEV),Hybrid (HEV)
+เบนซิน,petrol,เบนซิน,Petrol
+ดีเซล,diesel,ดีเซล,Diesel
+LPGและเบนซิน,gas,ก๊าซ (LPG/CNG),Gas (LPG/CNG)
+CNG-เบนซิน,gas,ก๊าซ (LPG/CNG),Gas (LPG/CNG)
+CNG,gas,ก๊าซ (LPG/CNG),Gas (LPG/CNG)
+ก๊าซ LPG,gas,ก๊าซ (LPG/CNG),Gas (LPG/CNG)
+CNG-LPG,gas,ก๊าซ (LPG/CNG),Gas (LPG/CNG)
+LPGและดีเซล,gas,ก๊าซ (LPG/CNG),Gas (LPG/CNG)

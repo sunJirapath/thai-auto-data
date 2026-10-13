@@ -4,7 +4,7 @@
 
 Open data on the Thai car market: monthly new-vehicle registrations by brand and model, plus prices from official manufacturer websites, as plain CSV files you can download and use directly.
 
-**Interactive site:** https://sunjirapath.github.io/thai-auto-data/ with pages for the overview (totals, regions, map), rankings and fastest-growing models, trends and market share over time, parent-company country, brand × region, seasonality, price bands, new launches, model comparison, and brand and model detail. Every page uses the same date range, category and area filters.
+**Interactive site:** https://sunjirapath.github.io/thai-auto-data/ with pages for the overview (totals, regions, map in units or per 1,000 people), rankings and fastest-growing models, trends and market share over time, powertrain / EV, parent-company country, brand × region, seasonality, price bands, new launches, model comparison, and brand and model detail. Every page uses the same date range, category and area filters.
 
 > **Please cite this dataset when you use it.** It is published under [CC BY 4.0](LICENSE). If you use, republish or build on this data, you must credit both **thai-auto-data** and the **Department of Land Transport (กรมการขนส่งทางบก)**. See [How to cite](#how-to-cite).
 
@@ -21,6 +21,8 @@ Open data on the Thai car market: monthly new-vehicle registrations by brand and
 | [`summaries/province_monthly.csv`](summaries/province_monthly.csv) | Registrations per month by province and category |
 | [`summaries/areas/`](summaries/areas) | Brand and model units per month for one area: the whole country (`all`), everywhere but Bangkok (`upcountry`), 6 regions (`region-*`) and 77 provinces (`TH-xx`) |
 | [`data/provinces.csv`](data/provinces.csv) | Province ISO 3166-2 codes, Thai and English names, and region |
+| [`data/registrations_by_fuel/YYYY-MM.csv`](data/registrations_by_fuel) | Registrations per month by brand, fuel type and province (adds up to the main data for every brand and month) · fuel groups in [`fuel_types.csv`](data/fuel_types.csv) |
+| [`data/population.csv`](data/population.csv) | Registered population by province (December 2024) from the Department of Provincial Administration |
 | [`data/registrations/YYYY-MM.csv`](data/registrations) | Row-level monthly data as published by the DLT, with the original strings kept next to the matched IDs |
 | [`data/brands.csv`](data/brands.csv) | Brands, stable IDs (`brand_id`), the names the DLT uses for them, and the parent company's country (`parent_country`) |
 | [`data/models.csv`](data/models.csv) | Models and stable IDs (`model_id`) |
