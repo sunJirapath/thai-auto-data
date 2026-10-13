@@ -1,12 +1,10 @@
 # thai-auto-data
 
+[English](README.en.md) | **ภาษาไทย**
+
 ข้อมูลเปิด (open data) ตลาดรถยนต์ไทย: ยอดรถจดทะเบียนครั้งแรกรายเดือน แยกยี่ห้อและรุ่น ในรูปแบบ CSV ที่ดาวน์โหลดและนำไปใช้ต่อได้ทันที
 
-Open data on the Thai car market: monthly first registrations by brand and model, as plain CSV files you can download and use directly. [English summary below](#english).
-
-> **กรุณาอ้างอิงเมื่อนำไปใช้** ข้อมูลชุดนี้เผยแพร่ภายใต้ [CC BY 4.0](LICENSE) หากนำข้อมูลไปใช้ เผยแพร่ต่อ หรือนำไปสร้างงานใหม่ ต้องระบุที่มาทั้ง **thai-auto-data** และ **กรมการขนส่งทางบก** ดู [การอ้างอิง](#การอ้างอิง--how-to-cite)
->
-> **Please cite this dataset.** It is published under CC BY 4.0, and attribution to both thai-auto-data and the Department of Land Transport is required.
+> **กรุณาอ้างอิงเมื่อนำไปใช้** ข้อมูลชุดนี้เผยแพร่ภายใต้ [CC BY 4.0](LICENSE) หากนำข้อมูลไปใช้ เผยแพร่ต่อ หรือนำไปสร้างงานใหม่ ต้องระบุที่มาทั้ง **thai-auto-data** และ **กรมการขนส่งทางบก** ดู [การอ้างอิง](#การอ้างอิง)
 
 ## มีอะไรบ้าง
 
@@ -72,9 +70,9 @@ ORDER BY period;
 
 ณ วันที่ 13 ต.ค. 2569 ไฟล์ล่าสุดที่กรมฯ เผยแพร่คือเดือนกุมภาพันธ์ 2569 (อัปโหลด 17 มี.ค. 2569)
 
-## การอ้างอิง / How to cite
+## การอ้างอิง
 
-กดปุ่ม **"Cite this repository"** ทางขวาของหน้า GitHub เพื่อคัดลอกรูปแบบ APA หรือ BibTeX หรือใช้ข้อความนี้:
+กดปุ่ม **"Cite this repository"** ทางขวาของหน้า GitHub เพื่อคัดลอกรูปแบบ APA หรือ BibTeX หรือใช้ข้อความนี้ (ภาษาไทยหรืออังกฤษ):
 
 ```text
 ข้อมูลจาก thai-auto-data โดย sunJirapath (https://github.com/sunJirapath/thai-auto-data), สัญญาอนุญาต CC BY 4.0
@@ -90,28 +88,13 @@ Retrieved: <your download date>
 
 ในกราฟ บทความ หรือแอป ใส่บรรทัด "ที่มา: thai-auto-data / กรมการขนส่งทางบก" ใกล้กับข้อมูลที่แสดงก็เพียงพอ
 
-## พบข้อมูลผิด / Corrections
+## พบข้อมูลผิด
 
 เปิด [Issue](https://github.com/sunJirapath/thai-auto-data/issues) พร้อมระบุไฟล์ แถว และแหล่งอ้างอิงที่ตรวจสอบได้ เช่น ชื่อรุ่นที่จับคู่ผิด หรือชื่อรุ่นที่ควรเพิ่มใน `aliases.csv`
 
-## สัญญาอนุญาต / License
+## สัญญาอนุญาต
 
 - งานรวบรวม จัดระเบียบ รหัส และไฟล์สรุปในที่นี้: [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE)
 - ข้อมูลต้นฉบับเป็นของกรมการขนส่งทางบก เผยแพร่ภายใต้สัญญาอนุญาต "Open Data Common" ของภาครัฐ ผู้ใช้ต้องอ้างอิงกรมการขนส่งทางบกด้วย ดู [DATA_SOURCES.md](DATA_SOURCES.md)
 - ชื่อยี่ห้อและรุ่นรถเป็นเครื่องหมายการค้าของเจ้าของ ใช้เพื่อระบุตัวรถเท่านั้น
 
----
-
-## English
-
-**What:** monthly first-registration counts of new cars in Thailand (passenger cars ≤7 seats, >7 seats, and private pickups), by brand and model, January 2022 to January 2026. Source: Thailand's Department of Land Transport (DLT) open data portal.
-
-**Files:** start with `summaries/` (market, brand and model trend tables with share, rank, MoM and YoY). `data/registrations/` has the row-level monthly data with DLT's original brand/model strings next to the matched IDs. `data/sources.csv` records every source file with URL, retrieval date, SHA-256 and acceptance status.
-
-**Read this before using:**
-- These are **registrations, not sales**.
-- Two months are **missing, not zero**: December 2023 (DLT published the December 2022 file under that title) and February 2026 (the published file has 6 rows).
-- Matching is **exact-only, at model level**. Unmatched strings keep an empty `model_id`. They still count toward market and brand totals but not toward model rankings. Across the whole period, 98.1% of units are matched.
-- IDs are stable slugs. Model `status` is `unverified` throughout; a registration does not prove a model is on sale.
-
-**Cite:** use GitHub's "Cite this repository" button, or the text above. Attribution to both this repository and the DLT is required under CC BY 4.0.
