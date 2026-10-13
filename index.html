@@ -4,102 +4,222 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ตลาดรถยนต์ไทย · thai-auto-data</title>
-<meta name="description" content="ยอดรถจดทะเบียนใหม่รายเดือนในประเทศไทย แยกยี่ห้อและรุ่น พร้อมราคาจากเว็บไซต์ทางการ จากข้อมูลของกรมการขนส่งทางบก">
-<link rel="stylesheet" href="site/style.css?v=9">
+<meta name="description" content="ยอดรถจดทะเบียนใหม่รายเดือนในประเทศไทย แยกยี่ห้อ รุ่น ภูมิภาค และจังหวัด พร้อมราคาจากเว็บไซต์ทางการ จากข้อมูลของกรมการขนส่งทางบก">
+<link rel="stylesheet" href="site/style.css?v=10">
 </head>
 <body>
 <div class="page">
   <header class="top">
     <div>
       <h1><a class="home-link" href="#/">ตลาดรถยนต์ไทย</a> <span class="sub">Thai car registrations</span></h1>
-      <p class="lede">ยอดรถจดทะเบียนใหม่รายเดือน (ร.ย.1 ร.ย.2 ร.ย.3) แยกยี่ห้อและรุ่น จากกรมการขนส่งทางบก พร้อมราคาจากเว็บไซต์ทางการของค่ายรถ <b>ตัวเลขทั้งหมดเป็นยอดจดทะเบียน ไม่ใช่ยอดขาย</b></p>
+      <p class="lede">ยอดรถจดทะเบียนใหม่รายเดือน (ร.ย.1–3) จากกรมการขนส่งทางบก พร้อมราคาจากเว็บไซต์ทางการของค่ายรถ <b>ตัวเลขทั้งหมดเป็นยอดจดทะเบียน ไม่ใช่ยอดขาย</b></p>
     </div>
     <nav class="links">
-      <a href="#/">หน้าแรก</a>
-      <a href="#/compare/">เปรียบเทียบ · Compare</a>
       <a href="https://github.com/sunJirapath/thai-auto-data">GitHub</a>
-      <a href="#cite">อ้างอิง · Cite</a>
+      <a href="#/data">อ้างอิงและดาวน์โหลด</a>
     </nav>
   </header>
 
+  <nav class="tabs" aria-label="หน้า">
+    <a href="#/" data-nav="overview">ภาพรวม</a>
+    <a href="#/ranking" data-nav="ranking">อันดับ</a>
+    <a href="#/trends" data-nav="trends">เทรนด์</a>
+    <a href="#/origin" data-nav="origin">สัญชาติแบรนด์</a>
+    <a href="#/regions" data-nav="regions">ภูมิภาค</a>
+    <a href="#/seasonality" data-nav="seasonality">ฤดูกาล</a>
+    <a href="#/prices" data-nav="prices">ช่วงราคา</a>
+    <a href="#/launches" data-nav="launches">รุ่นใหม่</a>
+    <a href="#/compare/" data-nav="compare">เปรียบเทียบ</a>
+    <a href="#/data" data-nav="data">ข้อมูล</a>
+  </nav>
+
   <div id="status" class="status" role="status">กำลังโหลดข้อมูล…</div>
 
-  <div id="home">
-    <section class="filterbar" aria-label="ตัวกรอง ใช้กับทุกส่วนในหน้านี้">
-      <div class="filters">
-        <div class="seg" id="fRange" role="group" aria-label="ช่วงเวลา"></div>
-        <div class="seg" id="fGrain" role="group" aria-label="ความละเอียด"></div>
-        <div class="chips" id="fCats" role="group" aria-label="ประเภทรถ"></div>
-        <label class="field">พื้นที่ <select id="fArea"></select></label>
-        <span class="custom-range" id="fCustom" hidden>
-          <label class="field">ตั้งแต่ <select id="fFrom"></select></label>
-          <label class="field">ถึง <select id="fTo"></select></label>
-        </span>
-      </div>
-    </section>
+  <section class="filterbar" id="filterbar" aria-label="ตัวกรอง ใช้กับทุกหน้า">
+    <div class="filters">
+      <div class="seg" id="fRange" role="group" aria-label="ช่วงเวลา"></div>
+      <div class="seg" id="fGrain" role="group" aria-label="ความละเอียด"></div>
+      <div class="chips" id="fCats" role="group" aria-label="ประเภทรถ"></div>
+      <label class="field">พื้นที่ <select id="fArea"></select></label>
+      <span class="custom-range" id="fCustom" hidden>
+        <label class="field">ตั้งแต่ <select id="fFrom"></select></label>
+        <label class="field">ถึง <select id="fTo"></select></label>
+      </span>
+    </div>
+  </section>
 
-    <section class="card" id="market">
+  <!-- ภาพรวม -->
+  <section class="card" id="market" data-page="overview" hidden>
+    <div class="card-head">
+      <div>
+        <h2>ยอดจดทะเบียนรถใหม่ <span class="sub">New vehicle registrations</span></h2>
+        <p class="note">นับเฉพาะรถใหม่ ร.ย.1–3 ตามสถิติการจดทะเบียนรถใหม่ของกรมการขนส่งทางบก นับตามจังหวัดที่จดทะเบียน ไม่ใช่ยอดขาย</p>
+      </div>
+    </div>
+    <div class="stats" id="mStats"></div>
+    <div class="chart-box tall"><canvas id="marketChart" aria-label="กราฟยอดจดทะเบียนรถใหม่ตามตัวกรองที่เลือก"></canvas></div>
+    <p class="note" id="mNote"></p>
+    <div class="two">
+      <div>
+        <h3>แยกตามภูมิภาค <span class="sub">กดแถบเพื่อกรอง</span></h3>
+        <div class="chart-box" id="regionBox"><canvas id="regionChart" aria-label="ยอดจดทะเบียนแยกตามภูมิภาค"></canvas></div>
+      </div>
+      <div>
+        <h3>แผนที่รายจังหวัด <span class="sub">กดจังหวัดเพื่อกรอง</span></h3>
+        <div class="map-wrap" id="mapWrap"></div>
+        <div class="map-legend" id="mapLegend"></div>
+        <p class="note map-credit">ขอบเขตจังหวัด: <a href="https://www.geoboundaries.org/">geoBoundaries</a> © ผู้ร่วมพัฒนา <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> (ODbL)</p>
+      </div>
+    </div>
+    <details><summary>ดูเป็นตาราง · Table</summary><div class="table-wrap" id="marketTable"></div></details>
+    <details><summary>ตารางรายจังหวัด · Provinces</summary><div class="table-wrap" id="provinceTable"></div></details>
+  </section>
+
+  <!-- อันดับ -->
+  <div class="two wide-left" data-page="ranking" hidden>
+    <section class="card" id="rankCard">
       <div class="card-head">
         <div>
-          <h2>ยอดจดทะเบียนรถใหม่ <span class="sub">New vehicle registrations</span></h2>
-          <p class="note">นับเฉพาะรถใหม่ ร.ย.1–3 ตามสถิติการจดทะเบียนรถใหม่ของกรมการขนส่งทางบก นับตามจังหวัดที่จดทะเบียน ไม่ใช่ยอดขาย</p>
+          <h2>อันดับ <span class="sub">Ranking</span></h2>
+          <p class="note filter-echo"></p>
         </div>
+        <div class="seg" id="rankKind" role="group" aria-label="อันดับยี่ห้อหรือรุ่น"></div>
       </div>
-      <div class="stats" id="mStats"></div>
-      <div class="chart-box tall"><canvas id="marketChart" aria-label="กราฟยอดจดทะเบียนรถใหม่ตามตัวกรองที่เลือก"></canvas></div>
-      <p class="note" id="mNote"></p>
-      <div class="two">
-        <div>
-          <h3>แยกตามภูมิภาค <span class="sub">กดแถบเพื่อกรอง</span></h3>
-          <div class="chart-box" id="regionBox"><canvas id="regionChart" aria-label="ยอดจดทะเบียนแยกตามภูมิภาค"></canvas></div>
-        </div>
-        <div>
-          <h3>แผนที่รายจังหวัด <span class="sub">กดจังหวัดเพื่อกรอง</span></h3>
-          <div class="map-wrap" id="mapWrap"></div>
-          <div class="map-legend" id="mapLegend"></div>
-          <p class="note map-credit">ขอบเขตจังหวัด: <a href="https://www.geoboundaries.org/">geoBoundaries</a> © ผู้ร่วมพัฒนา <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> (ODbL)</p>
-        </div>
-      </div>
-      <details><summary>ดูเป็นตาราง · Table</summary><div class="table-wrap" id="marketTable"></div></details>
-      <details><summary>ตารางรายจังหวัด · Provinces</summary><div class="table-wrap" id="provinceTable"></div></details>
+      <div class="chart-box"><canvas id="rankChart" aria-label="อันดับยอดจดทะเบียน 15 อันดับแรก"></canvas></div>
+      <p class="note" id="rankNote"></p>
+      <details><summary>ตาราง 50 อันดับ</summary><div class="table-wrap" id="rankTable"></div></details>
     </section>
-
-    <div class="two wide-left">
-      <section class="card" id="rankCard">
-        <div class="card-head">
-          <div>
-            <h2>อันดับ <span class="sub">Ranking</span></h2>
-            <p class="note filter-echo" id="rankFilter"></p>
-          </div>
-          <div class="seg" id="rankKind" role="group" aria-label="อันดับยี่ห้อหรือรุ่น"></div>
+    <section class="card" id="hotCard">
+      <div class="card-head">
+        <div>
+          <h2>รุ่นมาแรง <span class="sub">Fastest growing models</span></h2>
+          <p class="note filter-echo"></p>
         </div>
-        <div class="chart-box"><canvas id="rankChart" aria-label="อันดับยอดจดทะเบียน 15 อันดับแรก"></canvas></div>
-        <p class="note" id="rankNote"></p>
-        <details><summary>ตาราง 50 อันดับ · กด ＋ เพื่อเพิ่มลงกราฟเทรนด์</summary><div class="table-wrap" id="rankTable"><span id="rankBody">กำลังโหลด…</span></div></details>
-      </section>
-
-      <section class="card" id="hotCard">
-        <div class="card-head">
-          <div>
-            <h2>รุ่นมาแรง <span class="sub">Fastest growing models</span></h2>
-            <p class="note filter-echo" id="hotFilter"></p>
-          </div>
-          <div class="seg" id="hotMode" role="group" aria-label="วิธีเทียบ"></div>
-        </div>
-        <div class="chart-box"><canvas id="hotChart" aria-label="10 รุ่นที่ยอดจดทะเบียนเพิ่มขึ้นมากที่สุด"></canvas></div>
-        <p class="note" id="hotEmpty" hidden></p>
-        <p class="note" id="hotNote"></p>
-      </section>
-    </div>
-
-    <p class="note filter-echo" id="trendFilter"></p>
-    <section class="card" id="brandTrend"></section>
-    <section class="card" id="modelTrend"></section>
+        <div class="seg" id="hotMode" role="group" aria-label="วิธีเทียบ"></div>
+      </div>
+      <div class="chart-box"><canvas id="hotChart" aria-label="10 รุ่นที่ยอดจดทะเบียนเพิ่มขึ้นมากที่สุด"></canvas></div>
+      <p class="note" id="hotEmpty" hidden></p>
+      <p class="note" id="hotNote"></p>
+    </section>
   </div>
+
+  <!-- เทรนด์ -->
+  <section class="card" data-page="trends" hidden>
+    <div class="card-head">
+      <div>
+        <h2>ส่วนแบ่งตลาดตามเวลา <span class="sub">Market share over time</span></h2>
+        <p class="note filter-echo"></p>
+      </div>
+    </div>
+    <div class="chart-box tall"><canvas id="shareChart" aria-label="ส่วนแบ่งตลาดของ 8 ยี่ห้อแรกตามเวลา"></canvas></div>
+    <p class="note">8 ยี่ห้อที่ยอดสูงสุดในช่วงที่เลือก ยี่ห้ออื่นรวมเป็น "อื่นๆ" · แต่ละชั้นคือส่วนแบ่งในช่วงเวลานั้น</p>
+  </section>
+  <section class="card" data-page="trends" hidden>
+    <div class="card-head">
+      <div>
+        <h2>อันดับยี่ห้อตามเวลา <span class="sub">Rank chart</span></h2>
+        <p class="note filter-echo"></p>
+      </div>
+    </div>
+    <div class="chart-box tall"><canvas id="bumpChart" aria-label="อันดับของ 8 ยี่ห้อแรกในแต่ละช่วงเวลา"></canvas></div>
+    <p class="note">เส้นที่ขาดคือช่วงที่ยี่ห้อนั้นหลุดจาก 12 อันดับแรก</p>
+  </section>
+  <section class="card" id="brandTrend" data-page="trends" hidden></section>
+  <section class="card" id="modelTrend" data-page="trends" hidden></section>
+
+  <!-- สัญชาติแบรนด์ -->
+  <section class="card" data-page="origin" hidden>
+    <div class="card-head">
+      <div>
+        <h2>ส่วนแบ่งตามสัญชาติบริษัทแม่ <span class="sub">Share by parent-company country</span></h2>
+        <p class="note filter-echo"></p>
+      </div>
+    </div>
+    <div class="stats" id="originStats"></div>
+    <div class="chart-box tall"><canvas id="originChart" aria-label="ส่วนแบ่งตลาดตามสัญชาติบริษัทแม่ตามเวลา"></canvas></div>
+    <p class="note">จัดกลุ่มตามประเทศที่ตั้งบริษัทแม่ (ปี 2569) เช่น MG (SAIC) และ Volvo (Geely) นับเป็นจีน · Land Rover (Tata) อยู่ในกลุ่มอื่นๆ · ยุโรปรวมเยอรมนี อิตาลี ฝรั่งเศส อังกฤษ และ Stellantis (เนเธอร์แลนด์)</p>
+  </section>
+  <section class="card" data-page="origin" hidden>
+    <div class="card-head">
+      <div>
+        <h2>สัญชาติแบรนด์แยกตามภูมิภาค <span class="sub">By region</span></h2>
+        <p class="note">ช่วงเวลาและประเภทรถตามตัวกรอง แสดงทุกภูมิภาค</p>
+      </div>
+    </div>
+    <div class="chart-box tall"><canvas id="originRegionChart" aria-label="สัดส่วนสัญชาติแบรนด์ในแต่ละภูมิภาค"></canvas></div>
+    <details><summary>ยี่ห้อในแต่ละกลุ่ม</summary><div class="prose" id="originBrands"></div></details>
+  </section>
+
+  <!-- ภูมิภาค -->
+  <section class="card" data-page="regions" hidden>
+    <div class="card-head">
+      <div>
+        <h2>ยี่ห้อ/รุ่น × ภูมิภาค <span class="sub">Where each brand is strong</span></h2>
+        <p class="note">ช่วงเวลาและประเภทรถตามตัวกรอง แสดงทุกภูมิภาค</p>
+      </div>
+      <div class="controls">
+        <div class="seg" id="regionKind" role="group" aria-label="ยี่ห้อหรือรุ่น"></div>
+        <div class="seg" id="regionMode" role="group" aria-label="ค่าที่แสดง"></div>
+      </div>
+    </div>
+    <div class="table-wrap heat-wrap" id="regionHeat"></div>
+    <p class="note" id="regionHeatNote"></p>
+  </section>
+
+  <!-- ฤดูกาล -->
+  <section class="card" data-page="seasonality" hidden>
+    <div class="card-head">
+      <div>
+        <h2>ฤดูกาลการจดทะเบียน <span class="sub">Seasonality</span></h2>
+        <p class="note">พื้นที่และประเภทรถตามตัวกรอง แสดงทุกปีที่มีข้อมูล</p>
+      </div>
+      <div class="seg" id="seasonMode" role="group" aria-label="ค่าที่แสดง"></div>
+    </div>
+    <div class="table-wrap heat-wrap" id="seasonHeat"></div>
+    <p class="note">โหมด "เทียบค่าเฉลี่ยของปี": 100 = เท่าค่าเฉลี่ยรายเดือนของปีนั้น สีน้ำเงินสูงกว่า สีแดงต่ำกว่า · ธันวาคมต่ำและมกราคมสูงทุกปี เป็นรูปแบบในข้อมูลของกรมฯ</p>
+    <h3>เทียบแต่ละปี</h3>
+    <div class="chart-box tall"><canvas id="seasonChart" aria-label="ยอดจดทะเบียนรายเดือน เส้นละหนึ่งปี"></canvas></div>
+  </section>
+
+  <!-- ช่วงราคา -->
+  <section class="card" data-page="prices" hidden>
+    <div class="card-head">
+      <div>
+        <h2>ยอดจดทะเบียนตามช่วงราคา <span class="sub">By price band</span></h2>
+        <p class="note filter-echo"></p>
+      </div>
+    </div>
+    <p class="note" id="priceCoverage"></p>
+    <div class="chart-box"><canvas id="priceBandChart" aria-label="ยอดจดทะเบียนตามช่วงราคาเริ่มต้น"></canvas></div>
+  </section>
+  <section class="card" data-page="prices" hidden>
+    <div class="card-head">
+      <div>
+        <h2>ราคาเทียบยอดจดทะเบียน <span class="sub">Price vs registrations</span></h2>
+        <p class="note">แต่ละจุดคือหนึ่งรุ่นที่มีราคา กดจุดเพื่อดูรายละเอียด</p>
+      </div>
+    </div>
+    <div class="chart-box tall"><canvas id="priceScatter" aria-label="ราคาเริ่มต้นเทียบยอดจดทะเบียนของแต่ละรุ่น"></canvas></div>
+    <details><summary>ตารางรุ่นที่มีราคา</summary><div class="table-wrap" id="priceTable"></div></details>
+  </section>
+
+  <!-- รุ่นใหม่ -->
+  <section class="card" data-page="launches" hidden>
+    <div class="card-head">
+      <div>
+        <h2>รุ่นใหม่: 12 เดือนแรกในตลาด <span class="sub">Launch curves</span></h2>
+        <p class="note filter-echo"></p>
+      </div>
+    </div>
+    <div class="chart-box tall"><canvas id="launchChart" aria-label="ยอดจดทะเบียนรายเดือนนับจากเดือนแรกของรุ่นใหม่"></canvas></div>
+    <p class="note">รุ่นที่เริ่มมีทะเบียนในช่วงที่เลือก (ไม่นับรุ่นที่มีตั้งแต่ต้นข้อมูล ม.ค. 2564) เทียบ 8 รุ่นที่ยอด 6 เดือนแรกสูงสุด · "เดือนแรก" คือเดือนแรกที่มีทะเบียนในข้อมูลกรมฯ ไม่ใช่วันเปิดตัวทางการ</p>
+    <details open><summary>ตารางรุ่นใหม่</summary><div class="table-wrap" id="launchTable"></div></details>
+  </section>
 
   <div id="detail" hidden></div>
 
-  <section class="card prose" id="cite">
+  <!-- ข้อมูล -->
+  <section class="card prose" id="cite" data-page="data" hidden>
     <h2>การอ้างอิง <span class="sub">How to cite</span></h2>
     <p>ข้อมูลเผยแพร่ภายใต้ <a href="https://github.com/sunJirapath/thai-auto-data/blob/main/LICENSE">CC BY 4.0</a> หากนำไปใช้ต้องอ้างอิงทั้ง thai-auto-data และกรมการขนส่งทางบก</p>
     <pre id="citeText">ข้อมูลจาก thai-auto-data โดย sunJirapath (https://github.com/sunJirapath/thai-auto-data), สัญญาอนุญาต CC BY 4.0
@@ -109,8 +229,7 @@ Data: thai-auto-data by sunJirapath (https://github.com/sunJirapath/thai-auto-da
 Original source: Department of Land Transport, Thailand (web.dlt.go.th/statistics).</pre>
     <button type="button" id="copyCite" class="btn">คัดลอก · Copy</button>
   </section>
-
-  <section class="card prose" id="download">
+  <section class="card prose" id="download" data-page="data" hidden>
     <h2>ดาวน์โหลดข้อมูล <span class="sub">Get the data</span></h2>
     <ul>
       <li><a href="summaries/market_monthly.csv">market_monthly.csv</a> ยอดรวมรายเดือน</li>
@@ -119,15 +238,16 @@ Original source: Department of Land Transport, Thailand (web.dlt.go.th/statistic
       <li><a href="summaries/variant_monthly.csv">variant_monthly.csv</a> รายชื่อรุ่นย่อยตามที่กรมฯ บันทึก</li>
       <li><a href="summaries/province_monthly.csv">province_monthly.csv</a> ยอดรายจังหวัดรายเดือน (<a href="data/provinces.csv">provinces.csv</a> รหัสจังหวัดและภาค)</li>
       <li><a href="https://github.com/sunJirapath/thai-auto-data/tree/main/summaries/areas">summaries/areas/</a> ยอดรายยี่ห้อ/รุ่นแยกพื้นที่ (ประเทศ ภาค จังหวัด)</li>
+      <li><a href="data/brands.csv">brands.csv</a> ยี่ห้อ รหัส และประเทศของบริษัทแม่</li>
       <li><a href="data/prices.csv">prices.csv</a> ราคาจากเว็บไซต์ทางการ พร้อมแหล่งอ้างอิง</li>
       <li><a href="https://github.com/sunJirapath/thai-auto-data/tree/main/data">data/</a> ข้อมูลระดับแถว รหัสยี่ห้อ/รุ่น และทะเบียนแหล่งข้อมูล</li>
     </ul>
     <p class="note">รายละเอียดแหล่งข้อมูลและวิธีจับคู่ชื่อรุ่น: <a href="https://github.com/sunJirapath/thai-auto-data/blob/main/DATA_SOURCES.md">DATA_SOURCES.md</a></p>
   </section>
 
-  <footer class="foot">ที่มา: thai-auto-data / กรมการขนส่งทางบก · CC BY 4.0</footer>
+  <footer class="foot">ที่มา: thai-auto-data / กรมการขนส่งทางบก · CC BY 4.0 · <a href="#/data">อ้างอิงและดาวน์โหลด</a></footer>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<script src="site/app.js?v=8"></script>
+<script src="site/app.js?v=10"></script>
 </body>
 </html>

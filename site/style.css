@@ -131,3 +131,14 @@ td.move.up { color: var(--up); } td.move.down { color: var(--down); }
 @media (max-width: 700px) { .filterbar { position: static; border-bottom: 0; } }
 /* grid children must be allowed to shrink, or a wide table pushes the card (and the page) wider */
 .card > *, details { min-width: 0; }
+/* page tabs */
+.tabs { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: thin; border-bottom: 1px solid var(--border); padding-bottom: 2px; }
+.tabs a { white-space: nowrap; text-decoration: none; color: var(--ink-2); padding: 7px 12px; border-radius: 8px 8px 0 0; font-size: .92rem; border-bottom: 2px solid transparent; }
+.tabs a:hover { color: var(--ink); background: var(--surface); }
+.tabs a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+[data-page][hidden], .filterbar[hidden] { display: none !important; }
+/* heatmap tables */
+.heatmap td.heat { font-variant-numeric: tabular-nums; color: var(--ink); min-width: 56px; }
+.heatmap th[scope="row"] { position: static; text-align: left; color: var(--ink); font-size: .85rem; }
+.heat-wrap { max-height: none; }
+.prose p { margin: 4px 0; font-size: .88rem; }

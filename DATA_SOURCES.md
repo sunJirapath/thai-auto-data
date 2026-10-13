@@ -75,6 +75,10 @@ Notes:
 - Third-party price sites are not used as sources. They often disagree with each other and with the manufacturer.
 - Dealer discounts are out of scope.
 
+## Brand parent-company country
+
+`data/brands.csv` has a `parent_country` column: the ISO 3166-1 alpha-2 code of the country where the brand's parent company is headquartered, as of 2026. It answers "whose company is this brand?", not where the car is built or where the brand was founded. So MG (SAIC) and Volvo (Geely Holding) are `CN`, Mini and Rolls-Royce (BMW) are `DE`, Jeep and Peugeot (Stellantis) are `NL`, and Land Rover and Jaguar (Tata) are `IN`. It is filled for 109 of 164 brands, which together cover 99.97% of registrations; small brands we could not confirm are left empty. Corrections with a source are welcome.
+
 ## Provinces and regions
 
 `data/provinces.csv` lists the 77 provinces with their ISO 3166-2 code (`TH-10` = Bangkok), Thai and English names, and region. Regions follow Thailand's six-region geographic system (ภาคกลาง, ภาคตะวันออก, ภาคตะวันออกเฉียงเหนือ, ภาคเหนือ, ภาคตะวันตก, ภาคใต้), in which Bangkok is part of ภาคกลาง. The website shows Bangkok on its own because it is so large.
