@@ -2,6 +2,8 @@
 
 **English** | [ภาษาไทย](README.md)
 
+[![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](LICENSE) ![Data: 2021-01 to 2026-09](https://img.shields.io/badge/data-2021--01%20to%202026--09-green.svg) ![Format: CSV](https://img.shields.io/badge/format-CSV-orange.svg) [![Site](https://img.shields.io/badge/site-GitHub%20Pages-black.svg)](https://sunjirapath.github.io/thai-auto-data/)
+
 Open data on the Thai car market: monthly new-vehicle registrations by brand and model, plus prices from official manufacturer websites, as plain CSV files you can download and use directly.
 
 **Interactive site:** https://sunjirapath.github.io/thai-auto-data/ with pages for the overview (totals, regions, map in units or per 1,000 people), rankings and fastest-growing models, trends and market share over time, powertrain / EV, parent-company country, brand × region, seasonality, price bands, new launches, model comparison, and brand and model detail. Every page, including brand, model and compare pages, uses the same date range, category and area filters, and each page's link keeps those filters, so a view can be shared. The site is in English by default and in Thai with the switch at the top right (or `lang=th` in the link).
@@ -31,7 +33,7 @@ Open data on the Thai car market: monthly new-vehicle registrations by brand and
 
 **Coverage:** January 2021 to September 2026 (BE 2564 to 2569), 69 months, none missing.
 
-**Prices:** 113 official-website prices for 19 models so far (Toyota, Honda, Isuzu D-Max, Mitsubishi Triton/Xforce, BYD Atto 3, GWM ORA 5, Changan Nevo Q05, Chery V23), each linked to the page it came from. Price history starts from the first observation, so it is not complete back in time.
+**Prices:** 127 official-website prices for 25 models so far (Toyota, Honda, Isuzu D-Max, Mitsubishi Triton/Xforce, BYD Atto 3/Dolphin/Sealion 6/Sealion 7, MG4, Wuling Binguo/Darion, GWM ORA 5, Changan Nevo Q05, Chery V23), each linked to the page it came from. Price history starts from the first observation, so it is not complete back in time.
 
 If a month has no source data, it appears as `status=missing` with empty numbers, **not 0**. Details in [DATA_SOURCES.md](DATA_SOURCES.md).
 
@@ -84,6 +86,21 @@ Or clone the whole repository: `git clone https://github.com/sunJirapath/thai-au
 The data is updated when the DLT publishes a new monthly file. Every file is checked before it is accepted. The row count must not be abnormally low, the month inside the file must match its title, and every count must be a nonnegative integer. A file that fails is logged in `data/sources.csv` with the reason and is not used.
 
 The data comes from the DLT Transport Statistics website (web.dlt.go.th/statistics), which updates monthly. On every import, each category total must match the DLT's own monthly totals file to the vehicle. As of 13 October 2026, the latest month is September 2026 (processed by the DLT on 5 October 2026).
+
+## Questions this data can answer
+
+- How many new cars were registered in Thailand last month, and how does that compare with last year?
+- Which brands and models lead the Thai market (Toyota, Isuzu, Honda, BYD and others), by month, region or province?
+- How fast are electric vehicles (BEV), plug-in hybrids (PHEV) and hybrids (HEV) growing in Thailand?
+- How has the share of Chinese versus Japanese brands changed?
+- Which provinces register the most new cars, in total and per 1,000 people?
+- What are the official list prices of each variant, with a source link?
+
+**Note:** these are registrations, a close proxy for "car sales in Thailand" but not the same thing. When quoting a number, call it registrations.
+
+**For AI assistants and tools:** a plain-text summary with every file URL is in [`llms.txt`](llms.txt), and machine-readable column definitions are in [`datapackage.json`](datapackage.json) (Frictionless Data Package).
+
+**Keywords:** Thailand car sales, Thai new vehicle registrations, Thailand EV market, Thailand automotive statistics, car market share Thailand, Thai car prices, Department of Land Transport (DLT) open data, ยอดขายรถยนต์, ยอดจดทะเบียนรถใหม่
 
 ## How to cite
 

@@ -3,8 +3,111 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ตลาดรถยนต์ไทย · thai-auto-data</title>
-<meta name="description" content="ยอดรถจดทะเบียนใหม่รายเดือนในประเทศไทย แยกยี่ห้อ รุ่น ภูมิภาค และจังหวัด พร้อมราคาจากเว็บไซต์ทางการ จากข้อมูลของกรมการขนส่งทางบก">
+<title>Thai Car Market · thai-auto-data</title>
+<meta name="description" content="Monthly new vehicle registrations in Thailand by brand, model, province and fuel type, with official car prices. Open data from the Department of Land Transport, CSV, CC BY 4.0.">
+<link rel="canonical" href="https://sunjirapath.github.io/thai-auto-data/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Thai Car Market · thai-auto-data">
+<meta property="og:description" content="Monthly new vehicle registrations in Thailand by brand, model, province and fuel type, with official car prices. Open data from the Department of Land Transport, CSV, CC BY 4.0.">
+<meta property="og:url" content="https://sunjirapath.github.io/thai-auto-data/">
+<meta name="twitter:card" content="summary">
+<link rel="alternate" type="text/plain" title="llms.txt" href="llms.txt">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Dataset",
+ "name": "Thailand new vehicle registrations and car prices (open data)",
+ "alternateName": [
+  "thai-auto-data",
+  "ยอดจดทะเบียนรถใหม่ในประเทศไทย"
+ ],
+ "description": "Monthly new vehicle registrations in Thailand (DLT categories RY1-RY3) by brand, model, province and fuel type from 2021-01 to 2026-09, from the Department of Land Transport, with prices from official manufacturer websites. Registrations, not sales. Missing data is left empty, never 0.",
+ "url": "https://sunjirapath.github.io/thai-auto-data/",
+ "sameAs": "https://github.com/sunJirapath/thai-auto-data",
+ "keywords": [
+  "Thailand",
+  "car registrations",
+  "car sales",
+  "automotive",
+  "electric vehicles",
+  "EV",
+  "market share",
+  "car prices",
+  "open data",
+  "DLT",
+  "ยอดขายรถยนต์",
+  "ยอดจดทะเบียนรถใหม่",
+  "รถยนต์ไฟฟ้า"
+ ],
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "isAccessibleForFree": true,
+ "creator": {
+  "@type": "Person",
+  "name": "sunJirapath",
+  "url": "https://github.com/sunJirapath"
+ },
+ "isBasedOn": "https://web.dlt.go.th/statistics/",
+ "temporalCoverage": "2021-01/2026-09",
+ "spatialCoverage": {
+  "@type": "Place",
+  "name": "Thailand"
+ },
+ "inLanguage": [
+  "en",
+  "th"
+ ],
+ "distribution": [
+  {
+   "@type": "DataDownload",
+   "encodingFormat": "text/csv",
+   "name": "market-monthly",
+   "contentUrl": "https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/summaries/market_monthly.csv"
+  },
+  {
+   "@type": "DataDownload",
+   "encodingFormat": "text/csv",
+   "name": "brand-monthly",
+   "contentUrl": "https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/summaries/brand_monthly.csv"
+  },
+  {
+   "@type": "DataDownload",
+   "encodingFormat": "text/csv",
+   "name": "model-monthly",
+   "contentUrl": "https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/summaries/model_monthly.csv"
+  },
+  {
+   "@type": "DataDownload",
+   "encodingFormat": "text/csv",
+   "name": "variant-monthly",
+   "contentUrl": "https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/summaries/variant_monthly.csv"
+  },
+  {
+   "@type": "DataDownload",
+   "encodingFormat": "text/csv",
+   "name": "province-monthly",
+   "contentUrl": "https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/summaries/province_monthly.csv"
+  },
+  {
+   "@type": "DataDownload",
+   "encodingFormat": "text/csv",
+   "name": "area-all",
+   "contentUrl": "https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/summaries/areas/all.csv"
+  },
+  {
+   "@type": "DataDownload",
+   "encodingFormat": "text/csv",
+   "name": "prices",
+   "contentUrl": "https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/data/prices.csv"
+  },
+  {
+   "@type": "DataDownload",
+   "encodingFormat": "text/csv",
+   "name": "brands",
+   "contentUrl": "https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/data/brands.csv"
+  }
+ ]
+}
+</script>
 <link rel="stylesheet" href="site/style.css?v=14">
 </head>
 <body>

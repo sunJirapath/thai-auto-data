@@ -1,0 +1,981 @@
+{
+  "name": "thai-auto-data",
+  "title": "Thailand new vehicle registrations and car prices (open data)",
+  "description": "Monthly new vehicle registrations in Thailand (DLT categories RY1-RY3) by brand, model, province and fuel type from 2021-01 to 2026-09, from the Department of Land Transport, with prices from official manufacturer websites. Registrations, not sales. Missing data is left empty, never 0.",
+  "homepage": "https://github.com/sunJirapath/thai-auto-data",
+  "version": "2026-09",
+  "keywords": [
+    "Thailand",
+    "car registrations",
+    "car sales",
+    "automotive",
+    "electric vehicles",
+    "EV",
+    "market share",
+    "car prices",
+    "open data",
+    "DLT"
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Department of Land Transport, Thailand: new vehicle registration statistics",
+      "path": "https://web.dlt.go.th/statistics/"
+    },
+    {
+      "title": "Department of Provincial Administration: population statistics",
+      "path": "https://catalog.dopa.go.th/"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "sunJirapath",
+      "role": "author",
+      "path": "https://github.com/sunJirapath"
+    }
+  ],
+  "temporal": {
+    "start": "2021-01",
+    "end": "2026-09"
+  },
+  "resources": [
+    {
+      "name": "market-monthly",
+      "path": "summaries/market_monthly.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Monthly totals by category with MoM and YoY",
+      "schema": {
+        "fields": [
+          {
+            "name": "period",
+            "type": "string",
+            "description": "Month as YYYY-MM (Gregorian)"
+          },
+          {
+            "name": "status",
+            "type": "string",
+            "description": "Row status"
+          },
+          {
+            "name": "ry1",
+            "type": "integer",
+            "description": "RY1 registrations"
+          },
+          {
+            "name": "ry2",
+            "type": "integer",
+            "description": "RY2 registrations"
+          },
+          {
+            "name": "ry3",
+            "type": "integer",
+            "description": "RY3 registrations"
+          },
+          {
+            "name": "total",
+            "type": "integer",
+            "description": "RY1+RY2+RY3 registrations"
+          },
+          {
+            "name": "unmatched_model_units",
+            "type": "integer",
+            "description": "Units whose DLT model name is not matched to a model_id"
+          },
+          {
+            "name": "mom_pct",
+            "type": "number",
+            "description": "Change vs the previous month, percent; empty if not comparable"
+          },
+          {
+            "name": "yoy_pct",
+            "type": "number",
+            "description": "Change vs the same month last year, percent; empty if not comparable"
+          },
+          {
+            "name": "source_id",
+            "type": "string",
+            "description": "Source ID, see data/sources.csv"
+          },
+          {
+            "name": "note",
+            "type": "string",
+            "description": "Free-text note"
+          }
+        ]
+      }
+    },
+    {
+      "name": "brand-monthly",
+      "path": "summaries/brand_monthly.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Monthly registrations, share, rank and YoY by brand",
+      "schema": {
+        "fields": [
+          {
+            "name": "period",
+            "type": "string",
+            "description": "Month as YYYY-MM (Gregorian)"
+          },
+          {
+            "name": "brand_id",
+            "type": "string",
+            "description": "Stable brand ID, see data/brands.csv"
+          },
+          {
+            "name": "units",
+            "type": "integer",
+            "description": "New vehicle registrations (not sales)"
+          },
+          {
+            "name": "share_pct",
+            "type": "number",
+            "description": "Share of all RY1-RY3 registrations in the month, percent"
+          },
+          {
+            "name": "rank",
+            "type": "integer",
+            "description": "Rank by units within the month"
+          },
+          {
+            "name": "yoy_pct",
+            "type": "number",
+            "description": "Change vs the same month last year, percent; empty if not comparable"
+          }
+        ]
+      }
+    },
+    {
+      "name": "model-monthly",
+      "path": "summaries/model_monthly.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Monthly registrations, share, rank and YoY by model",
+      "schema": {
+        "fields": [
+          {
+            "name": "period",
+            "type": "string",
+            "description": "Month as YYYY-MM (Gregorian)"
+          },
+          {
+            "name": "model_id",
+            "type": "string",
+            "description": "Stable model ID, see data/models.csv; empty when the DLT name is not matched yet"
+          },
+          {
+            "name": "brand_id",
+            "type": "string",
+            "description": "Stable brand ID, see data/brands.csv"
+          },
+          {
+            "name": "units",
+            "type": "integer",
+            "description": "New vehicle registrations (not sales)"
+          },
+          {
+            "name": "share_pct",
+            "type": "number",
+            "description": "Share of all RY1-RY3 registrations in the month, percent"
+          },
+          {
+            "name": "rank",
+            "type": "integer",
+            "description": "Rank by units within the month"
+          },
+          {
+            "name": "yoy_pct",
+            "type": "number",
+            "description": "Change vs the same month last year, percent; empty if not comparable"
+          }
+        ]
+      }
+    },
+    {
+      "name": "variant-monthly",
+      "path": "summaries/variant_monthly.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Monthly registrations by DLT variant name",
+      "schema": {
+        "fields": [
+          {
+            "name": "period",
+            "type": "string",
+            "description": "Month as YYYY-MM (Gregorian)"
+          },
+          {
+            "name": "model_id",
+            "type": "string",
+            "description": "Stable model ID, see data/models.csv; empty when the DLT name is not matched yet"
+          },
+          {
+            "name": "category",
+            "type": "string",
+            "description": "DLT category: RY1 private car up to 7 seats, RY2 private car over 7 seats, RY3 private van/pickup"
+          },
+          {
+            "name": "variant",
+            "type": "string",
+            "description": "Variant name as recorded by the source"
+          },
+          {
+            "name": "units",
+            "type": "integer",
+            "description": "New vehicle registrations (not sales)"
+          }
+        ]
+      }
+    },
+    {
+      "name": "province-monthly",
+      "path": "summaries/province_monthly.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Monthly registrations by province and category",
+      "schema": {
+        "fields": [
+          {
+            "name": "period",
+            "type": "string",
+            "description": "Month as YYYY-MM (Gregorian)"
+          },
+          {
+            "name": "province_iso",
+            "type": "string",
+            "description": "ISO 3166-2 province code, e.g. TH-10 Bangkok"
+          },
+          {
+            "name": "category",
+            "type": "string",
+            "description": "DLT category: RY1 private car up to 7 seats, RY2 private car over 7 seats, RY3 private van/pickup"
+          },
+          {
+            "name": "units",
+            "type": "integer",
+            "description": "New vehicle registrations (not sales)"
+          }
+        ]
+      }
+    },
+    {
+      "name": "area-all",
+      "path": "summaries/areas/all.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Brand, model and fuel units for the whole country; same layout in summaries/areas/<upcountry|region-*|TH-xx>.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "period",
+            "type": "string",
+            "description": "Month as YYYY-MM (Gregorian)"
+          },
+          {
+            "name": "category",
+            "type": "string",
+            "description": "DLT category: RY1 private car up to 7 seats, RY2 private car over 7 seats, RY3 private van/pickup"
+          },
+          {
+            "name": "kind",
+            "type": "string",
+            "description": "b brand, m model, f fuel group, bf brand x fuel group"
+          },
+          {
+            "name": "id",
+            "type": "string",
+            "description": "brand_id, model_id or fuel code depending on kind"
+          },
+          {
+            "name": "units",
+            "type": "integer",
+            "description": "New vehicle registrations (not sales)"
+          }
+        ]
+      }
+    },
+    {
+      "name": "prices",
+      "path": "data/prices.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Append-only prices from official manufacturer websites, with source links",
+      "schema": {
+        "fields": [
+          {
+            "name": "model_id",
+            "type": "string",
+            "description": "Stable model ID, see data/models.csv; empty when the DLT name is not matched yet"
+          },
+          {
+            "name": "variant",
+            "type": "string",
+            "description": "Variant name as recorded by the source"
+          },
+          {
+            "name": "price_thb",
+            "type": "integer",
+            "description": "Price in Thai baht"
+          },
+          {
+            "name": "price_type",
+            "type": "string",
+            "description": "list (regular website price) or promo (time-limited)"
+          },
+          {
+            "name": "effective_from",
+            "type": "date",
+            "description": "Price valid from, as stated by the source"
+          },
+          {
+            "name": "effective_to",
+            "type": "date",
+            "description": "Price valid until, as stated by the source"
+          },
+          {
+            "name": "published_on",
+            "type": "date",
+            "description": "Publication date stated by the source"
+          },
+          {
+            "name": "observed_on",
+            "type": "date",
+            "description": "Date the price was observed (Bangkok)"
+          },
+          {
+            "name": "source_url",
+            "type": "string",
+            "description": "Official page the value came from"
+          },
+          {
+            "name": "source_publisher",
+            "type": "string",
+            "description": "Publisher of the source page"
+          },
+          {
+            "name": "status",
+            "type": "string",
+            "description": "Row status"
+          },
+          {
+            "name": "note",
+            "type": "string",
+            "description": "Free-text note"
+          }
+        ]
+      }
+    },
+    {
+      "name": "brands",
+      "path": "data/brands.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Brands, DLT names and parent-company country",
+      "schema": {
+        "fields": [
+          {
+            "name": "brand_id",
+            "type": "string",
+            "description": "Stable brand ID, see data/brands.csv"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "dlt_names",
+            "type": "string"
+          },
+          {
+            "name": "parent_country",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "models",
+      "path": "data/models.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Models and stable IDs",
+      "schema": {
+        "fields": [
+          {
+            "name": "model_id",
+            "type": "string",
+            "description": "Stable model ID, see data/models.csv; empty when the DLT name is not matched yet"
+          },
+          {
+            "name": "brand_id",
+            "type": "string",
+            "description": "Stable brand ID, see data/brands.csv"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "body_type",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string",
+            "description": "Row status"
+          },
+          {
+            "name": "source_id",
+            "type": "string",
+            "description": "Source ID, see data/sources.csv"
+          }
+        ]
+      }
+    },
+    {
+      "name": "aliases",
+      "path": "data/aliases.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Exact mapping of DLT brand/model names to model_id",
+      "schema": {
+        "fields": [
+          {
+            "name": "brand_raw",
+            "type": "string",
+            "description": "Brand name exactly as published by the DLT"
+          },
+          {
+            "name": "model_raw",
+            "type": "string",
+            "description": "Model name exactly as published by the DLT"
+          },
+          {
+            "name": "model_id",
+            "type": "string",
+            "description": "Stable model ID, see data/models.csv; empty when the DLT name is not matched yet"
+          }
+        ]
+      }
+    },
+    {
+      "name": "provinces",
+      "path": "data/provinces.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Provinces, ISO codes, names and regions",
+      "schema": {
+        "fields": [
+          {
+            "name": "province_iso",
+            "type": "string",
+            "description": "ISO 3166-2 province code, e.g. TH-10 Bangkok"
+          },
+          {
+            "name": "name_th",
+            "type": "string"
+          },
+          {
+            "name": "name_en",
+            "type": "string"
+          },
+          {
+            "name": "region",
+            "type": "string"
+          },
+          {
+            "name": "region_th",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "population",
+      "path": "data/population.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Population by province (DOPA house registration)",
+      "schema": {
+        "fields": [
+          {
+            "name": "province_iso",
+            "type": "string",
+            "description": "ISO 3166-2 province code, e.g. TH-10 Bangkok"
+          },
+          {
+            "name": "population",
+            "type": "string"
+          },
+          {
+            "name": "as_of",
+            "type": "string"
+          },
+          {
+            "name": "source_id",
+            "type": "string",
+            "description": "Source ID, see data/sources.csv"
+          }
+        ]
+      }
+    },
+    {
+      "name": "fuel-types",
+      "path": "data/fuel_types.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "DLT fuel types and groups",
+      "schema": {
+        "fields": [
+          {
+            "name": "fuel_th",
+            "type": "string"
+          },
+          {
+            "name": "fuel_code",
+            "type": "string"
+          },
+          {
+            "name": "label_th",
+            "type": "string"
+          },
+          {
+            "name": "label_en",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "sources",
+      "path": "data/sources.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Source registry with SHA-256 and accept/reject status",
+      "schema": {
+        "fields": [
+          {
+            "name": "source_id",
+            "type": "string",
+            "description": "Source ID, see data/sources.csv"
+          },
+          {
+            "name": "publisher",
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "url",
+            "type": "string"
+          },
+          {
+            "name": "license",
+            "type": "string"
+          },
+          {
+            "name": "published_on",
+            "type": "date",
+            "description": "Publication date stated by the source"
+          },
+          {
+            "name": "retrieved_on",
+            "type": "string"
+          },
+          {
+            "name": "sha256",
+            "type": "string"
+          },
+          {
+            "name": "period",
+            "type": "string",
+            "description": "Month as YYYY-MM (Gregorian)"
+          },
+          {
+            "name": "rows",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string",
+            "description": "Row status"
+          },
+          {
+            "name": "note",
+            "type": "string",
+            "description": "Free-text note"
+          }
+        ]
+      }
+    },
+    {
+      "name": "registrations",
+      "path": [
+        "data/registrations/2021-01.csv",
+        "data/registrations/2021-02.csv",
+        "data/registrations/2021-03.csv",
+        "data/registrations/2021-04.csv",
+        "data/registrations/2021-05.csv",
+        "data/registrations/2021-06.csv",
+        "data/registrations/2021-07.csv",
+        "data/registrations/2021-08.csv",
+        "data/registrations/2021-09.csv",
+        "data/registrations/2021-10.csv",
+        "data/registrations/2021-11.csv",
+        "data/registrations/2021-12.csv",
+        "data/registrations/2022-01.csv",
+        "data/registrations/2022-02.csv",
+        "data/registrations/2022-03.csv",
+        "data/registrations/2022-04.csv",
+        "data/registrations/2022-05.csv",
+        "data/registrations/2022-06.csv",
+        "data/registrations/2022-07.csv",
+        "data/registrations/2022-08.csv",
+        "data/registrations/2022-09.csv",
+        "data/registrations/2022-10.csv",
+        "data/registrations/2022-11.csv",
+        "data/registrations/2022-12.csv",
+        "data/registrations/2023-01.csv",
+        "data/registrations/2023-02.csv",
+        "data/registrations/2023-03.csv",
+        "data/registrations/2023-04.csv",
+        "data/registrations/2023-05.csv",
+        "data/registrations/2023-06.csv",
+        "data/registrations/2023-07.csv",
+        "data/registrations/2023-08.csv",
+        "data/registrations/2023-09.csv",
+        "data/registrations/2023-10.csv",
+        "data/registrations/2023-11.csv",
+        "data/registrations/2023-12.csv",
+        "data/registrations/2024-01.csv",
+        "data/registrations/2024-02.csv",
+        "data/registrations/2024-03.csv",
+        "data/registrations/2024-04.csv",
+        "data/registrations/2024-05.csv",
+        "data/registrations/2024-06.csv",
+        "data/registrations/2024-07.csv",
+        "data/registrations/2024-08.csv",
+        "data/registrations/2024-09.csv",
+        "data/registrations/2024-10.csv",
+        "data/registrations/2024-11.csv",
+        "data/registrations/2024-12.csv",
+        "data/registrations/2025-01.csv",
+        "data/registrations/2025-02.csv",
+        "data/registrations/2025-03.csv",
+        "data/registrations/2025-04.csv",
+        "data/registrations/2025-05.csv",
+        "data/registrations/2025-06.csv",
+        "data/registrations/2025-07.csv",
+        "data/registrations/2025-08.csv",
+        "data/registrations/2025-09.csv",
+        "data/registrations/2025-10.csv",
+        "data/registrations/2025-11.csv",
+        "data/registrations/2025-12.csv",
+        "data/registrations/2026-01.csv",
+        "data/registrations/2026-02.csv",
+        "data/registrations/2026-03.csv",
+        "data/registrations/2026-04.csv",
+        "data/registrations/2026-05.csv",
+        "data/registrations/2026-06.csv",
+        "data/registrations/2026-07.csv",
+        "data/registrations/2026-08.csv",
+        "data/registrations/2026-09.csv"
+      ],
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Row-level monthly registrations by brand and model (one file per month)",
+      "schema": {
+        "fields": [
+          {
+            "name": "period",
+            "type": "string",
+            "description": "Month as YYYY-MM (Gregorian)"
+          },
+          {
+            "name": "category",
+            "type": "string",
+            "description": "DLT category: RY1 private car up to 7 seats, RY2 private car over 7 seats, RY3 private van/pickup"
+          },
+          {
+            "name": "brand_raw",
+            "type": "string",
+            "description": "Brand name exactly as published by the DLT"
+          },
+          {
+            "name": "model_raw",
+            "type": "string",
+            "description": "Model name exactly as published by the DLT"
+          },
+          {
+            "name": "count",
+            "type": "integer",
+            "description": "New vehicle registrations (not sales)"
+          },
+          {
+            "name": "brand_id",
+            "type": "string",
+            "description": "Stable brand ID, see data/brands.csv"
+          },
+          {
+            "name": "model_id",
+            "type": "string",
+            "description": "Stable model ID, see data/models.csv; empty when the DLT name is not matched yet"
+          },
+          {
+            "name": "source_id",
+            "type": "string",
+            "description": "Source ID, see data/sources.csv"
+          }
+        ]
+      }
+    },
+    {
+      "name": "registrations-by-province",
+      "path": [
+        "data/registrations_by_province/2021-01.csv",
+        "data/registrations_by_province/2021-02.csv",
+        "data/registrations_by_province/2021-03.csv",
+        "data/registrations_by_province/2021-04.csv",
+        "data/registrations_by_province/2021-05.csv",
+        "data/registrations_by_province/2021-06.csv",
+        "data/registrations_by_province/2021-07.csv",
+        "data/registrations_by_province/2021-08.csv",
+        "data/registrations_by_province/2021-09.csv",
+        "data/registrations_by_province/2021-10.csv",
+        "data/registrations_by_province/2021-11.csv",
+        "data/registrations_by_province/2021-12.csv",
+        "data/registrations_by_province/2022-01.csv",
+        "data/registrations_by_province/2022-02.csv",
+        "data/registrations_by_province/2022-03.csv",
+        "data/registrations_by_province/2022-04.csv",
+        "data/registrations_by_province/2022-05.csv",
+        "data/registrations_by_province/2022-06.csv",
+        "data/registrations_by_province/2022-07.csv",
+        "data/registrations_by_province/2022-08.csv",
+        "data/registrations_by_province/2022-09.csv",
+        "data/registrations_by_province/2022-10.csv",
+        "data/registrations_by_province/2022-11.csv",
+        "data/registrations_by_province/2022-12.csv",
+        "data/registrations_by_province/2023-01.csv",
+        "data/registrations_by_province/2023-02.csv",
+        "data/registrations_by_province/2023-03.csv",
+        "data/registrations_by_province/2023-04.csv",
+        "data/registrations_by_province/2023-05.csv",
+        "data/registrations_by_province/2023-06.csv",
+        "data/registrations_by_province/2023-07.csv",
+        "data/registrations_by_province/2023-08.csv",
+        "data/registrations_by_province/2023-09.csv",
+        "data/registrations_by_province/2023-10.csv",
+        "data/registrations_by_province/2023-11.csv",
+        "data/registrations_by_province/2023-12.csv",
+        "data/registrations_by_province/2024-01.csv",
+        "data/registrations_by_province/2024-02.csv",
+        "data/registrations_by_province/2024-03.csv",
+        "data/registrations_by_province/2024-04.csv",
+        "data/registrations_by_province/2024-05.csv",
+        "data/registrations_by_province/2024-06.csv",
+        "data/registrations_by_province/2024-07.csv",
+        "data/registrations_by_province/2024-08.csv",
+        "data/registrations_by_province/2024-09.csv",
+        "data/registrations_by_province/2024-10.csv",
+        "data/registrations_by_province/2024-11.csv",
+        "data/registrations_by_province/2024-12.csv",
+        "data/registrations_by_province/2025-01.csv",
+        "data/registrations_by_province/2025-02.csv",
+        "data/registrations_by_province/2025-03.csv",
+        "data/registrations_by_province/2025-04.csv",
+        "data/registrations_by_province/2025-05.csv",
+        "data/registrations_by_province/2025-06.csv",
+        "data/registrations_by_province/2025-07.csv",
+        "data/registrations_by_province/2025-08.csv",
+        "data/registrations_by_province/2025-09.csv",
+        "data/registrations_by_province/2025-10.csv",
+        "data/registrations_by_province/2025-11.csv",
+        "data/registrations_by_province/2025-12.csv",
+        "data/registrations_by_province/2026-01.csv",
+        "data/registrations_by_province/2026-02.csv",
+        "data/registrations_by_province/2026-03.csv",
+        "data/registrations_by_province/2026-04.csv",
+        "data/registrations_by_province/2026-05.csv",
+        "data/registrations_by_province/2026-06.csv",
+        "data/registrations_by_province/2026-07.csv",
+        "data/registrations_by_province/2026-08.csv",
+        "data/registrations_by_province/2026-09.csv"
+      ],
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Row-level monthly registrations by province, brand and model",
+      "schema": {
+        "fields": [
+          {
+            "name": "period",
+            "type": "string",
+            "description": "Month as YYYY-MM (Gregorian)"
+          },
+          {
+            "name": "province_iso",
+            "type": "string",
+            "description": "ISO 3166-2 province code, e.g. TH-10 Bangkok"
+          },
+          {
+            "name": "category",
+            "type": "string",
+            "description": "DLT category: RY1 private car up to 7 seats, RY2 private car over 7 seats, RY3 private van/pickup"
+          },
+          {
+            "name": "brand_raw",
+            "type": "string",
+            "description": "Brand name exactly as published by the DLT"
+          },
+          {
+            "name": "model_raw",
+            "type": "string",
+            "description": "Model name exactly as published by the DLT"
+          },
+          {
+            "name": "count",
+            "type": "integer",
+            "description": "New vehicle registrations (not sales)"
+          }
+        ]
+      }
+    },
+    {
+      "name": "registrations-by-fuel",
+      "path": [
+        "data/registrations_by_fuel/2021-01.csv",
+        "data/registrations_by_fuel/2021-02.csv",
+        "data/registrations_by_fuel/2021-03.csv",
+        "data/registrations_by_fuel/2021-04.csv",
+        "data/registrations_by_fuel/2021-05.csv",
+        "data/registrations_by_fuel/2021-06.csv",
+        "data/registrations_by_fuel/2021-07.csv",
+        "data/registrations_by_fuel/2021-08.csv",
+        "data/registrations_by_fuel/2021-09.csv",
+        "data/registrations_by_fuel/2021-10.csv",
+        "data/registrations_by_fuel/2021-11.csv",
+        "data/registrations_by_fuel/2021-12.csv",
+        "data/registrations_by_fuel/2022-01.csv",
+        "data/registrations_by_fuel/2022-02.csv",
+        "data/registrations_by_fuel/2022-03.csv",
+        "data/registrations_by_fuel/2022-04.csv",
+        "data/registrations_by_fuel/2022-05.csv",
+        "data/registrations_by_fuel/2022-06.csv",
+        "data/registrations_by_fuel/2022-07.csv",
+        "data/registrations_by_fuel/2022-08.csv",
+        "data/registrations_by_fuel/2022-09.csv",
+        "data/registrations_by_fuel/2022-10.csv",
+        "data/registrations_by_fuel/2022-11.csv",
+        "data/registrations_by_fuel/2022-12.csv",
+        "data/registrations_by_fuel/2023-01.csv",
+        "data/registrations_by_fuel/2023-02.csv",
+        "data/registrations_by_fuel/2023-03.csv",
+        "data/registrations_by_fuel/2023-04.csv",
+        "data/registrations_by_fuel/2023-05.csv",
+        "data/registrations_by_fuel/2023-06.csv",
+        "data/registrations_by_fuel/2023-07.csv",
+        "data/registrations_by_fuel/2023-08.csv",
+        "data/registrations_by_fuel/2023-09.csv",
+        "data/registrations_by_fuel/2023-10.csv",
+        "data/registrations_by_fuel/2023-11.csv",
+        "data/registrations_by_fuel/2023-12.csv",
+        "data/registrations_by_fuel/2024-01.csv",
+        "data/registrations_by_fuel/2024-02.csv",
+        "data/registrations_by_fuel/2024-03.csv",
+        "data/registrations_by_fuel/2024-04.csv",
+        "data/registrations_by_fuel/2024-05.csv",
+        "data/registrations_by_fuel/2024-06.csv",
+        "data/registrations_by_fuel/2024-07.csv",
+        "data/registrations_by_fuel/2024-08.csv",
+        "data/registrations_by_fuel/2024-09.csv",
+        "data/registrations_by_fuel/2024-10.csv",
+        "data/registrations_by_fuel/2024-11.csv",
+        "data/registrations_by_fuel/2024-12.csv",
+        "data/registrations_by_fuel/2025-01.csv",
+        "data/registrations_by_fuel/2025-02.csv",
+        "data/registrations_by_fuel/2025-03.csv",
+        "data/registrations_by_fuel/2025-04.csv",
+        "data/registrations_by_fuel/2025-05.csv",
+        "data/registrations_by_fuel/2025-06.csv",
+        "data/registrations_by_fuel/2025-07.csv",
+        "data/registrations_by_fuel/2025-08.csv",
+        "data/registrations_by_fuel/2025-09.csv",
+        "data/registrations_by_fuel/2025-10.csv",
+        "data/registrations_by_fuel/2025-11.csv",
+        "data/registrations_by_fuel/2025-12.csv",
+        "data/registrations_by_fuel/2026-01.csv",
+        "data/registrations_by_fuel/2026-02.csv",
+        "data/registrations_by_fuel/2026-03.csv",
+        "data/registrations_by_fuel/2026-04.csv",
+        "data/registrations_by_fuel/2026-05.csv",
+        "data/registrations_by_fuel/2026-06.csv",
+        "data/registrations_by_fuel/2026-07.csv",
+        "data/registrations_by_fuel/2026-08.csv",
+        "data/registrations_by_fuel/2026-09.csv"
+      ],
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Monthly registrations by province, brand and fuel type",
+      "schema": {
+        "fields": [
+          {
+            "name": "period",
+            "type": "string",
+            "description": "Month as YYYY-MM (Gregorian)"
+          },
+          {
+            "name": "province_iso",
+            "type": "string",
+            "description": "ISO 3166-2 province code, e.g. TH-10 Bangkok"
+          },
+          {
+            "name": "category",
+            "type": "string",
+            "description": "DLT category: RY1 private car up to 7 seats, RY2 private car over 7 seats, RY3 private van/pickup"
+          },
+          {
+            "name": "brand_raw",
+            "type": "string",
+            "description": "Brand name exactly as published by the DLT"
+          },
+          {
+            "name": "fuel",
+            "type": "string",
+            "description": "Fuel type as published by the DLT, see data/fuel_types.csv"
+          },
+          {
+            "name": "count",
+            "type": "integer",
+            "description": "New vehicle registrations (not sales)"
+          }
+        ]
+      }
+    }
+  ]
+}

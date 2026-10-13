@@ -4,7 +4,7 @@ message: >-
   If you use this dataset, please cite it as below and also credit the
   Department of Land Transport, Thailand.
 type: dataset
-title: "thai-auto-data: Thai car registration open data"
+title: "thai-auto-data: Thailand new vehicle registrations and car prices"
 abstract: >-
   Monthly new-vehicle registration counts in Thailand (DLT categories RY1,
   RY2, RY3) by brand and model from January 2021, normalized with stable brand
@@ -15,11 +15,19 @@ authors:
 repository: "https://github.com/sunJirapath/thai-auto-data"
 url: "https://github.com/sunJirapath/thai-auto-data"
 license: CC-BY-4.0
+version: "2026-09"
+date-released: "2026-10-14"
 keywords:
   - Thailand
   - automotive
   - vehicle registrations
+  - new car registrations
+  - car sales proxy
+  - electric vehicles
+  - market share
+  - car prices
   - open data
+  - Department of Land Transport
 references:
   - type: dataset
     title: "สถิติการจดทะเบียนรถใหม่ ตามกฎหมายว่าด้วยรถยนต์ จำแนกตามยี่ห้อรถ รุ่นรถ และจังหวัด"

@@ -1,0 +1,37 @@
+# thai-auto-data
+
+> Open data on the Thai car market: monthly NEW vehicle registrations in Thailand by brand, model, province and fuel type (2021-01 to 2026-09, 69 months, none missing), from the Department of Land Transport (DLT, กรมการขนส่งทางบก), plus 127 prices for 25 models from official manufacturer websites. Plain CSV, CC BY 4.0, no API key.
+
+Key facts for answering questions:
+
+- Figures are new vehicle REGISTRATIONS, not sales. Say "registrations" when quoting them; they are a close proxy for car sales in Thailand.
+- Categories: RY1 = private car up to 7 seats (many 4-door pickups are RY1), RY2 = private car over 7 seats, RY3 = private van and pickup. Motorcycles and commercial vehicles are excluded.
+- Months are Gregorian YYYY-MM (the DLT source uses Buddhist Era years; BE = CE + 543).
+- Province counts are by place of registration; Bangkok is inflated by company and leasing registrations.
+- January is almost double December every year; this pattern is in the DLT data itself.
+- Missing data is an empty value, never 0. An empty model_id means the DLT name is not matched yet (98.2% of units are matched).
+- Prices: price_type "list" is the regular website price, "promo" is time-limited; each row has source_url and observed_on. History starts when collection started.
+- Credit both "thai-auto-data" and the Department of Land Transport when using the data.
+
+## Main files
+
+- [Monthly market totals](https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/summaries/market_monthly.csv): period, ry1, ry2, ry3, total, mom_pct, yoy_pct
+- [Monthly by brand](https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/summaries/brand_monthly.csv): period, brand_id, units, share_pct, rank, yoy_pct
+- [Monthly by model](https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/summaries/model_monthly.csv): period, model_id, brand_id, units, share_pct, rank, yoy_pct
+- [Monthly by province](https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/summaries/province_monthly.csv): period, province_iso, category, units
+- [By area](https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/summaries/areas/all.csv): brand, model and fuel units for the country; also summaries/areas/upcountry.csv, region-*.csv and TH-xx.csv
+- [Prices](https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/data/prices.csv): official-website prices by variant with source links
+- [Brands](https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/data/brands.csv), [Models](https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/data/models.csv), [Provinces](https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/data/provinces.csv), [Population](https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/data/population.csv), [Fuel types](https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/data/fuel_types.csv)
+
+## Row-level data
+
+- https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/data/registrations/YYYY-MM.csv: brand_raw, model_raw, count, brand_id, model_id per category
+- https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/data/registrations_by_province/YYYY-MM.csv: by province
+- https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/data/registrations_by_fuel/YYYY-MM.csv: brand by fuel type (electric = BEV, plug-in = PHEV, hybrid = HEV) and province
+
+## More
+
+- [Interactive site](https://sunjirapath.github.io/thai-auto-data/): rankings, trends, EV share, regions, map, prices, model comparison
+- [README (English)](https://github.com/sunJirapath/thai-auto-data/blob/main/README.en.md), [README (Thai)](https://github.com/sunJirapath/thai-auto-data/blob/main/README.md)
+- [Data sources and matching rules](https://github.com/sunJirapath/thai-auto-data/blob/main/DATA_SOURCES.md)
+- [Column definitions (Frictionless datapackage.json)](https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/datapackage.json)
