@@ -4,7 +4,7 @@
 
 Open data on the Thai car market: monthly new-vehicle registrations by brand and model, plus prices from official manufacturer websites, as plain CSV files you can download and use directly.
 
-**Interactive site:** https://sunjirapath.github.io/thai-auto-data/ with pages for the overview (totals, regions, map in units or per 1,000 people), rankings and fastest-growing models, trends and market share over time, powertrain / EV, parent-company country, brand × region, seasonality, price bands, new launches, model comparison, and brand and model detail. Every page uses the same date range, category and area filters.
+**Interactive site:** https://sunjirapath.github.io/thai-auto-data/ with pages for the overview (totals, regions, map in units or per 1,000 people), rankings and fastest-growing models, trends and market share over time, powertrain / EV, parent-company country, brand × region, seasonality, price bands, new launches, model comparison, and brand and model detail. Every page, including brand, model and compare pages, uses the same date range, category and area filters, and each page's link keeps those filters, so a view can be shared.
 
 > **Please cite this dataset when you use it.** It is published under [CC BY 4.0](LICENSE). If you use, republish or build on this data, you must credit both **thai-auto-data** and the **Department of Land Transport (กรมการขนส่งทางบก)**. See [How to cite](#how-to-cite).
 
