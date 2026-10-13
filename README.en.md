@@ -25,7 +25,7 @@ Open data on the Thai car market: monthly new-vehicle registrations by brand and
 
 **Coverage:** January 2021 to September 2026 (BE 2564 to 2569), 69 months, none missing.
 
-**Prices:** official-website prices for 6 models so far (Toyota Yaris ATIV, Yaris Cross, Corolla Cross, Honda City, City Hatchback, Civic). Price history starts from the first observation, so it is not complete back in time.
+**Prices:** 113 official-website prices for 19 models so far (Toyota, Honda, Isuzu D-Max, Mitsubishi Triton/Xforce, BYD Atto 3, GWM ORA 5, Changan Nevo Q05, Chery V23), each linked to the page it came from. Price history starts from the first observation, so it is not complete back in time.
 
 If a month has no source data, it appears as `status=missing` with empty numbers, **not 0**. Details in [DATA_SOURCES.md](DATA_SOURCES.md).
 
