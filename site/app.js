@@ -9,7 +9,6 @@
   var MAX_SERIES = 8, MAX_COMPARE = 4;
   var charts = {};
   var D = {};          // loaded data
-  var homeTrends = {}; // persistent selections on the home page
 
   // ---------- helpers ----------
   function parseCSV(text) {
@@ -232,8 +231,9 @@
         return;
       }
       slots[id] = s; draw();
+      if (cfg.onUser) cfg.onUser(ids());
     }
-    function remove(id) { delete slots[id]; draw(); }
+    function remove(id) { delete slots[id]; draw(); if (cfg.onUser) cfg.onUser(ids()); }
     function ids() { return Object.keys(slots).sort(function (a, b) { return slots[a] - slots[b]; }); }
 
     function draw() {
@@ -248,10 +248,10 @@
       });
       var surface = css('--surface');
       var datasets = ids().map(function (id) {
-        var byP = cfg.rows[id] || {};
+        var byP = cfg.rows ? cfg.rows[id] || {} : null;
         return {
           label: cfg.nameOf(id),
-          data: D.market.map(function (r) {
+          data: cfg.values ? cfg.values(id, mode) : D.market.map(function (r) {
             if (r.status !== 'ok') return null;             // no source data: a gap, never zero
             var row = byP[r.period];
             return row ? +row[mode] : 0;                    // absent from a published month = no registrations
@@ -262,7 +262,7 @@
         };
       });
       var opt = baseOptions();
-      opt.plugins.missingBands = { indices: missingIndices() };
+      opt.plugins.missingBands = { indices: cfg.labels ? [] : missingIndices() };
       opt.plugins.legend.display = datasets.length > 1;
       opt.scales.y.ticks.callback = function (v) { return mode === 'units' ? kTicks(v) : v + '%'; };
       opt.plugins.tooltip.callbacks.label = function (ctx) {
@@ -270,7 +270,7 @@
       };
       if (charts[cfg.key]) charts[cfg.key].destroy();
       charts[cfg.key] = new Chart(canvas, {
-        type: 'line', data: { labels: D.market.map(function (r) { return monthLabel(r.period); }), datasets: datasets },
+        type: 'line', data: { labels: cfg.labels ? cfg.labels() : D.market.map(function (r) { return monthLabel(r.period); }), datasets: datasets },
         options: opt, plugins: [missingBands]
       });
       if (cfg.onChange) cfg.onChange(ids());
@@ -286,23 +286,6 @@
         .map(function (id) { return { id: id, label: modelName(id) }; })
         .sort(function (a, b) { return a.label.localeCompare(b.label); });
     };
-  }
-
-  // ---------- home ----------
-  function renderTiles() {
-    var last = D.market.filter(function (r) { return r.period === lastOk(); })[0];
-    var missing = D.market.filter(function (r) { return r.status === 'missing'; });
-    var topBrand = D.brand.filter(function (r) { return r.period === last.period && r.rank === '1'; })[0];
-    var topModel = D.model.filter(function (r) { return r.period === last.period && r.rank === '1'; })[0];
-    var box = document.getElementById('tiles');
-    box.textContent = '';
-    add(box,
-      tile('ยอดจดทะเบียน ' + monthLabel(last.period, true), fmt(last.total) + ' คัน',
-        last.yoy_pct ? 'เทียบปีก่อน ' + pctText(last.yoy_pct) : 'ไม่มีข้อมูลเทียบปีก่อน'),
-      tile('อันดับ 1 ยี่ห้อ', brandLabel(topBrand.brand_id), 'ส่วนแบ่ง ' + (+topBrand.share_pct).toFixed(1) + '%'),
-      tile('อันดับ 1 รุ่น', modelName(topModel.model_id), fmt(topModel.units) + ' คัน'),
-      tile('ช่วงข้อมูล', okPeriods().length + ' เดือน', monthLabel(D.market[0].period) + ' – ' + monthLabel(last.period) +
-        (missing.length ? ' · ขาด ' + missing.length + ' เดือน' : ' · ครบทุกเดือน')));
   }
 
   // ---------- market explorer (home): filters, stacked bars vs last year, regions, map ----------
@@ -439,7 +422,9 @@
     }
   };
 
-  function renderExplorer() {
+  function renderExplorer() { renderMarketCard(); renderAreaSections(); }
+
+  function renderMarketCard() {
     var isos = areaProvinces(M.area), cats = selCats(), months = selectedMonths();
     var order = [], buckets = {};
     months.forEach(function (p) {
@@ -661,63 +646,253 @@
     };
   }
 
-  function renderRanking(period) {
-    function rankTable(rows, key, nameOf, href, trend, limit) {
-      var trs = rows.slice(0, limit).map(function (r) {
-        var tr = el('tr');
-        tr.appendChild(el('td', { class: 'n' }, r.rank));
-        var td = el('td', { class: 'name' });
-        var plus = el('button', { type: 'button', class: 'plus', 'aria-pressed': String(trend.has(r[key])), 'aria-label': 'เพิ่ม ' + nameOf(r[key]) + ' ลงกราฟเทรนด์' }, trend.has(r[key]) ? '✓' : '＋');
-        plus.addEventListener('click', function () { trend.toggle(r[key]); });
-        add(td, plus, link(href(r[key]), nameOf(r[key])));
-        tr.appendChild(td);
-        tr.appendChild(el('td', { class: 'n' }, fmt(r.units)));
-        tr.appendChild(el('td', { class: 'n' }, (+r.share_pct).toFixed(1) + '%'));
-        tr.appendChild(pctCell(r.yoy_pct));
-        return tr;
+  // ---------- home: rankings, hot models and trends follow the same filters as the market chart ----------
+  var A = { cache: {}, kind: 'b', hot: 'yoy', custom: {}, token: 0 };
+
+  function areaKey(area) {
+    if (area === 'all') return 'all';
+    if (area === 'bkk') return 'TH-10';
+    if (area === 'upcountry') return 'upcountry';
+    if (area.indexOf('region:') === 0) return 'region-' + area.slice(7);
+    return area.slice(5);
+  }
+  // summaries/areas/<key>.csv -> idx[period][kind][id][category] = units
+  function loadArea(key) {
+    if (!A.cache[key]) {
+      A.cache[key] = load('summaries/areas/' + key + '.csv').then(function (rows) {
+        var idx = {};
+        rows.forEach(function (r) {
+          var p = idx[r.period] = idx[r.period] || { b: {}, m: {} };
+          var o = p[r.kind][r.id] = p[r.kind][r.id] || {};
+          o[r.category] = +r.units;
+        });
+        return idx;
       });
-      return table([['#', 1], ['ชื่อ'], ['คัน', 1], ['ส่วนแบ่ง', 1], ['YoY', 1]], trs);
     }
-    var bBox = document.getElementById('brandTable'), mBox = document.getElementById('modelTable');
-    bBox.textContent = ''; mBox.textContent = '';
-    bBox.appendChild(rankTable(D.brand.filter(function (r) { return r.period === period; }), 'brand_id', brandLabel,
-      function (id) { return '#/brand/' + id; }, D.brandTrend, 30));
-    mBox.appendChild(rankTable(D.model.filter(function (r) { return r.period === period; }), 'model_id', modelName,
-      function (id) { return '#/model/' + id; }, D.modelTrend, 50));
+    return A.cache[key];
+  }
+  function sumById(idx, kind, months, cats) {
+    var out = {};
+    months.forEach(function (p) {
+      var k = idx[p] && idx[p][kind];
+      if (!k) return;
+      Object.keys(k).forEach(function (id) {
+        var s = 0;
+        cats.forEach(function (c) { s += k[id][c] || 0; });
+        if (s) out[id] = (out[id] || 0) + s;
+      });
+    });
+    return out;
+  }
+  function sortedIds(obj) { return Object.keys(obj).sort(function (a, b) { return obj[b] - obj[a] || a.localeCompare(b); }); }
+  function sumValues(obj) { var s = 0; Object.keys(obj).forEach(function (k) { s += obj[k]; }); return s; }
+  function nameFor(kind, id) { return kind === 'b' ? brandLabel(id) : modelName(id); }
+  function hrefFor(kind, id) { return (kind === 'b' ? '#/brand/' : '#/model/') + id; }
+  function filterText() {
+    var ms = selectedMonths(), cats = selCats();
+    return areaLabel(M.area) + ' · ' + monthLabel(ms[0]) + ' – ' + monthLabel(ms[ms.length - 1]) + ' · ' +
+      (cats.length === 3 ? 'ร.ย.1–3' : cats.map(function (c) { return CAT_LABEL[c]; }).join(', '));
+  }
+
+  // text at the end of each horizontal bar
+  var barLabels = {
+    id: 'barLabels',
+    afterDatasetsDraw: function (chart, args, opts) {
+      if (!opts || !opts.labels) return;
+      var ctx = chart.ctx, meta = chart.getDatasetMeta(0);
+      ctx.save();
+      ctx.fillStyle = css('--ink-2'); ctx.font = '12px ' + css('--font'); ctx.textBaseline = 'middle';
+      meta.data.forEach(function (bar, i) { ctx.fillText(opts.labels[i], bar.x + 6, bar.y); });
+      ctx.restore();
+    }
+  };
+  function hbar(key, canvas, labels, values, texts, onPick, shortTexts) {
+    var narrow = canvas.parentNode.clientWidth < 520;
+    if (narrow && shortTexts) texts = shortTexts;
+    var o = baseOptions();
+    o.indexAxis = 'y';
+    o.interaction = { mode: 'nearest', intersect: true, axis: 'y' };
+    o.plugins.legend.display = false;
+    o.plugins.tooltip.enabled = false;
+    o.plugins.barLabels = { labels: texts };
+    o.layout = { padding: { right: narrow ? 92 : 150 } };
+    o.scales.x.display = false;
+    o.scales.y.grid = { display: false };
+    o.scales.y.ticks = { color: css('--ink'), font: { size: 12 }, autoSkip: false,
+      callback: function (v) { var t = this.getLabelForValue(v); return narrow && t.length > 16 ? t.slice(0, 15) + '…' : t; } };
+    o.onClick = function (e, els) { if (els.length && onPick) onPick(els[0].index); };
+    o.onHover = function (e, els) { e.native.target.style.cursor = els.length && onPick ? 'pointer' : 'default'; };
+    if (charts[key]) charts[key].destroy();
+    canvas.parentNode.style.height = (36 + 30 * labels.length) + 'px';
+    charts[key] = new Chart(canvas, {
+      type: 'bar', options: o, plugins: [barLabels],
+      data: { labels: labels, datasets: [{ data: values, backgroundColor: css('--accent'), borderRadius: 4, borderSkipped: 'start', barPercentage: 0.72, categoryPercentage: 1 }] }
+    });
+  }
+
+  function renderAreaSections() {
+    var token = ++A.token;
+    ['rankFilter', 'hotFilter', 'trendFilter'].forEach(function (id) { document.getElementById(id).textContent = filterText(); });
+    loadArea(areaKey(M.area)).then(function (idx) {
+      if (token !== A.token) return;   // a newer filter change won
+      renderRankCard(idx);
+      renderHotCard(idx);
+      renderHomeTrends(idx);
+    }).catch(function (e) {
+      document.getElementById('rankNote').textContent = 'โหลดข้อมูลพื้นที่ไม่สำเร็จ: ' + e.message;
+    });
+  }
+
+  function renderRankCard(idx) {
+    var months = selectedMonths(), cats = selCats(), kind = A.kind;
+    var cur = sumById(idx, kind, months, cats), total = sumValues(sumById(idx, 'b', months, cats));
+    var prevMonths = months.map(function (p) { return shiftMonth(p, -12); });
+    var prevOk = prevMonths.every(function (p) { return D.okSet[p]; });
+    var prev = prevOk ? sumById(idx, kind, prevMonths, cats) : {};
+    var prevRank = {};
+    sortedIds(prev).forEach(function (id, i) { prevRank[id] = i + 1; });
+    var ids = sortedIds(cur);
+    var top = ids.slice(0, 15);
+    hbar('rank', document.getElementById('rankChart'), top.map(function (id) { return nameFor(kind, id); }),
+      top.map(function (id) { return cur[id]; }),
+      top.map(function (id) { return fmt(cur[id]) + ' คัน · ' + (100 * cur[id] / total).toFixed(1) + '%'; }),
+      function (i) { location.hash = hrefFor(kind, top[i]); },
+      top.map(function (id) { return fmt(cur[id]) + ' · ' + (100 * cur[id] / total).toFixed(1) + '%'; }));
+    var trend = kind === 'b' ? D.brandTrend : D.modelTrend;
+    var trs = ids.slice(0, 50).map(function (id, i) {
+      var tr = el('tr'), td = el('td', { class: 'name' });
+      var on = trend && trend.has(id);
+      var plus = el('button', { type: 'button', class: 'plus', 'data-id': id, 'aria-pressed': String(!!on), 'aria-label': 'เพิ่ม ' + nameFor(kind, id) + ' ลงกราฟเทรนด์' }, on ? '✓' : '＋');
+      plus.addEventListener('click', function () { var t = kind === 'b' ? D.brandTrend : D.modelTrend; if (t) t.toggle(id); });
+      add(td, plus, link(hrefFor(kind, id), nameFor(kind, id)));
+      var move = '—';
+      if (prevOk) {
+        if (!prevRank[id]) move = 'ใหม่';
+        else if (prevRank[id] === i + 1) move = '=';
+        else move = (prevRank[id] > i + 1 ? '▲' : '▼') + Math.abs(prevRank[id] - (i + 1));
+      }
+      add(tr, el('td', { class: 'n' }, String(i + 1)), td, el('td', { class: 'n' }, fmt(cur[id])),
+        el('td', { class: 'n' }, (100 * cur[id] / total).toFixed(1) + '%'),
+        el('td', { class: 'n' }, prevOk ? fmt(prev[id] || 0) : '—'),
+        pctCell(prevOk && prev[id] ? (100 * (cur[id] - prev[id]) / prev[id]).toFixed(2) : ''),
+        el('td', { class: 'n move ' + (move[0] === '▲' || move === 'ใหม่' ? 'up' : move[0] === '▼' ? 'down' : 'na') }, move));
+      return tr;
+    });
+    var box = document.getElementById('rankTable');
+    box.textContent = '';
+    box.appendChild(trs.length ? table([['#', 1], [kind === 'b' ? 'ยี่ห้อ' : 'รุ่น'], ['คัน', 1], ['ส่วนแบ่ง', 1], ['ปีก่อน', 1], ['YoY', 1], ['อันดับ', 1]], trs)
+      : el('p', { class: 'note' }, 'ไม่มีข้อมูลในตัวกรองนี้'));
+    document.getElementById('rankNote').textContent = (kind === 'm' ? 'นับเฉพาะชื่อรุ่นที่จับคู่ได้ ส่วนแบ่งคิดจากยอดทั้งหมดในพื้นที่และช่วงที่เลือก · ' : 'ส่วนแบ่งคิดจากยอดทั้งหมดในพื้นที่และช่วงที่เลือก · ') +
+      'อันดับเทียบกับช่วงเดียวกันปีก่อน · กดแท่งหรือชื่อเพื่อดูรายละเอียด';
+  }
+  function syncRankButtons() {
+    var trend = A.kind === 'b' ? D.brandTrend : D.modelTrend;
+    document.querySelectorAll('#rankTable .plus').forEach(function (b) {
+      var on = !!(trend && trend.has(b.getAttribute('data-id')));
+      b.setAttribute('aria-pressed', String(on)); b.textContent = on ? '✓' : '＋';
+    });
+  }
+
+  function renderHotCard(idx) {
+    var cats = selCats(), months = selectedMonths(), cur, prev, label, all = okPeriods();
+    if (A.hot === 'yoy') {
+      var pm = months.map(function (p) { return shiftMonth(p, -12); });
+      if (!pm.every(function (p) { return D.okSet[p]; })) { return hotEmpty('ไม่มีข้อมูลปีก่อนครบสำหรับช่วงที่เลือก ลองเลือกช่วงที่สั้นลง'); }
+      cur = sumById(idx, 'm', months, cats); prev = sumById(idx, 'm', pm, cats);
+      label = monthLabel(months[0]) + '–' + monthLabel(months[months.length - 1]) + ' เทียบช่วงเดียวกันปีก่อน';
+    } else {
+      var end = all.indexOf(months[months.length - 1]);
+      if (end < 5) return hotEmpty('ต้องมีข้อมูลอย่างน้อย 6 เดือน');
+      var last3 = all.slice(end - 2, end + 1), prev3 = all.slice(end - 5, end - 2);
+      cur = sumById(idx, 'm', last3, cats); prev = sumById(idx, 'm', prev3, cats);
+      label = monthLabel(last3[0]) + '–' + monthLabel(last3[2]) + ' เทียบ ' + monthLabel(prev3[0]) + '–' + monthLabel(prev3[2]);
+    }
+    var gains = {};
+    Object.keys(cur).forEach(function (id) { var g = cur[id] - (prev[id] || 0); if (g > 0) gains[id] = g; });
+    var top = sortedIds(gains).slice(0, 10);
+    document.getElementById('hotNote').textContent = label + ' · เรียงตามจำนวนคันที่เพิ่มขึ้น (ไม่ใช่ % เพื่อไม่ให้รุ่นฐานเล็กดูโตเกินจริง) · ยอดจดทะเบียน ไม่ใช่ยอดขาย';
+    if (!top.length) return hotEmpty('ไม่มีรุ่นที่เพิ่มขึ้นในตัวกรองนี้');
+    document.getElementById('hotEmpty').hidden = true;
+    document.getElementById('hotChart').parentNode.hidden = false;
+    hbar('hot', document.getElementById('hotChart'), top.map(function (id) { return modelName(id); }),
+      top.map(function (id) { return gains[id]; }),
+      top.map(function (id) {
+        var p = prev[id] || 0;
+        return '+' + fmt(gains[id]) + ' คัน · ' + (p ? (p * 10 < cur[id] ? '>10 เท่า' : pctText(100 * gains[id] / p)) : 'ใหม่') + ' · รวม ' + fmt(cur[id]);
+      }),
+      function (i) { location.hash = '#/model/' + top[i]; },
+      top.map(function (id) { return '+' + fmt(gains[id]) + (prev[id] ? '' : ' ใหม่'); }));
+  }
+  function hotEmpty(msg) {
+    var e = document.getElementById('hotEmpty');
+    e.textContent = msg; e.hidden = false;
+    document.getElementById('hotChart').parentNode.hidden = true;
+  }
+
+  function renderHomeTrends(idx) {
+    var months = selectedMonths(), cats = selCats();
+    var order = [], bucketMonths = {};
+    months.forEach(function (p) { var k = bucketKey(p); if (!bucketMonths[k]) { bucketMonths[k] = []; order.push(k); } bucketMonths[k].push(p); });
+    var labels = order.map(function (k) { return bucketLabel(k, bucketMonths[k].length); });
+    var totals = order.map(function (k) { return sumValues(sumById(idx, 'b', bucketMonths[k], cats)); });
+    function series(kind) {
+      var cache = {};
+      return function (id, mode) {
+        if (!cache[id]) cache[id] = order.map(function (k) { return sumById(idx, kind, bucketMonths[k], cats)[id] || 0; });
+        return mode === 'units' ? cache[id] : cache[id].map(function (v, i) { return totals[i] ? +(100 * v / totals[i]).toFixed(2) : 0; });
+      };
+    }
+    function options(kind) {
+      var ids = {};
+      Object.keys(idx).forEach(function (p) { Object.keys(idx[p][kind]).forEach(function (id) { ids[id] = true; }); });
+      return function () {
+        return Object.keys(ids).filter(function (id) { return kind === 'b' || D.modelInfo[id]; })
+          .map(function (id) { return { id: id, label: nameFor(kind, id) }; }).sort(function (a, b) { return a.label.localeCompare(b.label); });
+      };
+    }
+    [['b', 'brandTrend', 'เทรนด์รายยี่ห้อ', 'Brand trend'], ['m', 'modelTrend', 'เทรนด์รายรุ่น', 'Model trend']].forEach(function (t) {
+      var kind = t[0], root = document.getElementById(t[1]);
+      root.textContent = '';
+      var top5 = sortedIds(sumById(idx, kind, months, cats)).slice(0, 5);
+      var tr = makeTrend(root, {
+        key: t[1], title: t[2], subtitle: t[3], nameOf: function (id) { return nameFor(kind, id); },
+        href: function (id) { return hrefFor(kind, id); }, options: options(kind),
+        labels: function () { return labels; }, values: series(kind),
+        note: 'ตามตัวกรองด้านบน · ส่วนแบ่งคิดจากยอดทั้งหมดในพื้นที่ · เลือกได้สูงสุด ' + MAX_SERIES + ' รายการ',
+        defaults: function () { return A.custom[kind] || top5; },
+        onUser: function (ids) { A.custom[kind] = ids; syncRankButtons(); }
+      });
+      // makeTrend renders a card inside the section; keep a single card
+      var inner = root.firstChild;
+      while (inner.firstChild) root.appendChild(inner.firstChild);
+      root.removeChild(inner);
+      if (kind === 'b') D.brandTrend = tr; else D.modelTrend = tr;
+    });
+    syncRankButtons();
+  }
+
+  function buildHomeControls() {
+    function seg(id, items, get, set) {
+      var box = document.getElementById(id);
+      box.textContent = '';
+      items.forEach(function (it) {
+        var b = el('button', { type: 'button', 'aria-pressed': String(get() === it[0]) }, it[1]);
+        b.addEventListener('click', function () {
+          set(it[0]);
+          box.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+          loadArea(areaKey(M.area)).then(function (idx) { if (id === 'rankKind') renderRankCard(idx); else renderHotCard(idx); });
+        });
+        box.appendChild(b);
+      });
+    }
+    seg('rankKind', [['b', 'ยี่ห้อ'], ['m', 'รุ่น']], function () { return A.kind; }, function (v) { A.kind = v; });
+    seg('hotMode', [['yoy', 'เทียบปีก่อน'], ['mom3', '3 เดือนล่าสุด']], function () { return A.hot; }, function (v) { A.hot = v; });
   }
 
   function renderHome() {
-    renderTiles();
     buildMarketControls();
+    buildHomeControls();
     renderExplorer();
-    var sel = document.getElementById('monthSelect');
-    ['brandTrend', 'modelTrend'].forEach(function (id) { document.getElementById(id).textContent = ''; });
-    function topIds(rows, key, n) {
-      return rows.filter(function (r) { return r.period === lastOk(); }).slice(0, n).map(function (r) { return r[key]; });
-    }
-    var rerank = function () { if (D.brandTrend && D.modelTrend) renderRanking(sel.value); };
-    D.brandTrend = null; D.modelTrend = null;
-    var bt = makeTrend(document.getElementById('brandTrend'), {
-      key: 'brandTrend', title: 'เทรนด์รายยี่ห้อ', subtitle: 'Brand trend', rows: D.brandRows, nameOf: brandLabel,
-      href: function (id) { return '#/brand/' + id; },
-      options: function () { return Object.keys(D.brandRows).map(function (id) { return { id: id, label: brandLabel(id) }; }).sort(function (a, b) { return a.label.localeCompare(b.label); }); },
-      defaults: function () { return homeTrends.brands || topIds(D.brand, 'brand_id', 5); },
-      onChange: function (ids) { homeTrends.brands = ids; rerank(); }
-    });
-    var mt = makeTrend(document.getElementById('modelTrend'), {
-      key: 'modelTrend', title: 'เทรนด์รายรุ่น', subtitle: 'Model trend', rows: D.modelRows, nameOf: modelName,
-      href: function (id) { return '#/model/' + id; }, options: modelOptions(),
-      defaults: function () { return homeTrends.models || topIds(D.model, 'model_id', 5); },
-      onChange: function (ids) { homeTrends.models = ids; rerank(); }
-    });
-    // makeTrend renders into a fresh card; unwrap so the existing section keeps one card
-    ['brandTrend', 'modelTrend'].forEach(function (id) {
-      var sec = document.getElementById(id), inner = sec.firstChild;
-      while (inner.firstChild) sec.appendChild(inner.firstChild);
-      sec.removeChild(inner);
-    });
-    D.brandTrend = bt; D.modelTrend = mt;
-    renderRanking(sel.value);
   }
 
   // ---------- brand page ----------
@@ -1049,11 +1224,11 @@
   Promise.all([
     load('summaries/market_monthly.csv'), load('summaries/brand_monthly.csv'), load('summaries/model_monthly.csv'),
     load('data/brands.csv'), load('data/models.csv'), load('data/prices.csv'),
-    load('data/registrations_by_province.csv'), load('data/provinces.csv'),
+    load('summaries/province_monthly.csv'), load('data/provinces.csv'),
     fetch('site/th-provinces.geojson').then(function (r) { if (!r.ok) throw new Error('site/th-provinces.geojson'); return r.json(); })
   ]).then(function (res) {
     D.provBy = {};
-    res[6].forEach(function (r) { var p = D.provBy[r.period] = D.provBy[r.period] || {}; (p[r.province_iso] = p[r.province_iso] || {})[r.category] = +r.count; });
+    res[6].forEach(function (r) { var p = D.provBy[r.period] = D.provBy[r.period] || {}; (p[r.province_iso] = p[r.province_iso] || {})[r.category] = +r.units; });
     D.provinceInfo = {}; D.regionName = {};
     res[7].forEach(function (p) { D.provinceInfo[p.province_iso] = p; D.regionName[p.region] = p.region_th; });
     D.map = prepareMap(res[8]);
@@ -1064,9 +1239,6 @@
     D.modelInfo = {}; res[4].forEach(function (m) { D.modelInfo[m.model_id] = m; });
     D.pricesBy = {}; res[5].forEach(function (p) { (D.pricesBy[p.model_id] = D.pricesBy[p.model_id] || []).push(p); });
     D.brandRows = index(D.brand, 'brand_id'); D.modelRows = index(D.model, 'model_id');
-    var sel = document.getElementById('monthSelect');
-    okPeriods().slice().reverse().forEach(function (p) { sel.appendChild(el('option', { value: p }, monthLabel(p, true))); });
-    sel.addEventListener('change', function () { renderRanking(sel.value); });
     document.getElementById('status').textContent = 'ข้อมูลล่าสุด: ' + monthLabel(lastOk(), true) + ' · แหล่งข้อมูล: กรมการขนส่งทางบก';
     window.addEventListener('hashchange', route);
     route();

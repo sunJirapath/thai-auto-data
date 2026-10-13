@@ -17,7 +17,9 @@ Open data on the Thai car market: monthly new-vehicle registrations by brand and
 | [`summaries/model_monthly.csv`](summaries/model_monthly.csv) | Registrations per model per month, market share, rank and YoY |
 | [`summaries/variant_monthly.csv`](summaries/variant_monthly.csv) | Registrations per month by the variant name the DLT records (matched models only) |
 | [`data/prices.csv`](data/prices.csv) | Prices from official manufacturer websites by variant, append-only, every row linked to its source |
-| [`data/registrations_by_province.csv`](data/registrations_by_province.csv) | Registrations per month by province and category (77 provinces; they add up to the national total every month) |
+| [`data/registrations_by_province/YYYY-MM.csv`](data/registrations_by_province) | Row-level monthly data by province (province, category, brand, model); summed over provinces it equals the national file row by row |
+| [`summaries/province_monthly.csv`](summaries/province_monthly.csv) | Registrations per month by province and category |
+| [`summaries/areas/`](summaries/areas) | Brand and model units per month for one area: the whole country (`all`), everywhere but Bangkok (`upcountry`), 6 regions (`region-*`) and 77 provinces (`TH-xx`) |
 | [`data/provinces.csv`](data/provinces.csv) | Province ISO 3166-2 codes, Thai and English names, and region |
 | [`data/registrations/YYYY-MM.csv`](data/registrations) | Row-level monthly data as published by the DLT, with the original strings kept next to the matched IDs |
 | [`data/brands.csv`](data/brands.csv) | Brands, stable IDs (`brand_id`) and the names the DLT uses for them |

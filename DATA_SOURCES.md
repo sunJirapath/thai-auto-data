@@ -18,7 +18,7 @@
 - **New vehicles only** (สถิติการจดทะเบียนรถใหม่). The DLT's other series, สถิติการจดทะเบียนรถ, also counts used vehicles registered again and is not used anywhere in this project.
 - Categories รย.1 (`RY1`), รย.2 (`RY2`) and รย.3 (`RY3`) only. Motorcycles, tractors, trailers and commercial categories are dropped at import.
 - National totals per month, category, brand and model (`data/registrations/`).
-- Totals per month, province and category (`data/registrations_by_province.csv`). For every month and category, the provinces add up exactly to the national total; `validate.py` checks this.
+- The same rows split by province (`data/registrations_by_province/`). Summed over provinces, every month, category, brand and model string equals the national file exactly; `validate.py` checks this. Province totals and per-area brand/model tables in `summaries/` are generated from it.
 - The DLT's brand and model strings are kept unchanged (`brand_raw`, `model_raw`) next to the matched IDs.
 
 ### Checks applied to every import

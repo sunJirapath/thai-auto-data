@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ตลาดรถยนต์ไทย · thai-auto-data</title>
 <meta name="description" content="ยอดรถจดทะเบียนใหม่รายเดือนในประเทศไทย แยกยี่ห้อและรุ่น พร้อมราคาจากเว็บไซต์ทางการ จากข้อมูลของกรมการขนส่งทางบก">
-<link rel="stylesheet" href="site/style.css?v=6">
+<link rel="stylesheet" href="site/style.css?v=8">
 </head>
 <body>
 <div class="page">
@@ -25,16 +25,8 @@
   <div id="status" class="status" role="status">กำลังโหลดข้อมูล…</div>
 
   <div id="home">
-    <section class="tiles" id="tiles" aria-label="สรุปเดือนล่าสุด"></section>
-
-    <section class="card" id="market">
-      <div class="card-head">
-        <div>
-          <h2>ยอดจดทะเบียนรถใหม่ <span class="sub">New vehicle registrations</span></h2>
-          <p class="note">นับเฉพาะรถใหม่ ร.ย.1–3 ตามสถิติการจดทะเบียนรถใหม่ของกรมการขนส่งทางบก นับตามจังหวัดที่จดทะเบียน ไม่ใช่ยอดขาย</p>
-        </div>
-      </div>
-      <div class="filters" role="group" aria-label="ตัวกรอง">
+    <section class="filterbar" aria-label="ตัวกรอง ใช้กับทุกส่วนในหน้านี้">
+      <div class="filters">
         <div class="seg" id="fRange" role="group" aria-label="ช่วงเวลา"></div>
         <div class="seg" id="fGrain" role="group" aria-label="ความละเอียด"></div>
         <div class="chips" id="fCats" role="group" aria-label="ประเภทรถ"></div>
@@ -44,12 +36,21 @@
           <label class="field">ถึง <select id="fTo"></select></label>
         </span>
       </div>
+    </section>
+
+    <section class="card" id="market">
+      <div class="card-head">
+        <div>
+          <h2>ยอดจดทะเบียนรถใหม่ <span class="sub">New vehicle registrations</span></h2>
+          <p class="note">นับเฉพาะรถใหม่ ร.ย.1–3 ตามสถิติการจดทะเบียนรถใหม่ของกรมการขนส่งทางบก นับตามจังหวัดที่จดทะเบียน ไม่ใช่ยอดขาย</p>
+        </div>
+      </div>
       <div class="stats" id="mStats"></div>
       <div class="chart-box tall"><canvas id="marketChart" aria-label="กราฟยอดจดทะเบียนรถใหม่ตามตัวกรองที่เลือก"></canvas></div>
       <p class="note" id="mNote"></p>
       <div class="two">
         <div>
-          <h3>แยกตามภูมิภาค</h3>
+          <h3>แยกตามภูมิภาค <span class="sub">กดแถบเพื่อกรอง</span></h3>
           <div class="chart-box" id="regionBox"><canvas id="regionChart" aria-label="ยอดจดทะเบียนแยกตามภูมิภาค"></canvas></div>
         </div>
         <div>
@@ -63,22 +64,35 @@
       <details><summary>ตารางรายจังหวัด · Provinces</summary><div class="table-wrap" id="provinceTable"></div></details>
     </section>
 
-    <section class="card">
-      <div class="card-head">
-        <div>
-          <h2>อันดับประจำเดือน <span class="sub">Monthly ranking</span></h2>
-          <p class="note">กดชื่อเพื่อดูรายละเอียด กด ＋ เพื่อเพิ่มลงกราฟเทรนด์ด้านล่าง</p>
+    <div class="two wide-left">
+      <section class="card" id="rankCard">
+        <div class="card-head">
+          <div>
+            <h2>อันดับ <span class="sub">Ranking</span></h2>
+            <p class="note filter-echo" id="rankFilter"></p>
+          </div>
+          <div class="seg" id="rankKind" role="group" aria-label="อันดับยี่ห้อหรือรุ่น"></div>
         </div>
-        <label class="field">เดือน
-          <select id="monthSelect"></select>
-        </label>
-      </div>
-      <div class="two">
-        <div><h3>ยี่ห้อ · Brands</h3><div class="table-wrap" id="brandTable"></div></div>
-        <div><h3>รุ่น · Models</h3><div class="table-wrap" id="modelTable"></div></div>
-      </div>
-    </section>
+        <div class="chart-box"><canvas id="rankChart" aria-label="อันดับยอดจดทะเบียน 15 อันดับแรก"></canvas></div>
+        <p class="note" id="rankNote"></p>
+        <details><summary>ตาราง 50 อันดับ · กด ＋ เพื่อเพิ่มลงกราฟเทรนด์</summary><div class="table-wrap" id="rankTable"><span id="rankBody">กำลังโหลด…</span></div></details>
+      </section>
 
+      <section class="card" id="hotCard">
+        <div class="card-head">
+          <div>
+            <h2>รุ่นมาแรง <span class="sub">Fastest growing models</span></h2>
+            <p class="note filter-echo" id="hotFilter"></p>
+          </div>
+          <div class="seg" id="hotMode" role="group" aria-label="วิธีเทียบ"></div>
+        </div>
+        <div class="chart-box"><canvas id="hotChart" aria-label="10 รุ่นที่ยอดจดทะเบียนเพิ่มขึ้นมากที่สุด"></canvas></div>
+        <p class="note" id="hotEmpty" hidden></p>
+        <p class="note" id="hotNote"></p>
+      </section>
+    </div>
+
+    <p class="note filter-echo" id="trendFilter"></p>
     <section class="card" id="brandTrend"></section>
     <section class="card" id="modelTrend"></section>
   </div>
@@ -103,7 +117,8 @@ Original source: Department of Land Transport, Thailand (web.dlt.go.th/statistic
       <li><a href="summaries/brand_monthly.csv">brand_monthly.csv</a> รายยี่ห้อ</li>
       <li><a href="summaries/model_monthly.csv">model_monthly.csv</a> รายรุ่น</li>
       <li><a href="summaries/variant_monthly.csv">variant_monthly.csv</a> รายชื่อรุ่นย่อยตามที่กรมฯ บันทึก</li>
-      <li><a href="data/registrations_by_province.csv">registrations_by_province.csv</a> ยอดรายจังหวัดรายเดือน (<a href="data/provinces.csv">provinces.csv</a> รหัสจังหวัดและภาค)</li>
+      <li><a href="summaries/province_monthly.csv">province_monthly.csv</a> ยอดรายจังหวัดรายเดือน (<a href="data/provinces.csv">provinces.csv</a> รหัสจังหวัดและภาค)</li>
+      <li><a href="https://github.com/sunJirapath/thai-auto-data/tree/main/summaries/areas">summaries/areas/</a> ยอดรายยี่ห้อ/รุ่นแยกพื้นที่ (ประเทศ ภาค จังหวัด)</li>
       <li><a href="data/prices.csv">prices.csv</a> ราคาจากเว็บไซต์ทางการ พร้อมแหล่งอ้างอิง</li>
       <li><a href="https://github.com/sunJirapath/thai-auto-data/tree/main/data">data/</a> ข้อมูลระดับแถว รหัสยี่ห้อ/รุ่น และทะเบียนแหล่งข้อมูล</li>
     </ul>
@@ -113,6 +128,6 @@ Original source: Department of Land Transport, Thailand (web.dlt.go.th/statistic
   <footer class="foot">ที่มา: thai-auto-data / กรมการขนส่งทางบก · CC BY 4.0</footer>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<script src="site/app.js?v=6"></script>
+<script src="site/app.js?v=8"></script>
 </body>
 </html>

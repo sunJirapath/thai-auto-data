@@ -1,13 +1,13 @@
 brand_id,name,dlt_names
 abarth,Abarth,ABARTH
-aion,Aion,AION
+aion,AION,AION
 aiways,Aiways,AIWAYS
 alfa-romeo,Alfa Romeo,ALFA ROMEO
 alpine,Alpine,ALPINE
 armstrong,Armstrong,ARMSTRONG
 aston-martin,Aston Martin,ASTON MARTIN
 audi,Audi,AUDI
-avatr,Avatr,AVATR
+avatr,AVATR,AVATR
 axion,Axion,AXION
 baojun,Baojun,BAOJUN
 baw,BAW,BAW
@@ -63,7 +63,7 @@ hongqi,Hongqi,HONGQI
 hyundai,Hyundai,HYUNDAI
 isuzu,Isuzu,ISUZU
 jac,JAC,JAC
-jaecoo,Jaecoo,JAECOO
+jaecoo,JAECOO,JAECOO
 jaguar,Jaguar,JAGUAR
 jeep,Jeep,JEEP
 jetour,Jetour,JETOUR
@@ -103,12 +103,12 @@ mitsubishi,Mitsubishi,MITSUBISHI
 morgan,Morgan,MORGAN
 naza,Naza,NAZA
 neomor,Neomor,NEOMOR
-neta,Neta,NETA
+neta,NETA,NETA
 nex,NEX,NEX
 nextem,Nextem,NEXTEM
 nio,NIO,NIO
 nissan,Nissan,NISSAN
-omoda,Omoda,OMODA
+omoda,OMODA,OMODA
 ora,ORA,ORA
 peugeot,Peugeot,PEUGEOT
 pierce,Pierce,PIERCE
@@ -157,9 +157,9 @@ weltmeister,Weltmeister,WELTMEISTER
 wuling,Wuling,WULING
 xev,XEV,XEV
 xiaomi,Xiaomi,XIAOMI
-xpeng,Xpeng,XPENG
+xpeng,XPENG,XPENG
 yamaha,Yamaha,YAMAHA
 yuchai,Yuchai,YUCHAI
-zeekr,Zeekr,ZEEKR
+zeekr,ZEEKR,ZEEKR
 ziegler,Ziegler,ZIEGLER
 zxauto,ZX Auto,ZXAUTO|ZX AUTO

@@ -121,3 +121,11 @@ tr.sel-row td { background: var(--accent-soft); }
 .filters .seg { flex-wrap: wrap; }
 .filters .seg button { white-space: nowrap; }
 @media (max-width: 520px) { .stats { grid-template-columns: 1fr 1fr; } .stat .value { font-size: 1.1rem; } }
+/* home: one filter bar for every section */
+.filterbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--page); padding-block: 8px; border-bottom: 1px solid var(--border); }
+.filter-echo { color: var(--ink-2); }
+.two.wide-left { grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); align-items: start; }
+td.move { font-size: .8rem; }
+td.move.up { color: var(--up); } td.move.down { color: var(--down); }
+#rankChart, #hotChart { cursor: pointer; }
+@media (max-width: 700px) { .filterbar { position: static; border-bottom: 0; } }

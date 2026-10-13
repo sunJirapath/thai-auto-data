@@ -17,7 +17,9 @@
 | [`summaries/model_monthly.csv`](summaries/model_monthly.csv) | ยอดรายรุ่น (ระดับ model) ต่อเดือน ส่วนแบ่งตลาด อันดับ และ YoY |
 | [`summaries/variant_monthly.csv`](summaries/variant_monthly.csv) | ยอดรายเดือนแยกตามชื่อรุ่นย่อยที่กรมฯ บันทึก (เฉพาะชื่อที่จับคู่กับรุ่นได้) |
 | [`data/prices.csv`](data/prices.csv) | ราคาจากเว็บไซต์ทางการของค่ายรถ แยกรุ่นย่อย บันทึกแบบต่อท้าย (ไม่ลบประวัติ) ทุกแถวมีลิงก์แหล่งที่มา |
-| [`data/registrations_by_province.csv`](data/registrations_by_province.csv) | ยอดรายเดือนแยกจังหวัดและประเภทรถ (77 จังหวัด รวมกันเท่ายอดทั้งประเทศทุกเดือน) |
+| [`data/registrations_by_province/YYYY-MM.csv`](data/registrations_by_province) | ข้อมูลรายเดือนระดับแถวแยกจังหวัด (จังหวัด ประเภท ยี่ห้อ รุ่น) รวมทุกจังหวัดแล้วเท่ากับไฟล์ระดับประเทศทุกแถว |
+| [`summaries/province_monthly.csv`](summaries/province_monthly.csv) | ยอดรายเดือนแยกจังหวัดและประเภทรถ |
+| [`summaries/areas/`](summaries/areas) | ยอดรายยี่ห้อและรายรุ่นต่อเดือนแยกพื้นที่: ทั้งประเทศ (`all`), ต่างจังหวัด (`upcountry`), 6 ภาค (`region-*`) และ 77 จังหวัด (`TH-xx`) |
 | [`data/provinces.csv`](data/provinces.csv) | รหัสจังหวัด ISO 3166-2 ชื่อไทย/อังกฤษ และภูมิภาค |
 | [`data/registrations/YYYY-MM.csv`](data/registrations) | ข้อมูลรายเดือนระดับแถว ตามที่กรมการขนส่งทางบกเผยแพร่ เก็บชื่อต้นฉบับไว้คู่กับรหัสที่จับคู่แล้ว |
 | [`data/brands.csv`](data/brands.csv) | รายชื่อยี่ห้อ รหัสถาวร (`brand_id`) และชื่อที่กรมการขนส่งทางบกใช้ |
