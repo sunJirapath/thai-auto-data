@@ -6,9 +6,10 @@ message: >-
 type: dataset
 title: "thai-auto-data: Thai car registration open data"
 abstract: >-
-  Monthly first-registration counts of new cars in Thailand (DLT categories
-  RY1, RY2, RY3) by brand and model from January 2022, normalized with stable
-  brand and model IDs, plus market, brand and model trend tables.
+  Monthly new-vehicle registration counts in Thailand (DLT categories RY1,
+  RY2, RY3) by brand and model from January 2021, normalized with stable brand
+  and model IDs, market, brand and model trend tables, and prices from
+  official manufacturer websites.
 authors:
   - name: sunJirapath
 repository: "https://github.com/sunJirapath/thai-auto-data"
@@ -21,7 +22,7 @@ keywords:
   - open data
 references:
   - type: dataset
-    title: "สถิติจำนวนรถจดทะเบียนครั้งแรก ตามกฎหมายว่าด้วยรถยนต์ (จำแนกตามยี่ห้อและรุ่น)"
+    title: "สถิติการจดทะเบียนรถใหม่ ตามกฎหมายว่าด้วยรถยนต์ จำแนกตามยี่ห้อรถ รุ่นรถ และจังหวัด"
     authors:
       - name: "กรมการขนส่งทางบก (Department of Land Transport, Thailand)"
-    url: "https://gdcatalog.dlt.go.th/dataset/stat_1_1_01_first_regis_vehicles_car"
+    url: "https://web.dlt.go.th/statistics/"

@@ -4,10 +4,13 @@ aion,Aion,AION
 aiways,Aiways,AIWAYS
 alfa-romeo,Alfa Romeo,ALFA ROMEO
 alpine,Alpine,ALPINE
+armstrong,Armstrong,ARMSTRONG
 aston-martin,Aston Martin,ASTON MARTIN
 audi,Audi,AUDI
 avatr,Avatr,AVATR
 axion,Axion,AXION
+baojun,Baojun,BAOJUN
+baw,BAW,BAW
 beck,Beck,BECK
 bentley,Bentley,BENTLEY
 blaval,Blaval,BLAVAL
@@ -15,6 +18,7 @@ bmw,BMW,BMW
 byd,BYD,BYD
 cadillac,Cadillac,CADILLAC
 caterham,Caterham,CATERHAM
+cavan,Cavan,CAVAN
 changan,Changan,CHANGAN|LUMIN
 chase,Chase,CHASE
 chenglong,Chenglong,CHENGLONG
@@ -26,14 +30,17 @@ dacia,Dacia,DACIA
 dae,DAE,DAE
 daihatsu,Daihatsu,DAIHATSU
 david-brown,David Brown,DAVID BROWN
+dayun,Dayun,DAYUN
 deepal,Deepal,DEEPAL
 denza,Denza,DENZA
 deva,Deva,DEVA
 dfm,DFM,DFM
-dfsk,DFSK,DFSK
+dfsk,DFSK,DFSK|DSFK
 dodge,Dodge,DODGE
 dongfeng,Dongfeng,DONGFENG
+douz,Douz,DOUZ
 eagle,Eagle,EAGLE
+euler,Euler,EULER
 evt,EVT,EVT
 farizon,Farizon,FARIZON
 faw,FAW,FAW
@@ -67,6 +74,7 @@ joylong,Joylong,JOYLONG
 juneyao,Juneyao,JUNEYAO
 just,Just,JUST
 kama,Kama,KAMA
+karba,Karba,KARBA
 keyton,Keyton,KEYTON
 kia,KIA,KIA
 king-long,King Long,KING LONG
@@ -75,11 +83,14 @@ kyc,KYC,KYC
 lamborghini,Lamborghini,LAMBORGHINI
 land-rover,Land Rover,LAND ROVER|RANGE ROVER
 leapmotor,Leapmotor,LEAPMOTOR
+lepas,Lepas,LEPAS
+levdeo,Levdeo,LEVDEO
 lexus,Lexus,LEXUS
 linxys,Linxys,LINXYS
 london-taxi,London Taxi,LONDON TAXI
 lotus,Lotus,LOTUS
 man,MAN,MAN
+mangia,Mangia,MANGIA
 maserati,Maserati,MASERATI
 maxus,Maxus,MAXUS
 mazda,Mazda,MAZDA
@@ -89,15 +100,18 @@ mg,MG,MG
 mine-mobility,Mine Mobility,MINE MOBILITY
 mini,MINI,MINI
 mitsubishi,Mitsubishi,MITSUBISHI
+morgan,Morgan,MORGAN
 naza,Naza,NAZA
 neomor,Neomor,NEOMOR
 neta,Neta,NETA
 nex,NEX,NEX
 nextem,Nextem,NEXTEM
+nio,NIO,NIO
 nissan,Nissan,NISSAN
 omoda,Omoda,OMODA
 ora,ORA,ORA
 peugeot,Peugeot,PEUGEOT
+pierce,Pierce,PIERCE
 pocco,Pocco,POCCO
 poer,Poer,POER
 porsche,Porsche,PORSCHE
@@ -110,14 +124,17 @@ rolls-royce,Rolls-Royce,ROLLS-ROYCE
 rosenbauer,Rosenbauer,ROSENBAUER
 rover,Rover,ROVER
 ruf,RUF,RUF
+sany,SANY,SANY
 scania,Scania,SCANIA
 seres,Seres,SERES
 shangch,Shangch,SHANGCH
 shineray,Shineray,SHINERAY
 sinotruk-howo,Sinotruk Howo,SINOTRUK HOWO
+skoda,Skoda,SKODA
 skywell,Skywell,SKYWELL
 smart,Smart,SMART
 sokon,Sokon,SOKON
+solarky,Solarky,SOLARKY
 srm,SRM,SRM
 ssangyong,Ssangyong,SSANGYONG
 stelato,Stelato,STELATO
@@ -126,6 +143,7 @@ suzuki,Suzuki,SUZUKI
 takano,Takano,TAKANO
 tata,Tata,TATA
 tesla,Tesla,TESLA
+thaina,Thaina,THAINA
 thomas,Thomas,THOMAS
 toyota,Toyota,TOYOTA
 ud-trucks,UD TRUCKS,UD TRUCKS
@@ -135,6 +153,7 @@ volkswagen,Volkswagen,VOLKSWAGEN
 volt,Volt,VOLT
 volvo,Volvo,VOLVO
 weiao-boma,Weiao Boma,WEIAO BOMA
+weltmeister,Weltmeister,WELTMEISTER
 wuling,Wuling,WULING
 xev,XEV,XEV
 xiaomi,Xiaomi,XIAOMI
@@ -143,4 +162,4 @@ yamaha,Yamaha,YAMAHA
 yuchai,Yuchai,YUCHAI
 zeekr,Zeekr,ZEEKR
 ziegler,Ziegler,ZIEGLER
-zxauto,Zxauto,ZXAUTO
+zxauto,ZX Auto,ZXAUTO|ZX AUTO

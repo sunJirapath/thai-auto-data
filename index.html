@@ -4,65 +4,70 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ตลาดรถยนต์ไทย · thai-auto-data</title>
-<meta name="description" content="ยอดรถจดทะเบียนครั้งแรกรายเดือนในประเทศไทย แยกยี่ห้อและรุ่น จากข้อมูลเปิดของกรมการขนส่งทางบก">
-<link rel="stylesheet" href="site/style.css?v=3">
+<meta name="description" content="ยอดรถจดทะเบียนใหม่รายเดือนในประเทศไทย แยกยี่ห้อและรุ่น พร้อมราคาจากเว็บไซต์ทางการ จากข้อมูลของกรมการขนส่งทางบก">
+<link rel="stylesheet" href="site/style.css?v=4">
 </head>
 <body>
 <div class="page">
   <header class="top">
     <div>
-      <h1>ตลาดรถยนต์ไทย <span class="sub">Thai car registrations</span></h1>
-      <p class="lede">ยอดรถจดทะเบียนครั้งแรกรายเดือน (ร.ย.1 ร.ย.2 ร.ย.3) แยกยี่ห้อและรุ่น จากข้อมูลเปิดของกรมการขนส่งทางบก <b>เป็นยอดจดทะเบียน ไม่ใช่ยอดขาย</b></p>
+      <h1><a class="home-link" href="#/">ตลาดรถยนต์ไทย</a> <span class="sub">Thai car registrations</span></h1>
+      <p class="lede">ยอดรถจดทะเบียนใหม่รายเดือน (ร.ย.1 ร.ย.2 ร.ย.3) แยกยี่ห้อและรุ่น จากกรมการขนส่งทางบก พร้อมราคาจากเว็บไซต์ทางการของค่ายรถ <b>ตัวเลขทั้งหมดเป็นยอดจดทะเบียน ไม่ใช่ยอดขาย</b></p>
     </div>
     <nav class="links">
+      <a href="#/">หน้าแรก</a>
+      <a href="#/compare/">เปรียบเทียบ · Compare</a>
       <a href="https://github.com/sunJirapath/thai-auto-data">GitHub</a>
       <a href="#cite">อ้างอิง · Cite</a>
-      <a href="#download">ดาวน์โหลด · Data</a>
     </nav>
   </header>
 
   <div id="status" class="status" role="status">กำลังโหลดข้อมูล…</div>
 
-  <section class="tiles" id="tiles" aria-label="สรุปเดือนล่าสุด"></section>
+  <div id="home">
+    <section class="tiles" id="tiles" aria-label="สรุปเดือนล่าสุด"></section>
 
-  <section class="card">
-    <div class="card-head">
-      <div>
-        <h2>ยอดจดทะเบียนรวมรายเดือน <span class="sub">Monthly registrations</span></h2>
-        <p class="note">แยกตามประเภทรถ เดือนที่มีแถบลายคือไม่มีข้อมูลจากต้นทาง (ไม่ใช่ศูนย์)</p>
+    <section class="card">
+      <div class="card-head">
+        <div>
+          <h2>ยอดจดทะเบียนรวมรายเดือน <span class="sub">Monthly registrations</span></h2>
+          <p class="note">แยกตามประเภทรถ เดือนที่มีแถบลายคือไม่มีข้อมูลจากต้นทาง (ไม่ใช่ศูนย์)</p>
+        </div>
       </div>
-    </div>
-    <div class="chart-box tall"><canvas id="marketChart" aria-label="กราฟยอดจดทะเบียนรวมรายเดือน แยกประเภทรถ"></canvas></div>
-    <details><summary>ดูเป็นตาราง · Table</summary><div class="table-wrap" id="marketTable"></div></details>
-  </section>
+      <div class="chart-box tall"><canvas id="marketChart" aria-label="กราฟยอดจดทะเบียนรวมรายเดือน แยกประเภทรถ"></canvas></div>
+      <details><summary>ดูเป็นตาราง · Table</summary><div class="table-wrap" id="marketTable"></div></details>
+    </section>
 
-  <section class="card">
-    <div class="card-head">
-      <div>
-        <h2>อันดับประจำเดือน <span class="sub">Monthly ranking</span></h2>
-        <p class="note">กดชื่อเพื่อเพิ่มลงกราฟเทรนด์ด้านล่าง</p>
+    <section class="card">
+      <div class="card-head">
+        <div>
+          <h2>อันดับประจำเดือน <span class="sub">Monthly ranking</span></h2>
+          <p class="note">กดชื่อเพื่อดูรายละเอียด กด ＋ เพื่อเพิ่มลงกราฟเทรนด์ด้านล่าง</p>
+        </div>
+        <label class="field">เดือน
+          <select id="monthSelect"></select>
+        </label>
       </div>
-      <label class="field">เดือน
-        <select id="monthSelect"></select>
-      </label>
-    </div>
-    <div class="two">
-      <div><h3>ยี่ห้อ · Brands</h3><div class="table-wrap" id="brandTable"></div></div>
-      <div><h3>รุ่น · Models</h3><div class="table-wrap" id="modelTable"></div></div>
-    </div>
-  </section>
+      <div class="two">
+        <div><h3>ยี่ห้อ · Brands</h3><div class="table-wrap" id="brandTable"></div></div>
+        <div><h3>รุ่น · Models</h3><div class="table-wrap" id="modelTable"></div></div>
+      </div>
+    </section>
 
-  <section class="card" id="brandTrend"></section>
-  <section class="card" id="modelTrend"></section>
+    <section class="card" id="brandTrend"></section>
+    <section class="card" id="modelTrend"></section>
+  </div>
+
+  <div id="detail" hidden></div>
 
   <section class="card prose" id="cite">
     <h2>การอ้างอิง <span class="sub">How to cite</span></h2>
     <p>ข้อมูลเผยแพร่ภายใต้ <a href="https://github.com/sunJirapath/thai-auto-data/blob/main/LICENSE">CC BY 4.0</a> หากนำไปใช้ต้องอ้างอิงทั้ง thai-auto-data และกรมการขนส่งทางบก</p>
     <pre id="citeText">ข้อมูลจาก thai-auto-data โดย sunJirapath (https://github.com/sunJirapath/thai-auto-data), สัญญาอนุญาต CC BY 4.0
-ข้อมูลต้นฉบับ: กรมการขนส่งทางบก, สถิติจำนวนรถจดทะเบียนครั้งแรก จำแนกตามยี่ห้อและรุ่น (gdcatalog.dlt.go.th)
+ข้อมูลต้นฉบับ: กรมการขนส่งทางบก, สถิติการจดทะเบียนรถใหม่ จำแนกตามยี่ห้อรถและรุ่นรถ (web.dlt.go.th/statistics)
 
 Data: thai-auto-data by sunJirapath (https://github.com/sunJirapath/thai-auto-data), CC BY 4.0.
-Original source: Department of Land Transport, Thailand (gdcatalog.dlt.go.th).</pre>
+Original source: Department of Land Transport, Thailand (web.dlt.go.th/statistics).</pre>
     <button type="button" id="copyCite" class="btn">คัดลอก · Copy</button>
   </section>
 
@@ -72,14 +77,16 @@ Original source: Department of Land Transport, Thailand (gdcatalog.dlt.go.th).</
       <li><a href="summaries/market_monthly.csv">market_monthly.csv</a> ยอดรวมรายเดือน</li>
       <li><a href="summaries/brand_monthly.csv">brand_monthly.csv</a> รายยี่ห้อ</li>
       <li><a href="summaries/model_monthly.csv">model_monthly.csv</a> รายรุ่น</li>
+      <li><a href="summaries/variant_monthly.csv">variant_monthly.csv</a> รายชื่อรุ่นย่อยตามที่กรมฯ บันทึก</li>
+      <li><a href="data/prices.csv">prices.csv</a> ราคาจากเว็บไซต์ทางการ พร้อมแหล่งอ้างอิง</li>
       <li><a href="https://github.com/sunJirapath/thai-auto-data/tree/main/data">data/</a> ข้อมูลระดับแถว รหัสยี่ห้อ/รุ่น และทะเบียนแหล่งข้อมูล</li>
     </ul>
-    <p class="note">รายละเอียดแหล่งข้อมูล เดือนที่หายไป และวิธีจับคู่ชื่อรุ่น: <a href="https://github.com/sunJirapath/thai-auto-data/blob/main/DATA_SOURCES.md">DATA_SOURCES.md</a></p>
+    <p class="note">รายละเอียดแหล่งข้อมูลและวิธีจับคู่ชื่อรุ่น: <a href="https://github.com/sunJirapath/thai-auto-data/blob/main/DATA_SOURCES.md">DATA_SOURCES.md</a></p>
   </section>
 
   <footer class="foot">ที่มา: thai-auto-data / กรมการขนส่งทางบก · CC BY 4.0</footer>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<script src="site/app.js?v=3"></script>
+<script src="site/app.js?v=4"></script>
 </body>
 </html>

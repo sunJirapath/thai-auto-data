@@ -1,0 +1,575 @@
+period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
+2026-04,RY1,AION,AION UT 420 STANDARD,393,aion,aion-ut,dlt-web-827cefc3
+2026-04,RY1,AION,AION UT 500 PREMIUM,88,aion,aion-ut,dlt-web-827cefc3
+2026-04,RY1,AION,AION V 602 LUXURY,294,aion,aion-v,dlt-web-827cefc3
+2026-04,RY1,AION,AION Y PLUS,17,aion,aion-y-plus,dlt-web-827cefc3
+2026-04,RY1,AION,AION Y PLUS 490 PREMIUM,5,aion,aion-y-plus,dlt-web-827cefc3
+2026-04,RY1,AION,HYPTEC HT 620 LUXURY,5,aion,aion-hyptec-ht,dlt-web-827cefc3
+2026-04,RY1,AION,HYPTEC HT 620 PREMIUM,113,aion,aion-hyptec-ht,dlt-web-827cefc3
+2026-04,RY1,ASTON MARTIN,DBX 707,2,aston-martin,,dlt-web-827cefc3
+2026-04,RY1,AUDI,A5 CP 40 TFSI S line eo,1,audi,,dlt-web-827cefc3
+2026-04,RY1,AUDI,A5 CP 45 TFSI q S line BE,3,audi,,dlt-web-827cefc3
+2026-04,RY1,AUDI,A5 SB 40 TFSI S line eo,2,audi,,dlt-web-827cefc3
+2026-04,RY1,AUDI,A5 SB e-hybrid q Tech Pro,1,audi,,dlt-web-827cefc3
+2026-04,RY1,AUDI,A7 SB 55 TFSIe q Sline,1,audi,,dlt-web-827cefc3
+2026-04,RY1,AUDI,A8L 60 TFSIe q Pstg Sline,1,audi,,dlt-web-827cefc3
+2026-04,RY1,AUDI,Q5 SB 55 TFSIe q S lineBE,1,audi,,dlt-web-827cefc3
+2026-04,RY1,AUDI,Q6 e-tron Performance,1,audi,,dlt-web-827cefc3
+2026-04,RY1,AUDI,Q7 45 TDI q,1,audi,,dlt-web-827cefc3
+2026-04,RY1,AUDI,Q8 60 TFSI e q S line BE,3,audi,,dlt-web-827cefc3
+2026-04,RY1,AUDI,Q8 SB etron 55 q Sline BE,1,audi,,dlt-web-827cefc3
+2026-04,RY1,AUDI,Q8 etron 55 q BE,1,audi,,dlt-web-827cefc3
+2026-04,RY1,AUDI,RS Q3 SB edition 10 years,1,audi,,dlt-web-827cefc3
+2026-04,RY1,AUDI,S6 Sportback e-tron quattro,1,audi,,dlt-web-827cefc3
+2026-04,RY1,AUDI,TT Coupe 45 TFSI q S line,4,audi,,dlt-web-827cefc3
+2026-04,RY1,AUDI,TT Coupe Final Icon Black,5,audi,,dlt-web-827cefc3
+2026-04,RY1,AUDI,TTS Coupe q,1,audi,,dlt-web-827cefc3
+2026-04,RY1,AVATR,AVATR 07 MAX,15,avatr,,dlt-web-827cefc3
+2026-04,RY1,AVATR,AVATR 07 ULTRA AWD,9,avatr,,dlt-web-827cefc3
+2026-04,RY1,AVATR,AVATR 11 LONG RANGE,40,avatr,avatr-11,dlt-web-827cefc3
+2026-04,RY1,AVATR,AVATR 11 STANDARD RANGE,4,avatr,avatr-11,dlt-web-827cefc3
+2026-04,RY1,BENTLEY,BENTAYGA HYBRID,3,bentley,,dlt-web-827cefc3
+2026-04,RY1,BENTLEY,CONTINENTAL GT SPEED,1,bentley,,dlt-web-827cefc3
+2026-04,RY1,BENTLEY,CONTINENTAL GT V8,1,bentley,,dlt-web-827cefc3
+2026-04,RY1,BENTLEY,FLYING SPUR AZURE HYBRID,1,bentley,,dlt-web-827cefc3
+2026-04,RY1,BMW,220 Gran Coupe M Sport Pr,41,bmw,,dlt-web-827cefc3
+2026-04,RY1,BMW,220i Gran Coupe M Sport,8,bmw,bmw-2-series-gran-coupe,dlt-web-827cefc3
+2026-04,RY1,BMW,320Li Limousine LWB RHD,3,bmw,bmw-3-series,dlt-web-827cefc3
+2026-04,RY1,BMW,320d M Sport,50,bmw,bmw-3-series,dlt-web-827cefc3
+2026-04,RY1,BMW,330Li,2,bmw,bmw-3-series,dlt-web-827cefc3
+2026-04,RY1,BMW,330e M Sport,44,bmw,bmw-3-series,dlt-web-827cefc3
+2026-04,RY1,BMW,420i Coupe RHD,1,bmw,bmw-4-series,dlt-web-827cefc3
+2026-04,RY1,BMW,430i Cabrio RHD,2,bmw,bmw-4-series,dlt-web-827cefc3
+2026-04,RY1,BMW,430i Convertible RHD,6,bmw,bmw-4-series,dlt-web-827cefc3
+2026-04,RY1,BMW,430i Coupe RHD,7,bmw,bmw-4-series,dlt-web-827cefc3
+2026-04,RY1,BMW,520d M Sport,22,bmw,bmw-5-series,dlt-web-827cefc3
+2026-04,RY1,BMW,520d M Sport Pro,25,bmw,bmw-5-series,dlt-web-827cefc3
+2026-04,RY1,BMW,530e Elite,1,bmw,bmw-5-series,dlt-web-827cefc3
+2026-04,RY1,BMW,530e Inspiring,6,bmw,bmw-5-series,dlt-web-827cefc3
+2026-04,RY1,BMW,530e M Sport,8,bmw,bmw-5-series,dlt-web-827cefc3
+2026-04,RY1,BMW,530e M Sport Pro,13,bmw,bmw-5-series,dlt-web-827cefc3
+2026-04,RY1,BMW,630i Gran Turismo RHD,1,bmw,,dlt-web-827cefc3
+2026-04,RY1,BMW,740d M Sport,3,bmw,,dlt-web-827cefc3
+2026-04,RY1,BMW,750e xDrive M Sport,2,bmw,,dlt-web-827cefc3
+2026-04,RY1,BMW,M2 CS,1,bmw,,dlt-web-827cefc3
+2026-04,RY1,BMW,M2 RHD,1,bmw,,dlt-web-827cefc3
+2026-04,RY1,BMW,M240i xDrive Coupe RHD MX,4,bmw,,dlt-web-827cefc3
+2026-04,RY1,BMW,M3 Competition M xDrive T,1,bmw,,dlt-web-827cefc3
+2026-04,RY1,BMW,M340i xDrive,8,bmw,bmw-3-series,dlt-web-827cefc3
+2026-04,RY1,BMW,M440i xDrive Coupe RHD,4,bmw,bmw-4-series,dlt-web-827cefc3
+2026-04,RY1,BMW,X1 sDrive18i xLine,1,bmw,bmw-x1,dlt-web-827cefc3
+2026-04,RY1,BMW,X1 sDrive20d M Sport,1,bmw,bmw-x1,dlt-web-827cefc3
+2026-04,RY1,BMW,X1 sDrive20d xLine,5,bmw,bmw-x1,dlt-web-827cefc3
+2026-04,RY1,BMW,X1 sDrive20i M Sport,85,bmw,bmw-x1,dlt-web-827cefc3
+2026-04,RY1,BMW,X1 sDrive20i xLine,7,bmw,bmw-x1,dlt-web-827cefc3
+2026-04,RY1,BMW,X1 xDrive30e M Sport,1,bmw,bmw-x1,dlt-web-827cefc3
+2026-04,RY1,BMW,X3 20d xDrive M Sport Pro,50,bmw,bmw-x3,dlt-web-827cefc3
+2026-04,RY1,BMW,X3 20d xDrive RHD,1,bmw,bmw-x3,dlt-web-827cefc3
+2026-04,RY1,BMW,X3 M50 xDrive,7,bmw,bmw-x3,dlt-web-827cefc3
+2026-04,RY1,BMW,X3 xDrive20d M Sport,2,bmw,bmw-x3,dlt-web-827cefc3
+2026-04,RY1,BMW,X3 xDrive30e M Sport,5,bmw,bmw-x3,dlt-web-827cefc3
+2026-04,RY1,BMW,X4 xDrive20d RHD,16,bmw,bmw-x4,dlt-web-827cefc3
+2026-04,RY1,BMW,X5 xDrive30d M Sport,11,bmw,bmw-x5,dlt-web-827cefc3
+2026-04,RY1,BMW,X5 xDrive50e RHD,11,bmw,bmw-x5,dlt-web-827cefc3
+2026-04,RY1,BMW,X6 M50D,1,bmw,bmw-x6,dlt-web-827cefc3
+2026-04,RY1,BMW,X6 xDrive40i M Sport,9,bmw,bmw-x6,dlt-web-827cefc3
+2026-04,RY1,BMW,X7 xDrive40d M Sport,9,bmw,bmw-x7,dlt-web-827cefc3
+2026-04,RY1,BMW,XM 50e RHD,9,bmw,,dlt-web-827cefc3
+2026-04,RY1,BMW,Z4 M40i RHD,2,bmw,bmw-z4,dlt-web-827cefc3
+2026-04,RY1,BMW,Z4 sDrive30i RHD,1,bmw,bmw-z4,dlt-web-827cefc3
+2026-04,RY1,BMW,i4 M50 Gran Coupe RHD,2,bmw,bmw-i4,dlt-web-827cefc3
+2026-04,RY1,BMW,i4 eDrive35 Gran Coupe RH,2,bmw,bmw-i4,dlt-web-827cefc3
+2026-04,RY1,BMW,i5 M60 xDrive RHD,7,bmw,bmw-i5,dlt-web-827cefc3
+2026-04,RY1,BMW,i5 eDrive40 M Sport,6,bmw,bmw-i5,dlt-web-827cefc3
+2026-04,RY1,BMW,i5 eDrive40 RHD,12,bmw,bmw-i5,dlt-web-827cefc3
+2026-04,RY1,BMW,i7 eDrive50 RHD,3,bmw,bmw-i7,dlt-web-827cefc3
+2026-04,RY1,BMW,i7 xDrive60 Limousine RHD,6,bmw,bmw-i7,dlt-web-827cefc3
+2026-04,RY1,BMW,iX xDrive50 RHD,4,bmw,bmw-ix,dlt-web-827cefc3
+2026-04,RY1,BMW,iX1 eDrive20L,38,bmw,bmw-ix1,dlt-web-827cefc3
+2026-04,RY1,BMW,iX3 M Sport RHD,8,bmw,bmw-ix3,dlt-web-827cefc3
+2026-04,RY1,BYD,BYD ATTO 2 PREMIUM,1,byd,byd-atto-2,dlt-web-827cefc3
+2026-04,RY1,BYD,BYD ATTO3 (410KM-PREMIUM),4,byd,byd-atto-3,dlt-web-827cefc3
+2026-04,RY1,BYD,BYD ATTO3 (480KM-EXT),457,byd,byd-atto-3,dlt-web-827cefc3
+2026-04,RY1,BYD,BYD DOLPHIN (435KM-STD),343,byd,byd-dolphin,dlt-web-827cefc3
+2026-04,RY1,BYD,BYD DOLPHIN (490KM-EXT),167,byd,byd-dolphin,dlt-web-827cefc3
+2026-04,RY1,BYD,BYD M6 DYNAMIC,20,byd,byd-m6,dlt-web-827cefc3
+2026-04,RY1,BYD,BYD M6 EXTENDED,39,byd,byd-m6,dlt-web-827cefc3
+2026-04,RY1,BYD,BYD SEAL 5 DM-i DYNAMIC,11,byd,byd-seal-5,dlt-web-827cefc3
+2026-04,RY1,BYD,BYD SEAL 5 DM-i PREMIUM,136,byd,byd-seal-5,dlt-web-827cefc3
+2026-04,RY1,BYD,BYD SEAL 5 DM-i STANDARD,20,byd,byd-seal-5,dlt-web-827cefc3
+2026-04,RY1,BYD,BYD SEAL STD RWD,73,byd,byd-seal,dlt-web-827cefc3
+2026-04,RY1,BYD,BYD SEALION 6 DM-i DYNAMIC,35,byd,byd-sealion-6,dlt-web-827cefc3
+2026-04,RY1,BYD,BYD SEALION 6 DM-i PREMIUM,452,byd,byd-sealion-6,dlt-web-827cefc3
+2026-04,RY1,BYD,BYD SEALION 7 AWD,30,byd,byd-sealion-7,dlt-web-827cefc3
+2026-04,RY1,BYD,BYD SEALION 7 RWD,255,byd,byd-sealion-7,dlt-web-827cefc3
+2026-04,RY1,CHANGAN,LUMIN L DC,149,changan,changan-lumin,dlt-web-827cefc3
+2026-04,RY1,CHERY,TIGGO8 PHEV 2WD ESTEEM,7,chery,,dlt-web-827cefc3
+2026-04,RY1,CHERY,TIGGO8 PHEV 4WD ELITE,20,chery,,dlt-web-827cefc3
+2026-04,RY1,CHERY,V23 2WD PLAY,59,chery,chery-v23,dlt-web-827cefc3
+2026-04,RY1,CHERY,V23 2WD PLUS,216,chery,chery-v23,dlt-web-827cefc3
+2026-04,RY1,CHERY,V23 4WD PEAK,238,chery,chery-v23,dlt-web-827cefc3
+2026-04,RY1,CHEVROLET,CAPTIVA,1,chevrolet,,dlt-web-827cefc3
+2026-04,RY1,CHEVROLET,CORVETTE STINGRAY CONVERTIBLE,2,chevrolet,,dlt-web-827cefc3
+2026-04,RY1,DEEPAL,E07 PERFORMANCE AWD,2,deepal,,dlt-web-827cefc3
+2026-04,RY1,DEEPAL,E07 PLUS,3,deepal,,dlt-web-827cefc3
+2026-04,RY1,DEEPAL,L07,29,deepal,deepal-l07,dlt-web-827cefc3
+2026-04,RY1,DEEPAL,L07 S,7,deepal,,dlt-web-827cefc3
+2026-04,RY1,DEEPAL,S05 MAX,468,deepal,deepal-s05,dlt-web-827cefc3
+2026-04,RY1,DEEPAL,S05 PLUS,3,deepal,deepal-s05,dlt-web-827cefc3
+2026-04,RY1,DEEPAL,S05 REEV MAX,49,deepal,deepal-s05,dlt-web-827cefc3
+2026-04,RY1,DEEPAL,S07,132,deepal,deepal-s07,dlt-web-827cefc3
+2026-04,RY1,DEEPAL,S07 L,6,deepal,,dlt-web-827cefc3
+2026-04,RY1,DENZA,DENZA D9 AWD,10,denza,denza-d9,dlt-web-827cefc3
+2026-04,RY1,DENZA,DENZA D9 FWD,14,denza,denza-d9,dlt-web-827cefc3
+2026-04,RY1,FERRARI,296 GTB,1,ferrari,,dlt-web-827cefc3
+2026-04,RY1,FERRARI,296 GTS,2,ferrari,,dlt-web-827cefc3
+2026-04,RY1,FERRARI,PUROSANGUE,1,ferrari,,dlt-web-827cefc3
+2026-04,RY1,FORD,EVEREST,554,ford,ford-everest,dlt-web-827cefc3
+2026-04,RY1,FORD,FORD EVEREST zFAE9BC,1,ford,,dlt-web-827cefc3
+2026-04,RY1,FORD,MUSTANG,1,ford,ford-mustang,dlt-web-827cefc3
+2026-04,RY1,FORD,RANGER,536,ford,ford-ranger,dlt-web-827cefc3
+2026-04,RY1,FORD,RANGER RAPTOR,103,ford,ford-ranger-raptor,dlt-web-827cefc3
+2026-04,RY1,FORD,RANGER SUPER DUTY,16,ford,,dlt-web-827cefc3
+2026-04,RY1,FOTON,eTUNLAND,1,foton,,dlt-web-827cefc3
+2026-04,RY1,GAC,M8 PHEV PREMIUM,13,gac,,dlt-web-827cefc3
+2026-04,RY1,GEELY,EX2,805,geely,geely-ex2,dlt-web-827cefc3
+2026-04,RY1,GEELY,EX5,189,geely,geely-ex5,dlt-web-827cefc3
+2026-04,RY1,GWM,GWM TANK 300,610,gwm,gwm-tank-300,dlt-web-827cefc3
+2026-04,RY1,GWM,GWM TANK 500,85,gwm,gwm-tank-500,dlt-web-827cefc3
+2026-04,RY1,GWM,H6 HYBRID,1,gwm,,dlt-web-827cefc3
+2026-04,RY1,GWM,H6 PLUG-IN HYBRID,4,gwm,,dlt-web-827cefc3
+2026-04,RY1,GWM,POER SAHAR,16,gwm,,dlt-web-827cefc3
+2026-04,RY1,GWM,WEY G9 PLUG-IN HYBRID,13,gwm,,dlt-web-827cefc3
+2026-04,RY1,GWM TANK,300 HYBRID,24,gwm,gwm-tank-300,dlt-web-827cefc3
+2026-04,RY1,GWM TANK,500 HYBRID,6,gwm,gwm-tank-500,dlt-web-827cefc3
+2026-04,RY1,HAVAL,H6 HEV PRO,1,haval,haval-h6,dlt-web-827cefc3
+2026-04,RY1,HAVAL,H6 HEV ULTRA,4,haval,haval-h6,dlt-web-827cefc3
+2026-04,RY1,HAVAL,H6 HYBRID,3,haval,haval-h6,dlt-web-827cefc3
+2026-04,RY1,HAVAL,H6 PLUG-IN HYBRID,30,haval,haval-h6,dlt-web-827cefc3
+2026-04,RY1,HAVAL,JOLION HYBRID,34,haval,haval-jolion,dlt-web-827cefc3
+2026-04,RY1,HONDA,ACCORD,131,honda,honda-accord,dlt-web-827cefc3
+2026-04,RY1,HONDA,CITY,770,honda,honda-city,dlt-web-827cefc3
+2026-04,RY1,HONDA,CITY HATCHBACK,1468,honda,honda-city-hatchback,dlt-web-827cefc3
+2026-04,RY1,HONDA,CIVIC,962,honda,honda-civic,dlt-web-827cefc3
+2026-04,RY1,HONDA,CIVIC TYPE R,6,honda,honda-civic-type-r,dlt-web-827cefc3
+2026-04,RY1,HONDA,CR-V,590,honda,honda-cr-v,dlt-web-827cefc3
+2026-04,RY1,HONDA,HR-V,1838,honda,honda-hr-v,dlt-web-827cefc3
+2026-04,RY1,HONDA,MOBILIO'15,1,honda,,dlt-web-827cefc3
+2026-04,RY1,HONDA,STEP WGN,52,honda,honda-step-wgn,dlt-web-827cefc3
+2026-04,RY1,HONDA,STEP WGN e-HEV SPADA PREMIUM,5,honda,honda-step-wgn,dlt-web-827cefc3
+2026-04,RY1,HONDA,STEPWAGON e:HEV SPADA PREMIUM,1,honda,,dlt-web-827cefc3
+2026-04,RY1,HONDA,WR-V,1,honda,honda-wr-v,dlt-web-827cefc3
+2026-04,RY1,HONDA,e:N1,13,honda,honda-e-n1,dlt-web-827cefc3
+2026-04,RY1,HONDA,e:N2,1,honda,,dlt-web-827cefc3
+2026-04,RY1,HYUNDAI,CRETA,8,hyundai,hyundai-creta,dlt-web-827cefc3
+2026-04,RY1,HYUNDAI,IONIQ5,1,hyundai,hyundai-ioniq-5,dlt-web-827cefc3
+2026-04,RY1,HYUNDAI,IONIQ6,3,hyundai,,dlt-web-827cefc3
+2026-04,RY1,HYUNDAI,PALISADE,19,hyundai,,dlt-web-827cefc3
+2026-04,RY1,HYUNDAI,SANTA FE,21,hyundai,,dlt-web-827cefc3
+2026-04,RY1,HYUNDAI,STARGAZER,11,hyundai,hyundai-stargazer,dlt-web-827cefc3
+2026-04,RY1,ISUZU,D-MAX,2539,isuzu,isuzu-d-max,dlt-web-827cefc3
+2026-04,RY1,ISUZU,MU-X,991,isuzu,isuzu-mu-x,dlt-web-827cefc3
+2026-04,RY1,JAECOO,5 EV Long Range Max,1057,jaecoo,jaecoo-5,dlt-web-827cefc3
+2026-04,RY1,JAECOO,6 EV Long Range 2WD,3,jaecoo,jaecoo-6,dlt-web-827cefc3
+2026-04,RY1,JAECOO,6 EV Long Range 2WD PRO,185,jaecoo,jaecoo-6,dlt-web-827cefc3
+2026-04,RY1,JAECOO,6 EV Long Range 4WD,43,jaecoo,jaecoo-6,dlt-web-827cefc3
+2026-04,RY1,JAECOO,6T EV Long Range 4WD,34,jaecoo,,dlt-web-827cefc3
+2026-04,RY1,JAECOO,7 SHS Max,68,jaecoo,jaecoo-7,dlt-web-827cefc3
+2026-04,RY1,JEEP,WRANGLER RUBICON 4 DOOR,3,jeep,,dlt-web-827cefc3
+2026-04,RY1,JUNEYAO,JY AIR Plus,3,juneyao,,dlt-web-827cefc3
+2026-04,RY1,JUNEYAO,JY AIR Standard,1,juneyao,,dlt-web-827cefc3
+2026-04,RY1,KIA,CARNIVAL,5,kia,kia-carnival,dlt-web-827cefc3
+2026-04,RY1,KIA,CARNIVAL HEV 7P LUXURY,16,kia,kia-carnival,dlt-web-827cefc3
+2026-04,RY1,KIA,EV5,14,kia,kia-ev5,dlt-web-827cefc3
+2026-04,RY1,KIA,EV9 GT LINE AWD,3,kia,,dlt-web-827cefc3
+2026-04,RY1,KIA,SORENTO,4,kia,,dlt-web-827cefc3
+2026-04,RY1,KING LONG,DRACON,1,king-long,,dlt-web-827cefc3
+2026-04,RY1,LAMBORGHINI,HURACAN EVO,1,lamborghini,,dlt-web-827cefc3
+2026-04,RY1,LAMBORGHINI,HURACAN TECNICA,1,lamborghini,,dlt-web-827cefc3
+2026-04,RY1,LAMBORGHINI,REVUELTO,2,lamborghini,,dlt-web-827cefc3
+2026-04,RY1,LAMBORGHINI,URUS PERFORMANTE,1,lamborghini,,dlt-web-827cefc3
+2026-04,RY1,LAMBORGHINI,URUS PERFORMANTE V8,1,lamborghini,,dlt-web-827cefc3
+2026-04,RY1,LAMBORGHINI,URUS S,1,lamborghini,,dlt-web-827cefc3
+2026-04,RY1,LAMBORGHINI,URUS SE,2,lamborghini,,dlt-web-827cefc3
+2026-04,RY1,LAND ROVER,DEFENDER 2.0L T/C PETROL,1,land-rover,,dlt-web-827cefc3
+2026-04,RY1,LAND ROVER,RANGE ROVER 3.0 LITRE T/C,1,land-rover,,dlt-web-827cefc3
+2026-04,RY1,LAND ROVER,RANGE ROVER SPORT 3.0 LITRE,3,land-rover,,dlt-web-827cefc3
+2026-04,RY1,LEAPMOTOR,B10 Design BEV,21,leapmotor,,dlt-web-827cefc3
+2026-04,RY1,LEAPMOTOR,B10 Style BEV,1,leapmotor,,dlt-web-827cefc3
+2026-04,RY1,LEAPMOTOR,C10 EV,15,leapmotor,,dlt-web-827cefc3
+2026-04,RY1,LEXUS,IS300H,1,lexus,,dlt-web-827cefc3
+2026-04,RY1,LEXUS,LM350H,15,lexus,lexus-lm,dlt-web-827cefc3
+2026-04,RY1,LEXUS,LM500H,8,lexus,lexus-lm,dlt-web-827cefc3
+2026-04,RY1,LEXUS,LX 500D,1,lexus,,dlt-web-827cefc3
+2026-04,RY1,LEXUS,NX350H,9,lexus,,dlt-web-827cefc3
+2026-04,RY1,LEXUS,NX450H+,4,lexus,,dlt-web-827cefc3
+2026-04,RY1,LEXUS,RX300,1,lexus,,dlt-web-827cefc3
+2026-04,RY1,LEXUS,RX350H,5,lexus,,dlt-web-827cefc3
+2026-04,RY1,LEXUS,RX450H+,2,lexus,,dlt-web-827cefc3
+2026-04,RY1,LEXUS,RZ350E,2,lexus,,dlt-web-827cefc3
+2026-04,RY1,LEXUS,RZ450E,1,lexus,,dlt-web-827cefc3
+2026-04,RY1,LEXUS,RZ500E,2,lexus,,dlt-web-827cefc3
+2026-04,RY1,LOTUS,ELETRE R,3,lotus,,dlt-web-827cefc3
+2026-04,RY1,LOTUS,ELETRE S,3,lotus,,dlt-web-827cefc3
+2026-04,RY1,LOTUS,EMEYA S,1,lotus,,dlt-web-827cefc3
+2026-04,RY1,MASERATI,GHIBLI GRANLUSSO,1,maserati,,dlt-web-827cefc3
+2026-04,RY1,MASERATI,GRANTURISMO,1,maserati,,dlt-web-827cefc3
+2026-04,RY1,MASERATI,GRECALE FOLGORE,2,maserati,,dlt-web-827cefc3
+2026-04,RY1,MASERATI,GRECALE GT HYBRID,1,maserati,,dlt-web-827cefc3
+2026-04,RY1,MAZDA,CX-3,59,mazda,mazda-cx-3,dlt-web-827cefc3
+2026-04,RY1,MAZDA,MAZDA 2,365,mazda,mazda-mazda2,dlt-web-827cefc3
+2026-04,RY1,MAZDA,MAZDA 3,15,mazda,mazda-mazda3,dlt-web-827cefc3
+2026-04,RY1,MAZDA,MAZDA 6,2,mazda,,dlt-web-827cefc3
+2026-04,RY1,MAZDA,MAZDA BT-50,5,mazda,mazda-bt-50,dlt-web-827cefc3
+2026-04,RY1,MAZDA,MAZDA CX-3,1,mazda,mazda-cx-3,dlt-web-827cefc3
+2026-04,RY1,MAZDA,MAZDA CX-30,110,mazda,mazda-cx-30,dlt-web-827cefc3
+2026-04,RY1,MAZDA,MAZDA CX-5,35,mazda,mazda-cx-5,dlt-web-827cefc3
+2026-04,RY1,MAZDA,MAZDA CX-8,9,mazda,mazda-cx-8,dlt-web-827cefc3
+2026-04,RY1,MAZDA,ROADSTER 35TH ANNIVERSARY,1,mazda,,dlt-web-827cefc3
+2026-04,RY1,MAZDA,ROADSTER RF 35TH ANNIVERSARY,1,mazda,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,A 200,11,mercedes-benz,mercedes-benz-a-class,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,AMG C 43 4MATIC,1,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,AMG CLE 53 4MATIC coupe,7,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,AMG CLS 53 4MATIC,11,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,AMG G 63,1,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,AMG GLA 35 4MATIC,1,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,AMG GLC 43 4MATIC Coupe,1,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,AMG GLE 53 HYBRID 4MATIC+,5,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,C 200 Coupe,2,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,C 220 d,59,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,C 350 e,46,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,C350 e,1,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,CLA 180,1,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,CLE 300 4MATIC coupe,26,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,CLS 220 d,22,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,CLS 300 d,1,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,E 200 Coupe,1,mercedes-benz,mercedes-benz-e-class,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,E 220 d,21,mercedes-benz,mercedes-benz-e-class,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,E 300 e,6,mercedes-benz,mercedes-benz-e-class,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,E 350 e,47,mercedes-benz,mercedes-benz-e-class,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,EQE 300,5,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,EQE 350 4MATIC SUV,11,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,EQS 450 4MATIC SUV,9,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,EQS 450+,2,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,EQS 500 4MATIC,4,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,G 450 D AMG-Line,1,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,G 450 d,13,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,G 580,1,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,G400 D,2,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,G450D AMG LINE,2,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,GLA 200,45,mercedes-benz,mercedes-benz-gla,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,GLC 220 d,2,mercedes-benz,mercedes-benz-glc,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,GLC 220 d 4MATIC,23,mercedes-benz,mercedes-benz-glc,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,GLC 300 e 4MATIC,1,mercedes-benz,mercedes-benz-glc,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,GLC 300 e 4MATIC Coupe,1,mercedes-benz,mercedes-benz-glc,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,GLC 350 e 4MATIC,25,mercedes-benz,mercedes-benz-glc,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,GLC 350 e 4MATIC coupe,15,mercedes-benz,mercedes-benz-glc,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,GLE 300 d 4MATIC,13,mercedes-benz,mercedes-benz-gle,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,GLS 350 d 4MATIC,1,mercedes-benz,mercedes-benz-gls,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,GLS 450 d 4MATIC,5,mercedes-benz,mercedes-benz-gls,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,MAYBACH EQS 680 SUV,1,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,MERCEDES-AMG CLE 53,16,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,MERCEDES-AMG GLE 53,2,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,Maybach S 580 e,7,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,S 350 d,4,mercedes-benz,mercedes-benz-s-class,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,S 560 e,1,mercedes-benz,mercedes-benz-s-class,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,S 580 e,9,mercedes-benz,mercedes-benz-s-class,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,S350D,1,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,SPRINTER 319 CDI,1,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MERCEDES BENZ,V 300 d,3,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY1,MG,CYBERSTER,2,mg,mg-cyberster,dlt-web-827cefc3
+2026-04,RY1,MG,EP,1,mg,mg-ep,dlt-web-827cefc3
+2026-04,RY1,MG,ES,1,mg,mg-es,dlt-web-827cefc3
+2026-04,RY1,MG,HS,3,mg,mg-hs,dlt-web-827cefc3
+2026-04,RY1,MG,HS PHEV,17,mg,mg-hs,dlt-web-827cefc3
+2026-04,RY1,MG,IM6,64,mg,mg-im6,dlt-web-827cefc3
+2026-04,RY1,MG,MAXUS 7,55,mg,mg-maxus-7,dlt-web-827cefc3
+2026-04,RY1,MG,MAXUS 9,14,mg,mg-maxus-9,dlt-web-827cefc3
+2026-04,RY1,MG,MG EXTENDER,5,mg,mg-extender,dlt-web-827cefc3
+2026-04,RY1,MG,MG3,81,mg,mg-mg3,dlt-web-827cefc3
+2026-04,RY1,MG,MG4 ELECTRIC,856,mg,mg-mg4,dlt-web-827cefc3
+2026-04,RY1,MG,MG5,97,mg,mg-mg5,dlt-web-827cefc3
+2026-04,RY1,MG,NEW MG3,1,mg,mg-mg3,dlt-web-827cefc3
+2026-04,RY1,MG,S5 EV,899,mg,mg-s5,dlt-web-827cefc3
+2026-04,RY1,MG,VS HEV,5,mg,mg-vs,dlt-web-827cefc3
+2026-04,RY1,MG,ZS,28,mg,mg-zs,dlt-web-827cefc3
+2026-04,RY1,MINI,Aceman SE RHD,21,mini,mini-aceman,dlt-web-827cefc3
+2026-04,RY1,MINI,Cooper S Cabrio RHD,1,mini,,dlt-web-827cefc3
+2026-04,RY1,MINI,Cooper S Countryman RHD,2,mini,mini-countryman,dlt-web-827cefc3
+2026-04,RY1,MINI,Cooper S Hatch RHD,1,mini,mini-cooper,dlt-web-827cefc3
+2026-04,RY1,MINI,Cooper SE Hatch RHD,1,mini,mini-cooper,dlt-web-827cefc3
+2026-04,RY1,MINI,Cooper SE RHD,49,mini,mini-cooper,dlt-web-827cefc3
+2026-04,RY1,MINI,Countryman S ALL4,16,mini,mini-countryman,dlt-web-827cefc3
+2026-04,RY1,MINI,Countryman SE ALL4 RHD,1,mini,mini-countryman,dlt-web-827cefc3
+2026-04,RY1,MINI,JCW Aceman E,6,mini,,dlt-web-827cefc3
+2026-04,RY1,MINI,JCW Convertible RHD,1,mini,,dlt-web-827cefc3
+2026-04,RY1,MINI,JCW E,8,mini,,dlt-web-827cefc3
+2026-04,RY1,MINI,JCW RHD,2,mini,,dlt-web-827cefc3
+2026-04,RY1,MINI,John Cooper Works Hatch R,1,mini,,dlt-web-827cefc3
+2026-04,RY1,MINI,John Cooper Works cabrio,1,mini,,dlt-web-827cefc3
+2026-04,RY1,MINI,MINI COOPER S ALL4 PACEMA,1,mini,,dlt-web-827cefc3
+2026-04,RY1,MITSUBISHI,ATTRAGE,231,mitsubishi,mitsubishi-attrage,dlt-web-827cefc3
+2026-04,RY1,MITSUBISHI,MIRAGE,113,mitsubishi,mitsubishi-mirage,dlt-web-827cefc3
+2026-04,RY1,MITSUBISHI,OUTLANDER PHEV,2,mitsubishi,mitsubishi-outlander,dlt-web-827cefc3
+2026-04,RY1,MITSUBISHI,PAJERO SPORT,135,mitsubishi,mitsubishi-pajero-sport,dlt-web-827cefc3
+2026-04,RY1,MITSUBISHI,TRITON,192,mitsubishi,mitsubishi-triton,dlt-web-827cefc3
+2026-04,RY1,MITSUBISHI,XFORCE HEV,801,mitsubishi,mitsubishi-xforce,dlt-web-827cefc3
+2026-04,RY1,MITSUBISHI,XPANDER,1,mitsubishi,mitsubishi-xpander,dlt-web-827cefc3
+2026-04,RY1,MITSUBISHI,XPANDER CROSS HEV,369,mitsubishi,mitsubishi-xpander-cross,dlt-web-827cefc3
+2026-04,RY1,MITSUBISHI,XPANDER HEV,67,mitsubishi,mitsubishi-xpander,dlt-web-827cefc3
+2026-04,RY1,NETA,NETA V-II,39,neta,neta-v-ii,dlt-web-827cefc3
+2026-04,RY1,NETA,NETA X,4,neta,neta-x,dlt-web-827cefc3
+2026-04,RY1,NISSAN,ALMERA,108,nissan,nissan-almera,dlt-web-827cefc3
+2026-04,RY1,NISSAN,FAIRLADY Z PROTO,1,nissan,,dlt-web-827cefc3
+2026-04,RY1,NISSAN,GT-R PREMIUM EDITION T-SPEC,1,nissan,,dlt-web-827cefc3
+2026-04,RY1,NISSAN,GT-R PURE EDITION,3,nissan,,dlt-web-827cefc3
+2026-04,RY1,NISSAN,KICKS,114,nissan,nissan-kicks,dlt-web-827cefc3
+2026-04,RY1,NISSAN,NAVARA,70,nissan,nissan-navara,dlt-web-827cefc3
+2026-04,RY1,NISSAN,SERENA,35,nissan,nissan-serena,dlt-web-827cefc3
+2026-04,RY1,NISSAN,SERENA e-POWER,114,nissan,nissan-serena,dlt-web-827cefc3
+2026-04,RY1,NISSAN,TERRA,1,nissan,nissan-terra,dlt-web-827cefc3
+2026-04,RY1,NISSAN,X-TRIAL e-POWER,48,nissan,,dlt-web-827cefc3
+2026-04,RY1,OMODA,C5 EV Long Range Dynamic,2,omoda,omoda-c5,dlt-web-827cefc3
+2026-04,RY1,OMODA,C5 EV Long Range Max,1,omoda,omoda-c5,dlt-web-827cefc3
+2026-04,RY1,OMODA,C5 EV Long Range Ultimate,4,omoda,omoda-c5,dlt-web-827cefc3
+2026-04,RY1,ORA,GOOD CAT,1,ora,ora-good-cat,dlt-web-827cefc3
+2026-04,RY1,POCCO,DD K,1,pocco,,dlt-web-827cefc3
+2026-04,RY1,POER,SAHAR HYBRID,8,poer,,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,718 BOXSTER,1,porsche,,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,718 BOXSTER STYLE EDITION,5,porsche,,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,718 CAYMAN GT4 RS,2,porsche,,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,718 CAYMAN STYLE EDITION,1,porsche,,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,911 CARRERA,2,porsche,,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,911 CARRERA 4S CABRIOLET,1,porsche,,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,911 CARRERA GTS,1,porsche,,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,911 CARRERA S,1,porsche,,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,911 CARRERA S CABRIOLET,2,porsche,,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,911 CARRERA T,3,porsche,,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,911 GT3 WITH T.P.,1,porsche,,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,911 GT3 WITH TOURING PACKAGE,1,porsche,,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,911 S/T,2,porsche,,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,911 SPIRIT 70,1,porsche,,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,911 TARGA 4,1,porsche,,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,911 TARGA 4S,1,porsche,,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,911 TURBO 50 YEARS ANV,1,porsche,,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,CAYENNE E-HYBRID,2,porsche,porsche-cayenne,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,CAYENNE E-HYBRID COUPE,9,porsche,porsche-cayenne,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,CAYENNE E-HYBRID COUPE P.,2,porsche,porsche-cayenne,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,CAYENNE S E-HYBRID COUPE,52,porsche,porsche-cayenne,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,MACAN,8,porsche,porsche-macan,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,MACAN 4,1,porsche,porsche-macan,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,MACAN S,1,porsche,porsche-macan,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,PANAMERA 4 E-HYBRID,9,porsche,porsche-panamera,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,PANAMERA 4 E-HYBRID EXEC.,2,porsche,porsche-panamera,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,PANAMERA 4 E-HYBRID P.E.,1,porsche,porsche-panamera,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,PANAMERA 4S E-HYBRID,1,porsche,porsche-panamera,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,TAYCAN,7,porsche,porsche-taycan,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,TAYCAN 4 CROSS TURISMO,1,porsche,porsche-taycan,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,TAYCAN 4S,1,porsche,porsche-taycan,dlt-web-827cefc3
+2026-04,RY1,PORSCHE,TAYCAN GTS,1,porsche,porsche-taycan,dlt-web-827cefc3
+2026-04,RY1,RIDDARA,HORIZON 4WD,5,riddara,,dlt-web-827cefc3
+2026-04,RY1,RIDDARA,HORIZON PRO 4WD,13,riddara,,dlt-web-827cefc3
+2026-04,RY1,RIDDARA,HORIZON PRO 4WD SUNROOF,2,riddara,,dlt-web-827cefc3
+2026-04,RY1,RIDDARA,RD6 2WD,3,riddara,riddara-rd6,dlt-web-827cefc3
+2026-04,RY1,RIDDARA,RD6 86KWH 2WD,12,riddara,riddara-rd6,dlt-web-827cefc3
+2026-04,RY1,RIDDARA,RD6 ECON,26,riddara,riddara-rd6,dlt-web-827cefc3
+2026-04,RY1,RIDDARA,RD6 PRO 2WD,24,riddara,riddara-rd6,dlt-web-827cefc3
+2026-04,RY1,ROLLS-ROYCE,PHANTOM,1,rolls-royce,,dlt-web-827cefc3
+2026-04,RY1,ROLLS-ROYCE,Spectre,2,rolls-royce,,dlt-web-827cefc3
+2026-04,RY1,SERES,SERES 3,1,seres,,dlt-web-827cefc3
+2026-04,RY1,SUBARU,BRZ 2.4 EyeSight RWD 6AT,2,subaru,,dlt-web-827cefc3
+2026-04,RY1,SUBARU,FORESTER 2.0i-L ES,2,subaru,subaru-forester,dlt-web-827cefc3
+2026-04,RY1,SUBARU,FORESTER 2.0i-S ES,3,subaru,subaru-forester,dlt-web-827cefc3
+2026-04,RY1,SUBARU,FORESTER 2.5i-S AWD CVT,3,subaru,subaru-forester,dlt-web-827cefc3
+2026-04,RY1,SUBARU,OUTBACK 2.5i-T EyeSight,1,subaru,,dlt-web-827cefc3
+2026-04,RY1,SUBARU,XV 2.0i-P ES,6,subaru,subaru-xv,dlt-web-827cefc3
+2026-04,RY1,SUZUKI,CELERIO GA 1.0L MT,4,suzuki,suzuki-celerio,dlt-web-827cefc3
+2026-04,RY1,SUZUKI,CELERIO GL 1.0L,1,suzuki,suzuki-celerio,dlt-web-827cefc3
+2026-04,RY1,SUZUKI,CELERIO GL 1.0L CVT,12,suzuki,suzuki-celerio,dlt-web-827cefc3
+2026-04,RY1,SUZUKI,CELERIO GL UP 1.0L CVT,4,suzuki,suzuki-celerio,dlt-web-827cefc3
+2026-04,RY1,SUZUKI,CELERIO GX 1.0L CVT,2,suzuki,suzuki-celerio,dlt-web-827cefc3
+2026-04,RY1,SUZUKI,CIAZ RS CVT,1,suzuki,suzuki-ciaz,dlt-web-827cefc3
+2026-04,RY1,SUZUKI,ERTIGA GX 1.5L,1,suzuki,suzuki-ertiga,dlt-web-827cefc3
+2026-04,RY1,SUZUKI,FRONX 1.5L,56,suzuki,suzuki-fronx,dlt-web-827cefc3
+2026-04,RY1,SUZUKI,JIMNY 1.5L 4AT,6,suzuki,,dlt-web-827cefc3
+2026-04,RY1,SUZUKI,JIMNY ALPHA 5 DOOR,1,suzuki,,dlt-web-827cefc3
+2026-04,RY1,SUZUKI,JIMNY NOMADE FC 4WD,1,suzuki,,dlt-web-827cefc3
+2026-04,RY1,SUZUKI,JIMNY NOMADE FC 5 DOOR,1,suzuki,,dlt-web-827cefc3
+2026-04,RY1,SUZUKI,JIMNY SIERRA 4WD,5,suzuki,,dlt-web-827cefc3
+2026-04,RY1,SUZUKI,JIMNY SIERRA JC 4WD,1,suzuki,,dlt-web-827cefc3
+2026-04,RY1,SUZUKI,SWIFT GL 1.2L CVT,132,suzuki,suzuki-swift,dlt-web-827cefc3
+2026-04,RY1,SUZUKI,SWIFT GL NEXT 1.2L CVT,22,suzuki,suzuki-swift,dlt-web-827cefc3
+2026-04,RY1,SUZUKI,SWIFT GLX 1.2L CVT,202,suzuki,suzuki-swift,dlt-web-827cefc3
+2026-04,RY1,SUZUKI,SWIFT GLX-Navi 1.2L CVT,1,suzuki,suzuki-swift,dlt-web-827cefc3
+2026-04,RY1,SUZUKI,XL7 1.5L,15,suzuki,suzuki-xl7,dlt-web-827cefc3
+2026-04,RY1,TESLA,Model 3 Long Range,7,tesla,tesla-model-3,dlt-web-827cefc3
+2026-04,RY1,TESLA,Model 3 Long Range RWD,75,tesla,tesla-model-3,dlt-web-827cefc3
+2026-04,RY1,TESLA,Model 3 Performance,9,tesla,tesla-model-3,dlt-web-827cefc3
+2026-04,RY1,TESLA,Model 3 Rear-Wheel Drive,117,tesla,tesla-model-3,dlt-web-827cefc3
+2026-04,RY1,TESLA,Model 3 Standard,402,tesla,tesla-model-3,dlt-web-827cefc3
+2026-04,RY1,TESLA,Model Y L,54,tesla,tesla-model-y,dlt-web-827cefc3
+2026-04,RY1,TESLA,Model Y Long Range,1,tesla,tesla-model-y,dlt-web-827cefc3
+2026-04,RY1,TESLA,Model Y Long Range RWD,5,tesla,tesla-model-y,dlt-web-827cefc3
+2026-04,RY1,TESLA,Model Y Rear-Wheel Drive,4,tesla,tesla-model-y,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD,52,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD 2.5 HYBRID EXECUTIVE,1,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD 2.5 HYBRID SRC PACKAGE,1,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD 2.5 HYBRID X,2,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD 2.5 HYBRID Z,8,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD 2.5 Z,3,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD 2.5S C PACKAGE,1,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD EXECUTIVE LOUNGE,2,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD HYBRID EXECUTIVE,6,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD HYBRID X,15,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD HYBRID Z,7,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD HYBRID Z 2.5L,15,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD HYBRID Z 2.5L E-FOUR,2,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD HYBRID Z 2WD,80,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD HYBRID Z E-FOUR,17,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD S C PACKAGE,1,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD SC PACKAGE 2.5L,1,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD X HYBRID 2.5L,2,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD X HYBRID E-FOUR,1,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD Z,1,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD Z 2.5L,6,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD Z 2WD,20,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD Z 2WD 2.5L,5,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,ALPHARD Z HYBRID 2.5L,4,toyota,toyota-alphard,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,BZ4X,69,toyota,toyota-bz4x,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,CAMRY,310,toyota,toyota-camry,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,COMMUTER,33,toyota,toyota-commuter,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,COROLLA CROSS,1202,toyota,toyota-corolla-cross,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,CROWN ESTATE Z HYBRID E FOUR,1,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,CROWN HYBRID SPORT Z,1,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,CROWN SPORT Z 2.5L,1,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,Corolla,97,toyota,toyota-corolla,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,Fortuner,1381,toyota,toyota-fortuner,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,GR 86 RZ,1,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,GR 86 RZ 2.4L,1,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,GR COROLLA RZ AT,1,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,GR SUPRA,1,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,GR SUPRA RZ 3.0,1,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,GR YARIS,1,toyota,toyota-gr-yaris,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,GR YARIS KALLE ROVANPERA,1,toyota,toyota-gr-yaris,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,GR YARIS OGIER EDITION 4WD,1,toyota,toyota-gr-yaris,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,GR YARIS RC 8AT,1,toyota,toyota-gr-yaris,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,GR YARIS RC AT,1,toyota,toyota-gr-yaris,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,GR YARIS RZ HIGH PERFORMANCE,5,toyota,toyota-gr-yaris,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,GR86,1,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,GR86 CUP CAR BASIC,1,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,GR86 RC,1,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,GR86 RZ,1,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,GR86 RZ 10th ANNIVERSARY,1,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,GR86 RZ 2WD,1,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,GR86 RZ 6MT,1,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,HARRIER HYBRID Z LEATHER,1,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,HILUX REVO,403,toyota,toyota-hilux-revo,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,HILUX TRAVO,1880,toyota,toyota-hilux-travo,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,Innova,134,toyota,toyota-innova,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,KUN51R-NKPSYT  A7,1,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,LAND CRUISER 250 GX,3,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,LAND CRUISER 250 VX,1,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,LAND CRUISER 250 ZX,2,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,LAND CRUISER 250 ZX 2.8L,2,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,LAND CRUISER 250 ZX FIRST,2,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,LAND CRUISER 300 GR SPORT,1,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,LAND CRUISER 300 ZX,1,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,LAND CRUISER 70 AX,4,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,NOAH HYBRID X 2WD,3,toyota,,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,Sienta,3,toyota,toyota-sienta,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,VELLFIRE,13,toyota,toyota-vellfire,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,VELLFIRE 2.5 HYBRID Z PREMIER,8,toyota,toyota-vellfire,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,VELLFIRE HYBRID EXECUTIVE,2,toyota,toyota-vellfire,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,VELLFIRE HYBRID Z 2.5L,2,toyota,toyota-vellfire,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,VELLFIRE HYBRID Z 2.5L E-FOUR,1,toyota,toyota-vellfire,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,VELLFIRE HYBRID Z E-FOUR,1,toyota,toyota-vellfire,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,VELLFIRE HYBRID Z PREMIER,106,toyota,toyota-vellfire,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,VELLFIRE Z PREMIER,4,toyota,toyota-vellfire,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,VELLFIRE Z PREMIER E-FOUR,1,toyota,toyota-vellfire,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,VELLFIRE Z PREMIER HYBRID 2.5L,18,toyota,toyota-vellfire,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,VELOZ,337,toyota,toyota-veloz,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,VOXY HYBRID S-Z,4,toyota,toyota-voxy,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,YARIS,338,toyota,toyota-yaris,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,YARIS ATIV,5430,toyota,toyota-yaris-ativ,dlt-web-827cefc3
+2026-04,RY1,TOYOTA,YARIS CROSS,2928,toyota,toyota-yaris-cross,dlt-web-827cefc3
+2026-04,RY1,VIAUTO,BOMA,3,viauto,,dlt-web-827cefc3
+2026-04,RY1,VOLKSWAGEN,GOLF ESTATE LIFE 2.0 TDI,1,volkswagen,,dlt-web-827cefc3
+2026-04,RY1,VOLT,VOLT FOR FOUR,1,volt,,dlt-web-827cefc3
+2026-04,RY1,VOLVO,C40,5,volvo,volvo-c40,dlt-web-827cefc3
+2026-04,RY1,VOLVO,EC40,21,volvo,volvo-ec40,dlt-web-827cefc3
+2026-04,RY1,VOLVO,ES90,27,volvo,,dlt-web-827cefc3
+2026-04,RY1,VOLVO,EX30,33,volvo,volvo-ex30,dlt-web-827cefc3
+2026-04,RY1,VOLVO,EX40,47,volvo,volvo-ex40,dlt-web-827cefc3
+2026-04,RY1,VOLVO,EX90,6,volvo,,dlt-web-827cefc3
+2026-04,RY1,VOLVO,S90,1,volvo,volvo-s90,dlt-web-827cefc3
+2026-04,RY1,VOLVO,V60,3,volvo,volvo-v60,dlt-web-827cefc3
+2026-04,RY1,VOLVO,XC40,1,volvo,volvo-xc40,dlt-web-827cefc3
+2026-04,RY1,VOLVO,XC60,15,volvo,volvo-xc60,dlt-web-827cefc3
+2026-04,RY1,VOLVO,XC90,7,volvo,volvo-xc90,dlt-web-827cefc3
+2026-04,RY1,WULING,Air EV LR,5,wuling,,dlt-web-827cefc3
+2026-04,RY1,WULING,Air EV SR,2,wuling,,dlt-web-827cefc3
+2026-04,RY1,WULING,Bingou SRDTH CCS2,6,wuling,wuling-binguo,dlt-web-827cefc3
+2026-04,RY1,WULING,Binguo SRDTH,3,wuling,wuling-binguo,dlt-web-827cefc3
+2026-04,RY1,XPENG,G6 AWD Performance,14,xpeng,xpeng-g6,dlt-web-827cefc3
+2026-04,RY1,XPENG,G6 LONG RANGE,6,xpeng,xpeng-g6,dlt-web-827cefc3
+2026-04,RY1,XPENG,G6 RWD Long Range,172,xpeng,xpeng-g6,dlt-web-827cefc3
+2026-04,RY1,XPENG,G6 RWD Standard Range,54,xpeng,xpeng-g6,dlt-web-827cefc3
+2026-04,RY1,XPENG,G6 STANDARD RANGE,1,xpeng,xpeng-g6,dlt-web-827cefc3
+2026-04,RY1,XPENG,X9 LONG RANGE,11,xpeng,xpeng-x9,dlt-web-827cefc3
+2026-04,RY1,XPENG,X9 LONG RANGE(EXECUTIVE),81,xpeng,xpeng-x9,dlt-web-827cefc3
+2026-04,RY1,XPENG,X9 LONG RANGE(LUXURY),16,xpeng,xpeng-x9,dlt-web-827cefc3
+2026-04,RY1,XPENG,X9 STANDARD RANGE,1,xpeng,xpeng-x9,dlt-web-827cefc3
+2026-04,RY1,ZEEKR,ZEEKR 009,117,zeekr,zeekr-009,dlt-web-827cefc3
+2026-04,RY1,ZEEKR,ZEEKR 7X,197,zeekr,zeekr-7x,dlt-web-827cefc3
+2026-04,RY1,ZEEKR,ZEEKR X,7,zeekr,zeekr-x,dlt-web-827cefc3
+2026-04,RY2,FARIZON,SV9,8,farizon,,dlt-web-827cefc3
+2026-04,RY2,FORD,RANGER RAPTOR,4,ford,ford-ranger-raptor,dlt-web-827cefc3
+2026-04,RY2,FORD,RANGER SUPER DUTY,17,ford,,dlt-web-827cefc3
+2026-04,RY2,HYUNDAI,H-1,2,hyundai,hyundai-h-1,dlt-web-827cefc3
+2026-04,RY2,HYUNDAI,STARIA,57,hyundai,hyundai-staria,dlt-web-827cefc3
+2026-04,RY2,ISUZU,D-MAX,6,isuzu,isuzu-d-max,dlt-web-827cefc3
+2026-04,RY2,KIA,CARNIVAL,41,kia,kia-carnival,dlt-web-827cefc3
+2026-04,RY2,MERCEDES BENZ,SPRINTER 419 CDI VAN,5,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY2,MERCEDES BENZ,VITO 119 CDI,3,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY2,MERCEDES BENZ,VITO 119 CDI TOURER,1,mercedes-benz,,dlt-web-827cefc3
+2026-04,RY2,MITSUBISHI,TRITON,2,mitsubishi,mitsubishi-triton,dlt-web-827cefc3
+2026-04,RY2,NISSAN,NAVARA,1,nissan,nissan-navara,dlt-web-827cefc3
+2026-04,RY2,SUZUKI,CARRY 1.5L MT,5,suzuki,suzuki-carry,dlt-web-827cefc3
+2026-04,RY2,TOYOTA,COMMUTER,528,toyota,toyota-commuter,dlt-web-827cefc3
+2026-04,RY2,TOYOTA,HIACE,27,toyota,toyota-hiace,dlt-web-827cefc3
+2026-04,RY2,TOYOTA,HIACE MAJESTY,131,toyota,toyota-hiace-majesty,dlt-web-827cefc3
+2026-04,RY2,TOYOTA,HILUX CHAMP,6,toyota,toyota-hilux-champ,dlt-web-827cefc3
+2026-04,RY2,TOYOTA,HILUX REVO,37,toyota,toyota-hilux-revo,dlt-web-827cefc3
+2026-04,RY2,TOYOTA,HILUX TRAVO,155,toyota,toyota-hilux-travo,dlt-web-827cefc3
+2026-04,RY2,TOYOTA,TR TRANSFORMER,1,toyota,,dlt-web-827cefc3
+2026-04,RY3,DAIHATSU,HIJET CARGO,2,daihatsu,,dlt-web-827cefc3
+2026-04,RY3,DAIHATSU,HIJET CARGO 4WD,1,daihatsu,,dlt-web-827cefc3
+2026-04,RY3,FORD,RANGER,28,ford,ford-ranger,dlt-web-827cefc3
+2026-04,RY3,FORD,RANGER SWB,1,ford,ford-ranger,dlt-web-827cefc3
+2026-04,RY3,FOTON,BJ1031EVJA4,2,foton,,dlt-web-827cefc3
+2026-04,RY3,FOTON,BJ1044EVJAR,2,foton,,dlt-web-827cefc3
+2026-04,RY3,HINO,FM8JN1D-SGT,2,hino,,dlt-web-827cefc3
+2026-04,RY3,HINO,XZU600R-HKMQLT3,3,hino,,dlt-web-827cefc3
+2026-04,RY3,HINO,XZU600R-WKMLST3,5,hino,,dlt-web-827cefc3
+2026-04,RY3,HINO,XZU600R-WKTLST3,2,hino,,dlt-web-827cefc3
+2026-04,RY3,ISUZU,D-MAX,1954,isuzu,isuzu-d-max,dlt-web-827cefc3
+2026-04,RY3,ISUZU,ไม่ระบุ,136,isuzu,,dlt-web-827cefc3
+2026-04,RY3,JAC,HFC1040EV3,1,jac,,dlt-web-827cefc3
+2026-04,RY3,KING LONG,DRACON,7,king-long,,dlt-web-827cefc3
+2026-04,RY3,MAZDA,MAZDA BT-50,1,mazda,mazda-bt-50,dlt-web-827cefc3
+2026-04,RY3,MG,MG EXTENDER,3,mg,mg-extender,dlt-web-827cefc3
+2026-04,RY3,MITSUBISHI,TRITON,308,mitsubishi,mitsubishi-triton,dlt-web-827cefc3
+2026-04,RY3,NEX,NPS,1,nex,,dlt-web-827cefc3
+2026-04,RY3,NISSAN,NAVARA,38,nissan,nissan-navara,dlt-web-827cefc3
+2026-04,RY3,SANY,SYM1030T1BEVH3,2,sany,,dlt-web-827cefc3
+2026-04,RY3,SERES,EC31,5,seres,,dlt-web-827cefc3
+2026-04,RY3,SOKON,EC35,3,sokon,,dlt-web-827cefc3
+2026-04,RY3,SUZUKI,AP416PUM14058,1,suzuki,,dlt-web-827cefc3
+2026-04,RY3,SUZUKI,CARRY 1.5L MT,27,suzuki,suzuki-carry,dlt-web-827cefc3
+2026-04,RY3,TOYOTA,COMMUTER,1,toyota,toyota-commuter,dlt-web-827cefc3
+2026-04,RY3,TOYOTA,HIACE,14,toyota,toyota-hiace,dlt-web-827cefc3
+2026-04,RY3,TOYOTA,HILUX CHAMP,555,toyota,toyota-hilux-champ,dlt-web-827cefc3
+2026-04,RY3,TOYOTA,HILUX REVO,1659,toyota,toyota-hilux-revo,dlt-web-827cefc3
+2026-04,RY3,TOYOTA,HILUX TRAVO,1073,toyota,toyota-hilux-travo,dlt-web-827cefc3
+2026-04,RY3,UD TRUCKS,CWE08N43R280CSS9,1,ud-trucks,,dlt-web-827cefc3
+2026-04,RY3,UD TRUCKS,PKE250CELRM,1,ud-trucks,,dlt-web-827cefc3

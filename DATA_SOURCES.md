@@ -1,64 +1,84 @@
 # Data sources
 
-## กรมการขนส่งทางบก: สถิติจำนวนรถจดทะเบียนครั้งแรก จำแนกตามยี่ห้อและรุ่น
+## 1. Registrations: กรมการขนส่งทางบก, สถิติการจดทะเบียนรถใหม่ จำแนกตามยี่ห้อรถ รุ่นรถ และจังหวัด
 
 | | |
 |---|---|
-| Publisher | กรมการขนส่งทางบก (Department of Land Transport, DLT), ศูนย์เทคโนโลยีสารสนเทศ |
-| Dataset | [`stat_1_1_01_first_regis_vehicles_car`](https://gdcatalog.dlt.go.th/dataset/stat_1_1_01_first_regis_vehicles_car) |
-| Access | CKAN API on gdcatalog.dlt.go.th, CSV download, no login |
-| Fields | ปี พ.ศ., เดือน, ประเภทรถ, ยี่ห้อ, รุ่น, จำนวน (unit: คัน) |
-| Stated frequency | Monthly. In practice uploads come in batches; the latest file (Feb 2026) was uploaded 17 Mar 2026. |
-| License (as labeled on the portal) | "Open Data Common" |
+| Publisher | กรมการขนส่งทางบก (Department of Land Transport, DLT), กลุ่มสถิติการขนส่ง กองแผนงาน |
+| Where | [web.dlt.go.th/statistics](https://web.dlt.go.th/statistics/) → ข้อมูลด้านทะเบียนรถ → สถิติการจดทะเบียนรถใหม่ → "รถใหม่ (พ.ร.บ.รถยนต์) จำแนกตามยี่ห้อรถ รุ่นรถ และจังหวัด" |
+| Format | One xlsx with every month since January 2021: year (BE), month, vehicle category, province, brand, model, count |
+| Counts | New vehicles only. Used vehicles registered again are excluded (note in the file). |
+| Update frequency | Monthly. The file in use covers January 2021 to September 2026 and was processed by the DLT on 5 October 2026. |
+| License | Not stated on the page. The same statistics are published on the DLT open-data portal under the Thai government "Open Data Common" license; see below. |
 | Used for | `data/registrations/`, `summaries/` |
-| Every file used | Listed in [`data/sources.csv`](data/sources.csv) with URL, retrieval date and SHA-256 |
-
-### License status
-
-The portal labels this dataset "Open Data Common", the Thai government open data license used on data.go.th catalogs. Thai open government data is published under open, non-exclusive licenses that allow reuse ([data.go.th FAQ](https://data.go.th/pages/about-open-data)). **The full text of "Open Data Common" has not been located yet.** Until it is, this project treats it as permitting redistribution with attribution, and always credits the DLT. If you need certainty for commercial use, confirm with the DLT (itc@dlt.mail.go.th) or the Digital Government Development Agency (di@dga.or.th).
+| Exact file used | Listed in [`data/sources.csv`](data/sources.csv) with the download URL, retrieval date and SHA-256 |
 
 ### What we keep
 
-- Categories ร.ย.1 (`RY1`), ร.ย.2 (`RY2`) and ร.ย.3 (`RY3`) only. Motorcycles, tractors, trailers and commercial categories are dropped at import.
-- Monthly files only. The annual files are used to check the monthly ones (below), not stored.
-- Original brand and model strings are kept unchanged (`brand_raw`, `model_raw`) next to the matched IDs.
+- Categories รย.1 (`RY1`), รย.2 (`RY2`) and รย.3 (`RY3`) only. Motorcycles, tractors, trailers and commercial categories are dropped at import.
+- National totals per month, category, brand and model. Province detail is summed and not stored yet.
+- The DLT's brand and model strings are kept unchanged (`brand_raw`, `model_raw`) next to the matched IDs.
 
-### Checks applied to every file
+### Checks applied to every import
 
-A file is rejected, recorded in `data/sources.csv` with the reason, and not used if:
+The whole file is rejected, logged in `data/sources.csv` with the reason, and nothing is changed if:
 
-1. the month and year inside the file do not match the month and year in the resource title;
-2. it has fewer rows than half the median of the previous six accepted months (minimum 100);
-3. it contains more than one month, or a count that is not a nonnegative integer.
+1. any month between the first and last month is missing;
+2. the last month in the data does not match the period stated in the file's title;
+3. any month has fewer rows than half the median month, which suggests a truncated file;
+4. for any month in the DLT's separate monthly totals file (สถิติการจดทะเบียนรถใหม่ ทั่วประเทศ, linked on the same site), our RY1, RY2 or RY3 total differs from the DLT's own total by even one vehicle;
+5. a count is negative or not a whole number.
 
-### Problems found in the published data (checked 13 Oct 2026)
+The import also reports which already-published months changed, so DLT revisions are visible in review.
 
-| Month | Problem | Effect here |
-|---|---|---|
-| 2023-12 | The resource titled "ธันวาคม 2566" contains December 2022 data (file name `sttt_car_new_reg_mm_2565_12.csv`, contents say 2565) | Rejected. December 2023 is missing. |
-| 2026-02 | The file has 6 rows (AION and ASTON MARTIN only) instead of about 1,400 | Rejected as incomplete. February 2026 is missing. |
-| several | One HONDA row and some MITSUBISHI rows have an empty model name | Kept with an empty `model_id`. |
+### Why not the DLT open-data portal
 
-### Reconciliation with DLT annual files
+The DLT also publishes this dataset on its CKAN portal ([`stat_1_1_01_first_regis_vehicles_car`](https://gdcatalog.dlt.go.th/dataset/stat_1_1_01_first_regis_vehicles_car), "Open Data Common"). Until October 2026 this project used that portal. As of 13 October 2026:
 
-Sum of accepted monthly files compared with the DLT annual file for the same year:
+- every statistics dataset on the portal stopped updating after the February 2026 files, which were uploaded on 17 March 2026;
+- the February 2026 file has only 6 rows;
+- the resource titled December 2023 actually contains December 2022 data.
 
-| Year | Category | Annual file | Sum of months | Difference |
-|---|---|---:|---:|---:|
-| 2022 | RY1 / RY2 / RY3 | 610,130 / 16,516 / 215,263 | same | 0 |
-| 2023 | RY1 / RY2 / RY3 | 630,881 / 14,575 / 150,222 | 596,125 / 13,675 / 143,441 | 34,756 / 900 / 6,781 (December missing) |
-| 2024 | RY1 / RY2 / RY3 | 486,963 / 14,791 / 98,427 | same | 0 |
-| 2025 | RY1 / RY2 / RY3 | 506,439 / 15,284 / 78,650 | same | 0 |
+Those portal files are still listed in `data/sources.csv` with status `superseded` or `rejected`. For the 48 months both sources cover, the RY1, RY2 and RY3 totals match exactly. Model strings differ slightly, because the DLT cleaned some names in the newer file: `GLC250` became `GLC 250`, and several truck chassis codes became `ไม่ระบุ` (unspecified).
+
+### License status
+
+The statistics web page does not state a license. The same DLT statistics appear on the DLT open-data portal labeled "Open Data Common", the Thai government open-data license for data.go.th catalogs. Thai open government data is published under open, non-exclusive licenses that allow reuse ([data.go.th FAQ](https://data.go.th/pages/about-open-data)). **The full text of "Open Data Common" has not been located yet.** This project treats the data as redistributable with attribution and always credits the DLT. For commercial use, confirm with the DLT (itc@dlt.mail.go.th) or the Digital Government Development Agency (di@dga.or.th).
+
+## 2. Prices: official manufacturer websites
+
+| | |
+|---|---|
+| Sources | Each row of [`data/prices.csv`](data/prices.csv) links to the exact official page or press release it came from (currently toyota.co.th and honda.co.th) |
+| Collected | By hand. There is no scraping, because no manufacturer offers a sanctioned machine-readable price list. |
+| `price_type` | `list` = the price shown on the official model or grade page, or announced as a new price in an official press release. `promo` = a price the source itself calls introductory or promotional, with its end date. |
+| Dates | `effective_from` / `effective_to` only when the source states them. `published_on` is the source's own date (for press releases). `observed_on` is the date we read the page. |
+| History | Append-only. A price change is a new row; old rows are never edited or deleted. A correction adds a row and explains it in `note`. |
+
+Notes:
+
+- Toyota's grade pages show prices as "฿729,000 +" and Honda's model pages show plain prices. **Neither page says whether the figure is a suggested retail price**, so `price_type=list` means "the price on the official page", not a confirmed MSRP.
+- Price history only starts from the first observation. For example, Honda's press release of 1 August 2024 gives the City e:HEV RS at 799,000 baht, and the Honda City page on 13 October 2026 shows 769,000 baht. What happened in between is not recorded.
+- Third-party price sites are not used as sources. They often disagree with each other and with the manufacturer.
+- Dealer discounts are out of scope.
 
 ## Brand and model identities
 
 `data/brands.csv`, `data/models.csv` and `data/aliases.csv` are original work of this project (CC BY 4.0).
 
-- **Brands:** every DLT brand string in scope maps to one `brand_id`. A few spellings are merged: `BENZ`, `MERCEDES`, `MERCEDES BENZ`, `MERCEDES-AMG` and `MERCEDESBENZ-MAYBACH` become `mercedes-benz`; `GWM TANK` becomes `gwm`; `RANGE ROVER` becomes `land-rover`; and `LUMIN` becomes `changan`.
-- **Models:** a DLT string is linked to a `model_id` only through an exact row in `aliases.csv`, after upper-casing and collapsing spaces. There is no fuzzy matching. New or unclear strings stay unmatched until someone reviews them. For example, Land Cruiser strings are left unmatched because DLT mixes Land Cruiser, Prado and 70-series pickups.
+- **Brands:** every DLT brand string in scope maps to one `brand_id`. These spellings are merged:
+  - `BENZ`, `MERCEDES`, `MERCEDES BENZ`, `MERCEDES-AMG` and `MERCEDESBENZ-MAYBACH` → `mercedes-benz`
+  - `GWM TANK` → `gwm`
+  - `RANGE ROVER` → `land-rover`
+  - `LUMIN` → `changan`
+  - `ZX AUTO` → `zxauto`
+  - `DSFK` (a misspelling) → `dfsk`
+- **Models:** a DLT string is linked to a `model_id` only through an exact row in `aliases.csv`, after upper-casing and collapsing spaces. There is no fuzzy matching. New or unclear strings stay unmatched until someone reviews them. Examples left unmatched on purpose: Land Cruiser strings (DLT mixes Land Cruiser, Prado and 70-series pickups), `MG URBAN`, `DEEPAL S07 L`, and `ไม่ระบุ` (unspecified).
+- **Coverage:** 98.2% of RY1 to RY3 units from January 2021 to September 2026 are matched to a model. Recent months are lower (92.7% in September 2026) because new models appear before their aliases are added.
 - **Model status** is `unverified` for every model. Registration data says nothing about whether a model is still on sale.
 
 ## Not included (yet)
 
 - Sales figures (Federation of Thai Industries, manufacturers). Sales are a different metric from registrations and will be stored separately if added.
-- Specifications and prices.
+- Specifications.
+- Province-level registrations. They are in the DLT file and could be added.
