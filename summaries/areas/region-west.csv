@@ -5282,6 +5282,7 @@ period,category,kind,id,units
 2023-10,RY1,m,toyota-yaris,38
 2023-10,RY1,m,toyota-yaris-ativ,99
 2023-10,RY1,m,volvo-xc60,1
+2023-10,RY1,m,wuling-air-ev,2
 2023-10,RY2,b,toyota,6
 2023-10,RY2,bf,toyota|diesel,6
 2023-10,RY2,f,diesel,6
@@ -5467,6 +5468,7 @@ period,category,kind,id,units
 2023-11,RY1,m,toyota-yaris-ativ,103
 2023-11,RY1,m,toyota-yaris-cross,16
 2023-11,RY1,m,volvo-xc40,1
+2023-11,RY1,m,wuling-air-ev,6
 2023-11,RY2,b,hyundai,1
 2023-11,RY2,b,mg,1
 2023-11,RY2,b,toyota,8
@@ -5644,6 +5646,7 @@ period,category,kind,id,units
 2023-12,RY1,m,toyota-yaris-cross,20
 2023-12,RY1,m,volvo-v60,1
 2023-12,RY1,m,volvo-xc40,1
+2023-12,RY1,m,wuling-air-ev,10
 2023-12,RY2,b,mitsubishi,1
 2023-12,RY2,b,toyota,8
 2023-12,RY2,bf,mitsubishi|diesel,1
@@ -5827,6 +5830,7 @@ period,category,kind,id,units
 2024-01,RY1,m,toyota-yaris-ativ,136
 2024-01,RY1,m,toyota-yaris-cross,56
 2024-01,RY1,m,volvo-xc40,1
+2024-01,RY1,m,wuling-air-ev,12
 2024-01,RY2,b,hyundai,3
 2024-01,RY2,b,toyota,3
 2024-01,RY2,bf,hyundai|diesel,3
@@ -6359,6 +6363,7 @@ period,category,kind,id,units
 2024-04,RY1,m,toyota-yaris-ativ,116
 2024-04,RY1,m,toyota-yaris-cross,73
 2024-04,RY1,m,volvo-xc40,1
+2024-04,RY1,m,wuling-air-ev,3
 2024-04,RY2,b,toyota,8
 2024-04,RY2,bf,toyota|diesel,8
 2024-04,RY2,f,diesel,8
@@ -6540,6 +6545,7 @@ period,category,kind,id,units
 2024-05,RY1,m,toyota-yaris-ativ,98
 2024-05,RY1,m,toyota-yaris-cross,85
 2024-05,RY1,m,volvo-c40,1
+2024-05,RY1,m,wuling-air-ev,1
 2024-05,RY2,b,isuzu,1
 2024-05,RY2,b,mercedes-benz,1
 2024-05,RY2,b,mitsubishi,1
@@ -6892,6 +6898,7 @@ period,category,kind,id,units
 2024-07,RY1,m,volvo-c40,1
 2024-07,RY1,m,volvo-ex30,1
 2024-07,RY1,m,volvo-xc40,1
+2024-07,RY1,m,wuling-air-ev,1
 2024-07,RY2,b,hyundai,3
 2024-07,RY2,b,toyota,11
 2024-07,RY2,bf,hyundai|diesel,3
@@ -7966,6 +7973,7 @@ period,category,kind,id,units
 2025-01,RY1,m,toyota-yaris-cross,78
 2025-01,RY1,m,volvo-s90,1
 2025-01,RY1,m,volvo-xc40,1
+2025-01,RY1,m,wuling-air-ev,1
 2025-01,RY1,m,wuling-binguo,4
 2025-01,RY1,m,xpeng-g6,5
 2025-01,RY2,b,toyota,11
@@ -8737,6 +8745,7 @@ period,category,kind,id,units
 2025-05,RY1,m,toyota-yaris-ativ,136
 2025-05,RY1,m,toyota-yaris-cross,78
 2025-05,RY1,m,volvo-c40,1
+2025-05,RY1,m,wuling-air-ev,1
 2025-05,RY1,m,wuling-binguo,5
 2025-05,RY1,m,xpeng-x9,1
 2025-05,RY1,m,zeekr-009,1
@@ -9335,6 +9344,7 @@ period,category,kind,id,units
 2025-08,RY1,m,volvo-ec40,1
 2025-08,RY1,m,volvo-ex30,1
 2025-08,RY1,m,volvo-ex40,1
+2025-08,RY1,m,wuling-air-ev,1
 2025-08,RY1,m,wuling-binguo,1
 2025-08,RY1,m,xpeng-g6,1
 2025-08,RY1,m,xpeng-x9,2
@@ -9537,6 +9547,7 @@ period,category,kind,id,units
 2025-09,RY1,m,toyota-yaris-ativ,126
 2025-09,RY1,m,toyota-yaris-cross,66
 2025-09,RY1,m,volvo-v60,1
+2025-09,RY1,m,wuling-air-ev,1
 2025-09,RY1,m,wuling-binguo,9
 2025-09,RY1,m,zeekr-7x,1
 2025-09,RY2,b,toyota,10
@@ -9912,6 +9923,7 @@ period,category,kind,id,units
 2025-11,RY1,m,toyota-yaris,11
 2025-11,RY1,m,toyota-yaris-ativ,83
 2025-11,RY1,m,toyota-yaris-cross,55
+2025-11,RY1,m,wuling-air-ev,1
 2025-11,RY1,m,wuling-binguo,3
 2025-11,RY1,m,zeekr-009,2
 2025-11,RY2,b,kia,1
@@ -10305,6 +10317,7 @@ period,category,kind,id,units
 2026-01,RY1,m,toyota-yaris-cross,73
 2026-01,RY1,m,volvo-ex30,1
 2026-01,RY1,m,volvo-ex40,1
+2026-01,RY1,m,wuling-air-ev,1
 2026-01,RY1,m,wuling-binguo,31
 2026-01,RY1,m,xpeng-g6,2
 2026-01,RY1,m,xpeng-x9,4
@@ -11092,6 +11105,7 @@ period,category,kind,id,units
 2026-05,RY1,m,toyota-yaris-cross,76
 2026-05,RY1,m,volvo-ex30,1
 2026-05,RY1,m,volvo-xc90,1
+2026-05,RY1,m,wuling-air-ev,2
 2026-05,RY1,m,wuling-binguo,1
 2026-05,RY1,m,xpeng-g6,1
 2026-05,RY1,m,xpeng-x9,1
@@ -11313,6 +11327,7 @@ period,category,kind,id,units
 2026-06,RY1,m,toyota-yaris-ativ,180
 2026-06,RY1,m,toyota-yaris-cross,66
 2026-06,RY1,m,volvo-xc60,1
+2026-06,RY1,m,wuling-air-ev,4
 2026-06,RY1,m,wuling-binguo,1
 2026-06,RY1,m,xpeng-g6,2
 2026-06,RY1,m,xpeng-x9,2
@@ -11527,6 +11542,7 @@ period,category,kind,id,units
 2026-07,RY1,m,toyota-yaris-ativ,163
 2026-07,RY1,m,toyota-yaris-cross,65
 2026-07,RY1,m,volvo-ec40,1
+2026-07,RY1,m,wuling-air-ev,2
 2026-07,RY1,m,wuling-darion,1
 2026-07,RY1,m,xpeng-g6,3
 2026-07,RY1,m,xpeng-x9,2
@@ -11743,6 +11759,7 @@ period,category,kind,id,units
 2026-08,RY1,m,toyota-yaris-ativ,169
 2026-08,RY1,m,toyota-yaris-cross,70
 2026-08,RY1,m,volvo-xc90,1
+2026-08,RY1,m,wuling-air-ev,1
 2026-08,RY1,m,wuling-binguo,1
 2026-08,RY1,m,wuling-darion,28
 2026-08,RY1,m,xpeng-x9,1

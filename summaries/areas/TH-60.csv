@@ -4528,6 +4528,7 @@ period,category,kind,id,units
 2024-02,RY1,m,toyota-yaris-ativ,36
 2024-02,RY1,m,toyota-yaris-cross,19
 2024-02,RY1,m,volvo-c40,1
+2024-02,RY1,m,wuling-air-ev,2
 2024-02,RY2,b,hyundai,1
 2024-02,RY2,bf,hyundai|diesel,1
 2024-02,RY2,f,diesel,1
@@ -4771,6 +4772,7 @@ period,category,kind,id,units
 2024-04,RY1,m,toyota-yaris,6
 2024-04,RY1,m,toyota-yaris-ativ,37
 2024-04,RY1,m,toyota-yaris-cross,30
+2024-04,RY1,m,wuling-air-ev,1
 2024-04,RY2,b,hyundai,2
 2024-04,RY2,b,toyota,4
 2024-04,RY2,bf,hyundai|diesel,2
@@ -4903,6 +4905,7 @@ period,category,kind,id,units
 2024-05,RY1,m,toyota-yaris,12
 2024-05,RY1,m,toyota-yaris-ativ,48
 2024-05,RY1,m,toyota-yaris-cross,26
+2024-05,RY1,m,wuling-air-ev,1
 2024-05,RY2,b,hyundai,2
 2024-05,RY2,b,toyota,2
 2024-05,RY2,bf,hyundai|diesel,2
@@ -5025,6 +5028,7 @@ period,category,kind,id,units
 2024-06,RY1,m,toyota-yaris,7
 2024-06,RY1,m,toyota-yaris-ativ,48
 2024-06,RY1,m,toyota-yaris-cross,20
+2024-06,RY1,m,wuling-air-ev,2
 2024-06,RY2,b,hyundai,4
 2024-06,RY2,b,toyota,3
 2024-06,RY2,bf,hyundai|diesel,4
@@ -5157,6 +5161,7 @@ period,category,kind,id,units
 2024-07,RY1,m,toyota-yaris,9
 2024-07,RY1,m,toyota-yaris-ativ,38
 2024-07,RY1,m,toyota-yaris-cross,22
+2024-07,RY1,m,wuling-air-ev,1
 2024-07,RY2,b,hyundai,2
 2024-07,RY2,bf,hyundai|diesel,2
 2024-07,RY2,f,diesel,2
@@ -5396,6 +5401,7 @@ period,category,kind,id,units
 2024-09,RY1,m,toyota-yaris,6
 2024-09,RY1,m,toyota-yaris-ativ,28
 2024-09,RY1,m,toyota-yaris-cross,29
+2024-09,RY1,m,wuling-air-ev,1
 2024-09,RY2,b,hyundai,4
 2024-09,RY2,b,toyota,1
 2024-09,RY2,bf,hyundai|diesel,4
@@ -5514,6 +5520,7 @@ period,category,kind,id,units
 2024-10,RY1,m,toyota-yaris,3
 2024-10,RY1,m,toyota-yaris-ativ,50
 2024-10,RY1,m,toyota-yaris-cross,23
+2024-10,RY1,m,wuling-air-ev,1
 2024-10,RY1,m,wuling-binguo,4
 2024-10,RY2,b,hyundai,4
 2024-10,RY2,b,toyota,4
@@ -5653,6 +5660,7 @@ period,category,kind,id,units
 2024-11,RY1,m,toyota-yaris-ativ,33
 2024-11,RY1,m,toyota-yaris-cross,20
 2024-11,RY1,m,volvo-c40,1
+2024-11,RY1,m,wuling-air-ev,1
 2024-11,RY2,b,hyundai,1
 2024-11,RY2,b,toyota,3
 2024-11,RY2,bf,hyundai|diesel,1

@@ -408,8 +408,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-12,RY1,VOLVO,XC40,65,volvo,volvo-xc40,dlt-web-827cefc3
 2023-12,RY1,VOLVO,XC60,36,volvo,volvo-xc60,dlt-web-827cefc3
 2023-12,RY1,VOLVO,XC90,14,volvo,volvo-xc90,dlt-web-827cefc3
-2023-12,RY1,WULING,Air EV LR,174,wuling,,dlt-web-827cefc3
-2023-12,RY1,WULING,Air EV SR,8,wuling,,dlt-web-827cefc3
+2023-12,RY1,WULING,Air EV LR,174,wuling,wuling-air-ev,dlt-web-827cefc3
+2023-12,RY1,WULING,Air EV SR,8,wuling,wuling-air-ev,dlt-web-827cefc3
 2023-12,RY2,FORD,RANGER,3,ford,ford-ranger,dlt-web-827cefc3
 2023-12,RY2,FORD,RANGER RAPTOR,10,ford,ford-ranger-raptor,dlt-web-827cefc3
 2023-12,RY2,FOTON,BJ1031EVJA3,1,foton,,dlt-web-827cefc3

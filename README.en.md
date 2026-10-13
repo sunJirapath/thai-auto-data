@@ -33,7 +33,7 @@ Open data on the Thai car market: monthly new-vehicle registrations by brand and
 
 **Coverage:** January 2021 to September 2026 (BE 2564 to 2569), 69 months, none missing.
 
-**Prices:** 127 official-website prices for 25 models so far (Toyota, Honda, Isuzu D-Max, Mitsubishi Triton/Xforce, BYD Atto 3/Dolphin/Sealion 6/Sealion 7, MG4, Wuling Binguo/Darion, GWM ORA 5, Changan Nevo Q05, Chery V23), each linked to the page it came from. Price history starts from the first observation, so it is not complete back in time.
+**Prices:** 129 official-website prices for 26 models so far (Toyota, Honda, Isuzu D-Max, Mitsubishi Triton/Xforce, BYD Atto 3/Dolphin/Sealion 6/Sealion 7, MG4, Wuling Air EV/Binguo/Darion, GWM ORA 5, Changan Nevo Q05, Chery V23), each linked to the page it came from. Price history starts from the first observation, so it is not complete back in time.
 
 If a month has no source data, it appears as `status=missing` with empty numbers, **not 0**. Details in [DATA_SOURCES.md](DATA_SOURCES.md).
 

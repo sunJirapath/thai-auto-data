@@ -6700,6 +6700,7 @@ period,category,kind,id,units
 2024-01,RY1,m,volvo-c40,1
 2024-01,RY1,m,volvo-xc40,2
 2024-01,RY1,m,volvo-xc60,1
+2024-01,RY1,m,wuling-air-ev,1
 2024-01,RY2,b,hyundai,10
 2024-01,RY2,b,kia,1
 2024-01,RY2,b,toyota,28
@@ -12604,6 +12605,7 @@ period,category,kind,id,units
 2026-04,RY1,m,toyota-yaris-cross,75
 2026-04,RY1,m,volvo-ex40,1
 2026-04,RY1,m,volvo-xc90,1
+2026-04,RY1,m,wuling-air-ev,1
 2026-04,RY1,m,xpeng-g6,8
 2026-04,RY1,m,xpeng-x9,5
 2026-04,RY1,m,zeekr-009,2

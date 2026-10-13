@@ -6868,6 +6868,7 @@ period,category,kind,id,units
 2023-10,RY1,m,volvo-c40,3
 2023-10,RY1,m,volvo-xc40,7
 2023-10,RY1,m,volvo-xc60,3
+2023-10,RY1,m,wuling-air-ev,5
 2023-10,RY2,b,hyundai,17
 2023-10,RY2,b,isuzu,2
 2023-10,RY2,b,kia,1
@@ -7098,6 +7099,7 @@ period,category,kind,id,units
 2023-11,RY1,m,volvo-s60,1
 2023-11,RY1,m,volvo-xc40,13
 2023-11,RY1,m,volvo-xc60,2
+2023-11,RY1,m,wuling-air-ev,15
 2023-11,RY2,b,hyundai,19
 2023-11,RY2,b,isuzu,1
 2023-11,RY2,b,kia,1
@@ -7321,6 +7323,7 @@ period,category,kind,id,units
 2023-12,RY1,m,volvo-v60,1
 2023-12,RY1,m,volvo-xc40,3
 2023-12,RY1,m,volvo-xc90,3
+2023-12,RY1,m,wuling-air-ev,13
 2023-12,RY2,b,hyundai,3
 2023-12,RY2,b,isuzu,1
 2023-12,RY2,b,kia,4
@@ -7558,6 +7561,7 @@ period,category,kind,id,units
 2024-01,RY1,m,volvo-xc40,9
 2024-01,RY1,m,volvo-xc60,1
 2024-01,RY1,m,volvo-xc90,4
+2024-01,RY1,m,wuling-air-ev,25
 2024-01,RY2,b,hyundai,7
 2024-01,RY2,b,isuzu,1
 2024-01,RY2,b,kia,2
@@ -7795,6 +7799,7 @@ period,category,kind,id,units
 2024-02,RY1,m,volvo-s90,1
 2024-02,RY1,m,volvo-xc40,4
 2024-02,RY1,m,volvo-xc90,2
+2024-02,RY1,m,wuling-air-ev,4
 2024-02,RY2,b,hyundai,16
 2024-02,RY2,b,isuzu,1
 2024-02,RY2,b,kia,3
@@ -8036,6 +8041,7 @@ period,category,kind,id,units
 2024-03,RY1,m,volvo-v60,1
 2024-03,RY1,m,volvo-xc40,15
 2024-03,RY1,m,volvo-xc60,2
+2024-03,RY1,m,wuling-air-ev,4
 2024-03,RY2,b,hyundai,24
 2024-03,RY2,b,isuzu,3
 2024-03,RY2,b,kia,2
@@ -8270,6 +8276,7 @@ period,category,kind,id,units
 2024-04,RY1,m,volvo-xc40,7
 2024-04,RY1,m,volvo-xc60,1
 2024-04,RY1,m,volvo-xc90,2
+2024-04,RY1,m,wuling-air-ev,3
 2024-04,RY2,b,hyundai,15
 2024-04,RY2,b,isuzu,2
 2024-04,RY2,b,kia,2
@@ -8516,6 +8523,7 @@ period,category,kind,id,units
 2024-05,RY1,m,volvo-s90,1
 2024-05,RY1,m,volvo-xc40,6
 2024-05,RY1,m,volvo-xc90,2
+2024-05,RY1,m,wuling-air-ev,6
 2024-05,RY2,b,hyundai,8
 2024-05,RY2,b,isuzu,5
 2024-05,RY2,b,kia,3
@@ -8753,6 +8761,7 @@ period,category,kind,id,units
 2024-06,RY1,m,volvo-xc40,2
 2024-06,RY1,m,volvo-xc60,1
 2024-06,RY1,m,volvo-xc90,2
+2024-06,RY1,m,wuling-air-ev,5
 2024-06,RY2,b,hyundai,17
 2024-06,RY2,b,isuzu,1
 2024-06,RY2,b,suzuki,3
@@ -8994,6 +9003,7 @@ period,category,kind,id,units
 2024-07,RY1,m,volvo-s60,1
 2024-07,RY1,m,volvo-xc40,8
 2024-07,RY1,m,volvo-xc90,2
+2024-07,RY1,m,wuling-air-ev,1
 2024-07,RY2,b,hyundai,15
 2024-07,RY2,b,kia,4
 2024-07,RY2,b,mercedes-benz,1
@@ -9230,6 +9240,7 @@ period,category,kind,id,units
 2024-08,RY1,m,volvo-xc40,1
 2024-08,RY1,m,volvo-xc60,4
 2024-08,RY1,m,volvo-xc90,1
+2024-08,RY1,m,wuling-air-ev,3
 2024-08,RY2,b,honda,1
 2024-08,RY2,b,hyundai,6
 2024-08,RY2,b,isuzu,3
@@ -9473,6 +9484,7 @@ period,category,kind,id,units
 2024-09,RY1,m,volvo-xc40,1
 2024-09,RY1,m,volvo-xc60,1
 2024-09,RY1,m,volvo-xc90,1
+2024-09,RY1,m,wuling-air-ev,1
 2024-09,RY1,m,wuling-binguo,6
 2024-09,RY2,b,hyundai,10
 2024-09,RY2,b,isuzu,4
@@ -9712,6 +9724,7 @@ period,category,kind,id,units
 2024-10,RY1,m,volvo-v60,1
 2024-10,RY1,m,volvo-xc40,2
 2024-10,RY1,m,volvo-xc90,1
+2024-10,RY1,m,wuling-air-ev,1
 2024-10,RY1,m,wuling-binguo,5
 2024-10,RY2,b,hyundai,7
 2024-10,RY2,b,kia,1
@@ -10178,6 +10191,7 @@ period,category,kind,id,units
 2024-12,RY1,m,volvo-ex30,1
 2024-12,RY1,m,volvo-ex40,2
 2024-12,RY1,m,volvo-xc40,1
+2024-12,RY1,m,wuling-air-ev,1
 2024-12,RY1,m,wuling-binguo,7
 2024-12,RY1,m,xpeng-g6,3
 2024-12,RY1,m,zeekr-x,1
@@ -10445,6 +10459,7 @@ period,category,kind,id,units
 2025-01,RY1,m,volvo-v60,2
 2025-01,RY1,m,volvo-xc40,1
 2025-01,RY1,m,volvo-xc90,3
+2025-01,RY1,m,wuling-air-ev,1
 2025-01,RY1,m,wuling-binguo,3
 2025-01,RY1,m,zeekr-x,2
 2025-01,RY2,b,foton,1
@@ -10708,6 +10723,7 @@ period,category,kind,id,units
 2025-02,RY1,m,volvo-s60,1
 2025-02,RY1,m,volvo-xc60,5
 2025-02,RY1,m,volvo-xc90,5
+2025-02,RY1,m,wuling-air-ev,1
 2025-02,RY1,m,wuling-binguo,6
 2025-02,RY1,m,zeekr-009,3
 2025-02,RY2,b,hyundai,2
@@ -10984,6 +11000,7 @@ period,category,kind,id,units
 2025-03,RY1,m,volvo-ex30,4
 2025-03,RY1,m,volvo-ex40,4
 2025-03,RY1,m,volvo-xc60,1
+2025-03,RY1,m,wuling-air-ev,1
 2025-03,RY1,m,wuling-binguo,8
 2025-03,RY1,m,xpeng-g6,3
 2025-03,RY1,m,zeekr-009,1
@@ -11510,6 +11527,7 @@ period,category,kind,id,units
 2025-05,RY1,m,volvo-v60,1
 2025-05,RY1,m,volvo-xc60,1
 2025-05,RY1,m,volvo-xc90,3
+2025-05,RY1,m,wuling-air-ev,1
 2025-05,RY1,m,wuling-binguo,12
 2025-05,RY1,m,xpeng-g6,2
 2025-05,RY1,m,xpeng-x9,6
@@ -12063,6 +12081,7 @@ period,category,kind,id,units
 2025-07,RY1,m,volvo-ex30,6
 2025-07,RY1,m,volvo-ex40,1
 2025-07,RY1,m,volvo-xc90,4
+2025-07,RY1,m,wuling-air-ev,2
 2025-07,RY1,m,wuling-binguo,3
 2025-07,RY1,m,xpeng-g6,4
 2025-07,RY1,m,xpeng-x9,5
@@ -12606,6 +12625,7 @@ period,category,kind,id,units
 2025-09,RY1,m,volvo-ex40,4
 2025-09,RY1,m,volvo-s60,3
 2025-09,RY1,m,volvo-xc90,2
+2025-09,RY1,m,wuling-air-ev,4
 2025-09,RY1,m,wuling-binguo,9
 2025-09,RY1,m,xpeng-g6,3
 2025-09,RY1,m,xpeng-x9,3
@@ -12893,6 +12913,7 @@ period,category,kind,id,units
 2025-10,RY1,m,volvo-s60,1
 2025-10,RY1,m,volvo-xc40,1
 2025-10,RY1,m,volvo-xc60,2
+2025-10,RY1,m,wuling-air-ev,1
 2025-10,RY1,m,wuling-binguo,11
 2025-10,RY1,m,xpeng-g6,2
 2025-10,RY1,m,xpeng-x9,2
@@ -13401,6 +13422,7 @@ period,category,kind,id,units
 2025-12,RY1,m,volvo-ec40,2
 2025-12,RY1,m,volvo-ex30,2
 2025-12,RY1,m,volvo-ex40,1
+2025-12,RY1,m,wuling-air-ev,4
 2025-12,RY1,m,wuling-binguo,11
 2025-12,RY1,m,xpeng-g6,3
 2025-12,RY1,m,xpeng-x9,4
@@ -13699,6 +13721,7 @@ period,category,kind,id,units
 2026-01,RY1,m,volvo-s90,1
 2026-01,RY1,m,volvo-xc60,1
 2026-01,RY1,m,volvo-xc90,1
+2026-01,RY1,m,wuling-air-ev,6
 2026-01,RY1,m,wuling-binguo,58
 2026-01,RY1,m,xpeng-g6,3
 2026-01,RY1,m,xpeng-x9,7
@@ -14236,6 +14259,7 @@ period,category,kind,id,units
 2026-03,RY1,m,volvo-ex30,2
 2026-03,RY1,m,volvo-ex40,3
 2026-03,RY1,m,volvo-xc60,1
+2026-03,RY1,m,wuling-air-ev,1
 2026-03,RY1,m,wuling-binguo,6
 2026-03,RY1,m,xpeng-g6,1
 2026-03,RY1,m,xpeng-x9,5
@@ -14511,6 +14535,7 @@ period,category,kind,id,units
 2026-04,RY1,m,volvo-ex30,2
 2026-04,RY1,m,volvo-ex40,7
 2026-04,RY1,m,volvo-xc60,1
+2026-04,RY1,m,wuling-air-ev,1
 2026-04,RY1,m,wuling-binguo,5
 2026-04,RY1,m,xpeng-g6,8
 2026-04,RY1,m,xpeng-x9,6
@@ -15061,6 +15086,7 @@ period,category,kind,id,units
 2026-06,RY1,m,toyota-yaris-cross,388
 2026-06,RY1,m,volvo-ec40,1
 2026-06,RY1,m,volvo-ex40,3
+2026-06,RY1,m,wuling-air-ev,2
 2026-06,RY1,m,wuling-binguo,1
 2026-06,RY1,m,xpeng-g6,9
 2026-06,RY1,m,xpeng-x9,6
@@ -15612,6 +15638,7 @@ period,category,kind,id,units
 2026-08,RY1,m,volvo-ex40,2
 2026-08,RY1,m,volvo-s90,1
 2026-08,RY1,m,volvo-xc60,2
+2026-08,RY1,m,wuling-air-ev,2
 2026-08,RY1,m,wuling-binguo,1
 2026-08,RY1,m,wuling-darion,97
 2026-08,RY1,m,xpeng-g6,13

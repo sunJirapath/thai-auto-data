@@ -4210,6 +4210,7 @@ period,category,kind,id,units
 2023-12,RY1,m,toyota-yaris,6
 2023-12,RY1,m,toyota-yaris-ativ,9
 2023-12,RY1,m,toyota-yaris-cross,5
+2023-12,RY1,m,wuling-air-ev,1
 2023-12,RY2,b,hyundai,1
 2023-12,RY2,b,toyota,1
 2023-12,RY2,bf,hyundai|diesel,1
@@ -4342,6 +4343,7 @@ period,category,kind,id,units
 2024-01,RY1,m,toyota-yaris,3
 2024-01,RY1,m,toyota-yaris-ativ,12
 2024-01,RY1,m,toyota-yaris-cross,12
+2024-01,RY1,m,wuling-air-ev,2
 2024-01,RY2,b,toyota,4
 2024-01,RY2,bf,toyota|diesel,4
 2024-01,RY2,f,diesel,4

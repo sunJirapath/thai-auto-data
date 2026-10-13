@@ -520,8 +520,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-01,RY1,VOLVO,XC40,9,volvo,volvo-xc40,dlt-web-827cefc3
 2026-01,RY1,VOLVO,XC60,32,volvo,volvo-xc60,dlt-web-827cefc3
 2026-01,RY1,VOLVO,XC90,11,volvo,volvo-xc90,dlt-web-827cefc3
-2026-01,RY1,WULING,Air EV LR,23,wuling,,dlt-web-827cefc3
-2026-01,RY1,WULING,Air EV SR,3,wuling,,dlt-web-827cefc3
+2026-01,RY1,WULING,Air EV LR,23,wuling,wuling-air-ev,dlt-web-827cefc3
+2026-01,RY1,WULING,Air EV SR,3,wuling,wuling-air-ev,dlt-web-827cefc3
 2026-01,RY1,WULING,Bingou SRDTH CCS2,289,wuling,wuling-binguo,dlt-web-827cefc3
 2026-01,RY1,WULING,Binguo SRD,10,wuling,wuling-binguo,dlt-web-827cefc3
 2026-01,RY1,WULING,Binguo SRDTH,78,wuling,wuling-binguo,dlt-web-827cefc3

@@ -5547,6 +5547,7 @@ period,category,kind,id,units
 2023-11,RY1,m,volvo-c40,3
 2023-11,RY1,m,volvo-xc40,6
 2023-11,RY1,m,volvo-xc60,2
+2023-11,RY1,m,wuling-air-ev,1
 2023-11,RY2,b,hyundai,14
 2023-11,RY2,b,isuzu,1
 2023-11,RY2,b,kia,1
@@ -5925,6 +5926,7 @@ period,category,kind,id,units
 2024-01,RY1,m,toyota-yaris-cross,83
 2024-01,RY1,m,volvo-c40,2
 2024-01,RY1,m,volvo-xc40,3
+2024-01,RY1,m,wuling-air-ev,3
 2024-01,RY2,b,hyundai,4
 2024-01,RY2,b,isuzu,1
 2024-01,RY2,b,kia,1
@@ -6500,6 +6502,7 @@ period,category,kind,id,units
 2024-04,RY1,m,volvo-v60,1
 2024-04,RY1,m,volvo-xc40,2
 2024-04,RY1,m,volvo-xc90,1
+2024-04,RY1,m,wuling-air-ev,2
 2024-04,RY2,b,hyundai,4
 2024-04,RY2,b,nissan,1
 2024-04,RY2,b,suzuki,2
@@ -6699,6 +6702,7 @@ period,category,kind,id,units
 2024-05,RY1,m,volvo-s90,1
 2024-05,RY1,m,volvo-xc40,5
 2024-05,RY1,m,volvo-xc90,1
+2024-05,RY1,m,wuling-air-ev,1
 2024-05,RY2,b,hyundai,3
 2024-05,RY2,b,isuzu,1
 2024-05,RY2,b,kia,2
@@ -7276,6 +7280,7 @@ period,category,kind,id,units
 2024-08,RY1,m,volvo-xc40,1
 2024-08,RY1,m,volvo-xc60,2
 2024-08,RY1,m,volvo-xc90,1
+2024-08,RY1,m,wuling-air-ev,1
 2024-08,RY2,b,hyundai,3
 2024-08,RY2,b,kia,2
 2024-08,RY2,b,suzuki,5
@@ -7464,6 +7469,7 @@ period,category,kind,id,units
 2024-09,RY1,m,volvo-v60,1
 2024-09,RY1,m,volvo-xc40,1
 2024-09,RY1,m,volvo-xc60,1
+2024-09,RY1,m,wuling-air-ev,1
 2024-09,RY2,b,hyundai,4
 2024-09,RY2,b,suzuki,1
 2024-09,RY2,b,toyota,14
@@ -8225,6 +8231,7 @@ period,category,kind,id,units
 2025-01,RY1,m,volvo-ex30,5
 2025-01,RY1,m,volvo-ex40,3
 2025-01,RY1,m,volvo-xc90,3
+2025-01,RY1,m,wuling-air-ev,1
 2025-01,RY2,b,foton,1
 2025-01,RY2,b,hyundai,1
 2025-01,RY2,b,toyota,10
@@ -9449,6 +9456,7 @@ period,category,kind,id,units
 2025-07,RY1,m,volvo-ec40,2
 2025-07,RY1,m,volvo-ex30,3
 2025-07,RY1,m,volvo-xc90,2
+2025-07,RY1,m,wuling-air-ev,1
 2025-07,RY1,m,xpeng-g6,2
 2025-07,RY1,m,xpeng-x9,4
 2025-07,RY2,b,isuzu,1
@@ -10102,6 +10110,7 @@ period,category,kind,id,units
 2025-10,RY1,m,volvo-ex40,2
 2025-10,RY1,m,volvo-s60,1
 2025-10,RY1,m,volvo-xc60,2
+2025-10,RY1,m,wuling-air-ev,1
 2025-10,RY1,m,xpeng-g6,2
 2025-10,RY1,m,zeekr-009,1
 2025-10,RY1,m,zeekr-7x,1

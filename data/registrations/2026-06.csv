@@ -521,7 +521,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-06,RY1,VOLVO,XC40,3,volvo,volvo-xc40,dlt-web-827cefc3
 2026-06,RY1,VOLVO,XC60,11,volvo,volvo-xc60,dlt-web-827cefc3
 2026-06,RY1,VOLVO,XC90,4,volvo,volvo-xc90,dlt-web-827cefc3
-2026-06,RY1,WULING,Air EV LR,9,wuling,,dlt-web-827cefc3
+2026-06,RY1,WULING,Air EV LR,9,wuling,wuling-air-ev,dlt-web-827cefc3
 2026-06,RY1,WULING,Bingou SRDTH CCS2,5,wuling,wuling-binguo,dlt-web-827cefc3
 2026-06,RY1,WULING,Binguo SRDTH,1,wuling,wuling-binguo,dlt-web-827cefc3
 2026-06,RY1,XPENG,G6 AWD Performance,36,xpeng,xpeng-g6,dlt-web-827cefc3

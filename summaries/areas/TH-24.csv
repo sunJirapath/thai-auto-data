@@ -3617,6 +3617,7 @@ period,category,kind,id,units
 2023-12,RY1,m,toyota-yaris,6
 2023-12,RY1,m,toyota-yaris-ativ,25
 2023-12,RY1,m,toyota-yaris-cross,2
+2023-12,RY1,m,wuling-air-ev,2
 2023-12,RY2,b,isuzu,2
 2023-12,RY2,b,toyota,1
 2023-12,RY2,bf,isuzu|diesel,2

@@ -478,8 +478,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY1,VOLVO,XC40,55,volvo,volvo-xc40,dlt-web-827cefc3
 2024-08,RY1,VOLVO,XC60,41,volvo,volvo-xc60,dlt-web-827cefc3
 2024-08,RY1,VOLVO,XC90,11,volvo,volvo-xc90,dlt-web-827cefc3
-2024-08,RY1,WULING,Air EV LR,13,wuling,,dlt-web-827cefc3
-2024-08,RY1,WULING,Air EV SR,5,wuling,,dlt-web-827cefc3
+2024-08,RY1,WULING,Air EV LR,13,wuling,wuling-air-ev,dlt-web-827cefc3
+2024-08,RY1,WULING,Air EV SR,5,wuling,wuling-air-ev,dlt-web-827cefc3
 2024-08,RY1,WULING,Bingou SRD,5,wuling,,dlt-web-827cefc3
 2024-08,RY1,XEV,YOYO PLUS,1,xev,,dlt-web-827cefc3
 2024-08,RY2,FORD,RANGER,8,ford,ford-ranger,dlt-web-827cefc3
