@@ -4,6 +4,7 @@
   --page: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e; --muted: #6c6a65;
   --grid: #e1e0d9; --axis: #c3c2b7; --border: rgba(11,11,11,0.10); --accent: #2a78d6; --accent-soft: #e3ecf8; --q1: #86b6ef; --q2: #5598e7; --q3: #2a78d6; --q4: #1c5cab; --q5: #0d366b;
   --up: #006300; --down: #b4302f; --hatch: #c3c2b7;
+  --f-bev: #1baf7a; --f-phev: #2b9fbf; --f-hev: #2a78d6; --f-petrol: #eda100; --f-diesel: #7a756c; --f-gas: #8b6fd6;
   --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100; --s5: #e87ba4; --s6: #5f6b7a; --s7: #4a3aa7; --s8: #e34948;
   --font: "IBM Plex Sans Thai", system-ui, -apple-system, "Segoe UI", "Noto Sans Thai", sans-serif;
 }
@@ -12,6 +13,7 @@
   --page: #0d0d0d; --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
   --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10); --accent: #3987e5; --accent-soft: #1c3048; --q1: #184f95; --q2: #256abf; --q3: #3987e5; --q4: #6da7ec; --q5: #b7d3f6;
   --up: #0ca30c; --down: #e66767; --hatch: #4a4a46;
+  --f-bev: #199e70; --f-phev: #36a9c9; --f-hev: #3987e5; --f-petrol: #c98500; --f-diesel: #8f8a80; --f-gas: #9085e9;
   --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181; --s6: #9aa5b4; --s7: #9085e9; --s8: #e66767;
 } }
 :root[data-theme="dark"] {
@@ -19,6 +21,7 @@
   --page: #0d0d0d; --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
   --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10); --accent: #3987e5; --accent-soft: #1c3048; --q1: #184f95; --q2: #256abf; --q3: #3987e5; --q4: #6da7ec; --q5: #b7d3f6;
   --up: #0ca30c; --down: #e66767; --hatch: #4a4a46;
+  --f-bev: #199e70; --f-phev: #36a9c9; --f-hev: #3987e5; --f-petrol: #c98500; --f-diesel: #8f8a80; --f-gas: #9085e9;
   --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181; --s6: #9aa5b4; --s7: #9085e9; --s8: #e66767;
 }
 * { box-sizing: border-box; }
@@ -38,7 +41,7 @@ h3 { font-size: .95rem; margin-bottom: 6px; color: var(--ink-2); }
 .links { display: flex; gap: 14px; font-size: .9rem; }
 .status { color: var(--muted); font-size: .9rem; }
 .status.error { color: var(--down); }
-.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
 .tile { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; display: grid; gap: 2px; }
 .tile .label { color: var(--muted); font-size: .8rem; }
 .tile .value { font-size: 1.6rem; font-weight: 600; }
@@ -191,3 +194,6 @@ table.compare tr.group th { position: static; padding-top: 14px; color: var(--in
 /* filters a page does not use are hidden (the .seg/.chips display rules would otherwise override [hidden]) */
 .filters [hidden] { display: none !important; }
 .seg[hidden] { display: none !important; }
+/* heatmaps: compact cells so a year of months and its total fit without scrolling */
+.heatmap td, .heatmap th { padding-inline: 5px; }
+.heatmap td.heat { min-width: 44px; }

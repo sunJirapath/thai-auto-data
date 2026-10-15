@@ -238,6 +238,99 @@
     };
   }
   function kTicks(v) { return v >= 1000 ? (v / 1000) + 'k' : v; }
+  function fmtK(v) { return v >= 10000 ? (v / 1000).toFixed(v >= 100000 ? 0 : 1) + 'k' : fmt(v); }
+  // change in a share, in percentage points; rounding to 0.0 reads "no change", never "-0.0"
+  function ptsText(d) { var r = Math.round(d * 10) / 10; return r === 0 ? L('no change', 'ไม่เปลี่ยน') : (r > 0 ? '▲ +' : '▼ ') + r.toFixed(1) + L(' pts', ' จุด'); }
+  function ptsClass(d) { var r = Math.round(d * 10) / 10; return r > 0 ? 'up' : r < 0 ? 'down' : ''; }
+  // fuel colours mean something: electrified in cool colours (BEV, PHEV, HEV), combustion in warm and neutral ones
+  function fuelColor(code) { return css('--f-' + code); }
+  function wrapLabel(t, n) {   // a long name on two lines instead of cut off
+    if (t.length <= n) return t;
+    var cut = t.lastIndexOf(' ', n);
+    if (cut < 4) cut = n;
+    var rest = t.slice(cut).trim();
+    return [t.slice(0, cut), rest.length > n + 2 ? rest.slice(0, n + 1) + '…' : rest];
+  }
+
+  // ---------- direct labels: read a chart without matching colours to a legend ----------
+  function textWidth(t, font) { var c = textWidth.c || (textWidth.c = document.createElement('canvas').getContext('2d')); c.font = font; return c.measureText(t).width; }
+  // a name after the last point of each line, nudged apart so they never overlap (halo keeps them readable over lines)
+  var endLabels = {
+    id: 'endLabels',
+    afterDatasetsDraw: function (chart, args, opts) {
+      if (!opts || !opts.on) return;
+      var ctx = chart.ctx, area = chart.chartArea, items = [];
+      chart.data.datasets.forEach(function (ds, i) {
+        var meta = chart.getDatasetMeta(i);
+        if (meta.hidden) return;
+        for (var k = ds.data.length - 1; k >= 0; k--) {
+          var v = ds.data[k], pt = meta.data[k];
+          if (v !== null && v !== undefined && pt && isFinite(pt.y)) { items.push({ x: pt.x + 8, y: pt.y, text: ds.label, color: ds.borderColor }); break; }
+        }
+      });
+      items.sort(function (a, b) { return a.y - b.y; });
+      for (var i = 1; i < items.length; i++) if (items[i].y - items[i - 1].y < 13) items[i].y = items[i - 1].y + 13;
+      var over = items.length ? items[items.length - 1].y - area.bottom : 0;
+      if (over > 0) items.forEach(function (it) { it.y -= over; });
+      ctx.save();
+      ctx.font = opts.font; ctx.textBaseline = 'middle'; ctx.lineJoin = 'round';
+      items.forEach(function (it) {
+        ctx.strokeStyle = css('--surface'); ctx.lineWidth = 3; ctx.strokeText(it.text, it.x, it.y);
+        ctx.fillStyle = it.color; ctx.fillText(it.text, it.x, it.y);
+      });
+      ctx.restore();
+    }
+  };
+  // turns end labels on when the chart is wide enough; returns whether it did (the legend is then redundant)
+  function withEndLabels(o, canvas, names) {
+    if ((canvas.parentNode.clientWidth || 0) < 560) return false;
+    var font = '600 11px ' + css('--font'), w = Math.max.apply(null, names.map(function (n) { return textWidth(n, font); }).concat([0]));
+    o.plugins.endLabels = { on: true, font: font };
+    o.layout = o.layout || {};
+    o.layout.padding = Object.assign({}, o.layout.padding, { right: Math.min(170, Math.ceil(w) + 14) });
+    return true;
+  }
+  // a 100% stacked area: each layer's name and latest share at the right edge, when the layer is tall enough
+  var areaLabels = {
+    id: 'areaLabels',
+    afterDatasetsDraw: function (chart, args, opts) {
+      if (!opts || !opts.on) return;
+      var ctx = chart.ctx, area = chart.chartArea, below = area.bottom;
+      ctx.save();
+      ctx.font = '11px ' + css('--font'); ctx.textBaseline = 'middle';
+      chart.data.datasets.forEach(function (ds, i) {
+        var meta = chart.getDatasetMeta(i), pt = meta.data[meta.data.length - 1];
+        if (!pt) return;
+        var top = pt.y, v = ds.data[ds.data.length - 1], y = (top + below) / 2;
+        if (below - top >= 12) {
+          ctx.fillStyle = ds.backgroundColor; ctx.fillRect(area.right + 8, y - 4, 8, 8);
+          ctx.fillStyle = css('--ink-2'); ctx.fillText(ds.label + ' ' + Math.round(v) + '%', area.right + 20, y);
+        }
+        below = top;
+      });
+      ctx.restore();
+    }
+  };
+  // a horizontal 100% stacked bar: the share printed inside each segment wide enough to hold it
+  var segLabels = {
+    id: 'segLabels',
+    afterDatasetsDraw: function (chart) {
+      var ctx = chart.ctx;
+      ctx.save();
+      ctx.font = '600 10.5px ' + css('--font'); ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      chart.data.datasets.forEach(function (ds, i) {
+        var meta = chart.getDatasetMeta(i);
+        if (meta.hidden) return;
+        meta.data.forEach(function (bar, k) {
+          var v = ds.data[k];
+          if (!v || Math.abs(bar.x - bar.base) < 30) return;
+          ctx.fillStyle = tint(ds.backgroundColor, 100).fg;
+          ctx.fillText(Math.round(v) + '%', (bar.x + bar.base) / 2, bar.y);
+        });
+      });
+      ctx.restore();
+    }
+  };
 
   // ---------- trend chart (lines over all months) ----------
   // Color follows the entity: each selection keeps its slot while selected.
@@ -315,7 +408,7 @@
       });
       var opt = baseOptions();
       opt.plugins.missingBands = { indices: cfg.labels ? [] : missingIndices() };
-      opt.plugins.legend.display = datasets.length > 1;
+      opt.plugins.legend.display = datasets.length > 1 && !withEndLabels(opt, canvas, datasets.map(function (d) { return d.label; }));
       opt.scales.y.ticks.callback = function (v) { return mode === 'units' ? kTicks(v) : v + '%'; };
       opt.plugins.tooltip.callbacks.label = function (ctx) {
         return ' ' + ctx.dataset.label + ': ' + (mode === 'units' ? fmt(ctx.raw) + L(' units', ' คัน') : (+ctx.raw).toFixed(2) + '%');
@@ -323,7 +416,7 @@
       if (charts[cfg.key]) charts[cfg.key].destroy();
       charts[cfg.key] = new Chart(canvas, {
         type: 'line', data: { labels: cfg.labels ? cfg.labels() : D.market.map(function (r) { return monthLabel(r.period); }), datasets: datasets },
-        options: opt, plugins: [missingBands]
+        options: opt, plugins: [missingBands, endLabels]
       });
       if (cfg.onChange) cfg.onChange(ids());
     }
@@ -815,7 +908,7 @@
       ctx.restore();
     }
   };
-  function hbar(key, canvas, labels, values, texts, onPick, shortTexts) {
+  function hbar(key, canvas, labels, values, texts, onPick, shortTexts, color) {
     var narrow = canvas.parentNode.clientWidth < 520;
     if (narrow && shortTexts) texts = shortTexts;
     var o = baseOptions();
@@ -828,14 +921,15 @@
     o.scales.x.display = false;
     o.scales.y.grid = { display: false };
     o.scales.y.ticks = { color: css('--ink'), font: { size: 12 }, autoSkip: false,
-      callback: function (v) { var t = this.getLabelForValue(v); return narrow && t.length > 16 ? t.slice(0, 15) + '…' : t; } };
+      callback: function (v) { return wrapLabel(this.getLabelForValue(v), narrow ? 14 : 22); } };
     o.onClick = function (e, els) { if (els.length && onPick) onPick(els[0].index); };
     o.onHover = function (e, els) { e.native.target.style.cursor = els.length && onPick ? 'pointer' : 'default'; };
     if (charts[key]) charts[key].destroy();
-    canvas.parentNode.style.height = (36 + 30 * labels.length) + 'px';
+    var wraps = labels.some(function (t) { return t.length > (narrow ? 14 : 22); });
+    canvas.parentNode.style.height = (36 + (wraps ? 36 : 30) * labels.length) + 'px';
     charts[key] = new Chart(canvas, {
       type: 'bar', options: o, plugins: [barLabels],
-      data: { labels: labels, datasets: [{ data: values, backgroundColor: css('--accent'), borderRadius: 4, borderSkipped: 'start', barPercentage: 0.72, categoryPercentage: 1 }] }
+      data: { labels: labels, datasets: [{ data: values, backgroundColor: color || css('--accent'), borderRadius: 4, borderSkipped: 'start', barPercentage: 0.72, categoryPercentage: 1 }] }
     });
   }
 
@@ -927,7 +1021,7 @@
         return '+' + fmt(gains[id]) + L(' units · ', ' คัน · ') + (p ? (p * 10 < cur[id] ? L('>10×', '>10 เท่า') : pctText(100 * gains[id] / p)) : L('New', 'ใหม่')) + L(' · total ', ' · รวม ') + fmt(cur[id]);
       }),
       function (i) { location.hash = '#/model/' + top[i] + filterQuery(); },
-      top.map(function (id) { return '+' + fmt(gains[id]) + (prev[id] ? '' : L(' new', ' ใหม่')); }));
+      top.map(function (id) { return '+' + fmt(gains[id]) + (prev[id] ? '' : L(' · new', ' · ใหม่')); }));
   }
   function hotEmpty(msg) {
     var e = document.getElementById('hotEmpty');
@@ -1101,6 +1195,12 @@
   }
   function mix(pct) { return 'color-mix(in srgb, var(--accent) ' + Math.round(pct) + '%, var(--surface))'; }
   function mixNeg(pct) { return 'color-mix(in srgb, var(--down) ' + Math.round(pct) + '%, var(--surface))'; }
+  // one line under a row of share tiles saying what the ▲▼ compare with
+  function basisNote(box, months, ok) {
+    var n = box.nextElementSibling;
+    if (!n || !n.classList.contains('basis')) { n = el('p', { class: 'note basis' }); box.parentNode.insertBefore(n, box.nextSibling); }
+    n.textContent = ok ? L('▲▼ change in share, in percentage points, vs ', '▲▼ ส่วนแบ่งที่เปลี่ยนไป (จุด) เทียบกับ') + priorText(months, 'noun') : '';
+  }
   function heatCell(text, pct, neg) {
     var td = el('td', { class: 'n heat' }, text);
     td.style.background = neg ? mixNeg(pct) : mix(pct);
@@ -1142,11 +1242,17 @@
     o.plugins.tooltip.itemSort = function (a, b) { return b.datasetIndex - a.datasetIndex; };
     o.plugins.tooltip.callbacks.label = function (c) { return ' ' + c.dataset.label + ': ' + c.raw.toFixed(1) + '%' + (opts && opts.units ? ' (' + fmt(opts.units[c.datasetIndex][c.dataIndex]) + L(' units)', ' คัน)') : ''); };
     o.elements = { point: { radius: 0, hoverRadius: 4 }, line: { borderWidth: 1 } };
+    if ((canvas.parentNode.clientWidth || 0) >= 560) {
+      var w = Math.max.apply(null, series.map(function (x) { return textWidth(x.label + ' 100%', '11px ' + css('--font')); }));
+      o.plugins.areaLabels = { on: true };
+      o.layout = { padding: { right: Math.min(190, Math.ceil(w) + 26) } };
+    }
     if (charts[key]) charts[key].destroy();
     charts[key] = new Chart(canvas, {
-      type: 'line', options: o,
+      type: 'line', options: o, plugins: [areaLabels],
       data: { labels: labels, datasets: series.map(function (s, i) {
-        return { label: s.label, data: s.data, fill: i === 0 ? 'origin' : '-1', backgroundColor: s.color, borderColor: css('--surface'), tension: 0.25 };
+        // monotone: smooth without bending past the data
+        return { label: s.label, data: s.data, fill: i === 0 ? 'origin' : '-1', backgroundColor: s.color, borderColor: css('--surface'), cubicInterpolationMode: 'monotone' };
       }) }
     });
   }
@@ -1174,13 +1280,15 @@
     o.scales.y.reverse = true; o.scales.y.min = 1; o.scales.y.max = 12; o.scales.y.beginAtZero = false;
     o.scales.y.ticks.stepSize = 1; o.scales.y.ticks.callback = function (v) { return '#' + v; };
     o.plugins.tooltip.callbacks.label = function (c) { return ' ' + c.dataset.label + L(': rank ', ': อันดับ ') + c.raw; };
+    var bumpCanvas = document.getElementById('bumpChart');
+    if (withEndLabels(o, bumpCanvas, top.map(brandLabel))) o.plugins.legend.display = false;
     if (charts.bump) charts.bump.destroy();
-    charts.bump = new Chart(document.getElementById('bumpChart'), {
-      type: 'line', options: o,
+    charts.bump = new Chart(bumpCanvas, {
+      type: 'line', options: o, plugins: [endLabels],
       data: { labels: b.labels, datasets: top.map(function (id, i) {
         return { label: brandLabel(id), data: ranks.map(function (r) { return r[id] && r[id] <= 12 ? r[id] : null; }),
           borderColor: seriesColor(i), backgroundColor: seriesColor(i), borderWidth: 2.5, pointRadius: b.order.length > 24 ? 0 : 3,
-          pointBackgroundColor: css('--surface'), pointBorderWidth: 2, tension: 0.3, spanGaps: false };
+          pointBackgroundColor: css('--surface'), pointBorderWidth: 2, tension: 0, spanGaps: false };
       }) }
     });
   }
@@ -1208,12 +1316,13 @@
     box.textContent = '';
     ORIGIN_GROUPS.forEach(function (g, i) {
       var share = ct ? 100 * cur[g[0]] / ct : 0, pshare = pt ? 100 * was[g[0]] / pt : null;
-      var d = pshare === null ? '' : (share - pshare >= 0 ? '▲ +' : '▼ ') + (share - pshare).toFixed(1) + L(' pts vs ', ' จุด เทียบ') + priorText(months, 'noun');
+      var d = (pshare === null ? '' : ptsText(share - pshare) + ' · ') + fmt(cur[g[0]]) + L(' units', ' คัน');
       var s = add(el('div', { class: 'stat' }), el('span', { class: 'label' }, g[1]), el('span', { class: 'value' }, share.toFixed(1) + '%'),
-        el('span', { class: 'detail ' + (pshare === null ? '' : share >= pshare ? 'up' : 'down') }, d || fmt(cur[g[0]]) + L(' units', ' คัน')));
+        el('span', { class: 'detail ' + (pshare === null ? '' : ptsClass(share - pshare)) }, d));
       s.style.borderLeftColor = seriesColor(i);
       box.appendChild(s);
     });
+    basisNote(box, months, prevOk);
 
     // brands in each group (for transparency)
     var list = document.getElementById('originBrands');
@@ -1239,7 +1348,7 @@
       var regTot = REGION_GROUPS.map(function (r) { return sumValues(gt[r[0]]); });
       if (charts.originRegion) charts.originRegion.destroy();
       charts.originRegion = new Chart(document.getElementById('originRegionChart'), {
-        type: 'bar', options: o,
+        type: 'bar', options: o, plugins: [segLabels],
         data: { labels: REGION_GROUPS.map(function (r) { return r[1]; }), datasets: ORIGIN_GROUPS.map(function (g, i) {
           return { label: g[1], backgroundColor: seriesColor(i), borderColor: css('--surface'), borderWidth: { right: 1 }, borderSkipped: false, barPercentage: 0.75,
             data: REGION_GROUPS.map(function (r, j) {
@@ -1314,20 +1423,20 @@
       cats.forEach(function (c) { v += unitsFor(p, isos, c); });
       (years[y] = years[y] || {})[+p.slice(5, 7)] = v;
     });
-    var ys = Object.keys(years).sort(), max = 0;
-    ys.forEach(function (y) { Object.keys(years[y]).forEach(function (m) { max = Math.max(max, years[y][m]); }); });
+    var ys = Object.keys(years).sort(), max = 0, min = Infinity;
+    ys.forEach(function (y) { Object.keys(years[y]).forEach(function (m) { max = Math.max(max, years[y][m]); min = Math.min(min, years[y][m]); }); });
     var trs = ys.map(function (y) {
       var row = years[y], vals = Object.keys(row).map(function (m) { return row[m]; }), avg = vals.reduce(function (a, b) { return a + b; }, 0) / vals.length;
       var tr = el('tr');
       tr.appendChild(el('th', { scope: 'row' }, String(yearOf(+y))));
       for (var m = 1; m <= 12; m++) {
         if (row[m] === undefined) { tr.appendChild(el('td', { class: 'n na' }, '—')); continue; }
-        var td = SE.mode === 'units' ? heatCell(fmt(row[m]), 10 + 75 * row[m] / max)
+        var td = SE.mode === 'units' ? heatCell(fmtK(row[m]), 8 + 72 * (row[m] - min) / ((max - min) || 1))   // lowest month to highest
           : heatCell(Math.round(100 * row[m] / avg) + '', Math.min(80, Math.abs(100 * row[m] / avg - 100) * 1.2), row[m] < avg);
         td.title = TH_MONTHS[m - 1] + ' ' + yearOf(+y) + ': ' + fmt(row[m]) + L(' units · ', ' คัน · ') + Math.round(100 * row[m] / avg) + L('% of that year\'s monthly average', '% ของค่าเฉลี่ยรายเดือนปีนั้น');
         tr.appendChild(td);
       }
-      tr.appendChild(el('td', { class: 'n' }, fmt(vals.reduce(function (a, b) { return a + b; }, 0)) + (vals.length < 12 ? ' (' + vals.length + L(' mo)', ' ด.)') : '')));
+      tr.appendChild(el('td', { class: 'n' }, fmtK(vals.reduce(function (a, b) { return a + b; }, 0)) + (vals.length < 12 ? ' (' + vals.length + L(' mo)', ' ด.)') : '')));
       return tr;
     });
     var box = document.getElementById('seasonHeat');
@@ -1340,13 +1449,16 @@
     o.scales.y.ticks.callback = kTicks;
     o.plugins.tooltip.callbacks.label = function (c) { return ' ' + c.dataset.label + ': ' + (c.raw === null ? L('No data', 'ไม่มีข้อมูล') : fmt(c.raw) + L(' units', ' คัน')); };
     if (charts.season) charts.season.destroy();
-    var recent = ys.slice(-6);
-    charts.season = new Chart(document.getElementById('seasonChart'), {
-      type: 'line', options: o,
+    var recent = ys.slice(-6), seasonCanvas = document.getElementById('seasonChart');
+    // older years fade into the background, the latest year is bold orange
+    function yearColor(i) { return i === recent.length - 1 ? seriesColor(1) : css('--q' + Math.max(1, 5 - (recent.length - 2 - i))); }
+    if (withEndLabels(o, seasonCanvas, recent.map(function (y) { return String(yearOf(+y)); }))) o.plugins.legend.display = false;
+    charts.season = new Chart(seasonCanvas, {
+      type: 'line', options: o, plugins: [endLabels],
       data: { labels: TH_MONTHS, datasets: recent.map(function (y, i) {
         var last = i === recent.length - 1;
         return { label: String(yearOf(+y)), data: TH_MONTHS.map(function (m, j) { return years[y][j + 1] === undefined ? null : years[y][j + 1]; }),
-          borderColor: seriesColor(i), backgroundColor: seriesColor(i), borderWidth: last ? 3 : 1.5, pointRadius: last ? 3 : 0, tension: 0.25, spanGaps: false };
+          borderColor: yearColor(i), backgroundColor: yearColor(i), borderWidth: last ? 3 : 1.75, pointRadius: last ? 3 : 0, tension: 0, spanGaps: false };
       }) }
     });
   }
@@ -1368,21 +1480,31 @@
     o.plugins.legend.display = false;
     o.scales.y.ticks.callback = kTicks;
     o.scales.x.ticks.autoSkip = false; o.scales.x.ticks.maxRotation = 45;
+    o.layout = { padding: { top: 18 } };
     o.plugins.tooltip.callbacks.label = function (c) { return ' ' + fmt(c.raw) + L(' units · ', ' คัน · ') + band[c.dataIndex].models.length + L(' models', ' รุ่น'); };
     o.plugins.tooltip.callbacks.afterLabel = function (c) { return band[c.dataIndex].models.map(modelName).join(', '); };
     if (charts.priceBand) charts.priceBand.destroy();
     charts.priceBand = new Chart(document.getElementById('priceBandChart'), {
       type: 'bar', options: o,
       data: { labels: PRICE_BANDS.map(function (b) { return b[2]; }), datasets: [{ data: band.map(function (b) { return b.units; }),
-        backgroundColor: css('--accent'), borderRadius: { topLeft: 4, topRight: 4 }, borderSkipped: 'start', maxBarThickness: 56 }] }
+        backgroundColor: css('--accent'), borderRadius: { topLeft: 4, topRight: 4 }, borderSkipped: 'start', maxBarThickness: 56 }] },
+      plugins: [{ id: 'bandLabels', afterDatasetsDraw: function (ch) {
+        var ctx = ch.ctx, meta = ch.getDatasetMeta(0);
+        ctx.save(); ctx.font = '11px ' + css('--font'); ctx.textAlign = 'center'; ctx.fillStyle = css('--ink-2');
+        meta.data.forEach(function (bar, i) {
+          var b = band[i];
+          ctx.fillText(b.models.length ? fmtK(b.units) + ' · ' + (covered ? Math.round(100 * b.units / covered) : 0) + '%' : L('no priced model', 'ไม่มีรุ่นที่มีราคา'), bar.x, bar.y - 6);
+        });
+        ctx.restore();
+      } }]
     });
 
     var pts = priced.map(function (id) { var r = priceRange(id); return { x: r[0] / 1000, y: units[id] || 0, id: id, max: r[1] }; });
     var so = baseOptions();
     so.plugins.legend.display = false;
     so.interaction = { mode: 'nearest', intersect: true };
-    so.scales.x = { type: 'linear', grid: { color: css('--grid') }, ticks: { color: css('--muted'), callback: function (v) { return '฿' + v + 'k'; } },
-      title: { display: true, text: L('Starting price (thousand baht)', 'ราคาเริ่มต้น (พันบาท)'), color: css('--muted') } };
+    so.scales.x = { type: 'linear', grid: { color: css('--grid') }, ticks: { color: css('--muted'), callback: function (v) { return v >= 1000 ? '฿' + (v / 1000) + 'M' : '฿' + v + 'k'; } },
+      title: { display: true, text: L('Starting price (official website)', 'ราคาเริ่มต้น (เว็บไซต์ทางการ)'), color: css('--muted') } };
     so.scales.y.ticks.callback = kTicks;
     so.scales.y.title = { display: true, text: L('Registrations in the selected period', 'ยอดจดทะเบียนในช่วงที่เลือก'), color: css('--muted') };
     so.plugins.tooltip.callbacks.label = function (c) { var p = c.raw; return ' ' + modelName(p.id) + ': ' + rangeText(priceRange(p.id)) + ' · ' + fmt(p.y) + L(' units', ' คัน'); };
@@ -1506,7 +1628,7 @@
     var b = buckets(), cats = selCats(), months = selectedMonths();
     var per = b.order.map(function (k) { return fuelMix(idx, b.months[k], cats); }), tot = per.map(sumValues);
     stackedArea('fuel', document.getElementById('fuelChart'), b.labels, FUELS.map(function (f, i) {
-      return { label: f[1], color: seriesColor(i), data: per.map(function (o, j) { return tot[j] ? 100 * o[f[0]] / tot[j] : 0; }) };
+      return { label: f[1], color: fuelColor(f[0]), data: per.map(function (o, j) { return tot[j] ? 100 * o[f[0]] / tot[j] : 0; }) };
     }), { units: FUELS.map(function (f) { return per.map(function (o) { return o[f[0]]; }); }) });
 
     var cur = fuelMix(idx, months, cats), pm = priorMonths(months);
@@ -1517,11 +1639,12 @@
     FUELS.forEach(function (f, i) {
       var share = ct ? 100 * cur[f[0]] / ct : 0, ps = pt ? 100 * prev[f[0]] / pt : null;
       var st = add(el('div', { class: 'stat' }), el('span', { class: 'label' }, f[1]), el('span', { class: 'value' }, share.toFixed(1) + '%'),
-        el('span', { class: 'detail ' + (ps === null ? '' : share >= ps ? 'up' : 'down') },
-          ps === null ? fmt(cur[f[0]]) + L(' units', ' คัน') : (share - ps >= 0 ? '▲ +' : '▼ ') + (share - ps).toFixed(1) + L(' pts · ', ' จุด · ') + fmt(cur[f[0]]) + L(' units', ' คัน')));
-      st.style.borderLeftColor = seriesColor(i);
+        el('span', { class: 'detail ' + (ps === null ? '' : ptsClass(share - ps)) },
+          (ps === null ? '' : ptsText(share - ps) + ' · ') + fmt(cur[f[0]]) + L(' units', ' คัน')));
+      st.style.borderLeftColor = fuelColor(f[0]);
       box.appendChild(st);
     });
+    basisNote(box, months, prevOk);
 
     // BEV brands: top 10 by battery-electric registrations in the range
     var bf = sumById(idx, 'bf', months, cats), bev = {}, bevTot = 0;
@@ -1530,7 +1653,7 @@
     hbar('bevRank', document.getElementById('bevChart'), topBev.map(brandLabel), topBev.map(function (id) { return bev[id]; }),
       topBev.map(function (id) { return fmt(bev[id]) + L(' units · ', ' คัน · ') + (100 * bev[id] / bevTot).toFixed(1) + L('% of BEV', '% ของ BEV'); }),
       function (i) { location.hash = '#/brand/' + topBev[i] + filterQuery(); },
-      topBev.map(function (id) { return fmt(bev[id]) + ' · ' + (100 * bev[id] / bevTot).toFixed(0) + '%'; }));
+      topBev.map(function (id) { return fmt(bev[id]) + ' · ' + (100 * bev[id] / bevTot).toFixed(0) + '%'; }), fuelColor('bev'));
 
     // powertrain mix of the 12 biggest brands
     var brandTot = sumById(idx, 'b', months, cats), top = sortedIds(brandTot).slice(0, 12);
@@ -1544,9 +1667,9 @@
     if (charts.brandFuel) charts.brandFuel.destroy();
     document.getElementById('brandFuelChart').parentNode.style.height = (60 + 30 * top.length) + 'px';
     charts.brandFuel = new Chart(document.getElementById('brandFuelChart'), {
-      type: 'bar', options: o,
+      type: 'bar', options: o, plugins: [segLabels],
       data: { labels: top.map(brandLabel), datasets: FUELS.map(function (f, i) {
-        return { label: f[1], backgroundColor: seriesColor(i), borderColor: css('--surface'), borderWidth: { right: 1 }, borderSkipped: false, barPercentage: 0.75,
+        return { label: f[1], backgroundColor: fuelColor(f[0]), borderColor: css('--surface'), borderWidth: { right: 1 }, borderSkipped: false, barPercentage: 0.75,
           data: top.map(function (id) { return brandTot[id] ? 100 * (bf[id + '|' + f[0]] || 0) / brandTot[id] : 0; }) };
       }) }
     });
@@ -1563,9 +1686,9 @@
       ro.plugins.tooltip.callbacks.label = function (c) { return ' ' + c.dataset.label + ': ' + c.raw.toFixed(1) + '%'; };
       if (charts.fuelRegion) charts.fuelRegion.destroy();
       charts.fuelRegion = new Chart(document.getElementById('fuelRegionChart'), {
-        type: 'bar', options: ro,
+        type: 'bar', options: ro, plugins: [segLabels],
         data: { labels: REGION_GROUPS.map(function (r) { return r[1]; }), datasets: FUELS.map(function (f, i) {
-          return { label: f[1], backgroundColor: seriesColor(i), borderColor: css('--surface'), borderWidth: { right: 1 }, borderSkipped: false, barPercentage: 0.75,
+          return { label: f[1], backgroundColor: fuelColor(f[0]), borderColor: css('--surface'), borderWidth: { right: 1 }, borderSkipped: false, barPercentage: 0.75,
             data: REGION_GROUPS.map(function (r) { var t = sumValues(gt[r[0]]); return t ? 100 * (gt[r[0]][f[0]] || 0) / t : 0; }) };
         }) }
       });
@@ -1596,6 +1719,7 @@
       return pm.every(function (p) { return D.okSet[p]; }) ? sumById(idx, kind, pm, cats)[id] || 0 : null;
     });
   }
+  function lastYearMark(c) { var bar = c.chart.getDatasetMeta(0).data[c.dataIndex]; return bar && bar.width ? bar.width / 2 + 3 : 8; }
   function barsVsLastYear(key, root, title, name, labels, values, prev) {
     var c = card(title, name);
     var box = add(el('div', { class: 'chart-box' }), el('canvas', { 'aria-label': title + ' ' + name }));
@@ -1606,8 +1730,8 @@
     charts[key] = new Chart(box.firstChild, {
       data: { labels: labels, datasets: [
         { type: 'bar', label: name, data: values, backgroundColor: css('--accent'), borderRadius: { topLeft: 4, topRight: 4 }, borderSkipped: 'start', maxBarThickness: 34, order: 2 },
-        { type: 'line', label: L('Same period last year', 'ช่วงเดียวกันปีก่อน'), data: prev, borderColor: css('--ink-2'), backgroundColor: css('--ink-2'), borderDash: [5, 4], borderWidth: 2,
-          pointRadius: labels.length > 26 ? 0 : 3, pointBackgroundColor: css('--surface'), spanGaps: false, order: 1 }
+        { type: 'line', label: L('Same period last year', 'ช่วงเดียวกันปีก่อน'), data: prev, showLine: false, pointStyle: 'line',
+          pointRadius: lastYearMark, pointHoverRadius: lastYearMark, pointBorderWidth: 2.5, pointHoverBorderWidth: 3.5, borderColor: css('--ink'), backgroundColor: css('--ink'), order: 0 }
       ] },
       options: o
     });
@@ -1629,7 +1753,7 @@
   function rankText(s, what) {
     if (!s.rank) return L('No units under these filters', 'ไม่มียอดในตัวกรองนี้');
     var t = L('Rank ', 'อันดับ ') + s.rank + L(' of ', ' จาก ') + s.of + ' ' + what;
-    if (s.prevRank) t += s.prevRank === s.rank ? L(' (same as in ', ' (เท่ากับใน') + s.prior + ')' : L(' (was ', ' (เดิมอันดับ ') + s.prevRank + L(' in ', ' ใน') + s.prior + ')';
+    if (s.prevRank) t += s.prevRank === s.rank ? L(' (unchanged vs ', ' (เท่าเดิมเมื่อเทียบกับ') + s.prior + ')' : L(' (was ', ' (เดิมอันดับ ') + s.prevRank + L(' in ', ' ใน') + s.prior + ')';
     return t;
   }
 
@@ -1661,7 +1785,7 @@
     charts['d-brandFuel'] = new Chart(fbox.firstChild, {
       type: 'bar', options: fo,
       data: { labels: b.labels, datasets: FUELS.map(function (f, i) {
-        return { label: f[1], backgroundColor: seriesColor(i), borderColor: css('--surface'), borderWidth: { top: 1 }, borderSkipped: 'start', maxBarThickness: 34,
+        return { label: f[1], backgroundColor: fuelColor(f[0]), borderColor: css('--surface'), borderWidth: { top: 1 }, borderSkipped: 'start', maxBarThickness: 34,
           data: seriesFor(idx, 'bf', brandId + '|' + f[0], b, cats) };
       }).filter(function (d) { return d.data.some(function (v) { return v; }); }) }
     });
@@ -2100,17 +2224,17 @@
     var rbox = add(el('div', { class: 'chart-box tall' }), el('canvas', { 'aria-label': L('Registrations comparison chart', 'กราฟเปรียบเทียบยอดจดทะเบียน') }));
     function drawTrend() {
       var units = CMP.mode === 'units', opt = baseOptions();
-      opt.plugins.legend.display = ids.length > 1;
+      opt.plugins.legend.display = ids.length > 1 && !withEndLabels(opt, rbox.firstChild, ids.map(function (id) { return nameFor(kind, id); }));
       opt.scales.y.ticks.callback = units ? kTicks : function (v) { return v + '%'; };
       opt.plugins.tooltip.callbacks.label = function (ctx) {
         return ' ' + ctx.dataset.label + ': ' + (units ? fmt(ctx.raw) + L(' units', ' คัน') : ctx.raw.toFixed(2) + '%');
       };
       if (charts['d-cmp']) charts['d-cmp'].destroy();
       charts['d-cmp'] = new Chart(rbox.firstChild, {
-        type: 'line', options: opt,
+        type: 'line', options: opt, plugins: [endLabels],
         data: { labels: b.labels, datasets: ids.map(function (id, i) {
           return { label: nameFor(kind, id), borderColor: seriesColor(i), backgroundColor: seriesColor(i), borderWidth: 2,
-            pointRadius: b.order.length > 24 ? 0 : 3, pointHoverRadius: 5, tension: 0.2, data: units ? series[i] : share[i] };
+            pointRadius: b.order.length > 24 ? 0 : 3, pointHoverRadius: 5, tension: 0, data: units ? series[i] : share[i] };
         }) }
       });
     }
@@ -2181,9 +2305,9 @@
     o.interaction = { mode: 'index', intersect: false, axis: 'y' };
     o.plugins.tooltip.callbacks.label = function (ctx) { return ctx.raw ? ' ' + ctx.dataset.label + ': ' + ctx.raw.toFixed(1) + '%' : null; };
     charts['d-cmpFuel'] = new Chart(box.firstChild, {
-      type: 'bar', options: o,
+      type: 'bar', options: o, plugins: [segLabels],
       data: { labels: ids.map(brandLabel), datasets: FUELS.map(function (f, i) {
-        return { label: f[1], backgroundColor: seriesColor(i), borderColor: css('--surface'), borderWidth: { right: 1 }, borderSkipped: false, barPercentage: 0.7,
+        return { label: f[1], backgroundColor: fuelColor(f[0]), borderColor: css('--surface'), borderWidth: { right: 1 }, borderSkipped: false, barPercentage: 0.7,
           data: ids.map(function (id) { return units[id] ? 100 * (bf[id + '|' + f[0]] || 0) / units[id] : 0; }) };
       }).filter(function (d) { return d.data.some(function (v) { return v; }); }) }
     });
