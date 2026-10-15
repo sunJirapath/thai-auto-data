@@ -1,5 +1,9 @@
 /* English text for the site, keyed by the Thai original. Missing keys fall back to Thai. */
 window.EN = {
+"ไม่พบหน้านี้": "Page not found",
+"ลิงก์อาจเก่าหรือพิมพ์ผิด ลองดูจากหน้าอันดับ": "The link may be old or mistyped; try the ranking page",
+"ไปหน้าอันดับ": "Go to the ranking",
+"คัดลอกลิงก์นี้": "Copy this link",
 " (ตั้งแต่ ": " (since ",
 " (ปีก่อน ": " (last year ",
 " (รวมกรุงเทพฯ)": " (incl. Bangkok)",

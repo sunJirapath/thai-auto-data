@@ -107,6 +107,7 @@
     for (var k in attrs || {}) {
       if (k === 'class') e.className = attrs[k]; else e.setAttribute(k, attrs[k]);
     }
+    if (tag === 'canvas') e.setAttribute('role', 'img');
     if (text !== undefined) e.textContent = text;
     return e;
   }
@@ -169,6 +170,13 @@
     var out = [];
     D.market.forEach(function (r, i) { if (r.status !== 'ok') out.push(i); });
     return out;
+  }
+  // a short message in the status line, then back to the "latest data" line
+  function flash(msg) {
+    var st = document.getElementById('status');
+    st.textContent = msg;
+    clearTimeout(flash.t);
+    flash.t = setTimeout(function () { st.textContent = D.statusText || ''; }, 5000);
   }
   function destroyCharts(prefix) {
     Object.keys(charts).forEach(function (k) {
@@ -276,7 +284,7 @@
       var used = Object.keys(slots).map(function (k) { return slots[k]; });
       for (var s = 0; s < MAX_SERIES; s++) if (used.indexOf(s) < 0) break;
       if (s >= MAX_SERIES) {
-        document.getElementById('status').textContent = L('กราฟ') + cfg.title + L('แสดงได้สูงสุด ') + MAX_SERIES + L(' รายการ ลบรายการเดิมก่อน');
+        flash(L('กราฟ') + cfg.title + L('แสดงได้สูงสุด ') + MAX_SERIES + L(' รายการ ลบรายการเดิมก่อน'));
         return;
       }
       slots[id] = s; draw();
@@ -654,6 +662,13 @@
         tip.style.top = (e.clientY - r.top + 14) + 'px';
       });
       path.addEventListener('pointerleave', function () { tip.hidden = true; });
+      path.addEventListener('focus', function () {
+        tip.textContent = text; tip.hidden = false;
+        var r = wrap.getBoundingClientRect(), b = path.getBoundingClientRect();
+        tip.style.left = Math.max(0, Math.min(b.right - r.left + 6, r.width - 200)) + 'px';
+        tip.style.top = (b.top - r.top + b.height / 2) + 'px';
+      });
+      path.addEventListener('blur', function () { tip.hidden = true; });
       function pick() { M.area = M.area === 'prov:' + f.iso ? 'all' : 'prov:' + f.iso; document.getElementById('fArea').value = M.area; renderExplorer(); }
       path.addEventListener('click', pick);
       path.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(); } });
@@ -1012,7 +1027,8 @@
     destroyCharts('d-');
     detail.textContent = '';
     fn(detail);
-    document.title = (detail.querySelector('.page-title') || {}).textContent + ' · thai-auto-data';
+    var t = detail.querySelector('.page-title');
+    document.title = (t ? t.textContent : L('ไม่พบหน้านี้')) + ' · thai-auto-data';
   }
   var NEEDS_AREA = { ranking: 1, trends: 1, origin: 1, regions: 1, prices: 1, launches: 1, powertrain: 1, brand: 1, model: 1, compare: 1 };
   function renderExplorer() {
@@ -1024,7 +1040,7 @@
     loadArea(areaKey(M.area)).then(function (idx) {
       if (token === A.token && D.page === page) PAGE_RENDER[page](idx);
     }).catch(function (e) {
-      document.getElementById('status').textContent = L('โหลดข้อมูลพื้นที่ไม่สำเร็จ: ') + e.message;
+      flash(L('โหลดข้อมูลพื้นที่ไม่สำเร็จ: ') + e.message);
     });
   }
 
@@ -1289,6 +1305,7 @@
     var o = baseOptions();
     o.plugins.legend.display = false;
     o.scales.y.ticks.callback = kTicks;
+    o.scales.x.ticks.autoSkip = false; o.scales.x.ticks.maxRotation = 45;
     o.plugins.tooltip.callbacks.label = function (c) { return ' ' + fmt(c.raw) + L(' คัน · ') + band[c.dataIndex].models.length + L(' รุ่น'); };
     o.plugins.tooltip.callbacks.afterLabel = function (c) { return band[c.dataIndex].models.map(modelName).join(', '); };
     if (charts.priceBand) charts.priceBand.destroy();
@@ -1307,20 +1324,28 @@
     so.scales.y.ticks.callback = kTicks;
     so.scales.y.title = { display: true, text: L('ยอดจดทะเบียนในช่วงที่เลือก'), color: css('--muted') };
     so.plugins.tooltip.callbacks.label = function (c) { var p = c.raw; return ' ' + modelName(p.id) + ': ' + rangeText(priceRange(p.id)) + ' · ' + fmt(p.y) + L(' คัน'); };
-    so.onClick = function (e, els) { if (els.length) location.hash = '#/model/' + pts[els[0].index].id; };
+    so.onClick = function (e, els) { if (els.length) location.hash = '#/model/' + pts[els[0].index].id + filterQuery(); };
     if (charts.priceScatter) charts.priceScatter.destroy();
     charts.priceScatter = new Chart(document.getElementById('priceScatter'), {
       type: 'scatter', options: so, plugins: [{ id: 'ptLabels', afterDatasetsDraw: function (ch) {
-        var ctx = ch.ctx, meta = ch.getDatasetMeta(0);
+        var ctx = ch.ctx, meta = ch.getDatasetMeta(0), area = ch.chartArea, boxes = [];
         ctx.save(); ctx.fillStyle = css('--ink-2'); ctx.font = '11px ' + css('--font');
-        meta.data.forEach(function (pt, i) { ctx.fillText(D.modelInfo[pts[i].id].name, pt.x + 7, pt.y + 4); });
+        pts.map(function (p, i) { return i; }).sort(function (a, b) { return pts[b].y - pts[a].y; }).forEach(function (i) {
+          var pt = meta.data[i], text = D.modelInfo[pts[i].id].name, w = ctx.measureText(text).width;
+          var right = { l: pt.x + 7, r: pt.x + 9 + w, t: pt.y - 6, b: pt.y + 7 }, left = { l: pt.x - 9 - w, r: pt.x - 7, t: pt.y - 6, b: pt.y + 7 };
+          function free(bx) { return bx.l >= 0 && bx.r <= ch.width && !boxes.some(function (o) { return bx.l < o.r && bx.r > o.l && bx.t < o.b && bx.b > o.t; }); }
+          var bx = free(right) ? right : free(left) ? left : null;
+          if (!bx) return;   // no room: the name is still in the tooltip and the table
+          boxes.push(bx);
+          ctx.fillText(text, bx.l, pt.y + 4);
+        });
         ctx.restore();
       } }],
       data: { datasets: [{ data: pts, backgroundColor: css('--accent'), borderColor: css('--surface'), borderWidth: 2, pointRadius: 6, pointHoverRadius: 8 }] }
     });
 
     var trs = priced.sort(function (a, b) { return (units[b] || 0) - (units[a] || 0); }).map(function (id) {
-      return add(el('tr'), add(el('td', { class: 'name' }), link('#/model/' + id, modelName(id))), el('td', { class: 'n' }, rangeText(priceRange(id))),
+      return add(el('tr'), add(el('td', { class: 'name' }), link('#/model/' + id + filterQuery(), modelName(id))), el('td', { class: 'n' }, rangeText(priceRange(id))),
         el('td', { class: 'n' }, String(priceRange(id)[2])), el('td', { class: 'n' }, fmt(units[id] || 0)));
     });
     var box = document.getElementById('priceTable');
@@ -1377,7 +1402,7 @@
       }) }
     });
     var trs = launches.sort(function (a, b) { return b.start.localeCompare(a.start) || b.first3 - a.first3; }).map(function (x) {
-      return add(el('tr'), add(el('td', { class: 'name' }), link('#/model/' + x.id, modelName(x.id))), el('td', {}, monthLabel(x.start, true)),
+      return add(el('tr'), add(el('td', { class: 'name' }), link('#/model/' + x.id + filterQuery(), modelName(x.id))), el('td', {}, monthLabel(x.start, true)),
         el('td', { class: 'n' }, String(all.length - all.indexOf(x.start))), el('td', { class: 'n' }, fmt(x.first3)),
         el('td', { class: 'n' }, x.curve.length >= 6 ? fmt(x.first6) : '—'), el('td', { class: 'n' }, fmt(x.total)),
         el('td', { class: 'n' }, x.pre ? fmt(x.pre) + L(' (ตั้งแต่ ') + monthLabel(x.seen) + ')' : '—'),
@@ -1423,7 +1448,7 @@
     var topBev = sortedIds(bev).slice(0, 12);
     hbar('bevRank', document.getElementById('bevChart'), topBev.map(brandLabel), topBev.map(function (id) { return bev[id]; }),
       topBev.map(function (id) { return fmt(bev[id]) + L(' คัน · ') + (100 * bev[id] / bevTot).toFixed(1) + L('% ของ BEV'); }),
-      function (i) { location.hash = '#/brand/' + topBev[i]; },
+      function (i) { location.hash = '#/brand/' + topBev[i] + filterQuery(); },
       topBev.map(function (id) { return fmt(bev[id]) + ' · ' + (100 * bev[id] / bevTot).toFixed(0) + '%'; }));
 
     // powertrain mix of the 12 biggest brands
@@ -1529,7 +1554,7 @@
 
   // ---------- brand page ----------
   function renderBrand(root, brandId, idx) {
-    if (!D.brandName[brandId]) { root.appendChild(el('p', { class: 'card' }, L('ไม่พบยี่ห้อ ') + brandId)); return; }
+    if (!D.brandName[brandId]) { notFound(root, L('ไม่พบยี่ห้อ ') + brandId); return; }
     var name = brandLabel(brandId), months = selectedMonths(), cats = selCats(), b = buckets(), area = areaLabel(M.area);
     add(root, crumbs([[name]]), el('h2', { class: 'page-title' }, name), el('p', { class: 'note filter-echo' }, filterText()));
     var s = standing(idx, 'b', brandId, months, cats);
@@ -1609,7 +1634,7 @@
   // ---------- model page ----------
   function renderModel(root, modelId, idx) {
     var info = D.modelInfo[modelId];
-    if (!info) { root.appendChild(el('p', { class: 'card' }, L('ไม่พบรุ่น ') + modelId)); return; }
+    if (!info) { notFound(root, L('ไม่พบรุ่น ') + modelId); return; }
     var name = modelName(modelId), months = selectedMonths(), cats = selCats(), b = buckets(), area = areaLabel(M.area);
     add(root, crumbs([[brandLabel(info.brand_id), '#/brand/' + info.brand_id + filterQuery()], [info.name]]), el('h2', { class: 'page-title' }, name),
       el('p', { class: 'note filter-echo' }, filterText()));
@@ -1833,6 +1858,10 @@
     });
   }
 
+  function notFound(root, msg) {
+    add(root, crumbs([[msg]]), add(el('section', { class: 'card' }), el('p', {}, msg),
+      el('p', { class: 'note' }, L('ลิงก์อาจเก่าหรือพิมพ์ผิด ลองดูจากหน้าอันดับ')), link('#/ranking' + filterQuery(), L('ไปหน้าอันดับ'), 'btn')));
+  }
   function crumbs(items) {
     var nav = el('nav', { class: 'crumbs', 'aria-label': 'breadcrumb' });
     nav.appendChild(link('#/', L('หน้าแรก')));
@@ -1889,7 +1918,7 @@
   // ---------- boot ----------
   translateStatic();
   document.querySelectorAll('[data-lang]').forEach(function (a) {
-    a.setAttribute('aria-pressed', String(a.getAttribute('data-lang') === LANG));
+    if (a.getAttribute('data-lang') === LANG) a.setAttribute('aria-current', 'true');
     a.addEventListener('click', function (e) { e.preventDefault(); if (a.getAttribute('data-lang') !== LANG) setLang(a.getAttribute('data-lang')); });
   });
   Promise.all([
@@ -1912,7 +1941,8 @@
     D.modelInfo = {}; res[4].forEach(function (m) { D.modelInfo[m.model_id] = m; });
     D.pricesBy = {}; res[5].forEach(function (p) { (D.pricesBy[p.model_id] = D.pricesBy[p.model_id] || []).push(p); });
     D.brandRows = index(D.brand, 'brand_id'); D.modelRows = index(D.model, 'model_id');
-    document.getElementById('status').textContent = L('ข้อมูลล่าสุด: ') + monthLabel(lastOk(), true) + L(' · แหล่งข้อมูล: กรมการขนส่งทางบก');
+    D.statusText = L('ข้อมูลล่าสุด: ') + monthLabel(lastOk(), true) + L(' · แหล่งข้อมูล: กรมการขนส่งทางบก');
+    document.getElementById('status').textContent = D.statusText;
     window.addEventListener('hashchange', route);
     route();
     var mq = window.matchMedia('(prefers-color-scheme: dark)');
@@ -1926,8 +1956,9 @@
 
   document.getElementById('shareLink').addEventListener('click', function () {
     var b = this, url = location.href;
-    navigator.clipboard.writeText(url).then(function () { b.textContent = L('คัดลอกลิงก์แล้ว'); setTimeout(function () { b.textContent = L('คัดลอกลิงก์มุมมองนี้'); }, 2000); },
-      function () { window.prompt ? b.textContent = url : null; });
+    function done() { b.textContent = L('คัดลอกลิงก์แล้ว'); setTimeout(function () { b.textContent = L('คัดลอกลิงก์มุมมองนี้'); }, 2000); }
+    if (!navigator.clipboard) { window.prompt(L('คัดลอกลิงก์นี้'), url); return; }
+    navigator.clipboard.writeText(url).then(done, function () { window.prompt(L('คัดลอกลิงก์นี้'), url); });
   });
 
   document.getElementById('copyCite').addEventListener('click', function () {

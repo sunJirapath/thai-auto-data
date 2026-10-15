@@ -85,7 +85,7 @@ Or clone the whole repository: `git clone https://github.com/sunJirapath/thai-au
 
 The data is updated when the DLT publishes a new monthly file. Every file is checked before it is accepted. The row count must not be abnormally low, the month inside the file must match its title, and every count must be a nonnegative integer. A file that fails is logged in `data/sources.csv` with the reason and is not used.
 
-The data comes from the DLT Transport Statistics website (web.dlt.go.th/statistics), which updates monthly. On every import, each category total must match the DLT's own monthly totals file to the vehicle. As of 13 October 2026, the latest month is September 2026 (processed by the DLT on 5 October 2026).
+The data comes from the DLT Transport Statistics website (web.dlt.go.th/statistics), which updates monthly. On every import, each category total must match the DLT's own monthly totals file to the vehicle. As of 14 October 2026, the latest month is September 2026 (processed by the DLT on 5 October 2026).
 
 ## Questions this data can answer
 

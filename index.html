@@ -10,7 +10,15 @@
 <meta property="og:title" content="Thai Car Market · thai-auto-data">
 <meta property="og:description" content="Monthly new vehicle registrations in Thailand by brand, model, province and fuel type, with official car prices. Open data from the Department of Land Transport, CSV, CC BY 4.0.">
 <meta property="og:url" content="https://sunjirapath.github.io/thai-auto-data/">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://sunjirapath.github.io/thai-auto-data/site/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Thai Car Market: monthly new vehicle registrations in Thailand">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="th_TH">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#2a78d6">
+<link rel="icon" href="site/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="text/plain" title="llms.txt" href="llms.txt">
 <script type="application/ld+json">
 {
@@ -109,7 +117,7 @@
  ]
 }
 </script>
-<link rel="stylesheet" href="site/style.css?v=14">
+<link rel="stylesheet" href="site/style.css?v=15">
 </head>
 <body>
 <div class="page">
@@ -140,6 +148,7 @@
   </nav>
 
   <div id="status" class="status" role="status">กำลังโหลดข้อมูล…</div>
+  <noscript><p class="status error">หน้านี้ต้องเปิด JavaScript เพื่อแสดงกราฟ ดาวน์โหลดข้อมูล CSV ได้ที่ <a href="https://github.com/sunJirapath/thai-auto-data">GitHub</a> · This page needs JavaScript for the charts; the CSV files are on <a href="https://github.com/sunJirapath/thai-auto-data">GitHub</a>.</p></noscript>
 
   <section class="filterbar" id="filterbar" aria-label="ตัวกรอง ใช้กับทุกหน้า">
     <div class="filters">
@@ -164,12 +173,12 @@
       </div>
     </div>
     <div class="stats" id="mStats"></div>
-    <div class="chart-box tall"><canvas id="marketChart" aria-label="กราฟยอดจดทะเบียนรถใหม่ตามตัวกรองที่เลือก"></canvas></div>
+    <div class="chart-box tall"><canvas id="marketChart" role="img" aria-label="กราฟยอดจดทะเบียนรถใหม่ตามตัวกรองที่เลือก"></canvas></div>
     <p class="note" id="mNote"></p>
     <div class="two">
       <div>
         <div class="geo-head"><h3>แยกตามภูมิภาค <span class="sub">กดแถบเพื่อกรอง</span></h3><div class="seg" id="geoMetric" role="group" aria-label="หน่วยของแผนที่และภูมิภาค"></div></div>
-        <div class="chart-box" id="regionBox"><canvas id="regionChart" aria-label="ยอดจดทะเบียนแยกตามภูมิภาค"></canvas></div>
+        <div class="chart-box" id="regionBox"><canvas id="regionChart" role="img" aria-label="ยอดจดทะเบียนแยกตามภูมิภาค"></canvas></div>
       </div>
       <div>
         <h3>แผนที่รายจังหวัด <span class="sub">กดจังหวัดเพื่อกรอง</span></h3>
@@ -192,7 +201,7 @@
         </div>
         <div class="seg" id="rankKind" role="group" aria-label="อันดับยี่ห้อหรือรุ่น"></div>
       </div>
-      <div class="chart-box"><canvas id="rankChart" aria-label="อันดับยอดจดทะเบียน 15 อันดับแรก"></canvas></div>
+      <div class="chart-box"><canvas id="rankChart" role="img" aria-label="อันดับยอดจดทะเบียน 15 อันดับแรก"></canvas></div>
       <p class="note" id="rankNote"></p>
       <details><summary>ตาราง 50 อันดับ</summary><div class="table-wrap" id="rankTable"></div></details>
     </section>
@@ -204,7 +213,7 @@
         </div>
         <div class="seg" id="hotMode" role="group" aria-label="วิธีเทียบ"></div>
       </div>
-      <div class="chart-box"><canvas id="hotChart" aria-label="10 รุ่นที่ยอดจดทะเบียนเพิ่มขึ้นมากที่สุด"></canvas></div>
+      <div class="chart-box"><canvas id="hotChart" role="img" aria-label="10 รุ่นที่ยอดจดทะเบียนเพิ่มขึ้นมากที่สุด"></canvas></div>
       <p class="note" id="hotEmpty" hidden></p>
       <p class="note" id="hotNote"></p>
     </section>
@@ -218,7 +227,7 @@
         <p class="note filter-echo"></p>
       </div>
     </div>
-    <div class="chart-box tall"><canvas id="shareChart" aria-label="ส่วนแบ่งตลาดของ 8 ยี่ห้อแรกตามเวลา"></canvas></div>
+    <div class="chart-box tall"><canvas id="shareChart" role="img" aria-label="ส่วนแบ่งตลาดของ 8 ยี่ห้อแรกตามเวลา"></canvas></div>
     <p class="note">8 ยี่ห้อที่ยอดสูงสุดในช่วงที่เลือก ยี่ห้ออื่นรวมเป็น "อื่นๆ" · แต่ละชั้นคือส่วนแบ่งในช่วงเวลานั้น</p>
   </section>
   <section class="card" data-page="trends" hidden>
@@ -228,7 +237,7 @@
         <p class="note filter-echo"></p>
       </div>
     </div>
-    <div class="chart-box tall"><canvas id="bumpChart" aria-label="อันดับของ 8 ยี่ห้อแรกในแต่ละช่วงเวลา"></canvas></div>
+    <div class="chart-box tall"><canvas id="bumpChart" role="img" aria-label="อันดับของ 8 ยี่ห้อแรกในแต่ละช่วงเวลา"></canvas></div>
     <p class="note">เส้นที่ขาดคือช่วงที่ยี่ห้อนั้นหลุดจาก 12 อันดับแรก</p>
   </section>
   <section class="card" id="brandTrend" data-page="trends" hidden></section>
@@ -243,22 +252,22 @@
       </div>
     </div>
     <div class="stats" id="fuelStats"></div>
-    <div class="chart-box tall"><canvas id="fuelChart" aria-label="สัดส่วนยอดจดทะเบียนตามชนิดเชื้อเพลิงตามเวลา"></canvas></div>
+    <div class="chart-box tall"><canvas id="fuelChart" role="img" aria-label="สัดส่วนยอดจดทะเบียนตามชนิดเชื้อเพลิงตามเวลา"></canvas></div>
     <p class="note">ชนิดเชื้อเพลิงตามที่กรมการขนส่งทางบกบันทึก: ไฟฟ้า = BEV · เบนซิน/ดีเซล-ไฟฟ้าแบบเสียบปลั๊ก = PHEV · เบนซิน/ดีเซล-ไฟฟ้า = HEV (กรมฯ ไม่แยกไฮบริดเต็มรูปแบบกับไมลด์ไฮบริด) · เทียบปีก่อนเป็นจุดเปอร์เซ็นต์</p>
   </section>
   <div class="two wide-left" data-page="powertrain" hidden>
     <section class="card">
       <div class="card-head"><div><h2>ยี่ห้อรถไฟฟ้า (BEV) <span class="sub">BEV brands</span></h2><p class="note filter-echo"></p></div></div>
-      <div class="chart-box"><canvas id="bevChart" aria-label="ยี่ห้อที่มียอดจดทะเบียนรถไฟฟ้ามากที่สุด"></canvas></div>
+      <div class="chart-box"><canvas id="bevChart" role="img" aria-label="ยี่ห้อที่มียอดจดทะเบียนรถไฟฟ้ามากที่สุด"></canvas></div>
     </section>
     <section class="card">
       <div class="card-head"><div><h2>เชื้อเพลิงของแต่ละยี่ห้อ <span class="sub">Mix by brand</span></h2><p class="note">12 ยี่ห้อที่ยอดสูงสุดในตัวกรองนี้</p></div></div>
-      <div class="chart-box"><canvas id="brandFuelChart" aria-label="สัดส่วนชนิดเชื้อเพลิงของแต่ละยี่ห้อ"></canvas></div>
+      <div class="chart-box"><canvas id="brandFuelChart" role="img" aria-label="สัดส่วนชนิดเชื้อเพลิงของแต่ละยี่ห้อ"></canvas></div>
     </section>
   </div>
   <section class="card" data-page="powertrain" hidden>
     <div class="card-head"><div><h2>เชื้อเพลิงแยกตามภูมิภาค <span class="sub">By region</span></h2><p class="note">ช่วงเวลาและประเภทรถตามตัวกรอง แสดงทุกภูมิภาค</p></div></div>
-    <div class="chart-box tall"><canvas id="fuelRegionChart" aria-label="สัดส่วนชนิดเชื้อเพลิงในแต่ละภูมิภาค"></canvas></div>
+    <div class="chart-box tall"><canvas id="fuelRegionChart" role="img" aria-label="สัดส่วนชนิดเชื้อเพลิงในแต่ละภูมิภาค"></canvas></div>
   </section>
 
   <!-- สัญชาติแบรนด์ -->
@@ -270,7 +279,7 @@
       </div>
     </div>
     <div class="stats" id="originStats"></div>
-    <div class="chart-box tall"><canvas id="originChart" aria-label="ส่วนแบ่งตลาดตามสัญชาติบริษัทแม่ตามเวลา"></canvas></div>
+    <div class="chart-box tall"><canvas id="originChart" role="img" aria-label="ส่วนแบ่งตลาดตามสัญชาติบริษัทแม่ตามเวลา"></canvas></div>
     <p class="note">จัดกลุ่มตามประเทศที่ตั้งบริษัทแม่ (ปี 2569) เช่น MG (SAIC) และ Volvo (Geely) นับเป็นจีน · Land Rover (Tata) อยู่ในกลุ่มอื่นๆ · ยุโรปรวมเยอรมนี อิตาลี ฝรั่งเศส อังกฤษ และ Stellantis (เนเธอร์แลนด์)</p>
   </section>
   <section class="card" data-page="origin" hidden>
@@ -280,7 +289,7 @@
         <p class="note">ช่วงเวลาและประเภทรถตามตัวกรอง แสดงทุกภูมิภาค</p>
       </div>
     </div>
-    <div class="chart-box tall"><canvas id="originRegionChart" aria-label="สัดส่วนสัญชาติแบรนด์ในแต่ละภูมิภาค"></canvas></div>
+    <div class="chart-box tall"><canvas id="originRegionChart" role="img" aria-label="สัดส่วนสัญชาติแบรนด์ในแต่ละภูมิภาค"></canvas></div>
     <details><summary>ยี่ห้อในแต่ละกลุ่ม</summary><div class="prose" id="originBrands"></div></details>
   </section>
 
@@ -312,7 +321,7 @@
     <div class="table-wrap heat-wrap" id="seasonHeat"></div>
     <p class="note">โหมด "เทียบค่าเฉลี่ยของปี": 100 = เท่าค่าเฉลี่ยรายเดือนของปีนั้น สีน้ำเงินสูงกว่า สีแดงต่ำกว่า · ธันวาคมต่ำและมกราคมสูงทุกปี เป็นรูปแบบในข้อมูลของกรมฯ</p>
     <h3>เทียบแต่ละปี</h3>
-    <div class="chart-box tall"><canvas id="seasonChart" aria-label="ยอดจดทะเบียนรายเดือน เส้นละหนึ่งปี"></canvas></div>
+    <div class="chart-box tall"><canvas id="seasonChart" role="img" aria-label="ยอดจดทะเบียนรายเดือน เส้นละหนึ่งปี"></canvas></div>
   </section>
 
   <!-- ช่วงราคา -->
@@ -324,7 +333,7 @@
       </div>
     </div>
     <p class="note" id="priceCoverage"></p>
-    <div class="chart-box"><canvas id="priceBandChart" aria-label="ยอดจดทะเบียนตามช่วงราคาเริ่มต้น"></canvas></div>
+    <div class="chart-box"><canvas id="priceBandChart" role="img" aria-label="ยอดจดทะเบียนตามช่วงราคาเริ่มต้น"></canvas></div>
   </section>
   <section class="card" data-page="prices" hidden>
     <div class="card-head">
@@ -333,7 +342,7 @@
         <p class="note">แต่ละจุดคือหนึ่งรุ่นที่มีราคา กดจุดเพื่อดูรายละเอียด</p>
       </div>
     </div>
-    <div class="chart-box tall"><canvas id="priceScatter" aria-label="ราคาเริ่มต้นเทียบยอดจดทะเบียนของแต่ละรุ่น"></canvas></div>
+    <div class="chart-box tall"><canvas id="priceScatter" role="img" aria-label="ราคาเริ่มต้นเทียบยอดจดทะเบียนของแต่ละรุ่น"></canvas></div>
     <details><summary>ตารางรุ่นที่มีราคา</summary><div class="table-wrap" id="priceTable"></div></details>
   </section>
 
@@ -345,7 +354,7 @@
         <p class="note filter-echo"></p>
       </div>
     </div>
-    <div class="chart-box tall"><canvas id="launchChart" aria-label="ยอดจดทะเบียนรายเดือนนับจากเดือนแรกของรุ่นใหม่"></canvas></div>
+    <div class="chart-box tall"><canvas id="launchChart" role="img" aria-label="ยอดจดทะเบียนรายเดือนนับจากเดือนแรกของรุ่นใหม่"></canvas></div>
     <p class="note">รุ่นที่เปิดตัวในช่วงที่เลือก (ไม่นับรุ่นที่มีตั้งแต่ต้นข้อมูล ม.ค. 2564) เทียบ 8 รุ่นที่ยอด 6 เดือนแรกสูงสุด · "เดือนเปิดตัว" คือเดือนแรกที่มียอดอย่างน้อย 20 คันและไม่ต่ำกว่า 3% ของเดือนสูงสุดของรุ่นนั้น เพราะมักมีรถจดทะเบียนก่อนเปิดตัวจริงไม่กี่คัน (แสดงแยกในคอลัมน์ "ทะเบียนก่อนเปิดตัว") · ไม่ใช่วันเปิดตัวทางการ</p>
     <details open><summary>ตารางรุ่นใหม่</summary><div class="table-wrap" id="launchTable"></div></details>
   </section>
@@ -383,8 +392,8 @@ Original source: Department of Land Transport, Thailand (web.dlt.go.th/statistic
 
   <footer class="foot">ที่มา: thai-auto-data / กรมการขนส่งทางบก · CC BY 4.0 · <a href="#/data">อ้างอิงและดาวน์โหลด</a></footer>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<script src="site/i18n-en.js?v=1"></script>
-<script src="site/app.js?v=14"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" integrity="sha512-CQBWl4fJHWbryGE+Pc7UAxWMUMNMWzWxF4SQo9CgkJIN1kx6djDQZjh3Y8SZ1d+6I+1zze6Z7kHXO7q3UyZAWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="site/i18n-en.js?v=2"></script>
+<script src="site/app.js?v=15"></script>
 </body>
 </html>
