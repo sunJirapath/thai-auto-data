@@ -90,7 +90,7 @@ td.name a:hover, td.name a:focus-visible { color: var(--accent); text-decoration
 .chip-link:hover { text-decoration: underline; }
 a.btn { text-decoration: none; display: inline-block; }
 a.btn.disabled { pointer-events: none; opacity: .5; }
-table.compare th[scope="row"] { color: var(--ink-2); font-size: .85rem; text-transform: none; position: static; }
+table.compare th[scope="row"] { color: var(--ink-2); font-size: .85rem; text-transform: none; white-space: normal; min-width: 130px; }
 table.compare td { white-space: normal; min-width: 140px; }
 td.best { font-weight: 600; background: var(--accent-soft); }
 h3 { margin-top: 4px; }
@@ -162,3 +162,29 @@ td.move.up { color: var(--up); } td.move.down { color: var(--down); }
   .page { gap: 12px; padding-block: 16px 40px; }
 }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+/* compare page */
+table.compare th[scope="row"], table.compare thead th:first-child { position: sticky; left: 0; z-index: 1; background: var(--surface); }
+table.compare thead th:first-child { z-index: 3; }
+table.compare thead th { z-index: 2; color: var(--ink); font-size: .85rem; white-space: normal; min-width: 140px; vertical-align: bottom; }
+table.compare thead th a { color: var(--ink); text-decoration: none; font-weight: 600; }
+table.compare thead th a:hover { text-decoration: underline; }
+table.compare tr.group th { position: static; padding-top: 14px; color: var(--ink); font-weight: 600; font-size: .8rem; background: none; }
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; }
+.combo { position: relative; width: min(320px, 100%); }
+.combo input { width: 100%; font: inherit; font-size: .9rem; color: var(--ink); background: var(--page); border: 1px solid var(--axis); border-radius: 6px; padding: 5px 10px; }
+.combo input:disabled { opacity: .6; }
+.combo-list { position: absolute; z-index: 20; left: 0; right: 0; top: calc(100% + 4px); margin: 0; padding: 4px; list-style: none; background: var(--surface); border: 1px solid var(--axis); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,.18); max-height: 320px; overflow-y: auto; }
+.combo-list li { display: flex; justify-content: space-between; gap: 12px; padding: 6px 8px; border-radius: 6px; cursor: pointer; font-size: .9rem; }
+.combo-list li .sub { color: var(--muted); font-size: .8rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.combo-list li[aria-selected="true"], .combo-list li:hover { background: var(--accent-soft); }
+.combo-list li.empty { color: var(--muted); cursor: default; background: none; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.suggest { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: .84rem; color: var(--muted); }
+.chip.add { cursor: pointer; font: inherit; font-size: .84rem; color: var(--ink); padding: 3px 10px; }
+.chip.add::before { content: "+ "; color: var(--accent); }
+.chip-link.quick { border: 1px solid var(--border); border-radius: 999px; padding: 3px 10px; background: var(--page); }
+@media (max-width: 520px) {
+  .combo { width: 100%; }
+  table.compare th[scope="row"] { min-width: 96px; max-width: 120px; font-size: .8rem; }
+  table.compare thead th, table.compare td { min-width: 96px; font-size: .82rem; }
+}
