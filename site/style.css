@@ -197,3 +197,15 @@ table.compare tr.group th { position: static; padding-top: 14px; color: var(--in
 /* heatmaps: compact cells so a year of months and its total fit without scrolling */
 .heatmap td, .heatmap th { padding-inline: 5px; }
 .heatmap td.heat { min-width: 44px; }
+/* brand origin table: a total row per group */
+tr.origin-group td { font-weight: 600; color: var(--ink); background: color-mix(in srgb, var(--grid) 45%, var(--surface)); border-top: 1px solid var(--axis); }
+tr.origin-group td.up { color: var(--up); } tr.origin-group td.down { color: var(--down); }
+#originBrands td.name .country { color: var(--muted); font-size: .78rem; }
+@media (max-width: 520px) {
+  #originBrands th:nth-child(4), #originBrands td:nth-child(4) { display: none; }   /* share of group: larger screens only */
+  #originBrands th, #originBrands td { padding-inline: 5px; }
+  #originBrands th { white-space: normal; vertical-align: bottom; }
+  #originBrands td:first-child { white-space: normal; }
+  #originBrands td.name { display: table-cell; }
+  #originBrands td.name .country { display: block; }
+}

@@ -1324,16 +1324,31 @@
     });
     basisNote(box, months, prevOk);
 
-    // brands in each group (for transparency)
+    // brands in each group, as a table: a total row per group, then its brands, biggest first
     var list = document.getElementById('originBrands');
     list.textContent = '';
-    ORIGIN_GROUPS.forEach(function (g) {
+    function pct(v) { return v > 0 && v < 0.01 ? '<0.01%' : v.toFixed(v < 1 ? 2 : 1) + '%'; }
+    function change(now, was) { return pctCell(prevOk && was ? (100 * (now - was) / was).toFixed(2) : ''); }
+    var rows = [];
+    ORIGIN_GROUPS.forEach(function (g, i) {
       var ids = sortedIds(range).filter(function (id) { return originGroup(id) === g[0]; });
       if (!ids.length) return;
-      list.appendChild(add(el('p', {}), el('b', {}, g[1] + ': '), document.createTextNode(ids.slice(0, 15).map(function (id) {
-        return brandLabel(id) + ' ' + (100 * range[id] / ct).toFixed(1) + '%';
-      }).join(' · ') + (ids.length > 15 ? L(' · and ', ' · และอีก ') + (ids.length - 15) + L(' more brands', ' ยี่ห้อ') : ''))));
+      var gu = cur[g[0]], dot = el('i', { class: 'dot' });
+      dot.style.background = seriesColor(i);
+      var head = add(el('tr', { class: 'origin-group' }), add(el('td'), dot, document.createTextNode(g[1] + ' · ' + ids.length + L(' brands', ' ยี่ห้อ'))),
+        el('td', { class: 'n' }, fmt(gu)), el('td', { class: 'n' }, pct(ct ? 100 * gu / ct : 0)), el('td', { class: 'n' }, '100%'), change(gu, was[g[0]]));
+      head.style.boxShadow = 'inset 3px 0 0 ' + seriesColor(i);
+      rows.push(head);
+      ids.forEach(function (id) {
+        // the country only where the group name does not already say it (Europe, Other)
+        var where = g[0] === 'EU' || g[0] === 'OT' ? el('span', { class: 'country' }, countryName(D.brandCountry[id])) : null;
+        rows.push(add(el('tr'), add(el('td', { class: 'name' }), link(hrefFor('b', id), brandLabel(id)), where),
+          el('td', { class: 'n' }, fmt(range[id])), el('td', { class: 'n' }, pct(100 * range[id] / ct)), el('td', { class: 'n' }, pct(gu ? 100 * range[id] / gu : 0)),
+          change(range[id], prev[id])));
+      });
     });
+    list.appendChild(table([[L('Brand', 'ยี่ห้อ')], [L('Units', 'คัน'), 1], [L('Market share', 'ส่วนแบ่งตลาด'), 1],
+      [L('Share of group', 'สัดส่วนในกลุ่ม'), 1], [priorText(months, 'short'), 1]], rows));
 
     // by region (100% bars), always all regions
     loadRegionGroups().then(function (groups) {
