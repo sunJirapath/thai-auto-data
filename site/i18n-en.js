@@ -1,5 +1,7 @@
 /* English text for the site, keyed by the Thai original. Missing keys fall back to Thai. */
 window.EN = {
+"แสดงทุกภูมิภาคเทียบกัน หน้านี้จึงไม่มีตัวกรองพื้นที่": "Every region is shown side by side, so this page has no area filter",
+"ทุกปีที่มีข้อมูล เดือนต่อเดือน หน้านี้จึงไม่มีตัวกรองช่วงเวลา": "Every year with data, month by month, so this page has no period filter",
 "ไม่พบหน้านี้": "Page not found",
 "ลิงก์อาจเก่าหรือพิมพ์ผิด ลองดูจากหน้าอันดับ": "The link may be old or mistyped; try the ranking page",
 "ไปหน้าอันดับ": "Go to the ranking",

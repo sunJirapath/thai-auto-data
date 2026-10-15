@@ -763,10 +763,23 @@
   function sumValues(obj) { var s = 0; Object.keys(obj).forEach(function (k) { s += obj[k]; }); return s; }
   function nameFor(kind, id) { return kind === 'b' ? brandLabel(id) : modelName(id); }
   function hrefFor(kind, id) { return (kind === 'b' ? '#/brand/' : '#/model/') + id + filterQuery(); }
+  // Which shared filters each page reads. The others are hidden on that page, so no visible control is ignored.
+  var ALL_FILTERS = { range: 1, grain: 1, cats: 1, area: 1 };
+  var PAGE_FILTERS = {
+    ranking: { range: 1, cats: 1, area: 1 },    // totals over the period: no time axis
+    prices: { range: 1, cats: 1, area: 1 },
+    launches: { range: 1, cats: 1, area: 1 },   // x axis is months since launch
+    regions: { range: 1, cats: 1 },             // always shows every region side by side
+    seasonality: { cats: 1, area: 1 },          // always every year, month by month
+    data: {}
+  };
+  function pageFilters(page) { return PAGE_FILTERS[page] || ALL_FILTERS; }
   function filterText() {
-    var ms = selectedMonths(), cats = selCats();
-    return areaLabel(M.area) + ' · ' + monthLabel(ms[0]) + ' – ' + monthLabel(ms[ms.length - 1]) + ' · ' +
-      (cats.length === 3 ? L('ร.ย.1–3') : cats.map(function (c) { return CAT_LABEL[c]; }).join(', '));
+    var f = pageFilters(D.page), ms = selectedMonths(), cats = selCats(), parts = [];
+    if (f.area) parts.push(areaLabel(M.area));
+    if (f.range) parts.push(monthLabel(ms[0]) + ' – ' + monthLabel(ms[ms.length - 1]));
+    if (f.cats) parts.push(cats.length === 3 ? L('ร.ย.1–3') : cats.map(function (c) { return CAT_LABEL[c]; }).join(', '));
+    return parts.join(' · ');
   }
 
   // text at the end of each horizontal bar
@@ -1005,7 +1018,7 @@
   }
   function syncHash() {
     var base = (location.hash || '#/').split('?')[0];
-    var want = base + (D.page === 'data' || D.page === 'seasonality' ? (LANG === 'th' ? '?lang=th' : '') : filterQuery());
+    var want = base + (D.page === 'data' ? (LANG === 'th' ? '?lang=th' : '') : filterQuery());
     if (want !== location.hash) history.replaceState(null, '', want);
   }
 
@@ -1016,7 +1029,7 @@
     ranking: function (idx) { renderRankCard(idx); renderHotCard(idx); },
     trends: function (idx) { renderHomeTrends(idx); renderShareAndBump(idx); },
     origin: function (idx) { renderOrigin(idx); },
-    regions: function (idx) { renderRegions(idx); },
+    regions: function () { renderRegions(); },
     seasonality: function () { renderSeasonality(); },
     prices: function (idx) { renderPricePage(idx); },
     launches: function (idx) { renderLaunches(idx); },
@@ -1033,7 +1046,7 @@
     var t = detail.querySelector('.page-title');
     document.title = (t ? t.textContent : L('ไม่พบหน้านี้')) + ' · thai-auto-data';
   }
-  var NEEDS_AREA = { ranking: 1, trends: 1, origin: 1, regions: 1, prices: 1, launches: 1, powertrain: 1, brand: 1, model: 1, compare: 1 };
+  var NEEDS_AREA = { ranking: 1, trends: 1, origin: 1, prices: 1, launches: 1, powertrain: 1, brand: 1, model: 1, compare: 1 };
   function renderExplorer() {
     var page = D.page, token = ++A.token;
     document.querySelectorAll('.filter-echo').forEach(function (e) { e.textContent = filterText(); });
@@ -1209,7 +1222,7 @@
 
   // ----- regions page: brand x region heatmap -----
   var RG = { mode: 'share', kind: 'b' };
-  function renderRegions(idx) {
+  function renderRegions() {
     var months = selectedMonths(), cats = selCats(), kind = RG.kind;
     Promise.all([loadRegionGroups(), loadArea('all')]).then(function (res) {
       var groups = res[0], all = res[1];
@@ -1249,7 +1262,7 @@
   // ----- seasonality page: year x month heatmap and one line per year -----
   var SE = { mode: 'units' };
   function renderSeasonality() {
-    var isos = null, cats = ['RY1', 'RY2', 'RY3'], years = {}, all = okPeriods();   // always the whole market
+    var isos = areaProvinces(M.area), cats = selCats(), years = {}, all = okPeriods();   // every year; types and area follow the filters
     all.forEach(function (p) {
       var y = p.slice(0, 4), v = 0;
       cats.forEach(function (c) { v += unitsFor(p, isos, c); });
@@ -2188,7 +2201,13 @@
     detail.hidden = !m;
     if (!m) detail.textContent = '';
     document.querySelectorAll('[data-page~="' + page + '"]').forEach(function (sec) { sec.hidden = false; });
-    document.getElementById('filterbar').hidden = page === 'data' || page === 'seasonality';
+    var pf = pageFilters(page);
+    document.getElementById('filterbar').hidden = !Object.keys(pf).length;
+    document.getElementById('fRange').hidden = !pf.range;
+    document.getElementById('fCustom').hidden = !pf.range || M.range !== 'custom';
+    document.getElementById('fGrain').hidden = !pf.grain;
+    document.getElementById('fCats').hidden = !pf.cats;
+    document.getElementById('fArea').parentNode.hidden = !pf.area;
     setNav(page === 'brand' || page === 'model' ? '' : page);
     var title = document.querySelector('.tabs a[data-nav="' + page + '"]');
     if (!m) document.title = (page === 'overview' ? L('ตลาดรถยนต์ไทย') : title ? title.textContent : L('ตลาดรถยนต์ไทย')) + ' · thai-auto-data';
