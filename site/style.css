@@ -190,3 +190,4 @@ table.compare tr.group th { position: static; padding-top: 14px; color: var(--in
 }
 /* filters a page does not use are hidden (the .seg/.chips display rules would otherwise override [hidden]) */
 .filters [hidden] { display: none !important; }
+.seg[hidden] { display: none !important; }

@@ -995,6 +995,7 @@
     seg('hotMode', [['yoy', L('vs earlier period', 'เทียบช่วงก่อนหน้า')], ['mom3', L('Last 3 months', '3 เดือนล่าสุด')]], function () { return A.hot; }, function (v) { A.hot = v; });
     seg('regionMode', [['share', L('Share', 'ส่วนแบ่ง')], ['index', L('vs national average', 'เทียบค่าเฉลี่ยประเทศ')]], function () { return RG.mode; }, function (v) { RG.mode = v; });
     seg('regionKind', [['b', L('Brand', 'ยี่ห้อ')], ['m', L('Model', 'รุ่น')]], function () { return RG.kind; }, function (v) { RG.kind = v; });
+    seg('regionShade', [['col', L('Shade by region', 'ไล่สีตามภาค')], ['row', L('Shade by row', 'ไล่สีตามแถว')]], function () { return RG.shade; }, function (v) { RG.shade = v; });
     seg('seasonMode', [['units', L('Units', 'จำนวนคัน')], ['index', L('vs year average', 'เทียบค่าเฉลี่ยของปี')]], function () { return SE.mode; }, function (v) { SE.mode = v; });
     seg('launchMode', [['cum', L('Cumulative', 'สะสม')], ['month', L('Monthly', 'รายเดือน')]], function () { return LA.mode; }, function (v) { LA.mode = v; });
     seg('geoMetric', [['units', L('Units', 'จำนวนคัน')], ['percap', L('Per 1,000 people', 'ต่อประชากร 1,000 คน')]], function () { return M.metric; }, function (v) { M.metric = v; });
@@ -1107,6 +1108,15 @@
     return td;
   }
   function areaRows(kind, idx, months, cats) { return sumById(idx, kind, months, cats); }
+  // A colour mixed into the card background at pct %, with the text colour that reads best on it.
+  function tint(hex, pct) {
+    function rgb(h) { h = h.replace('#', ''); if (h.length === 3) h = h.replace(/./g, '$&$&'); return [0, 2, 4].map(function (i) { return parseInt(h.substr(i, 2), 16); }); }
+    var a = rgb(hex), b = rgb(css('--surface')), f = pct / 100;
+    var c = a.map(function (v, i) { return Math.round(v * f + b[i] * (1 - f)); });
+    var lin = c.map(function (v) { v /= 255; return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); });
+    var lum = 0.2126 * lin[0] + 0.7152 * lin[1] + 0.0722 * lin[2];
+    return { bg: 'rgb(' + c.join(',') + ')', fg: lum > 0.179 ? '#0b0b0b' : '#ffffff' };   // the higher-contrast of black and white
+  }
   // the seven region groups used on the regions/origin pages: Bangkok, the rest of the central region, and five regions
   function loadRegionGroups() {
     var keys = ['TH-10', 'region-central', 'region-east', 'region-northeast', 'region-north', 'region-west', 'region-south'];
@@ -1243,7 +1253,7 @@
   }
 
   // ----- regions page: brand x region heatmap -----
-  var RG = { mode: 'share', kind: 'b' };
+  var RG = { mode: 'share', kind: 'b', shade: 'col' };
   function renderRegions() {
     var months = selectedMonths(), cats = selCats(), kind = RG.kind;
     Promise.all([loadRegionGroups(), loadArea('all')]).then(function (res) {
@@ -1253,20 +1263,28 @@
       var regTot = {};
       REGION_GROUPS.forEach(function (r) { regTot[r[0]] = sumValues(bt[r[0]]); });
       var top = sortedIds(nat).slice(0, 20);
+      // each region column has its own colour; in share mode the shade compares within the column (who leads the region)
+      // or within the row (where each brand or model is strongest)
+      var share = function (r, id) { return regTot[r] ? 100 * (gt[r][id] || 0) / regTot[r] : 0; };
+      var colMax = {};
+      REGION_GROUPS.forEach(function (r) { colMax[r[0]] = Math.max.apply(null, top.map(function (id) { return share(r[0], id); })); });
+      document.getElementById('regionShade').hidden = RG.mode !== 'share';
       var head = [[kind === 'b' ? L('Brand', 'ยี่ห้อ') : L('Model', 'รุ่น')], [L('Whole country', 'ทั้งประเทศ'), 1]].concat(REGION_GROUPS.map(function (r) { return [r[1].replace(L(' (excl. Bangkok)', ' (ไม่รวมกรุงเทพฯ)'), '*'), 1]; }));
       var trs = top.map(function (id) {
         var natShare = 100 * nat[id] / natTot, tr = el('tr');
         var rowMax = Math.max.apply(null, REGION_GROUPS.map(function (r) { return regTot[r[0]] ? (gt[r[0]][id] || 0) / regTot[r[0]] : 0; })) * 100;
         add(tr, add(el('td', { class: 'name' }), link(hrefFor(kind, id), nameFor(kind, id))), el('td', { class: 'n' }, natShare.toFixed(1) + '%'));
-        REGION_GROUPS.forEach(function (r) {
-          var share = regTot[r[0]] ? 100 * (gt[r[0]][id] || 0) / regTot[r[0]] : 0;
-          var td;
-          if (RG.mode === 'share') td = heatCell(share.toFixed(1) + '%', rowMax ? 8 + 70 * share / rowMax : 0);   // relative to the brand's best region
-          else {
-            var ix = natShare ? 100 * share / natShare : 0, dev = ix - 100;
+        REGION_GROUPS.forEach(function (r, j) {
+          var v = share(r[0], id), td;
+          if (RG.mode === 'share') {
+            var max = RG.shade === 'col' ? colMax[r[0]] : rowMax, c = tint(seriesColor(j), max && v ? 10 + 70 * Math.sqrt(v / max) : 0);   // square root: one dominant brand would leave the rest pale
+            td = el('td', { class: 'n heat' }, v.toFixed(1) + '%');
+            td.style.background = c.bg; td.style.color = c.fg;
+          } else {
+            var ix = natShare ? 100 * v / natShare : 0, dev = ix - 100;
             td = heatCell(Math.round(ix) + '', Math.min(80, Math.abs(dev) * 0.9), dev < 0);
           }
-          td.title = nameFor(kind, id) + L(' in ', ' ใน') + r[1] + ': ' + fmt(gt[r[0]][id] || 0) + L(' units · ', ' คัน · ') + share.toFixed(2) + '%';
+          td.title = nameFor(kind, id) + L(' in ', ' ใน') + r[1] + ': ' + fmt(gt[r[0]][id] || 0) + L(' units · ', ' คัน · ') + v.toFixed(2) + '%';
           tr.appendChild(td);
         });
         return tr;
@@ -1274,9 +1292,15 @@
       var box = document.getElementById('regionHeat');
       box.textContent = '';
       var t = table(head, trs); t.classList.add('heatmap');
+      Array.prototype.slice.call(t.querySelectorAll('thead th'), 2).forEach(function (th, j) { th.style.boxShadow = 'inset 0 3px 0 ' + seriesColor(j); });
       box.appendChild(t);
+      var what = kind === 'b' ? L('brand', 'ยี่ห้อ') : L('model', 'รุ่น');
       document.getElementById('regionHeatNote').textContent = RG.mode === 'share'
-        ? L('Each value is the share of the ', 'ตัวเลขคือส่วนแบ่งของแต่ละ') + (kind === 'b' ? L('brand', 'ยี่ห้อ') : L('model', 'รุ่น')) + L(' in that region · colours compare within a row: the darkest cell is the region where the ', 'ในภาคนั้น · สีเทียบภายในแถว: สีเข้มสุดคือภาคที่') + (kind === 'b' ? L('brand', 'ยี่ห้อ') : L('model', 'รุ่น')) + L(' has its highest share · * Central excludes Bangkok · sorted by national units', 'นั้นมีส่วนแบ่งสูงสุด · * ภาคกลางไม่รวมกรุงเทพฯ · เรียงตามยอดทั้งประเทศ')
+        ? L('Each value is the share of the ', 'ตัวเลขคือส่วนแบ่งของแต่ละ') + what + L(' in that region; each region has its own colour · ', 'ในภาคนั้น แต่ละภาคมีสีของตัวเอง · ') +
+          (RG.shade === 'col'
+            ? L('shades compare within a column: the darkest cell is the ', 'สีเทียบภายในคอลัมน์: สีเข้มสุดคือ') + what + L(' with the highest share in that region', 'ที่มีส่วนแบ่งสูงสุดในภาคนั้น')
+            : L('shades compare within a row: the darkest cell is the region where the ', 'สีเทียบภายในแถว: สีเข้มสุดคือภาคที่') + what + L(' has its highest share', 'นั้นมีส่วนแบ่งสูงสุด')) +
+          L(' · * Central excludes Bangkok · sorted by national units', ' · * ภาคกลางไม่รวมกรุงเทพฯ · เรียงตามยอดทั้งประเทศ')
         : L('Index = share in the region ÷ national share × 100 · above 100 (blue) = stronger than the national average · below 100 (red) = weaker · * Central excludes Bangkok', 'ดัชนี = ส่วนแบ่งในภาค ÷ ส่วนแบ่งทั้งประเทศ × 100 · มากกว่า 100 (สีน้ำเงิน) = แข็งกว่าค่าเฉลี่ยประเทศ · น้อยกว่า 100 (สีแดง) = อ่อนกว่า · * ภาคกลางไม่รวมกรุงเทพฯ');
     });
   }
