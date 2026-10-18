@@ -155,7 +155,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-09,RY1,KEYTON,M70L EV,1,keyton,,dlt-web-827cefc3
 2024-09,RY1,KIA,CARNIVAL,13,kia,kia-carnival,dlt-web-827cefc3
 2024-09,RY1,KIA,EV5,155,kia,kia-ev5,dlt-web-827cefc3
-2024-09,RY1,KIA,EV9 GT LINE AWD,11,kia,,dlt-web-827cefc3
+2024-09,RY1,KIA,EV9 GT LINE AWD,11,kia,kia-ev9,dlt-web-827cefc3
 2024-09,RY1,KIA,SORENTO,16,kia,kia-sorento,dlt-web-827cefc3
 2024-09,RY1,KYC,V5EV,3,kyc,,dlt-web-827cefc3
 2024-09,RY1,LAMBORGHINI,HURACAN EVO RWD,1,lamborghini,,dlt-web-827cefc3

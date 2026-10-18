@@ -188,7 +188,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-07,RY1,JUNEYAO,JY AIR Plus,1,juneyao,,dlt-web-827cefc3
 2025-07,RY1,KIA,CARNIVAL,17,kia,kia-carnival,dlt-web-827cefc3
 2025-07,RY1,KIA,EV5,62,kia,kia-ev5,dlt-web-827cefc3
-2025-07,RY1,KIA,EV9 GT LINE AWD,2,kia,,dlt-web-827cefc3
+2025-07,RY1,KIA,EV9 GT LINE AWD,2,kia,kia-ev9,dlt-web-827cefc3
 2025-07,RY1,KIA,SORENTO,16,kia,kia-sorento,dlt-web-827cefc3
 2025-07,RY1,LAMBORGHINI,HURACAN EVO RWD,1,lamborghini,,dlt-web-827cefc3
 2025-07,RY1,LAMBORGHINI,HURACAN TECNICA,1,lamborghini,,dlt-web-827cefc3

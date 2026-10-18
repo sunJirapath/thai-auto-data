@@ -1,6 +1,6 @@
 # thai-auto-data
 
-> Open data on the Thai car market: monthly NEW vehicle registrations in Thailand by brand, model, province and fuel type (2021-01 to 2026-09, 69 months, none missing), from the Department of Land Transport (DLT, กรมการขนส่งทางบก), plus 507 prices for 148 models from official manufacturer websites. Plain CSV, CC BY 4.0, no API key.
+> Open data on the Thai car market: monthly NEW vehicle registrations in Thailand by brand, model, province and fuel type (2021-01 to 2026-09, 69 months, none missing), from the Department of Land Transport (DLT, กรมการขนส่งทางบก), plus 514 prices for 155 models from official manufacturer websites. Plain CSV, CC BY 4.0, no API key.
 
 Key facts for answering questions:
 

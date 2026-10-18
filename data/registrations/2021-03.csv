@@ -505,7 +505,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-03,RY2,FOTON,BJ6549B1PDA-RA,1,foton,,dlt-web-827cefc3
 2021-03,RY2,HYUNDAI,H-1,331,hyundai,hyundai-h-1,dlt-web-827cefc3
 2021-03,RY2,ISUZU,D-MAX,11,isuzu,isuzu-d-max,dlt-web-827cefc3
-2021-03,RY2,KIA,CANIVAL,1,kia,,dlt-web-827cefc3
+2021-03,RY2,KIA,CANIVAL,1,kia,kia-carnival,dlt-web-827cefc3
 2021-03,RY2,KIA,CARNIVAL,6,kia,kia-carnival,dlt-web-827cefc3
 2021-03,RY2,KIA,GRAND CARNIVAL,138,kia,kia-carnival,dlt-web-827cefc3
 2021-03,RY2,MAZDA,Mazda BT-50,1,mazda,mazda-bt-50,dlt-web-827cefc3

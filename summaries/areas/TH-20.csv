@@ -8774,6 +8774,7 @@ period,category,kind,id,units
 2024-11,RY1,m,isuzu-d-max,225
 2024-11,RY1,m,isuzu-mu-x,61
 2024-11,RY1,m,kia-ev5,1
+2024-11,RY1,m,kia-ev9,1
 2024-11,RY1,m,lexus-lm,1
 2024-11,RY1,m,lexus-nx,1
 2024-11,RY1,m,mazda-bt-50,1
@@ -10582,6 +10583,7 @@ period,category,kind,id,units
 2025-07,RY1,m,isuzu-mu-x,56
 2025-07,RY1,m,jaecoo-6,1
 2025-07,RY1,m,kia-carnival,1
+2025-07,RY1,m,kia-ev9,1
 2025-07,RY1,m,lexus-lx,1
 2025-07,RY1,m,mazda-cx-3,2
 2025-07,RY1,m,mazda-cx-5,1
@@ -10828,6 +10830,7 @@ period,category,kind,id,units
 2025-08,RY1,m,jaecoo-6,1
 2025-08,RY1,m,jaecoo-7,1
 2025-08,RY1,m,kia-ev5,2
+2025-08,RY1,m,kia-ev9,1
 2025-08,RY1,m,lexus-lm,1
 2025-08,RY1,m,mazda-cx-3,2
 2025-08,RY1,m,mazda-cx-30,4

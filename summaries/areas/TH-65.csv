@@ -6227,6 +6227,7 @@ period,category,kind,id,units
 2024-10,RY1,m,isuzu-d-max,14
 2024-10,RY1,m,isuzu-mu-x,15
 2024-10,RY1,m,kia-carnival,1
+2024-10,RY1,m,kia-ev9,1
 2024-10,RY1,m,mazda-cx-3,1
 2024-10,RY1,m,mazda-cx-30,1
 2024-10,RY1,m,mazda-cx-5,1
@@ -8747,6 +8748,7 @@ period,category,kind,id,units
 2026-02,RY1,m,jaecoo-7,1
 2026-02,RY1,m,kia-carnival,3
 2026-02,RY1,m,kia-ev5,1
+2026-02,RY1,m,kia-ev9,1
 2026-02,RY1,m,leapmotor-b10,2
 2026-02,RY1,m,mazda-cx-3,1
 2026-02,RY1,m,mazda-mazda2,1

@@ -169,7 +169,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-07,RY1,JEEP,WRANGLER RUBICON 4 DOOR,1,jeep,,dlt-web-827cefc3
 2024-07,RY1,JIAYUAN,JY7252-ZQR,1,jiayuan,,dlt-web-827cefc3
 2024-07,RY1,KIA,CARNIVAL,12,kia,kia-carnival,dlt-web-827cefc3
-2024-07,RY1,KIA,EV9 GT LINE AWD,10,kia,,dlt-web-827cefc3
+2024-07,RY1,KIA,EV9 GT LINE AWD,10,kia,kia-ev9,dlt-web-827cefc3
 2024-07,RY1,KIA,SORENTO,18,kia,kia-sorento,dlt-web-827cefc3
 2024-07,RY1,LAMBORGHINI,HURACAN EVO RWD,1,lamborghini,,dlt-web-827cefc3
 2024-07,RY1,LAMBORGHINI,HURACAN STO,1,lamborghini,,dlt-web-827cefc3

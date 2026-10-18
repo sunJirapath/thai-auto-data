@@ -168,7 +168,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY1,JEEP,RENEGADE TRAILHAWK 1.3 PHEV,1,jeep,,dlt-web-827cefc3
 2024-08,RY1,KIA,CARNIVAL,11,kia,kia-carnival,dlt-web-827cefc3
 2024-08,RY1,KIA,EV5,29,kia,kia-ev5,dlt-web-827cefc3
-2024-08,RY1,KIA,EV9 GT LINE AWD,6,kia,,dlt-web-827cefc3
+2024-08,RY1,KIA,EV9 GT LINE AWD,6,kia,kia-ev9,dlt-web-827cefc3
 2024-08,RY1,KIA,SORENTO,31,kia,kia-sorento,dlt-web-827cefc3
 2024-08,RY1,LAMBORGHINI,HURACAN EVO RWD,1,lamborghini,,dlt-web-827cefc3
 2024-08,RY1,LAMBORGHINI,HURACAN TECNICA,2,lamborghini,,dlt-web-827cefc3

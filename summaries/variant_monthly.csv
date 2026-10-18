@@ -742,6 +742,7 @@ period,model_id,category,variant,units
 2021-03,isuzu-d-max,RY2,D-MAX,11
 2021-03,isuzu-d-max,RY3,D-MAX,8641
 2021-03,isuzu-mu-x,RY1,MU-X,1939
+2021-03,kia-carnival,RY2,CANIVAL,1
 2021-03,kia-carnival,RY2,CARNIVAL,6
 2021-03,kia-carnival,RY2,GRAND CARNIVAL,138
 2021-03,lexus-es,RY1,ES300H,4
@@ -1100,6 +1101,7 @@ period,model_id,category,variant,units
 2021-04,isuzu-d-max,RY2,D-MAX,21
 2021-04,isuzu-d-max,RY3,D-MAX,6664
 2021-04,isuzu-mu-x,RY1,MU-X,1468
+2021-04,kia-carnival,RY2,CANIVAL,1
 2021-04,kia-carnival,RY2,CARNIVAL,28
 2021-04,kia-carnival,RY2,GRAND CARNIVAL,99
 2021-04,lexus-es,RY1,ES300H,4
@@ -1415,6 +1417,7 @@ period,model_id,category,variant,units
 2021-05,isuzu-d-max,RY2,D-MAX,178
 2021-05,isuzu-d-max,RY3,D-MAX,7207
 2021-05,isuzu-mu-x,RY1,MU-X,1863
+2021-05,kia-carnival,RY2,CANIVAL,3
 2021-05,kia-carnival,RY2,CARNIVAL,91
 2021-05,kia-carnival,RY2,GRAND CARNIVAL,74
 2021-05,lexus-es,RY1,ES300H,7
@@ -1746,6 +1749,7 @@ period,model_id,category,variant,units
 2021-06,isuzu-d-max,RY2,D-MAX,31
 2021-06,isuzu-d-max,RY3,D-MAX,7081
 2021-06,isuzu-mu-x,RY1,MU-X,1479
+2021-06,kia-carnival,RY2,CANIVAL,1
 2021-06,kia-carnival,RY2,CARNIVAL,93
 2021-06,kia-carnival,RY2,GRAND CARNIVAL,69
 2021-06,lexus-es,RY1,ES300H,5
@@ -2051,6 +2055,7 @@ period,model_id,category,variant,units
 2021-07,isuzu-d-max,RY2,D-MAX,7
 2021-07,isuzu-d-max,RY3,D-MAX,5349
 2021-07,isuzu-mu-x,RY1,MU-X,992
+2021-07,kia-carnival,RY2,CANIVAL,1
 2021-07,kia-carnival,RY2,CARNIVAL,29
 2021-07,kia-carnival,RY2,GRAND CARNIVAL,27
 2021-07,lexus-es,RY1,ES300H,4
@@ -13787,6 +13792,7 @@ period,model_id,category,variant,units
 2024-05,isuzu-mu-x,RY1,MU-X,1123
 2024-05,kia-carnival,RY2,CARNIVAL,82
 2024-05,kia-carnival,RY2,GRAND CARNIVAL,1
+2024-05,kia-ev9,RY1,EV9 GT-LINE,1
 2024-05,lexus-es,RY1,ES300H,3
 2024-05,lexus-is,RY1,IS300H,6
 2024-05,lexus-lm,RY1,LM300H,3
@@ -14546,6 +14552,7 @@ period,model_id,category,variant,units
 2024-07,kia-carnival,RY1,CARNIVAL,12
 2024-07,kia-carnival,RY2,CARNIVAL,141
 2024-07,kia-carnival,RY2,GRAND CARNIVAL,2
+2024-07,kia-ev9,RY1,EV9 GT LINE AWD,10
 2024-07,kia-sorento,RY1,SORENTO,18
 2024-07,lexus-es,RY1,ES300H,1
 2024-07,lexus-is,RY1,IS300H,2
@@ -14930,6 +14937,7 @@ period,model_id,category,variant,units
 2024-08,kia-carnival,RY1,CARNIVAL,11
 2024-08,kia-carnival,RY2,CARNIVAL,96
 2024-08,kia-ev5,RY1,EV5,29
+2024-08,kia-ev9,RY1,EV9 GT LINE AWD,6
 2024-08,kia-sorento,RY1,SORENTO,31
 2024-08,lexus-es,RY1,ES300H,6
 2024-08,lexus-lbx,RY1,LBX,2
@@ -15317,6 +15325,7 @@ period,model_id,category,variant,units
 2024-09,kia-carnival,RY2,CARNIVAL,59
 2024-09,kia-carnival,RY2,GRAND CARNIVAL,1
 2024-09,kia-ev5,RY1,EV5,155
+2024-09,kia-ev9,RY1,EV9 GT LINE AWD,11
 2024-09,kia-sorento,RY1,SORENTO,16
 2024-09,lexus-es,RY1,ES300H,5
 2024-09,lexus-is,RY1,IS300H,1
@@ -15706,6 +15715,8 @@ period,model_id,category,variant,units
 2024-10,kia-carnival,RY1,CARNIVAL,12
 2024-10,kia-carnival,RY2,CARNIVAL,37
 2024-10,kia-ev5,RY1,EV5,98
+2024-10,kia-ev9,RY1,EV9 GT LINE AWD,12
+2024-10,kia-ev9,RY1,EV9 GT-LINE,1
 2024-10,kia-sorento,RY1,SORENTO,11
 2024-10,kia-sorento,RY2,SORENTO,1
 2024-10,lexus-es,RY1,ES300H,5
@@ -16108,6 +16119,7 @@ period,model_id,category,variant,units
 2024-11,kia-carnival,RY2,CARNIVAL,42
 2024-11,kia-carnival,RY2,GRAND CARNIVAL,3
 2024-11,kia-ev5,RY1,EV5,84
+2024-11,kia-ev9,RY1,EV9 GT LINE AWD,9
 2024-11,kia-sorento,RY1,SORENTO,6
 2024-11,lexus-es,RY1,ES300H,2
 2024-11,lexus-is,RY1,IS300H,2
@@ -16514,6 +16526,7 @@ period,model_id,category,variant,units
 2024-12,kia-carnival,RY1,CARNIVAL,12
 2024-12,kia-carnival,RY2,CARNIVAL,34
 2024-12,kia-ev5,RY1,EV5,50
+2024-12,kia-ev9,RY1,EV9 GT LINE AWD,6
 2024-12,kia-sorento,RY1,SORENTO,5
 2024-12,lexus-es,RY1,ES300H,2
 2024-12,lexus-is,RY1,IS300H,1
@@ -16894,6 +16907,7 @@ period,model_id,category,variant,units
 2025-01,kia-carnival,RY1,CARNIVAL,18
 2025-01,kia-carnival,RY2,CARNIVAL,76
 2025-01,kia-ev5,RY1,EV5,79
+2025-01,kia-ev9,RY1,EV9 GT LINE AWD,4
 2025-01,kia-sorento,RY1,SORENTO,15
 2025-01,leapmotor-c10,RY1,C10 EV,2
 2025-01,lexus-es,RY1,ES300H,1
@@ -17311,6 +17325,7 @@ period,model_id,category,variant,units
 2025-02,kia-carnival,RY2,CARNIVAL,89
 2025-02,kia-carnival,RY2,GRAND CARNIVAL,1
 2025-02,kia-ev5,RY1,EV5,63
+2025-02,kia-ev9,RY1,EV9 GT LINE AWD,2
 2025-02,kia-sorento,RY1,SORENTO,8
 2025-02,leapmotor-c10,RY1,C10 EV,11
 2025-02,lexus-es,RY1,ES300H,5
@@ -17734,6 +17749,8 @@ period,model_id,category,variant,units
 2025-03,kia-carnival,RY2,CARNIVAL,99
 2025-03,kia-carnival,RY2,GRAND CARNIVAL,1
 2025-03,kia-ev5,RY1,EV5,71
+2025-03,kia-ev9,RY1,EV9 EARTH LONG RANGE,1
+2025-03,kia-ev9,RY1,EV9 GT LINE AWD,3
 2025-03,kia-sorento,RY1,SORENTO,9
 2025-03,leapmotor-c10,RY1,C10 EV,11
 2025-03,lexus-es,RY1,ES300H,1
@@ -18151,6 +18168,7 @@ period,model_id,category,variant,units
 2025-04,kia-carnival,RY1,CARNIVAL,12
 2025-04,kia-carnival,RY2,CARNIVAL,61
 2025-04,kia-ev5,RY1,EV5,53
+2025-04,kia-ev9,RY1,EV9 GT LINE AWD,1
 2025-04,kia-sorento,RY1,SORENTO,14
 2025-04,leapmotor-c10,RY1,C10 EV,8
 2025-04,lexus-es,RY1,ES300H,2
@@ -18980,6 +18998,7 @@ period,model_id,category,variant,units
 2025-06,kia-carnival,RY1,CARNIVAL,8
 2025-06,kia-carnival,RY2,CARNIVAL,75
 2025-06,kia-ev5,RY1,EV5,69
+2025-06,kia-ev9,RY1,EV9 GT LINE AWD,1
 2025-06,kia-sorento,RY1,SORENTO,13
 2025-06,leapmotor-c10,RY1,C10 EV,8
 2025-06,lexus-is,RY1,IS300H,2
@@ -19402,6 +19421,7 @@ period,model_id,category,variant,units
 2025-07,kia-carnival,RY1,CARNIVAL,17
 2025-07,kia-carnival,RY2,CARNIVAL,80
 2025-07,kia-ev5,RY1,EV5,62
+2025-07,kia-ev9,RY1,EV9 GT LINE AWD,2
 2025-07,kia-sorento,RY1,SORENTO,16
 2025-07,leapmotor-c10,RY1,C10 EV,7
 2025-07,lexus-es,RY1,ES300H,2
@@ -19853,6 +19873,7 @@ period,model_id,category,variant,units
 2025-08,kia-carnival,RY1,CARNIVAL,19
 2025-08,kia-carnival,RY2,CARNIVAL,37
 2025-08,kia-ev5,RY1,EV5,49
+2025-08,kia-ev9,RY1,EV9 GT LINE AWD,4
 2025-08,kia-sorento,RY1,SORENTO,12
 2025-08,leapmotor-c10,RY1,C10 EV,6
 2025-08,lexus-es,RY1,ES300H,4
@@ -20290,6 +20311,7 @@ period,model_id,category,variant,units
 2025-09,kia-carnival,RY1,CARNIVAL,23
 2025-09,kia-carnival,RY2,CARNIVAL,67
 2025-09,kia-ev5,RY1,EV5,48
+2025-09,kia-ev9,RY1,EV9 GT LINE AWD,3
 2025-09,kia-sorento,RY1,SORENTO,5
 2025-09,leapmotor-c10,RY1,C10 EV,6
 2025-09,lexus-es,RY1,ES300H,3
@@ -20734,6 +20756,7 @@ period,model_id,category,variant,units
 2025-10,kia-carnival,RY1,CARNIVAL,19
 2025-10,kia-carnival,RY2,CARNIVAL,80
 2025-10,kia-ev5,RY1,EV5,45
+2025-10,kia-ev9,RY1,EV9 GT LINE AWD,3
 2025-10,kia-sorento,RY1,SORENTO,10
 2025-10,leapmotor-c10,RY1,C10 EV,12
 2025-10,lexus-es,RY1,ES300H,1
@@ -21178,6 +21201,7 @@ period,model_id,category,variant,units
 2025-11,kia-carnival,RY1,CARNIVAL HEV 7P LUXURY,9
 2025-11,kia-carnival,RY2,CARNIVAL,74
 2025-11,kia-ev5,RY1,EV5,31
+2025-11,kia-ev9,RY1,EV9 GT LINE AWD,4
 2025-11,kia-sorento,RY1,SORENTO,5
 2025-11,leapmotor-b10,RY1,B10 DESIGN BEV,10
 2025-11,leapmotor-c10,RY1,C10 EV,11
@@ -21623,6 +21647,7 @@ period,model_id,category,variant,units
 2025-12,kia-carnival,RY2,CARNIVAL,52
 2025-12,kia-carnival,RY2,GRAND CARNIVAL,1
 2025-12,kia-ev5,RY1,EV5,29
+2025-12,kia-ev9,RY1,EV9 GT LINE AWD,2
 2025-12,kia-sorento,RY1,SORENTO,1
 2025-12,leapmotor-b10,RY1,B10 DESIGN BEV,15
 2025-12,leapmotor-b10,RY1,B10 LIFE BEV,1
@@ -22499,6 +22524,7 @@ period,model_id,category,variant,units
 2026-02,kia-carnival,RY1,CARNIVAL HEV 7P PREMIUM,3
 2026-02,kia-carnival,RY2,CARNIVAL,63
 2026-02,kia-ev5,RY1,EV5,14
+2026-02,kia-ev9,RY1,EV9 GT LINE AWD,3
 2026-02,kia-sorento,RY1,SORENTO,2
 2026-02,leapmotor-b10,RY1,B10 DESIGN BEV,45
 2026-02,leapmotor-c10,RY1,C10 EV,15
@@ -22956,6 +22982,7 @@ period,model_id,category,variant,units
 2026-03,kia-carnival,RY1,CARNIVAL HEV 7P PREMIUM,1
 2026-03,kia-carnival,RY2,CARNIVAL,57
 2026-03,kia-ev5,RY1,EV5,21
+2026-03,kia-ev9,RY1,EV9 GT LINE AWD,1
 2026-03,kia-sorento,RY1,SORENTO,13
 2026-03,leapmotor-b10,RY1,B10 DESIGN BEV,26
 2026-03,leapmotor-b10,RY1,B10 STYLE BEV,1
@@ -23410,6 +23437,7 @@ period,model_id,category,variant,units
 2026-04,kia-carnival,RY1,CARNIVAL HEV 7P LUXURY,16
 2026-04,kia-carnival,RY2,CARNIVAL,41
 2026-04,kia-ev5,RY1,EV5,14
+2026-04,kia-ev9,RY1,EV9 GT LINE AWD,3
 2026-04,kia-sorento,RY1,SORENTO,4
 2026-04,leapmotor-b10,RY1,B10 DESIGN BEV,21
 2026-04,leapmotor-b10,RY1,B10 STYLE BEV,1
@@ -23887,6 +23915,7 @@ period,model_id,category,variant,units
 2026-05,kia-carnival,RY1,CARNIVAL HEV 7P PREMIUM,3
 2026-05,kia-carnival,RY2,CARNIVAL,45
 2026-05,kia-ev5,RY1,EV5,53
+2026-05,kia-ev9,RY1,EV9 GT LINE AWD,3
 2026-05,kia-sorento,RY1,SORENTO,5
 2026-05,leapmotor-b10,RY1,B10 DESIGN BEV,43
 2026-05,leapmotor-b10,RY1,B10 STYLE BEV,1
@@ -24349,6 +24378,7 @@ period,model_id,category,variant,units
 2026-06,kia-carnival,RY2,CARNIVAL,28
 2026-06,kia-carnival,RY2,GRAND CARNIVAL,1
 2026-06,kia-ev5,RY1,EV5,68
+2026-06,kia-ev9,RY1,EV9 GT LINE AWD,2
 2026-06,kia-sorento,RY1,SORENTO,8
 2026-06,leapmotor-b10,RY1,B10 DESIGN BEV,18
 2026-06,leapmotor-c10,RY1,C10 EV,11
@@ -24802,6 +24832,7 @@ period,model_id,category,variant,units
 2026-07,kia-carnival,RY1,CARNIVAL HEV 7P PREMIUM,3
 2026-07,kia-carnival,RY2,CARNIVAL,55
 2026-07,kia-ev5,RY1,EV5,52
+2026-07,kia-ev9,RY1,EV9 GT LINE AWD,1
 2026-07,kia-pv5,RY3,PV5 CARGO,150
 2026-07,kia-sorento,RY1,SORENTO,8
 2026-07,leapmotor-b10,RY1,B10 DESIGN BEV,21
@@ -25262,6 +25293,8 @@ period,model_id,category,variant,units
 2026-08,kia-carnival,RY1,CARNIVAL HEV 7P PREMIUM,8
 2026-08,kia-carnival,RY2,CARNIVAL,20
 2026-08,kia-ev5,RY1,EV5,29
+2026-08,kia-ev9,RY1,EV9 EARTH LONG RANGE,1
+2026-08,kia-ev9,RY1,EV9 GT LINE AWD,1
 2026-08,kia-sorento,RY1,SORENTO,24
 2026-08,leapmotor-b10,RY1,B10 DESIGN BEV,18
 2026-08,leapmotor-b10,RY1,B10 STYLE BEV,1

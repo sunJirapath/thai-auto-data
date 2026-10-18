@@ -73,7 +73,7 @@ The DLT's fuel names are kept as published and mapped to six groups in `data/fue
 
 | | |
 |---|---|
-| Sources | Each row of [`data/prices.csv`](data/prices.csv) links to the exact official page or press release it came from (currently toyota.co.th, honda.co.th, isuzu-tis.com, mitsubishi-motors.co.th, ford.co.th, nissan.co.th, mazda.co.th, suzuki.co.th, reverautomotive.com (BYD distributor), mgcars.com, gwm.co.th and mall.gwm.co.th, changan.co.th, chery-thailand.com, omodajaecoo.co.th, gacgroup.com (AION), wulingthai.com, tesla.com, hyundai.com, kia.com, store.xpeng.com and bmw.co.th), gwm.co.th, changan.co.th, chery-thailand.com, ford.co.th, mgcars.com, omodajaecoo.co.th and wulingthai.com) |
+| Sources | Each row of [`data/prices.csv`](data/prices.csv) links to the exact official page or press release it came from (currently toyota.co.th, honda.co.th, isuzu-tis.com, mitsubishi-motors.co.th, ford.co.th, nissan.co.th, mazda.co.th, suzuki.co.th, reverautomotive.com (BYD distributor), mgcars.com, gwm.co.th and mall.gwm.co.th, changan.co.th, chery-thailand.com, omodajaecoo.co.th, gacgroup.com (AION), wulingthai.com, tesla.com, hyundai.com, kia.com, store.xpeng.com, bmw.co.th, volvocars.com and avatr.co.th), gwm.co.th, changan.co.th, chery-thailand.com, ford.co.th, mgcars.com, omodajaecoo.co.th and wulingthai.com) |
 | Collected | By reading each official page (with AI agents that only read pages and return rows), then reviewed and spot-checked against the page before being added. There is no automated scraping, because no manufacturer offers a sanctioned machine-readable price list. Pages that are inconsistent with themselves (for example a "special" price higher than the regular price) are not used. |
 | `price_type` | `list` = the price shown on the official model or grade page, or announced as a new price in an official press release. `promo` = a price the source itself calls introductory or promotional, with its end date. |
 | Dates | `effective_from` / `effective_to` only when the source states them. `published_on` is the source's own date (for press releases). `observed_on` is the date we read the page. |
@@ -85,6 +85,7 @@ Notes:
 - Price history only starts from the first observation. For example, Honda's press release of 1 August 2024 gives the City e:HEV RS at 799,000 baht, and the Honda City page on 13 October 2026 shows 769,000 baht. What happened in between is not recorded.
 - Third-party price sites are not used as sources. They often disagree with each other and with the manufacturer.
 - Dealer discounts are out of scope.
+- **Models without a price** (checked 18 October 2026): still registered but no longer on the maker's site, so there is no current official price: ORA Good Cat, Mitsubishi Attrage, Toyota Vellfire, Voxy and C-HR, Haval Jolion, Deepal L07. Geely EX2, EX5 and STARRAY EM-R have only dated news prices (the importer's site gives specifications only). Volvo, AVATR and Tesla prices come from pages saved from a browser, because those sites show prices only after scripts run; Volvo and AVATR pages show one trim per model, so other trims may exist. MINI's prices are in a PDF price sheet that is not collected yet; Porsche, Riddara and Denza have no usable official price list.
 
 ## Population: กรมการปกครอง
 

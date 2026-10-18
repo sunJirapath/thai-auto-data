@@ -9588,6 +9588,7 @@ period,category,kind,id,units
 2024-12,RY1,m,jaecoo-6,5
 2024-12,RY1,m,kia-carnival,1
 2024-12,RY1,m,kia-ev5,5
+2024-12,RY1,m,kia-ev9,1
 2024-12,RY1,m,lexus-rx,1
 2024-12,RY1,m,mazda-bt-50,2
 2024-12,RY1,m,mazda-cx-3,4
@@ -14067,6 +14068,7 @@ period,category,kind,id,units
 2026-05,RY1,m,jaecoo-7,5
 2026-05,RY1,m,kia-carnival,1
 2026-05,RY1,m,kia-ev5,4
+2026-05,RY1,m,kia-ev9,1
 2026-05,RY1,m,kia-sorento,1
 2026-05,RY1,m,leapmotor-b10,4
 2026-05,RY1,m,lexus-lm,1

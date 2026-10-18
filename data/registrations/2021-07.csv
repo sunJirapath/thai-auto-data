@@ -319,7 +319,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-07,RY1,VOLVO,ไม่ระบุ,2,volvo,,dlt-web-827cefc3
 2021-07,RY2,HYUNDAI,H-1,92,hyundai,hyundai-h-1,dlt-web-827cefc3
 2021-07,RY2,ISUZU,D-MAX,7,isuzu,isuzu-d-max,dlt-web-827cefc3
-2021-07,RY2,KIA,CANIVAL,1,kia,,dlt-web-827cefc3
+2021-07,RY2,KIA,CANIVAL,1,kia,kia-carnival,dlt-web-827cefc3
 2021-07,RY2,KIA,CARNIVAL,29,kia,kia-carnival,dlt-web-827cefc3
 2021-07,RY2,KIA,GRAND CARNIVAL,27,kia,kia-carnival,dlt-web-827cefc3
 2021-07,RY2,KIA,ไม่ระบุ,2,kia,,dlt-web-827cefc3

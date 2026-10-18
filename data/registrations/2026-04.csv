@@ -181,7 +181,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-04,RY1,KIA,CARNIVAL,5,kia,kia-carnival,dlt-web-827cefc3
 2026-04,RY1,KIA,CARNIVAL HEV 7P LUXURY,16,kia,kia-carnival,dlt-web-827cefc3
 2026-04,RY1,KIA,EV5,14,kia,kia-ev5,dlt-web-827cefc3
-2026-04,RY1,KIA,EV9 GT LINE AWD,3,kia,,dlt-web-827cefc3
+2026-04,RY1,KIA,EV9 GT LINE AWD,3,kia,kia-ev9,dlt-web-827cefc3
 2026-04,RY1,KIA,SORENTO,4,kia,kia-sorento,dlt-web-827cefc3
 2026-04,RY1,KING LONG,DRACON,1,king-long,,dlt-web-827cefc3
 2026-04,RY1,LAMBORGHINI,HURACAN EVO,1,lamborghini,,dlt-web-827cefc3

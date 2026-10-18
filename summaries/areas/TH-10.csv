@@ -915,7 +915,7 @@ period,category,kind,id,units
 2021-03,RY2,f,petrol,6
 2021-03,RY2,m,hyundai-h-1,268
 2021-03,RY2,m,isuzu-d-max,5
-2021-03,RY2,m,kia-carnival,135
+2021-03,RY2,m,kia-carnival,136
 2021-03,RY2,m,mercedes-benz-sprinter,7
 2021-03,RY2,m,mercedes-benz-vito,2
 2021-03,RY2,m,mg-extender,2
@@ -1233,7 +1233,7 @@ period,category,kind,id,units
 2021-04,RY2,f,petrol,3
 2021-04,RY2,m,hyundai-h-1,163
 2021-04,RY2,m,isuzu-d-max,11
-2021-04,RY2,m,kia-carnival,120
+2021-04,RY2,m,kia-carnival,121
 2021-04,RY2,m,mercedes-benz-sprinter,3
 2021-04,RY2,m,mercedes-benz-vito,1
 2021-04,RY2,m,nissan-navara,1
@@ -1544,7 +1544,7 @@ period,category,kind,id,units
 2021-05,RY2,f,petrol,4
 2021-05,RY2,m,hyundai-h-1,165
 2021-05,RY2,m,isuzu-d-max,174
-2021-05,RY2,m,kia-carnival,152
+2021-05,RY2,m,kia-carnival,155
 2021-05,RY2,m,mercedes-benz-sprinter,3
 2021-05,RY2,m,mercedes-benz-vito,2
 2021-05,RY2,m,mitsubishi-triton,6
@@ -1865,7 +1865,7 @@ period,category,kind,id,units
 2021-06,RY2,f,petrol,1
 2021-06,RY2,m,hyundai-h-1,164
 2021-06,RY2,m,isuzu-d-max,21
-2021-06,RY2,m,kia-carnival,142
+2021-06,RY2,m,kia-carnival,143
 2021-06,RY2,m,mercedes-benz-sprinter,6
 2021-06,RY2,m,mitsubishi-triton,3
 2021-06,RY2,m,nissan-navara,1
@@ -2162,7 +2162,7 @@ period,category,kind,id,units
 2021-07,RY2,f,petrol,2
 2021-07,RY2,m,hyundai-h-1,57
 2021-07,RY2,m,isuzu-d-max,3
-2021-07,RY2,m,kia-carnival,46
+2021-07,RY2,m,kia-carnival,47
 2021-07,RY2,m,mitsubishi-triton,1
 2021-07,RY2,m,suzuki-carry,2
 2021-07,RY2,m,toyota-commuter,113
@@ -13843,6 +13843,7 @@ period,category,kind,id,units
 2024-05,RY1,m,hyundai-stargazer,117
 2024-05,RY1,m,isuzu-d-max,2822
 2024-05,RY1,m,isuzu-mu-x,479
+2024-05,RY1,m,kia-ev9,1
 2024-05,RY1,m,lexus-es,3
 2024-05,RY1,m,lexus-is,6
 2024-05,RY1,m,lexus-lm,49
@@ -14601,6 +14602,7 @@ period,category,kind,id,units
 2024-07,RY1,m,isuzu-d-max,716
 2024-07,RY1,m,isuzu-mu-x,438
 2024-07,RY1,m,kia-carnival,12
+2024-07,RY1,m,kia-ev9,9
 2024-07,RY1,m,kia-sorento,17
 2024-07,RY1,m,lexus-es,1
 2024-07,RY1,m,lexus-is,2
@@ -15005,6 +15007,7 @@ period,category,kind,id,units
 2024-08,RY1,m,isuzu-mu-x,471
 2024-08,RY1,m,kia-carnival,9
 2024-08,RY1,m,kia-ev5,26
+2024-08,RY1,m,kia-ev9,6
 2024-08,RY1,m,kia-sorento,29
 2024-08,RY1,m,lexus-es,6
 2024-08,RY1,m,lexus-lbx,2
@@ -15403,6 +15406,7 @@ period,category,kind,id,units
 2024-09,RY1,m,isuzu-mu-x,417
 2024-09,RY1,m,kia-carnival,12
 2024-09,RY1,m,kia-ev5,134
+2024-09,RY1,m,kia-ev9,10
 2024-09,RY1,m,kia-sorento,12
 2024-09,RY1,m,lexus-es,5
 2024-09,RY1,m,lexus-is,1
@@ -15818,6 +15822,7 @@ period,category,kind,id,units
 2024-10,RY1,m,isuzu-mu-x,389
 2024-10,RY1,m,kia-carnival,9
 2024-10,RY1,m,kia-ev5,85
+2024-10,RY1,m,kia-ev9,9
 2024-10,RY1,m,kia-sorento,11
 2024-10,RY1,m,lexus-es,5
 2024-10,RY1,m,lexus-is,1
@@ -16220,6 +16225,7 @@ period,category,kind,id,units
 2024-11,RY1,m,isuzu-mu-x,363
 2024-11,RY1,m,kia-carnival,8
 2024-11,RY1,m,kia-ev5,67
+2024-11,RY1,m,kia-ev9,7
 2024-11,RY1,m,kia-sorento,4
 2024-11,RY1,m,lexus-es,2
 2024-11,RY1,m,lexus-is,2
@@ -16622,6 +16628,7 @@ period,category,kind,id,units
 2024-12,RY1,m,jaecoo-6,124
 2024-12,RY1,m,kia-carnival,9
 2024-12,RY1,m,kia-ev5,38
+2024-12,RY1,m,kia-ev9,3
 2024-12,RY1,m,kia-sorento,5
 2024-12,RY1,m,lexus-es,2
 2024-12,RY1,m,lexus-is,1
@@ -17055,6 +17062,7 @@ period,category,kind,id,units
 2025-01,RY1,m,jaecoo-6,173
 2025-01,RY1,m,kia-carnival,14
 2025-01,RY1,m,kia-ev5,69
+2025-01,RY1,m,kia-ev9,4
 2025-01,RY1,m,kia-sorento,14
 2025-01,RY1,m,leapmotor-c10,2
 2025-01,RY1,m,lexus-es,1
@@ -17494,6 +17502,7 @@ period,category,kind,id,units
 2025-02,RY1,m,jaecoo-6,91
 2025-02,RY1,m,kia-carnival,8
 2025-02,RY1,m,kia-ev5,49
+2025-02,RY1,m,kia-ev9,2
 2025-02,RY1,m,kia-sorento,5
 2025-02,RY1,m,leapmotor-c10,10
 2025-02,RY1,m,lexus-es,5
@@ -17917,6 +17926,7 @@ period,category,kind,id,units
 2025-03,RY1,m,jaecoo-6,87
 2025-03,RY1,m,kia-carnival,12
 2025-03,RY1,m,kia-ev5,52
+2025-03,RY1,m,kia-ev9,3
 2025-03,RY1,m,kia-sorento,4
 2025-03,RY1,m,leapmotor-c10,11
 2025-03,RY1,m,lexus-es,1
@@ -18347,6 +18357,7 @@ period,category,kind,id,units
 2025-04,RY1,m,jaecoo-6,63
 2025-04,RY1,m,kia-carnival,11
 2025-04,RY1,m,kia-ev5,41
+2025-04,RY1,m,kia-ev9,1
 2025-04,RY1,m,kia-sorento,11
 2025-04,RY1,m,leapmotor-c10,7
 2025-04,RY1,m,lexus-es,2
@@ -20146,6 +20157,7 @@ period,category,kind,id,units
 2025-08,RY1,m,jaecoo-7,25
 2025-08,RY1,m,kia-carnival,16
 2025-08,RY1,m,kia-ev5,36
+2025-08,RY1,m,kia-ev9,3
 2025-08,RY1,m,kia-sorento,9
 2025-08,RY1,m,leapmotor-c10,5
 2025-08,RY1,m,lexus-es,4
@@ -20600,6 +20612,7 @@ period,category,kind,id,units
 2025-09,RY1,m,jaecoo-7,87
 2025-09,RY1,m,kia-carnival,21
 2025-09,RY1,m,kia-ev5,38
+2025-09,RY1,m,kia-ev9,3
 2025-09,RY1,m,kia-sorento,4
 2025-09,RY1,m,leapmotor-c10,4
 2025-09,RY1,m,lexus-es,3
@@ -21055,6 +21068,7 @@ period,category,kind,id,units
 2025-10,RY1,m,jaecoo-7,36
 2025-10,RY1,m,kia-carnival,16
 2025-10,RY1,m,kia-ev5,39
+2025-10,RY1,m,kia-ev9,3
 2025-10,RY1,m,kia-sorento,10
 2025-10,RY1,m,leapmotor-c10,9
 2025-10,RY1,m,lexus-es,1
@@ -21509,6 +21523,7 @@ period,category,kind,id,units
 2025-11,RY1,m,jaecoo-7,45
 2025-11,RY1,m,kia-carnival,21
 2025-11,RY1,m,kia-ev5,22
+2025-11,RY1,m,kia-ev9,4
 2025-11,RY1,m,kia-sorento,3
 2025-11,RY1,m,leapmotor-b10,10
 2025-11,RY1,m,leapmotor-c10,10
@@ -21967,6 +21982,7 @@ period,category,kind,id,units
 2025-12,RY1,m,jaecoo-7,60
 2025-12,RY1,m,kia-carnival,12
 2025-12,RY1,m,kia-ev5,21
+2025-12,RY1,m,kia-ev9,2
 2025-12,RY1,m,leapmotor-b10,14
 2025-12,RY1,m,leapmotor-c10,7
 2025-12,RY1,m,lexus-es,2
@@ -22878,6 +22894,7 @@ period,category,kind,id,units
 2026-02,RY1,m,jaecoo-7,64
 2026-02,RY1,m,kia-carnival,28
 2026-02,RY1,m,kia-ev5,10
+2026-02,RY1,m,kia-ev9,2
 2026-02,RY1,m,kia-sorento,1
 2026-02,RY1,m,leapmotor-b10,40
 2026-02,RY1,m,leapmotor-c10,12
@@ -23347,6 +23364,7 @@ period,category,kind,id,units
 2026-03,RY1,m,jaecoo-7,67
 2026-03,RY1,m,kia-carnival,32
 2026-03,RY1,m,kia-ev5,16
+2026-03,RY1,m,kia-ev9,1
 2026-03,RY1,m,kia-sorento,9
 2026-03,RY1,m,leapmotor-b10,23
 2026-03,RY1,m,leapmotor-c10,11
@@ -23809,6 +23827,7 @@ period,category,kind,id,units
 2026-04,RY1,m,jaecoo-7,39
 2026-04,RY1,m,kia-carnival,17
 2026-04,RY1,m,kia-ev5,8
+2026-04,RY1,m,kia-ev9,3
 2026-04,RY1,m,kia-sorento,4
 2026-04,RY1,m,leapmotor-b10,18
 2026-04,RY1,m,leapmotor-c10,13
@@ -24268,6 +24287,7 @@ period,category,kind,id,units
 2026-05,RY1,m,jaecoo-7,84
 2026-05,RY1,m,kia-carnival,20
 2026-05,RY1,m,kia-ev5,40
+2026-05,RY1,m,kia-ev9,2
 2026-05,RY1,m,kia-sorento,2
 2026-05,RY1,m,leapmotor-b10,33
 2026-05,RY1,m,leapmotor-c10,18
@@ -24744,6 +24764,7 @@ period,category,kind,id,units
 2026-06,RY1,m,jaecoo-7,49
 2026-06,RY1,m,kia-carnival,11
 2026-06,RY1,m,kia-ev5,52
+2026-06,RY1,m,kia-ev9,2
 2026-06,RY1,m,kia-sorento,6
 2026-06,RY1,m,leapmotor-b10,12
 2026-06,RY1,m,leapmotor-c10,7
@@ -25213,6 +25234,7 @@ period,category,kind,id,units
 2026-07,RY1,m,jaecoo-7,28
 2026-07,RY1,m,kia-carnival,15
 2026-07,RY1,m,kia-ev5,40
+2026-07,RY1,m,kia-ev9,1
 2026-07,RY1,m,kia-sorento,6
 2026-07,RY1,m,leapmotor-b10,15
 2026-07,RY1,m,leapmotor-c10,4
@@ -25690,6 +25712,7 @@ period,category,kind,id,units
 2026-08,RY1,m,jaecoo-7,18
 2026-08,RY1,m,kia-carnival,15
 2026-08,RY1,m,kia-ev5,21
+2026-08,RY1,m,kia-ev9,2
 2026-08,RY1,m,kia-sorento,23
 2026-08,RY1,m,leapmotor-b10,13
 2026-08,RY1,m,leapmotor-c10,7

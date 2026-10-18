@@ -171,7 +171,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-01,RY1,JEEP,WRANGLER RUBICON 4 DOOR,3,jeep,,dlt-web-827cefc3
 2025-01,RY1,KIA,CARNIVAL,18,kia,kia-carnival,dlt-web-827cefc3
 2025-01,RY1,KIA,EV5,79,kia,kia-ev5,dlt-web-827cefc3
-2025-01,RY1,KIA,EV9 GT LINE AWD,4,kia,,dlt-web-827cefc3
+2025-01,RY1,KIA,EV9 GT LINE AWD,4,kia,kia-ev9,dlt-web-827cefc3
 2025-01,RY1,KIA,SORENTO,15,kia,kia-sorento,dlt-web-827cefc3
 2025-01,RY1,LAMBORGHINI,HURACAN EVO,1,lamborghini,,dlt-web-827cefc3
 2025-01,RY1,LAMBORGHINI,HURACAN STERRATO,1,lamborghini,,dlt-web-827cefc3
