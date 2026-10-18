@@ -108,5 +108,12 @@ window.TH = {
 "registrations by province per month (": "ยอดรายจังหวัดรายเดือน (",
 "row-level data, brand/model IDs and the source registry": "ข้อมูลระดับแถว รหัสยี่ห้อ/รุ่น และทะเบียนแหล่งข้อมูล",
 "variant names as recorded by the DLT": "รายชื่อรุ่นย่อยตามที่กรมฯ บันทึก",
+"Segments": "กลุ่มรถ",
+"Share by body type": "ส่วนแบ่งตามประเภทตัวถัง",
+"Body type by region": "ประเภทตัวถังแยกตามภูมิภาค",
+"Models in each body type": "รุ่นในแต่ละประเภทตัวถัง",
+"Market share by body type over time": "ส่วนแบ่งตลาดตามประเภทตัวถังตามเวลา",
+"Share of each body type in each region": "สัดส่วนแต่ละประเภทตัวถังในแต่ละภูมิภาค",
+"Body type is set per model in data/models.csv by this project, not by the DLT · PPV = SUV built on a pickup chassis (Fortuner, MU-X, Everest, Pajero Sport, Terra) · models sold in more than one body style (Mazda2, Mazda3, A-Class, 4 Series) and models not yet confirmed are in Unclassified, with the units whose DLT model name is not matched": "ประเภทตัวถังกำหนดรายรุ่นโดยโครงการนี้ใน data/models.csv ไม่ได้มาจากกรมการขนส่งทางบก · PPV = SUV ที่สร้างบนแชสซีกระบะ (Fortuner, MU-X, Everest, Pajero Sport, Terra) · รุ่นที่มีหลายตัวถัง (Mazda2, Mazda3, A-Class, 4 Series) และรุ่นที่ยังไม่ยืนยัน อยู่ในกลุ่มไม่ระบุ รวมกับยอดที่ยังจับคู่ชื่อรุ่นไม่ได้",
 "©": "© ผู้ร่วมพัฒนา"
 };

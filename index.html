@@ -138,6 +138,7 @@
     <a href="#/ranking" data-nav="ranking">Ranking</a>
     <a href="#/trends" data-nav="trends">Trends</a>
     <a href="#/powertrain" data-nav="powertrain">Powertrain / EV</a>
+    <a href="#/segments" data-nav="segments">Segments</a>
     <a href="#/origin" data-nav="origin">Brand origin</a>
     <a href="#/regions" data-nav="regions">Regions</a>
     <a href="#/seasonality" data-nav="seasonality">Seasonality</a>
@@ -284,6 +285,29 @@
     <div class="chart-box tall"><canvas id="fuelRegionChart" role="img" aria-label="Fuel mix in each region"></canvas></div>
   </section>
 
+  <!-- Segments -->
+  <section class="card" data-page="segments" hidden>
+    <div class="card-head">
+      <div>
+        <h2>Share by body type</h2>
+        <p class="note filter-echo"></p>
+      </div>
+    </div>
+    <div class="stats" id="segmentStats"></div>
+    <div class="chart-box tall"><canvas id="segmentChart" role="img" aria-label="Market share by body type over time"></canvas></div>
+    <p class="note">Body type is set per model in data/models.csv by this project, not by the DLT · PPV = SUV built on a pickup chassis (Fortuner, MU-X, Everest, Pajero Sport, Terra) · models sold in more than one body style (Mazda2, Mazda3, A-Class, 4 Series) and models not yet confirmed are in Unclassified, with the units whose DLT model name is not matched</p>
+  </section>
+  <section class="card" data-page="segments" hidden>
+    <div class="card-head">
+      <div>
+        <h2>Body type by region</h2>
+        <p class="note">Period and categories follow the filters; all regions shown</p>
+      </div>
+    </div>
+    <div class="chart-box tall"><canvas id="segmentRegionChart" role="img" aria-label="Share of each body type in each region"></canvas></div>
+    <details open><summary>Models in each body type</summary><div class="table-wrap" id="segmentMembers"></div></details>
+  </section>
+
   <!-- Brand origin -->
   <section class="card" data-page="origin" hidden>
     <div class="card-head">
@@ -304,7 +328,7 @@
       </div>
     </div>
     <div class="chart-box tall"><canvas id="originRegionChart" role="img" aria-label="Share of each origin in each region"></canvas></div>
-    <details open><summary>Brands in each group</summary><div class="table-wrap" id="originBrands"></div></details>
+    <details open><summary>Brands in each group</summary><div class="table-wrap" id="originMembers"></div></details>
   </section>
 
   <!-- Regions -->

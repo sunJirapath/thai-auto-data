@@ -121,6 +121,7 @@ The website map uses province boundaries from [geoBoundaries](https://www.geobou
   - `DSFK` (a misspelling) → `dfsk`
 - **Models:** a DLT string is linked to a `model_id` only through an exact row in `aliases.csv`, after upper-casing and collapsing spaces. There is no fuzzy matching. New or unclear strings stay unmatched until someone reviews them. Examples left unmatched on purpose: Land Cruiser strings (DLT mixes Land Cruiser, Prado and 70-series pickups), `DEEPAL S07 L`, `JAECOO 6T EV LONG RANGE 4WD` (registered since January 2026, before the 6T REEV launch, so it may be the Jaecoo 6), GWM `H6` strings (the Haval H6 under the GWM brand name; an alias cannot point to another brand's model), and `ไม่ระบุ` (unspecified).
 - **Coverage:** 98.4% of RY1 to RY3 units from January 2021 to September 2026 are matched to a model. September 2026 is 98.1%; a new model can be lower in the month it first appears, until its alias is added.
+- **Body type** (`body_type` in `models.csv`) is assigned per model by this project, not by the DLT: `pickup`, `ppv` (SUV on a pickup chassis), `suv`, `sedan`, `hatchback`, `mpv`, `van`, `wagon` or `sports`. It is empty for models sold in more than one body style (Mazda2, Mazda3, Mercedes A-Class, BMW 4 Series) and for models not yet confirmed (Chery Q, Wuling Darion, Wuling Porta EV). It describes the body, not the DLT category: many four-door pickups are registered as RY1.
 - **Model status** is `unverified` for every model. Registration data says nothing about whether a model is still on sale.
 
 ## Not included (yet)

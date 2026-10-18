@@ -433,7 +433,22 @@
           },
           {
             "name": "body_type",
-            "type": "string"
+            "type": "string",
+            "description": "Body type assigned by this project; empty for models sold in more than one body style or not yet confirmed",
+            "constraints": {
+              "enum": [
+                "",
+                "pickup",
+                "ppv",
+                "suv",
+                "sedan",
+                "hatchback",
+                "mpv",
+                "van",
+                "wagon",
+                "sports"
+              ]
+            }
           },
           {
             "name": "status",

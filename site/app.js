@@ -1162,7 +1162,8 @@
     overview: function () { renderMarketCard(); },
     ranking: function (idx) { renderRankCard(idx); renderHotCard(idx); },
     trends: function (idx) { renderHomeTrends(idx); renderShareAndBump(idx); },
-    origin: function (idx) { renderOrigin(idx); },
+    origin: function (idx) { renderGroupPage(idx, ORIGIN); },
+    segments: function (idx) { renderGroupPage(idx, SEGMENT); },
     regions: function () { renderRegions(); },
     seasonality: function () { renderSeasonality(); },
     prices: function (idx) { renderPricePage(idx); },
@@ -1180,7 +1181,7 @@
     var t = detail.querySelector('.page-title');
     document.title = (t ? t.textContent : L('Page not found', 'ไม่พบหน้านี้')) + ' · thai-auto-data';
   }
-  var NEEDS_AREA = { ranking: 1, trends: 1, origin: 1, prices: 1, launches: 1, powertrain: 1, brand: 1, model: 1, compare: 1 };
+  var NEEDS_AREA = { ranking: 1, trends: 1, origin: 1, segments: 1, prices: 1, launches: 1, powertrain: 1, brand: 1, model: 1, compare: 1 };
   function renderExplorer() {
     var page = D.page, token = ++A.token;
     document.querySelectorAll('.filter-echo').forEach(function (e) { e.textContent = filterText(); });
@@ -1197,6 +1198,10 @@
   // ---------- analysis pages (all follow the shared filter bar) ----------
   var ORIGIN_GROUPS = [['JP', L('Japan', 'ญี่ปุ่น')], ['CN', L('China', 'จีน')], ['KR', L('South Korea', 'เกาหลีใต้')], ['EU', L('Europe', 'ยุโรป')], ['US', L('United States', 'สหรัฐฯ')], ['OT', L('Other / unknown', 'อื่นๆ / ไม่ระบุ')]];
   var EU = { DE: 1, NL: 1, IT: 1, FR: 1, GB: 1, SE: 1 };
+  // body types in data/models.csv; 'other' also holds mixed-body models and units whose model name is not matched
+  var SEGMENTS = [['pickup', L('Pickup', 'กระบะ')], ['ppv', L('PPV (pickup-based SUV)', 'PPV')], ['suv', L('SUV / crossover', 'SUV / ครอสโอเวอร์')], ['sedan', L('Sedan', 'ซีดาน')],
+    ['hatchback', L('Hatchback', 'แฮทช์แบ็ก')], ['mpv', L('MPV', 'MPV')], ['van', L('Van', 'รถตู้')], ['wagon', L('Wagon / sports', 'สเตชันแวกอน / สปอร์ต')],
+    ['other', L('Unclassified / unmatched', 'ไม่ระบุ / ยังไม่จับคู่')]];
   var PRICE_BANDS = [[0, 600000, L('Under ฿600k', 'ต่ำกว่า 6 แสน')], [600000, 800000, L('฿600–800k', '6–8 แสน')], [800000, 1000000, L('฿800k–1M', '8 แสน–1 ล้าน')],
     [1000000, 1500000, L('฿1–1.5M', '1–1.5 ล้าน')], [1500000, 2000000, L('฿1.5–2M', '1.5–2 ล้าน')], [2000000, Infinity, L('฿2M and up', '2 ล้านขึ้นไป')]];
 
@@ -1311,65 +1316,77 @@
   }
 
   // ----- origin page: parent-company country groups -----
-  function renderOrigin(idx) {
+  // Brand origin (brands by parent-company country) and Segments (models by body type) share one page layout:
+  // share over time, share tiles, members table and the mix in each region. g.other collects what has no group;
+  // for models that includes units whose DLT name is not matched, so shares are always of the whole market.
+  var ORIGIN = { key: 'origin', kind: 'b', groups: ORIGIN_GROUPS, groupOf: originGroup, other: 'OT', word: L(' brands', ' ยี่ห้อ'), head: L('Brand', 'ยี่ห้อ'),
+    where: function (id, g) { return g === 'EU' || g === 'OT' ? countryName(D.brandCountry[id]) : ''; } };   // the country only where the group name does not say it
+  var SEGMENT = { key: 'segment', kind: 'm', groups: SEGMENTS, groupOf: function (id) { var t = (D.modelInfo[id] || {}).body_type; return t === 'sports' ? 'wagon' : t || 'other'; }, other: 'other',
+    word: L(' models', ' รุ่น'), head: L('Model', 'รุ่น'), where: function (id) { return brandLabel((D.modelInfo[id] || {}).brand_id); } };
+  function groupColor(i) { return i < 8 ? seriesColor(i) : css('--hatch'); }   // 8 series colours; a 9th group (Unclassified) is grey
+  function renderGroupPage(idx, g) {
     var b = buckets(), cats = selCats(), months = selectedMonths();
-    var per = b.order.map(function (k) {
-      var o = {}; ORIGIN_GROUPS.forEach(function (g) { o[g[0]] = 0; });
-      var s = sumById(idx, 'b', b.months[k], cats);
-      Object.keys(s).forEach(function (id) { o[originGroup(id)] += s[id]; });
+    function byGroup(s, total) {
+      var o = {}, sum = 0;
+      g.groups.forEach(function (x) { o[x[0]] = 0; });
+      Object.keys(s).forEach(function (id) { o[g.groupOf(id)] += s[id]; sum += s[id]; });
+      if (total !== undefined) o[g.other] += Math.max(0, total - sum);
       return o;
-    });
+    }
+    function sums(group, ms) { return [sumById(group, g.kind, ms, cats), g.kind === 'm' ? sumValues(sumById(group, 'b', ms, cats)) : undefined]; }
+    var per = b.order.map(function (k) { var x = sums(idx, b.months[k]); return byGroup(x[0], x[1]); });
     var tot = per.map(sumValues);
-    stackedArea('origin', document.getElementById('originChart'), b.labels, ORIGIN_GROUPS.map(function (g, i) {
-      return { label: g[1], color: seriesColor(i), data: per.map(function (o, j) { return tot[j] ? 100 * o[g[0]] / tot[j] : 0; }) };
-    }), { units: ORIGIN_GROUPS.map(function (g) { return per.map(function (o) { return o[g[0]]; }); }) });
+    stackedArea(g.key, document.getElementById(g.key + 'Chart'), b.labels, g.groups.map(function (x, i) {
+      return { label: x[1], color: groupColor(i), data: per.map(function (o, j) { return tot[j] ? 100 * o[x[0]] / tot[j] : 0; }) };
+    }), { units: g.groups.map(function (x) { return per.map(function (o) { return o[x[0]]; }); }) });
 
     // stats: share in the selected range, and change vs the same period last year
-    var range = sumById(idx, 'b', months, cats), pm = priorMonths(months);
-    var prevOk = priorOk(months), prev = prevOk ? sumById(idx, 'b', pm, cats) : {};
-    function byGroup(s) { var o = {}; ORIGIN_GROUPS.forEach(function (g) { o[g[0]] = 0; }); Object.keys(s).forEach(function (id) { o[originGroup(id)] += s[id]; }); return o; }
-    var cur = byGroup(range), was = byGroup(prev), ct = sumValues(cur), pt = sumValues(was);
-    var box = document.getElementById('originStats');
+    var pm = priorMonths(months), prevOk = priorOk(months);
+    var rx = sums(idx, months), px = prevOk ? sums(idx, pm) : [{}, 0];
+    var range = rx[0], prev = px[0];
+    var cur = byGroup(range, rx[1]), was = byGroup(prev, px[1]), ct = sumValues(cur), pt = sumValues(was);
+    var box = document.getElementById(g.key + 'Stats');
     box.textContent = '';
-    ORIGIN_GROUPS.forEach(function (g, i) {
-      var share = ct ? 100 * cur[g[0]] / ct : 0, pshare = pt ? 100 * was[g[0]] / pt : null;
-      var d = (pshare === null ? '' : ptsText(share - pshare) + ' · ') + fmt(cur[g[0]]) + L(' units', ' คัน');
-      var s = add(el('div', { class: 'stat' }), el('span', { class: 'label' }, g[1]), el('span', { class: 'value' }, share.toFixed(1) + '%'),
+    g.groups.forEach(function (x, i) {
+      var share = ct ? 100 * cur[x[0]] / ct : 0, pshare = pt ? 100 * was[x[0]] / pt : null;
+      var d = (pshare === null ? '' : ptsText(share - pshare) + ' · ') + fmt(cur[x[0]]) + L(' units', ' คัน');
+      var st = add(el('div', { class: 'stat' }), el('span', { class: 'label' }, x[1]), el('span', { class: 'value' }, share.toFixed(1) + '%'),
         el('span', { class: 'detail ' + (pshare === null ? '' : ptsClass(share - pshare)) }, d));
-      s.style.borderLeftColor = seriesColor(i);
-      box.appendChild(s);
+      st.style.borderLeftColor = groupColor(i);
+      box.appendChild(st);
     });
     basisNote(box, months, prevOk);
 
-    // brands in each group, as a table: a total row per group, then its brands, biggest first
-    var list = document.getElementById('originBrands');
+    // members of each group, as a table: a total row per group, then its members, biggest first
+    var list = document.getElementById(g.key + 'Members');
     list.textContent = '';
     function pct(v) { return v > 0 && v < 0.01 ? '<0.01%' : v.toFixed(v < 1 ? 2 : 1) + '%'; }
-    function change(now, was) { return pctCell(prevOk && was ? (100 * (now - was) / was).toFixed(2) : ''); }
+    function change(now, before) { return pctCell(prevOk && before ? (100 * (now - before) / before).toFixed(2) : ''); }
     var rows = [];
-    ORIGIN_GROUPS.forEach(function (g, i) {
-      var ids = sortedIds(range).filter(function (id) { return originGroup(id) === g[0]; });
-      if (!ids.length) return;
-      var gu = cur[g[0]], dot = el('i', { class: 'dot' });
-      dot.style.background = seriesColor(i);
-      var head = add(el('tr', { class: 'origin-group' }), add(el('td'), dot, document.createTextNode(g[1] + ' · ' + ids.length + L(' brands', ' ยี่ห้อ'))),
-        el('td', { class: 'n' }, fmt(gu)), el('td', { class: 'n' }, pct(ct ? 100 * gu / ct : 0)), el('td', { class: 'n' }, '100%'), change(gu, was[g[0]]));
-      head.style.boxShadow = 'inset 3px 0 0 ' + seriesColor(i);
+    g.groups.forEach(function (x, i) {
+      var ids = sortedIds(range).filter(function (id) { return g.groupOf(id) === x[0]; });
+      if (!ids.length && !cur[x[0]]) return;
+      var gu = cur[x[0]], dot = el('i', { class: 'dot' });
+      dot.style.background = groupColor(i);
+      var head = add(el('tr', { class: 'origin-group' }), add(el('td'), dot, document.createTextNode(x[1] + ' · ' + ids.length + g.word)),
+        el('td', { class: 'n' }, fmt(gu)), el('td', { class: 'n' }, pct(ct ? 100 * gu / ct : 0)), el('td', { class: 'n' }, '100%'), change(gu, was[x[0]]));
+      head.style.boxShadow = 'inset 3px 0 0 ' + groupColor(i);
       rows.push(head);
       ids.forEach(function (id) {
-        // the country only where the group name does not already say it (Europe, Other)
-        var where = g[0] === 'EU' || g[0] === 'OT' ? el('span', { class: 'country' }, countryName(D.brandCountry[id])) : null;
-        rows.push(add(el('tr'), add(el('td', { class: 'name' }), link(hrefFor('b', id), brandLabel(id)), where),
+        var where = g.where(id, x[0]);
+        rows.push(add(el('tr'), add(el('td', { class: 'name' }), link(hrefFor(g.kind, id), nameFor(g.kind, id)), where ? el('span', { class: 'country' }, where) : null),
           el('td', { class: 'n' }, fmt(range[id])), el('td', { class: 'n' }, pct(100 * range[id] / ct)), el('td', { class: 'n' }, pct(gu ? 100 * range[id] / gu : 0)),
           change(range[id], prev[id])));
       });
     });
-    list.appendChild(table([[L('Brand', 'ยี่ห้อ')], [L('Units', 'คัน'), 1], [L('Market share', 'ส่วนแบ่งตลาด'), 1],
+    list.appendChild(table([[g.head], [L('Units', 'คัน'), 1], [L('Market share', 'ส่วนแบ่งตลาด'), 1],
       [L('Share of group', 'สัดส่วนในกลุ่ม'), 1], [priorText(months, 'short'), 1]], rows));
 
     // by region (100% bars), always all regions
     loadRegionGroups().then(function (groups) {
-      var gt = groupTotals(groups, 'b', months, cats);
+      var gt = groupTotals(groups, g.kind, months, cats), bt = g.kind === 'm' ? groupTotals(groups, 'b', months, cats) : null;
+      var mix = REGION_GROUPS.map(function (r) { return byGroup(gt[r[0]], bt ? sumValues(bt[r[0]]) : undefined); });
+      var regTot = mix.map(sumValues);
       var o = baseOptions();
       o.indexAxis = 'y';
       o.scales.x.stacked = true; o.scales.y.stacked = true; o.scales.x.max = 100;
@@ -1377,17 +1394,12 @@
       o.scales.y.grid = { display: false };
       o.interaction = { mode: 'index', intersect: false, axis: 'y' };
       o.plugins.tooltip.callbacks.label = function (c) { return ' ' + c.dataset.label + ': ' + c.raw.toFixed(1) + '%'; };
-      var regTot = REGION_GROUPS.map(function (r) { return sumValues(gt[r[0]]); });
-      if (charts.originRegion) charts.originRegion.destroy();
-      charts.originRegion = new Chart(document.getElementById('originRegionChart'), {
+      if (charts[g.key + 'Region']) charts[g.key + 'Region'].destroy();
+      charts[g.key + 'Region'] = new Chart(document.getElementById(g.key + 'RegionChart'), {
         type: 'bar', options: o, plugins: [segLabels],
-        data: { labels: REGION_GROUPS.map(function (r) { return r[1]; }), datasets: ORIGIN_GROUPS.map(function (g, i) {
-          return { label: g[1], backgroundColor: seriesColor(i), borderColor: css('--surface'), borderWidth: { right: 1 }, borderSkipped: false, barPercentage: 0.75,
-            data: REGION_GROUPS.map(function (r, j) {
-              var s = 0, t = gt[r[0]];
-              Object.keys(t).forEach(function (id) { if (originGroup(id) === g[0]) s += t[id]; });
-              return regTot[j] ? 100 * s / regTot[j] : 0;
-            }) };
+        data: { labels: REGION_GROUPS.map(function (r) { return r[1]; }), datasets: g.groups.map(function (x, i) {
+          return { label: x[1], backgroundColor: groupColor(i), borderColor: css('--surface'), borderWidth: { right: 1 }, borderSkipped: false, barPercentage: 0.75,
+            data: mix.map(function (m, j) { return regTot[j] ? 100 * m[x[0]] / regTot[j] : 0; }) };
         }) }
       });
     });
@@ -2411,7 +2423,7 @@
   }
 
   // ---------- router ----------
-  var PAGES = ['overview', 'ranking', 'trends', 'powertrain', 'origin', 'regions', 'seasonality', 'prices', 'launches', 'data'];
+  var PAGES = ['overview', 'ranking', 'trends', 'powertrain', 'segments', 'origin', 'regions', 'seasonality', 'prices', 'launches', 'data'];
   function route() {
     var h = location.hash || '#/';
     if (h.indexOf('#/') !== 0) return;   // in-page anchors such as #cite
