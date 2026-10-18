@@ -49,18 +49,18 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-09,RY1,BMW,530e Highline,1,bmw,bmw-5-series,dlt-web-827cefc3
 2023-09,RY1,BMW,530e Luxury,17,bmw,bmw-5-series,dlt-web-827cefc3
 2023-09,RY1,BMW,530e M Sport,66,bmw,bmw-5-series,dlt-web-827cefc3
-2023-09,RY1,BMW,630i Gran Turismo RHD,11,bmw,,dlt-web-827cefc3
-2023-09,RY1,BMW,730Ld M Sport,3,bmw,,dlt-web-827cefc3
-2023-09,RY1,BMW,745Le xDrive M Sport,3,bmw,,dlt-web-827cefc3
-2023-09,RY1,BMW,750e xDrive M Sport,13,bmw,,dlt-web-827cefc3
-2023-09,RY1,BMW,M2 CS Coupe RHD,1,bmw,,dlt-web-827cefc3
-2023-09,RY1,BMW,M2 Coupe RHD MX,1,bmw,,dlt-web-827cefc3
-2023-09,RY1,BMW,M240i xDrive Coupe RHD MX,6,bmw,,dlt-web-827cefc3
-2023-09,RY1,BMW,M3 Competition M xDrive T,3,bmw,,dlt-web-827cefc3
+2023-09,RY1,BMW,630i Gran Turismo RHD,11,bmw,bmw-6-series,dlt-web-827cefc3
+2023-09,RY1,BMW,730Ld M Sport,3,bmw,bmw-7-series,dlt-web-827cefc3
+2023-09,RY1,BMW,745Le xDrive M Sport,3,bmw,bmw-7-series,dlt-web-827cefc3
+2023-09,RY1,BMW,750e xDrive M Sport,13,bmw,bmw-7-series,dlt-web-827cefc3
+2023-09,RY1,BMW,M2 CS Coupe RHD,1,bmw,bmw-2-series-coupe,dlt-web-827cefc3
+2023-09,RY1,BMW,M2 Coupe RHD MX,1,bmw,bmw-2-series-coupe,dlt-web-827cefc3
+2023-09,RY1,BMW,M240i xDrive Coupe RHD MX,6,bmw,bmw-2-series-coupe,dlt-web-827cefc3
+2023-09,RY1,BMW,M3 Competition M xDrive T,3,bmw,bmw-3-series,dlt-web-827cefc3
 2023-09,RY1,BMW,M340i xDrive,22,bmw,bmw-3-series,dlt-web-827cefc3
-2023-09,RY1,BMW,M4 CSL Coupe RHD,2,bmw,,dlt-web-827cefc3
-2023-09,RY1,BMW,M4 Competition M xDrive C,1,bmw,,dlt-web-827cefc3
-2023-09,RY1,BMW,M4 Coupe RHD,1,bmw,,dlt-web-827cefc3
+2023-09,RY1,BMW,M4 CSL Coupe RHD,2,bmw,bmw-4-series,dlt-web-827cefc3
+2023-09,RY1,BMW,M4 Competition M xDrive C,1,bmw,bmw-4-series,dlt-web-827cefc3
+2023-09,RY1,BMW,M4 Coupe RHD,1,bmw,bmw-4-series,dlt-web-827cefc3
 2023-09,RY1,BMW,M440i xDrive Coupe RHD,2,bmw,bmw-4-series,dlt-web-827cefc3
 2023-09,RY1,BMW,X1 sDrive18d M Sport,1,bmw,bmw-x1,dlt-web-827cefc3
 2023-09,RY1,BMW,X1 sDrive18i,42,bmw,bmw-x1,dlt-web-827cefc3
@@ -136,8 +136,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-09,RY1,HONDA,STEP WGN e-HEV AIR,1,honda,honda-step-wgn,dlt-web-827cefc3
 2023-09,RY1,HONDA,STEP WGN e-HEV SPADA,1,honda,honda-step-wgn,dlt-web-827cefc3
 2023-09,RY1,HONDA,STEP WGN e-HEV SPADA PREMIUM,8,honda,honda-step-wgn,dlt-web-827cefc3
-2023-09,RY1,HONDA,STEPWAGON e:HEV SPADA,1,honda,,dlt-web-827cefc3
-2023-09,RY1,HONDA,STEPWGN e:HEV SPADA,1,honda,,dlt-web-827cefc3
+2023-09,RY1,HONDA,STEPWAGON e:HEV SPADA,1,honda,honda-step-wgn,dlt-web-827cefc3
+2023-09,RY1,HONDA,STEPWGN e:HEV SPADA,1,honda,honda-step-wgn,dlt-web-827cefc3
 2023-09,RY1,HONDA,WR-V,226,honda,honda-wr-v,dlt-web-827cefc3
 2023-09,RY1,HYUNDAI,CRETA,50,hyundai,hyundai-creta,dlt-web-827cefc3
 2023-09,RY1,HYUNDAI,GRAND STAREX,1,hyundai,,dlt-web-827cefc3
@@ -163,17 +163,17 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-09,RY1,LAND ROVER,RANGE ROVER 3.0 LITRE T/C AWD,1,land-rover,,dlt-web-827cefc3
 2023-09,RY1,LAND ROVER,RANGE ROVER SPORT 2.0L T/C,1,land-rover,,dlt-web-827cefc3
 2023-09,RY1,LAND ROVER,RANGE ROVER SPORT 3.0 LITRE,3,land-rover,,dlt-web-827cefc3
-2023-09,RY1,LEXUS,ES300H,7,lexus,,dlt-web-827cefc3
-2023-09,RY1,LEXUS,IS300H,3,lexus,,dlt-web-827cefc3
+2023-09,RY1,LEXUS,ES300H,7,lexus,lexus-es,dlt-web-827cefc3
+2023-09,RY1,LEXUS,IS300H,3,lexus,lexus-is,dlt-web-827cefc3
 2023-09,RY1,LEXUS,LM300h,9,lexus,lexus-lm,dlt-web-827cefc3
 2023-09,RY1,LEXUS,LM350H,1,lexus,lexus-lm,dlt-web-827cefc3
-2023-09,RY1,LEXUS,NX350H,14,lexus,,dlt-web-827cefc3
-2023-09,RY1,LEXUS,NX450H+,8,lexus,,dlt-web-827cefc3
-2023-09,RY1,LEXUS,RX300,1,lexus,,dlt-web-827cefc3
-2023-09,RY1,LEXUS,RX450H+,9,lexus,,dlt-web-827cefc3
-2023-09,RY1,LEXUS,RZ450E,12,lexus,,dlt-web-827cefc3
-2023-09,RY1,LEXUS,UX250H,4,lexus,,dlt-web-827cefc3
-2023-09,RY1,LEXUS,UX250h,1,lexus,,dlt-web-827cefc3
+2023-09,RY1,LEXUS,NX350H,14,lexus,lexus-nx,dlt-web-827cefc3
+2023-09,RY1,LEXUS,NX450H+,8,lexus,lexus-nx,dlt-web-827cefc3
+2023-09,RY1,LEXUS,RX300,1,lexus,lexus-rx,dlt-web-827cefc3
+2023-09,RY1,LEXUS,RX450H+,9,lexus,lexus-rx,dlt-web-827cefc3
+2023-09,RY1,LEXUS,RZ450E,12,lexus,lexus-rz,dlt-web-827cefc3
+2023-09,RY1,LEXUS,UX250H,4,lexus,lexus-ux,dlt-web-827cefc3
+2023-09,RY1,LEXUS,UX250h,1,lexus,lexus-ux,dlt-web-827cefc3
 2023-09,RY1,MASERATI,GHIBLI,1,maserati,,dlt-web-827cefc3
 2023-09,RY1,MASERATI,GRECALE GT HYBRID,3,maserati,,dlt-web-827cefc3
 2023-09,RY1,MASERATI,LEVANTE DIESEL GRANLUSSO,1,maserati,,dlt-web-827cefc3
@@ -191,20 +191,20 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-09,RY1,MAZDA,ROADSTER 990S,2,mazda,,dlt-web-827cefc3
 2023-09,RY1,MCLAREN,ARTURA-COUPE,1,mclaren,,dlt-web-827cefc3
 2023-09,RY1,MERCEDES BENZ,A 200,55,mercedes-benz,mercedes-benz-a-class,dlt-web-827cefc3
-2023-09,RY1,MERCEDES BENZ,AMG C43 4MATIC Coupe,7,mercedes-benz,,dlt-web-827cefc3
-2023-09,RY1,MERCEDES BENZ,AMG CLS 53 4MATIC,14,mercedes-benz,,dlt-web-827cefc3
-2023-09,RY1,MERCEDES BENZ,AMG E 53 4MATIC+ Coupe,1,mercedes-benz,,dlt-web-827cefc3
-2023-09,RY1,MERCEDES BENZ,AMG G 63,1,mercedes-benz,,dlt-web-827cefc3
-2023-09,RY1,MERCEDES BENZ,AMG G400D,1,mercedes-benz,,dlt-web-827cefc3
-2023-09,RY1,MERCEDES BENZ,AMG G63,2,mercedes-benz,,dlt-web-827cefc3
-2023-09,RY1,MERCEDES BENZ,AMG GLA 35 4MATIC,6,mercedes-benz,,dlt-web-827cefc3
-2023-09,RY1,MERCEDES BENZ,AMG GLC 43 4MATIC Coupe,12,mercedes-benz,,dlt-web-827cefc3
-2023-09,RY1,MERCEDES BENZ,AMG GLE 53 4MATIC+,6,mercedes-benz,,dlt-web-827cefc3
+2023-09,RY1,MERCEDES BENZ,AMG C43 4MATIC Coupe,7,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
+2023-09,RY1,MERCEDES BENZ,AMG CLS 53 4MATIC,14,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
+2023-09,RY1,MERCEDES BENZ,AMG E 53 4MATIC+ Coupe,1,mercedes-benz,mercedes-benz-e-class,dlt-web-827cefc3
+2023-09,RY1,MERCEDES BENZ,AMG G 63,1,mercedes-benz,mercedes-benz-g-class,dlt-web-827cefc3
+2023-09,RY1,MERCEDES BENZ,AMG G400D,1,mercedes-benz,mercedes-benz-g-class,dlt-web-827cefc3
+2023-09,RY1,MERCEDES BENZ,AMG G63,2,mercedes-benz,mercedes-benz-g-class,dlt-web-827cefc3
+2023-09,RY1,MERCEDES BENZ,AMG GLA 35 4MATIC,6,mercedes-benz,mercedes-benz-gla,dlt-web-827cefc3
+2023-09,RY1,MERCEDES BENZ,AMG GLC 43 4MATIC Coupe,12,mercedes-benz,mercedes-benz-glc,dlt-web-827cefc3
+2023-09,RY1,MERCEDES BENZ,AMG GLE 53 4MATIC+,6,mercedes-benz,mercedes-benz-gle,dlt-web-827cefc3
 2023-09,RY1,MERCEDES BENZ,C 200 Coupe,32,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
 2023-09,RY1,MERCEDES BENZ,C 220 d,148,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
 2023-09,RY1,MERCEDES BENZ,C 300 e,7,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
 2023-09,RY1,MERCEDES BENZ,C 350 e,82,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
-2023-09,RY1,MERCEDES BENZ,C250 COUPE,1,mercedes-benz,,dlt-web-827cefc3
+2023-09,RY1,MERCEDES BENZ,C250 COUPE,1,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
 2023-09,RY1,MERCEDES BENZ,CLA250,1,mercedes-benz,mercedes-benz-cla,dlt-web-827cefc3
 2023-09,RY1,MERCEDES BENZ,CLS 220 d,60,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
 2023-09,RY1,MERCEDES BENZ,CLS 300 d,3,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
@@ -213,13 +213,13 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-09,RY1,MERCEDES BENZ,E 220 d,42,mercedes-benz,mercedes-benz-e-class,dlt-web-827cefc3
 2023-09,RY1,MERCEDES BENZ,E 300 e,78,mercedes-benz,mercedes-benz-e-class,dlt-web-827cefc3
 2023-09,RY1,MERCEDES BENZ,E 350 e,5,mercedes-benz,mercedes-benz-e-class,dlt-web-827cefc3
-2023-09,RY1,MERCEDES BENZ,EQB 250,19,mercedes-benz,,dlt-web-827cefc3
-2023-09,RY1,MERCEDES BENZ,EQS 500 4MATIC,6,mercedes-benz,,dlt-web-827cefc3
-2023-09,RY1,MERCEDES BENZ,G400 D,11,mercedes-benz,,dlt-web-827cefc3
-2023-09,RY1,MERCEDES BENZ,G63 AMG,1,mercedes-benz,,dlt-web-827cefc3
+2023-09,RY1,MERCEDES BENZ,EQB 250,19,mercedes-benz,mercedes-benz-eqb,dlt-web-827cefc3
+2023-09,RY1,MERCEDES BENZ,EQS 500 4MATIC,6,mercedes-benz,mercedes-benz-eqs,dlt-web-827cefc3
+2023-09,RY1,MERCEDES BENZ,G400 D,11,mercedes-benz,mercedes-benz-g-class,dlt-web-827cefc3
+2023-09,RY1,MERCEDES BENZ,G63 AMG,1,mercedes-benz,mercedes-benz-g-class,dlt-web-827cefc3
 2023-09,RY1,MERCEDES BENZ,GLA 200,104,mercedes-benz,mercedes-benz-gla,dlt-web-827cefc3
 2023-09,RY1,MERCEDES BENZ,GLA 250,2,mercedes-benz,mercedes-benz-gla,dlt-web-827cefc3
-2023-09,RY1,MERCEDES BENZ,GLB 200,5,mercedes-benz,,dlt-web-827cefc3
+2023-09,RY1,MERCEDES BENZ,GLB 200,5,mercedes-benz,mercedes-benz-glb,dlt-web-827cefc3
 2023-09,RY1,MERCEDES BENZ,GLC 220 d,53,mercedes-benz,mercedes-benz-glc,dlt-web-827cefc3
 2023-09,RY1,MERCEDES BENZ,GLC 220 d 4MATIC Coupe,28,mercedes-benz,mercedes-benz-glc,dlt-web-827cefc3
 2023-09,RY1,MERCEDES BENZ,GLC 250 4MATIC Coupe,2,mercedes-benz,mercedes-benz-glc,dlt-web-827cefc3
@@ -230,12 +230,12 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-09,RY1,MERCEDES BENZ,GLE 350 de 4MATIC,24,mercedes-benz,mercedes-benz-gle,dlt-web-827cefc3
 2023-09,RY1,MERCEDES BENZ,GLS 350 d 4MATIC,11,mercedes-benz,mercedes-benz-gls,dlt-web-827cefc3
 2023-09,RY1,MERCEDES BENZ,Maybach GLS 600 4MATIC,2,mercedes-benz,,dlt-web-827cefc3
-2023-09,RY1,MERCEDES BENZ,Maybach S 580 4MATIC,1,mercedes-benz,,dlt-web-827cefc3
-2023-09,RY1,MERCEDES BENZ,Maybach S 580 e,5,mercedes-benz,,dlt-web-827cefc3
+2023-09,RY1,MERCEDES BENZ,Maybach S 580 4MATIC,1,mercedes-benz,mercedes-benz-maybach-s-class,dlt-web-827cefc3
+2023-09,RY1,MERCEDES BENZ,Maybach S 580 e,5,mercedes-benz,mercedes-benz-maybach-s-class,dlt-web-827cefc3
 2023-09,RY1,MERCEDES BENZ,S 350 d,7,mercedes-benz,mercedes-benz-s-class,dlt-web-827cefc3
 2023-09,RY1,MERCEDES BENZ,S 560 e,4,mercedes-benz,mercedes-benz-s-class,dlt-web-827cefc3
 2023-09,RY1,MERCEDES BENZ,S 580 e,21,mercedes-benz,mercedes-benz-s-class,dlt-web-827cefc3
-2023-09,RY1,MERCEDES BENZ,V 250 d,3,mercedes-benz,,dlt-web-827cefc3
+2023-09,RY1,MERCEDES BENZ,V 250 d,3,mercedes-benz,mercedes-benz-v-class,dlt-web-827cefc3
 2023-09,RY1,MG,EP,488,mg,mg-ep,dlt-web-827cefc3
 2023-09,RY1,MG,ES,114,mg,mg-es,dlt-web-827cefc3
 2023-09,RY1,MG,HS,65,mg,mg-hs,dlt-web-827cefc3
@@ -258,8 +258,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-09,RY1,MINI,Cooper SE Hatch RHD,15,mini,mini-cooper,dlt-web-827cefc3
 2023-09,RY1,MINI,John Cooper Works ALL4 Clubman,1,mini,,dlt-web-827cefc3
 2023-09,RY1,MINI,John Cooper Works ALL4 Co,1,mini,,dlt-web-827cefc3
-2023-09,RY1,MINI,John Cooper Works Hatch R,5,mini,,dlt-web-827cefc3
-2023-09,RY1,MINI,John Cooper Works RHD,1,mini,,dlt-web-827cefc3
+2023-09,RY1,MINI,John Cooper Works Hatch R,5,mini,mini-cooper,dlt-web-827cefc3
+2023-09,RY1,MINI,John Cooper Works RHD,1,mini,mini-cooper,dlt-web-827cefc3
 2023-09,RY1,MITSUBISHI,ATTRAGE,300,mitsubishi,mitsubishi-attrage,dlt-web-827cefc3
 2023-09,RY1,MITSUBISHI,L200 P 2.5 S-CAB LOW,1,mitsubishi,,dlt-web-827cefc3
 2023-09,RY1,MITSUBISHI,MIRAGE,245,mitsubishi,mitsubishi-mirage,dlt-web-827cefc3
@@ -274,11 +274,11 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-09,RY1,NISSAN,CVL2RTLD23FHP--A-A,1,nissan,,dlt-web-827cefc3
 2023-09,RY1,NISSAN,ELGRAND 250 HIGHWAY STAR,1,nissan,,dlt-web-827cefc3
 2023-09,RY1,NISSAN,FAIRLADY Z,1,nissan,,dlt-web-827cefc3
-2023-09,RY1,NISSAN,GT-R,1,nissan,,dlt-web-827cefc3
-2023-09,RY1,NISSAN,GT-R PREMIUM EDITION T-SPEC,3,nissan,,dlt-web-827cefc3
-2023-09,RY1,NISSAN,GT-R PURE EDITION,1,nissan,,dlt-web-827cefc3
+2023-09,RY1,NISSAN,GT-R,1,nissan,nissan-gt-r,dlt-web-827cefc3
+2023-09,RY1,NISSAN,GT-R PREMIUM EDITION T-SPEC,3,nissan,nissan-gt-r,dlt-web-827cefc3
+2023-09,RY1,NISSAN,GT-R PURE EDITION,1,nissan,nissan-gt-r,dlt-web-827cefc3
 2023-09,RY1,NISSAN,KICKS,379,nissan,nissan-kicks,dlt-web-827cefc3
-2023-09,RY1,NISSAN,LEAF,5,nissan,,dlt-web-827cefc3
+2023-09,RY1,NISSAN,LEAF,5,nissan,nissan-leaf,dlt-web-827cefc3
 2023-09,RY1,NISSAN,MARCH,2,nissan,nissan-march,dlt-web-827cefc3
 2023-09,RY1,NISSAN,NAVARA,121,nissan,nissan-navara,dlt-web-827cefc3
 2023-09,RY1,NISSAN,NOTE,5,nissan,nissan-note,dlt-web-827cefc3
@@ -291,23 +291,23 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-09,RY1,PEUGEOT,3008 P84 BG,5,peugeot,,dlt-web-827cefc3
 2023-09,RY1,PEUGEOT,5008 P87 AG,1,peugeot,,dlt-web-827cefc3
 2023-09,RY1,PEUGEOT,5008 P87 BG,3,peugeot,,dlt-web-827cefc3
-2023-09,RY1,PORSCHE,718 BOXSTER,1,porsche,,dlt-web-827cefc3
-2023-09,RY1,PORSCHE,718 BOXSTER S,1,porsche,,dlt-web-827cefc3
-2023-09,RY1,PORSCHE,718 BOXSTER STYLE EDITION,2,porsche,,dlt-web-827cefc3
-2023-09,RY1,PORSCHE,718 CAYMAN GT4 RS,1,porsche,,dlt-web-827cefc3
-2023-09,RY1,PORSCHE,718 CAYMAN STYLE EDITION,2,porsche,,dlt-web-827cefc3
-2023-09,RY1,PORSCHE,718 CAYMAN T,4,porsche,,dlt-web-827cefc3
-2023-09,RY1,PORSCHE,718 SPYDER,1,porsche,,dlt-web-827cefc3
-2023-09,RY1,PORSCHE,911 CARRERA,2,porsche,,dlt-web-827cefc3
-2023-09,RY1,PORSCHE,911 CARRERA GTS,1,porsche,,dlt-web-827cefc3
-2023-09,RY1,PORSCHE,911 CARRERA GTS CABRIOLET,1,porsche,,dlt-web-827cefc3
-2023-09,RY1,PORSCHE,911 CARRERA GTS COUPE,1,porsche,,dlt-web-827cefc3
-2023-09,RY1,PORSCHE,911 CARRERA S,4,porsche,,dlt-web-827cefc3
-2023-09,RY1,PORSCHE,911 GT3,2,porsche,,dlt-web-827cefc3
-2023-09,RY1,PORSCHE,911 TARGA 4,1,porsche,,dlt-web-827cefc3
-2023-09,RY1,PORSCHE,911 TARGA 4 GTS PDK,1,porsche,,dlt-web-827cefc3
-2023-09,RY1,PORSCHE,911 TARGA 4S,2,porsche,,dlt-web-827cefc3
-2023-09,RY1,PORSCHE,911 TURBO S CABRIOLET,1,porsche,,dlt-web-827cefc3
+2023-09,RY1,PORSCHE,718 BOXSTER,1,porsche,porsche-718,dlt-web-827cefc3
+2023-09,RY1,PORSCHE,718 BOXSTER S,1,porsche,porsche-718,dlt-web-827cefc3
+2023-09,RY1,PORSCHE,718 BOXSTER STYLE EDITION,2,porsche,porsche-718,dlt-web-827cefc3
+2023-09,RY1,PORSCHE,718 CAYMAN GT4 RS,1,porsche,porsche-718,dlt-web-827cefc3
+2023-09,RY1,PORSCHE,718 CAYMAN STYLE EDITION,2,porsche,porsche-718,dlt-web-827cefc3
+2023-09,RY1,PORSCHE,718 CAYMAN T,4,porsche,porsche-718,dlt-web-827cefc3
+2023-09,RY1,PORSCHE,718 SPYDER,1,porsche,porsche-718,dlt-web-827cefc3
+2023-09,RY1,PORSCHE,911 CARRERA,2,porsche,porsche-911,dlt-web-827cefc3
+2023-09,RY1,PORSCHE,911 CARRERA GTS,1,porsche,porsche-911,dlt-web-827cefc3
+2023-09,RY1,PORSCHE,911 CARRERA GTS CABRIOLET,1,porsche,porsche-911,dlt-web-827cefc3
+2023-09,RY1,PORSCHE,911 CARRERA GTS COUPE,1,porsche,porsche-911,dlt-web-827cefc3
+2023-09,RY1,PORSCHE,911 CARRERA S,4,porsche,porsche-911,dlt-web-827cefc3
+2023-09,RY1,PORSCHE,911 GT3,2,porsche,porsche-911,dlt-web-827cefc3
+2023-09,RY1,PORSCHE,911 TARGA 4,1,porsche,porsche-911,dlt-web-827cefc3
+2023-09,RY1,PORSCHE,911 TARGA 4 GTS PDK,1,porsche,porsche-911,dlt-web-827cefc3
+2023-09,RY1,PORSCHE,911 TARGA 4S,2,porsche,porsche-911,dlt-web-827cefc3
+2023-09,RY1,PORSCHE,911 TURBO S CABRIOLET,1,porsche,porsche-911,dlt-web-827cefc3
 2023-09,RY1,PORSCHE,CAYENNE E HYBRID,1,porsche,porsche-cayenne,dlt-web-827cefc3
 2023-09,RY1,PORSCHE,CAYENNE E-HYBRID,4,porsche,porsche-cayenne,dlt-web-827cefc3
 2023-09,RY1,PORSCHE,CAYENNE E-HYBRID COUPE,22,porsche,porsche-cayenne,dlt-web-827cefc3
@@ -356,11 +356,11 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-09,RY1,SUZUKI,ERTIGA GL 1.5L,12,suzuki,suzuki-ertiga,dlt-web-827cefc3
 2023-09,RY1,SUZUKI,ERTIGA GX 1.5L,37,suzuki,suzuki-ertiga,dlt-web-827cefc3
 2023-09,RY1,SUZUKI,HUSTLER J STYLE II TURBO,1,suzuki,,dlt-web-827cefc3
-2023-09,RY1,SUZUKI,JIMNY 1.5L 4AT,1,suzuki,,dlt-web-827cefc3
-2023-09,RY1,SUZUKI,JIMNY SIERRA,1,suzuki,,dlt-web-827cefc3
-2023-09,RY1,SUZUKI,JIMNY SIERRA JC,13,suzuki,,dlt-web-827cefc3
-2023-09,RY1,SUZUKI,JIMNY SIERRA JC 1.5L,2,suzuki,,dlt-web-827cefc3
-2023-09,RY1,SUZUKI,JIMNY XC,1,suzuki,,dlt-web-827cefc3
+2023-09,RY1,SUZUKI,JIMNY 1.5L 4AT,1,suzuki,suzuki-jimny,dlt-web-827cefc3
+2023-09,RY1,SUZUKI,JIMNY SIERRA,1,suzuki,suzuki-jimny,dlt-web-827cefc3
+2023-09,RY1,SUZUKI,JIMNY SIERRA JC,13,suzuki,suzuki-jimny,dlt-web-827cefc3
+2023-09,RY1,SUZUKI,JIMNY SIERRA JC 1.5L,2,suzuki,suzuki-jimny,dlt-web-827cefc3
+2023-09,RY1,SUZUKI,JIMNY XC,1,suzuki,suzuki-jimny,dlt-web-827cefc3
 2023-09,RY1,SUZUKI,SPACIA CUSTOM HYBRID XS,1,suzuki,,dlt-web-827cefc3
 2023-09,RY1,SUZUKI,SPACIA GEAR HYBRID XZ TURBO,1,suzuki,,dlt-web-827cefc3
 2023-09,RY1,SUZUKI,SWIFT GA 1.25L CVT,1,suzuki,suzuki-swift,dlt-web-827cefc3
@@ -471,8 +471,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-09,RY2,ISUZU,D-MAX,24,isuzu,isuzu-d-max,dlt-web-827cefc3
 2023-09,RY2,KIA,CARNIVAL,84,kia,kia-carnival,dlt-web-827cefc3
 2023-09,RY2,KIA,GRAND CARNIVAL,1,kia,kia-carnival,dlt-web-827cefc3
-2023-09,RY2,MERCEDES BENZ,SPRINTER 416 CDI VAN,1,mercedes-benz,,dlt-web-827cefc3
-2023-09,RY2,MERCEDES BENZ,VITO 119 CDI,28,mercedes-benz,,dlt-web-827cefc3
+2023-09,RY2,MERCEDES BENZ,SPRINTER 416 CDI VAN,1,mercedes-benz,mercedes-benz-sprinter,dlt-web-827cefc3
+2023-09,RY2,MERCEDES BENZ,VITO 119 CDI,28,mercedes-benz,mercedes-benz-vito,dlt-web-827cefc3
 2023-09,RY2,MG,V80,1,mg,,dlt-web-827cefc3
 2023-09,RY2,MITSUBISHI,TRITON,4,mitsubishi,mitsubishi-triton,dlt-web-827cefc3
 2023-09,RY2,NISSAN,NAVARA,41,nissan,nissan-navara,dlt-web-827cefc3

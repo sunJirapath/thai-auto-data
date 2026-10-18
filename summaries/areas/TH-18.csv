@@ -1139,6 +1139,7 @@ period,category,kind,id,units
 2022-05,RY1,m,honda-hr-v,3
 2022-05,RY1,m,isuzu-d-max,49
 2022-05,RY1,m,isuzu-mu-x,4
+2022-05,RY1,m,mercedes-benz-cls,1
 2022-05,RY1,m,mini-countryman,1
 2022-05,RY1,m,mitsubishi-attrage,3
 2022-05,RY1,m,mitsubishi-mirage,1
@@ -1453,6 +1454,7 @@ period,category,kind,id,units
 2022-09,RY1,m,mitsubishi-xpander,1
 2022-09,RY1,m,nissan-almera,3
 2022-09,RY1,m,nissan-kicks,1
+2022-09,RY1,m,nissan-leaf,1
 2022-09,RY1,m,nissan-terra,1
 2022-09,RY1,m,suzuki-celerio,1
 2022-09,RY1,m,suzuki-swift,2
@@ -2755,6 +2757,7 @@ period,category,kind,id,units
 2024-04,RY1,m,honda-hr-v,2
 2024-04,RY1,m,isuzu-d-max,24
 2024-04,RY1,m,isuzu-mu-x,3
+2024-04,RY1,m,lexus-nx,1
 2024-04,RY1,m,mg-mg4,1
 2024-04,RY1,m,mitsubishi-attrage,1
 2024-04,RY1,m,mitsubishi-mirage,2
@@ -2827,6 +2830,7 @@ period,category,kind,id,units
 2024-05,RY1,m,isuzu-d-max,25
 2024-05,RY1,m,isuzu-mu-x,2
 2024-05,RY1,m,mazda-bt-50,1
+2024-05,RY1,m,mercedes-benz-maybach-s-class,1
 2024-05,RY1,m,mitsubishi-attrage,1
 2024-05,RY1,m,mitsubishi-mirage,2
 2024-05,RY1,m,mitsubishi-triton,2
@@ -2972,6 +2976,7 @@ period,category,kind,id,units
 2024-07,RY2,bf,mercedes-benz|diesel,1
 2024-07,RY2,f,diesel,3
 2024-07,RY2,m,hyundai-staria,2
+2024-07,RY2,m,mercedes-benz-vito,1
 2024-07,RY3,b,isuzu,8
 2024-07,RY3,b,mitsubishi,1
 2024-07,RY3,b,nissan,1
@@ -3100,6 +3105,7 @@ period,category,kind,id,units
 2024-09,RY1,m,isuzu-d-max,13
 2024-09,RY1,m,isuzu-mu-x,1
 2024-09,RY1,m,kia-ev5,1
+2024-09,RY1,m,lexus-nx,1
 2024-09,RY1,m,mercedes-benz-c-class,1
 2024-09,RY1,m,mitsubishi-xpander-cross,1
 2024-09,RY1,m,nissan-almera,1
@@ -3615,6 +3621,7 @@ period,category,kind,id,units
 2025-05,RY1,m,isuzu-d-max,11
 2025-05,RY1,m,isuzu-mu-x,9
 2025-05,RY1,m,mazda-cx-3,2
+2025-05,RY1,m,mercedes-benz-glc,1
 2025-05,RY1,m,mg-mg4,1
 2025-05,RY1,m,mg-mg5,1
 2025-05,RY1,m,nissan-almera,1
@@ -3853,6 +3860,7 @@ period,category,kind,id,units
 2025-08,RY1,m,isuzu-mu-x,5
 2025-08,RY1,m,mazda-mazda3,1
 2025-08,RY1,m,mg-im6,1
+2025-08,RY1,m,mini-cooper,1
 2025-08,RY1,m,mitsubishi-attrage,1
 2025-08,RY1,m,mitsubishi-xforce,2
 2025-08,RY1,m,suzuki-xl7,1
@@ -4650,6 +4658,7 @@ period,category,kind,id,units
 2026-08,RY1,f,hev,22
 2026-08,RY1,f,petrol,21
 2026-08,RY1,f,phev,2
+2026-08,RY1,m,bmw-2-series-gran-coupe,1
 2026-08,RY1,m,bmw-i7,1
 2026-08,RY1,m,byd-atto-2,2
 2026-08,RY1,m,byd-dolphin,1

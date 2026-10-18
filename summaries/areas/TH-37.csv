@@ -1515,6 +1515,7 @@ period,category,kind,id,units
 2022-11,RY1,m,honda-civic,2
 2022-11,RY1,m,isuzu-d-max,19
 2022-11,RY1,m,isuzu-mu-x,4
+2022-11,RY1,m,mercedes-benz-cls,1
 2022-11,RY1,m,mercedes-benz-s-class,1
 2022-11,RY1,m,mg-ep,1
 2022-11,RY1,m,mg-hs,1
@@ -3562,6 +3563,7 @@ period,category,kind,id,units
 2025-09,RY1,m,honda-city-hatchback,3
 2025-09,RY1,m,honda-civic,1
 2025-09,RY1,m,isuzu-d-max,2
+2025-09,RY1,m,mercedes-benz-cle,1
 2025-09,RY1,m,mercedes-benz-cls,1
 2025-09,RY1,m,mg-mg3,1
 2025-09,RY1,m,mg-mg4,4
@@ -3634,6 +3636,7 @@ period,category,kind,id,units
 2025-10,RY2,b,mercedes-benz,1
 2025-10,RY2,bf,mercedes-benz|diesel,1
 2025-10,RY2,f,diesel,1
+2025-10,RY2,m,mercedes-benz-sprinter,1
 2025-10,RY3,b,isuzu,4
 2025-10,RY3,b,toyota,5
 2025-10,RY3,bf,isuzu|diesel,4

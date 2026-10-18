@@ -2839,6 +2839,7 @@ period,category,kind,id,units
 2024-10,RY1,m,mitsubishi-xpander,1
 2024-10,RY1,m,mitsubishi-xpander-cross,1
 2024-10,RY1,m,nissan-navara,1
+2024-10,RY1,m,porsche-718,1
 2024-10,RY1,m,toyota-corolla-cross,2
 2024-10,RY1,m,toyota-hilux-revo,1
 2024-10,RY1,m,toyota-yaris-ativ,3
@@ -2875,6 +2876,7 @@ period,category,kind,id,units
 2024-11,RY1,m,ford-ranger,1
 2024-11,RY1,m,isuzu-d-max,2
 2024-11,RY1,m,isuzu-mu-x,1
+2024-11,RY1,m,suzuki-jimny,1
 2024-11,RY1,m,toyota-hilux-revo,3
 2024-11,RY1,m,toyota-yaris-ativ,2
 2024-11,RY1,m,toyota-yaris-cross,1
@@ -3774,6 +3776,7 @@ period,category,kind,id,units
 2026-05,RY1,m,mitsubishi-triton,1
 2026-05,RY1,m,mitsubishi-xforce,1
 2026-05,RY1,m,mitsubishi-xpander-cross,1
+2026-05,RY1,m,riddara-rd6,1
 2026-05,RY1,m,toyota-commuter,1
 2026-05,RY1,m,toyota-fortuner,4
 2026-05,RY1,m,toyota-hilux-revo,1
@@ -3936,7 +3939,7 @@ period,category,kind,id,units
 2026-08,RY1,m,mitsubishi-triton,1
 2026-08,RY1,m,mitsubishi-xforce,1
 2026-08,RY1,m,mitsubishi-xpander-cross,1
-2026-08,RY1,m,riddara-rd6,1
+2026-08,RY1,m,riddara-rd6,2
 2026-08,RY1,m,toyota-corolla-cross,1
 2026-08,RY1,m,toyota-hilux-revo,2
 2026-08,RY1,m,toyota-hilux-travo,7
@@ -3998,6 +4001,7 @@ period,category,kind,id,units
 2026-09,RY1,m,mitsubishi-triton,3
 2026-09,RY1,m,mitsubishi-xforce,1
 2026-09,RY1,m,mitsubishi-xpander-cross,1
+2026-09,RY1,m,riddara-rd6,1
 2026-09,RY1,m,toyota-corolla-cross,2
 2026-09,RY1,m,toyota-fortuner,2
 2026-09,RY1,m,toyota-hilux-travo,7

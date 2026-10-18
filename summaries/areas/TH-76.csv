@@ -145,6 +145,8 @@ period,category,kind,id,units
 2021-02,RY1,m,mazda-cx-5,1
 2021-02,RY1,m,mazda-cx-8,1
 2021-02,RY1,m,mazda-mazda2,6
+2021-02,RY1,m,mercedes-benz-cla,1
+2021-02,RY1,m,mercedes-benz-cls,1
 2021-02,RY1,m,mercedes-benz-glc,1
 2021-02,RY1,m,mg-extender,5
 2021-02,RY1,m,mg-hs,2
@@ -252,6 +254,7 @@ period,category,kind,id,units
 2021-03,RY1,m,mazda-cx-8,1
 2021-03,RY1,m,mazda-mazda2,8
 2021-03,RY1,m,mazda-mazda3,1
+2021-03,RY1,m,mercedes-benz-c-class,1
 2021-03,RY1,m,mg-extender,1
 2021-03,RY1,m,mg-hs,2
 2021-03,RY1,m,mg-zs,7
@@ -343,6 +346,7 @@ period,category,kind,id,units
 2021-04,RY1,f,phev,1
 2021-04,RY1,m,bmw-3-series,2
 2021-04,RY1,m,bmw-5-series,1
+2021-04,RY1,m,bmw-7-series,1
 2021-04,RY1,m,ford-everest,4
 2021-04,RY1,m,ford-ranger,3
 2021-04,RY1,m,honda-city,4
@@ -1150,6 +1154,7 @@ period,category,kind,id,units
 2022-01,RY1,f,hev,13
 2022-01,RY1,f,petrol,145
 2022-01,RY1,f,phev,1
+2022-01,RY1,m,bmw-6-series,1
 2022-01,RY1,m,ford-everest,3
 2022-01,RY1,m,ford-ranger,11
 2022-01,RY1,m,ford-ranger-raptor,1
@@ -2973,6 +2978,7 @@ period,category,kind,id,units
 2023-06,RY1,m,honda-hr-v,6
 2023-06,RY1,m,isuzu-d-max,63
 2023-06,RY1,m,isuzu-mu-x,15
+2023-06,RY1,m,mercedes-benz-c-class,1
 2023-06,RY1,m,mg-ep,2
 2023-06,RY1,m,mg-hs,1
 2023-06,RY1,m,mg-mg4,1
@@ -4627,6 +4633,7 @@ period,category,kind,id,units
 2024-09,RY1,m,ora-07,1
 2024-09,RY1,m,ora-good-cat,1
 2024-09,RY1,m,suzuki-celerio,1
+2024-09,RY1,m,suzuki-jimny,1
 2024-09,RY1,m,suzuki-swift,1
 2024-09,RY1,m,suzuki-xl7,1
 2024-09,RY1,m,toyota-alphard,1
@@ -5078,6 +5085,7 @@ period,category,kind,id,units
 2025-01,RY1,m,nissan-almera,1
 2025-01,RY1,m,nissan-navara,1
 2025-01,RY1,m,ora-good-cat,4
+2025-01,RY1,m,suzuki-jimny,1
 2025-01,RY1,m,toyota-alphard,1
 2025-01,RY1,m,toyota-camry,1
 2025-01,RY1,m,toyota-corolla,1
@@ -5610,6 +5618,7 @@ period,category,kind,id,units
 2025-06,RY1,m,byd-sealion-6,2
 2025-06,RY1,m,byd-sealion-7,5
 2025-06,RY1,m,changan-lumin,2
+2025-06,RY1,m,deepal-e07,1
 2025-06,RY1,m,deepal-s07,2
 2025-06,RY1,m,denza-d9,1
 2025-06,RY1,m,ford-everest,6
@@ -6134,6 +6143,7 @@ period,category,kind,id,units
 2025-10,RY1,m,isuzu-mu-x,6
 2025-10,RY1,m,mazda-mazda2,3
 2025-10,RY1,m,mercedes-benz-c-class,1
+2025-10,RY1,m,mercedes-benz-cle,1
 2025-10,RY1,m,mg-extender,1
 2025-10,RY1,m,mg-hs,1
 2025-10,RY1,m,mg-im6,1
@@ -6146,6 +6156,7 @@ period,category,kind,id,units
 2025-10,RY1,m,mitsubishi-xpander,1
 2025-10,RY1,m,nissan-navara,1
 2025-10,RY1,m,ora-good-cat,2
+2025-10,RY1,m,porsche-718,1
 2025-10,RY1,m,suzuki-swift,1
 2025-10,RY1,m,toyota-camry,2
 2025-10,RY1,m,toyota-corolla-cross,4
@@ -6249,6 +6260,7 @@ period,category,kind,id,units
 2025-11,RY1,m,deepal-s05,4
 2025-11,RY1,m,ford-everest,3
 2025-11,RY1,m,ford-ranger,5
+2025-11,RY1,m,gac-m8,1
 2025-11,RY1,m,geely-ex5,2
 2025-11,RY1,m,gwm-tank-300,5
 2025-11,RY1,m,honda-city,5
@@ -6650,6 +6662,7 @@ period,category,kind,id,units
 2026-02,RY1,m,nissan-navara,2
 2026-02,RY1,m,nissan-serena,2
 2026-02,RY1,m,nissan-terra,1
+2026-02,RY1,m,nissan-x-trail,1
 2026-02,RY1,m,porsche-cayenne,1
 2026-02,RY1,m,suzuki-swift,1
 2026-02,RY1,m,toyota-alphard,1
@@ -6878,6 +6891,8 @@ period,category,kind,id,units
 2026-04,RY1,m,jaecoo-5,10
 2026-04,RY1,m,jaecoo-6,1
 2026-04,RY1,m,mercedes-benz-c-class,1
+2026-04,RY1,m,mercedes-benz-cle,1
+2026-04,RY1,m,mercedes-benz-eqs,1
 2026-04,RY1,m,mercedes-benz-glc,1
 2026-04,RY1,m,mg-im6,3
 2026-04,RY1,m,mg-mg4,7
@@ -6979,6 +6994,7 @@ period,category,kind,id,units
 2026-05,RY1,f,phev,17
 2026-05,RY1,m,aion-ut,2
 2026-05,RY1,m,aion-v,3
+2026-05,RY1,m,bmw-2-series-gran-coupe,1
 2026-05,RY1,m,bmw-5-series,1
 2026-05,RY1,m,byd-atto-2,1
 2026-05,RY1,m,byd-atto-3,20
@@ -7125,6 +7141,7 @@ period,category,kind,id,units
 2026-06,RY1,m,byd-sealion-6,7
 2026-06,RY1,m,byd-sealion-7,2
 2026-06,RY1,m,changan-lumin,5
+2026-06,RY1,m,chery-tiggo-8,1
 2026-06,RY1,m,chery-v23,4
 2026-06,RY1,m,deepal-s05,2
 2026-06,RY1,m,deepal-s07,2
@@ -7364,6 +7381,7 @@ period,category,kind,id,units
 2026-08,RY1,f,phev,5
 2026-08,RY1,m,aion-hyptec-ht,3
 2026-08,RY1,m,aion-ut,4
+2026-08,RY1,m,bmw-7-series,1
 2026-08,RY1,m,byd-atto-1,3
 2026-08,RY1,m,byd-atto-2,2
 2026-08,RY1,m,byd-atto-3,5

@@ -1174,6 +1174,7 @@ period,category,kind,id,units
 2022-03,RY1,m,mitsubishi-xpander,5
 2022-03,RY1,m,nissan-almera,20
 2022-03,RY1,m,nissan-kicks,1
+2022-03,RY1,m,nissan-leaf,1
 2022-03,RY1,m,nissan-march,5
 2022-03,RY1,m,nissan-navara,2
 2022-03,RY1,m,toyota-camry,1
@@ -1937,6 +1938,7 @@ period,category,kind,id,units
 2023-01,RY1,m,honda-hr-v,3
 2023-01,RY1,m,isuzu-d-max,29
 2023-01,RY1,m,isuzu-mu-x,11
+2023-01,RY1,m,lexus-nx,1
 2023-01,RY1,m,mazda-cx-30,1
 2023-01,RY1,m,mazda-mazda2,2
 2023-01,RY1,m,mg-mg5,1
@@ -4114,6 +4116,7 @@ period,category,kind,id,units
 2025-08,RY1,m,byd-atto-3,2
 2025-08,RY1,m,byd-dolphin,3
 2025-08,RY1,m,byd-sealion-7,1
+2025-08,RY1,m,deepal-e07,1
 2025-08,RY1,m,deepal-s05,1
 2025-08,RY1,m,ford-ranger,4
 2025-08,RY1,m,honda-city,2
@@ -4477,6 +4480,7 @@ period,category,kind,id,units
 2026-01,RY1,m,nissan-kicks,2
 2026-01,RY1,m,nissan-navara,1
 2026-01,RY1,m,nissan-serena,1
+2026-01,RY1,m,nissan-x-trail,1
 2026-01,RY1,m,toyota-corolla-cross,1
 2026-01,RY1,m,toyota-fortuner,8
 2026-01,RY1,m,toyota-hilux-travo,1

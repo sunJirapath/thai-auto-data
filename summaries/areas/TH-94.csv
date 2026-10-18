@@ -1627,6 +1627,7 @@ period,category,kind,id,units
 2022-10,RY1,m,isuzu-mu-x,2
 2022-10,RY1,m,mazda-cx-3,1
 2022-10,RY1,m,mazda-mazda2,5
+2022-10,RY1,m,mercedes-benz-glc,1
 2022-10,RY1,m,mg-ep,2
 2022-10,RY1,m,mg-hs,1
 2022-10,RY1,m,mg-mg5,2
@@ -3270,6 +3271,7 @@ period,category,kind,id,units
 2024-07,RY2,bf,toyota|diesel,1
 2024-07,RY2,f,diesel,3
 2024-07,RY2,m,hyundai-h-1,1
+2024-07,RY2,m,mercedes-benz-vito,1
 2024-07,RY2,m,toyota-commuter,1
 2024-07,RY3,b,isuzu,8
 2024-07,RY3,b,toyota,11
@@ -4663,6 +4665,7 @@ period,category,kind,id,units
 2026-03,RY1,m,isuzu-d-max,16
 2026-03,RY1,m,isuzu-mu-x,4
 2026-03,RY1,m,jaecoo-5,2
+2026-03,RY1,m,lexus-rx,1
 2026-03,RY1,m,mg-mg3,1
 2026-03,RY1,m,mg-mg4,1
 2026-03,RY1,m,mg-mg5,1
@@ -4824,6 +4827,7 @@ period,category,kind,id,units
 2026-05,RY1,m,honda-civic,3
 2026-05,RY1,m,honda-cr-v,1
 2026-05,RY1,m,honda-e-n1,1
+2026-05,RY1,m,honda-e-n2,1
 2026-05,RY1,m,honda-hr-v,8
 2026-05,RY1,m,isuzu-d-max,1
 2026-05,RY1,m,isuzu-mu-x,2

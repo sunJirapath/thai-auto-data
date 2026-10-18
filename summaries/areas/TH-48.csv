@@ -164,6 +164,7 @@ period,category,kind,id,units
 2021-02,RY1,m,nissan-almera,5
 2021-02,RY1,m,nissan-navara,3
 2021-02,RY1,m,nissan-note,1
+2021-02,RY1,m,nissan-sylphy,1
 2021-02,RY1,m,suzuki-celerio,1
 2021-02,RY1,m,suzuki-ciaz,2
 2021-02,RY1,m,suzuki-swift,2
@@ -594,6 +595,7 @@ period,category,kind,id,units
 2021-07,RY1,m,nissan-almera,3
 2021-07,RY1,m,nissan-march,2
 2021-07,RY1,m,nissan-note,1
+2021-07,RY1,m,porsche-718,1
 2021-07,RY1,m,suzuki-celerio,8
 2021-07,RY1,m,suzuki-ciaz,5
 2021-07,RY1,m,suzuki-swift,2
@@ -1149,6 +1151,8 @@ period,category,kind,id,units
 2022-02,RY1,f,hev,18
 2022-02,RY1,f,petrol,90
 2022-02,RY1,f,phev,1
+2022-02,RY1,m,bmw-7-series,1
+2022-02,RY1,m,bmw-x2,1
 2022-02,RY1,m,ford-everest,2
 2022-02,RY1,m,ford-ranger,11
 2022-02,RY1,m,ford-ranger-raptor,1
@@ -1969,7 +1973,7 @@ period,category,kind,id,units
 2022-11,RY1,m,mazda-cx-30,1
 2022-11,RY1,m,mazda-mazda2,13
 2022-11,RY1,m,mercedes-benz-gla,1
-2022-11,RY1,m,mercedes-benz-glc,1
+2022-11,RY1,m,mercedes-benz-glc,2
 2022-11,RY1,m,mg-extender,2
 2022-11,RY1,m,mg-hs,1
 2022-11,RY1,m,mg-mg5,1
@@ -3516,6 +3520,7 @@ period,category,kind,id,units
 2024-06,RY1,m,honda-wr-v,3
 2024-06,RY1,m,isuzu-d-max,14
 2024-06,RY1,m,isuzu-mu-x,2
+2024-06,RY1,m,lexus-nx,1
 2024-06,RY1,m,mazda-bt-50,1
 2024-06,RY1,m,mazda-cx-3,1
 2024-06,RY1,m,mazda-cx-30,3
@@ -4041,6 +4046,7 @@ period,category,kind,id,units
 2025-01,RY1,m,mazda-cx-3,2
 2025-01,RY1,m,mazda-cx-30,1
 2025-01,RY1,m,mazda-mazda2,2
+2025-01,RY1,m,mercedes-benz-eqs,1
 2025-01,RY1,m,mg-mg4,1
 2025-01,RY1,m,mitsubishi-attrage,1
 2025-01,RY1,m,nissan-almera,1
@@ -4787,6 +4793,7 @@ period,category,kind,id,units
 2025-11,RY1,m,neta-v-ii,1
 2025-11,RY1,m,nissan-almera,2
 2025-11,RY1,m,nissan-kicks,2
+2025-11,RY1,m,porsche-718,1
 2025-11,RY1,m,toyota-alphard,1
 2025-11,RY1,m,toyota-camry,1
 2025-11,RY1,m,toyota-corolla-cross,3
@@ -4948,12 +4955,14 @@ period,category,kind,id,units
 2026-01,RY1,m,mazda-cx-30,2
 2026-01,RY1,m,mazda-cx-5,1
 2026-01,RY1,m,mazda-mazda2,2
+2026-01,RY1,m,mercedes-benz-eqe-suv,1
 2026-01,RY1,m,mg-s5,1
 2026-01,RY1,m,mitsubishi-triton,1
 2026-01,RY1,m,nissan-almera,1
 2026-01,RY1,m,nissan-kicks,4
 2026-01,RY1,m,nissan-navara,1
 2026-01,RY1,m,nissan-serena,1
+2026-01,RY1,m,nissan-x-trail,1
 2026-01,RY1,m,ora-good-cat,1
 2026-01,RY1,m,toyota-camry,1
 2026-01,RY1,m,toyota-commuter,1
