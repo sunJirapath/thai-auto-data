@@ -73,7 +73,7 @@ The DLT's fuel names are kept as published and mapped to six groups in `data/fue
 
 | | |
 |---|---|
-| Sources | Each row of [`data/prices.csv`](data/prices.csv) links to the exact official page or press release it came from (currently toyota.co.th, honda.co.th, isuzu-tis.com, mitsubishi-motors.co.th, reverautomotive.com (BYD distributor), gwm.co.th, changan.co.th and chery-thailand.com) |
+| Sources | Each row of [`data/prices.csv`](data/prices.csv) links to the exact official page or press release it came from (currently toyota.co.th, honda.co.th, isuzu-tis.com, mitsubishi-motors.co.th, reverautomotive.com (BYD distributor), gwm.co.th, changan.co.th, chery-thailand.com, ford.co.th, mgcars.com, omodajaecoo.co.th and wulingthai.com) |
 | Collected | By reading each official page (with AI agents that only read pages and return rows), then reviewed and spot-checked against the page before being added. There is no automated scraping, because no manufacturer offers a sanctioned machine-readable price list. Pages that are inconsistent with themselves (for example a "special" price higher than the regular price) are not used. |
 | `price_type` | `list` = the price shown on the official model or grade page, or announced as a new price in an official press release. `promo` = a price the source itself calls introductory or promotional, with its end date. |
 | Dates | `effective_from` / `effective_to` only when the source states them. `published_on` is the source's own date (for press releases). `observed_on` is the date we read the page. |
