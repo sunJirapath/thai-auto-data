@@ -35,7 +35,7 @@
 
 **ช่วงข้อมูล:** มกราคม 2564 ถึง กันยายน 2569 (2021-01 ถึง 2026-09), 69 เดือน ครบทุกเดือน
 
-**ราคา:** ตอนนี้มีราคาจากเว็บไซต์ทางการ 155 รุ่น 514 รายการ (Toyota, Honda, Isuzu, Mitsubishi, Ford, Nissan, Mazda, Suzuki, BYD, MG, GWM/Haval/ORA/Tank, Changan/Deepal, Chery, Omoda/Jaecoo, AION, Wuling, Tesla, Hyundai, Kia, XPENG, BMW, Volvo and AVATR) ครอบคลุม 92% ของยอดจดทะเบียน 12 เดือนล่าสุด ทุกแถวมีลิงก์หน้าเว็บที่ใช้อ้างอิง ประวัติราคาเริ่มจากวันที่บันทึก จึงไม่ครบย้อนหลัง
+**ราคา:** ตอนนี้มีราคาจากเว็บไซต์ทางการ 158 รุ่น 523 รายการ (Toyota, Honda, Isuzu, Mitsubishi, Ford, Nissan, Mazda, Suzuki, BYD, MG, GWM/Haval/ORA/Tank, Changan/Deepal, Chery, Omoda/Jaecoo, AION, Wuling, Tesla, Hyundai, Kia, XPENG, BMW, MINI, Volvo and AVATR) ครอบคลุม 92% ของยอดจดทะเบียน 12 เดือนล่าสุด ทุกแถวมีลิงก์หน้าเว็บที่ใช้อ้างอิง ประวัติราคาเริ่มจากวันที่บันทึก จึงไม่ครบย้อนหลัง
 
 ถ้าเดือนใดไม่มีข้อมูลจากต้นทาง จะแสดงเป็น `status=missing` และเว้นตัวเลขว่าง **ไม่ใช่ 0** รายละเอียดอยู่ใน [DATA_SOURCES.md](DATA_SOURCES.md)
 
