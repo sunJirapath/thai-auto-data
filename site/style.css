@@ -158,8 +158,7 @@ td.move.up { color: var(--up); } td.move.down { color: var(--down); }
 /* phones: keep the filter bar to a few rows so the first chart is near the top */
 @media (max-width: 520px) {
   .filters { gap: 6px 8px; }
-  .filters .seg { flex-wrap: nowrap; overflow-x: auto; max-width: 100%; min-width: 0; scrollbar-width: none; }
-  .filters .seg::-webkit-scrollbar { display: none; }
+  .filters .seg { flex-wrap: wrap; max-width: 100%; min-width: 0; }   /* wrap rather than scroll: a hidden scrollbar cut "Custom" off */
   .filters .seg button { padding: 5px 9px; }
   .filters .field { grid-template-columns: auto 1fr; align-items: center; gap: 6px; }
   .filters .share { margin-left: 0; }
@@ -210,3 +209,8 @@ tr.origin-group td.up { color: var(--up); } tr.origin-group td.down { color: var
   #originBrands td.name { display: table-cell; }
   #originBrands td.name .country { display: block; }
 }
+/* CSV / PNG buttons under each chart */
+.chart-tools { display: flex; gap: 6px; justify-content: flex-end; margin-top: -6px; }
+.chart-tools button { font: inherit; font-size: .72rem; padding: 2px 8px; border: 1px solid var(--axis); border-radius: 4px; background: var(--page); color: var(--ink-2); cursor: pointer; }
+.chart-tools button:hover { color: var(--ink); border-color: var(--ink-2); }
+[hidden] + .chart-tools { display: none; }

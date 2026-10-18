@@ -225,7 +225,7 @@
       responsive: true, maintainAspectRatio: false, animation: false,
       interaction: { mode: 'index', intersect: false },
       plugins: {
-        legend: { position: 'bottom', labels: { color: css('--ink-2'), boxWidth: 12, boxHeight: 12, usePointStyle: true } },
+        legend: { position: 'bottom', labels: { color: css('--ink-2'), boxWidth: 8, boxHeight: 8, usePointStyle: true } },
         tooltip: {
           backgroundColor: css('--surface'), titleColor: css('--ink'), bodyColor: css('--ink-2'), footerColor: css('--ink'),
           borderColor: css('--axis'), borderWidth: 1, padding: 10, usePointStyle: true, callbacks: {}
@@ -730,6 +730,14 @@
         : ' ' + fmt(c.raw) + L(' units · ', ' คัน · ') + (grand ? (100 * c.raw / grand).toFixed(1) : 0) + L('% of the country', '% ของทั้งประเทศ');
     } };
     if (percap) ro.scales.x.ticks.callback = function (v) { return v; };
+    var values = REGION_GROUPS.map(function (g) { return percap ? 1000 * groups[g[0]] / groupPop[g[0]] : groups[g[0]]; });
+    // Bangkok (company and leasing registrations) is often several times any region: cap the axis so the others stay readable
+    var rest = Math.max.apply(null, values.slice(1)), capped = !percap && values[0] > 3 * rest;
+    if (capped) ro.scales.x.max = Math.ceil(1.3 * rest / 10000) * 10000;
+    ro.layout = { padding: { right: 96 } };
+    ro.plugins.barLabels = { labels: values.map(function (v, i) {
+      return (percap ? v.toFixed(1) : fmtK(v)) + (capped && i === 0 ? L(' · bar cut off', ' · ตัดแท่ง') : '');
+    }) };
     ro.onClick = function (e, els) {
       if (!els.length) return;
       var g = REGION_GROUPS[els[0].index][0], next = g === 'bkk' ? 'bkk' : 'region:' + g;
@@ -739,9 +747,9 @@
     };
     if (charts.region) charts.region.destroy();
     charts.region = new Chart(document.getElementById('regionChart'), {
-      type: 'bar', options: ro,
+      type: 'bar', options: ro, plugins: [barLabels],
       data: { labels: REGION_GROUPS.map(function (g) { return g[1]; }),
-        datasets: [{ data: REGION_GROUPS.map(function (g) { return percap ? 1000 * groups[g[0]] / groupPop[g[0]] : groups[g[0]]; }),
+        datasets: [{ data: values,
           backgroundColor: REGION_GROUPS.map(function (g) { return activeGroup(g[0]) ? accent : dim; }),
           borderRadius: 4, borderSkipped: 'start', maxBarThickness: 22 }] }
     });
@@ -797,7 +805,7 @@
     colors.forEach(function (c, k) {
       var sw = el('i'); sw.style.background = c;
       var lo = percap ? edges[k].toFixed(1) : fmt(edges[k]), hi = percap ? edges[k + 1].toFixed(1) : fmt(edges[k + 1]);
-      legend.appendChild(add(el('span'), sw, document.createTextNode(lo + '–' + hi)));
+      legend.appendChild(add(el('span'), sw, document.createTextNode(k === colors.length - 1 ? '> ' + lo : lo + '–' + hi)));
     });
 
     var trs = rank.map(function (i, n) {
@@ -897,6 +905,44 @@
   }
 
   // text at the end of each horizontal bar
+  // Every chart gets CSV / PNG buttons under it, added once per chart box when its first chart is created
+  function chartRows(chart) {
+    var ds = chart.data.datasets, labels = chart.data.labels || [];
+    function cell(v) { return v === null || v === undefined ? '' : typeof v === 'number' && v % 1 ? +v.toFixed(2) : v; }
+    if (!labels.length) {   // scatter: one row per point
+      var rows = [[L('Series', 'ชุดข้อมูล'), 'x', 'y', L('Name', 'ชื่อ')]];
+      ds.forEach(function (d) { d.data.forEach(function (pt) { rows.push([d.label || '', cell(pt.x), cell(pt.y), pt.id ? modelName(pt.id) : '']); }); });
+      return rows;
+    }
+    var head = [''].concat(ds.map(function (d, i) { return d.label || (ds.length === 1 ? L('Value', 'ค่า') : String(i + 1)); }));
+    return [head].concat(labels.map(function (lab, j) {
+      return [Array.isArray(lab) ? lab.join(' ') : lab].concat(ds.map(function (d) { return cell(d.data[j]); }));
+    }));
+  }
+  function chartPNG(chart, name) {
+    var src = chart.canvas, out = document.createElement('canvas'), ctx = out.getContext('2d');
+    out.width = src.width; out.height = src.height;
+    ctx.fillStyle = css('--surface'); ctx.fillRect(0, 0, out.width, out.height);   // a transparent PNG is unreadable in the other theme
+    ctx.drawImage(src, 0, 0);
+    var a = el('a', { href: out.toDataURL('image/png'), download: name });
+    document.body.appendChild(a); a.click(); a.remove();
+  }
+  Chart.register({ id: 'exportTools', afterInit: function (chart) {
+    var box = chart.canvas.parentNode, next = box && box.nextElementSibling;
+    if (!box || !box.parentNode || (next && next.classList.contains('chart-tools'))) return;
+    var canvas = chart.canvas, tools = el('div', { class: 'chart-tools' });
+    function stem() { return 'thai-auto-data-' + (canvas.id || 'chart').replace(/Chart$/, '') + '-' + selectedMonths()[0] + '-' + selectedMonths().slice(-1)[0]; }
+    [['CSV', L('Download the chart data (CSV)', 'ดาวน์โหลดข้อมูลกราฟ (CSV)')], ['PNG', L('Download the chart as an image (PNG)', 'ดาวน์โหลดภาพกราฟ (PNG)')]].forEach(function (t) {
+      var btn = el('button', { type: 'button', 'aria-label': t[1], title: t[1] }, t[0]);
+      btn.addEventListener('click', function () {
+        var c = Chart.getChart(canvas);
+        if (!c) return;
+        if (t[0] === 'CSV') downloadCSV(stem() + '.csv', chartRows(c)); else chartPNG(c, stem() + '.png');
+      });
+      tools.appendChild(btn);
+    });
+    box.parentNode.insertBefore(tools, box.nextSibling);
+  } });
   var barLabels = {
     id: 'barLabels',
     afterDatasetsDraw: function (chart, args, opts) {
@@ -904,7 +950,7 @@
       var ctx = chart.ctx, meta = chart.getDatasetMeta(0);
       ctx.save();
       ctx.fillStyle = css('--ink-2'); ctx.font = '12px ' + css('--font'); ctx.textBaseline = 'middle';
-      meta.data.forEach(function (bar, i) { ctx.fillText(opts.labels[i], bar.x + 6, bar.y); });
+      meta.data.forEach(function (bar, i) { ctx.fillText(opts.labels[i], Math.min(bar.x, chart.chartArea.right) + 6, bar.y); });
       ctx.restore();
     }
   };
@@ -1302,6 +1348,15 @@
     o.scales.y.reverse = true; o.scales.y.min = 1; o.scales.y.max = 12; o.scales.y.beginAtZero = false;
     o.scales.y.ticks.stepSize = 1; o.scales.y.ticks.callback = function (v) { return '#' + v; };
     o.plugins.tooltip.callbacks.label = function (c) { return ' ' + c.dataset.label + L(': rank ', ': อันดับ ') + c.raw; };
+    // point at a line to bring it forward; the other brands fade
+    o.interaction = { mode: 'nearest', intersect: false };
+    o.onHover = function (e, els, chart) {
+      var hi = els.length ? els[0].datasetIndex : -1;
+      if (chart.$hi === hi) return;
+      chart.$hi = hi;
+      chart.data.datasets.forEach(function (d, i) { d.borderColor = hi < 0 || i === hi ? seriesColor(i) : seriesColor(i) + '33'; d.borderWidth = i === hi ? 3.5 : 2.5; });
+      chart.update('none');
+    };
     var bumpCanvas = document.getElementById('bumpChart');
     if (withEndLabels(o, bumpCanvas, top.map(brandLabel))) o.plugins.legend.display = false;
     if (charts.bump) charts.bump.destroy();
@@ -1564,11 +1619,13 @@
     charts.priceScatter = new Chart(document.getElementById('priceScatter'), {
       type: 'scatter', options: so, plugins: [{ id: 'ptLabels', afterDatasetsDraw: function (ch) {
         var ctx = ch.ctx, meta = ch.getDatasetMeta(0), area = ch.chartArea, boxes = [];
+        var dots = meta.data.map(function (pt) { return { l: pt.x - 7, r: pt.x + 7, t: pt.y - 7, b: pt.y + 7 }; });   // labels avoid other models' dots too
         ctx.save(); ctx.fillStyle = css('--ink-2'); ctx.font = '11px ' + css('--font');
         pts.map(function (p, i) { return i; }).sort(function (a, b) { return pts[b].y - pts[a].y; }).forEach(function (i) {
           var pt = meta.data[i], text = D.modelInfo[pts[i].id].name, w = ctx.measureText(text).width;
           var right = { l: pt.x + 7, r: pt.x + 9 + w, t: pt.y - 6, b: pt.y + 7 }, left = { l: pt.x - 9 - w, r: pt.x - 7, t: pt.y - 6, b: pt.y + 7 };
-          function free(bx) { return bx.l >= 0 && bx.r <= ch.width && !boxes.some(function (o) { return bx.l < o.r && bx.r > o.l && bx.t < o.b && bx.b > o.t; }); }
+          function hit(bx, o) { return bx.l < o.r && bx.r > o.l && bx.t < o.b && bx.b > o.t; }
+          function free(bx) { return bx.l >= 0 && bx.r <= ch.width && !boxes.some(function (o) { return hit(bx, o); }) && !dots.some(function (o, j) { return j !== i && hit(bx, o); }); }
           var bx = free(right) ? right : free(left) ? left : null;
           if (!bx) return;   // no room: the name is still in the tooltip and the table
           boxes.push(bx);
@@ -2427,6 +2484,8 @@
   function route() {
     var h = location.hash || '#/';
     if (h.indexOf('#/') !== 0) return;   // in-page anchors such as #cite
+    var lm = h.match(/[?&]lang=(th|en)\b/);
+    if (lm && lm[1] !== LANG) { location.reload(); return; }   // a link with another lang= while the page is open: the text is set at load
     var parts = h.slice(2).split('?'), path = parts[0].replace(/\/$/, '');
     buildControlsOnce();
     if (parts.length > 1) { applyQuery(parts[1]); D.controlsBuilt = false; buildControlsOnce(); }

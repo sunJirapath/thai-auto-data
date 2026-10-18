@@ -1,7 +1,7 @@
 /* Thai text for the static HTML in index.html, keyed by its English. Text built in app.js carries its own Thai: L('English', 'ไทย'). */
 window.TH = {
 "Shading": "การไล่สี",
-"A gap means the brand fell out of the top 12": "เส้นที่ขาดคือช่วงที่ยี่ห้อนั้นหลุดจาก 12 อันดับแรก",
+"A gap means the brand fell out of the top 12 · point at a line to highlight it": "เส้นที่ขาดคือช่วงที่ยี่ห้อนั้นหลุดจาก 12 อันดับแรก · ชี้ที่เส้นเพื่อเน้นยี่ห้อนั้น",
 "All figures are registrations, not sales.": "ตัวเลขทั้งหมดเป็นยอดจดทะเบียน ไม่ใช่ยอดขาย",
 "Area": "พื้นที่",
 "Battery-electric (BEV) brands": "ยี่ห้อรถไฟฟ้า (BEV)",
