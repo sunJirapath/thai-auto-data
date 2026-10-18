@@ -3759,6 +3759,7 @@ period,category,kind,id,units
 2024-10,RY1,f,hev,12
 2024-10,RY1,f,petrol,22
 2024-10,RY1,m,byd-atto-3,2
+2024-10,RY1,m,deepal-s07,1
 2024-10,RY1,m,ford-everest,1
 2024-10,RY1,m,ford-ranger,1
 2024-10,RY1,m,honda-city,1
@@ -4518,6 +4519,7 @@ period,category,kind,id,units
 2025-08,RY1,m,byd-dolphin,1
 2025-08,RY1,m,byd-m6,1
 2025-08,RY1,m,byd-sealion-6,1
+2025-08,RY1,m,deepal-s07,1
 2025-08,RY1,m,ford-everest,1
 2025-08,RY1,m,ford-ranger-raptor,1
 2025-08,RY1,m,gwm-tank-300,2

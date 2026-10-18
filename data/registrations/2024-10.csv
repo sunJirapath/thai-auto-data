@@ -117,7 +117,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-10,RY1,DAIHATSU,COPEN CERO S,1,daihatsu,,dlt-web-827cefc3
 2024-10,RY1,DEEPAL,L07,38,deepal,deepal-l07,dlt-web-827cefc3
 2024-10,RY1,DEEPAL,S07,256,deepal,deepal-s07,dlt-web-827cefc3
-2024-10,RY1,DEEPAL,S07 L,9,deepal,,dlt-web-827cefc3
+2024-10,RY1,DEEPAL,S07 L,9,deepal,deepal-s07,dlt-web-827cefc3
 2024-10,RY1,DFSK,GLORY 580 I-AUTO,1,dfsk,,dlt-web-827cefc3
 2024-10,RY1,FERRARI,296 GTB,3,ferrari,,dlt-web-827cefc3
 2024-10,RY1,FERRARI,PORTOFINO M,1,ferrari,,dlt-web-827cefc3

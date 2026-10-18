@@ -8090,7 +8090,7 @@ period,category,kind,id,units
 2025-08,RY1,m,byd-sealion-7,10
 2025-08,RY1,m,changan-lumin,16
 2025-08,RY1,m,deepal-s05,8
-2025-08,RY1,m,deepal-s07,1
+2025-08,RY1,m,deepal-s07,2
 2025-08,RY1,m,ford-everest,7
 2025-08,RY1,m,ford-ranger,10
 2025-08,RY1,m,ford-ranger-raptor,1
@@ -8714,7 +8714,7 @@ period,category,kind,id,units
 2025-12,RY1,m,changan-lumin,1
 2025-12,RY1,m,chery-v23,18
 2025-12,RY1,m,deepal-s05,1
-2025-12,RY1,m,deepal-s07,2
+2025-12,RY1,m,deepal-s07,3
 2025-12,RY1,m,ford-everest,4
 2025-12,RY1,m,ford-ranger,13
 2025-12,RY1,m,geely-ex5,2
@@ -8888,8 +8888,9 @@ period,category,kind,id,units
 2026-01,RY1,m,byd-sealion-7,11
 2026-01,RY1,m,changan-lumin,3
 2026-01,RY1,m,chery-v23,18
+2026-01,RY1,m,deepal-l07,1
 2026-01,RY1,m,deepal-s05,31
-2026-01,RY1,m,deepal-s07,6
+2026-01,RY1,m,deepal-s07,22
 2026-01,RY1,m,ford-everest,15
 2026-01,RY1,m,ford-ranger,21
 2026-01,RY1,m,ford-ranger-raptor,1
@@ -8907,6 +8908,7 @@ period,category,kind,id,units
 2026-01,RY1,m,isuzu-mu-x,21
 2026-01,RY1,m,jaecoo-5,60
 2026-01,RY1,m,jaecoo-6,8
+2026-01,RY1,m,jaecoo-6t,1
 2026-01,RY1,m,jaecoo-7,3
 2026-01,RY1,m,mazda-cx-30,3
 2026-01,RY1,m,mazda-cx-5,1
@@ -9552,6 +9554,7 @@ period,category,kind,id,units
 2026-05,RY1,m,isuzu-d-max,40
 2026-05,RY1,m,isuzu-mu-x,9
 2026-05,RY1,m,jaecoo-6,1
+2026-05,RY1,m,jaecoo-6t,2
 2026-05,RY1,m,jaecoo-7,1
 2026-05,RY1,m,mazda-cx-30,2
 2026-05,RY1,m,mazda-cx-5,1
@@ -9713,6 +9716,7 @@ period,category,kind,id,units
 2026-06,RY1,m,isuzu-d-max,48
 2026-06,RY1,m,isuzu-mu-x,14
 2026-06,RY1,m,jaecoo-5,1
+2026-06,RY1,m,jaecoo-6t,1
 2026-06,RY1,m,mazda-cx-3,1
 2026-06,RY1,m,mazda-cx-30,1
 2026-06,RY1,m,mazda-mazda2,7
@@ -9889,6 +9893,7 @@ period,category,kind,id,units
 2026-07,RY1,m,isuzu-mu-x,8
 2026-07,RY1,m,jaecoo-5,25
 2026-07,RY1,m,jaecoo-6,8
+2026-07,RY1,m,jaecoo-6t,2
 2026-07,RY1,m,mazda-cx-30,3
 2026-07,RY1,m,mazda-mazda2,3
 2026-07,RY1,m,mercedes-benz-c-class,1
@@ -10066,6 +10071,7 @@ period,category,kind,id,units
 2026-08,RY1,m,isuzu-mu-x,14
 2026-08,RY1,m,jaecoo-5,30
 2026-08,RY1,m,jaecoo-6,6
+2026-08,RY1,m,jaecoo-6t,1
 2026-08,RY1,m,jaecoo-7,1
 2026-08,RY1,m,mazda-cx-30,2
 2026-08,RY1,m,mazda-mazda2,6

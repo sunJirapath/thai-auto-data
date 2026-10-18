@@ -33,7 +33,7 @@ Open data on the Thai car market: monthly new-vehicle registrations by brand and
 
 **Coverage:** January 2021 to September 2026 (BE 2564 to 2569), 69 months, none missing.
 
-**Prices:** 484 official-website prices for 140 models so far (Toyota, Honda, Isuzu, Mitsubishi, Ford, Nissan, Mazda, Suzuki, BYD, MG, GWM/Haval/ORA/Tank, Changan/Deepal, Chery, Omoda/Jaecoo, AION, Wuling, Tesla, Hyundai and BMW), covering 88% of the last 12 months' registrations, each linked to the page it came from. Price history starts from the first observation, so it is not complete back in time.
+**Prices:** 502 official-website prices for 147 models so far (Toyota, Honda, Isuzu, Mitsubishi, Ford, Nissan, Mazda, Suzuki, BYD, MG, GWM/Haval/ORA/Tank, Changan/Deepal, Chery, Omoda/Jaecoo, AION, Wuling, Tesla, Hyundai, Kia, XPENG and BMW), covering 91% of the last 12 months' registrations, each linked to the page it came from. Price history starts from the first observation, so it is not complete back in time.
 
 If a month has no source data, it appears as `status=missing` with empty numbers, **not 0**. Details in [DATA_SOURCES.md](DATA_SOURCES.md).
 
@@ -74,7 +74,7 @@ Or clone the whole repository: `git clone https://github.com/sunJirapath/thai-au
 - **January is almost double December every year.** This pattern is in the DLT data itself, not an error.
 - **Provinces count where a vehicle is registered.** Company and leasing vehicles registered in Bangkok make Bangkok more than half the country.
 - **Model level only.** The DLT names vehicles inconsistently. Some brands report the model (`YARIS ATIV`), others report a variant (`BYD ATTO3 (480KM-EXT)`). Everything is grouped at model level, and counts are never split down to trims.
-- **An empty `model_id`** means the string has not been matched yet. Those units still count toward market and brand totals, but not toward model rankings. The unmatched amount is in the `unmatched_model_units` column; across the whole period 98.9% of units are matched (recent months are lower until new models get aliases).
+- **An empty `model_id`** means the string has not been matched yet. Those units still count toward market and brand totals, but not toward model rankings. The unmatched amount is in the `unmatched_model_units` column; across the whole period 99.0% of units are matched (recent months are lower until new models get aliases).
 - **Market share (`share_pct`)** is calculated against the month's total of RY1 to RY3.
 - **`yoy_pct` / `mom_pct` are empty** when the comparison month is missing or had zero units.
 - **Years:** the source files use the Buddhist Era (BE = CE + 543). Files here use the Gregorian calendar, formatted `YYYY-MM`.

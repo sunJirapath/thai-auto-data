@@ -121,7 +121,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-11,RY1,DEEPAL,S05 PLUS,25,deepal,deepal-s05,dlt-web-827cefc3
 2025-11,RY1,DEEPAL,S05 REEV MAX,103,deepal,deepal-s05,dlt-web-827cefc3
 2025-11,RY1,DEEPAL,S07,72,deepal,deepal-s07,dlt-web-827cefc3
-2025-11,RY1,DEEPAL,S07 L,24,deepal,,dlt-web-827cefc3
+2025-11,RY1,DEEPAL,S07 L,24,deepal,deepal-s07,dlt-web-827cefc3
 2025-11,RY1,DENZA,DENZA D9 AWD,9,denza,denza-d9,dlt-web-827cefc3
 2025-11,RY1,DENZA,DENZA D9 FWD,74,denza,denza-d9,dlt-web-827cefc3
 2025-11,RY1,FERRARI,12Cilindri,1,ferrari,,dlt-web-827cefc3

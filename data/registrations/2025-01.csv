@@ -118,7 +118,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-01,RY1,DAIHATSU,MOVE CANBUS STRIPES G TURBO,2,daihatsu,,dlt-web-827cefc3
 2025-01,RY1,DEEPAL,L07,145,deepal,deepal-l07,dlt-web-827cefc3
 2025-01,RY1,DEEPAL,S07,1167,deepal,deepal-s07,dlt-web-827cefc3
-2025-01,RY1,DEEPAL,S07 L,51,deepal,,dlt-web-827cefc3
+2025-01,RY1,DEEPAL,S07 L,51,deepal,deepal-s07,dlt-web-827cefc3
 2025-01,RY1,DENZA,DENZA D9 AWD,136,denza,denza-d9,dlt-web-827cefc3
 2025-01,RY1,DENZA,DENZA D9 FWD,633,denza,denza-d9,dlt-web-827cefc3
 2025-01,RY1,FERRARI,296 GTB,3,ferrari,,dlt-web-827cefc3

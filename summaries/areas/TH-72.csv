@@ -6261,6 +6261,7 @@ period,category,kind,id,units
 2026-01,RY1,m,chery-v23,1
 2026-01,RY1,m,deepal-e07,1
 2026-01,RY1,m,deepal-s05,7
+2026-01,RY1,m,deepal-s07,1
 2026-01,RY1,m,ford-everest,2
 2026-01,RY1,m,ford-ranger,3
 2026-01,RY1,m,ford-ranger-raptor,2
@@ -6277,6 +6278,7 @@ period,category,kind,id,units
 2026-01,RY1,m,isuzu-mu-x,19
 2026-01,RY1,m,jaecoo-5,44
 2026-01,RY1,m,jaecoo-6,9
+2026-01,RY1,m,jaecoo-6t,2
 2026-01,RY1,m,mazda-cx-5,1
 2026-01,RY1,m,mg-im6,1
 2026-01,RY1,m,mg-maxus-9,1
@@ -6707,6 +6709,7 @@ period,category,kind,id,units
 2026-05,RY1,m,isuzu-mu-x,12
 2026-05,RY1,m,jaecoo-5,2
 2026-05,RY1,m,jaecoo-6,6
+2026-05,RY1,m,jaecoo-6t,1
 2026-05,RY1,m,mazda-cx-30,1
 2026-05,RY1,m,mazda-cx-5,1
 2026-05,RY1,m,mazda-mazda2,1
@@ -6950,6 +6953,7 @@ period,category,kind,id,units
 2026-07,RY1,m,isuzu-mu-x,9
 2026-07,RY1,m,jaecoo-5,10
 2026-07,RY1,m,jaecoo-6,2
+2026-07,RY1,m,jaecoo-6t,1
 2026-07,RY1,m,mazda-bt-50,2
 2026-07,RY1,m,mazda-cx-3,1
 2026-07,RY1,m,mazda-cx-30,1
@@ -7210,7 +7214,7 @@ period,category,kind,id,units
 2026-09,RY1,m,isuzu-mu-x,7
 2026-09,RY1,m,jaecoo-5,9
 2026-09,RY1,m,jaecoo-6,5
-2026-09,RY1,m,jaecoo-6t,8
+2026-09,RY1,m,jaecoo-6t,9
 2026-09,RY1,m,lepas-l6,1
 2026-09,RY1,m,mazda-mazda2,1
 2026-09,RY1,m,mazda-mazda6e,1

@@ -9519,7 +9519,7 @@ period,category,kind,id,units
 2025-07,RY1,m,changan-lumin,4
 2025-07,RY1,m,deepal-e07,2
 2025-07,RY1,m,deepal-s05,2
-2025-07,RY1,m,deepal-s07,1
+2025-07,RY1,m,deepal-s07,2
 2025-07,RY1,m,denza-d9,3
 2025-07,RY1,m,ford-everest,20
 2025-07,RY1,m,ford-ranger,23
@@ -9957,7 +9957,7 @@ period,category,kind,id,units
 2025-09,RY1,m,changan-lumin,14
 2025-09,RY1,m,deepal-e07,1
 2025-09,RY1,m,deepal-s05,15
-2025-09,RY1,m,deepal-s07,3
+2025-09,RY1,m,deepal-s07,5
 2025-09,RY1,m,denza-d9,4
 2025-09,RY1,m,ford-everest,18
 2025-09,RY1,m,ford-ranger,16
@@ -10801,7 +10801,7 @@ period,category,kind,id,units
 2026-01,RY1,m,chery-v23,37
 2026-01,RY1,m,deepal-l07,1
 2026-01,RY1,m,deepal-s05,25
-2026-01,RY1,m,deepal-s07,13
+2026-01,RY1,m,deepal-s07,17
 2026-01,RY1,m,denza-d9,7
 2026-01,RY1,m,ford-everest,14
 2026-01,RY1,m,ford-ranger,36
@@ -10825,6 +10825,7 @@ period,category,kind,id,units
 2026-01,RY1,m,isuzu-mu-x,10
 2026-01,RY1,m,jaecoo-5,78
 2026-01,RY1,m,jaecoo-6,15
+2026-01,RY1,m,jaecoo-6t,2
 2026-01,RY1,m,jaecoo-7,2
 2026-01,RY1,m,mazda-cx-3,3
 2026-01,RY1,m,mazda-cx-30,8
@@ -11241,6 +11242,7 @@ period,category,kind,id,units
 2026-03,RY1,m,isuzu-mu-x,17
 2026-03,RY1,m,jaecoo-5,13
 2026-03,RY1,m,jaecoo-6,3
+2026-03,RY1,m,jaecoo-6t,2
 2026-03,RY1,m,jaecoo-7,2
 2026-03,RY1,m,lexus-lm,1
 2026-03,RY1,m,mazda-cx-3,3
@@ -11878,6 +11880,7 @@ period,category,kind,id,units
 2026-06,RY1,m,isuzu-mu-x,12
 2026-06,RY1,m,jaecoo-5,22
 2026-06,RY1,m,jaecoo-6,11
+2026-06,RY1,m,jaecoo-6t,3
 2026-06,RY1,m,jaecoo-7,3
 2026-06,RY1,m,lexus-rx,1
 2026-06,RY1,m,mazda-bt-50,1
@@ -12090,6 +12093,7 @@ period,category,kind,id,units
 2026-07,RY1,m,isuzu-mu-x,4
 2026-07,RY1,m,jaecoo-5,14
 2026-07,RY1,m,jaecoo-6,7
+2026-07,RY1,m,jaecoo-6t,1
 2026-07,RY1,m,mazda-cx-3,5
 2026-07,RY1,m,mazda-cx-30,3
 2026-07,RY1,m,mazda-mazda2,11
@@ -12294,6 +12298,7 @@ period,category,kind,id,units
 2026-08,RY1,m,isuzu-mu-x,7
 2026-08,RY1,m,jaecoo-5,40
 2026-08,RY1,m,jaecoo-6,12
+2026-08,RY1,m,jaecoo-6t,3
 2026-08,RY1,m,mazda-cx-3,2
 2026-08,RY1,m,mazda-cx-30,6
 2026-08,RY1,m,mazda-cx-5,2

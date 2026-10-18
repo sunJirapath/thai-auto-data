@@ -130,12 +130,12 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-12,RY1,DEEPAL,E07 PLUS,6,deepal,deepal-e07,dlt-web-827cefc3
 2025-12,RY1,DEEPAL,HUNTER K50,2,deepal,deepal-hunter-k50,dlt-web-827cefc3
 2025-12,RY1,DEEPAL,L07,8,deepal,deepal-l07,dlt-web-827cefc3
-2025-12,RY1,DEEPAL,L07 S,7,deepal,,dlt-web-827cefc3
+2025-12,RY1,DEEPAL,L07 S,7,deepal,deepal-l07,dlt-web-827cefc3
 2025-12,RY1,DEEPAL,S05 MAX,407,deepal,deepal-s05,dlt-web-827cefc3
 2025-12,RY1,DEEPAL,S05 PLUS,14,deepal,deepal-s05,dlt-web-827cefc3
 2025-12,RY1,DEEPAL,S05 REEV MAX,98,deepal,deepal-s05,dlt-web-827cefc3
 2025-12,RY1,DEEPAL,S07,107,deepal,deepal-s07,dlt-web-827cefc3
-2025-12,RY1,DEEPAL,S07 L,21,deepal,,dlt-web-827cefc3
+2025-12,RY1,DEEPAL,S07 L,21,deepal,deepal-s07,dlt-web-827cefc3
 2025-12,RY1,DENZA,DENZA D9 AWD,9,denza,denza-d9,dlt-web-827cefc3
 2025-12,RY1,DENZA,DENZA D9 FWD,93,denza,denza-d9,dlt-web-827cefc3
 2025-12,RY1,FERRARI,PORTOFINO M,1,ferrari,,dlt-web-827cefc3

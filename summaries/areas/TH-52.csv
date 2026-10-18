@@ -4586,6 +4586,7 @@ period,category,kind,id,units
 2024-09,RY1,m,byd-atto-3,2
 2024-09,RY1,m,byd-dolphin,2
 2024-09,RY1,m,deepal-l07,1
+2024-09,RY1,m,deepal-s07,1
 2024-09,RY1,m,ford-ranger,7
 2024-09,RY1,m,haval-h6,1
 2024-09,RY1,m,honda-city,2
@@ -6507,6 +6508,7 @@ period,category,kind,id,units
 2026-03,RY1,m,isuzu-mu-x,7
 2026-03,RY1,m,jaecoo-5,8
 2026-03,RY1,m,jaecoo-6,1
+2026-03,RY1,m,jaecoo-6t,1
 2026-03,RY1,m,mg-mg3,2
 2026-03,RY1,m,mg-mg4,7
 2026-03,RY1,m,mg-s5,1

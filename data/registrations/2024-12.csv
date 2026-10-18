@@ -111,7 +111,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-12,RY1,DAIHATSU,MOVE CANBUS STRIPES G TURBO,1,daihatsu,,dlt-web-827cefc3
 2024-12,RY1,DEEPAL,L07,42,deepal,deepal-l07,dlt-web-827cefc3
 2024-12,RY1,DEEPAL,S07,373,deepal,deepal-s07,dlt-web-827cefc3
-2024-12,RY1,DEEPAL,S07 L,15,deepal,,dlt-web-827cefc3
+2024-12,RY1,DEEPAL,S07 L,15,deepal,deepal-s07,dlt-web-827cefc3
 2024-12,RY1,DFSK,GLORY 560,2,dfsk,,dlt-web-827cefc3
 2024-12,RY1,FOMM,FOMM ONE,1,fomm,,dlt-web-827cefc3
 2024-12,RY1,FORD,EVEREST,450,ford,ford-everest,dlt-web-827cefc3

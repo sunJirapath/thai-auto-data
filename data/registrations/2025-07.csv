@@ -130,11 +130,11 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-07,RY1,DEEPAL,E07 PLUS,29,deepal,deepal-e07,dlt-web-827cefc3
 2025-07,RY1,DEEPAL,HUNTER K50,3,deepal,deepal-hunter-k50,dlt-web-827cefc3
 2025-07,RY1,DEEPAL,L07,39,deepal,deepal-l07,dlt-web-827cefc3
-2025-07,RY1,DEEPAL,L07 S,2,deepal,,dlt-web-827cefc3
+2025-07,RY1,DEEPAL,L07 S,2,deepal,deepal-l07,dlt-web-827cefc3
 2025-07,RY1,DEEPAL,S05 MAX,61,deepal,deepal-s05,dlt-web-827cefc3
 2025-07,RY1,DEEPAL,S05 PLUS,5,deepal,deepal-s05,dlt-web-827cefc3
 2025-07,RY1,DEEPAL,S07,269,deepal,deepal-s07,dlt-web-827cefc3
-2025-07,RY1,DEEPAL,S07 L,18,deepal,,dlt-web-827cefc3
+2025-07,RY1,DEEPAL,S07 L,18,deepal,deepal-s07,dlt-web-827cefc3
 2025-07,RY1,DENZA,DENZA D9 AWD,20,denza,denza-d9,dlt-web-827cefc3
 2025-07,RY1,DENZA,DENZA D9 FWD,156,denza,denza-d9,dlt-web-827cefc3
 2025-07,RY1,DONGFENG,S73,2,dongfeng,,dlt-web-827cefc3

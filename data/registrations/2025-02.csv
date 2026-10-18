@@ -116,9 +116,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-02,RY1,DEEPAL,E07 PERFORMANCE AWD,5,deepal,deepal-e07,dlt-web-827cefc3
 2025-02,RY1,DEEPAL,E07 PLUS,5,deepal,deepal-e07,dlt-web-827cefc3
 2025-02,RY1,DEEPAL,L07,11,deepal,deepal-l07,dlt-web-827cefc3
-2025-02,RY1,DEEPAL,L07 S,1,deepal,,dlt-web-827cefc3
+2025-02,RY1,DEEPAL,L07 S,1,deepal,deepal-l07,dlt-web-827cefc3
 2025-02,RY1,DEEPAL,S07,173,deepal,deepal-s07,dlt-web-827cefc3
-2025-02,RY1,DEEPAL,S07 L,7,deepal,,dlt-web-827cefc3
+2025-02,RY1,DEEPAL,S07 L,7,deepal,deepal-s07,dlt-web-827cefc3
 2025-02,RY1,DENZA,DENZA D9 AWD,48,denza,denza-d9,dlt-web-827cefc3
 2025-02,RY1,DENZA,DENZA D9 FWD,167,denza,denza-d9,dlt-web-827cefc3
 2025-02,RY1,FERRARI,296 GTS,1,ferrari,,dlt-web-827cefc3

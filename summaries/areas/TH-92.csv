@@ -6007,6 +6007,7 @@ period,category,kind,id,units
 2026-05,RY1,m,isuzu-d-max,11
 2026-05,RY1,m,isuzu-mu-x,2
 2026-05,RY1,m,jaecoo-5,7
+2026-05,RY1,m,jaecoo-6t,1
 2026-05,RY1,m,jaecoo-7,2
 2026-05,RY1,m,mercedes-benz-cle,1
 2026-05,RY1,m,mercedes-benz-gle,1
@@ -6338,6 +6339,7 @@ period,category,kind,id,units
 2026-08,RY1,m,isuzu-mu-x,2
 2026-08,RY1,m,jaecoo-5,16
 2026-08,RY1,m,jaecoo-6,3
+2026-08,RY1,m,jaecoo-6t,1
 2026-08,RY1,m,mazda-cx-5,3
 2026-08,RY1,m,mazda-mazda2,5
 2026-08,RY1,m,mg-im5,1
@@ -6467,7 +6469,7 @@ period,category,kind,id,units
 2026-09,RY1,m,isuzu-mu-x,3
 2026-09,RY1,m,jaecoo-5,22
 2026-09,RY1,m,jaecoo-6,1
-2026-09,RY1,m,jaecoo-6t,3
+2026-09,RY1,m,jaecoo-6t,4
 2026-09,RY1,m,mazda-mazda2,1
 2026-09,RY1,m,mercedes-benz-glc,1
 2026-09,RY1,m,mg-mg4,5

@@ -6447,6 +6447,7 @@ period,category,kind,id,units
 2026-01,RY1,m,chery-v23,1
 2026-01,RY1,m,deepal-e07,1
 2026-01,RY1,m,deepal-s05,3
+2026-01,RY1,m,deepal-s07,1
 2026-01,RY1,m,ford-everest,4
 2026-01,RY1,m,ford-ranger,4
 2026-01,RY1,m,gwm-tank-300,7
@@ -7111,6 +7112,7 @@ period,category,kind,id,units
 2026-07,RY1,m,isuzu-mu-x,7
 2026-07,RY1,m,jaecoo-5,11
 2026-07,RY1,m,jaecoo-6,1
+2026-07,RY1,m,jaecoo-6t,1
 2026-07,RY1,m,kia-carnival,1
 2026-07,RY1,m,lexus-lbx,1
 2026-07,RY1,m,mazda-cx-3,2

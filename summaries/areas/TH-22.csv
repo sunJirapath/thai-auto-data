@@ -5778,7 +5778,7 @@ period,category,kind,id,units
 2025-01,RY1,m,byd-m6,4
 2025-01,RY1,m,byd-sealion-7,9
 2025-01,RY1,m,changan-lumin,2
-2025-01,RY1,m,deepal-s07,3
+2025-01,RY1,m,deepal-s07,4
 2025-01,RY1,m,ford-everest,10
 2025-01,RY1,m,ford-ranger,7
 2025-01,RY1,m,ford-ranger-raptor,2
@@ -7222,6 +7222,7 @@ period,category,kind,id,units
 2026-01,RY1,m,byd-sealion-6,1
 2026-01,RY1,m,byd-sealion-7,4
 2026-01,RY1,m,deepal-s05,2
+2026-01,RY1,m,deepal-s07,1
 2026-01,RY1,m,ford-everest,9
 2026-01,RY1,m,ford-ranger,9
 2026-01,RY1,m,ford-ranger-raptor,2
@@ -8000,6 +8001,7 @@ period,category,kind,id,units
 2026-07,RY1,m,isuzu-d-max,47
 2026-07,RY1,m,isuzu-mu-x,15
 2026-07,RY1,m,jaecoo-5,1
+2026-07,RY1,m,jaecoo-6t,1
 2026-07,RY1,m,kia-ev5,1
 2026-07,RY1,m,mazda-mazda2,9
 2026-07,RY1,m,mg-im5,1

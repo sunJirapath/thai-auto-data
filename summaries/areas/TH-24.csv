@@ -4707,6 +4707,7 @@ period,category,kind,id,units
 2024-12,RY1,f,petrol,30
 2024-12,RY1,m,byd-atto-3,1
 2024-12,RY1,m,byd-dolphin,11
+2024-12,RY1,m,deepal-s07,1
 2024-12,RY1,m,ford-everest,2
 2024-12,RY1,m,ford-ranger,3
 2024-12,RY1,m,honda-city-hatchback,3
@@ -6046,7 +6047,7 @@ period,category,kind,id,units
 2026-01,RY1,m,byd-sealion-6,2
 2026-01,RY1,m,byd-sealion-7,5
 2026-01,RY1,m,deepal-s05,1
-2026-01,RY1,m,deepal-s07,1
+2026-01,RY1,m,deepal-s07,2
 2026-01,RY1,m,ford-everest,3
 2026-01,RY1,m,ford-ranger,9
 2026-01,RY1,m,gwm-tank-300,6
@@ -6385,6 +6386,7 @@ period,category,kind,id,units
 2026-04,RY1,m,isuzu-d-max,7
 2026-04,RY1,m,isuzu-mu-x,6
 2026-04,RY1,m,jaecoo-5,1
+2026-04,RY1,m,jaecoo-6t,1
 2026-04,RY1,m,mercedes-benz-eqs-suv,1
 2026-04,RY1,m,mercedes-benz-v-class,1
 2026-04,RY1,m,mg-mg4,1
@@ -6605,6 +6607,7 @@ period,category,kind,id,units
 2026-06,RY1,m,isuzu-mu-x,7
 2026-06,RY1,m,jaecoo-5,1
 2026-06,RY1,m,jaecoo-6,1
+2026-06,RY1,m,jaecoo-6t,1
 2026-06,RY1,m,mercedes-benz-e-class,1
 2026-06,RY1,m,mg-maxus-7,1
 2026-06,RY1,m,mg-s5,1
@@ -6989,6 +6992,7 @@ period,category,kind,id,units
 2026-09,RY1,m,isuzu-mu-x,8
 2026-09,RY1,m,jaecoo-5,18
 2026-09,RY1,m,jaecoo-6,1
+2026-09,RY1,m,jaecoo-6t,1
 2026-09,RY1,m,lexus-lm,1
 2026-09,RY1,m,mercedes-benz-cle,1
 2026-09,RY1,m,mg-im5,1

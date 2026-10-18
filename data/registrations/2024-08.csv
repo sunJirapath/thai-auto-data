@@ -111,7 +111,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY1,CHEVROLET,CORVETTE STINGRAY COUPE 2LT,1,chevrolet,,dlt-web-827cefc3
 2024-08,RY1,DEEPAL,L07,138,deepal,deepal-l07,dlt-web-827cefc3
 2024-08,RY1,DEEPAL,S07,332,deepal,deepal-s07,dlt-web-827cefc3
-2024-08,RY1,DEEPAL,S07 L,8,deepal,,dlt-web-827cefc3
+2024-08,RY1,DEEPAL,S07 L,8,deepal,deepal-s07,dlt-web-827cefc3
 2024-08,RY1,DFSK,GLORY 580 I-AUTO,1,dfsk,,dlt-web-827cefc3
 2024-08,RY1,FENGCHI,DYQ1030BEV1-H,3,fengchi,,dlt-web-827cefc3
 2024-08,RY1,FERRARI,296 GTB,2,ferrari,,dlt-web-827cefc3

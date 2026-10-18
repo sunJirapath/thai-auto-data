@@ -118,7 +118,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-08,RY1,DEEPAL,S05 MAX LONG RANGE,156,deepal,deepal-s05,dlt-web-827cefc3
 2026-08,RY1,DEEPAL,S05 REEV MAX,135,deepal,deepal-s05,dlt-web-827cefc3
 2026-08,RY1,DEEPAL,S07,101,deepal,deepal-s07,dlt-web-827cefc3
-2026-08,RY1,DEEPAL,S07 L,3,deepal,,dlt-web-827cefc3
+2026-08,RY1,DEEPAL,S07 L,3,deepal,deepal-s07,dlt-web-827cefc3
 2026-08,RY1,DENZA,DENZA D9 AWD,17,denza,denza-d9,dlt-web-827cefc3
 2026-08,RY1,DENZA,DENZA D9 FWD,59,denza,denza-d9,dlt-web-827cefc3
 2026-08,RY1,FARIZON,FARIZON SUPERVAN SV6,4,farizon,,dlt-web-827cefc3
@@ -180,7 +180,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-08,RY1,JAECOO,6 EV Long Range 2WD,3,jaecoo,jaecoo-6,dlt-web-827cefc3
 2026-08,RY1,JAECOO,6 EV Long Range 2WD PRO,565,jaecoo,jaecoo-6,dlt-web-827cefc3
 2026-08,RY1,JAECOO,6 EV Long Range 4WD,68,jaecoo,jaecoo-6,dlt-web-827cefc3
-2026-08,RY1,JAECOO,6T EV Long Range 4WD,83,jaecoo,,dlt-web-827cefc3
+2026-08,RY1,JAECOO,6T EV Long Range 4WD,83,jaecoo,jaecoo-6t,dlt-web-827cefc3
 2026-08,RY1,JAECOO,6T REEV 2WD MAX,1,jaecoo,jaecoo-6t,dlt-web-827cefc3
 2026-08,RY1,JAECOO,6T REEV 4WD ULTRA,30,jaecoo,jaecoo-6t,dlt-web-827cefc3
 2026-08,RY1,JAECOO,7 SHS Max,27,jaecoo,jaecoo-7,dlt-web-827cefc3

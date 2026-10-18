@@ -115,9 +115,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-07,RY1,CHEVROLET,CORVETTE STINGRAY COUPE 2LT,1,chevrolet,,dlt-web-827cefc3
 2024-07,RY1,CHEVROLET,CORVETTE STINGRAY COUPE 3LT,1,chevrolet,,dlt-web-827cefc3
 2024-07,RY1,DEEPAL,L07,49,deepal,deepal-l07,dlt-web-827cefc3
-2024-07,RY1,DEEPAL,L07 S,16,deepal,,dlt-web-827cefc3
+2024-07,RY1,DEEPAL,L07 S,16,deepal,deepal-l07,dlt-web-827cefc3
 2024-07,RY1,DEEPAL,S07,448,deepal,deepal-s07,dlt-web-827cefc3
-2024-07,RY1,DEEPAL,S07 L,7,deepal,,dlt-web-827cefc3
+2024-07,RY1,DEEPAL,S07 L,7,deepal,deepal-s07,dlt-web-827cefc3
 2024-07,RY1,FERRARI,296 GTB,3,ferrari,,dlt-web-827cefc3
 2024-07,RY1,FERRARI,296 GTS,1,ferrari,,dlt-web-827cefc3
 2024-07,RY1,FERRARI,812 COMPETIZIONE,1,ferrari,,dlt-web-827cefc3

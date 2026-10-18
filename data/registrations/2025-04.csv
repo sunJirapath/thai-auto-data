@@ -119,7 +119,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-04,RY1,DEEPAL,E07 PLUS,14,deepal,deepal-e07,dlt-web-827cefc3
 2025-04,RY1,DEEPAL,L07,22,deepal,deepal-l07,dlt-web-827cefc3
 2025-04,RY1,DEEPAL,S07,181,deepal,deepal-s07,dlt-web-827cefc3
-2025-04,RY1,DEEPAL,S07 L,13,deepal,,dlt-web-827cefc3
+2025-04,RY1,DEEPAL,S07 L,13,deepal,deepal-s07,dlt-web-827cefc3
 2025-04,RY1,DENZA,DENZA D9 AWD,17,denza,denza-d9,dlt-web-827cefc3
 2025-04,RY1,DENZA,DENZA D9 FWD,132,denza,denza-d9,dlt-web-827cefc3
 2025-04,RY1,DFSK,GLORY 560,1,dfsk,,dlt-web-827cefc3

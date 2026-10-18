@@ -8346,7 +8346,7 @@ period,category,kind,id,units
 2024-09,RY1,m,byd-seal,4
 2024-09,RY1,m,changan-lumin,2
 2024-09,RY1,m,deepal-l07,1
-2024-09,RY1,m,deepal-s07,7
+2024-09,RY1,m,deepal-s07,8
 2024-09,RY1,m,ford-everest,34
 2024-09,RY1,m,ford-ranger,39
 2024-09,RY1,m,ford-ranger-raptor,9
@@ -8555,7 +8555,7 @@ period,category,kind,id,units
 2024-10,RY1,m,byd-seal,2
 2024-10,RY1,m,changan-lumin,3
 2024-10,RY1,m,deepal-l07,2
-2024-10,RY1,m,deepal-s07,10
+2024-10,RY1,m,deepal-s07,11
 2024-10,RY1,m,ford-everest,27
 2024-10,RY1,m,ford-ranger,42
 2024-10,RY1,m,ford-ranger-raptor,8
@@ -8970,7 +8970,7 @@ period,category,kind,id,units
 2024-12,RY1,m,byd-seal,3
 2024-12,RY1,m,changan-lumin,4
 2024-12,RY1,m,deepal-l07,1
-2024-12,RY1,m,deepal-s07,11
+2024-12,RY1,m,deepal-s07,12
 2024-12,RY1,m,ford-everest,32
 2024-12,RY1,m,ford-ranger,44
 2024-12,RY1,m,ford-ranger-raptor,7
@@ -9189,7 +9189,7 @@ period,category,kind,id,units
 2025-01,RY1,m,byd-sealion-7,104
 2025-01,RY1,m,changan-lumin,31
 2025-01,RY1,m,deepal-l07,1
-2025-01,RY1,m,deepal-s07,63
+2025-01,RY1,m,deepal-s07,64
 2025-01,RY1,m,denza-d9,39
 2025-01,RY1,m,ford-everest,58
 2025-01,RY1,m,ford-ranger,70
@@ -9426,7 +9426,7 @@ period,category,kind,id,units
 2025-02,RY1,m,byd-sealion-7,5
 2025-02,RY1,m,changan-lumin,2
 2025-02,RY1,m,deepal-e07,1
-2025-02,RY1,m,deepal-s07,7
+2025-02,RY1,m,deepal-s07,8
 2025-02,RY1,m,denza-d9,32
 2025-02,RY1,m,ford-everest,26
 2025-02,RY1,m,ford-ranger,43
@@ -10327,7 +10327,7 @@ period,category,kind,id,units
 2025-06,RY1,m,byd-sealion-7,54
 2025-06,RY1,m,changan-lumin,10
 2025-06,RY1,m,deepal-l07,1
-2025-06,RY1,m,deepal-s07,4
+2025-06,RY1,m,deepal-s07,5
 2025-06,RY1,m,denza-d9,16
 2025-06,RY1,m,ford-everest,26
 2025-06,RY1,m,ford-mustang,1
@@ -10804,7 +10804,7 @@ period,category,kind,id,units
 2025-08,RY1,m,deepal-e07,2
 2025-08,RY1,m,deepal-l07,1
 2025-08,RY1,m,deepal-s05,7
-2025-08,RY1,m,deepal-s07,5
+2025-08,RY1,m,deepal-s07,6
 2025-08,RY1,m,denza-d9,10
 2025-08,RY1,m,ford-everest,39
 2025-08,RY1,m,ford-ranger,37
@@ -11512,7 +11512,7 @@ period,category,kind,id,units
 2025-11,RY1,m,byd-sealion-7,29
 2025-11,RY1,m,changan-lumin,8
 2025-11,RY1,m,deepal-s05,20
-2025-11,RY1,m,deepal-s07,5
+2025-11,RY1,m,deepal-s07,7
 2025-11,RY1,m,denza-d9,10
 2025-11,RY1,m,ford-everest,23
 2025-11,RY1,m,ford-ranger,35
@@ -12012,8 +12012,9 @@ period,category,kind,id,units
 2026-01,RY1,m,changan-lumin,12
 2026-01,RY1,m,chery-v23,29
 2026-01,RY1,m,deepal-e07,1
+2026-01,RY1,m,deepal-l07,1
 2026-01,RY1,m,deepal-s05,76
-2026-01,RY1,m,deepal-s07,17
+2026-01,RY1,m,deepal-s07,19
 2026-01,RY1,m,denza-d9,8
 2026-01,RY1,m,ford-everest,33
 2026-01,RY1,m,ford-ranger,73
@@ -13218,6 +13219,7 @@ period,category,kind,id,units
 2026-06,RY1,m,isuzu-mu-x,70
 2026-06,RY1,m,jaecoo-5,5
 2026-06,RY1,m,jaecoo-6,5
+2026-06,RY1,m,jaecoo-6t,2
 2026-06,RY1,m,jaecoo-7,1
 2026-06,RY1,m,kia-carnival,2
 2026-06,RY1,m,kia-ev5,3
@@ -13466,6 +13468,7 @@ period,category,kind,id,units
 2026-07,RY1,m,isuzu-mu-x,70
 2026-07,RY1,m,jaecoo-5,8
 2026-07,RY1,m,jaecoo-6,4
+2026-07,RY1,m,jaecoo-6t,1
 2026-07,RY1,m,kia-sorento,2
 2026-07,RY1,m,leapmotor-b10,1
 2026-07,RY1,m,lexus-lm,1
@@ -13698,6 +13701,7 @@ period,category,kind,id,units
 2026-08,RY1,m,isuzu-mu-x,68
 2026-08,RY1,m,jaecoo-5,10
 2026-08,RY1,m,jaecoo-6,8
+2026-08,RY1,m,jaecoo-6t,1
 2026-08,RY1,m,kia-ev5,2
 2026-08,RY1,m,kia-sorento,1
 2026-08,RY1,m,lexus-rx,1
@@ -13969,7 +13973,7 @@ period,category,kind,id,units
 2026-09,RY1,m,isuzu-mu-x,73
 2026-09,RY1,m,jaecoo-5,59
 2026-09,RY1,m,jaecoo-6,7
-2026-09,RY1,m,jaecoo-6t,15
+2026-09,RY1,m,jaecoo-6t,16
 2026-09,RY1,m,kia-carnival,2
 2026-09,RY1,m,kia-ev5,4
 2026-09,RY1,m,leapmotor-c10,1

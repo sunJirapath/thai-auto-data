@@ -103,9 +103,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-09,RY1,CHEVROLET,CAPTIVA,1,chevrolet,,dlt-web-827cefc3
 2024-09,RY1,DAIHATSU,MOVE CANBUS STRIPES G TURBO,1,daihatsu,,dlt-web-827cefc3
 2024-09,RY1,DEEPAL,L07,54,deepal,deepal-l07,dlt-web-827cefc3
-2024-09,RY1,DEEPAL,L07 S,6,deepal,,dlt-web-827cefc3
+2024-09,RY1,DEEPAL,L07 S,6,deepal,deepal-l07,dlt-web-827cefc3
 2024-09,RY1,DEEPAL,S07,256,deepal,deepal-s07,dlt-web-827cefc3
-2024-09,RY1,DEEPAL,S07 L,19,deepal,,dlt-web-827cefc3
+2024-09,RY1,DEEPAL,S07 L,19,deepal,deepal-s07,dlt-web-827cefc3
 2024-09,RY1,FERRARI,296 GTB,1,ferrari,,dlt-web-827cefc3
 2024-09,RY1,FERRARI,296 GTS,1,ferrari,,dlt-web-827cefc3
 2024-09,RY1,FERRARI,F8 SPIDER,1,ferrari,,dlt-web-827cefc3

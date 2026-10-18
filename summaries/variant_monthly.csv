@@ -14495,7 +14495,9 @@ period,model_id,category,variant,units
 2024-07,byd-t3,RY3,T3,8
 2024-07,changan-lumin,RY1,LUMIN,15
 2024-07,deepal-l07,RY1,L07,49
+2024-07,deepal-l07,RY1,L07 S,16
 2024-07,deepal-s07,RY1,S07,448
+2024-07,deepal-s07,RY1,S07 L,7
 2024-07,ford-everest,RY1,EVEREST,812
 2024-07,ford-mustang,RY1,MUSTANG,4
 2024-07,ford-ranger,RY1,RANGER,974
@@ -14878,6 +14880,7 @@ period,model_id,category,variant,units
 2024-08,changan-lumin,RY1,LUMIN L DC,27
 2024-08,deepal-l07,RY1,L07,138
 2024-08,deepal-s07,RY1,S07,332
+2024-08,deepal-s07,RY1,S07 L,8
 2024-08,ford-everest,RY1,EVEREST,732
 2024-08,ford-mustang,RY1,MUSTANG,5
 2024-08,ford-ranger,RY1,RANGER,992
@@ -15261,7 +15264,9 @@ period,model_id,category,variant,units
 2024-09,changan-lumin,RY1,LUMIN,6
 2024-09,changan-lumin,RY1,LUMIN L DC,18
 2024-09,deepal-l07,RY1,L07,54
+2024-09,deepal-l07,RY1,L07 S,6
 2024-09,deepal-s07,RY1,S07,256
+2024-09,deepal-s07,RY1,S07 L,19
 2024-09,ford-everest,RY1,EVEREST,712
 2024-09,ford-mustang,RY1,MUSTANG,1
 2024-09,ford-ranger,RY1,RANGER,978
@@ -15651,6 +15656,7 @@ period,model_id,category,variant,units
 2024-10,changan-lumin,RY1,LUMIN L DC,17
 2024-10,deepal-l07,RY1,L07,38
 2024-10,deepal-s07,RY1,S07,256
+2024-10,deepal-s07,RY1,S07 L,9
 2024-10,ford-everest,RY1,EVEREST,647
 2024-10,ford-mustang,RY1,MUSTANG,2
 2024-10,ford-mustang,RY1,MUSTANG ECOBOOST PREMIUM,1
@@ -16053,7 +16059,9 @@ period,model_id,category,variant,units
 2024-11,changan-lumin,RY1,LUMIN,3
 2024-11,changan-lumin,RY1,LUMIN L DC,60
 2024-11,deepal-l07,RY1,L07,48
+2024-11,deepal-l07,RY1,L07 S,14
 2024-11,deepal-s07,RY1,S07,318
+2024-11,deepal-s07,RY1,S07 L,10
 2024-11,ford-everest,RY1,EVEREST,518
 2024-11,ford-mustang,RY1,MUSTANG,5
 2024-11,ford-mustang,RY1,MUSTANG 5.0 GT PREMIUM,1
@@ -16454,6 +16462,7 @@ period,model_id,category,variant,units
 2024-12,changan-lumin,RY1,LUMIN L DC,104
 2024-12,deepal-l07,RY1,L07,42
 2024-12,deepal-s07,RY1,S07,373
+2024-12,deepal-s07,RY1,S07 L,15
 2024-12,ford-everest,RY1,EVEREST,450
 2024-12,ford-ranger,RY1,RANGER,583
 2024-12,ford-ranger,RY2,RANGER,2
@@ -16831,6 +16840,7 @@ period,model_id,category,variant,units
 2025-01,changan-lumin,RY1,LUMIN L DC,376
 2025-01,deepal-l07,RY1,L07,145
 2025-01,deepal-s07,RY1,S07,1167
+2025-01,deepal-s07,RY1,S07 L,51
 2025-01,denza-d9,RY1,DENZA D9 AWD,136
 2025-01,denza-d9,RY1,DENZA D9 FWD,633
 2025-01,ford-everest,RY1,EVEREST,887
@@ -17241,7 +17251,9 @@ period,model_id,category,variant,units
 2025-02,deepal-e07,RY1,E07 PERFORMANCE AWD,5
 2025-02,deepal-e07,RY1,E07 PLUS,5
 2025-02,deepal-l07,RY1,L07,11
+2025-02,deepal-l07,RY1,L07 S,1
 2025-02,deepal-s07,RY1,S07,173
+2025-02,deepal-s07,RY1,S07 L,7
 2025-02,denza-d9,RY1,DENZA D9 AWD,48
 2025-02,denza-d9,RY1,DENZA D9 FWD,167
 2025-02,ford-everest,RY1,EVEREST,743
@@ -17660,6 +17672,7 @@ period,model_id,category,variant,units
 2025-03,deepal-e07,RY1,E07 PLUS,18
 2025-03,deepal-l07,RY1,L07,25
 2025-03,deepal-s07,RY1,S07,320
+2025-03,deepal-s07,RY1,S07 L,21
 2025-03,denza-d9,RY1,DENZA D9 AWD,43
 2025-03,denza-d9,RY1,DENZA D9 FWD,404
 2025-03,ford-everest,RY1,EVEREST,706
@@ -18080,6 +18093,7 @@ period,model_id,category,variant,units
 2025-04,deepal-e07,RY1,E07 PLUS,14
 2025-04,deepal-l07,RY1,L07,22
 2025-04,deepal-s07,RY1,S07,181
+2025-04,deepal-s07,RY1,S07 L,13
 2025-04,denza-d9,RY1,DENZA D9 AWD,17
 2025-04,denza-d9,RY1,DENZA D9 FWD,132
 2025-04,ford-everest,RY1,EVEREST,636
@@ -18487,6 +18501,7 @@ period,model_id,category,variant,units
 2025-05,deepal-e07,RY1,E07 PLUS,8
 2025-05,deepal-l07,RY1,L07,33
 2025-05,deepal-s07,RY1,S07,374
+2025-05,deepal-s07,RY1,S07 L,17
 2025-05,denza-d9,RY1,DENZA D9 AWD,54
 2025-05,denza-d9,RY1,DENZA D9 FWD,497
 2025-05,ford-everest,RY1,EVEREST,713
@@ -18905,6 +18920,7 @@ period,model_id,category,variant,units
 2025-06,deepal-e07,RY1,E07 PLUS,23
 2025-06,deepal-l07,RY1,L07,55
 2025-06,deepal-s07,RY1,S07,395
+2025-06,deepal-s07,RY1,S07 L,37
 2025-06,denza-d9,RY1,DENZA D9 AWD,28
 2025-06,denza-d9,RY1,DENZA D9 FWD,218
 2025-06,ford-everest,RY1,EVEREST,659
@@ -19320,9 +19336,11 @@ period,model_id,category,variant,units
 2025-07,deepal-e07,RY1,E07 PLUS,29
 2025-07,deepal-hunter-k50,RY1,HUNTER K50,3
 2025-07,deepal-l07,RY1,L07,39
+2025-07,deepal-l07,RY1,L07 S,2
 2025-07,deepal-s05,RY1,S05 MAX,61
 2025-07,deepal-s05,RY1,S05 PLUS,5
 2025-07,deepal-s07,RY1,S07,269
+2025-07,deepal-s07,RY1,S07 L,18
 2025-07,denza-d9,RY1,DENZA D9 AWD,20
 2025-07,denza-d9,RY1,DENZA D9 FWD,156
 2025-07,ford-everest,RY1,EVEREST,755
@@ -19762,10 +19780,12 @@ period,model_id,category,variant,units
 2025-08,deepal-e07,RY1,E07 PLUS,11
 2025-08,deepal-hunter-k50,RY1,HUNTER K50,2
 2025-08,deepal-l07,RY1,L07,24
+2025-08,deepal-l07,RY1,L07 S,14
 2025-08,deepal-s05,RY1,S05 MAX,230
 2025-08,deepal-s05,RY1,S05 PLUS,42
 2025-08,deepal-s05,RY1,S05 REEV MAX,20
 2025-08,deepal-s07,RY1,S07,392
+2025-08,deepal-s07,RY1,S07 L,42
 2025-08,denza-d9,RY1,DENZA D9 AWD,10
 2025-08,denza-d9,RY1,DENZA D9 FWD,138
 2025-08,ford-everest,RY1,EVEREST,614
@@ -20198,10 +20218,12 @@ period,model_id,category,variant,units
 2025-09,deepal-e07,RY1,E07 PLUS,10
 2025-09,deepal-hunter-k50,RY1,HUNTER K50,1
 2025-09,deepal-l07,RY1,L07,27
+2025-09,deepal-l07,RY1,L07 S,5
 2025-09,deepal-s05,RY1,S05 MAX,645
 2025-09,deepal-s05,RY1,S05 PLUS,68
 2025-09,deepal-s05,RY1,S05 REEV MAX,195
 2025-09,deepal-s07,RY1,S07,296
+2025-09,deepal-s07,RY1,S07 L,30
 2025-09,denza-d9,RY1,DENZA D9 AWD,8
 2025-09,denza-d9,RY1,DENZA D9 FWD,106
 2025-09,ford-everest,RY1,EVEREST,657
@@ -20641,10 +20663,12 @@ period,model_id,category,variant,units
 2025-10,deepal-e07,RY1,E07 PLUS,6
 2025-10,deepal-hunter-k50,RY1,HUNTER K50,2
 2025-10,deepal-l07,RY1,L07,14
+2025-10,deepal-l07,RY1,L07 S,2
 2025-10,deepal-s05,RY1,S05 MAX,640
 2025-10,deepal-s05,RY1,S05 PLUS,23
 2025-10,deepal-s05,RY1,S05 REEV MAX,186
 2025-10,deepal-s07,RY1,S07,468
+2025-10,deepal-s07,RY1,S07 L,38
 2025-10,denza-d9,RY1,DENZA D9 AWD,9
 2025-10,denza-d9,RY1,DENZA D9 FWD,85
 2025-10,ford-everest,RY1,EVEREST,572
@@ -21081,6 +21105,7 @@ period,model_id,category,variant,units
 2025-11,deepal-s05,RY1,S05 PLUS,25
 2025-11,deepal-s05,RY1,S05 REEV MAX,103
 2025-11,deepal-s07,RY1,S07,72
+2025-11,deepal-s07,RY1,S07 L,24
 2025-11,denza-d9,RY1,DENZA D9 AWD,9
 2025-11,denza-d9,RY1,DENZA D9 FWD,74
 2025-11,ford-everest,RY1,EVEREST,535
@@ -21523,10 +21548,12 @@ period,model_id,category,variant,units
 2025-12,deepal-e07,RY1,E07 PLUS,6
 2025-12,deepal-hunter-k50,RY1,HUNTER K50,2
 2025-12,deepal-l07,RY1,L07,8
+2025-12,deepal-l07,RY1,L07 S,7
 2025-12,deepal-s05,RY1,S05 MAX,407
 2025-12,deepal-s05,RY1,S05 PLUS,14
 2025-12,deepal-s05,RY1,S05 REEV MAX,98
 2025-12,deepal-s07,RY1,S07,107
+2025-12,deepal-s07,RY1,S07 L,21
 2025-12,denza-d9,RY1,DENZA D9 AWD,9
 2025-12,denza-d9,RY1,DENZA D9 FWD,93
 2025-12,ford-everest,RY1,EVEREST,430
@@ -21953,10 +21980,12 @@ period,model_id,category,variant,units
 2026-01,deepal-e07,RY1,E07 PLUS,9
 2026-01,deepal-hunter-k50,RY1,HUNTER K50,5
 2026-01,deepal-l07,RY1,L07,87
+2026-01,deepal-l07,RY1,L07 S,80
 2026-01,deepal-s05,RY1,S05 MAX,1927
 2026-01,deepal-s05,RY1,S05 PLUS,92
 2026-01,deepal-s05,RY1,S05 REEV MAX,320
 2026-01,deepal-s07,RY1,S07,448
+2026-01,deepal-s07,RY1,S07 L,614
 2026-01,denza-d9,RY1,DENZA D9 AWD,30
 2026-01,denza-d9,RY1,DENZA D9 FWD,306
 2026-01,ford-everest,RY1,EVEREST,711
@@ -22008,6 +22037,7 @@ period,model_id,category,variant,units
 2026-01,jaecoo-6,RY1,6 EV LONG RANGE 2WD,127
 2026-01,jaecoo-6,RY1,6 EV LONG RANGE 2WD PRO,531
 2026-01,jaecoo-6,RY1,6 EV LONG RANGE 4WD,402
+2026-01,jaecoo-6t,RY1,6T EV LONG RANGE 4WD,100
 2026-01,jaecoo-7,RY1,7 SHS MAX,213
 2026-01,kia-carnival,RY1,CARNIVAL,15
 2026-01,kia-carnival,RY1,CARNIVAL HEV 7P LUXURY,17
@@ -22394,10 +22424,12 @@ period,model_id,category,variant,units
 2026-02,chery-v23,RY1,V23 2WD PLUS,96
 2026-02,chery-v23,RY1,V23 4WD PEAK,93
 2026-02,deepal-e07,RY1,E07 PLUS,3
+2026-02,deepal-l07,RY1,L07 S,7
 2026-02,deepal-s05,RY1,S05 MAX,100
 2026-02,deepal-s05,RY1,S05 PLUS,2
 2026-02,deepal-s05,RY1,S05 REEV MAX,45
 2026-02,deepal-s07,RY1,S07,42
+2026-02,deepal-s07,RY1,S07 L,13
 2026-02,denza-d9,RY1,DENZA D9 AWD,12
 2026-02,ford-everest,RY1,EVEREST,664
 2026-02,ford-mustang,RY1,MUSTANG,3
@@ -22446,6 +22478,7 @@ period,model_id,category,variant,units
 2026-02,jaecoo-6,RY1,6 EV LONG RANGE 2WD,4
 2026-02,jaecoo-6,RY1,6 EV LONG RANGE 2WD PRO,32
 2026-02,jaecoo-6,RY1,6 EV LONG RANGE 4WD,17
+2026-02,jaecoo-6t,RY1,6T EV LONG RANGE 4WD,14
 2026-02,jaecoo-7,RY1,7 SHS MAX,96
 2026-02,kia-carnival,RY1,CARNIVAL,17
 2026-02,kia-carnival,RY1,CARNIVAL HEV 7P LUXURY,18
@@ -22839,10 +22872,12 @@ period,model_id,category,variant,units
 2026-03,deepal-e07,RY1,E07 PERFORMANCE AWD,2
 2026-03,deepal-e07,RY1,E07 PLUS,3
 2026-03,deepal-l07,RY1,L07,30
+2026-03,deepal-l07,RY1,L07 S,15
 2026-03,deepal-s05,RY1,S05 MAX,395
 2026-03,deepal-s05,RY1,S05 PLUS,10
 2026-03,deepal-s05,RY1,S05 REEV MAX,77
 2026-03,deepal-s07,RY1,S07,139
+2026-03,deepal-s07,RY1,S07 L,23
 2026-03,denza-d9,RY1,DENZA D9 AWD,13
 2026-03,ford-everest,RY1,EVEREST,719
 2026-03,ford-mustang,RY1,MUSTANG ECOBOOST PREMIUM,1
@@ -22898,6 +22933,7 @@ period,model_id,category,variant,units
 2026-03,jaecoo-6,RY1,6 EV LONG RANGE 2WD,6
 2026-03,jaecoo-6,RY1,6 EV LONG RANGE 2WD PRO,158
 2026-03,jaecoo-6,RY1,6 EV LONG RANGE 4WD,94
+2026-03,jaecoo-6t,RY1,6T EV LONG RANGE 4WD,61
 2026-03,jaecoo-7,RY1,7 SHS MAX,87
 2026-03,kia-carnival,RY1,CARNIVAL,9
 2026-03,kia-carnival,RY1,CARNIVAL HEV 7P LUXURY,26
@@ -23291,10 +23327,12 @@ period,model_id,category,variant,units
 2026-04,deepal-e07,RY1,E07 PERFORMANCE AWD,2
 2026-04,deepal-e07,RY1,E07 PLUS,3
 2026-04,deepal-l07,RY1,L07,29
+2026-04,deepal-l07,RY1,L07 S,7
 2026-04,deepal-s05,RY1,S05 MAX,468
 2026-04,deepal-s05,RY1,S05 PLUS,3
 2026-04,deepal-s05,RY1,S05 REEV MAX,49
 2026-04,deepal-s07,RY1,S07,132
+2026-04,deepal-s07,RY1,S07 L,6
 2026-04,denza-d9,RY1,DENZA D9 AWD,10
 2026-04,denza-d9,RY1,DENZA D9 FWD,14
 2026-04,ford-everest,RY1,EVEREST,554
@@ -23347,6 +23385,7 @@ period,model_id,category,variant,units
 2026-04,jaecoo-6,RY1,6 EV LONG RANGE 2WD,3
 2026-04,jaecoo-6,RY1,6 EV LONG RANGE 2WD PRO,185
 2026-04,jaecoo-6,RY1,6 EV LONG RANGE 4WD,43
+2026-04,jaecoo-6t,RY1,6T EV LONG RANGE 4WD,34
 2026-04,jaecoo-7,RY1,7 SHS MAX,68
 2026-04,kia-carnival,RY1,CARNIVAL,5
 2026-04,kia-carnival,RY1,CARNIVAL HEV 7P LUXURY,16
@@ -23757,11 +23796,13 @@ period,model_id,category,variant,units
 2026-05,deepal-e07,RY1,E07 PLUS,3
 2026-05,deepal-hunter-k50,RY1,HUNTER K50,2
 2026-05,deepal-l07,RY1,L07,8
+2026-05,deepal-l07,RY1,L07 S,6
 2026-05,deepal-s05,RY1,S05 MAX,750
 2026-05,deepal-s05,RY1,S05 MAX LONG RANGE,41
 2026-05,deepal-s05,RY1,S05 PLUS,9
 2026-05,deepal-s05,RY1,S05 REEV MAX,149
 2026-05,deepal-s07,RY1,S07,244
+2026-05,deepal-s07,RY1,S07 L,27
 2026-05,denza-d9,RY1,DENZA D9 AWD,16
 2026-05,denza-d9,RY1,DENZA D9 FWD,125
 2026-05,ford-everest,RY1,EVEREST,547
@@ -23818,6 +23859,7 @@ period,model_id,category,variant,units
 2026-05,jaecoo-6,RY1,6 EV LONG RANGE 2WD,3
 2026-05,jaecoo-6,RY1,6 EV LONG RANGE 2WD PRO,393
 2026-05,jaecoo-6,RY1,6 EV LONG RANGE 4WD,80
+2026-05,jaecoo-6t,RY1,6T EV LONG RANGE 4WD,90
 2026-05,jaecoo-7,RY1,7 SHS MAX,122
 2026-05,kia-carnival,RY1,CARNIVAL,7
 2026-05,kia-carnival,RY1,CARNIVAL HEV 7P LUXURY,13
@@ -24217,6 +24259,7 @@ period,model_id,category,variant,units
 2026-06,deepal-s05,RY1,S05 PLUS,3
 2026-06,deepal-s05,RY1,S05 REEV MAX,164
 2026-06,deepal-s07,RY1,S07,181
+2026-06,deepal-s07,RY1,S07 L,20
 2026-06,denza-d9,RY1,DENZA D9 AWD,50
 2026-06,denza-d9,RY1,DENZA D9 FWD,184
 2026-06,ford-everest,RY1,EVEREST,547
@@ -24275,6 +24318,7 @@ period,model_id,category,variant,units
 2026-06,jaecoo-6,RY1,6 EV LONG RANGE 2WD,2
 2026-06,jaecoo-6,RY1,6 EV LONG RANGE 2WD PRO,157
 2026-06,jaecoo-6,RY1,6 EV LONG RANGE 4WD,228
+2026-06,jaecoo-6t,RY1,6T EV LONG RANGE 4WD,96
 2026-06,jaecoo-7,RY1,7 SHS MAX,72
 2026-06,kia-carnival,RY1,CARNIVAL,4
 2026-06,kia-carnival,RY1,CARNIVAL HEV 7P LUXURY,12
@@ -24668,6 +24712,7 @@ period,model_id,category,variant,units
 2026-07,deepal-s05,RY1,S05 PLUS,3
 2026-07,deepal-s05,RY1,S05 REEV MAX,158
 2026-07,deepal-s07,RY1,S07,146
+2026-07,deepal-s07,RY1,S07 L,5
 2026-07,denza-d9,RY1,DENZA D9 AWD,25
 2026-07,denza-d9,RY1,DENZA D9 FWD,53
 2026-07,ford-everest,RY1,EVEREST,551
@@ -24724,6 +24769,7 @@ period,model_id,category,variant,units
 2026-07,jaecoo-6,RY1,6 EV LONG RANGE 2WD,1
 2026-07,jaecoo-6,RY1,6 EV LONG RANGE 2WD PRO,295
 2026-07,jaecoo-6,RY1,6 EV LONG RANGE 4WD,135
+2026-07,jaecoo-6t,RY1,6T EV LONG RANGE 4WD,113
 2026-07,jaecoo-7,RY1,7 SHS MAX,40
 2026-07,kia-carnival,RY1,CARNIVAL,6
 2026-07,kia-carnival,RY1,CARNIVAL HEV 7P LUXURY,10
@@ -25122,6 +25168,7 @@ period,model_id,category,variant,units
 2026-08,deepal-s05,RY1,S05 MAX LONG RANGE,156
 2026-08,deepal-s05,RY1,S05 REEV MAX,135
 2026-08,deepal-s07,RY1,S07,101
+2026-08,deepal-s07,RY1,S07 L,3
 2026-08,denza-d9,RY1,DENZA D9 AWD,17
 2026-08,denza-d9,RY1,DENZA D9 FWD,59
 2026-08,ford-everest,RY1,EVEREST,536
@@ -25178,6 +25225,7 @@ period,model_id,category,variant,units
 2026-08,jaecoo-6,RY1,6 EV LONG RANGE 2WD,3
 2026-08,jaecoo-6,RY1,6 EV LONG RANGE 2WD PRO,565
 2026-08,jaecoo-6,RY1,6 EV LONG RANGE 4WD,68
+2026-08,jaecoo-6t,RY1,6T EV LONG RANGE 4WD,83
 2026-08,jaecoo-6t,RY1,6T REEV 2WD MAX,1
 2026-08,jaecoo-6t,RY1,6T REEV 4WD ULTRA,30
 2026-08,jaecoo-7,RY1,7 SHS MAX,27
@@ -25574,6 +25622,7 @@ period,model_id,category,variant,units
 2026-09,deepal-s05,RY1,S05 MAX LONG RANGE,98
 2026-09,deepal-s05,RY1,S05 REEV MAX,123
 2026-09,deepal-s07,RY1,S07,88
+2026-09,deepal-s07,RY1,S07 L,6
 2026-09,denza-d9,RY1,DENZA D9 AWD,10
 2026-09,denza-d9,RY1,DENZA D9 FWD,52
 2026-09,ford-everest,RY1,EVEREST,545
@@ -25634,6 +25683,7 @@ period,model_id,category,variant,units
 2026-09,jaecoo-6,RY1,6 EV LONG RANGE 2WD,2
 2026-09,jaecoo-6,RY1,6 EV LONG RANGE 2WD PRO,323
 2026-09,jaecoo-6,RY1,6 EV LONG RANGE 4WD,33
+2026-09,jaecoo-6t,RY1,6T EV LONG RANGE 4WD,55
 2026-09,jaecoo-6t,RY1,6T REEV 2WD MAX,82
 2026-09,jaecoo-6t,RY1,6T REEV 4WD ULTRA,501
 2026-09,jaecoo-7,RY1,7 SHS MAX,14

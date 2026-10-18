@@ -6121,6 +6121,7 @@ period,category,kind,id,units
 2026-01,RY1,m,aion-ut,2
 2026-01,RY1,m,aion-v,2
 2026-01,RY1,m,bmw-5-series,1
+2026-01,RY1,m,deepal-s07,1
 2026-01,RY1,m,ford-everest,1
 2026-01,RY1,m,ford-ranger,4
 2026-01,RY1,m,ford-ranger-raptor,1
@@ -6605,6 +6606,7 @@ period,category,kind,id,units
 2026-06,RY1,m,isuzu-mu-x,6
 2026-06,RY1,m,jaecoo-5,3
 2026-06,RY1,m,jaecoo-6,1
+2026-06,RY1,m,jaecoo-6t,1
 2026-06,RY1,m,jaecoo-7,1
 2026-06,RY1,m,mazda-bt-50,1
 2026-06,RY1,m,mazda-cx-30,1
