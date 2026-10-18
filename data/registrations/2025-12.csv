@@ -331,7 +331,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-12,RY1,PEUGEOT,2008 P24 BG,6,peugeot,,dlt-web-827cefc3
 2025-12,RY1,PEUGEOT,5008 P87 BG,2,peugeot,,dlt-web-827cefc3
 2025-12,RY1,POCCO,MM YX,1,pocco,,dlt-web-827cefc3
-2025-12,RY1,POER,SAHAR HYBRID,3,poer,,dlt-web-827cefc3
+2025-12,RY1,POER,SAHAR HYBRID,3,poer,poer-sahar,dlt-web-827cefc3
 2025-12,RY1,PORSCHE,718 CAYMAN GT4,1,porsche,porsche-718,dlt-web-827cefc3
 2025-12,RY1,PORSCHE,718 CAYMAN STYLE EDITION,2,porsche,porsche-718,dlt-web-827cefc3
 2025-12,RY1,PORSCHE,718 SPYDER RS 4.0,1,porsche,porsche-718,dlt-web-827cefc3

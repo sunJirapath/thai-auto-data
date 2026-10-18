@@ -336,7 +336,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-03,RY1,PEUGEOT,408 P54 CG,1,peugeot,,dlt-web-827cefc3
 2025-03,RY1,PEUGEOT,408 P54 DG,1,peugeot,,dlt-web-827cefc3
 2025-03,RY1,POCCO,DD L2,1,pocco,,dlt-web-827cefc3
-2025-03,RY1,POER,SAHAR HYBRID,1,poer,,dlt-web-827cefc3
+2025-03,RY1,POER,SAHAR HYBRID,1,poer,poer-sahar,dlt-web-827cefc3
 2025-03,RY1,PORSCHE,718 BOXSTER,1,porsche,porsche-718,dlt-web-827cefc3
 2025-03,RY1,PORSCHE,718 BOXSTER STYLE EDITION,1,porsche,porsche-718,dlt-web-827cefc3
 2025-03,RY1,PORSCHE,718 BOXSTER T,1,porsche,porsche-718,dlt-web-827cefc3

@@ -13067,6 +13067,7 @@ period,category,kind,id,units
 2026-01,RY1,m,omoda-c5,18
 2026-01,RY1,m,ora-07,2
 2026-01,RY1,m,ora-good-cat,128
+2026-01,RY1,m,poer-sahar,1
 2026-01,RY1,m,porsche-cayenne,2
 2026-01,RY1,m,riddara-rd6,4
 2026-01,RY1,m,subaru-forester,3
@@ -13326,6 +13327,7 @@ period,category,kind,id,units
 2026-02,RY1,m,nissan-serena,13
 2026-02,RY1,m,nissan-x-trail,4
 2026-02,RY1,m,omoda-c5,2
+2026-02,RY1,m,poer-sahar,1
 2026-02,RY1,m,porsche-cayenne,1
 2026-02,RY1,m,riddara-rd6,4
 2026-02,RY1,m,subaru-xv,2
@@ -13590,6 +13592,7 @@ period,category,kind,id,units
 2026-03,RY1,m,nissan-navara,6
 2026-03,RY1,m,nissan-serena,5
 2026-03,RY1,m,nissan-x-trail,3
+2026-03,RY1,m,poer-sahar,2
 2026-03,RY1,m,porsche-cayenne,1
 2026-03,RY1,m,porsche-macan,1
 2026-03,RY1,m,porsche-panamera,1
@@ -14045,7 +14048,7 @@ period,category,kind,id,units
 2026-05,RY1,m,gwm-tank-300,27
 2026-05,RY1,m,gwm-tank-500,5
 2026-05,RY1,m,gwm-wey-g9,2
-2026-05,RY1,m,haval-h6,2
+2026-05,RY1,m,haval-h6,6
 2026-05,RY1,m,haval-jolion,1
 2026-05,RY1,m,honda-accord,9
 2026-05,RY1,m,honda-city,91
@@ -14098,6 +14101,7 @@ period,category,kind,id,units
 2026-05,RY1,m,nissan-navara,8
 2026-05,RY1,m,nissan-serena,8
 2026-05,RY1,m,nissan-x-trail,1
+2026-05,RY1,m,poer-sahar,1
 2026-05,RY1,m,porsche-cayenne,1
 2026-05,RY1,m,porsche-panamera,1
 2026-05,RY1,m,porsche-taycan,1
@@ -14320,7 +14324,7 @@ period,category,kind,id,units
 2026-06,RY1,m,gwm-tank-300,46
 2026-06,RY1,m,gwm-tank-500,3
 2026-06,RY1,m,gwm-wey-g9,3
-2026-06,RY1,m,haval-h6,1
+2026-06,RY1,m,haval-h6,2
 2026-06,RY1,m,honda-accord,6
 2026-06,RY1,m,honda-city,83
 2026-06,RY1,m,honda-city-hatchback,84
@@ -14375,6 +14379,7 @@ period,category,kind,id,units
 2026-06,RY1,m,nissan-serena,4
 2026-06,RY1,m,nissan-x-trail,2
 2026-06,RY1,m,omoda-c5,1
+2026-06,RY1,m,poer-sahar,4
 2026-06,RY1,m,porsche-cayenne,1
 2026-06,RY1,m,porsche-macan,1
 2026-06,RY1,m,riddara-rd6,18
@@ -14579,7 +14584,7 @@ period,category,kind,id,units
 2026-07,RY1,m,gwm-ora-5,45
 2026-07,RY1,m,gwm-tank-300,21
 2026-07,RY1,m,gwm-wey-g9,2
-2026-07,RY1,m,haval-h6,1
+2026-07,RY1,m,haval-h6,7
 2026-07,RY1,m,honda-accord,3
 2026-07,RY1,m,honda-city,37
 2026-07,RY1,m,honda-city-hatchback,29
@@ -14843,6 +14848,7 @@ period,category,kind,id,units
 2026-08,RY1,m,gwm-tank-300,20
 2026-08,RY1,m,gwm-tank-500,1
 2026-08,RY1,m,gwm-wey-g9,2
+2026-08,RY1,m,haval-h6,3
 2026-08,RY1,m,honda-accord,4
 2026-08,RY1,m,honda-city,92
 2026-08,RY1,m,honda-city-hatchback,49
@@ -14899,6 +14905,7 @@ period,category,kind,id,units
 2026-08,RY1,m,nissan-serena,2
 2026-08,RY1,m,nissan-x-trail,1
 2026-08,RY1,m,omoda-c5,35
+2026-08,RY1,m,poer-sahar,1
 2026-08,RY1,m,riddara-rd6,8
 2026-08,RY1,m,subaru-forester,1
 2026-08,RY1,m,suzuki-fronx,2
@@ -15104,6 +15111,7 @@ period,category,kind,id,units
 2026-09,RY1,m,gwm-tank-300,31
 2026-09,RY1,m,gwm-tank-500,2
 2026-09,RY1,m,gwm-wey-g9,3
+2026-09,RY1,m,haval-h6,2
 2026-09,RY1,m,honda-accord,3
 2026-09,RY1,m,honda-city,159
 2026-09,RY1,m,honda-city-hatchback,95

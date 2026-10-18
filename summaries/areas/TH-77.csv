@@ -6005,6 +6005,7 @@ period,category,kind,id,units
 2025-07,RY1,m,nissan-serena,1
 2025-07,RY1,m,nissan-terra,2
 2025-07,RY1,m,ora-good-cat,5
+2025-07,RY1,m,poer-sahar,1
 2025-07,RY1,m,suzuki-celerio,2
 2025-07,RY1,m,suzuki-swift,2
 2025-07,RY1,m,toyota-alphard,1
@@ -6861,6 +6862,7 @@ period,category,kind,id,units
 2026-02,RY1,m,nissan-almera,2
 2026-02,RY1,m,nissan-navara,3
 2026-02,RY1,m,nissan-serena,1
+2026-02,RY1,m,poer-sahar,1
 2026-02,RY1,m,porsche-cayenne,1
 2026-02,RY1,m,suzuki-celerio,1
 2026-02,RY1,m,toyota-corolla-cross,3
@@ -6979,6 +6981,7 @@ period,category,kind,id,units
 2026-03,RY1,m,mitsubishi-xpander-cross,4
 2026-03,RY1,m,nissan-kicks,1
 2026-03,RY1,m,nissan-serena,1
+2026-03,RY1,m,poer-sahar,1
 2026-03,RY1,m,porsche-cayenne,1
 2026-03,RY1,m,suzuki-celerio,1
 2026-03,RY1,m,suzuki-fronx,1
@@ -7108,6 +7111,7 @@ period,category,kind,id,units
 2026-04,RY1,m,mitsubishi-attrage,2
 2026-04,RY1,m,mitsubishi-xforce,1
 2026-04,RY1,m,nissan-x-trail,1
+2026-04,RY1,m,poer-sahar,1
 2026-04,RY1,m,porsche-cayenne,1
 2026-04,RY1,m,toyota-commuter,1
 2026-04,RY1,m,toyota-corolla-cross,3
@@ -7212,7 +7216,7 @@ period,category,kind,id,units
 2026-05,RY1,m,ford-ranger,1
 2026-05,RY1,m,gwm-tank-300,2
 2026-05,RY1,m,gwm-wey-g9,1
-2026-05,RY1,m,haval-h6,1
+2026-05,RY1,m,haval-h6,5
 2026-05,RY1,m,honda-city,4
 2026-05,RY1,m,honda-city-hatchback,13
 2026-05,RY1,m,honda-civic,5
@@ -7356,6 +7360,7 @@ period,category,kind,id,units
 2026-06,RY1,m,geely-ex2,2
 2026-06,RY1,m,geely-ex5,1
 2026-06,RY1,m,gwm-tank-300,1
+2026-06,RY1,m,haval-h6,2
 2026-06,RY1,m,honda-city,2
 2026-06,RY1,m,honda-city-hatchback,5
 2026-06,RY1,m,honda-civic,4
@@ -7685,6 +7690,7 @@ period,category,kind,id,units
 2026-08,RY1,m,nissan-kicks,1
 2026-08,RY1,m,nissan-serena,1
 2026-08,RY1,m,omoda-c5,4
+2026-08,RY1,m,poer-sahar,1
 2026-08,RY1,m,riddara-rd6,1
 2026-08,RY1,m,suzuki-fronx,2
 2026-08,RY1,m,toyota-corolla-cross,4
@@ -7807,6 +7813,7 @@ period,category,kind,id,units
 2026-09,RY1,m,gwm-ora-5,1
 2026-09,RY1,m,gwm-tank-300,3
 2026-09,RY1,m,gwm-tank-500,1
+2026-09,RY1,m,haval-h6,1
 2026-09,RY1,m,honda-city,5
 2026-09,RY1,m,honda-city-hatchback,5
 2026-09,RY1,m,honda-civic,4
@@ -7841,6 +7848,7 @@ period,category,kind,id,units
 2026-09,RY1,m,nissan-almera,1
 2026-09,RY1,m,nissan-kicks,2
 2026-09,RY1,m,omoda-c5,1
+2026-09,RY1,m,poer-sahar,1
 2026-09,RY1,m,porsche-cayenne,1
 2026-09,RY1,m,riddara-rd6,1
 2026-09,RY1,m,toyota-alphard,1

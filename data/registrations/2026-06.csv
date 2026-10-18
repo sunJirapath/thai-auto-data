@@ -155,10 +155,10 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-06,RY1,GMC,YUKON DENALI,1,gmc,,dlt-web-827cefc3
 2026-06,RY1,GWM,GWM TANK 300,598,gwm,gwm-tank-300,dlt-web-827cefc3
 2026-06,RY1,GWM,GWM TANK 500,76,gwm,gwm-tank-500,dlt-web-827cefc3
-2026-06,RY1,GWM,H6 HYBRID,18,gwm,,dlt-web-827cefc3
-2026-06,RY1,GWM,H6 PLUG-IN HYBRID,112,gwm,,dlt-web-827cefc3
+2026-06,RY1,GWM,H6 HYBRID,18,gwm,haval-h6,dlt-web-827cefc3
+2026-06,RY1,GWM,H6 PLUG-IN HYBRID,112,gwm,haval-h6,dlt-web-827cefc3
 2026-06,RY1,GWM,ORA 5,82,gwm,gwm-ora-5,dlt-web-827cefc3
-2026-06,RY1,GWM,POER SAHAR,27,gwm,,dlt-web-827cefc3
+2026-06,RY1,GWM,POER SAHAR,27,gwm,poer-sahar,dlt-web-827cefc3
 2026-06,RY1,GWM,WEY G9 PLUG-IN HYBRID,78,gwm,gwm-wey-g9,dlt-web-827cefc3
 2026-06,RY1,GWM TANK,300 HYBRID,24,gwm,gwm-tank-300,dlt-web-827cefc3
 2026-06,RY1,GWM TANK,500 HYBRID,6,gwm,gwm-tank-500,dlt-web-827cefc3
@@ -359,7 +359,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-06,RY1,PEUGEOT,2008 P24 BG,1,peugeot,,dlt-web-827cefc3
 2026-06,RY1,PEUGEOT,3008 P84 BG,1,peugeot,,dlt-web-827cefc3
 2026-06,RY1,PEUGEOT,5008 P87 BG,1,peugeot,,dlt-web-827cefc3
-2026-06,RY1,POER,SAHAR HYBRID,4,poer,,dlt-web-827cefc3
+2026-06,RY1,POER,SAHAR HYBRID,4,poer,poer-sahar,dlt-web-827cefc3
 2026-06,RY1,PORSCHE,718 BOXSTER STYLE EDITION,1,porsche,porsche-718,dlt-web-827cefc3
 2026-06,RY1,PORSCHE,718 CAYMAN STYLE EDITION,2,porsche,porsche-718,dlt-web-827cefc3
 2026-06,RY1,PORSCHE,718 SPYDER,1,porsche,porsche-718,dlt-web-827cefc3

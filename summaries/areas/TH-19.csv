@@ -7320,6 +7320,7 @@ period,category,kind,id,units
 2026-05,RY1,m,gwm-tank-300,1
 2026-05,RY1,m,gwm-tank-500,1
 2026-05,RY1,m,gwm-wey-g9,1
+2026-05,RY1,m,haval-h6,1
 2026-05,RY1,m,honda-accord,1
 2026-05,RY1,m,honda-city,6
 2026-05,RY1,m,honda-city-hatchback,13
@@ -7342,6 +7343,7 @@ period,category,kind,id,units
 2026-05,RY1,m,nissan-almera,3
 2026-05,RY1,m,nissan-kicks,1
 2026-05,RY1,m,nissan-navara,1
+2026-05,RY1,m,poer-sahar,1
 2026-05,RY1,m,porsche-cayenne,1
 2026-05,RY1,m,suzuki-swift,3
 2026-05,RY1,m,toyota-camry,2

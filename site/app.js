@@ -881,6 +881,13 @@
     });
     return out;
   }
+  // "Share of brand" denominator. Brand totals follow the DLT brand but a model counts all its cars (GWM-badged Haval H6
+  // are in GWM's total and in Haval H6), so a brand's models can outnumber its total; then the models' sum is the base.
+  function brandBase(brandId, bUnits, mUnits) {
+    var models = 0;
+    Object.keys(mUnits).forEach(function (id) { if ((D.modelInfo[id] || {}).brand_id === brandId) models += mUnits[id]; });
+    return Math.max(bUnits[brandId] || 0, models);
+  }
   function sortedIds(obj) { return Object.keys(obj).sort(function (a, b) { return obj[b] - obj[a] || a.localeCompare(b); }); }
   function sumValues(obj) { var s = 0; Object.keys(obj).forEach(function (k) { s += obj[k]; }); return s; }
   function nameFor(kind, id) { return kind === 'b' ? brandLabel(id) : modelName(id); }
@@ -1906,7 +1913,9 @@
     mc.head.appendChild(cmp);
     var wrap = el('div', { class: 'table-wrap' });
     mc.appendChild(wrap); root.appendChild(mc);
-    var picked = [], allRank = sortedIds(mUnits), pm = priorMonths(months);
+    var picked = [], allRank = sortedIds(mUnits), pm = priorMonths(months), own = {};
+    own[brandId] = s.units;
+    var base = brandBase(brandId, own, mUnits);
     var prev = priorOk(months) ? sumById(idx, 'm', pm, cats) : null;
     function updateCompare() {
       cmp.setAttribute('href', compareHref('m', picked));
@@ -1921,7 +1930,7 @@
         updateCompare();
       });
       add(tr, add(el('td'), cb), add(el('td', { class: 'name' }), link('#/model/' + id + filterQuery(), modelName(id))),
-        el('td', { class: 'n' }, fmt(mUnits[id])), el('td', { class: 'n' }, s.units ? (100 * mUnits[id] / s.units).toFixed(1) + '%' : '—'),
+        el('td', { class: 'n' }, fmt(mUnits[id])), el('td', { class: 'n' }, base ? (100 * mUnits[id] / base).toFixed(1) + '%' : '—'),
         el('td', { class: 'n' }, String(allRank.indexOf(id) + 1)),
         pctCell(prev && prev[id] ? (100 * (mUnits[id] - prev[id]) / prev[id]).toFixed(2) : ''), el('td', { class: 'n' }, rangeText(priceRange(id))));
       return tr;
@@ -1952,7 +1961,7 @@
     var name = modelName(modelId), months = selectedMonths(), cats = selCats(), b = buckets(), area = areaLabel(M.area);
     add(root, crumbs([[brandLabel(info.brand_id), '#/brand/' + info.brand_id + filterQuery()], [info.name]]), el('h2', { class: 'page-title' }, name),
       el('p', { class: 'note filter-echo' }, filterText()));
-    var s = standing(idx, 'm', modelId, months, cats), brandUnits = sumById(idx, 'b', months, cats)[info.brand_id] || 0;
+    var s = standing(idx, 'm', modelId, months, cats), brandUnits = brandBase(info.brand_id, sumById(idx, 'b', months, cats), sumById(idx, 'm', months, cats));
     var range = priceRange(modelId), last = months[months.length - 1];
     add(root, add(el('section', { class: 'tiles' }),
       tile(L('Registrations · ', 'ยอดจดทะเบียน · ') + area, fmt(s.units) + L(' units', ' คัน'), monthLabel(months[0]) + ' – ' + monthLabel(last) + (s.yoy === null ? '' : ' · ' + s.priorShort + ' ' + pctText(s.yoy))),
@@ -2235,7 +2244,7 @@
       s.peak = null;
       months.forEach(function (p) { var v = monthUnits(p)[id] || 0; if (v && (!s.peak || v > s.peak[1])) s.peak = [p, v]; });
       if (kind === 'm') {
-        var bu = bUnits[D.modelInfo[id].brand_id] || 0;
+        var bu = brandBase(D.modelInfo[id].brand_id, bUnits, mUnits);
         s.inBrand = bu ? 100 * s.units / bu : null;
         s.launch = launchMonth(id);
         s.price = priceRange(id);

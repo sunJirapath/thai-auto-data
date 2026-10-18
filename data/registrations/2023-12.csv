@@ -454,7 +454,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-12,RY3,MINE MOBILITY,MTS-MT30,1,mine-mobility,,dlt-web-827cefc3
 2023-12,RY3,MITSUBISHI,TRITON,324,mitsubishi,mitsubishi-triton,dlt-web-827cefc3
 2023-12,RY3,NISSAN,NAVARA,103,nissan,nissan-navara,dlt-web-827cefc3
-2023-12,RY3,POER,SAHAR,1,poer,,dlt-web-827cefc3
+2023-12,RY3,POER,SAHAR,1,poer,poer-sahar,dlt-web-827cefc3
 2023-12,RY3,SERES,EC31,10,seres,,dlt-web-827cefc3
 2023-12,RY3,SUZUKI,CARRY 1.5L MT,106,suzuki,suzuki-carry,dlt-web-827cefc3
 2023-12,RY3,TAKANO,TTE-500,1,takano,,dlt-web-827cefc3

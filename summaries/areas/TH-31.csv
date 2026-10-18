@@ -6691,6 +6691,7 @@ period,category,kind,id,units
 2026-05,RY1,m,ford-ranger,1
 2026-05,RY1,m,geely-ex2,1
 2026-05,RY1,m,gwm-tank-300,1
+2026-05,RY1,m,haval-h6,1
 2026-05,RY1,m,honda-city-hatchback,1
 2026-05,RY1,m,honda-civic,2
 2026-05,RY1,m,honda-hr-v,1
@@ -6912,6 +6913,7 @@ period,category,kind,id,units
 2026-07,RY1,m,ford-ranger,3
 2026-07,RY1,m,ford-ranger-raptor,1
 2026-07,RY1,m,gwm-tank-300,1
+2026-07,RY1,m,haval-h6,1
 2026-07,RY1,m,honda-accord,2
 2026-07,RY1,m,honda-city,1
 2026-07,RY1,m,honda-civic,2
@@ -7039,6 +7041,7 @@ period,category,kind,id,units
 2026-08,RY1,m,geely-ex2,1
 2026-08,RY1,m,gwm-ora-5,3
 2026-08,RY1,m,gwm-tank-300,3
+2026-08,RY1,m,haval-h6,2
 2026-08,RY1,m,honda-accord,1
 2026-08,RY1,m,honda-civic,1
 2026-08,RY1,m,honda-cr-v,2

@@ -4372,6 +4372,7 @@ period,category,kind,id,units
 2026-08,RY2,bf,gwm|diesel,1
 2026-08,RY2,bf,toyota|diesel,2
 2026-08,RY2,f,diesel,3
+2026-08,RY2,m,poer-sahar,1
 2026-08,RY2,m,toyota-commuter,1
 2026-08,RY2,m,toyota-hiace-majesty,1
 2026-08,RY3,b,isuzu,2

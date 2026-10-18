@@ -324,7 +324,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-06,RY1,PEUGEOT,408 P54 BG,1,peugeot,,dlt-web-827cefc3
 2025-06,RY1,PEUGEOT,408 P54 DG,1,peugeot,,dlt-web-827cefc3
 2025-06,RY1,PEUGEOT,5008 P87 AG,1,peugeot,,dlt-web-827cefc3
-2025-06,RY1,POER,SAHAR HYBRID,1,poer,,dlt-web-827cefc3
+2025-06,RY1,POER,SAHAR HYBRID,1,poer,poer-sahar,dlt-web-827cefc3
 2025-06,RY1,PORSCHE,718 CAYMAN GT4 RS,1,porsche,porsche-718,dlt-web-827cefc3
 2025-06,RY1,PORSCHE,718 CAYMAN STYLE EDITION,2,porsche,porsche-718,dlt-web-827cefc3
 2025-06,RY1,PORSCHE,718 SPYDER RS,1,porsche,porsche-718,dlt-web-827cefc3
@@ -523,7 +523,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-06,RY3,FORD,RANGER SWB,1,ford,ford-ranger,dlt-web-827cefc3
 2025-06,RY3,FOTON,BJ1031EVJA3,1,foton,,dlt-web-827cefc3
 2025-06,RY3,FOTON,BJ1045V9JD4-R1,1,foton,,dlt-web-827cefc3
-2025-06,RY3,GWM,POER SAHAR,1,gwm,,dlt-web-827cefc3
+2025-06,RY3,GWM,POER SAHAR,1,gwm,poer-sahar,dlt-web-827cefc3
 2025-06,RY3,HINO,FG8JJ1A-JJT,3,hino,,dlt-web-827cefc3
 2025-06,RY3,HINO,FM8JN1D-SGT,1,hino,,dlt-web-827cefc3
 2025-06,RY3,HINO,XZU600R-HKMLKT3,5,hino,,dlt-web-827cefc3

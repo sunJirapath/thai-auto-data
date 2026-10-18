@@ -146,10 +146,10 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-09,RY1,GEELY,EX5,192,geely,geely-ex5,dlt-web-827cefc3
 2026-09,RY1,GWM,GWM TANK 300,453,gwm,gwm-tank-300,dlt-web-827cefc3
 2026-09,RY1,GWM,GWM TANK 500,38,gwm,gwm-tank-500,dlt-web-827cefc3
-2026-09,RY1,GWM,H6 HYBRID,9,gwm,,dlt-web-827cefc3
-2026-09,RY1,GWM,H6 PLUG-IN HYBRID,53,gwm,,dlt-web-827cefc3
+2026-09,RY1,GWM,H6 HYBRID,9,gwm,haval-h6,dlt-web-827cefc3
+2026-09,RY1,GWM,H6 PLUG-IN HYBRID,53,gwm,haval-h6,dlt-web-827cefc3
 2026-09,RY1,GWM,ORA 5,1143,gwm,gwm-ora-5,dlt-web-827cefc3
-2026-09,RY1,GWM,POER SAHAR,20,gwm,,dlt-web-827cefc3
+2026-09,RY1,GWM,POER SAHAR,20,gwm,poer-sahar,dlt-web-827cefc3
 2026-09,RY1,GWM,WEY G9 PLUG-IN HYBRID,44,gwm,gwm-wey-g9,dlt-web-827cefc3
 2026-09,RY1,GWM TANK,300 HYBRID,9,gwm,gwm-tank-300,dlt-web-827cefc3
 2026-09,RY1,GWM TANK,500 HYBRID,1,gwm,gwm-tank-500,dlt-web-827cefc3
@@ -345,7 +345,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-09,RY1,NISSAN,X-TRAIL e-POWER,23,nissan,nissan-x-trail,dlt-web-827cefc3
 2026-09,RY1,OMODA,C5 EV Long Range Dynamic,1,omoda,omoda-c5,dlt-web-827cefc3
 2026-09,RY1,OMODA,C5 EV MAX+,320,omoda,omoda-c5,dlt-web-827cefc3
-2026-09,RY1,POER,SAHAR HYBRID,5,poer,,dlt-web-827cefc3
+2026-09,RY1,POER,SAHAR HYBRID,5,poer,poer-sahar,dlt-web-827cefc3
 2026-09,RY1,PORSCHE,718 BOXSTER STYLE EDITION,1,porsche,porsche-718,dlt-web-827cefc3
 2026-09,RY1,PORSCHE,718 CAYMAN STYLE EDITION,4,porsche,porsche-718,dlt-web-827cefc3
 2026-09,RY1,PORSCHE,911 CARRERA,3,porsche,porsche-911,dlt-web-827cefc3

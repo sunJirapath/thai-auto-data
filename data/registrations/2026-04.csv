@@ -136,9 +136,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-04,RY1,GEELY,EX5,189,geely,geely-ex5,dlt-web-827cefc3
 2026-04,RY1,GWM,GWM TANK 300,610,gwm,gwm-tank-300,dlt-web-827cefc3
 2026-04,RY1,GWM,GWM TANK 500,85,gwm,gwm-tank-500,dlt-web-827cefc3
-2026-04,RY1,GWM,H6 HYBRID,1,gwm,,dlt-web-827cefc3
-2026-04,RY1,GWM,H6 PLUG-IN HYBRID,4,gwm,,dlt-web-827cefc3
-2026-04,RY1,GWM,POER SAHAR,16,gwm,,dlt-web-827cefc3
+2026-04,RY1,GWM,H6 HYBRID,1,gwm,haval-h6,dlt-web-827cefc3
+2026-04,RY1,GWM,H6 PLUG-IN HYBRID,4,gwm,haval-h6,dlt-web-827cefc3
+2026-04,RY1,GWM,POER SAHAR,16,gwm,poer-sahar,dlt-web-827cefc3
 2026-04,RY1,GWM,WEY G9 PLUG-IN HYBRID,13,gwm,gwm-wey-g9,dlt-web-827cefc3
 2026-04,RY1,GWM TANK,300 HYBRID,24,gwm,gwm-tank-300,dlt-web-827cefc3
 2026-04,RY1,GWM TANK,500 HYBRID,6,gwm,gwm-tank-500,dlt-web-827cefc3
@@ -334,7 +334,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-04,RY1,OMODA,C5 EV Long Range Ultimate,4,omoda,omoda-c5,dlt-web-827cefc3
 2026-04,RY1,ORA,GOOD CAT,1,ora,ora-good-cat,dlt-web-827cefc3
 2026-04,RY1,POCCO,DD K,1,pocco,,dlt-web-827cefc3
-2026-04,RY1,POER,SAHAR HYBRID,8,poer,,dlt-web-827cefc3
+2026-04,RY1,POER,SAHAR HYBRID,8,poer,poer-sahar,dlt-web-827cefc3
 2026-04,RY1,PORSCHE,718 BOXSTER,1,porsche,porsche-718,dlt-web-827cefc3
 2026-04,RY1,PORSCHE,718 BOXSTER STYLE EDITION,5,porsche,porsche-718,dlt-web-827cefc3
 2026-04,RY1,PORSCHE,718 CAYMAN GT4 RS,2,porsche,porsche-718,dlt-web-827cefc3

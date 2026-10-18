@@ -338,7 +338,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-11,RY1,ORA,GOOD CAT,494,ora,ora-good-cat,dlt-web-827cefc3
 2025-11,RY1,ORA,ORA 07,44,ora,ora-07,dlt-web-827cefc3
 2025-11,RY1,PEUGEOT,2008 P24 BG,2,peugeot,,dlt-web-827cefc3
-2025-11,RY1,POER,SAHAR HYBRID,4,poer,,dlt-web-827cefc3
+2025-11,RY1,POER,SAHAR HYBRID,4,poer,poer-sahar,dlt-web-827cefc3
 2025-11,RY1,PORSCHE,718 BOXSTER GTS 4.0,1,porsche,porsche-718,dlt-web-827cefc3
 2025-11,RY1,PORSCHE,718 BOXSTER STYLE EDITION,1,porsche,porsche-718,dlt-web-827cefc3
 2025-11,RY1,PORSCHE,718 CAYMAN,1,porsche,porsche-718,dlt-web-827cefc3

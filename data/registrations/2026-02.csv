@@ -347,7 +347,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-02,RY1,PEUGEOT,3008 P84 BG,5,peugeot,,dlt-web-827cefc3
 2026-02,RY1,PEUGEOT,408 P54 DG,1,peugeot,,dlt-web-827cefc3
 2026-02,RY1,POCCO,MM YX,1,pocco,,dlt-web-827cefc3
-2026-02,RY1,POER,SAHAR HYBRID,7,poer,,dlt-web-827cefc3
+2026-02,RY1,POER,SAHAR HYBRID,7,poer,poer-sahar,dlt-web-827cefc3
 2026-02,RY1,PORSCHE,718 BOXSTER STYLE EDITION,3,porsche,porsche-718,dlt-web-827cefc3
 2026-02,RY1,PORSCHE,718 CAYMAN STYLE EDITION,5,porsche,porsche-718,dlt-web-827cefc3
 2026-02,RY1,PORSCHE,718 SPYDER RS,2,porsche,porsche-718,dlt-web-827cefc3
@@ -582,7 +582,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-02,RY3,MG,MG EXTENDER,10,mg,mg-extender,dlt-web-827cefc3
 2026-02,RY3,MITSUBISHI,TRITON,264,mitsubishi,mitsubishi-triton,dlt-web-827cefc3
 2026-02,RY3,NISSAN,NAVARA,64,nissan,nissan-navara,dlt-web-827cefc3
-2026-02,RY3,POER,SAHAR,1,poer,,dlt-web-827cefc3
+2026-02,RY3,POER,SAHAR,1,poer,poer-sahar,dlt-web-827cefc3
 2026-02,RY3,SUZUKI,CARRY 1.5L MT,64,suzuki,suzuki-carry,dlt-web-827cefc3
 2026-02,RY3,TOYOTA,COMMUTER,5,toyota,toyota-commuter,dlt-web-827cefc3
 2026-02,RY3,TOYOTA,HIACE,12,toyota,toyota-hiace,dlt-web-827cefc3

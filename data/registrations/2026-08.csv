@@ -134,10 +134,10 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-08,RY1,GEELY,EX5,299,geely,geely-ex5,dlt-web-827cefc3
 2026-08,RY1,GWM,GWM TANK 300,468,gwm,gwm-tank-300,dlt-web-827cefc3
 2026-08,RY1,GWM,GWM TANK 500,51,gwm,gwm-tank-500,dlt-web-827cefc3
-2026-08,RY1,GWM,H6 HYBRID,25,gwm,,dlt-web-827cefc3
-2026-08,RY1,GWM,H6 PLUG-IN HYBRID,73,gwm,,dlt-web-827cefc3
+2026-08,RY1,GWM,H6 HYBRID,25,gwm,haval-h6,dlt-web-827cefc3
+2026-08,RY1,GWM,H6 PLUG-IN HYBRID,73,gwm,haval-h6,dlt-web-827cefc3
 2026-08,RY1,GWM,ORA 5,2185,gwm,gwm-ora-5,dlt-web-827cefc3
-2026-08,RY1,GWM,POER SAHAR,17,gwm,,dlt-web-827cefc3
+2026-08,RY1,GWM,POER SAHAR,17,gwm,poer-sahar,dlt-web-827cefc3
 2026-08,RY1,GWM,WEY G9 PLUG-IN HYBRID,62,gwm,gwm-wey-g9,dlt-web-827cefc3
 2026-08,RY1,GWM TANK,300 HYBRID,20,gwm,gwm-tank-300,dlt-web-827cefc3
 2026-08,RY1,GWM TANK,500 HYBRID,2,gwm,gwm-tank-500,dlt-web-827cefc3
@@ -350,7 +350,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-08,RY1,ORA,GOOD CAT,1,ora,ora-good-cat,dlt-web-827cefc3
 2026-08,RY1,PEUGEOT,408 P54 CG,1,peugeot,,dlt-web-827cefc3
 2026-08,RY1,POCCO,DD K,1,pocco,,dlt-web-827cefc3
-2026-08,RY1,POER,SAHAR HYBRID,9,poer,,dlt-web-827cefc3
+2026-08,RY1,POER,SAHAR HYBRID,9,poer,poer-sahar,dlt-web-827cefc3
 2026-08,RY1,PORSCHE,718 CAYMAN,2,porsche,porsche-718,dlt-web-827cefc3
 2026-08,RY1,PORSCHE,718 CAYMAN STYLE EDITION,2,porsche,porsche-718,dlt-web-827cefc3
 2026-08,RY1,PORSCHE,718 SPYDER,1,porsche,porsche-718,dlt-web-827cefc3
@@ -526,7 +526,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-08,RY2,FORD,RANGER,19,ford,ford-ranger,dlt-web-827cefc3
 2026-08,RY2,FORD,RANGER RAPTOR,15,ford,ford-ranger-raptor,dlt-web-827cefc3
 2026-08,RY2,FORD,RANGER SUPER DUTY,4,ford,ford-ranger,dlt-web-827cefc3
-2026-08,RY2,GWM,POER SAHAR,1,gwm,,dlt-web-827cefc3
+2026-08,RY2,GWM,POER SAHAR,1,gwm,poer-sahar,dlt-web-827cefc3
 2026-08,RY2,HYUNDAI,H-1,1,hyundai,hyundai-h-1,dlt-web-827cefc3
 2026-08,RY2,HYUNDAI,STARIA,45,hyundai,hyundai-staria,dlt-web-827cefc3
 2026-08,RY2,ISUZU,D-MAX,9,isuzu,isuzu-d-max,dlt-web-827cefc3
@@ -558,7 +558,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-08,RY3,FOTON,eTUNLAND,1,foton,,dlt-web-827cefc3
 2026-08,RY3,FOTON,eVIEWCONNECT,31,foton,,dlt-web-827cefc3
 2026-08,RY3,GWM,POER,1,gwm,,dlt-web-827cefc3
-2026-08,RY3,GWM,POER SAHAR,2,gwm,,dlt-web-827cefc3
+2026-08,RY3,GWM,POER SAHAR,2,gwm,poer-sahar,dlt-web-827cefc3
 2026-08,RY3,HINO,XZU600R-WKMLST3,36,hino,,dlt-web-827cefc3
 2026-08,RY3,HINO,XZU600R-WKTLST3,5,hino,,dlt-web-827cefc3
 2026-08,RY3,ISUZU,D-MAX,2121,isuzu,isuzu-d-max,dlt-web-827cefc3

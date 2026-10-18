@@ -480,7 +480,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-12,RY3,NISSAN,BVL2RTYD23FHP--A-G,1,nissan,,dlt-web-827cefc3
 2024-12,RY3,NISSAN,BVL2RWLD23FHP-----,1,nissan,,dlt-web-827cefc3
 2024-12,RY3,NISSAN,NAVARA,76,nissan,nissan-navara,dlt-web-827cefc3
-2024-12,RY3,POER,SAHAR,3,poer,,dlt-web-827cefc3
+2024-12,RY3,POER,SAHAR,3,poer,poer-sahar,dlt-web-827cefc3
 2024-12,RY3,SERES,EC31,17,seres,,dlt-web-827cefc3
 2024-12,RY3,SOKON,EC35,1,sokon,,dlt-web-827cefc3
 2024-12,RY3,SUZUKI,CARRY 1.5L MT,46,suzuki,suzuki-carry,dlt-web-827cefc3

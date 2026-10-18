@@ -516,7 +516,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-03,RY3,NEX,DYQ1033BEV1R,1,nex,,dlt-web-827cefc3
 2024-03,RY3,NEXTEM,ORCA,3,nextem,,dlt-web-827cefc3
 2024-03,RY3,NISSAN,NAVARA,159,nissan,nissan-navara,dlt-web-827cefc3
-2024-03,RY3,POER,SAHAR,1,poer,,dlt-web-827cefc3
+2024-03,RY3,POER,SAHAR,1,poer,poer-sahar,dlt-web-827cefc3
 2024-03,RY3,SOKON,CRC5020CLS,1,sokon,,dlt-web-827cefc3
 2024-03,RY3,SOKON,EC35,1,sokon,,dlt-web-827cefc3
 2024-03,RY3,SUZUKI,CARRY 1.5L MT,131,suzuki,suzuki-carry,dlt-web-827cefc3
