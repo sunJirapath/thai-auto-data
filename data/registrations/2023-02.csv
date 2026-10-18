@@ -212,7 +212,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-02,RY1,MERCEDES BENZ,C 350 e,64,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
 2023-02,RY1,MERCEDES BENZ,C250 COUPE,3,mercedes-benz,,dlt-web-827cefc3
 2023-02,RY1,MERCEDES BENZ,C350 e,2,mercedes-benz,,dlt-web-827cefc3
-2023-02,RY1,MERCEDES BENZ,CLA250,1,mercedes-benz,,dlt-web-827cefc3
+2023-02,RY1,MERCEDES BENZ,CLA250,1,mercedes-benz,mercedes-benz-cla,dlt-web-827cefc3
 2023-02,RY1,MERCEDES BENZ,CLS 220 d,94,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
 2023-02,RY1,MERCEDES BENZ,CLS 250 d COUPE,1,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
 2023-02,RY1,MERCEDES BENZ,CLS 300 d,9,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
@@ -300,7 +300,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-02,RY1,NISSAN,SYLPHY 1.6 E CVT,1,nissan,,dlt-web-827cefc3
 2023-02,RY1,NISSAN,TERRA,118,nissan,nissan-terra,dlt-web-827cefc3
 2023-02,RY1,NISSAN,UVL4RDRE26KHE-----,1,nissan,,dlt-web-827cefc3
-2023-02,RY1,NISSAN,X-TRAIL,3,nissan,,dlt-web-827cefc3
+2023-02,RY1,NISSAN,X-TRAIL,3,nissan,nissan-x-trail,dlt-web-827cefc3
 2023-02,RY1,ORA,GOOD CAT,282,ora,ora-good-cat,dlt-web-827cefc3
 2023-02,RY1,PEUGEOT,2008 P24 BG,15,peugeot,,dlt-web-827cefc3
 2023-02,RY1,PEUGEOT,3008 P84 BG,26,peugeot,,dlt-web-827cefc3

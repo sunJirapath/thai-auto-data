@@ -585,6 +585,7 @@ period,category,kind,id,units
 2021-07,RY1,m,mazda-cx-3,3
 2021-07,RY1,m,mazda-cx-30,4
 2021-07,RY1,m,mazda-mazda2,13
+2021-07,RY1,m,mercedes-benz-cla,1
 2021-07,RY1,m,mg-extender,1
 2021-07,RY1,m,mitsubishi-attrage,2
 2021-07,RY1,m,mitsubishi-mirage,2
@@ -1624,6 +1625,7 @@ period,category,kind,id,units
 2022-07,RY1,m,mitsubishi-triton,2
 2022-07,RY1,m,nissan-almera,2
 2022-07,RY1,m,nissan-navara,1
+2022-07,RY1,m,nissan-x-trail,1
 2022-07,RY1,m,suzuki-ciaz,2
 2022-07,RY1,m,toyota-camry,1
 2022-07,RY1,m,toyota-corolla-cross,1
@@ -5263,6 +5265,7 @@ period,category,kind,id,units
 2026-05,RY1,m,toyota-yaris,2
 2026-05,RY1,m,toyota-yaris-ativ,11
 2026-05,RY1,m,toyota-yaris-cross,7
+2026-05,RY1,m,volvo-es90,1
 2026-05,RY1,m,zeekr-7x,1
 2026-05,RY2,b,toyota,3
 2026-05,RY2,bf,toyota|diesel,3
@@ -5570,6 +5573,7 @@ period,category,kind,id,units
 2026-09,RY1,m,ford-ranger,1
 2026-09,RY1,m,geely-ex2,2
 2026-09,RY1,m,gwm-ora-5,3
+2026-09,RY1,m,gwm-wey-g9,1
 2026-09,RY1,m,honda-accord,1
 2026-09,RY1,m,honda-city,9
 2026-09,RY1,m,honda-city-hatchback,4
@@ -5579,6 +5583,7 @@ period,category,kind,id,units
 2026-09,RY1,m,isuzu-d-max,9
 2026-09,RY1,m,isuzu-mu-x,3
 2026-09,RY1,m,jaecoo-5,2
+2026-09,RY1,m,jaecoo-6t,2
 2026-09,RY1,m,mazda-bt-50,2
 2026-09,RY1,m,mazda-cx-3,2
 2026-09,RY1,m,mazda-mazda2,6

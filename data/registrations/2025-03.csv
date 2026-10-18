@@ -164,8 +164,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-03,RY1,HYUNDAI,IONIQ5,3,hyundai,hyundai-ioniq-5,dlt-web-827cefc3
 2025-03,RY1,HYUNDAI,IONIQ5 N,1,hyundai,hyundai-ioniq-5,dlt-web-827cefc3
 2025-03,RY1,HYUNDAI,IONIQ6,1,hyundai,,dlt-web-827cefc3
-2025-03,RY1,HYUNDAI,PALISADE,22,hyundai,,dlt-web-827cefc3
-2025-03,RY1,HYUNDAI,SANTA FE,4,hyundai,,dlt-web-827cefc3
+2025-03,RY1,HYUNDAI,PALISADE,22,hyundai,hyundai-palisade,dlt-web-827cefc3
+2025-03,RY1,HYUNDAI,SANTA FE,4,hyundai,hyundai-santa-fe,dlt-web-827cefc3
 2025-03,RY1,HYUNDAI,STARGAZER,31,hyundai,hyundai-stargazer,dlt-web-827cefc3
 2025-03,RY1,ISUZU,D-MAX,2628,isuzu,isuzu-d-max,dlt-web-827cefc3
 2025-03,RY1,ISUZU,MU-X,1298,isuzu,isuzu-mu-x,dlt-web-827cefc3
@@ -182,7 +182,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-03,RY1,KIA,EV5,71,kia,kia-ev5,dlt-web-827cefc3
 2025-03,RY1,KIA,EV9 EARTH LONG RANGE,1,kia,,dlt-web-827cefc3
 2025-03,RY1,KIA,EV9 GT LINE AWD,3,kia,,dlt-web-827cefc3
-2025-03,RY1,KIA,SORENTO,9,kia,,dlt-web-827cefc3
+2025-03,RY1,KIA,SORENTO,9,kia,kia-sorento,dlt-web-827cefc3
 2025-03,RY1,LAMBORGHINI,HURACAN EVO RWD,1,lamborghini,,dlt-web-827cefc3
 2025-03,RY1,LAMBORGHINI,URUS,1,lamborghini,,dlt-web-827cefc3
 2025-03,RY1,LAMBORGHINI,URUS PERFORMANTE,2,lamborghini,,dlt-web-827cefc3
@@ -326,7 +326,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-03,RY1,NISSAN,TDWARFZE12EHA-----,1,nissan,,dlt-web-827cefc3
 2025-03,RY1,NISSAN,TEANA,1,nissan,,dlt-web-827cefc3
 2025-03,RY1,NISSAN,TERRA,52,nissan,nissan-terra,dlt-web-827cefc3
-2025-03,RY1,NISSAN,X-TRAIL,2,nissan,,dlt-web-827cefc3
+2025-03,RY1,NISSAN,X-TRAIL,2,nissan,nissan-x-trail,dlt-web-827cefc3
 2025-03,RY1,OMODA,C5 EV Long Range Plus,33,omoda,omoda-c5,dlt-web-827cefc3
 2025-03,RY1,OMODA,C5 EV Long Range Ultimate,113,omoda,omoda-c5,dlt-web-827cefc3
 2025-03,RY1,ORA,GOOD CAT,497,ora,ora-good-cat,dlt-web-827cefc3

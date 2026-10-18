@@ -47,6 +47,7 @@ period,category,kind,id,units
 2021-01,RY1,m,nissan-march,2
 2021-01,RY1,m,nissan-navara,1
 2021-01,RY1,m,nissan-note,4
+2021-01,RY1,m,nissan-x-trail,2
 2021-01,RY1,m,suzuki-celerio,1
 2021-01,RY1,m,suzuki-ciaz,4
 2021-01,RY1,m,toyota-corolla-cross,1
@@ -4746,6 +4747,7 @@ period,category,kind,id,units
 2026-09,RY1,m,isuzu-mu-x,1
 2026-09,RY1,m,jaecoo-5,1
 2026-09,RY1,m,mazda-cx-8,1
+2026-09,RY1,m,mg-urban,1
 2026-09,RY1,m,mitsubishi-pajero-sport,1
 2026-09,RY1,m,toyota-corolla-cross,2
 2026-09,RY1,m,toyota-hilux-travo,6

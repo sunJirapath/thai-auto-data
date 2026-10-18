@@ -4156,7 +4156,7 @@ period,category,kind,id,units
 2026-04,RY1,m,aion-v,1
 2026-04,RY1,m,byd-dolphin,1
 2026-04,RY1,m,deepal-s05,2
-2026-04,RY1,m,ford-ranger,1
+2026-04,RY1,m,ford-ranger,2
 2026-04,RY1,m,geely-ex2,1
 2026-04,RY1,m,gwm-tank-300,1
 2026-04,RY1,m,honda-city,1
@@ -4441,6 +4441,7 @@ period,category,kind,id,units
 2026-08,RY1,m,mg-mg3,1
 2026-08,RY1,m,mg-mg4,2
 2026-08,RY1,m,mg-s5,2
+2026-08,RY1,m,mg-urban,7
 2026-08,RY1,m,mitsubishi-xpander-cross,1
 2026-08,RY1,m,toyota-corolla-cross,2
 2026-08,RY1,m,toyota-fortuner,1
@@ -4523,12 +4524,14 @@ period,category,kind,id,units
 2026-09,RY1,m,isuzu-mu-x,3
 2026-09,RY1,m,jaecoo-5,4
 2026-09,RY1,m,jaecoo-6,1
+2026-09,RY1,m,mazda-mazda6e,2
 2026-09,RY1,m,mercedes-benz-c-class,1
 2026-09,RY1,m,mercedes-benz-gla,1
 2026-09,RY1,m,mg-maxus-7,1
 2026-09,RY1,m,mg-mg4,1
 2026-09,RY1,m,mg-mg5,1
 2026-09,RY1,m,mg-s5,1
+2026-09,RY1,m,mg-urban,3
 2026-09,RY1,m,mitsubishi-pajero-sport,1
 2026-09,RY1,m,mitsubishi-triton,1
 2026-09,RY1,m,mitsubishi-xforce,1
@@ -4561,3 +4564,4 @@ period,category,kind,id,units
 2026-09,RY3,m,toyota-hilux-champ,1
 2026-09,RY3,m,toyota-hilux-revo,4
 2026-09,RY3,m,toyota-hilux-travo,3
+2026-09,RY3,m,wuling-porta-ev,1

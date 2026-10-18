@@ -183,8 +183,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-12,RY1,MERCEDES BENZ,C 350 e,2,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
 2022-12,RY1,MERCEDES BENZ,C250 COUPE,2,mercedes-benz,,dlt-web-827cefc3
 2022-12,RY1,MERCEDES BENZ,C300 Cabriolet,1,mercedes-benz,,dlt-web-827cefc3
-2022-12,RY1,MERCEDES BENZ,CLA 250 COUPE,1,mercedes-benz,,dlt-web-827cefc3
-2022-12,RY1,MERCEDES BENZ,CLA250,1,mercedes-benz,,dlt-web-827cefc3
+2022-12,RY1,MERCEDES BENZ,CLA 250 COUPE,1,mercedes-benz,mercedes-benz-cla,dlt-web-827cefc3
+2022-12,RY1,MERCEDES BENZ,CLA250,1,mercedes-benz,mercedes-benz-cla,dlt-web-827cefc3
 2022-12,RY1,MERCEDES BENZ,CLS 220 d,38,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
 2022-12,RY1,MERCEDES BENZ,CLS 300 d,8,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
 2022-12,RY1,MERCEDES BENZ,E 200 Coupe,7,mercedes-benz,mercedes-benz-e-class,dlt-web-827cefc3

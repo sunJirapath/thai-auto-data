@@ -365,6 +365,7 @@ period,category,kind,id,units
 2021-04,RY1,m,nissan-march,5
 2021-04,RY1,m,nissan-navara,1
 2021-04,RY1,m,nissan-note,4
+2021-04,RY1,m,nissan-x-trail,1
 2021-04,RY1,m,suzuki-celerio,2
 2021-04,RY1,m,suzuki-swift,2
 2021-04,RY1,m,toyota-alphard,1
@@ -4599,6 +4600,7 @@ period,category,kind,id,units
 2025-03,RY1,m,honda-hr-v,7
 2025-03,RY1,m,isuzu-d-max,15
 2025-03,RY1,m,isuzu-mu-x,5
+2025-03,RY1,m,kia-sorento,1
 2025-03,RY1,m,lexus-lm,1
 2025-03,RY1,m,mazda-cx-8,1
 2025-03,RY1,m,mercedes-benz-gls,1
@@ -5789,6 +5791,7 @@ period,category,kind,id,units
 2026-05,RY1,m,byd-sealion-6,8
 2026-05,RY1,m,byd-sealion-7,1
 2026-05,RY1,m,ford-everest,5
+2026-05,RY1,m,ford-ranger,2
 2026-05,RY1,m,geely-ex5,2
 2026-05,RY1,m,gwm-tank-300,1
 2026-05,RY1,m,gwm-tank-500,1
@@ -6191,9 +6194,11 @@ period,category,kind,id,units
 2026-09,RY1,m,isuzu-mu-x,4
 2026-09,RY1,m,jaecoo-5,9
 2026-09,RY1,m,jaecoo-6,3
+2026-09,RY1,m,jaecoo-6t,1
 2026-09,RY1,m,jaecoo-7,1
 2026-09,RY1,m,mercedes-benz-gla,1
 2026-09,RY1,m,mg-im5,1
+2026-09,RY1,m,mg-urban,1
 2026-09,RY1,m,mitsubishi-pajero-sport,1
 2026-09,RY1,m,mitsubishi-triton,1
 2026-09,RY1,m,omoda-c5,1

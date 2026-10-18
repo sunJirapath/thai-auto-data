@@ -178,8 +178,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-05,RY1,HYUNDAI,IONIQ5 N,2,hyundai,hyundai-ioniq-5,dlt-web-827cefc3
 2025-05,RY1,HYUNDAI,IONIQ5 N LINE,1,hyundai,hyundai-ioniq-5,dlt-web-827cefc3
 2025-05,RY1,HYUNDAI,IONIQ6,8,hyundai,,dlt-web-827cefc3
-2025-05,RY1,HYUNDAI,PALISADE,21,hyundai,,dlt-web-827cefc3
-2025-05,RY1,HYUNDAI,SANTA FE,8,hyundai,,dlt-web-827cefc3
+2025-05,RY1,HYUNDAI,PALISADE,21,hyundai,hyundai-palisade,dlt-web-827cefc3
+2025-05,RY1,HYUNDAI,SANTA FE,8,hyundai,hyundai-santa-fe,dlt-web-827cefc3
 2025-05,RY1,HYUNDAI,STARGAZER,41,hyundai,hyundai-stargazer,dlt-web-827cefc3
 2025-05,RY1,ISUZU,D-MAX,2346,isuzu,isuzu-d-max,dlt-web-827cefc3
 2025-05,RY1,ISUZU,MU-X,1066,isuzu,isuzu-mu-x,dlt-web-827cefc3
@@ -189,7 +189,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-05,RY1,JEEP,WRANGLER RUBICON 4 DOOR,2,jeep,,dlt-web-827cefc3
 2025-05,RY1,KIA,CARNIVAL,15,kia,kia-carnival,dlt-web-827cefc3
 2025-05,RY1,KIA,EV5,91,kia,kia-ev5,dlt-web-827cefc3
-2025-05,RY1,KIA,SORENTO,15,kia,,dlt-web-827cefc3
+2025-05,RY1,KIA,SORENTO,15,kia,kia-sorento,dlt-web-827cefc3
 2025-05,RY1,LAMBORGHINI,HURACAN EVO,1,lamborghini,,dlt-web-827cefc3
 2025-05,RY1,LAMBORGHINI,HURACAN EVO SPYDER,1,lamborghini,,dlt-web-827cefc3
 2025-05,RY1,LAMBORGHINI,HURACAN STO,1,lamborghini,,dlt-web-827cefc3

@@ -160,8 +160,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-06,RY1,HYUNDAI,CRETA,13,hyundai,hyundai-creta,dlt-web-827cefc3
 2025-06,RY1,HYUNDAI,IONIQ5,10,hyundai,hyundai-ioniq-5,dlt-web-827cefc3
 2025-06,RY1,HYUNDAI,IONIQ6,2,hyundai,,dlt-web-827cefc3
-2025-06,RY1,HYUNDAI,PALISADE,12,hyundai,,dlt-web-827cefc3
-2025-06,RY1,HYUNDAI,SANTA FE,11,hyundai,,dlt-web-827cefc3
+2025-06,RY1,HYUNDAI,PALISADE,12,hyundai,hyundai-palisade,dlt-web-827cefc3
+2025-06,RY1,HYUNDAI,SANTA FE,11,hyundai,hyundai-santa-fe,dlt-web-827cefc3
 2025-06,RY1,HYUNDAI,STARGAZER,43,hyundai,hyundai-stargazer,dlt-web-827cefc3
 2025-06,RY1,ISUZU,D-MAX,2013,isuzu,isuzu-d-max,dlt-web-827cefc3
 2025-06,RY1,ISUZU,MU-X,905,isuzu,isuzu-mu-x,dlt-web-827cefc3
@@ -174,7 +174,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-06,RY1,KIA,CARNIVAL,8,kia,kia-carnival,dlt-web-827cefc3
 2025-06,RY1,KIA,EV5,69,kia,kia-ev5,dlt-web-827cefc3
 2025-06,RY1,KIA,EV9 GT LINE AWD,1,kia,,dlt-web-827cefc3
-2025-06,RY1,KIA,SORENTO,13,kia,,dlt-web-827cefc3
+2025-06,RY1,KIA,SORENTO,13,kia,kia-sorento,dlt-web-827cefc3
 2025-06,RY1,LAMBORGHINI,AVENTADOR ULTIMAE,1,lamborghini,,dlt-web-827cefc3
 2025-06,RY1,LAMBORGHINI,HURACAN STO,1,lamborghini,,dlt-web-827cefc3
 2025-06,RY1,LAMBORGHINI,HURACAN TECNICA,1,lamborghini,,dlt-web-827cefc3

@@ -128,6 +128,7 @@ tr.sel-row td { background: var(--accent-soft); }
 .filterbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--page); padding-block: 8px; border-bottom: 1px solid var(--border); }
 .filter-echo { color: var(--ink-2); }
 .two.wide-left { grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); align-items: start; }
+.stack { display: grid; gap: 16px; min-width: 0; }
 td.move { font-size: .8rem; }
 td.move.up { color: var(--up); } td.move.down { color: var(--down); }
 #rankChart, #hotChart { cursor: pointer; }

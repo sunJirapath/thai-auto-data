@@ -352,6 +352,7 @@ period,category,kind,id,units
 2021-05,RY1,m,isuzu-mu-x,3
 2021-05,RY1,m,mazda-mazda3,1
 2021-05,RY1,m,mercedes-benz-c-class,1
+2021-05,RY1,m,mercedes-benz-cla,1
 2021-05,RY1,m,mg-extender,4
 2021-05,RY1,m,mg-hs,2
 2021-05,RY1,m,mg-mg3,4
@@ -4212,6 +4213,7 @@ period,category,kind,id,units
 2026-08,RY1,m,isuzu-mu-x,1
 2026-08,RY1,m,jaecoo-5,1
 2026-08,RY1,m,mg-s5,1
+2026-08,RY1,m,mg-urban,1
 2026-08,RY1,m,mitsubishi-mirage,1
 2026-08,RY1,m,mitsubishi-triton,1
 2026-08,RY1,m,toyota-corolla-cross,1
@@ -4275,6 +4277,7 @@ period,category,kind,id,units
 2026-09,RY1,m,jaecoo-5,1
 2026-09,RY1,m,jaecoo-6,1
 2026-09,RY1,m,mg-mg4,1
+2026-09,RY1,m,mg-urban,1
 2026-09,RY1,m,mitsubishi-attrage,2
 2026-09,RY1,m,mitsubishi-xforce,2
 2026-09,RY1,m,omoda-c5,1

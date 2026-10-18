@@ -6150,6 +6150,7 @@ period,category,kind,id,units
 2026-02,RY1,m,honda-civic,3
 2026-02,RY1,m,honda-cr-v,2
 2026-02,RY1,m,honda-hr-v,8
+2026-02,RY1,m,hyundai-santa-fe,1
 2026-02,RY1,m,isuzu-d-max,29
 2026-02,RY1,m,isuzu-mu-x,19
 2026-02,RY1,m,mercedes-benz-a-class,1
@@ -6367,6 +6368,7 @@ period,category,kind,id,units
 2026-04,RY1,m,honda-civic,3
 2026-04,RY1,m,honda-cr-v,3
 2026-04,RY1,m,honda-hr-v,10
+2026-04,RY1,m,hyundai-santa-fe,1
 2026-04,RY1,m,isuzu-d-max,7
 2026-04,RY1,m,isuzu-mu-x,6
 2026-04,RY1,m,jaecoo-5,1
@@ -6473,7 +6475,7 @@ period,category,kind,id,units
 2026-05,RY1,m,chery-v23,3
 2026-05,RY1,m,deepal-s05,1
 2026-05,RY1,m,ford-everest,1
-2026-05,RY1,m,ford-ranger,4
+2026-05,RY1,m,ford-ranger,6
 2026-05,RY1,m,ford-ranger-raptor,1
 2026-05,RY1,m,gwm-tank-300,2
 2026-05,RY1,m,honda-city,6
@@ -6833,6 +6835,7 @@ period,category,kind,id,units
 2026-08,RY1,m,honda-city-hatchback,5
 2026-08,RY1,m,honda-cr-v,3
 2026-08,RY1,m,honda-hr-v,10
+2026-08,RY1,m,hyundai-palisade,1
 2026-08,RY1,m,isuzu-d-max,5
 2026-08,RY1,m,jaecoo-5,12
 2026-08,RY1,m,jaecoo-6,2

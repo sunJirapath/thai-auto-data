@@ -993,24 +993,40 @@
     });
   }
 
+  // Fastest growing and biggest declines: the same comparison, sorted both ways
   function renderHotCard(idx) {
     var cats = selCats(), months = selectedMonths(), cur, prev, label, all = okPeriods();
     if (A.hot === 'yoy') {
       var pm = priorMonths(months);
-      if (!priorOk(months)) { return hotEmpty(L('The data does not cover ', 'ข้อมูลไม่ครอบคลุม') + priorText(months, 'noun') + L('; try a shorter range', ' ลองเลือกช่วงที่สั้นลง')); }
+      if (!priorOk(months)) { var msg = L('The data does not cover ', 'ข้อมูลไม่ครอบคลุม') + priorText(months, 'noun') + L('; try a shorter range', ' ลองเลือกช่วงที่สั้นลง'); hotEmpty(msg, 'drop'); return hotEmpty(msg); }
       cur = sumById(idx, 'm', months, cats); prev = sumById(idx, 'm', pm, cats);
       label = monthLabel(months[0]) + '–' + monthLabel(months[months.length - 1]) + L(' vs ', ' เทียบ ') + monthLabel(pm[0]) + '–' + monthLabel(pm[pm.length - 1]);
     } else {
       var end = all.indexOf(months[months.length - 1]);
-      if (end < 5) return hotEmpty(L('Needs at least 6 months of data', 'ต้องมีข้อมูลอย่างน้อย 6 เดือน'));
+      if (end < 5) { var few = L('Needs at least 6 months of data', 'ต้องมีข้อมูลอย่างน้อย 6 เดือน'); hotEmpty(few, 'drop'); return hotEmpty(few); }
       var last3 = all.slice(end - 2, end + 1), prev3 = all.slice(end - 5, end - 2);
       cur = sumById(idx, 'm', last3, cats); prev = sumById(idx, 'm', prev3, cats);
       label = monthLabel(last3[0]) + '–' + monthLabel(last3[2]) + L(' vs ', ' เทียบ ') + monthLabel(prev3[0]) + '–' + monthLabel(prev3[2]);
     }
-    var gains = {};
+    var gains = {}, losses = {};
     Object.keys(cur).forEach(function (id) { var g = cur[id] - (prev[id] || 0); if (g > 0) gains[id] = g; });
-    var top = sortedIds(gains).slice(0, 10);
+    Object.keys(prev).forEach(function (id) { var d = prev[id] - (cur[id] || 0); if (d > 0) losses[id] = d; });
+    var top = sortedIds(gains).slice(0, 10), drop = sortedIds(losses).slice(0, 10);
     document.getElementById('hotNote').textContent = label + L(' · ranked by units gained (not %, so small bases do not look huge) · registrations, not sales', ' · เรียงตามจำนวนคันที่เพิ่มขึ้น (ไม่ใช่ % เพื่อไม่ให้รุ่นฐานเล็กดูโตเกินจริง) · ยอดจดทะเบียน ไม่ใช่ยอดขาย');
+    document.getElementById('dropNote').textContent = label + L(' · ranked by units lost · a new generation under a new name (e.g. Hilux Revo → Hilux Travo) shows here as a decline and in the left list as growth', ' · เรียงตามจำนวนคันที่ลดลง · รุ่นที่เปลี่ยนโฉมและเปลี่ยนชื่อ (เช่น Hilux Revo → Hilux Travo) จะขึ้นเป็นยอดลดที่นี่ และเป็นยอดเพิ่มในรายการรุ่นมาแรง');
+    if (!drop.length) hotEmpty(L('No model declined under these filters', 'ไม่มีรุ่นที่ลดลงในตัวกรองนี้'), 'drop');
+    else {
+      document.getElementById('dropEmpty').hidden = true;
+      document.getElementById('dropChart').parentNode.hidden = false;
+      hbar('drop', document.getElementById('dropChart'), drop.map(function (id) { return modelName(id); }),
+        drop.map(function (id) { return losses[id]; }),
+        drop.map(function (id) {
+          return '−' + fmt(losses[id]) + L(' units · ', ' คัน · ') + pctText(-100 * losses[id] / prev[id]) + L(' · total ', ' · รวม ') + fmt(cur[id] || 0);
+        }),
+        function (i) { location.hash = '#/model/' + drop[i] + filterQuery(); },
+        drop.map(function (id) { return '−' + fmt(losses[id]) + (cur[id] ? '' : L(' · none', ' · ไม่มียอด')); }),
+        css('--down'));
+    }
     if (!top.length) return hotEmpty(L('No model grew under these filters', 'ไม่มีรุ่นที่เพิ่มขึ้นในตัวกรองนี้'));
     document.getElementById('hotEmpty').hidden = true;
     document.getElementById('hotChart').parentNode.hidden = false;
@@ -1023,10 +1039,11 @@
       function (i) { location.hash = '#/model/' + top[i] + filterQuery(); },
       top.map(function (id) { return '+' + fmt(gains[id]) + (prev[id] ? '' : L(' · new', ' · ใหม่')); }));
   }
-  function hotEmpty(msg) {
-    var e = document.getElementById('hotEmpty');
+  function hotEmpty(msg, key) {
+    key = key || 'hot';
+    var e = document.getElementById(key + 'Empty');
     e.textContent = msg; e.hidden = false;
-    document.getElementById('hotChart').parentNode.hidden = true;
+    document.getElementById(key + 'Chart').parentNode.hidden = true;
   }
 
   function renderHomeTrends(idx) {
@@ -1489,26 +1506,33 @@
       covered += u;
       PRICE_BANDS.forEach(function (b, i) { if (r[0] >= b[0] && r[0] < b[1]) { band[i].units += u; band[i].models.push(id); } });
     });
+    // the last bar holds every unit without a price, so empty bands are not read as zero sales
+    var missing = { units: Math.max(0, total - covered), models: sortedIds(units).filter(function (id) { return !priceRange(id); }) };
+    band.push(missing);
     document.getElementById('priceCoverage').textContent = L('Official-website prices for ', 'มีราคาจากเว็บไซต์ทางการ ') + priced.length + L(' models, covering ', ' รุ่น คิดเป็น ') +
-      (total ? (100 * covered / total).toFixed(1) : 0) + L('% of registrations under these filters · bands use each model\'s starting price · so this is not the whole market', '% ของยอดจดทะเบียนในตัวกรองนี้ · จัดช่วงตามราคาเริ่มต้นของแต่ละรุ่น · ช่วงราคาจึงยังไม่ใช่ภาพทั้งตลาด');
+      (total ? (100 * covered / total).toFixed(1) : 0) + L('% of registrations under these filters · bands use each model\'s starting price · % is of all registrations; the grey bar is everything without a price yet', '% ของยอดจดทะเบียนในตัวกรองนี้ · จัดช่วงตามราคาเริ่มต้นของแต่ละรุ่น · % คิดจากยอดทั้งหมด แท่งสีเทาคือยอดที่ยังไม่มีราคา');
     var o = baseOptions();
     o.plugins.legend.display = false;
     o.scales.y.ticks.callback = kTicks;
     o.scales.x.ticks.autoSkip = false; o.scales.x.ticks.maxRotation = 45;
     o.layout = { padding: { top: 18 } };
     o.plugins.tooltip.callbacks.label = function (c) { return ' ' + fmt(c.raw) + L(' units · ', ' คัน · ') + band[c.dataIndex].models.length + L(' models', ' รุ่น'); };
-    o.plugins.tooltip.callbacks.afterLabel = function (c) { return band[c.dataIndex].models.map(modelName).join(', '); };
+    o.plugins.tooltip.callbacks.afterLabel = function (c) {
+      var ms = band[c.dataIndex].models;
+      if (band[c.dataIndex] !== missing) return ms.map(modelName).join(', ');
+      return L('Biggest without a price: ', 'รุ่นใหญ่ที่ยังไม่มีราคา: ') + ms.slice(0, 8).map(modelName).join(', ') + L(' · also units with unmatched model names', ' · รวมยอดที่ยังจับคู่ชื่อรุ่นไม่ได้');
+    };
     if (charts.priceBand) charts.priceBand.destroy();
     charts.priceBand = new Chart(document.getElementById('priceBandChart'), {
       type: 'bar', options: o,
-      data: { labels: PRICE_BANDS.map(function (b) { return b[2]; }), datasets: [{ data: band.map(function (b) { return b.units; }),
-        backgroundColor: css('--accent'), borderRadius: { topLeft: 4, topRight: 4 }, borderSkipped: 'start', maxBarThickness: 56 }] },
+      data: { labels: PRICE_BANDS.map(function (b) { return b[2]; }).concat(L('No price data', 'ยังไม่มีราคา')), datasets: [{ data: band.map(function (b) { return b.units; }),
+        backgroundColor: band.map(function (b) { return b === missing ? css('--hatch') : css('--accent'); }), borderRadius: { topLeft: 4, topRight: 4 }, borderSkipped: 'start', maxBarThickness: 56 }] },
       plugins: [{ id: 'bandLabels', afterDatasetsDraw: function (ch) {
         var ctx = ch.ctx, meta = ch.getDatasetMeta(0);
         ctx.save(); ctx.font = '11px ' + css('--font'); ctx.textAlign = 'center'; ctx.fillStyle = css('--ink-2');
         meta.data.forEach(function (bar, i) {
           var b = band[i];
-          ctx.fillText(b.models.length ? fmtK(b.units) + ' · ' + (covered ? Math.round(100 * b.units / covered) : 0) + '%' : L('no priced model', 'ไม่มีรุ่นที่มีราคา'), bar.x, bar.y - 6);
+          ctx.fillText(b.units || b.models.length ? fmtK(b.units) + ' · ' + (total ? Math.round(100 * b.units / total) : 0) + '%' : L('no model priced yet', 'ยังไม่มีรุ่นที่มีราคา'), bar.x, bar.y - 6);
         });
         ctx.restore();
       } }]

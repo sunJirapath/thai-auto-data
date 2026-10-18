@@ -33,6 +33,7 @@ period,category,kind,id,units
 2021-01,RY1,m,isuzu-d-max,37
 2021-01,RY1,m,isuzu-mu-x,3
 2021-01,RY1,m,mazda-mazda2,1
+2021-01,RY1,m,mercedes-benz-cla,1
 2021-01,RY1,m,mg-mg3,1
 2021-01,RY1,m,mg-zs,1
 2021-01,RY1,m,mitsubishi-attrage,1
@@ -5393,6 +5394,7 @@ period,category,kind,id,units
 2026-08,RY1,m,jaecoo-6,1
 2026-08,RY1,m,mercedes-benz-glc,1
 2026-08,RY1,m,mg-mg4,1
+2026-08,RY1,m,mg-urban,7
 2026-08,RY1,m,mitsubishi-xpander-cross,1
 2026-08,RY1,m,nissan-serena,1
 2026-08,RY1,m,suzuki-swift,1
@@ -5467,8 +5469,10 @@ period,category,kind,id,units
 2026-09,RY1,m,isuzu-d-max,5
 2026-09,RY1,m,isuzu-mu-x,2
 2026-09,RY1,m,jaecoo-5,1
+2026-09,RY1,m,mazda-mazda6e,1
 2026-09,RY1,m,mg-im5,1
 2026-09,RY1,m,mg-s5,2
+2026-09,RY1,m,mg-urban,2
 2026-09,RY1,m,mitsubishi-xforce,1
 2026-09,RY1,m,suzuki-fronx,1
 2026-09,RY1,m,toyota-fortuner,3

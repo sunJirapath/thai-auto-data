@@ -159,7 +159,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-11,RY1,HYUNDAI,IONIQ5,4,hyundai,hyundai-ioniq-5,dlt-web-827cefc3
 2024-11,RY1,HYUNDAI,IONIQ5 N,1,hyundai,hyundai-ioniq-5,dlt-web-827cefc3
 2024-11,RY1,HYUNDAI,IONIQ6,7,hyundai,,dlt-web-827cefc3
-2024-11,RY1,HYUNDAI,SANTA FE,1,hyundai,,dlt-web-827cefc3
+2024-11,RY1,HYUNDAI,SANTA FE,1,hyundai,hyundai-santa-fe,dlt-web-827cefc3
 2024-11,RY1,HYUNDAI,STARGAZER,42,hyundai,hyundai-stargazer,dlt-web-827cefc3
 2024-11,RY1,ISUZU,D-MAX,2069,isuzu,isuzu-d-max,dlt-web-827cefc3
 2024-11,RY1,ISUZU,mu-X,914,isuzu,isuzu-mu-x,dlt-web-827cefc3
@@ -170,7 +170,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-11,RY1,KIA,CARNIVAL,9,kia,kia-carnival,dlt-web-827cefc3
 2024-11,RY1,KIA,EV5,84,kia,kia-ev5,dlt-web-827cefc3
 2024-11,RY1,KIA,EV9 GT LINE AWD,9,kia,,dlt-web-827cefc3
-2024-11,RY1,KIA,SORENTO,6,kia,,dlt-web-827cefc3
+2024-11,RY1,KIA,SORENTO,6,kia,kia-sorento,dlt-web-827cefc3
 2024-11,RY1,KIA,SOUL EV,1,kia,,dlt-web-827cefc3
 2024-11,RY1,LAMBORGHINI,AVENTADOR SVJ,1,lamborghini,,dlt-web-827cefc3
 2024-11,RY1,LAMBORGHINI,HURACAN STO,1,lamborghini,,dlt-web-827cefc3

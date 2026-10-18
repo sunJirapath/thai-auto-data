@@ -256,7 +256,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-04,RY1,NISSAN,SYLPHY 1.6 E CVT,5,nissan,,dlt-web-827cefc3
 2023-04,RY1,NISSAN,TDWARFZE12EHA-----,1,nissan,,dlt-web-827cefc3
 2023-04,RY1,NISSAN,TERRA,91,nissan,nissan-terra,dlt-web-827cefc3
-2023-04,RY1,NISSAN,X-TRAIL,1,nissan,,dlt-web-827cefc3
+2023-04,RY1,NISSAN,X-TRAIL,1,nissan,nissan-x-trail,dlt-web-827cefc3
 2023-04,RY1,ORA,GOOD CAT,92,ora,ora-good-cat,dlt-web-827cefc3
 2023-04,RY1,PEUGEOT,2008 P24 BG,14,peugeot,,dlt-web-827cefc3
 2023-04,RY1,PEUGEOT,3008 P84 BG,26,peugeot,,dlt-web-827cefc3

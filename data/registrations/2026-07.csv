@@ -24,8 +24,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-07,RY1,AUDI,S3 Sportback quattro,1,audi,,dlt-web-827cefc3
 2026-07,RY1,AUDI,TT Coupe Final Icon Black,6,audi,,dlt-web-827cefc3
 2026-07,RY1,AUDI,TT RS Coupe q,1,audi,,dlt-web-827cefc3
-2026-07,RY1,AVATR,AVATR 07 MAX,68,avatr,,dlt-web-827cefc3
-2026-07,RY1,AVATR,AVATR 07 ULTRA AWD,41,avatr,,dlt-web-827cefc3
+2026-07,RY1,AVATR,AVATR 07 MAX,68,avatr,avatr-07,dlt-web-827cefc3
+2026-07,RY1,AVATR,AVATR 07 ULTRA AWD,41,avatr,avatr-07,dlt-web-827cefc3
 2026-07,RY1,AVATR,AVATR 11 LONG RANGE,74,avatr,avatr-11,dlt-web-827cefc3
 2026-07,RY1,AVATR,AVATR 11 ROYAL EDITION,15,avatr,avatr-11,dlt-web-827cefc3
 2026-07,RY1,AVATR,AVATR 11 STANDARD RANGE,1,avatr,avatr-11,dlt-web-827cefc3
@@ -135,7 +135,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-07,RY1,FORD,MUSTANG 5.0 GT FASTBACK,1,ford,ford-mustang,dlt-web-827cefc3
 2026-07,RY1,FORD,RANGER,483,ford,ford-ranger,dlt-web-827cefc3
 2026-07,RY1,FORD,RANGER RAPTOR,107,ford,ford-ranger-raptor,dlt-web-827cefc3
-2026-07,RY1,FORD,RANGER SUPER DUTY,20,ford,,dlt-web-827cefc3
+2026-07,RY1,FORD,RANGER SUPER DUTY,20,ford,ford-ranger,dlt-web-827cefc3
 2026-07,RY1,GAC,M8 PHEV PREMIUM,29,gac,,dlt-web-827cefc3
 2026-07,RY1,GEELY,EX2,2640,geely,geely-ex2,dlt-web-827cefc3
 2026-07,RY1,GEELY,EX5,371,geely,geely-ex5,dlt-web-827cefc3
@@ -145,7 +145,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-07,RY1,GWM,H6 PLUG-IN HYBRID,98,gwm,,dlt-web-827cefc3
 2026-07,RY1,GWM,ORA 5,1399,gwm,gwm-ora-5,dlt-web-827cefc3
 2026-07,RY1,GWM,POER SAHAR,14,gwm,,dlt-web-827cefc3
-2026-07,RY1,GWM,WEY G9 PLUG-IN HYBRID,53,gwm,,dlt-web-827cefc3
+2026-07,RY1,GWM,WEY G9 PLUG-IN HYBRID,53,gwm,gwm-wey-g9,dlt-web-827cefc3
 2026-07,RY1,GWM TANK,300 HYBRID,9,gwm,gwm-tank-300,dlt-web-827cefc3
 2026-07,RY1,GWM TANK,500 HYBRID,2,gwm,gwm-tank-500,dlt-web-827cefc3
 2026-07,RY1,HAVAL,H6 HEV ULTRA,9,haval,haval-h6,dlt-web-827cefc3
@@ -171,8 +171,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-07,RY1,HYUNDAI,IONIQ5,2,hyundai,hyundai-ioniq-5,dlt-web-827cefc3
 2026-07,RY1,HYUNDAI,IONIQ5 N,1,hyundai,hyundai-ioniq-5,dlt-web-827cefc3
 2026-07,RY1,HYUNDAI,IONIQ6,2,hyundai,,dlt-web-827cefc3
-2026-07,RY1,HYUNDAI,PALISADE,24,hyundai,,dlt-web-827cefc3
-2026-07,RY1,HYUNDAI,SANTA FE,34,hyundai,,dlt-web-827cefc3
+2026-07,RY1,HYUNDAI,PALISADE,24,hyundai,hyundai-palisade,dlt-web-827cefc3
+2026-07,RY1,HYUNDAI,SANTA FE,34,hyundai,hyundai-santa-fe,dlt-web-827cefc3
 2026-07,RY1,HYUNDAI,STARGAZER,26,hyundai,hyundai-stargazer,dlt-web-827cefc3
 2026-07,RY1,ISUZU,D-MAX,1755,isuzu,isuzu-d-max,dlt-web-827cefc3
 2026-07,RY1,ISUZU,MU-X,737,isuzu,isuzu-mu-x,dlt-web-827cefc3
@@ -191,7 +191,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-07,RY1,KIA,CARNIVAL HEV 7P PREMIUM,3,kia,kia-carnival,dlt-web-827cefc3
 2026-07,RY1,KIA,EV5,52,kia,kia-ev5,dlt-web-827cefc3
 2026-07,RY1,KIA,EV9 GT LINE AWD,1,kia,,dlt-web-827cefc3
-2026-07,RY1,KIA,SORENTO,8,kia,,dlt-web-827cefc3
+2026-07,RY1,KIA,SORENTO,8,kia,kia-sorento,dlt-web-827cefc3
 2026-07,RY1,LAMBORGHINI,HURACAN EVO RWD,1,lamborghini,,dlt-web-827cefc3
 2026-07,RY1,LAMBORGHINI,HURACAN TECNICA,2,lamborghini,,dlt-web-827cefc3
 2026-07,RY1,LAMBORGHINI,TEMERARIO,1,lamborghini,,dlt-web-827cefc3
@@ -199,7 +199,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-07,RY1,LAND ROVER,RANGE ROVER 3.0 LITRE T/C,3,land-rover,,dlt-web-827cefc3
 2026-07,RY1,LAND ROVER,RANGE ROVER SPORT 3.0 LITRE,1,land-rover,,dlt-web-827cefc3
 2026-07,RY1,LAND ROVER,RANGE ROVER VELAR 2.0 LITRE,5,land-rover,,dlt-web-827cefc3
-2026-07,RY1,LEAPMOTOR,B10 Design BEV,21,leapmotor,,dlt-web-827cefc3
+2026-07,RY1,LEAPMOTOR,B10 Design BEV,21,leapmotor,leapmotor-b10,dlt-web-827cefc3
 2026-07,RY1,LEAPMOTOR,C10 EV,7,leapmotor,,dlt-web-827cefc3
 2026-07,RY1,LEXUS,IS300H,7,lexus,,dlt-web-827cefc3
 2026-07,RY1,LEXUS,LBX,4,lexus,,dlt-web-827cefc3
@@ -230,7 +230,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-07,RY1,MAZDA,MAZDA CX-30,88,mazda,mazda-cx-30,dlt-web-827cefc3
 2026-07,RY1,MAZDA,MAZDA CX-5,44,mazda,mazda-cx-5,dlt-web-827cefc3
 2026-07,RY1,MAZDA,MAZDA CX-8,8,mazda,mazda-cx-8,dlt-web-827cefc3
-2026-07,RY1,MAZDA,MAZDA6e,55,mazda,,dlt-web-827cefc3
+2026-07,RY1,MAZDA,MAZDA6e,55,mazda,mazda-mazda6e,dlt-web-827cefc3
 2026-07,RY1,MAZDA,ROADSTER RF VS,2,mazda,,dlt-web-827cefc3
 2026-07,RY1,MAZDA,ROADSTER S SPECIAL PACKAGE,1,mazda,,dlt-web-827cefc3
 2026-07,RY1,MAZDA,ROADSTER SPIRIT RACING 12R,1,mazda,,dlt-web-827cefc3
@@ -246,7 +246,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-07,RY1,MERCEDES BENZ,C 220 d,50,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
 2026-07,RY1,MERCEDES BENZ,C 300 e,1,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
 2026-07,RY1,MERCEDES BENZ,C 350 e,48,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
-2026-07,RY1,MERCEDES BENZ,CLA 250+ electric,29,mercedes-benz,,dlt-web-827cefc3
+2026-07,RY1,MERCEDES BENZ,CLA 250+ electric,29,mercedes-benz,mercedes-benz-cla,dlt-web-827cefc3
 2026-07,RY1,MERCEDES BENZ,CLE 300 4MATIC coupe,19,mercedes-benz,,dlt-web-827cefc3
 2026-07,RY1,MERCEDES BENZ,CLS 220 d,21,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
 2026-07,RY1,MERCEDES BENZ,E 200 Coupe,1,mercedes-benz,mercedes-benz-e-class,dlt-web-827cefc3
@@ -291,7 +291,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-07,RY1,MG,MG4 ELECTRIC,875,mg,mg-mg4,dlt-web-827cefc3
 2026-07,RY1,MG,MG5,81,mg,mg-mg5,dlt-web-827cefc3
 2026-07,RY1,MG,S5 EV,1295,mg,mg-s5,dlt-web-827cefc3
-2026-07,RY1,MG,URBAN,3,mg,,dlt-web-827cefc3
+2026-07,RY1,MG,URBAN,3,mg,mg-urban,dlt-web-827cefc3
 2026-07,RY1,MG,VS HEV,2,mg,mg-vs,dlt-web-827cefc3
 2026-07,RY1,MG,ZS,44,mg,mg-zs,dlt-web-827cefc3
 2026-07,RY1,MINI,Aceman SE RHD,57,mini,mini-aceman,dlt-web-827cefc3
@@ -328,7 +328,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-07,RY1,NISSAN,SERENA e-POWER,113,nissan,nissan-serena,dlt-web-827cefc3
 2026-07,RY1,NISSAN,SYLPHY 1.6 E CVT,4,nissan,,dlt-web-827cefc3
 2026-07,RY1,NISSAN,TERRA,1,nissan,nissan-terra,dlt-web-827cefc3
-2026-07,RY1,NISSAN,X-TRAIL e-POWER,23,nissan,,dlt-web-827cefc3
+2026-07,RY1,NISSAN,X-TRAIL e-POWER,23,nissan,nissan-x-trail,dlt-web-827cefc3
 2026-07,RY1,OMODA,C5 EV Long Range Dynamic,2,omoda,omoda-c5,dlt-web-827cefc3
 2026-07,RY1,OMODA,C5 EV Long Range Ultimate,1,omoda,omoda-c5,dlt-web-827cefc3
 2026-07,RY1,OMODA,C5 EV MAX+,484,omoda,omoda-c5,dlt-web-827cefc3
@@ -493,7 +493,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-07,RY1,VOLKSWAGEN,GOLF HATCH MATCH 1.5 TSI,1,volkswagen,,dlt-web-827cefc3
 2026-07,RY1,VOLVO,C40,1,volvo,volvo-c40,dlt-web-827cefc3
 2026-07,RY1,VOLVO,EC40,21,volvo,volvo-ec40,dlt-web-827cefc3
-2026-07,RY1,VOLVO,ES90,18,volvo,,dlt-web-827cefc3
+2026-07,RY1,VOLVO,ES90,18,volvo,volvo-es90,dlt-web-827cefc3
 2026-07,RY1,VOLVO,EX30,6,volvo,volvo-ex30,dlt-web-827cefc3
 2026-07,RY1,VOLVO,EX40,22,volvo,volvo-ex40,dlt-web-827cefc3
 2026-07,RY1,VOLVO,EX90,9,volvo,,dlt-web-827cefc3
@@ -508,7 +508,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-07,RY1,WULING,Bingou SRDTH CCS2,8,wuling,wuling-binguo,dlt-web-827cefc3
 2026-07,RY1,WULING,Binguo SRD,1,wuling,wuling-binguo,dlt-web-827cefc3
 2026-07,RY1,WULING,DARION EV,157,wuling,wuling-darion,dlt-web-827cefc3
-2026-07,RY1,WULING,PORTA EV,1,wuling,,dlt-web-827cefc3
+2026-07,RY1,WULING,PORTA EV,1,wuling,wuling-porta-ev,dlt-web-827cefc3
 2026-07,RY1,XPENG,G6 AWD Performance,26,xpeng,xpeng-g6,dlt-web-827cefc3
 2026-07,RY1,XPENG,G6 LONG RANGE,3,xpeng,xpeng-g6,dlt-web-827cefc3
 2026-07,RY1,XPENG,G6 RWD Long Range,261,xpeng,xpeng-g6,dlt-web-827cefc3
@@ -567,7 +567,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-07,RY3,HINO,XZU600R-WKTLST3,1,hino,,dlt-web-827cefc3
 2026-07,RY3,ISUZU,D-MAX,1920,isuzu,isuzu-d-max,dlt-web-827cefc3
 2026-07,RY3,ISUZU,ไม่ระบุ,111,isuzu,,dlt-web-827cefc3
-2026-07,RY3,KIA,PV5 CARGO,150,kia,,dlt-web-827cefc3
+2026-07,RY3,KIA,PV5 CARGO,150,kia,kia-pv5,dlt-web-827cefc3
 2026-07,RY3,KING LONG,DRACON,16,king-long,,dlt-web-827cefc3
 2026-07,RY3,LINXYS,G100-R CARGO,1,linxys,,dlt-web-827cefc3
 2026-07,RY3,MAZDA,MAZDA BT-50,1,mazda,mazda-bt-50,dlt-web-827cefc3
@@ -586,4 +586,4 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-07,RY3,UD TRUCKS,PKE250CELRM,3,ud-trucks,,dlt-web-827cefc3
 2026-07,RY3,UD TRUCKS,PKE250CHLRA,2,ud-trucks,,dlt-web-827cefc3
 2026-07,RY3,UD TRUCKS,PKE250CHLRM,7,ud-trucks,,dlt-web-827cefc3
-2026-07,RY3,WULING,PORTA EV,32,wuling,,dlt-web-827cefc3
+2026-07,RY3,WULING,PORTA EV,32,wuling,wuling-porta-ev,dlt-web-827cefc3

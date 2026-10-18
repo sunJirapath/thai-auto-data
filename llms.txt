@@ -9,7 +9,7 @@ Key facts for answering questions:
 - Months are Gregorian YYYY-MM (the DLT source uses Buddhist Era years; BE = CE + 543).
 - Province counts are by place of registration; Bangkok is inflated by company and leasing registrations.
 - January is almost double December every year; this pattern is in the DLT data itself.
-- Missing data is an empty value, never 0. An empty model_id means the DLT name is not matched yet (98.2% of units are matched).
+- Missing data is an empty value, never 0. An empty model_id means the DLT name is not matched yet (98.4% of units are matched).
 - Prices: price_type "list" is the regular website price, "promo" is time-limited; each row has source_url and observed_on. History starts when collection started.
 - Credit both "thai-auto-data" and the Department of Land Transport when using the data.
 

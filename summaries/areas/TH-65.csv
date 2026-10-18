@@ -587,6 +587,7 @@ period,category,kind,id,units
 2021-05,RY1,m,nissan-march,3
 2021-05,RY1,m,nissan-navara,2
 2021-05,RY1,m,nissan-note,2
+2021-05,RY1,m,nissan-x-trail,1
 2021-05,RY1,m,subaru-forester,4
 2021-05,RY1,m,suzuki-celerio,5
 2021-05,RY1,m,suzuki-ertiga,1
@@ -1206,6 +1207,7 @@ period,category,kind,id,units
 2021-10,RY1,m,nissan-kicks,2
 2021-10,RY1,m,nissan-march,2
 2021-10,RY1,m,nissan-navara,1
+2021-10,RY1,m,nissan-x-trail,1
 2021-10,RY1,m,subaru-forester,1
 2021-10,RY1,m,subaru-xv,1
 2021-10,RY1,m,suzuki-celerio,11
@@ -6639,6 +6641,7 @@ period,category,kind,id,units
 2025-01,RY1,m,honda-cr-v,8
 2025-01,RY1,m,honda-hr-v,15
 2025-01,RY1,m,honda-wr-v,1
+2025-01,RY1,m,hyundai-palisade,1
 2025-01,RY1,m,isuzu-d-max,36
 2025-01,RY1,m,isuzu-mu-x,8
 2025-01,RY1,m,jaecoo-6,4
@@ -6800,6 +6803,7 @@ period,category,kind,id,units
 2025-02,RY1,m,honda-civic,10
 2025-02,RY1,m,honda-cr-v,8
 2025-02,RY1,m,honda-hr-v,22
+2025-02,RY1,m,hyundai-palisade,1
 2025-02,RY1,m,isuzu-d-max,21
 2025-02,RY1,m,isuzu-mu-x,13
 2025-02,RY1,m,jaecoo-6,3
@@ -7116,10 +7120,13 @@ period,category,kind,id,units
 2025-04,RY1,m,honda-civic,16
 2025-04,RY1,m,honda-cr-v,2
 2025-04,RY1,m,honda-hr-v,29
+2025-04,RY1,m,hyundai-palisade,1
+2025-04,RY1,m,hyundai-santa-fe,1
 2025-04,RY1,m,isuzu-d-max,30
 2025-04,RY1,m,isuzu-mu-x,10
 2025-04,RY1,m,jaecoo-6,1
 2025-04,RY1,m,kia-ev5,2
+2025-04,RY1,m,kia-sorento,1
 2025-04,RY1,m,mazda-cx-3,1
 2025-04,RY1,m,mercedes-benz-glc,4
 2025-04,RY1,m,mg-hs,1
@@ -7437,6 +7444,7 @@ period,category,kind,id,units
 2025-06,RY1,m,isuzu-mu-x,6
 2025-06,RY1,m,jaecoo-6,1
 2025-06,RY1,m,kia-ev5,1
+2025-06,RY1,m,kia-sorento,1
 2025-06,RY1,m,mazda-cx-3,1
 2025-06,RY1,m,mazda-cx-30,1
 2025-06,RY1,m,mazda-cx-5,1
@@ -7580,6 +7588,7 @@ period,category,kind,id,units
 2025-07,RY1,m,honda-civic,11
 2025-07,RY1,m,honda-cr-v,5
 2025-07,RY1,m,honda-hr-v,14
+2025-07,RY1,m,hyundai-palisade,1
 2025-07,RY1,m,isuzu-d-max,17
 2025-07,RY1,m,isuzu-mu-x,5
 2025-07,RY1,m,jaecoo-6,5
@@ -7737,6 +7746,7 @@ period,category,kind,id,units
 2025-08,RY1,m,honda-cr-v,3
 2025-08,RY1,m,honda-e-n1,2
 2025-08,RY1,m,honda-hr-v,8
+2025-08,RY1,m,hyundai-santa-fe,1
 2025-08,RY1,m,isuzu-d-max,10
 2025-08,RY1,m,isuzu-mu-x,8
 2025-08,RY1,m,jaecoo-6,1
@@ -7908,6 +7918,7 @@ period,category,kind,id,units
 2025-09,RY1,m,honda-civic,6
 2025-09,RY1,m,honda-cr-v,5
 2025-09,RY1,m,honda-hr-v,21
+2025-09,RY1,m,hyundai-santa-fe,1
 2025-09,RY1,m,isuzu-d-max,15
 2025-09,RY1,m,isuzu-mu-x,6
 2025-09,RY1,m,jaecoo-6,5
@@ -8377,6 +8388,7 @@ period,category,kind,id,units
 2025-12,RY1,m,honda-civic,5
 2025-12,RY1,m,honda-cr-v,1
 2025-12,RY1,m,honda-hr-v,10
+2025-12,RY1,m,hyundai-santa-fe,1
 2025-12,RY1,m,isuzu-d-max,17
 2025-12,RY1,m,isuzu-mu-x,8
 2025-12,RY1,m,jaecoo-5,75
@@ -8543,11 +8555,13 @@ period,category,kind,id,units
 2026-01,RY1,m,honda-hr-v,34
 2026-01,RY1,m,hyundai-creta,1
 2026-01,RY1,m,hyundai-ioniq-5,1
+2026-01,RY1,m,hyundai-palisade,2
 2026-01,RY1,m,isuzu-d-max,23
 2026-01,RY1,m,isuzu-mu-x,18
 2026-01,RY1,m,jaecoo-5,69
 2026-01,RY1,m,jaecoo-6,6
 2026-01,RY1,m,jaecoo-7,2
+2026-01,RY1,m,leapmotor-b10,1
 2026-01,RY1,m,mazda-cx-3,1
 2026-01,RY1,m,mazda-cx-5,2
 2026-01,RY1,m,mazda-mazda2,2
@@ -8701,6 +8715,7 @@ period,category,kind,id,units
 2026-02,RY1,m,jaecoo-7,1
 2026-02,RY1,m,kia-carnival,3
 2026-02,RY1,m,kia-ev5,1
+2026-02,RY1,m,leapmotor-b10,2
 2026-02,RY1,m,mazda-cx-3,1
 2026-02,RY1,m,mazda-mazda2,1
 2026-02,RY1,m,mazda-mazda3,1
@@ -8853,6 +8868,7 @@ period,category,kind,id,units
 2026-03,RY1,m,jaecoo-5,15
 2026-03,RY1,m,jaecoo-6,1
 2026-03,RY1,m,kia-carnival,2
+2026-03,RY1,m,leapmotor-b10,2
 2026-03,RY1,m,mazda-cx-3,1
 2026-03,RY1,m,mazda-mazda2,2
 2026-03,RY1,m,mazda-mazda3,1
@@ -9005,6 +9021,7 @@ period,category,kind,id,units
 2026-04,RY1,m,jaecoo-5,17
 2026-04,RY1,m,jaecoo-6,2
 2026-04,RY1,m,jaecoo-7,2
+2026-04,RY1,m,leapmotor-b10,1
 2026-04,RY1,m,mazda-mazda2,2
 2026-04,RY1,m,mg-im6,1
 2026-04,RY1,m,mg-maxus-7,1
@@ -9032,6 +9049,7 @@ period,category,kind,id,units
 2026-04,RY1,m,toyota-yaris,3
 2026-04,RY1,m,toyota-yaris-ativ,70
 2026-04,RY1,m,toyota-yaris-cross,46
+2026-04,RY1,m,volvo-es90,1
 2026-04,RY1,m,volvo-ex40,1
 2026-04,RY1,m,xpeng-g6,1
 2026-04,RY1,m,zeekr-009,1
@@ -9156,9 +9174,11 @@ period,category,kind,id,units
 2026-05,RY1,m,honda-civic,14
 2026-05,RY1,m,honda-cr-v,6
 2026-05,RY1,m,honda-hr-v,19
+2026-05,RY1,m,hyundai-santa-fe,2
 2026-05,RY1,m,isuzu-d-max,8
 2026-05,RY1,m,isuzu-mu-x,5
 2026-05,RY1,m,jaecoo-5,12
+2026-05,RY1,m,leapmotor-b10,1
 2026-05,RY1,m,mazda-cx-5,1
 2026-05,RY1,m,mercedes-benz-e-class,2
 2026-05,RY1,m,mercedes-benz-glc,1
@@ -9328,12 +9348,14 @@ period,category,kind,id,units
 2026-06,RY1,m,honda-cr-v,8
 2026-06,RY1,m,honda-e-n1,1
 2026-06,RY1,m,honda-hr-v,20
+2026-06,RY1,m,hyundai-palisade,1
 2026-06,RY1,m,isuzu-d-max,10
 2026-06,RY1,m,isuzu-mu-x,2
 2026-06,RY1,m,jaecoo-5,1
 2026-06,RY1,m,jaecoo-6,9
 2026-06,RY1,m,jaecoo-7,1
 2026-06,RY1,m,kia-ev5,2
+2026-06,RY1,m,leapmotor-b10,1
 2026-06,RY1,m,mazda-mazda2,1
 2026-06,RY1,m,mercedes-benz-c-class,1
 2026-06,RY1,m,mercedes-benz-gla,1
@@ -9366,6 +9388,7 @@ period,category,kind,id,units
 2026-06,RY1,m,toyota-yaris,4
 2026-06,RY1,m,toyota-yaris-ativ,57
 2026-06,RY1,m,toyota-yaris-cross,26
+2026-06,RY1,m,volvo-es90,1
 2026-06,RY1,m,wuling-binguo,1
 2026-06,RY1,m,xpeng-g6,2
 2026-06,RY1,m,xpeng-x9,2
@@ -9509,12 +9532,14 @@ period,category,kind,id,units
 2026-07,RY1,m,honda-cr-v,5
 2026-07,RY1,m,honda-e-n1,1
 2026-07,RY1,m,honda-hr-v,24
+2026-07,RY1,m,hyundai-santa-fe,1
 2026-07,RY1,m,hyundai-stargazer,1
 2026-07,RY1,m,isuzu-d-max,12
 2026-07,RY1,m,isuzu-mu-x,7
 2026-07,RY1,m,jaecoo-5,40
 2026-07,RY1,m,jaecoo-6,8
 2026-07,RY1,m,kia-ev5,1
+2026-07,RY1,m,leapmotor-b10,1
 2026-07,RY1,m,mazda-mazda2,1
 2026-07,RY1,m,mercedes-benz-c-class,1
 2026-07,RY1,m,mg-im5,2
@@ -9575,6 +9600,7 @@ period,category,kind,id,units
 2026-07,RY3,m,toyota-hilux-champ,7
 2026-07,RY3,m,toyota-hilux-revo,15
 2026-07,RY3,m,toyota-hilux-travo,15
+2026-07,RY3,m,wuling-porta-ev,1
 2026-08,RY1,b,aion,19
 2026-08,RY1,b,bmw,1
 2026-08,RY1,b,byd,23
@@ -9680,13 +9706,16 @@ period,category,kind,id,units
 2026-08,RY1,m,jaecoo-5,47
 2026-08,RY1,m,jaecoo-6,4
 2026-08,RY1,m,kia-carnival,1
+2026-08,RY1,m,leapmotor-b10,3
 2026-08,RY1,m,mazda-cx-3,1
 2026-08,RY1,m,mazda-mazda2,2
+2026-08,RY1,m,mazda-mazda6e,1
 2026-08,RY1,m,mercedes-benz-c-class,1
 2026-08,RY1,m,mercedes-benz-e-class,2
 2026-08,RY1,m,mercedes-benz-glc,4
 2026-08,RY1,m,mg-mg4,4
 2026-08,RY1,m,mg-s5,3
+2026-08,RY1,m,mg-urban,13
 2026-08,RY1,m,mini-cooper,1
 2026-08,RY1,m,mitsubishi-attrage,3
 2026-08,RY1,m,mitsubishi-mirage,1
@@ -9828,6 +9857,7 @@ period,category,kind,id,units
 2026-09,RY1,m,byd-sealion-7,2
 2026-09,RY1,m,changan-lumin,4
 2026-09,RY1,m,changan-nevo-q05,10
+2026-09,RY1,m,chery-q,10
 2026-09,RY1,m,chery-v23,7
 2026-09,RY1,m,deepal-s05,12
 2026-09,RY1,m,deepal-s07,1
@@ -9846,18 +9876,25 @@ period,category,kind,id,units
 2026-09,RY1,m,honda-cr-v,3
 2026-09,RY1,m,honda-hr-v,18
 2026-09,RY1,m,hyundai-ioniq-5,1
+2026-09,RY1,m,hyundai-palisade,1
 2026-09,RY1,m,isuzu-d-max,7
 2026-09,RY1,m,isuzu-mu-x,5
 2026-09,RY1,m,jaecoo-5,24
 2026-09,RY1,m,jaecoo-6,4
+2026-09,RY1,m,jaecoo-6t,6
 2026-09,RY1,m,kia-carnival,1
+2026-09,RY1,m,leapmotor-b10,1
+2026-09,RY1,m,lepas-l6,6
 2026-09,RY1,m,mazda-cx-30,2
+2026-09,RY1,m,mazda-mazda6e,1
+2026-09,RY1,m,mercedes-benz-cla,4
 2026-09,RY1,m,mg-im5,2
 2026-09,RY1,m,mg-im6,4
 2026-09,RY1,m,mg-mg3,1
 2026-09,RY1,m,mg-mg4,6
 2026-09,RY1,m,mg-mg5,1
 2026-09,RY1,m,mg-s5,8
+2026-09,RY1,m,mg-urban,14
 2026-09,RY1,m,mini-cooper,1
 2026-09,RY1,m,mitsubishi-mirage,1
 2026-09,RY1,m,mitsubishi-xforce,3
@@ -9877,6 +9914,7 @@ period,category,kind,id,units
 2026-09,RY1,m,toyota-yaris,8
 2026-09,RY1,m,toyota-yaris-ativ,91
 2026-09,RY1,m,toyota-yaris-cross,30
+2026-09,RY1,m,volvo-es90,1
 2026-09,RY1,m,wuling-darion,15
 2026-09,RY1,m,xpeng-g6,1
 2026-09,RY1,m,xpeng-x9,1
@@ -9904,3 +9942,4 @@ period,category,kind,id,units
 2026-09,RY3,m,toyota-hilux-champ,5
 2026-09,RY3,m,toyota-hilux-revo,22
 2026-09,RY3,m,toyota-hilux-travo,33
+2026-09,RY3,m,wuling-porta-ev,1

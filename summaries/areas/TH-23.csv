@@ -3984,7 +3984,7 @@ period,category,kind,id,units
 2026-09,RY1,f,phev,1
 2026-09,RY1,m,byd-atto-3,1
 2026-09,RY1,m,ford-everest,2
-2026-09,RY1,m,ford-ranger,2
+2026-09,RY1,m,ford-ranger,3
 2026-09,RY1,m,ford-ranger-raptor,1
 2026-09,RY1,m,gwm-ora-5,3
 2026-09,RY1,m,isuzu-d-max,12
@@ -3994,6 +3994,7 @@ period,category,kind,id,units
 2026-09,RY1,m,mazda-mazda2,2
 2026-09,RY1,m,mercedes-benz-glc,1
 2026-09,RY1,m,mg-s5,1
+2026-09,RY1,m,mg-urban,2
 2026-09,RY1,m,mitsubishi-triton,3
 2026-09,RY1,m,mitsubishi-xforce,1
 2026-09,RY1,m,mitsubishi-xpander-cross,1

@@ -211,7 +211,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-10,RY1,MERCEDES BENZ,C 300 e,8,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
 2023-10,RY1,MERCEDES BENZ,C 350 e,65,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
 2023-10,RY1,MERCEDES BENZ,C250 COUPE,1,mercedes-benz,,dlt-web-827cefc3
-2023-10,RY1,MERCEDES BENZ,CLA 250,1,mercedes-benz,,dlt-web-827cefc3
+2023-10,RY1,MERCEDES BENZ,CLA 250,1,mercedes-benz,mercedes-benz-cla,dlt-web-827cefc3
 2023-10,RY1,MERCEDES BENZ,CLS 220 d,40,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
 2023-10,RY1,MERCEDES BENZ,CLS 300 d,6,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
 2023-10,RY1,MERCEDES BENZ,CLS 300 d Coupe,1,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3

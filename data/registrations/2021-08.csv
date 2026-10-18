@@ -193,7 +193,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-08,RY1,MERCEDES BENZ,C 350 e,3,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
 2021-08,RY1,MERCEDES BENZ,C250 COUPE,2,mercedes-benz,,dlt-web-827cefc3
 2021-08,RY1,MERCEDES BENZ,C350 e,1,mercedes-benz,,dlt-web-827cefc3
-2021-08,RY1,MERCEDES BENZ,CLA250,1,mercedes-benz,,dlt-web-827cefc3
+2021-08,RY1,MERCEDES BENZ,CLA250,1,mercedes-benz,mercedes-benz-cla,dlt-web-827cefc3
 2021-08,RY1,MERCEDES BENZ,CLS 220 d,6,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
 2021-08,RY1,MERCEDES BENZ,CLS 300 d,33,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
 2021-08,RY1,MERCEDES BENZ,CLS 300 d Coupe,2,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
@@ -270,7 +270,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-08,RY1,NISSAN,TEANA,2,nissan,,dlt-web-827cefc3
 2021-08,RY1,NISSAN,TERRA,37,nissan,nissan-terra,dlt-web-827cefc3
 2021-08,RY1,NISSAN,UVL4RDRE26KHE-----,7,nissan,,dlt-web-827cefc3
-2021-08,RY1,NISSAN,X-TRAIL,1,nissan,,dlt-web-827cefc3
+2021-08,RY1,NISSAN,X-TRAIL,1,nissan,nissan-x-trail,dlt-web-827cefc3
 2021-08,RY1,NISSAN,ไม่ระบุ,3,nissan,,dlt-web-827cefc3
 2021-08,RY1,PEUGEOT,3008 P84 AG,8,peugeot,,dlt-web-827cefc3
 2021-08,RY1,PEUGEOT,3008 P84 BG,16,peugeot,,dlt-web-827cefc3

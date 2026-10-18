@@ -10,6 +10,8 @@ AION,AION Y PLUS 410 PREMIUM,aion-y-plus
 AION,AION Y PLUS 490 PREMIUM,aion-y-plus
 AION,HYPTEC HT 620 LUXURY,aion-hyptec-ht
 AION,HYPTEC HT 620 PREMIUM,aion-hyptec-ht
+AVATR,AVATR 07 MAX,avatr-07
+AVATR,AVATR 07 ULTRA AWD,avatr-07
 AVATR,AVATR 11 LONG RANGE,avatr-11
 AVATR,AVATR 11 ROYAL EDITION,avatr-11
 AVATR,AVATR 11 STANDARD RANGE,avatr-11
@@ -192,6 +194,8 @@ BYD,T3,byd-t3
 CHANGAN,LUMIN,changan-lumin
 CHANGAN,LUMIN L DC,changan-lumin
 CHANGAN,NEVO Q05,changan-nevo-q05
+CHERY,Q QOOL,chery-q
+CHERY,Q QUINT,chery-q
 CHERY,V23 2WD PLAY,chery-v23
 CHERY,V23 2WD PLUS,chery-v23
 CHERY,V23 4WD PEAK,chery-v23
@@ -241,12 +245,14 @@ FORD,MUSTANG SHELBY GT500,ford-mustang
 FORD,MUSTANG SHELBY SUPER SNAKE,ford-mustang
 FORD,RANGER,ford-ranger
 FORD,RANGER RAPTOR,ford-ranger-raptor
+FORD,RANGER SUPER DUTY,ford-ranger
 FORD,RANGER SWB,ford-ranger
 GEELY,EX2,geely-ex2
 GEELY,EX5,geely-ex5
 GWM,GWM TANK 300,gwm-tank-300
 GWM,GWM TANK 500,gwm-tank-500
 GWM,ORA 5,gwm-ora-5
+GWM,WEY G9 PLUG-IN HYBRID,gwm-wey-g9
 GWM TANK,300 HYBRID,gwm-tank-300
 GWM TANK,500 HYBRID,gwm-tank-500
 HAVAL,H6 HEV PRO,haval-h6
@@ -297,6 +303,9 @@ HYUNDAI,H-1,hyundai-h-1
 HYUNDAI,IONIQ5,hyundai-ioniq-5
 HYUNDAI,IONIQ5 N,hyundai-ioniq-5
 HYUNDAI,IONIQ5 N LINE,hyundai-ioniq-5
+HYUNDAI,PALISADE,hyundai-palisade
+HYUNDAI,SANTA FE,hyundai-santa-fe
+HYUNDAI,SANTA FE HYBRID,hyundai-santa-fe
 HYUNDAI,STARGAZER,hyundai-stargazer
 HYUNDAI,STARIA,hyundai-staria
 ISUZU,D-MAX,isuzu-d-max
@@ -308,6 +317,8 @@ JAECOO,6 EV 2WD MAX,jaecoo-6
 JAECOO,6 EV LONG RANGE 2WD,jaecoo-6
 JAECOO,6 EV LONG RANGE 2WD PRO,jaecoo-6
 JAECOO,6 EV LONG RANGE 4WD,jaecoo-6
+JAECOO,6T REEV 2WD MAX,jaecoo-6t
+JAECOO,6T REEV 4WD ULTRA,jaecoo-6t
 JAECOO,7 SHS MAX,jaecoo-7
 KIA,CARNIVAL,kia-carnival
 KIA,CARNIVAL HEV 7P LUXURY,kia-carnival
@@ -315,6 +326,12 @@ KIA,CARNIVAL HEV 7P PREMIUM,kia-carnival
 KIA,EV5,kia-ev5
 KIA,GRAND CARNIVAL,kia-carnival
 KIA,GRAND CARNIVAL 2.9L LX,kia-carnival
+KIA,PV5 CARGO,kia-pv5
+KIA,SORENTO,kia-sorento
+LEAPMOTOR,B10 DESIGN BEV,leapmotor-b10
+LEAPMOTOR,B10 LIFE BEV,leapmotor-b10
+LEAPMOTOR,B10 STYLE BEV,leapmotor-b10
+LEPAS,L6 BEV PREMIUM,lepas-l6
 LEXUS,LM300H,lexus-lm
 LEXUS,LM350H,lexus-lm
 LEXUS,LM350H 2.5L,lexus-lm
@@ -331,6 +348,7 @@ MAZDA,MAZDA CX-30,mazda-cx-30
 MAZDA,MAZDA CX-5,mazda-cx-5
 MAZDA,MAZDA CX-8,mazda-cx-8
 MAZDA,MAZDA MX-5,mazda-mx-5
+MAZDA,MAZDA6E,mazda-mazda6e
 MAZDA,MX-5,mazda-mx-5
 MERCEDES BENZ,A 180,mercedes-benz-a-class
 MERCEDES BENZ,A 200,mercedes-benz-a-class
@@ -346,6 +364,18 @@ MERCEDES BENZ,C 250 COUPE,mercedes-benz-c-class
 MERCEDES BENZ,C 300 BLUETEC HYBRID,mercedes-benz-c-class
 MERCEDES BENZ,C 300 E,mercedes-benz-c-class
 MERCEDES BENZ,C 350 E,mercedes-benz-c-class
+MERCEDES BENZ,CLA 180,mercedes-benz-cla
+MERCEDES BENZ,CLA 180 CGI AMG,mercedes-benz-cla
+MERCEDES BENZ,CLA 180 CGI COUPE,mercedes-benz-cla
+MERCEDES BENZ,CLA 200,mercedes-benz-cla
+MERCEDES BENZ,CLA 250,mercedes-benz-cla
+MERCEDES BENZ,CLA 250 COUPE,mercedes-benz-cla
+MERCEDES BENZ,CLA 250 SHOOTING BRAKE,mercedes-benz-cla
+MERCEDES BENZ,CLA 250+ ELECTRIC,mercedes-benz-cla
+MERCEDES BENZ,CLA200,mercedes-benz-cla
+MERCEDES BENZ,CLA200D COUPE,mercedes-benz-cla
+MERCEDES BENZ,CLA200D SHOOTING BRAKE,mercedes-benz-cla
+MERCEDES BENZ,CLA250,mercedes-benz-cla
 MERCEDES BENZ,CLS 220 D,mercedes-benz-cls
 MERCEDES BENZ,CLS 250 CDI BE COUPE,mercedes-benz-cls
 MERCEDES BENZ,CLS 250 CDI COUPE,mercedes-benz-cls
@@ -407,6 +437,7 @@ MG,MG4 ELECTRIC,mg-mg4
 MG,MG5,mg-mg5
 MG,NEW MG3,mg-mg3
 MG,S5 EV,mg-s5
+MG,URBAN,mg-urban
 MG,VS HEV,mg-vs
 MG,ZS,mg-zs
 MG,ZS EV,mg-zs-ev
@@ -446,6 +477,8 @@ NISSAN,NOTE,nissan-note
 NISSAN,SERENA,nissan-serena
 NISSAN,SERENA E-POWER,nissan-serena
 NISSAN,TERRA,nissan-terra
+NISSAN,X-TRAIL,nissan-x-trail
+NISSAN,X-TRAIL E-POWER,nissan-x-trail
 OMODA,C5 EV LONG RANGE DYNAMIC,omoda-c5
 OMODA,C5 EV LONG RANGE MAX,omoda-c5
 OMODA,C5 EV LONG RANGE PLUS,omoda-c5
@@ -831,6 +864,7 @@ TOYOTA,YARIS ATIV,toyota-yaris-ativ
 TOYOTA,YARIS CROSS,toyota-yaris-cross
 VOLVO,C40,volvo-c40
 VOLVO,EC40,volvo-ec40
+VOLVO,ES90,volvo-es90
 VOLVO,EX30,volvo-ex30
 VOLVO,EX40,volvo-ex40
 VOLVO,S60,volvo-s60
@@ -847,6 +881,7 @@ WULING,BINGOU SRDTH CCS2,wuling-binguo
 WULING,BINGUO SRD,wuling-binguo
 WULING,BINGUO SRDTH,wuling-binguo
 WULING,DARION EV,wuling-darion
+WULING,PORTA EV,wuling-porta-ev
 XPENG,G6 AWD PERFORMANCE,xpeng-g6
 XPENG,G6 LONG RANGE,xpeng-g6
 XPENG,G6 RWD LONG RANGE,xpeng-g6

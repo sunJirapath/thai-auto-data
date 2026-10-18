@@ -7272,7 +7272,7 @@ period,category,kind,id,units
 2026-06,RY1,m,deepal-s05,7
 2026-06,RY1,m,denza-d9,1
 2026-06,RY1,m,ford-everest,3
-2026-06,RY1,m,ford-ranger,3
+2026-06,RY1,m,ford-ranger,5
 2026-06,RY1,m,ford-ranger-raptor,1
 2026-06,RY1,m,geely-ex2,3
 2026-06,RY1,m,geely-ex5,2
@@ -7411,7 +7411,7 @@ period,category,kind,id,units
 2026-07,RY1,m,chery-v23,6
 2026-07,RY1,m,deepal-s05,3
 2026-07,RY1,m,ford-everest,3
-2026-07,RY1,m,ford-ranger,1
+2026-07,RY1,m,ford-ranger,2
 2026-07,RY1,m,ford-ranger-raptor,1
 2026-07,RY1,m,geely-ex2,8
 2026-07,RY1,m,geely-ex5,4
@@ -7535,6 +7535,7 @@ period,category,kind,id,units
 2026-08,RY1,f,phev,7
 2026-08,RY1,m,aion-ut,3
 2026-08,RY1,m,aion-v,7
+2026-08,RY1,m,avatr-07,1
 2026-08,RY1,m,bmw-3-series,1
 2026-08,RY1,m,bmw-x6,1
 2026-08,RY1,m,byd-atto-1,1
@@ -7551,6 +7552,7 @@ period,category,kind,id,units
 2026-08,RY1,m,geely-ex2,17
 2026-08,RY1,m,gwm-ora-5,11
 2026-08,RY1,m,gwm-tank-300,3
+2026-08,RY1,m,gwm-wey-g9,1
 2026-08,RY1,m,honda-city-hatchback,1
 2026-08,RY1,m,honda-cr-v,2
 2026-08,RY1,m,honda-hr-v,3
@@ -7560,6 +7562,7 @@ period,category,kind,id,units
 2026-08,RY1,m,jaecoo-6,1
 2026-08,RY1,m,mazda-cx-30,1
 2026-08,RY1,m,mazda-mazda2,5
+2026-08,RY1,m,mazda-mazda6e,1
 2026-08,RY1,m,mercedes-benz-gle,1
 2026-08,RY1,m,mg-hs,1
 2026-08,RY1,m,mg-mg4,6
@@ -7604,6 +7607,7 @@ period,category,kind,id,units
 2026-08,RY3,m,toyota-hilux-champ,1
 2026-08,RY3,m,toyota-hilux-revo,14
 2026-08,RY3,m,toyota-hilux-travo,57
+2026-08,RY3,m,wuling-porta-ev,2
 2026-09,RY1,b,aion,5
 2026-09,RY1,b,bmw,1
 2026-09,RY1,b,byd,22
@@ -7704,13 +7708,16 @@ period,category,kind,id,units
 2026-09,RY1,m,isuzu-mu-x,6
 2026-09,RY1,m,jaecoo-5,6
 2026-09,RY1,m,jaecoo-6,1
+2026-09,RY1,m,lepas-l6,3
 2026-09,RY1,m,mazda-mazda2,3
+2026-09,RY1,m,mazda-mazda6e,2
 2026-09,RY1,m,mercedes-benz-e-class,1
 2026-09,RY1,m,mg-hs,1
 2026-09,RY1,m,mg-im5,1
 2026-09,RY1,m,mg-im6,1
 2026-09,RY1,m,mg-mg4,4
 2026-09,RY1,m,mg-s5,5
+2026-09,RY1,m,mg-urban,3
 2026-09,RY1,m,mitsubishi-attrage,11
 2026-09,RY1,m,mitsubishi-mirage,3
 2026-09,RY1,m,mitsubishi-triton,5
@@ -7762,3 +7769,4 @@ period,category,kind,id,units
 2026-09,RY3,m,toyota-hilux-champ,3
 2026-09,RY3,m,toyota-hilux-revo,18
 2026-09,RY3,m,toyota-hilux-travo,39
+2026-09,RY3,m,wuling-porta-ev,1

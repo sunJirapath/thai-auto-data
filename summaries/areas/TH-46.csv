@@ -1130,6 +1130,7 @@ period,category,kind,id,units
 2022-01,RY1,m,nissan-almera,5
 2022-01,RY1,m,nissan-march,2
 2022-01,RY1,m,nissan-note,1
+2022-01,RY1,m,nissan-x-trail,1
 2022-01,RY1,m,suzuki-celerio,1
 2022-01,RY1,m,suzuki-ciaz,2
 2022-01,RY1,m,suzuki-swift,19
@@ -6152,6 +6153,7 @@ period,category,kind,id,units
 2026-08,RY1,m,isuzu-d-max,11
 2026-08,RY1,m,isuzu-mu-x,2
 2026-08,RY1,m,mazda-mazda2,5
+2026-08,RY1,m,mazda-mazda6e,1
 2026-08,RY1,m,mercedes-benz-gle,1
 2026-08,RY1,m,mg-im5,1
 2026-08,RY1,m,mg-mg4,1
@@ -6253,6 +6255,7 @@ period,category,kind,id,units
 2026-09,RY1,m,isuzu-d-max,9
 2026-09,RY1,m,isuzu-mu-x,6
 2026-09,RY1,m,jaecoo-5,1
+2026-09,RY1,m,jaecoo-6t,1
 2026-09,RY1,m,mazda-cx-3,1
 2026-09,RY1,m,mazda-cx-30,1
 2026-09,RY1,m,mercedes-benz-c-class,1

@@ -180,8 +180,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-01,RY1,HYUNDAI,CRETA,31,hyundai,hyundai-creta,dlt-web-827cefc3
 2026-01,RY1,HYUNDAI,IONIQ5,236,hyundai,hyundai-ioniq-5,dlt-web-827cefc3
 2026-01,RY1,HYUNDAI,IONIQ6,4,hyundai,,dlt-web-827cefc3
-2026-01,RY1,HYUNDAI,PALISADE,36,hyundai,,dlt-web-827cefc3
-2026-01,RY1,HYUNDAI,SANTA FE,60,hyundai,,dlt-web-827cefc3
+2026-01,RY1,HYUNDAI,PALISADE,36,hyundai,hyundai-palisade,dlt-web-827cefc3
+2026-01,RY1,HYUNDAI,SANTA FE,60,hyundai,hyundai-santa-fe,dlt-web-827cefc3
 2026-01,RY1,HYUNDAI,STARGAZER,34,hyundai,hyundai-stargazer,dlt-web-827cefc3
 2026-01,RY1,ISUZU,CAB4 SX 2.5,1,isuzu,,dlt-web-827cefc3
 2026-01,RY1,ISUZU,D-MAX,3234,isuzu,isuzu-d-max,dlt-web-827cefc3
@@ -199,7 +199,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-01,RY1,KIA,CARNIVAL HEV 7P LUXURY,17,kia,kia-carnival,dlt-web-827cefc3
 2026-01,RY1,KIA,CARNIVAL HEV 7P PREMIUM,3,kia,kia-carnival,dlt-web-827cefc3
 2026-01,RY1,KIA,EV5,24,kia,kia-ev5,dlt-web-827cefc3
-2026-01,RY1,KIA,SORENTO,9,kia,,dlt-web-827cefc3
+2026-01,RY1,KIA,SORENTO,9,kia,kia-sorento,dlt-web-827cefc3
 2026-01,RY1,LAMBORGHINI,HURACAN STERRATO,1,lamborghini,,dlt-web-827cefc3
 2026-01,RY1,LAMBORGHINI,REVUELTO,1,lamborghini,,dlt-web-827cefc3
 2026-01,RY1,LAMBORGHINI,URUS PERFORMANTE,2,lamborghini,,dlt-web-827cefc3
@@ -210,7 +210,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-01,RY1,LAND ROVER,RANGE ROVER P460E PHEV,1,land-rover,,dlt-web-827cefc3
 2026-01,RY1,LAND ROVER,RANGE ROVER SPORT 3.0 LITRE,2,land-rover,,dlt-web-827cefc3
 2026-01,RY1,LAND ROVER,RANGE ROVER VELAR 2.0 LITRE,1,land-rover,,dlt-web-827cefc3
-2026-01,RY1,LEAPMOTOR,B10 Design BEV,38,leapmotor,,dlt-web-827cefc3
+2026-01,RY1,LEAPMOTOR,B10 Design BEV,38,leapmotor,leapmotor-b10,dlt-web-827cefc3
 2026-01,RY1,LEAPMOTOR,C10 EV,15,leapmotor,,dlt-web-827cefc3
 2026-01,RY1,LEXUS,LBX,6,lexus,,dlt-web-827cefc3
 2026-01,RY1,LEXUS,LC500 5.0 V8,1,lexus,,dlt-web-827cefc3
@@ -345,7 +345,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-01,RY1,NISSAN,SYLPHY 1.6 E CVT,2,nissan,,dlt-web-827cefc3
 2026-01,RY1,NISSAN,TEANA,1,nissan,,dlt-web-827cefc3
 2026-01,RY1,NISSAN,TERRA,5,nissan,nissan-terra,dlt-web-827cefc3
-2026-01,RY1,NISSAN,X-TRAIL,1,nissan,,dlt-web-827cefc3
+2026-01,RY1,NISSAN,X-TRAIL,1,nissan,nissan-x-trail,dlt-web-827cefc3
 2026-01,RY1,NISSAN,X-TRIAL e-POWER,24,nissan,,dlt-web-827cefc3
 2026-01,RY1,OMODA,C5 EV Long Range Dynamic,56,omoda,omoda-c5,dlt-web-827cefc3
 2026-01,RY1,OMODA,C5 EV Long Range Max,126,omoda,omoda-c5,dlt-web-827cefc3

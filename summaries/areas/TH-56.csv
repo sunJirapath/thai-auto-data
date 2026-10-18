@@ -3915,6 +3915,7 @@ period,category,kind,id,units
 2024-10,RY1,m,honda-civic,2
 2024-10,RY1,m,honda-cr-v,1
 2024-10,RY1,m,honda-hr-v,1
+2024-10,RY1,m,hyundai-santa-fe,1
 2024-10,RY1,m,isuzu-d-max,3
 2024-10,RY1,m,isuzu-mu-x,2
 2024-10,RY1,m,mazda-cx-3,1
@@ -5798,8 +5799,10 @@ period,category,kind,id,units
 2026-08,RY1,m,jaecoo-5,5
 2026-08,RY1,m,jaecoo-6,1
 2026-08,RY1,m,mazda-mazda2,2
+2026-08,RY1,m,mazda-mazda6e,3
 2026-08,RY1,m,mg-mg4,2
 2026-08,RY1,m,mg-s5,3
+2026-08,RY1,m,mg-urban,1
 2026-08,RY1,m,mitsubishi-attrage,1
 2026-08,RY1,m,mitsubishi-mirage,1
 2026-08,RY1,m,mitsubishi-pajero-sport,2
@@ -5906,7 +5909,10 @@ period,category,kind,id,units
 2026-09,RY1,m,isuzu-mu-x,1
 2026-09,RY1,m,jaecoo-5,5
 2026-09,RY1,m,jaecoo-6,1
+2026-09,RY1,m,jaecoo-6t,1
 2026-09,RY1,m,mazda-mazda2,1
+2026-09,RY1,m,mazda-mazda6e,1
+2026-09,RY1,m,mg-urban,1
 2026-09,RY1,m,mitsubishi-mirage,4
 2026-09,RY1,m,mitsubishi-triton,1
 2026-09,RY1,m,mitsubishi-xforce,1

@@ -187,8 +187,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-09,RY1,HYUNDAI,IONIQ5,21,hyundai,hyundai-ioniq-5,dlt-web-827cefc3
 2025-09,RY1,HYUNDAI,IONIQ5 N,2,hyundai,hyundai-ioniq-5,dlt-web-827cefc3
 2025-09,RY1,HYUNDAI,IONIQ6,1,hyundai,,dlt-web-827cefc3
-2025-09,RY1,HYUNDAI,PALISADE,15,hyundai,,dlt-web-827cefc3
-2025-09,RY1,HYUNDAI,SANTA FE,39,hyundai,,dlt-web-827cefc3
+2025-09,RY1,HYUNDAI,PALISADE,15,hyundai,hyundai-palisade,dlt-web-827cefc3
+2025-09,RY1,HYUNDAI,SANTA FE,39,hyundai,hyundai-santa-fe,dlt-web-827cefc3
 2025-09,RY1,HYUNDAI,STARGAZER,30,hyundai,hyundai-stargazer,dlt-web-827cefc3
 2025-09,RY1,ISUZU,D-MAX,1908,isuzu,isuzu-d-max,dlt-web-827cefc3
 2025-09,RY1,ISUZU,MU-X,850,isuzu,isuzu-mu-x,dlt-web-827cefc3
@@ -203,7 +203,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-09,RY1,KIA,CARNIVAL,23,kia,kia-carnival,dlt-web-827cefc3
 2025-09,RY1,KIA,EV5,48,kia,kia-ev5,dlt-web-827cefc3
 2025-09,RY1,KIA,EV9 GT LINE AWD,3,kia,,dlt-web-827cefc3
-2025-09,RY1,KIA,SORENTO,5,kia,,dlt-web-827cefc3
+2025-09,RY1,KIA,SORENTO,5,kia,kia-sorento,dlt-web-827cefc3
 2025-09,RY1,LAMBORGHINI,HURACAN STO,1,lamborghini,,dlt-web-827cefc3
 2025-09,RY1,LAMBORGHINI,REVUELTO,1,lamborghini,,dlt-web-827cefc3
 2025-09,RY1,LAMBORGHINI,URUS S,1,lamborghini,,dlt-web-827cefc3
@@ -259,7 +259,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-09,RY1,MERCEDES BENZ,C 220 d,82,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
 2025-09,RY1,MERCEDES BENZ,C 300 e,3,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
 2025-09,RY1,MERCEDES BENZ,C 350 e,44,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
-2025-09,RY1,MERCEDES BENZ,CLA250,1,mercedes-benz,,dlt-web-827cefc3
+2025-09,RY1,MERCEDES BENZ,CLA250,1,mercedes-benz,mercedes-benz-cla,dlt-web-827cefc3
 2025-09,RY1,MERCEDES BENZ,CLE 300 4MATIC coupe,29,mercedes-benz,,dlt-web-827cefc3
 2025-09,RY1,MERCEDES BENZ,CLS 220 d,79,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
 2025-09,RY1,MERCEDES BENZ,CLS 300 d,2,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
@@ -347,7 +347,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-09,RY1,NISSAN,SERENA e-POWER,275,nissan,nissan-serena,dlt-web-827cefc3
 2025-09,RY1,NISSAN,SKYLINE GT-R NISMO,1,nissan,,dlt-web-827cefc3
 2025-09,RY1,NISSAN,TERRA,28,nissan,nissan-terra,dlt-web-827cefc3
-2025-09,RY1,NISSAN,X-TRAIL,1,nissan,,dlt-web-827cefc3
+2025-09,RY1,NISSAN,X-TRAIL,1,nissan,nissan-x-trail,dlt-web-827cefc3
 2025-09,RY1,OMODA,C5 EV Long Range Dynamic,6,omoda,omoda-c5,dlt-web-827cefc3
 2025-09,RY1,OMODA,C5 EV Long Range Max,300,omoda,omoda-c5,dlt-web-827cefc3
 2025-09,RY1,OMODA,C5 EV Long Range Ultimate,29,omoda,omoda-c5,dlt-web-827cefc3

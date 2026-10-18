@@ -5497,8 +5497,10 @@ period,category,kind,id,units
 2026-08,RY1,m,jaecoo-5,1
 2026-08,RY1,m,mazda-cx-5,1
 2026-08,RY1,m,mazda-mazda2,1
+2026-08,RY1,m,mercedes-benz-cla,1
 2026-08,RY1,m,mg-mg4,1
 2026-08,RY1,m,mg-s5,2
+2026-08,RY1,m,mg-urban,7
 2026-08,RY1,m,mitsubishi-attrage,2
 2026-08,RY1,m,mitsubishi-mirage,1
 2026-08,RY1,m,mitsubishi-triton,1
@@ -5593,7 +5595,9 @@ period,category,kind,id,units
 2026-09,RY1,m,jaecoo-6,2
 2026-09,RY1,m,lexus-lm,1
 2026-09,RY1,m,mazda-mazda2,1
+2026-09,RY1,m,mazda-mazda6e,1
 2026-09,RY1,m,mg-mg5,1
+2026-09,RY1,m,mg-urban,2
 2026-09,RY1,m,mitsubishi-attrage,1
 2026-09,RY1,m,mitsubishi-mirage,3
 2026-09,RY1,m,mitsubishi-triton,2

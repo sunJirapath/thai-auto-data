@@ -1680,6 +1680,7 @@ period,category,kind,id,units
 2024-09,RY1,m,honda-civic-type-r,1
 2024-09,RY1,m,honda-hr-v,2
 2024-09,RY1,m,isuzu-mu-x,1
+2024-09,RY1,m,kia-sorento,1
 2024-09,RY1,m,mitsubishi-xpander-cross,1
 2024-09,RY1,m,nissan-navara,2
 2024-09,RY1,m,porsche-cayenne,1
@@ -2467,6 +2468,7 @@ period,category,kind,id,units
 2026-03,RY1,m,mitsubishi-xpander-cross,1
 2026-03,RY1,m,nissan-almera,1
 2026-03,RY1,m,nissan-navara,2
+2026-03,RY1,m,nissan-x-trail,1
 2026-03,RY1,m,toyota-alphard,1
 2026-03,RY1,m,toyota-camry,1
 2026-03,RY1,m,toyota-corolla-cross,1
@@ -2588,7 +2590,7 @@ period,category,kind,id,units
 2026-06,RY1,f,hev,2
 2026-06,RY1,f,petrol,5
 2026-06,RY1,m,byd-atto-3,3
-2026-06,RY1,m,ford-ranger,4
+2026-06,RY1,m,ford-ranger,5
 2026-06,RY1,m,geely-ex5,1
 2026-06,RY1,m,isuzu-mu-x,2
 2026-06,RY1,m,toyota-camry,1
@@ -2701,6 +2703,7 @@ period,category,kind,id,units
 2026-09,RY1,f,bev,3
 2026-09,RY1,f,diesel,16
 2026-09,RY1,f,petrol,12
+2026-09,RY1,m,chery-q,1
 2026-09,RY1,m,ford-ranger,2
 2026-09,RY1,m,mitsubishi-pajero-sport,1
 2026-09,RY1,m,mitsubishi-triton,3

@@ -3847,6 +3847,7 @@ period,category,kind,id,units
 2025-12,RY1,m,aion-ut,1
 2025-12,RY1,m,bmw-3-series,1
 2025-12,RY1,m,honda-hr-v,2
+2025-12,RY1,m,hyundai-santa-fe,1
 2025-12,RY1,m,isuzu-d-max,2
 2025-12,RY1,m,isuzu-mu-x,2
 2025-12,RY1,m,jaecoo-5,2
@@ -4370,6 +4371,7 @@ period,category,kind,id,units
 2026-09,RY1,m,isuzu-d-max,2
 2026-09,RY1,m,mg-mg4,1
 2026-09,RY1,m,mg-s5,2
+2026-09,RY1,m,mg-urban,2
 2026-09,RY1,m,mitsubishi-mirage,2
 2026-09,RY1,m,mitsubishi-xforce,3
 2026-09,RY1,m,mitsubishi-xpander-cross,1

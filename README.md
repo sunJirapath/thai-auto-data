@@ -74,7 +74,7 @@ Or clone the whole repository: `git clone https://github.com/sunJirapath/thai-au
 - **January is almost double December every year.** This pattern is in the DLT data itself, not an error.
 - **Provinces count where a vehicle is registered.** Company and leasing vehicles registered in Bangkok make Bangkok more than half the country.
 - **Model level only.** The DLT names vehicles inconsistently. Some brands report the model (`YARIS ATIV`), others report a variant (`BYD ATTO3 (480KM-EXT)`). Everything is grouped at model level, and counts are never split down to trims.
-- **An empty `model_id`** means the string has not been matched yet. Those units still count toward market and brand totals, but not toward model rankings. The unmatched amount is in the `unmatched_model_units` column; across the whole period 98.2% of units are matched (recent months are lower until new models get aliases).
+- **An empty `model_id`** means the string has not been matched yet. Those units still count toward market and brand totals, but not toward model rankings. The unmatched amount is in the `unmatched_model_units` column; across the whole period 98.4% of units are matched (recent months are lower until new models get aliases).
 - **Market share (`share_pct`)** is calculated against the month's total of RY1 to RY3.
 - **`yoy_pct` / `mom_pct` are empty** when the comparison month is missing or had zero units.
 - **Years:** the source files use the Buddhist Era (BE = CE + 543). Files here use the Gregorian calendar, formatted `YYYY-MM`.

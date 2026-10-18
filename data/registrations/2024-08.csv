@@ -157,7 +157,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY1,HONDA,WR-V,104,honda,honda-wr-v,dlt-web-827cefc3
 2024-08,RY1,HONDA,e:N1,3,honda,honda-e-n1,dlt-web-827cefc3
 2024-08,RY1,HYUNDAI,CRETA,33,hyundai,hyundai-creta,dlt-web-827cefc3
-2024-08,RY1,HYUNDAI,SANTA FE,2,hyundai,,dlt-web-827cefc3
+2024-08,RY1,HYUNDAI,SANTA FE,2,hyundai,hyundai-santa-fe,dlt-web-827cefc3
 2024-08,RY1,HYUNDAI,STARGAZER,138,hyundai,hyundai-stargazer,dlt-web-827cefc3
 2024-08,RY1,ISUZU,D-MAX,2007,isuzu,isuzu-d-max,dlt-web-827cefc3
 2024-08,RY1,ISUZU,mu-X,1119,isuzu,isuzu-mu-x,dlt-web-827cefc3
@@ -169,7 +169,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY1,KIA,CARNIVAL,11,kia,kia-carnival,dlt-web-827cefc3
 2024-08,RY1,KIA,EV5,29,kia,kia-ev5,dlt-web-827cefc3
 2024-08,RY1,KIA,EV9 GT LINE AWD,6,kia,,dlt-web-827cefc3
-2024-08,RY1,KIA,SORENTO,31,kia,,dlt-web-827cefc3
+2024-08,RY1,KIA,SORENTO,31,kia,kia-sorento,dlt-web-827cefc3
 2024-08,RY1,LAMBORGHINI,HURACAN EVO RWD,1,lamborghini,,dlt-web-827cefc3
 2024-08,RY1,LAMBORGHINI,HURACAN TECNICA,2,lamborghini,,dlt-web-827cefc3
 2024-08,RY1,LAMBORGHINI,URUS S,1,lamborghini,,dlt-web-827cefc3
@@ -303,7 +303,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY1,NISSAN,SYLPHY,1,nissan,,dlt-web-827cefc3
 2024-08,RY1,NISSAN,SYLPHY 1.6 E CVT,1,nissan,,dlt-web-827cefc3
 2024-08,RY1,NISSAN,TERRA,41,nissan,nissan-terra,dlt-web-827cefc3
-2024-08,RY1,NISSAN,X-TRAIL,2,nissan,,dlt-web-827cefc3
+2024-08,RY1,NISSAN,X-TRAIL,2,nissan,nissan-x-trail,dlt-web-827cefc3
 2024-08,RY1,ORA,GOOD CAT,139,ora,ora-good-cat,dlt-web-827cefc3
 2024-08,RY1,ORA,ORA 07,53,ora,ora-07,dlt-web-827cefc3
 2024-08,RY1,PEUGEOT,2008 P24 BG,6,peugeot,,dlt-web-827cefc3

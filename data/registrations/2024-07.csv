@@ -160,8 +160,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-07,RY1,HONGQI,H9 2.0L,1,hongqi,,dlt-web-827cefc3
 2024-07,RY1,HYUNDAI,CRETA,49,hyundai,hyundai-creta,dlt-web-827cefc3
 2024-07,RY1,HYUNDAI,IONIQ5,1,hyundai,hyundai-ioniq-5,dlt-web-827cefc3
-2024-07,RY1,HYUNDAI,SANTA FE,3,hyundai,,dlt-web-827cefc3
-2024-07,RY1,HYUNDAI,SANTA FE HYBRID,1,hyundai,,dlt-web-827cefc3
+2024-07,RY1,HYUNDAI,SANTA FE,3,hyundai,hyundai-santa-fe,dlt-web-827cefc3
+2024-07,RY1,HYUNDAI,SANTA FE HYBRID,1,hyundai,hyundai-santa-fe,dlt-web-827cefc3
 2024-07,RY1,HYUNDAI,STARGAZER,125,hyundai,hyundai-stargazer,dlt-web-827cefc3
 2024-07,RY1,ISUZU,D-MAX,2399,isuzu,isuzu-d-max,dlt-web-827cefc3
 2024-07,RY1,ISUZU,mu-X,968,isuzu,isuzu-mu-x,dlt-web-827cefc3
@@ -170,7 +170,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-07,RY1,JIAYUAN,JY7252-ZQR,1,jiayuan,,dlt-web-827cefc3
 2024-07,RY1,KIA,CARNIVAL,12,kia,kia-carnival,dlt-web-827cefc3
 2024-07,RY1,KIA,EV9 GT LINE AWD,10,kia,,dlt-web-827cefc3
-2024-07,RY1,KIA,SORENTO,18,kia,,dlt-web-827cefc3
+2024-07,RY1,KIA,SORENTO,18,kia,kia-sorento,dlt-web-827cefc3
 2024-07,RY1,LAMBORGHINI,HURACAN EVO RWD,1,lamborghini,,dlt-web-827cefc3
 2024-07,RY1,LAMBORGHINI,HURACAN STO,1,lamborghini,,dlt-web-827cefc3
 2024-07,RY1,LAMBORGHINI,HURACAN TECNICA,2,lamborghini,,dlt-web-827cefc3
@@ -228,7 +228,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-07,RY1,MERCEDES BENZ,C 350 e,52,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
 2024-07,RY1,MERCEDES BENZ,C250 COUPE,1,mercedes-benz,,dlt-web-827cefc3
 2024-07,RY1,MERCEDES BENZ,C350 e,1,mercedes-benz,,dlt-web-827cefc3
-2024-07,RY1,MERCEDES BENZ,CLA200,1,mercedes-benz,,dlt-web-827cefc3
+2024-07,RY1,MERCEDES BENZ,CLA200,1,mercedes-benz,mercedes-benz-cla,dlt-web-827cefc3
 2024-07,RY1,MERCEDES BENZ,CLS 220 d,41,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
 2024-07,RY1,MERCEDES BENZ,E 200 Coupe,1,mercedes-benz,mercedes-benz-e-class,dlt-web-827cefc3
 2024-07,RY1,MERCEDES BENZ,E 220 d,25,mercedes-benz,mercedes-benz-e-class,dlt-web-827cefc3

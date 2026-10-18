@@ -203,11 +203,11 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-11,RY1,MERCEDES BENZ,C 300 e,38,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
 2021-11,RY1,MERCEDES BENZ,C 350 e,3,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
 2021-11,RY1,MERCEDES BENZ,C350 e,2,mercedes-benz,,dlt-web-827cefc3
-2021-11,RY1,MERCEDES BENZ,CLA 250 Shooting Brake,2,mercedes-benz,,dlt-web-827cefc3
-2021-11,RY1,MERCEDES BENZ,CLA200,2,mercedes-benz,,dlt-web-827cefc3
-2021-11,RY1,MERCEDES BENZ,CLA200D COUPE,1,mercedes-benz,,dlt-web-827cefc3
-2021-11,RY1,MERCEDES BENZ,CLA200D SHOOTING BRAKE,1,mercedes-benz,,dlt-web-827cefc3
-2021-11,RY1,MERCEDES BENZ,CLA250,3,mercedes-benz,,dlt-web-827cefc3
+2021-11,RY1,MERCEDES BENZ,CLA 250 Shooting Brake,2,mercedes-benz,mercedes-benz-cla,dlt-web-827cefc3
+2021-11,RY1,MERCEDES BENZ,CLA200,2,mercedes-benz,mercedes-benz-cla,dlt-web-827cefc3
+2021-11,RY1,MERCEDES BENZ,CLA200D COUPE,1,mercedes-benz,mercedes-benz-cla,dlt-web-827cefc3
+2021-11,RY1,MERCEDES BENZ,CLA200D SHOOTING BRAKE,1,mercedes-benz,mercedes-benz-cla,dlt-web-827cefc3
+2021-11,RY1,MERCEDES BENZ,CLA250,3,mercedes-benz,mercedes-benz-cla,dlt-web-827cefc3
 2021-11,RY1,MERCEDES BENZ,CLS 220 d,10,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
 2021-11,RY1,MERCEDES BENZ,CLS 300 d,15,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
 2021-11,RY1,MERCEDES BENZ,E 200 Coupe,14,mercedes-benz,mercedes-benz-e-class,dlt-web-827cefc3
@@ -284,7 +284,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-11,RY1,NISSAN,TDWAREZE12EHA-----,1,nissan,,dlt-web-827cefc3
 2021-11,RY1,NISSAN,TEANA,2,nissan,,dlt-web-827cefc3
 2021-11,RY1,NISSAN,TERRA,89,nissan,nissan-terra,dlt-web-827cefc3
-2021-11,RY1,NISSAN,X-TRAIL,1,nissan,,dlt-web-827cefc3
+2021-11,RY1,NISSAN,X-TRAIL,1,nissan,nissan-x-trail,dlt-web-827cefc3
 2021-11,RY1,NISSAN,ไม่ระบุ,2,nissan,,dlt-web-827cefc3
 2021-11,RY1,PEUGEOT,3008 P84 AG,5,peugeot,,dlt-web-827cefc3
 2021-11,RY1,PEUGEOT,3008 P84 BG,6,peugeot,,dlt-web-827cefc3

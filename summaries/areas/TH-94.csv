@@ -5179,6 +5179,7 @@ period,category,kind,id,units
 2026-09,RY1,m,mazda-cx-30,1
 2026-09,RY1,m,mg-mg4,1
 2026-09,RY1,m,mg-s5,3
+2026-09,RY1,m,mg-urban,2
 2026-09,RY1,m,mini-countryman,1
 2026-09,RY1,m,mitsubishi-mirage,1
 2026-09,RY1,m,mitsubishi-triton,1
@@ -5215,3 +5216,4 @@ period,category,kind,id,units
 2026-09,RY3,m,mitsubishi-triton,1
 2026-09,RY3,m,toyota-hilux-revo,5
 2026-09,RY3,m,toyota-hilux-travo,7
+2026-09,RY3,m,wuling-porta-ev,1

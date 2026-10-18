@@ -5164,6 +5164,7 @@ period,category,kind,id,units
 2025-02,RY1,m,honda-civic,2
 2025-02,RY1,m,honda-cr-v,1
 2025-02,RY1,m,honda-hr-v,2
+2025-02,RY1,m,hyundai-palisade,1
 2025-02,RY1,m,isuzu-d-max,23
 2025-02,RY1,m,isuzu-mu-x,8
 2025-02,RY1,m,jaecoo-6,1
@@ -5456,6 +5457,7 @@ period,category,kind,id,units
 2025-05,RY1,m,honda-civic,1
 2025-05,RY1,m,honda-cr-v,1
 2025-05,RY1,m,honda-hr-v,1
+2025-05,RY1,m,hyundai-santa-fe,1
 2025-05,RY1,m,isuzu-d-max,23
 2025-05,RY1,m,isuzu-mu-x,7
 2025-05,RY1,m,mazda-cx-3,1
@@ -5849,6 +5851,7 @@ period,category,kind,id,units
 2025-09,RY1,m,gwm-tank-300,4
 2025-09,RY1,m,honda-city,3
 2025-09,RY1,m,honda-hr-v,1
+2025-09,RY1,m,hyundai-palisade,1
 2025-09,RY1,m,isuzu-d-max,13
 2025-09,RY1,m,isuzu-mu-x,3
 2025-09,RY1,m,mazda-cx-5,1
@@ -6580,6 +6583,7 @@ period,category,kind,id,units
 2026-04,RY1,m,isuzu-mu-x,5
 2026-04,RY1,m,jaecoo-5,13
 2026-04,RY1,m,jaecoo-7,2
+2026-04,RY1,m,leapmotor-b10,1
 2026-04,RY1,m,mercedes-benz-e-class,1
 2026-04,RY1,m,mg-mg4,1
 2026-04,RY1,m,mitsubishi-xpander,2
@@ -6678,6 +6682,7 @@ period,category,kind,id,units
 2026-05,RY1,m,isuzu-d-max,11
 2026-05,RY1,m,isuzu-mu-x,6
 2026-05,RY1,m,jaecoo-5,9
+2026-05,RY1,m,leapmotor-b10,1
 2026-05,RY1,m,mazda-mazda2,5
 2026-05,RY1,m,mg-mg3,1
 2026-05,RY1,m,mg-mg4,1
@@ -6897,6 +6902,7 @@ period,category,kind,id,units
 2026-07,RY1,m,honda-civic,2
 2026-07,RY1,m,honda-cr-v,1
 2026-07,RY1,m,honda-hr-v,2
+2026-07,RY1,m,hyundai-palisade,1
 2026-07,RY1,m,hyundai-stargazer,1
 2026-07,RY1,m,isuzu-d-max,17
 2026-07,RY1,m,isuzu-mu-x,7
@@ -7026,8 +7032,11 @@ period,category,kind,id,units
 2026-08,RY1,m,isuzu-mu-x,5
 2026-08,RY1,m,jaecoo-5,24
 2026-08,RY1,m,jaecoo-6,9
+2026-08,RY1,m,jaecoo-6t,2
 2026-08,RY1,m,jaecoo-7,1
 2026-08,RY1,m,mazda-cx-30,1
+2026-08,RY1,m,mazda-mazda6e,1
+2026-08,RY1,m,mercedes-benz-cla,1
 2026-08,RY1,m,mercedes-benz-glc,1
 2026-08,RY1,m,mitsubishi-attrage,1
 2026-08,RY1,m,mitsubishi-xforce,1
@@ -7150,6 +7159,10 @@ period,category,kind,id,units
 2026-09,RY1,m,isuzu-mu-x,2
 2026-09,RY1,m,jaecoo-5,5
 2026-09,RY1,m,jaecoo-6,2
+2026-09,RY1,m,jaecoo-6t,2
+2026-09,RY1,m,leapmotor-b10,1
+2026-09,RY1,m,lepas-l6,4
+2026-09,RY1,m,mazda-mazda6e,2
 2026-09,RY1,m,mercedes-benz-c-class,1
 2026-09,RY1,m,mercedes-benz-e-class,1
 2026-09,RY1,m,mitsubishi-mirage,2

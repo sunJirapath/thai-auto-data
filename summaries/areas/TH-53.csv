@@ -5901,6 +5901,7 @@ period,category,kind,id,units
 2026-09,RY1,m,byd-atto-3,3
 2026-09,RY1,m,byd-sealion-5,1
 2026-09,RY1,m,byd-sealion-6,1
+2026-09,RY1,m,chery-q,2
 2026-09,RY1,m,chery-v23,1
 2026-09,RY1,m,ford-ranger,1
 2026-09,RY1,m,geely-ex2,1
@@ -5915,6 +5916,7 @@ period,category,kind,id,units
 2026-09,RY1,m,mercedes-benz-c-class,1
 2026-09,RY1,m,mg-mg4,1
 2026-09,RY1,m,mg-s5,1
+2026-09,RY1,m,mg-urban,6
 2026-09,RY1,m,mitsubishi-mirage,1
 2026-09,RY1,m,mitsubishi-xforce,4
 2026-09,RY1,m,suzuki-swift,2

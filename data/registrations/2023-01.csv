@@ -189,9 +189,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-01,RY1,MERCEDES BENZ,C 300 e,26,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
 2023-01,RY1,MERCEDES BENZ,C 350 e,20,mercedes-benz,mercedes-benz-c-class,dlt-web-827cefc3
 2023-01,RY1,MERCEDES BENZ,C250 COUPE,3,mercedes-benz,,dlt-web-827cefc3
-2023-01,RY1,MERCEDES BENZ,CLA 250,1,mercedes-benz,,dlt-web-827cefc3
-2023-01,RY1,MERCEDES BENZ,CLA200,1,mercedes-benz,,dlt-web-827cefc3
-2023-01,RY1,MERCEDES BENZ,CLA250,1,mercedes-benz,,dlt-web-827cefc3
+2023-01,RY1,MERCEDES BENZ,CLA 250,1,mercedes-benz,mercedes-benz-cla,dlt-web-827cefc3
+2023-01,RY1,MERCEDES BENZ,CLA200,1,mercedes-benz,mercedes-benz-cla,dlt-web-827cefc3
+2023-01,RY1,MERCEDES BENZ,CLA250,1,mercedes-benz,mercedes-benz-cla,dlt-web-827cefc3
 2023-01,RY1,MERCEDES BENZ,CLS 220 d,71,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
 2023-01,RY1,MERCEDES BENZ,CLS 300 d,12,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
 2023-01,RY1,MERCEDES BENZ,CLS 300 d Coupe,1,mercedes-benz,mercedes-benz-cls,dlt-web-827cefc3
@@ -269,7 +269,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-01,RY1,NISSAN,TDWARFZE12EHA-----,2,nissan,,dlt-web-827cefc3
 2023-01,RY1,NISSAN,TEANA,1,nissan,,dlt-web-827cefc3
 2023-01,RY1,NISSAN,TERRA,113,nissan,nissan-terra,dlt-web-827cefc3
-2023-01,RY1,NISSAN,X-TRAIL,1,nissan,,dlt-web-827cefc3
+2023-01,RY1,NISSAN,X-TRAIL,1,nissan,nissan-x-trail,dlt-web-827cefc3
 2023-01,RY1,ORA,GOOD CAT,494,ora,ora-good-cat,dlt-web-827cefc3
 2023-01,RY1,PEUGEOT,2008 P24 BG,10,peugeot,,dlt-web-827cefc3
 2023-01,RY1,PEUGEOT,3008 P84 BG,22,peugeot,,dlt-web-827cefc3
