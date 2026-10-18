@@ -260,7 +260,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-10,RY1,MG,ZS EV,96,mg,mg-zs-ev,dlt-web-827cefc3
 2023-10,RY1,MINI,Cooper Hatch RHD,6,mini,mini-cooper,dlt-web-827cefc3
 2023-10,RY1,MINI,Cooper S 5-Turer RHD,1,mini,mini-cooper,dlt-web-827cefc3
-2023-10,RY1,MINI,Cooper S Cabrio RHD,5,mini,,dlt-web-827cefc3
+2023-10,RY1,MINI,Cooper S Cabrio RHD,5,mini,mini-cooper,dlt-web-827cefc3
 2023-10,RY1,MINI,Cooper S Clubman RHD,3,mini,,dlt-web-827cefc3
 2023-10,RY1,MINI,Cooper S Countryman,2,mini,mini-countryman,dlt-web-827cefc3
 2023-10,RY1,MINI,Cooper S Countryman RHD,68,mini,mini-countryman,dlt-web-827cefc3
@@ -270,7 +270,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-10,RY1,MINI,John Cooper Works ALL4 Co,2,mini,,dlt-web-827cefc3
 2023-10,RY1,MINI,John Cooper Works All4 RH,1,mini,,dlt-web-827cefc3
 2023-10,RY1,MINI,John Cooper Works Hatch R,2,mini,mini-cooper,dlt-web-827cefc3
-2023-10,RY1,MINI,John Cooper Works cabrio,3,mini,,dlt-web-827cefc3
+2023-10,RY1,MINI,John Cooper Works cabrio,3,mini,mini-cooper,dlt-web-827cefc3
 2023-10,RY1,MITSUBISHI,ATTRAGE,250,mitsubishi,mitsubishi-attrage,dlt-web-827cefc3
 2023-10,RY1,MITSUBISHI,MIRAGE,250,mitsubishi,mitsubishi-mirage,dlt-web-827cefc3
 2023-10,RY1,MITSUBISHI,OUTLANDER PHEV,10,mitsubishi,mitsubishi-outlander,dlt-web-827cefc3

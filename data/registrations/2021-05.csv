@@ -251,7 +251,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-05,RY1,MINI,Cooper Clubman RHD,1,mini,,dlt-web-827cefc3
 2021-05,RY1,MINI,Cooper D 5-Turer RHD,1,mini,mini-cooper,dlt-web-827cefc3
 2021-05,RY1,MINI,Cooper S 5-Turer RHD,5,mini,mini-cooper,dlt-web-827cefc3
-2021-05,RY1,MINI,Cooper S Cabrio RHD,2,mini,,dlt-web-827cefc3
+2021-05,RY1,MINI,Cooper S Cabrio RHD,2,mini,mini-cooper,dlt-web-827cefc3
 2021-05,RY1,MINI,Cooper S Clubman RHD,2,mini,,dlt-web-827cefc3
 2021-05,RY1,MINI,Cooper S Countryman RHD,60,mini,mini-countryman,dlt-web-827cefc3
 2021-05,RY1,MINI,Cooper S Hatch RHD,9,mini,mini-cooper,dlt-web-827cefc3
@@ -260,7 +260,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-05,RY1,MINI,JOHN COOPER WORKS GP3,1,mini,mini-cooper,dlt-web-827cefc3
 2021-05,RY1,MINI,John Cooper Works ALL4 Clubman,2,mini,,dlt-web-827cefc3
 2021-05,RY1,MINI,John Cooper Works ALL4 Co,1,mini,,dlt-web-827cefc3
-2021-05,RY1,MINI,John Cooper Works Cabrio,1,mini,,dlt-web-827cefc3
+2021-05,RY1,MINI,John Cooper Works Cabrio,1,mini,mini-cooper,dlt-web-827cefc3
 2021-05,RY1,MINI,John Cooper Works GP RHD,2,mini,mini-cooper,dlt-web-827cefc3
 2021-05,RY1,MINI,John Cooper Works Hatch R,4,mini,mini-cooper,dlt-web-827cefc3
 2021-05,RY1,MINI,ONE 1.6 HATCH,1,mini,mini-cooper,dlt-web-827cefc3

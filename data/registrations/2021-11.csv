@@ -248,7 +248,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-11,RY1,MINI,Cooper Clubman RHD,1,mini,,dlt-web-827cefc3
 2021-11,RY1,MINI,Cooper Hatch RHD,1,mini,mini-cooper,dlt-web-827cefc3
 2021-11,RY1,MINI,Cooper S 5-Turer RHD,4,mini,mini-cooper,dlt-web-827cefc3
-2021-11,RY1,MINI,Cooper S Cabrio RHD,2,mini,,dlt-web-827cefc3
+2021-11,RY1,MINI,Cooper S Cabrio RHD,2,mini,mini-cooper,dlt-web-827cefc3
 2021-11,RY1,MINI,Cooper S Clubman RHD,1,mini,,dlt-web-827cefc3
 2021-11,RY1,MINI,Cooper S Countryman RHD,39,mini,mini-countryman,dlt-web-827cefc3
 2021-11,RY1,MINI,Cooper S Hatch RHD,11,mini,mini-cooper,dlt-web-827cefc3
@@ -257,7 +257,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-11,RY1,MINI,JOHN COOPER WORKS GP III,1,mini,mini-cooper,dlt-web-827cefc3
 2021-11,RY1,MINI,John Cooper Works ALL4 Clubman,2,mini,,dlt-web-827cefc3
 2021-11,RY1,MINI,John Cooper Works ALL4 Co,3,mini,,dlt-web-827cefc3
-2021-11,RY1,MINI,John Cooper Works Cabrio,1,mini,,dlt-web-827cefc3
+2021-11,RY1,MINI,John Cooper Works Cabrio,1,mini,mini-cooper,dlt-web-827cefc3
 2021-11,RY1,MINI,John Cooper Works Hatch R,7,mini,mini-cooper,dlt-web-827cefc3
 2021-11,RY1,MITSUBISHI,ATTRAGE,471,mitsubishi,mitsubishi-attrage,dlt-web-827cefc3
 2021-11,RY1,MITSUBISHI,CY3ASTHHRU,1,mitsubishi,,dlt-web-827cefc3

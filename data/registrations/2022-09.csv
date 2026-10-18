@@ -242,7 +242,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-09,RY1,MINI,Cooper D Clubman RHD,1,mini,,dlt-web-827cefc3
 2022-09,RY1,MINI,Cooper Hatch RHD,1,mini,mini-cooper,dlt-web-827cefc3
 2022-09,RY1,MINI,Cooper S 5-Turer RHD,1,mini,mini-cooper,dlt-web-827cefc3
-2022-09,RY1,MINI,Cooper S Cabrio RHD,6,mini,,dlt-web-827cefc3
+2022-09,RY1,MINI,Cooper S Cabrio RHD,6,mini,mini-cooper,dlt-web-827cefc3
 2022-09,RY1,MINI,Cooper S Clubman RHD,1,mini,,dlt-web-827cefc3
 2022-09,RY1,MINI,Cooper S Countryman RHD,83,mini,mini-countryman,dlt-web-827cefc3
 2022-09,RY1,MINI,Cooper S Hatch RHD,12,mini,mini-cooper,dlt-web-827cefc3
@@ -250,7 +250,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-09,RY1,MINI,JOHN COOPER WORKS GP,2,mini,mini-cooper,dlt-web-827cefc3
 2022-09,RY1,MINI,John Cooper Works ALL4 Cl,2,mini,,dlt-web-827cefc3
 2022-09,RY1,MINI,John Cooper Works ALL4 Co,1,mini,,dlt-web-827cefc3
-2022-09,RY1,MINI,John Cooper Works Cabrio,2,mini,,dlt-web-827cefc3
+2022-09,RY1,MINI,John Cooper Works Cabrio,2,mini,mini-cooper,dlt-web-827cefc3
 2022-09,RY1,MINI,John Cooper Works GP RHD,2,mini,mini-cooper,dlt-web-827cefc3
 2022-09,RY1,MINI,John Cooper Works Hatch R,6,mini,mini-cooper,dlt-web-827cefc3
 2022-09,RY1,MITSUBISHI,ATTRAGE,385,mitsubishi,mitsubishi-attrage,dlt-web-827cefc3

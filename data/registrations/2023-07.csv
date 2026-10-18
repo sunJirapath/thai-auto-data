@@ -243,7 +243,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-07,RY1,MINI,Cooper Clubman RHD,1,mini,,dlt-web-827cefc3
 2023-07,RY1,MINI,Cooper D 5-Turer RHD,1,mini,mini-cooper,dlt-web-827cefc3
 2023-07,RY1,MINI,Cooper Hatch RHD,3,mini,mini-cooper,dlt-web-827cefc3
-2023-07,RY1,MINI,Cooper S Cabrio RHD,4,mini,,dlt-web-827cefc3
+2023-07,RY1,MINI,Cooper S Cabrio RHD,4,mini,mini-cooper,dlt-web-827cefc3
 2023-07,RY1,MINI,Cooper S Clubman RHD,7,mini,,dlt-web-827cefc3
 2023-07,RY1,MINI,Cooper S Countryman RHD,49,mini,mini-countryman,dlt-web-827cefc3
 2023-07,RY1,MINI,Cooper S Hatch RHD,9,mini,mini-cooper,dlt-web-827cefc3
@@ -251,7 +251,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-07,RY1,MINI,John Cooper Works ALL4 Cl,2,mini,,dlt-web-827cefc3
 2023-07,RY1,MINI,John Cooper Works ALL4 Co,1,mini,,dlt-web-827cefc3
 2023-07,RY1,MINI,John Cooper Works Hatch R,1,mini,mini-cooper,dlt-web-827cefc3
-2023-07,RY1,MINI,John Cooper Works cabrio,1,mini,,dlt-web-827cefc3
+2023-07,RY1,MINI,John Cooper Works cabrio,1,mini,mini-cooper,dlt-web-827cefc3
 2023-07,RY1,MINI,ไม่ระบุ,1,mini,,dlt-web-827cefc3
 2023-07,RY1,MITSUBISHI,ATTRAGE,358,mitsubishi,mitsubishi-attrage,dlt-web-827cefc3
 2023-07,RY1,MITSUBISHI,L200 P 2.5 S-CAB LOW,2,mitsubishi,,dlt-web-827cefc3

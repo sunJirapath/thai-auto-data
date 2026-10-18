@@ -1845,6 +1845,7 @@ period,category,kind,id,units
 2021-10,RY1,m,mg-mg3,34
 2021-10,RY1,m,mg-mg5,35
 2021-10,RY1,m,mg-zs,48
+2021-10,RY1,m,mini-cooper,1
 2021-10,RY1,m,mini-countryman,1
 2021-10,RY1,m,mitsubishi-attrage,31
 2021-10,RY1,m,mitsubishi-mirage,30
@@ -2837,7 +2838,7 @@ period,category,kind,id,units
 2022-03,RY1,m,mg-mg5,138
 2022-03,RY1,m,mg-zs,79
 2022-03,RY1,m,mg-zs-ev,1
-2022-03,RY1,m,mini-cooper,2
+2022-03,RY1,m,mini-cooper,3
 2022-03,RY1,m,mini-countryman,4
 2022-03,RY1,m,mitsubishi-attrage,27
 2022-03,RY1,m,mitsubishi-mirage,27
@@ -6929,7 +6930,7 @@ period,category,kind,id,units
 2023-10,RY1,m,mg-vs,13
 2023-10,RY1,m,mg-zs,14
 2023-10,RY1,m,mg-zs-ev,6
-2023-10,RY1,m,mini-cooper,2
+2023-10,RY1,m,mini-cooper,3
 2023-10,RY1,m,mini-countryman,4
 2023-10,RY1,m,mitsubishi-attrage,18
 2023-10,RY1,m,mitsubishi-mirage,22
@@ -7166,7 +7167,7 @@ period,category,kind,id,units
 2023-11,RY1,m,mg-vs,24
 2023-11,RY1,m,mg-zs,26
 2023-11,RY1,m,mg-zs-ev,11
-2023-11,RY1,m,mini-cooper,2
+2023-11,RY1,m,mini-cooper,3
 2023-11,RY1,m,mini-countryman,3
 2023-11,RY1,m,mitsubishi-attrage,20
 2023-11,RY1,m,mitsubishi-mirage,28
@@ -7877,7 +7878,7 @@ period,category,kind,id,units
 2024-02,RY1,m,mg-vs,11
 2024-02,RY1,m,mg-zs,26
 2024-02,RY1,m,mg-zs-ev,2
-2024-02,RY1,m,mini-cooper,1
+2024-02,RY1,m,mini-cooper,2
 2024-02,RY1,m,mini-countryman,5
 2024-02,RY1,m,mitsubishi-attrage,18
 2024-02,RY1,m,mitsubishi-mirage,20
@@ -8614,7 +8615,7 @@ period,category,kind,id,units
 2024-05,RY1,m,mg-vs,9
 2024-05,RY1,m,mg-zs,14
 2024-05,RY1,m,mg-zs-ev,2
-2024-05,RY1,m,mini-cooper,1
+2024-05,RY1,m,mini-cooper,2
 2024-05,RY1,m,mini-countryman,5
 2024-05,RY1,m,mitsubishi-attrage,29
 2024-05,RY1,m,mitsubishi-mirage,21
@@ -9594,6 +9595,7 @@ period,category,kind,id,units
 2024-09,RY1,m,mg-vs,8
 2024-09,RY1,m,mg-zs,4
 2024-09,RY1,m,mg-zs-ev,2
+2024-09,RY1,m,mini-cooper,1
 2024-09,RY1,m,mini-countryman,2
 2024-09,RY1,m,mitsubishi-attrage,36
 2024-09,RY1,m,mitsubishi-mirage,48
@@ -10586,7 +10588,7 @@ period,category,kind,id,units
 2025-01,RY1,m,mg-zs,6
 2025-01,RY1,m,mg-zs-ev,2
 2025-01,RY1,m,mini-aceman,1
-2025-01,RY1,m,mini-cooper,2
+2025-01,RY1,m,mini-cooper,3
 2025-01,RY1,m,mitsubishi-attrage,49
 2025-01,RY1,m,mitsubishi-mirage,50
 2025-01,RY1,m,mitsubishi-pajero-sport,26
@@ -11418,7 +11420,7 @@ period,category,kind,id,units
 2025-04,RY1,m,mg-zs,6
 2025-04,RY1,m,mg-zs-ev,4
 2025-04,RY1,m,mini-aceman,1
-2025-04,RY1,m,mini-cooper,3
+2025-04,RY1,m,mini-cooper,4
 2025-04,RY1,m,mitsubishi-attrage,26
 2025-04,RY1,m,mitsubishi-mirage,29
 2025-04,RY1,m,mitsubishi-pajero-sport,11
@@ -13402,7 +13404,7 @@ period,category,kind,id,units
 2025-11,RY1,m,mg-vs,5
 2025-11,RY1,m,mg-zs,8
 2025-11,RY1,m,mini-aceman,1
-2025-11,RY1,m,mini-cooper,1
+2025-11,RY1,m,mini-cooper,2
 2025-11,RY1,m,mitsubishi-attrage,31
 2025-11,RY1,m,mitsubishi-mirage,25
 2025-11,RY1,m,mitsubishi-pajero-sport,16
@@ -13958,7 +13960,7 @@ period,category,kind,id,units
 2026-01,RY1,m,mg-vs,2
 2026-01,RY1,m,mg-zs,4
 2026-01,RY1,m,mini-aceman,3
-2026-01,RY1,m,mini-cooper,4
+2026-01,RY1,m,mini-cooper,5
 2026-01,RY1,m,mini-countryman,3
 2026-01,RY1,m,mitsubishi-attrage,44
 2026-01,RY1,m,mitsubishi-mirage,18
@@ -14241,7 +14243,7 @@ period,category,kind,id,units
 2026-02,RY1,m,mg-vs,6
 2026-02,RY1,m,mg-zs,5
 2026-02,RY1,m,mini-aceman,2
-2026-02,RY1,m,mini-cooper,8
+2026-02,RY1,m,mini-cooper,9
 2026-02,RY1,m,mini-countryman,3
 2026-02,RY1,m,mitsubishi-attrage,39
 2026-02,RY1,m,mitsubishi-mirage,19

@@ -250,7 +250,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-09,RY1,MG,ZS EV,96,mg,mg-zs-ev,dlt-web-827cefc3
 2023-09,RY1,MINI,Cooper Clubman RHD,2,mini,,dlt-web-827cefc3
 2023-09,RY1,MINI,Cooper Hatch RHD,2,mini,mini-cooper,dlt-web-827cefc3
-2023-09,RY1,MINI,Cooper S Cabrio RHD,4,mini,,dlt-web-827cefc3
+2023-09,RY1,MINI,Cooper S Cabrio RHD,4,mini,mini-cooper,dlt-web-827cefc3
 2023-09,RY1,MINI,Cooper S Clubman RHD,6,mini,,dlt-web-827cefc3
 2023-09,RY1,MINI,Cooper S Countryman,2,mini,mini-countryman,dlt-web-827cefc3
 2023-09,RY1,MINI,Cooper S Countryman RHD,60,mini,mini-countryman,dlt-web-827cefc3

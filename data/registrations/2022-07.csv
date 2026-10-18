@@ -235,13 +235,13 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-07,RY1,MINI,Cooper D 5-Turer RHD,1,mini,mini-cooper,dlt-web-827cefc3
 2022-07,RY1,MINI,Cooper Hatch RHD,2,mini,mini-cooper,dlt-web-827cefc3
 2022-07,RY1,MINI,Cooper S 5-Turer RHD,1,mini,mini-cooper,dlt-web-827cefc3
-2022-07,RY1,MINI,Cooper S Cabrio RHD,1,mini,,dlt-web-827cefc3
+2022-07,RY1,MINI,Cooper S Cabrio RHD,1,mini,mini-cooper,dlt-web-827cefc3
 2022-07,RY1,MINI,Cooper S Clubman RHD,3,mini,,dlt-web-827cefc3
 2022-07,RY1,MINI,Cooper S Countryman RHD,53,mini,mini-countryman,dlt-web-827cefc3
 2022-07,RY1,MINI,Cooper S Hatch RHD,6,mini,mini-cooper,dlt-web-827cefc3
 2022-07,RY1,MINI,Cooper SE Hatch RHD,21,mini,mini-cooper,dlt-web-827cefc3
 2022-07,RY1,MINI,JOHN COOPER WORKS GP3,1,mini,mini-cooper,dlt-web-827cefc3
-2022-07,RY1,MINI,John Cooper Works Cabrio,1,mini,,dlt-web-827cefc3
+2022-07,RY1,MINI,John Cooper Works Cabrio,1,mini,mini-cooper,dlt-web-827cefc3
 2022-07,RY1,MINI,John Cooper Works Hatch R,3,mini,mini-cooper,dlt-web-827cefc3
 2022-07,RY1,MINI,ไม่ระบุ,1,mini,,dlt-web-827cefc3
 2022-07,RY1,MITSUBISHI,ATTRAGE,411,mitsubishi,mitsubishi-attrage,dlt-web-827cefc3

@@ -309,9 +309,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-09,RY1,MG,ZS,42,mg,mg-zs,dlt-web-827cefc3
 2025-09,RY1,MG,ZS EV,16,mg,mg-zs-ev,dlt-web-827cefc3
 2025-09,RY1,MINI,Aceman SE RHD,51,mini,mini-aceman,dlt-web-827cefc3
-2025-09,RY1,MINI,Cooper S Cabrio RHD,3,mini,,dlt-web-827cefc3
+2025-09,RY1,MINI,Cooper S Cabrio RHD,3,mini,mini-cooper,dlt-web-827cefc3
 2025-09,RY1,MINI,Cooper S Clubman RHD,1,mini,,dlt-web-827cefc3
-2025-09,RY1,MINI,Cooper S Convertible RHD,1,mini,,dlt-web-827cefc3
+2025-09,RY1,MINI,Cooper S Convertible RHD,1,mini,mini-cooper,dlt-web-827cefc3
 2025-09,RY1,MINI,Cooper S Countryman RHD,16,mini,mini-countryman,dlt-web-827cefc3
 2025-09,RY1,MINI,Cooper S Hatch RHD,4,mini,mini-cooper,dlt-web-827cefc3
 2025-09,RY1,MINI,Cooper SE Hatch RHD,1,mini,mini-cooper,dlt-web-827cefc3

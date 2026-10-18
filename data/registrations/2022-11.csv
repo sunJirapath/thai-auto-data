@@ -233,13 +233,13 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-11,RY1,MINI,Cooper Clubman RHD,1,mini,,dlt-web-827cefc3
 2022-11,RY1,MINI,Cooper Hatch RHD,1,mini,mini-cooper,dlt-web-827cefc3
 2022-11,RY1,MINI,Cooper S 5-Turer RHD,1,mini,mini-cooper,dlt-web-827cefc3
-2022-11,RY1,MINI,Cooper S Cabrio RHD,1,mini,,dlt-web-827cefc3
+2022-11,RY1,MINI,Cooper S Cabrio RHD,1,mini,mini-cooper,dlt-web-827cefc3
 2022-11,RY1,MINI,Cooper S Clubman RHD,7,mini,,dlt-web-827cefc3
 2022-11,RY1,MINI,Cooper S Countryman RHD,67,mini,mini-countryman,dlt-web-827cefc3
 2022-11,RY1,MINI,Cooper S Hatch RHD,5,mini,mini-cooper,dlt-web-827cefc3
 2022-11,RY1,MINI,Cooper SE Hatch RHD,20,mini,mini-cooper,dlt-web-827cefc3
 2022-11,RY1,MINI,JOHN COOPER WORKS GP3,1,mini,mini-cooper,dlt-web-827cefc3
-2022-11,RY1,MINI,John Cooper Works Cabrio,1,mini,,dlt-web-827cefc3
+2022-11,RY1,MINI,John Cooper Works Cabrio,1,mini,mini-cooper,dlt-web-827cefc3
 2022-11,RY1,MINI,John Cooper Works Hatch R,3,mini,mini-cooper,dlt-web-827cefc3
 2022-11,RY1,MITSUBISHI,ATTRAGE,353,mitsubishi,mitsubishi-attrage,dlt-web-827cefc3
 2022-11,RY1,MITSUBISHI,KH4WGYPZRU,1,mitsubishi,,dlt-web-827cefc3

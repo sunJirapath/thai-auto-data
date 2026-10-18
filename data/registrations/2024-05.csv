@@ -254,13 +254,13 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-05,RY1,MG,ZS EV,37,mg,mg-zs-ev,dlt-web-827cefc3
 2024-05,RY1,MINI,Cooper D RHD,1,mini,mini-cooper,dlt-web-827cefc3
 2024-05,RY1,MINI,Cooper Hatch RHD,3,mini,mini-cooper,dlt-web-827cefc3
-2024-05,RY1,MINI,Cooper S Cabrio RHD,8,mini,,dlt-web-827cefc3
+2024-05,RY1,MINI,Cooper S Cabrio RHD,8,mini,mini-cooper,dlt-web-827cefc3
 2024-05,RY1,MINI,Cooper S Clubman RHD,11,mini,,dlt-web-827cefc3
 2024-05,RY1,MINI,Cooper S Countryman,1,mini,mini-countryman,dlt-web-827cefc3
 2024-05,RY1,MINI,Cooper S Countryman RHD,79,mini,mini-countryman,dlt-web-827cefc3
 2024-05,RY1,MINI,Cooper S Hatch RHD,4,mini,mini-cooper,dlt-web-827cefc3
 2024-05,RY1,MINI,Cooper SE Hatch RHD,4,mini,mini-cooper,dlt-web-827cefc3
-2024-05,RY1,MINI,ELECTRIC CONVERTIBLE,1,mini,,dlt-web-827cefc3
+2024-05,RY1,MINI,ELECTRIC CONVERTIBLE,1,mini,mini-cooper,dlt-web-827cefc3
 2024-05,RY1,MINI,John Cooper Works ALL4 Cl,4,mini,,dlt-web-827cefc3
 2024-05,RY1,MINI,John Cooper Works ALL4 Co,2,mini,,dlt-web-827cefc3
 2024-05,RY1,MINI,John Cooper Works Hatch R,6,mini,mini-cooper,dlt-web-827cefc3

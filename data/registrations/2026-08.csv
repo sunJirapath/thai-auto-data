@@ -309,12 +309,12 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-08,RY1,MINI,Aceman SE RHD,56,mini,mini-aceman,dlt-web-827cefc3
 2026-08,RY1,MINI,Cooper Hatch RHD,1,mini,mini-cooper,dlt-web-827cefc3
 2026-08,RY1,MINI,Cooper S 5-Turer RHD,1,mini,mini-cooper,dlt-web-827cefc3
-2026-08,RY1,MINI,Cooper S Convertible RHD,1,mini,,dlt-web-827cefc3
+2026-08,RY1,MINI,Cooper S Convertible RHD,1,mini,mini-cooper,dlt-web-827cefc3
 2026-08,RY1,MINI,Cooper S Countryman RHD,3,mini,mini-countryman,dlt-web-827cefc3
 2026-08,RY1,MINI,Cooper SE RHD,65,mini,mini-cooper,dlt-web-827cefc3
 2026-08,RY1,MINI,Countryman S ALL4,21,mini,mini-countryman,dlt-web-827cefc3
 2026-08,RY1,MINI,JCW Aceman E,6,mini,mini-aceman,dlt-web-827cefc3
-2026-08,RY1,MINI,JCW Convertible RHD,1,mini,,dlt-web-827cefc3
+2026-08,RY1,MINI,JCW Convertible RHD,1,mini,mini-cooper,dlt-web-827cefc3
 2026-08,RY1,MINI,JCW E,10,mini,mini-cooper,dlt-web-827cefc3
 2026-08,RY1,MINI,JCW RHD,2,mini,mini-cooper,dlt-web-827cefc3
 2026-08,RY1,MITSUBISHI,ATTRAGE,168,mitsubishi,mitsubishi-attrage,dlt-web-827cefc3

@@ -222,7 +222,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-12,RY1,MINI,COOPER ELECTRIC LEVEL 3,1,mini,mini-cooper,dlt-web-827cefc3
 2021-12,RY1,MINI,COOPER SD ALL4 COUNTRYMAN,1,mini,mini-countryman,dlt-web-827cefc3
 2021-12,RY1,MINI,Cooper Hatch RHD,1,mini,mini-cooper,dlt-web-827cefc3
-2021-12,RY1,MINI,Cooper S Cabrio RHD,2,mini,,dlt-web-827cefc3
+2021-12,RY1,MINI,Cooper S Cabrio RHD,2,mini,mini-cooper,dlt-web-827cefc3
 2021-12,RY1,MINI,Cooper S Clubman RHD,2,mini,,dlt-web-827cefc3
 2021-12,RY1,MINI,Cooper S Countryman RHD,34,mini,mini-countryman,dlt-web-827cefc3
 2021-12,RY1,MINI,Cooper S Hatch RHD,4,mini,mini-cooper,dlt-web-827cefc3

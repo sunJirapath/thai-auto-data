@@ -306,17 +306,17 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-03,RY1,MG,ZS,39,mg,mg-zs,dlt-web-827cefc3
 2026-03,RY1,MG,ZS EV,2,mg,mg-zs-ev,dlt-web-827cefc3
 2026-03,RY1,MINI,Aceman SE RHD,41,mini,mini-aceman,dlt-web-827cefc3
-2026-03,RY1,MINI,Cooper S Cabrio RHD,1,mini,,dlt-web-827cefc3
-2026-03,RY1,MINI,Cooper S Convertible RHD,2,mini,,dlt-web-827cefc3
+2026-03,RY1,MINI,Cooper S Cabrio RHD,1,mini,mini-cooper,dlt-web-827cefc3
+2026-03,RY1,MINI,Cooper S Convertible RHD,2,mini,mini-cooper,dlt-web-827cefc3
 2026-03,RY1,MINI,Cooper S Countryman RHD,5,mini,mini-countryman,dlt-web-827cefc3
 2026-03,RY1,MINI,Cooper SE RHD,43,mini,mini-cooper,dlt-web-827cefc3
 2026-03,RY1,MINI,Countryman S ALL4,23,mini,mini-countryman,dlt-web-827cefc3
 2026-03,RY1,MINI,JCW Aceman E,6,mini,mini-aceman,dlt-web-827cefc3
-2026-03,RY1,MINI,JCW Convertible RHD,2,mini,,dlt-web-827cefc3
+2026-03,RY1,MINI,JCW Convertible RHD,2,mini,mini-cooper,dlt-web-827cefc3
 2026-03,RY1,MINI,JCW E,13,mini,mini-cooper,dlt-web-827cefc3
 2026-03,RY1,MINI,JCW RHD,4,mini,mini-cooper,dlt-web-827cefc3
 2026-03,RY1,MINI,John Cooper Works Hatch R,2,mini,mini-cooper,dlt-web-827cefc3
-2026-03,RY1,MINI,John Cooper Works cabrio,1,mini,,dlt-web-827cefc3
+2026-03,RY1,MINI,John Cooper Works cabrio,1,mini,mini-cooper,dlt-web-827cefc3
 2026-03,RY1,MITSUBISHI,ATTRAGE,307,mitsubishi,mitsubishi-attrage,dlt-web-827cefc3
 2026-03,RY1,MITSUBISHI,MIRAGE,117,mitsubishi,mitsubishi-mirage,dlt-web-827cefc3
 2026-03,RY1,MITSUBISHI,OUTLANDER PHEV,1,mitsubishi,mitsubishi-outlander,dlt-web-827cefc3

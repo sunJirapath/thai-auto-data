@@ -313,10 +313,10 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-05,RY1,MINI,Cooper SE RHD,83,mini,mini-cooper,dlt-web-827cefc3
 2026-05,RY1,MINI,Countryman S ALL4,25,mini,mini-countryman,dlt-web-827cefc3
 2026-05,RY1,MINI,JCW Aceman E,5,mini,mini-aceman,dlt-web-827cefc3
-2026-05,RY1,MINI,JCW Convertible RHD,1,mini,,dlt-web-827cefc3
+2026-05,RY1,MINI,JCW Convertible RHD,1,mini,mini-cooper,dlt-web-827cefc3
 2026-05,RY1,MINI,JCW E,15,mini,mini-cooper,dlt-web-827cefc3
 2026-05,RY1,MINI,JCW RHD,3,mini,mini-cooper,dlt-web-827cefc3
-2026-05,RY1,MINI,John Cooper Works cabrio,1,mini,,dlt-web-827cefc3
+2026-05,RY1,MINI,John Cooper Works cabrio,1,mini,mini-cooper,dlt-web-827cefc3
 2026-05,RY1,MITSUBISHI,ATTRAGE,204,mitsubishi,mitsubishi-attrage,dlt-web-827cefc3
 2026-05,RY1,MITSUBISHI,MIRAGE,123,mitsubishi,mitsubishi-mirage,dlt-web-827cefc3
 2026-05,RY1,MITSUBISHI,OUTLANDER PHEV,2,mitsubishi,mitsubishi-outlander,dlt-web-827cefc3

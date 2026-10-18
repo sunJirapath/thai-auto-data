@@ -257,7 +257,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-02,RY1,MINI,Cooper D Clubman RHD,1,mini,,dlt-web-827cefc3
 2021-02,RY1,MINI,Cooper Hatch RHD,1,mini,mini-cooper,dlt-web-827cefc3
 2021-02,RY1,MINI,Cooper S 5-Turer RHD,3,mini,mini-cooper,dlt-web-827cefc3
-2021-02,RY1,MINI,Cooper S Cabrio RHD,3,mini,,dlt-web-827cefc3
+2021-02,RY1,MINI,Cooper S Cabrio RHD,3,mini,mini-cooper,dlt-web-827cefc3
 2021-02,RY1,MINI,Cooper S Clubman RHD,2,mini,,dlt-web-827cefc3
 2021-02,RY1,MINI,Cooper S Countryman RHD,66,mini,mini-countryman,dlt-web-827cefc3
 2021-02,RY1,MINI,Cooper S Hatch RHD,5,mini,mini-cooper,dlt-web-827cefc3
