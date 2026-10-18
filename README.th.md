@@ -35,7 +35,7 @@
 
 **ช่วงข้อมูล:** มกราคม 2564 ถึง กันยายน 2569 (2021-01 ถึง 2026-09), 69 เดือน ครบทุกเดือน
 
-**ราคา:** ตอนนี้มีราคาจากเว็บไซต์ทางการ 36 รุ่น 170 รายการ (Toyota, Honda, Isuzu D-Max/MU-X, Ford Ranger/Ranger Raptor/Everest, Mitsubishi Triton/Xforce, BYD Atto 3/Dolphin/Sealion 6/Sealion 7, MG4/MG Urban, Jaecoo 5/6/6T, Deepal S05, Wuling Air EV/Binguo/Darion, GWM ORA 5, Changan Nevo Q05, Chery V23/Q) ทุกแถวมีลิงก์หน้าเว็บที่ใช้อ้างอิง ประวัติราคาเริ่มจากวันที่บันทึก จึงไม่ครบย้อนหลัง
+**ราคา:** ตอนนี้มีราคาจากเว็บไซต์ทางการ 140 รุ่น 484 รายการ (Toyota, Honda, Isuzu, Mitsubishi, Ford, Nissan, Mazda, Suzuki, BYD, MG, GWM/Haval/ORA/Tank, Changan/Deepal, Chery, Omoda/Jaecoo, AION, Wuling, Tesla, Hyundai and BMW) ครอบคลุม 88% ของยอดจดทะเบียน 12 เดือนล่าสุด ทุกแถวมีลิงก์หน้าเว็บที่ใช้อ้างอิง ประวัติราคาเริ่มจากวันที่บันทึก จึงไม่ครบย้อนหลัง
 
 ถ้าเดือนใดไม่มีข้อมูลจากต้นทาง จะแสดงเป็น `status=missing` และเว้นตัวเลขว่าง **ไม่ใช่ 0** รายละเอียดอยู่ใน [DATA_SOURCES.md](DATA_SOURCES.md)
 
