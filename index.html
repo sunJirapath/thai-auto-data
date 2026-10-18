@@ -117,11 +117,34 @@
  ]
 }
 </script>
-<link rel="stylesheet" href="site/style.css?v=22">
+<link rel="stylesheet" href="site/style.css?v=23">
 </head>
 <body>
+<div class="shell">
+<aside class="side" id="side">
+  <nav class="side-nav" aria-label="Pages">
+    <p class="side-group">Market</p>
+    <a href="#/" data-nav="overview">Overview</a>
+    <a href="#/ranking" data-nav="ranking">Ranking</a>
+    <a href="#/trends" data-nav="trends">Trends</a>
+    <a href="#/seasonality" data-nav="seasonality">Seasonality</a>
+    <p class="side-group">Cars</p>
+    <a href="#/segments" data-nav="segments">Segments</a>
+    <a href="#/powertrain" data-nav="powertrain">Powertrain / EV</a>
+    <a href="#/prices" data-nav="prices">Price bands</a>
+    <a href="#/launches" data-nav="launches">New models</a>
+    <p class="side-group">Brands & places</p>
+    <a href="#/origin" data-nav="origin">Brand origin</a>
+    <a href="#/regions" data-nav="regions">Regions</a>
+    <a href="#/compare/" data-nav="compare">Compare</a>
+    <p class="side-group">Data</p>
+    <a href="#/data" data-nav="data">Data</a>
+  </nav>
+</aside>
+<div class="nav-backdrop" id="navBackdrop" hidden></div>
 <div class="page">
   <header class="top">
+    <button type="button" class="menu-btn" id="menuBtn" aria-controls="side" aria-expanded="false">☰ Menu</button>
     <div>
       <h1><a class="home-link" href="#/">Thai Car Market</a></h1>
       <p class="lede">Monthly new-vehicle registrations (RY1–3) from the Department of Land Transport, with prices from manufacturers' official websites. <b>All figures are registrations, not sales.</b></p>
@@ -133,23 +156,23 @@
     </nav>
   </header>
 
-  <nav class="tabs" aria-label="Pages">
-    <a href="#/" data-nav="overview">Overview</a>
-    <a href="#/ranking" data-nav="ranking">Ranking</a>
-    <a href="#/trends" data-nav="trends">Trends</a>
-    <a href="#/powertrain" data-nav="powertrain">Powertrain / EV</a>
-    <a href="#/segments" data-nav="segments">Segments</a>
-    <a href="#/origin" data-nav="origin">Brand origin</a>
-    <a href="#/regions" data-nav="regions">Regions</a>
-    <a href="#/seasonality" data-nav="seasonality">Seasonality</a>
-    <a href="#/prices" data-nav="prices">Price bands</a>
-    <a href="#/launches" data-nav="launches">New models</a>
-    <a href="#/compare/" data-nav="compare">Compare</a>
-    <a href="#/data" data-nav="data">Data</a>
-  </nav>
-
   <div id="status" class="status" role="status">Loading data…</div>
   <noscript><p class="status error">This page needs JavaScript for the charts; the CSV files are on <a href="https://github.com/sunJirapath/thai-auto-data">GitHub</a>. · หน้านี้ต้องเปิด JavaScript เพื่อแสดงกราฟ ดาวน์โหลดข้อมูล CSV ได้ที่ <a href="https://github.com/sunJirapath/thai-auto-data">GitHub</a></p></noscript>
+
+  <!-- Overview: what each page answers -->
+  <section class="explore" data-page="overview" aria-label="Explore the data" hidden>
+    <a class="explore-card" href="#/ranking"><h3>Ranking</h3><span>Top brands and models, biggest gains and declines</span></a>
+    <a class="explore-card" href="#/trends"><h3>Trends</h3><span>Market share and rank over time</span></a>
+    <a class="explore-card" href="#/seasonality"><h3>Seasonality</h3><span>Each year month by month</span></a>
+    <a class="explore-card" href="#/segments"><h3>Segments</h3><span>Pickup, SUV, sedan and other body types</span></a>
+    <a class="explore-card" href="#/powertrain"><h3>Powertrain / EV</h3><span>EV, hybrid, petrol and diesel share</span></a>
+    <a class="explore-card" href="#/prices"><h3>Price bands</h3><span>Registrations by official starting price</span></a>
+    <a class="explore-card" href="#/launches"><h3>New models</h3><span>How new models did in their first months</span></a>
+    <a class="explore-card" href="#/origin"><h3>Brand origin</h3><span>Japanese, Chinese and other brands</span></a>
+    <a class="explore-card" href="#/regions"><h3>Regions</h3><span>Who leads in each region</span></a>
+    <a class="explore-card" href="#/compare/"><h3>Compare</h3><span>Up to 4 models or brands side by side</span></a>
+    <a class="explore-card" href="#/data"><h3>Data</h3><span>Download the CSV files and cite the dataset</span></a>
+  </section>
 
   <section class="filterbar" id="filterbar" aria-label="Filters for every page">
     <div class="filters">
@@ -435,8 +458,9 @@ Original source: Department of Land Transport, Thailand (web.dlt.go.th/statistic
 
   <footer class="foot">Source: thai-auto-data / Department of Land Transport · CC BY 4.0 · <a href="#/data">Cite & download</a></footer>
 </div>
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" integrity="sha512-CQBWl4fJHWbryGE+Pc7UAxWMUMNMWzWxF4SQo9CgkJIN1kx6djDQZjh3Y8SZ1d+6I+1zze6Z7kHXO7q3UyZAWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="site/i18n-th.js?v=2"></script>
-<script src="site/app.js?v=22"></script>
+<script src="site/i18n-th.js?v=3"></script>
+<script src="site/app.js?v=23"></script>
 </body>
 </html>

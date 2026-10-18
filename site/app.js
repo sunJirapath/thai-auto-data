@@ -2508,18 +2508,34 @@
     document.getElementById('fCats').hidden = !pf.cats;
     document.getElementById('fArea').parentNode.hidden = !pf.area;
     setNav(page === 'brand' || page === 'model' ? '' : page);
-    var title = document.querySelector('.tabs a[data-nav="' + page + '"]');
+    var title = document.querySelector('.side-nav a[data-nav="' + page + '"]');
     if (!m) document.title = (page === 'overview' ? L('Thai Car Market', 'ตลาดรถยนต์ไทย') : title ? title.textContent : L('Thai Car Market', 'ตลาดรถยนต์ไทย')) + ' · thai-auto-data';
     renderExplorer();
     if (changed) window.scrollTo(0, 0);
   }
   function setNav(page) {
-    document.querySelectorAll('.tabs a').forEach(function (a) {
+    document.body.classList.remove('nav-open');   // a phone's drawer closes once a page is picked
+    document.getElementById('menuBtn').setAttribute('aria-expanded', 'false');
+    document.getElementById('navBackdrop').hidden = true;
+    document.querySelectorAll('.side-nav a').forEach(function (a) {
       if (a.getAttribute('data-nav') === page) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
     });
   }
 
   // ---------- boot ----------
+  // phones: the side navigation is a drawer opened by the Menu button
+  (function () {
+    var btn = document.getElementById('menuBtn'), back = document.getElementById('navBackdrop');
+    function open(on) {
+      document.body.classList.toggle('nav-open', on);
+      btn.setAttribute('aria-expanded', String(on));
+      back.hidden = !on;
+      if (on) document.querySelector('.side-nav a').focus();
+    }
+    btn.addEventListener('click', function () { open(!document.body.classList.contains('nav-open')); });
+    back.addEventListener('click', function () { open(false); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && document.body.classList.contains('nav-open')) { open(false); btn.focus(); } });
+  })();
   translateStatic();
   document.querySelectorAll('[data-lang]').forEach(function (a) {
     if (a.getAttribute('data-lang') === LANG) a.setAttribute('aria-current', 'true');
