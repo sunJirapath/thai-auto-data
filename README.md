@@ -2,6 +2,8 @@
 
 **English** | [ภาษาไทย](README.th.md)
 
+**ยอดจดทะเบียนรถยนต์ใหม่ประเทศไทย รายเดือน** แยกยี่ห้อ รุ่น จังหวัด และชนิดเชื้อเพลิง (รถยนต์ไฟฟ้า EV ไฮบริด) ตั้งแต่ ม.ค. 2564 จากกรมการขนส่งทางบก พร้อมราคารถยนต์จากเว็บไซต์ทางการ ดาวน์โหลด CSV ฟรี · [อ่านภาษาไทย](README.th.md)
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23348748.svg)](https://doi.org/10.5281/zenodo.23348748) [![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](LICENSE) ![Data: 2021-01 to 2026-09](https://img.shields.io/badge/data-2021--01%20to%202026--09-green.svg) ![Format: CSV](https://img.shields.io/badge/format-CSV-orange.svg) [![Site](https://img.shields.io/badge/site-GitHub%20Pages-black.svg)](https://sunjirapath.github.io/thai-auto-data/)
 
 Open data on the Thai car market: monthly new-vehicle registrations by brand and model, plus prices from official manufacturer websites, as plain CSV files you can download and use directly.

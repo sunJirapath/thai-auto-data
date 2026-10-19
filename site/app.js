@@ -2518,7 +2518,7 @@
     document.getElementById('fArea').parentNode.hidden = !pf.area;
     setNav(page === 'brand' || page === 'model' ? '' : page);
     var title = document.querySelector('.side-nav a[data-nav="' + page + '"]');
-    if (!m) document.title = (page === 'overview' ? L('Thai Car Market', 'ตลาดรถยนต์ไทย') : title ? title.textContent : L('Thai Car Market', 'ตลาดรถยนต์ไทย')) + ' · thai-auto-data';
+    if (!m) document.title = (page === 'overview' ? 'ยอดจดทะเบียนรถยนต์ใหม่ · ' + L('Thai Car Market', 'ตลาดรถยนต์ไทย') : title ? title.textContent : L('Thai Car Market', 'ตลาดรถยนต์ไทย')) + ' · thai-auto-data';
     renderExplorer();
     if (changed) window.scrollTo(0, 0);
   }
