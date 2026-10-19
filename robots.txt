@@ -1,0 +1,6 @@
+# Crawlers read robots.txt only at the domain root (sunjirapath.github.io/robots.txt),
+# so this copy is a pointer; submit the sitemap in Google Search Console for it to count.
+User-agent: *
+Allow: /
+
+Sitemap: https://sunjirapath.github.io/thai-auto-data/sitemap.xml
