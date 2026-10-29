@@ -21,7 +21,7 @@
     if (LANG !== 'th') return;
     var T = window.TH || {};
     function th(s) { var k = s.replace(/\s+/g, ' ').trim(); return k && T[k] !== undefined ? T[k] : null; }
-    var heads = Array.prototype.map.call(document.querySelectorAll('h1, h2'), function (h) { return [h, h.textContent.trim()]; });
+    var heads = Array.prototype.map.call(document.querySelectorAll('h1, h2:not(.side-group)'), function (h) { return [h, h.textContent.trim()]; });
     var walk = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null), n, nodes = [];
     while ((n = walk.nextNode())) nodes.push(n);
     nodes.forEach(function (node) {
@@ -2571,7 +2571,9 @@
     D.pricesBy = {}; res[5].forEach(function (p) { (D.pricesBy[p.model_id] = D.pricesBy[p.model_id] || []).push(p); });
     D.brandRows = index(D.brand, 'brand_id'); D.modelRows = index(D.model, 'model_id');
     D.statusText = L('Latest data: ', 'ข้อมูลล่าสุด: ') + monthLabel(lastOk(), true) + L(' · Source: Department of Land Transport', ' · แหล่งข้อมูล: กรมการขนส่งทางบก');
-    document.getElementById('status').textContent = D.statusText;
+    var stEl = document.getElementById('status');
+    stEl.className = 'status';
+    stEl.textContent = D.statusText;
     window.addEventListener('hashchange', route);
     route();
     var mq = window.matchMedia('(prefers-color-scheme: dark)');
