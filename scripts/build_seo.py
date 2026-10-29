@@ -161,7 +161,6 @@ def page_html(slug, p):
 <meta name="description" content="{escape(p['desc'])}">
 <link rel="canonical" href="{url}">
 <link rel="alternate" hreflang="th" href="{url}">
-<link rel="alternate" hreflang="en" href="{url}">
 <link rel="alternate" hreflang="x-default" href="{url}">
 <meta property="og:title" content="{escape(title)}">
 <meta property="og:url" content="{url}">
