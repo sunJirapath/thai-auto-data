@@ -3,13 +3,13 @@
 (function () {
   'use strict';
 
-  // ---------- language: English by default, Thai with ?lang=th or the saved choice ----------
+  // ---------- language: Thai by default (matches the static HTML), English with ?lang=en or the saved choice ----------
   var LANG = (function () {
-    var m = (location.hash || '').match(/[?&]lang=(th|en)\b/);
+    var m = ((location.search || '') + (location.hash || '')).match(/[?&]lang=(th|en)\b/);
     if (m) return m[1];
-    try { return localStorage.getItem('lang') === 'th' ? 'th' : 'en'; } catch (e) { return 'en'; }
+    try { return localStorage.getItem('lang') === 'en' ? 'en' : 'th'; } catch (e) { return 'th'; }
   })();
-  // L('English', 'ไทย'): English by default, the Thai text when the page is in Thai
+  // L('English', 'ไทย'): the Thai text when the page is in Thai (the default), else the English
   function L(en, th) { return LANG === 'th' && th !== undefined ? th : en; }
   function yearOf(ce) { return LANG === 'en' ? ce : ce + 543; }
   var REGION_EN = { central: 'Central', east: 'East', northeast: 'Northeast', north: 'North', west: 'West', south: 'South' };
@@ -42,8 +42,9 @@
   function setLang(lang) {
     try { localStorage.setItem('lang', lang); } catch (e) { /* private mode: the link still carries it */ }
     var h = location.hash || '#/', base = h.split('?')[0], q = (h.split('?')[1] || '').split('&').filter(function (kv) { return kv && kv.indexOf('lang=') !== 0; });
-    if (lang === 'th') q.push('lang=th');
-    history.replaceState(null, '', base + (q.length ? '?' + q.join('&') : ''));
+    if (lang === 'en') q.push('lang=en');
+    var s = location.search.replace(/([?&])lang=(th|en)\b&?/, '$1').replace(/[?&]$/, ''); // a real ?lang=en must not outlive the switch
+    history.replaceState(null, '', location.pathname + s + base + (q.length ? '?' + q.join('&') : ''));
     location.reload();
   }
 
@@ -1182,7 +1183,7 @@
     if (cats.length < 3) q.push('cats=' + cats.join('.'));
     if (M.area !== 'all') q.push('area=' + encodeURIComponent(M.area));
     if (M.metric !== 'units') q.push('metric=' + M.metric);
-    if (LANG === 'th') q.push('lang=th');
+    if (LANG === 'en') q.push('lang=en');
     return q.length ? '?' + q.join('&') : '';
   }
   function applyQuery(qs) {
@@ -1205,7 +1206,7 @@
   }
   function syncHash() {
     var base = (location.hash || '#/').split('?')[0];
-    var want = base + (D.page === 'data' ? (LANG === 'th' ? '?lang=th' : '') : filterQuery());
+    var want = base + (D.page === 'data' ? (LANG === 'en' ? '?lang=en' : '') : filterQuery());
     if (want !== location.hash) history.replaceState(null, '', want);
   }
 
@@ -2518,7 +2519,7 @@
     document.getElementById('fArea').parentNode.hidden = !pf.area;
     setNav(page === 'brand' || page === 'model' ? '' : page);
     var title = document.querySelector('.side-nav a[data-nav="' + page + '"]');
-    if (!m) document.title = (page === 'overview' ? 'ยอดจดทะเบียนรถยนต์ใหม่ · ' + L('Thai Car Market', 'ตลาดรถยนต์ไทย') : title ? title.textContent : L('Thai Car Market', 'ตลาดรถยนต์ไทย')) + ' · thai-auto-data';
+    if (!m) document.title = (page === 'overview' ? L('New Car Registrations', 'ยอดจดทะเบียนรถยนต์ใหม่') + ' · ' + L('Thai Car Market', 'ตลาดรถยนต์ไทย') : title ? title.textContent : L('Thai Car Market', 'ตลาดรถยนต์ไทย')) + ' · thai-auto-data';
     renderExplorer();
     if (changed) window.scrollTo(0, 0);
   }

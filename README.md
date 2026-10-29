@@ -8,7 +8,7 @@
 
 Open data on the Thai car market: monthly new-vehicle registrations by brand and model, plus prices from official manufacturer websites, as plain CSV files you can download and use directly.
 
-**Interactive site:** https://sunjirapath.github.io/thai-auto-data/ with pages for the overview (totals, regions, map in units or per 1,000 people), rankings with the fastest-growing and fastest-declining models, trends and market share over time, powertrain / EV, segments (body type), parent-company country, brand × region, seasonality, price bands, new launches, model comparison, and brand and model detail. Every page, including brand, model and compare pages, uses the same date range, category and area filters, and each page's link keeps those filters, so a view can be shared. The site is in English by default and in Thai with the switch at the top right (or `lang=th` in the link).
+**Interactive site:** https://sunjirapath.github.io/thai-auto-data/ with pages for the overview (totals, regions, map in units or per 1,000 people), rankings with the fastest-growing and fastest-declining models, trends and market share over time, powertrain / EV, segments (body type), parent-company country, brand × region, seasonality, price bands, new launches, model comparison, and brand and model detail. Every page, including brand, model and compare pages, uses the same date range, category and area filters, and each page's link keeps those filters, so a view can be shared. The site is in Thai by default and in English with the switch at the top right (or `lang=en` in the link).
 
 > **Please cite this dataset when you use it.** It is published under [CC BY 4.0](LICENSE). If you use, republish or build on this data, you must credit both **thai-auto-data** and the **Department of Land Transport (กรมการขนส่งทางบก)**. See [How to cite](#how-to-cite).
 
@@ -89,6 +89,8 @@ Or clone the whole repository: `git clone https://github.com/sunJirapath/thai-au
 The data is updated when the DLT publishes a new monthly file. Every file is checked before it is accepted. The row count must not be abnormally low, the month inside the file must match its title, and every count must be a nonnegative integer. A file that fails is logged in `data/sources.csv` with the reason and is not used.
 
 The data comes from the DLT Transport Statistics website (web.dlt.go.th/statistics), which updates monthly. On every import, each category total must match the DLT's own monthly totals file to the vehicle. As of 14 October 2026, the latest month is September 2026 (processed by the DLT on 5 October 2026).
+
+**After every data refresh** (right after the summarize step of the collector job on the NAS, which lives outside this repo) run `python scripts/build_seo.py`. It rebuilds the crawlable HTML in `index.html`, the static summary pages `brands/`, `models/` and `ev/`, and `sitemap.xml`; commit them with the data. `python scripts/build_seo.py --check` exits 1 if any of them is out of date (no writes). There is no CI in this repo, so run it by hand.
 
 ## Questions this data can answer
 
