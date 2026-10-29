@@ -132,6 +132,7 @@ Retrieved: <your download date>
 ## สัญญาอนุญาต
 
 - งานรวบรวม จัดระเบียบ รหัส และไฟล์สรุปในที่นี้: [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE)
+- โค้ดเว็บไซต์ (`index.html`, `site/*.js`, `site/style.css`): [MIT](LICENSE-CODE)
 - ข้อมูลต้นฉบับเป็นของกรมการขนส่งทางบก เผยแพร่ภายใต้สัญญาอนุญาต "Open Data Common" ของภาครัฐ ผู้ใช้ต้องอ้างอิงกรมการขนส่งทางบกด้วย ดู [DATA_SOURCES.md](DATA_SOURCES.md)
 - ขอบเขตจังหวัดบนแผนที่ (`site/th-provinces.geojson`) มาจาก geoBoundaries / © ผู้ร่วมพัฒนา OpenStreetMap สัญญาอนุญาต ODbL 1.0 ไม่อยู่ภายใต้ CC BY 4.0 ของ repo นี้
 - ชื่อยี่ห้อและรุ่นรถเป็นเครื่องหมายการค้าของเจ้าของ ใช้เพื่อระบุตัวรถเท่านั้น

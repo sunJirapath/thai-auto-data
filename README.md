@@ -124,6 +124,7 @@ Open an [issue](https://github.com/sunJirapath/thai-auto-data/issues) with the f
 ## License
 
 - The compilation, normalization, IDs and summary files in this repository: [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE).
+- The website code (`index.html`, `site/*.js`, `site/style.css`): [MIT](LICENSE-CODE).
 - The original data belongs to the Department of Land Transport and is published under the Thai government "Open Data Common" license. Users must also credit the DLT. See [DATA_SOURCES.md](DATA_SOURCES.md).
 - The province boundaries used by the map (`site/th-provinces.geojson`) come from geoBoundaries / © OpenStreetMap contributors under ODbL 1.0, not this repository's CC BY 4.0.
 - Brand and model names are trademarks of their owners and are used only to identify vehicles.

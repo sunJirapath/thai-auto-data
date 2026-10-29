@@ -14,7 +14,10 @@ authors:
   - name: sunJirapath
 repository: "https://github.com/sunJirapath/thai-auto-data"
 url: "https://github.com/sunJirapath/thai-auto-data"
-license: CC-BY-4.0
+# Data: CC BY 4.0 (LICENSE). Website code: MIT (LICENSE-CODE).
+license:
+  - CC-BY-4.0
+  - MIT
 doi: "10.5281/zenodo.23348748"
 identifiers:
   - type: doi
