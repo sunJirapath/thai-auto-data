@@ -465,6 +465,11 @@
     isos.forEach(function (i) { s += (byIso[i] && byIso[i][cat]) || 0; });
     return s;
   }
+  // a month the DLT has published only as national totals: no area split, so it exists for the whole country only
+  function provPeriod() {
+    var r = D.provisional[D.provisional.length - 1];
+    return r && r.period > lastOk() && M.area === 'all' ? r.period : null;
+  }
   function selectedMonths() {
     var ps = okPeriods(), last = ps[ps.length - 1];
     if (M.range === 'all') return ps;
@@ -589,19 +594,22 @@
 
   function renderMarketCard() {
     var isos = areaProvinces(M.area), cats = selCats(), months = selectedMonths();
-    var order = [], buckets = {};
-    months.forEach(function (p) {
+    var order = [], buckets = {}, prov = provPeriod();
+    // the chart and table also carry the national-total-only month when the range reaches the latest full month (the stats and map below do not)
+    var chartMonths = prov && months[months.length - 1] === lastOk() ? (/^\d+$/.test(M.range) ? months.slice(1) : months).concat(prov) : months;
+    chartMonths.forEach(function (p) {
       var k = bucketKey(p);
       if (!buckets[k]) { buckets[k] = { months: [], cat: {}, total: 0, prev: 0, prevOk: true }; order.push(k); }
       var b = buckets[k];
       b.months.push(p);
+      if (p === prov) b.prov = true;
       cats.forEach(function (c) { var v = unitsFor(p, isos, c); b.cat[c] = (b.cat[c] || 0) + v; b.total += v; });
       var q = shiftMonth(p, -12);
       if (!D.okSet[q]) b.prevOk = false;
       else cats.forEach(function (c) { b.prev += unitsFor(q, isos, c); });
     });
     var total = 0, prev = 0, prevOk = priorOk(months);
-    order.forEach(function (k) { total += buckets[k].total; });
+    months.forEach(function (p) { cats.forEach(function (c) { total += unitsFor(p, isos, c); }); });   // ok months only: the stats exclude the national-total-only month
     if (prevOk) priorMonths(months).forEach(function (q) { cats.forEach(function (c) { prev += unitsFor(q, isos, c); }); });
 
     // stats
@@ -624,6 +632,14 @@
         yoy === null ? '' : yoy >= 0 ? 'up' : 'down'),
       stat(L('Monthly average', 'เฉลี่ยต่อเดือน'), fmt(Math.round(total / months.length)) + L(' units', ' คัน'), months.length + L(' months', ' เดือน')),
       stat(L('Latest month · ', 'เดือนล่าสุด · ') + monthLabel(last, true), fmt(lastV) + L(' units', ' คัน'), mom === null ? '' : L('vs previous month ', 'จากเดือนก่อน ') + pctText(mom), mom === null ? '' : mom >= 0 ? 'up' : 'down'));
+    if (prov) {
+      var provV = 0, okV = 0;
+      cats.forEach(function (c) { provV += unitsFor(prov, null, c); okV += unitsFor(lastOk(), null, c); });
+      var provMom = okV ? 100 * (provV - okV) / okV : null;
+      add(stats, stat(monthLabel(prov, true) + L(' · national total only', ' · ยอดรวมทั้งประเทศเท่านั้น'), fmt(provV) + L(' units', ' คัน'),
+        (provMom === null ? '' : pctText(provMom) + ' ' + L('vs previous month · ', 'จากเดือนก่อน · ')) + L('awaiting brand and model data', 'รอข้อมูลยี่ห้อและรุ่น'),
+        provMom === null ? '' : provMom >= 0 ? 'up' : 'down'));
+    }
 
     // main chart: stacked categories + same period last year (one axis, same unit)
     var surface = css('--surface'), datasets = [];
@@ -631,7 +647,8 @@
       var code = c[0].toUpperCase();
       if (!M.cats[code]) return;
       datasets.push({ type: 'bar', label: c[1], data: order.map(function (key) { return buckets[key].cat[code]; }),
-        backgroundColor: seriesColor(k), borderWidth: 0, borderSkipped: 'start', maxBarThickness: 34, stack: 'm', order: 2 });   // no separators: they hid the thin RY2 band
+        backgroundColor: function (ctx) { var col = seriesColor(k); return buckets[order[ctx.dataIndex]].prov && /^#[0-9a-f]{6}$/i.test(col) ? col + '66' : col; },   // the national-total-only month is drawn faded
+        borderWidth: 0, borderSkipped: 'start', maxBarThickness: 34, stack: 'm', order: 2 });   // no separators: they hid the thin RY2 band
     });
     datasets[datasets.length - 1].borderRadius = { topLeft: 4, topRight: 4 };
     var topIndex = datasets.length - 1;
@@ -649,7 +666,7 @@
     opt.plugins.tooltip.callbacks = {
       title: function (items) {
         var b = buckets[order[items[0].dataIndex]];
-        return items[0].label + (b.months.length > 1 ? ' (' + monthLabel(b.months[0]) + '–' + monthLabel(b.months[b.months.length - 1]) + ')' : '');
+        return items[0].label + (b.months.length > 1 ? ' (' + monthLabel(b.months[0]) + '–' + monthLabel(b.months[b.months.length - 1]) + ')' : '') + (b.prov ? L(' · national total only', ' · ยอดรวมเท่านั้น') : '');
       },
       label: function (c) { return c.raw === null ? ' ' + c.dataset.label + L(': no data', ': ไม่มีข้อมูล') : ' ' + c.dataset.label + ': ' + fmt(c.raw) + L(' units', ' คัน'); },
       footer: function (items) {
@@ -665,12 +682,13 @@
     var notes = [L('January is almost double December every year; the pattern is in the DLT data itself', 'ยอดเดือนมกราคมสูงกว่าธันวาคมเกือบเท่าตัวทุกปี เป็นรูปแบบที่อยู่ในข้อมูลของกรมฯ เอง'),
       L('Many four-door pickups are registered as RY1', 'กระบะ 4 ประตูจำนวนมากจดเป็น ร.ย.1')];
     if (M.grain !== 'm') notes.push(L('* or (n mo) marks a period with incomplete data under the selected filters', '* หรือ (n ด.) คือช่วงที่มีข้อมูลไม่ครบในตัวกรองที่เลือก'));
+    if (prov && chartMonths.indexOf(prov) >= 0) notes.push(L('Faded bar: ' + monthLabel(prov, true) + ' is a national total only (RY1–RY3), not yet split by brand and model; it is not in the stats and map', 'แท่งจาง: ' + monthLabel(prov, true) + ' มีเฉพาะยอดรวมทั้งประเทศ (ร.ย.1–3) ยังไม่แยกยี่ห้อและรุ่น ไม่นับในสถิติด้านบนและแผนที่'));
     if (M.area !== 'all') notes.push(L('Vehicles are counted where they are registered; company and leasing cars registered in Bangkok make Bangkok higher than local use', 'รถนับตามจังหวัดที่จดทะเบียน รถของบริษัทและลีสซิ่งที่จดในกรุงเทพฯ ทำให้ยอดกรุงเทพฯ สูงกว่าจำนวนผู้ใช้จริงในพื้นที่'));
     document.getElementById('mNote').textContent = notes.join(' · ');
 
     var trs = order.slice().reverse().map(function (k) {
       var b = buckets[k], tr = el('tr');
-      tr.appendChild(el('td', {}, bucketLabel(k, b.months.length)));
+      tr.appendChild(el('td', {}, bucketLabel(k, b.months.length) + (b.prov ? L(' (national total only)', ' (ยอดรวมเท่านั้น)') : '')));
       ['RY1', 'RY2', 'RY3'].forEach(function (c) { tr.appendChild(el('td', { class: 'n' }, M.cats[c] ? fmt(b.cat[c]) : '—')); });
       tr.appendChild(el('td', { class: 'n' }, fmt(b.total)));
       tr.appendChild(el('td', { class: 'n' }, b.prevOk ? fmt(b.prev) : '—'));
@@ -1524,7 +1542,7 @@
   // ----- seasonality page: year x month heatmap and one line per year -----
   var SE = { mode: 'units' };
   function renderSeasonality() {
-    var isos = areaProvinces(M.area), cats = selCats(), years = {}, all = okPeriods();   // every year; types and area follow the filters
+    var isos = areaProvinces(M.area), cats = selCats(), years = {}, prov = provPeriod(), all = okPeriods().concat(prov || []);   // every year; types and area follow the filters
     all.forEach(function (p) {
       var y = p.slice(0, 4), v = 0;
       cats.forEach(function (c) { v += unitsFor(p, isos, c); });
@@ -1538,9 +1556,10 @@
       tr.appendChild(el('th', { scope: 'row' }, String(yearOf(+y))));
       for (var m = 1; m <= 12; m++) {
         if (row[m] === undefined) { tr.appendChild(el('td', { class: 'n na' }, '—')); continue; }
-        var td = SE.mode === 'units' ? heatCell(fmtK(row[m]), 8 + 72 * (row[m] - min) / ((max - min) || 1))   // lowest month to highest
+        var isProv = y + '-' + (m < 10 ? '0' : '') + m === prov;
+        var td = SE.mode === 'units' ? heatCell(fmtK(row[m]) + (isProv ? '*' : ''), 8 + 72 * (row[m] - min) / ((max - min) || 1))   // lowest month to highest
           : heatCell(Math.round(100 * row[m] / avg) + '', Math.min(80, Math.abs(100 * row[m] / avg - 100) * 1.2), row[m] < avg);
-        td.title = TH_MONTHS[m - 1] + ' ' + yearOf(+y) + ': ' + fmt(row[m]) + L(' units · ', ' คัน · ') + Math.round(100 * row[m] / avg) + L('% of that year\'s monthly average', '% ของค่าเฉลี่ยรายเดือนปีนั้น');
+        td.title = TH_MONTHS[m - 1] + ' ' + yearOf(+y) + ': ' + fmt(row[m]) + L(' units · ', ' คัน · ') + Math.round(100 * row[m] / avg) + L('% of that year\'s monthly average', '% ของค่าเฉลี่ยรายเดือนปีนั้น') + (isProv ? L(' · national total only, brand and model data pending', ' · ยอดรวมทั้งประเทศเท่านั้น รอข้อมูลยี่ห้อและรุ่น') : '');
         tr.appendChild(td);
       }
       tr.appendChild(el('td', { class: 'n' }, fmtK(vals.reduce(function (a, b) { return a + b; }, 0)) + (vals.length < 12 ? ' (' + vals.length + L(' mo)', ' ด.)') : '')));
@@ -1551,6 +1570,7 @@
     var t = table([[L('Year', 'ปี')]].concat(TH_MONTHS.map(function (m) { return [m, 1]; })).concat([[L('Total', 'รวม'), 1]]), trs);
     t.classList.add('heatmap');
     box.appendChild(t);
+    if (prov) box.appendChild(el('p', { class: 'note' }, '* ' + monthLabel(prov, true) + L(': national total only (RY1–RY3), brand and model data pending; the dashed line segment is the same month', ': ยอดรวมทั้งประเทศเท่านั้น (ร.ย.1–3) รอข้อมูลยี่ห้อและรุ่น เส้นประในกราฟคือเดือนเดียวกัน')));
 
     var o = baseOptions();
     o.scales.y.ticks.callback = kTicks;
@@ -1565,7 +1585,8 @@
       data: { labels: TH_MONTHS, datasets: recent.map(function (y, i) {
         var last = i === recent.length - 1;
         return { label: String(yearOf(+y)), data: TH_MONTHS.map(function (m, j) { return years[y][j + 1] === undefined ? null : years[y][j + 1]; }),
-          borderColor: yearColor(i), backgroundColor: yearColor(i), borderWidth: last ? 3 : 1.75, pointRadius: last ? 3 : 0, tension: 0, spanGaps: false };
+          borderColor: yearColor(i), backgroundColor: yearColor(i), borderWidth: last ? 3 : 1.75, pointRadius: last ? 3 : 0, tension: 0, spanGaps: false,
+          segment: { borderDash: function (c) { return prov && last && c.p1DataIndex === +prov.slice(5, 7) - 1 ? [5, 4] : undefined; } } };   // dashed into the national-total-only month
       }) }
     });
   }
@@ -2567,6 +2588,7 @@
     D.market = res[0].filter(function (r) { return r.status !== 'provisional'; }); D.brand = res[1]; D.model = res[2];
     D.okSet = {}; D.marketBy = {};
     D.market.forEach(function (r) { D.marketBy[r.period] = r; if (r.status === 'ok') D.okSet[r.period] = true; });
+    D.provisional.forEach(function (r) { D.marketBy[r.period] = r; });   // readable by unitsFor for the whole country, but never in okSet
     D.brandName = {}; D.brandCountry = {};
     res[3].forEach(function (b) { D.brandName[b.brand_id] = b.name; D.brandCountry[b.brand_id] = b.parent_country; });
     D.modelInfo = {}; res[4].forEach(function (m) { D.modelInfo[m.model_id] = m; });
