@@ -2563,7 +2563,8 @@
     res[7].forEach(function (p) { D.provinceInfo[p.province_iso] = p; D.regionName[p.region] = LANG === 'en' ? REGION_EN[p.region] : p.region_th; });
     D.map = prepareMap(res[9]);
     D.population = {}; res[8].forEach(function (p) { D.population[p.province_iso] = +p.population; D.populationAsOf = p.as_of; });
-    D.market = res[0]; D.brand = res[1]; D.model = res[2];
+    D.provisional = res[0].filter(function (r) { return r.status === 'provisional'; });   // national totals only: shown in the status line, never in charts or rankings
+    D.market = res[0].filter(function (r) { return r.status !== 'provisional'; }); D.brand = res[1]; D.model = res[2];
     D.okSet = {}; D.marketBy = {};
     D.market.forEach(function (r) { D.marketBy[r.period] = r; if (r.status === 'ok') D.okSet[r.period] = true; });
     D.brandName = {}; D.brandCountry = {};
@@ -2572,6 +2573,11 @@
     D.pricesBy = {}; res[5].forEach(function (p) { (D.pricesBy[p.model_id] = D.pricesBy[p.model_id] || []).push(p); });
     D.brandRows = index(D.brand, 'brand_id'); D.modelRows = index(D.model, 'model_id');
     D.statusText = L('Latest data: ', 'ข้อมูลล่าสุด: ') + monthLabel(lastOk(), true) + L(' · Source: Department of Land Transport', ' · แหล่งข้อมูล: กรมการขนส่งทางบก');
+    D.provisional.forEach(function (r) {
+      D.statusText += ' · ' + monthLabel(r.period, true) + L(': national total only, ', ': ยอดรวมทั้งประเทศเท่านั้น ') + fmt(r.total) +
+        (r.mom_pct === '' ? '' : ' (' + pctText(r.mom_pct) + ' ' + L('vs previous month', 'จากเดือนก่อน') + ')') +
+        L('; brand and model detail awaiting the DLT', ' · รอข้อมูลยี่ห้อและรุ่นจากกรมการขนส่งทางบก');
+    });
     var stEl = document.getElementById('status');
     stEl.className = 'status';
     stEl.textContent = D.statusText;

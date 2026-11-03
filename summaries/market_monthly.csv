@@ -68,3 +68,4 @@ period,status,ry1,ry2,ry3,total,unmatched_model_units,mom_pct,yoy_pct,source_id,
 2026-07,ok,50964,1184,6254,58402,389,-6.13,14.60,dlt-web-827cefc3,
 2026-08,ok,54275,917,7012,62204,643,6.51,32.75,dlt-web-827cefc3,
 2026-09,ok,52577,986,6547,60110,566,-3.37,23.77,dlt-web-827cefc3,
+2026-10,provisional,46979,819,5952,53750,,-10.58,16.76,,DLT national totals only; brand and model detail not yet published (https://web.dlt.go.th/statistics/load_file_select.php?data_file=3029)
