@@ -624,6 +624,16 @@
         yoy === null ? '' : yoy >= 0 ? 'up' : 'down'),
       stat(L('Monthly average', 'เฉลี่ยต่อเดือน'), fmt(Math.round(total / months.length)) + L(' units', ' คัน'), months.length + L(' months', ' เดือน')),
       stat(L('Latest month · ', 'เดือนล่าสุด · ') + monthLabel(last, true), fmt(lastV) + L(' units', ' คัน'), mom === null ? '' : L('vs previous month ', 'จากเดือนก่อน ') + pctText(mom), mom === null ? '' : mom >= 0 ? 'up' : 'down'));
+    // a month the DLT has published only as national totals: no area split, so only for the whole country
+    var prov = M.area === 'all' && D.provisional[D.provisional.length - 1];
+    if (prov && prov.period > lastOk()) {
+      var provV = 0, okV = 0;
+      cats.forEach(function (c) { provV += +prov[c.toLowerCase()]; okV += unitsFor(lastOk(), isos, c); });
+      var provMom = okV ? 100 * (provV - okV) / okV : null;
+      add(stats, stat(monthLabel(prov.period, true) + L(' · national total only', ' · ยอดรวมทั้งประเทศเท่านั้น'), fmt(provV) + L(' units', ' คัน'),
+        (provMom === null ? '' : pctText(provMom) + ' ' + L('vs previous month · ', 'จากเดือนก่อน · ')) + L('awaiting brand and model data', 'รอข้อมูลยี่ห้อและรุ่น'),
+        provMom === null ? '' : provMom >= 0 ? 'up' : 'down'));
+    }
 
     // main chart: stacked categories + same period last year (one axis, same unit)
     var surface = css('--surface'), datasets = [];
