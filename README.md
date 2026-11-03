@@ -35,6 +35,8 @@ Open data on the Thai car market: monthly new-vehicle registrations by brand and
 
 **Coverage:** January 2021 to September 2026 (BE 2564 to 2569), 69 months, none missing.
 
+<!-- pending -->**Pending full data:** October 2026 has the national total only (53,750 registrations, RY1 to RY3). Brand, model, province and fuel data follow when the DLT publishes the full file.<!-- /pending -->
+
 **Prices:** 579 official-website prices for 158 models so far (Toyota, Honda, Isuzu, Mitsubishi, Ford, Nissan, Mazda, Suzuki, BYD, MG, GWM/Haval/ORA/Tank, Changan/Deepal, Chery, Omoda/Jaecoo, AION, Wuling, Tesla, Hyundai, Kia, XPENG, BMW, MINI, Volvo and AVATR), covering 92% of the last 12 months' registrations, each linked to the page it came from. Price history starts from the first observation, so it is not complete back in time.
 
 If a month has no source data, it appears as `status=missing` with empty numbers, **not 0**. Details in [DATA_SOURCES.md](DATA_SOURCES.md). A month the DLT has published only as national totals (RY1-RY3, before the brand and model file) appears in `summaries/market_monthly.csv` as `status=provisional`, with no brand or model rows; the source is in `data/provisional_totals.csv`, and the row becomes `ok` when the full file arrives.
