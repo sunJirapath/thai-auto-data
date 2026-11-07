@@ -1,9 +1,9 @@
 {
   "name": "thai-auto-data",
   "title": "Thailand new vehicle registrations and car prices (open data)",
-  "description": "Monthly new vehicle registrations in Thailand (DLT categories RY1-RY3) by brand, model, province and fuel type from 2021-01 to 2026-09, from the Department of Land Transport, with prices from official manufacturer websites. Registrations, not sales. Missing data is left empty, never 0.",
+  "description": "Monthly new vehicle registrations in Thailand (DLT categories RY1-RY3) by brand, model, province and fuel type from 2021-01 to 2026-10, from the Department of Land Transport, with prices from official manufacturer websites. Registrations, not sales. Missing data is left empty, never 0.",
   "homepage": "https://github.com/sunJirapath/thai-auto-data",
-  "version": "2026-09",
+  "version": "2026-10",
   "keywords": [
     "Thailand",
     "car registrations",
@@ -42,7 +42,7 @@
   ],
   "temporal": {
     "start": "2021-01",
-    "end": "2026-09"
+    "end": "2026-10"
   },
   "resources": [
     {
@@ -717,7 +717,8 @@
         "data/registrations/2026-06.csv",
         "data/registrations/2026-07.csv",
         "data/registrations/2026-08.csv",
-        "data/registrations/2026-09.csv"
+        "data/registrations/2026-09.csv",
+        "data/registrations/2026-10.csv"
       ],
       "format": "csv",
       "mediatype": "text/csv",
@@ -839,7 +840,8 @@
         "data/registrations_by_province/2026-06.csv",
         "data/registrations_by_province/2026-07.csv",
         "data/registrations_by_province/2026-08.csv",
-        "data/registrations_by_province/2026-09.csv"
+        "data/registrations_by_province/2026-09.csv",
+        "data/registrations_by_province/2026-10.csv"
       ],
       "format": "csv",
       "mediatype": "text/csv",
@@ -951,7 +953,8 @@
         "data/registrations_by_fuel/2026-06.csv",
         "data/registrations_by_fuel/2026-07.csv",
         "data/registrations_by_fuel/2026-08.csv",
-        "data/registrations_by_fuel/2026-09.csv"
+        "data/registrations_by_fuel/2026-09.csv",
+        "data/registrations_by_fuel/2026-10.csv"
       ],
       "format": "csv",
       "mediatype": "text/csv",

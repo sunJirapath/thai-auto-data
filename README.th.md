@@ -2,7 +2,7 @@
 
 [English](README.md) | **ภาษาไทย**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23348748.svg)](https://doi.org/10.5281/zenodo.23348748) [![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](LICENSE) ![Data: 2021-01 to 2026-09](https://img.shields.io/badge/data-2021--01%20to%202026--09-green.svg) ![Format: CSV](https://img.shields.io/badge/format-CSV-orange.svg) [![Site](https://img.shields.io/badge/site-GitHub%20Pages-black.svg)](https://sunjirapath.github.io/thai-auto-data/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23348748.svg)](https://doi.org/10.5281/zenodo.23348748) [![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](LICENSE) ![Data: 2021-01 to 2026-10](https://img.shields.io/badge/data-2021--01%20to%202026--10-green.svg) ![Format: CSV](https://img.shields.io/badge/format-CSV-orange.svg) [![Site](https://img.shields.io/badge/site-GitHub%20Pages-black.svg)](https://sunjirapath.github.io/thai-auto-data/)
 
 *Thailand new car registration open data (monthly, by brand, model, province and fuel type, 2021 to now) with official car prices, as CSV. English: [README.md](README.md)*
 
@@ -35,11 +35,11 @@
 | [`data/aliases.csv`](data/aliases.csv) | ตารางจับคู่ชื่อรุ่นต้นฉบับของกรมการขนส่งทางบก กับ `model_id` (จับคู่แบบตรงตัวเท่านั้น) |
 | [`data/sources.csv`](data/sources.csv) | ทะเบียนแหล่งข้อมูล: URL ต้นฉบับ, วันที่ดึง, SHA-256, สถานะรับ/ปฏิเสธ พร้อมเหตุผล |
 
-**ช่วงข้อมูล:** มกราคม 2564 ถึง กันยายน 2569 (2021-01 ถึง 2026-09), 69 เดือน ครบทุกเดือน
+**ช่วงข้อมูล:** มกราคม 2564 ถึง ตุลาคม 2569 (2021-01 ถึง 2026-10), 70 เดือน ครบทุกเดือน
 
-<!-- pending -->**รอข้อมูลเต็ม:** ตุลาคม 2569 มีเฉพาะยอดรวมทั้งประเทศ (53,750 คัน ร.ย.1-ร.ย.3) ข้อมูลยี่ห้อ รุ่น จังหวัด และเชื้อเพลิงจะตามมาเมื่อกรมฯ ลงไฟล์เต็ม<!-- /pending -->
+<!-- pending --><!-- /pending -->
 
-**ราคา:** ตอนนี้มีราคาจากเว็บไซต์ทางการ 158 รุ่น 579 รายการ (Toyota, Honda, Isuzu, Mitsubishi, Ford, Nissan, Mazda, Suzuki, BYD, MG, GWM/Haval/ORA/Tank, Changan/Deepal, Chery, Omoda/Jaecoo, AION, Wuling, Tesla, Hyundai, Kia, XPENG, BMW, MINI, Volvo and AVATR) ครอบคลุม 92% ของยอดจดทะเบียน 12 เดือนล่าสุด ทุกแถวมีลิงก์หน้าเว็บที่ใช้อ้างอิง ประวัติราคาเริ่มจากวันที่บันทึก จึงไม่ครบย้อนหลัง
+**ราคา:** ตอนนี้มีราคาจากเว็บไซต์ทางการ 184 รุ่น 622 รายการ (Toyota, Lexus, Honda, Isuzu, Mitsubishi, Ford, Nissan, Mazda, Subaru, Suzuki, BYD, MG, GWM/Haval/ORA/Tank/POER, Changan/Deepal, Chery, Omoda/Jaecoo, AION, Wuling, Tesla, Hyundai, Kia, XPENG, Zeekr, Denza, BMW, MINI, Mercedes-Benz, Porsche, Volvo และ AVATR) ครอบคลุม 93% ของยอดจดทะเบียน 12 เดือนล่าสุด ทุกแถวมีลิงก์หน้าเว็บที่ใช้อ้างอิง ประวัติราคาเริ่มจากวันที่บันทึก จึงไม่ครบย้อนหลัง
 
 ถ้าเดือนใดไม่มีข้อมูลจากต้นทาง จะแสดงเป็น `status=missing` และเว้นตัวเลขว่าง **ไม่ใช่ 0** รายละเอียดอยู่ใน [DATA_SOURCES.md](DATA_SOURCES.md) เดือนที่กรมฯ ลงแค่ยอดรวมทั้งประเทศ (RY1-RY3) ก่อนไฟล์ยี่ห้อ-รุ่น จะอยู่ใน `summaries/market_monthly.csv` เป็น `status=provisional` ไม่มีแถวยี่ห้อหรือรุ่น แหล่งที่มาอยู่ใน `data/provisional_totals.csv` และจะเปลี่ยนเป็น `ok` เมื่อไฟล์เต็มมา
 
@@ -58,7 +58,7 @@ import pandas as pd
 
 base = "https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/"
 brands = pd.read_csv(base + "summaries/brand_monthly.csv")
-print(brands[brands.period == "2026-09"].head(10))   # 10 ยี่ห้อแรก ก.ย. 2569
+print(brands[brands.period == "2026-10"].head(10))   # 10 ยี่ห้อแรก ต.ค. 2569
 ```
 
 DuckDB / SQL:
@@ -92,7 +92,7 @@ ORDER BY period;
 
 ข้อมูลจะอัปเดตเมื่อกรมการขนส่งทางบกเผยแพร่ไฟล์รายเดือนใหม่ ทุกไฟล์ผ่านการตรวจก่อนรับเข้า: จำนวนแถวต้องไม่น้อยผิดปกติ, เดือนในเนื้อหาต้องตรงกับชื่อไฟล์, ตัวเลขต้องเป็นจำนวนเต็มไม่ติดลบ ไฟล์ที่ไม่ผ่านจะถูกบันทึกใน `data/sources.csv` พร้อมเหตุผลและไม่นำมาใช้
 
-ข้อมูลมาจากเว็บไซต์กลุ่มสถิติการขนส่ง กรมการขนส่งทางบก (web.dlt.go.th/statistics) ซึ่งอัปเดตทุกเดือน ทุกครั้งที่นำเข้า ยอดรวมแต่ละประเภทรถต้องตรงกับไฟล์ยอดรวมรายเดือนของกรมฯ ทุกคัน ณ วันที่ 14 ต.ค. 2569 ข้อมูลล่าสุดคือเดือนกันยายน 2569 (กรมฯ ประมวลผล 5 ต.ค. 2569)
+ข้อมูลมาจากเว็บไซต์กลุ่มสถิติการขนส่ง กรมการขนส่งทางบก (web.dlt.go.th/statistics) ซึ่งอัปเดตทุกเดือน ทุกครั้งที่นำเข้า ยอดรวมแต่ละประเภทรถต้องตรงกับไฟล์ยอดรวมรายเดือนของกรมฯ ทุกคัน ณ วันที่ 8 พ.ย. 2569 ข้อมูลล่าสุดคือเดือนตุลาคม 2569 (กรมฯ ประมวลผล 4 พ.ย. 2569)
 
 **หลังอัปเดตข้อมูลทุกครั้ง** (ต่อจากขั้นสรุป summaries ในงานของ collector บน NAS ซึ่งอยู่นอก repo นี้) ให้รัน `python scripts/build_seo.py` เพื่อสร้างส่วน HTML ที่ crawler อ่านได้ หน้าสรุป `brands/` `models/` `ev/` และ sitemap.xml ใหม่ แล้ว commit ไปพร้อมกัน ใช้ `python scripts/build_seo.py --check` ตรวจว่าไฟล์เหล่านี้ทันสมัยหรือไม่ (exit 1 ถ้าล้าสมัย)
 
