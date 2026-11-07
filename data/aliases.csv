@@ -272,6 +272,7 @@ BYD,T3,byd-t3
 CHANGAN,LUMIN,changan-lumin
 CHANGAN,LUMIN L DC,changan-lumin
 CHANGAN,NEVO Q05,changan-nevo-q05
+CHERY,Q QLICK,chery-q
 CHERY,Q QOOL,chery-q
 CHERY,Q QUINT,chery-q
 CHERY,TIGGO8 PHEV 2WD ESTEEM,chery-tiggo-8
@@ -292,6 +293,7 @@ DEEPAL,S07,deepal-s07
 DEEPAL,S07 L,deepal-s07
 DENZA,DENZA D9 AWD,denza-d9
 DENZA,DENZA D9 FWD,denza-d9
+DENZA,DENZA Z9GT PERFORMANCE,denza-z9-gt
 FORD,EVEREST,ford-everest
 FORD,MUSTANG,ford-mustang
 FORD,MUSTANG 2.3 ECOBOOST,ford-mustang
@@ -332,6 +334,7 @@ FORD,RANGER,ford-ranger
 FORD,RANGER RAPTOR,ford-ranger-raptor
 FORD,RANGER SUPER DUTY,ford-ranger
 FORD,RANGER SWB,ford-ranger
+FORTHING,FRIDAY EV,forthing-friday
 GAC,GN8 PHEV PREMIUM,gac-gn8
 GAC,M8 PHEV PREMIUM,gac-m8
 GEELY,EX2,geely-ex2
@@ -342,6 +345,7 @@ GWM,H6 HYBRID,haval-h6
 GWM,H6 PLUG-IN HYBRID,haval-h6
 GWM,ORA 5,gwm-ora-5
 GWM,POER SAHAR,poer-sahar
+GWM,WEY G9,gwm-wey-g9
 GWM,WEY G9 PLUG-IN HYBRID,gwm-wey-g9
 GWM TANK,300 HYBRID,gwm-tank-300
 GWM TANK,500 HYBRID,gwm-tank-500
@@ -371,6 +375,8 @@ HONDA,ODYSSEY ABSOLUTE EX,honda-odyssey
 HONDA,ODYSSEY ABSOLUTE EX 2.4L,honda-odyssey
 HONDA,ODYSSEY ABSOLUTE EX HYBRID,honda-odyssey
 HONDA,ODYSSEY E-HEV ABSOLUTE EX,honda-odyssey
+HONDA,PRELUDE E:HEV,honda-prelude
+HONDA,PRELUDE HYBRID,honda-prelude
 HONDA,STEP WAGON SPADA HYBRID,honda-step-wgn
 HONDA,STEP WGN,honda-step-wgn
 HONDA,STEP WGN AIR,honda-step-wgn
@@ -415,11 +421,13 @@ HYUNDAI,SANTA FE,hyundai-santa-fe
 HYUNDAI,SANTA FE HYBRID,hyundai-santa-fe
 HYUNDAI,STARGAZER,hyundai-stargazer
 HYUNDAI,STARIA,hyundai-staria
+HYUNDAI,STARIA HEV,hyundai-staria
 ISUZU,D-MAX,isuzu-d-max
 ISUZU,MU-X,isuzu-mu-x
 JAECOO,5 EV LONG RANGE DYNAMIC,jaecoo-5
 JAECOO,5 EV LONG RANGE MAX,jaecoo-5
 JAECOO,5 EV MAX+,jaecoo-5
+JAECOO,5 EV ULTRA,jaecoo-5
 JAECOO,6 EV 2WD MAX,jaecoo-6
 JAECOO,6 EV LONG RANGE 2WD,jaecoo-6
 JAECOO,6 EV LONG RANGE 2WD PRO,jaecoo-6
@@ -487,8 +495,10 @@ LEXUS,UX250H,lexus-ux
 LEXUS,UX300E,lexus-ux
 LEXUS,UX300H,lexus-ux
 MAZDA,CX-3,mazda-cx-3
+MAZDA,CX-6E,mazda-cx-6e
 MAZDA,MAZDA 2,mazda-mazda2
 MAZDA,MAZDA 3,mazda-mazda3
+MAZDA,MAZDA 6,mazda-mazda6
 MAZDA,MAZDA BT-50,mazda-bt-50
 MAZDA,MAZDA CX-3,mazda-cx-3
 MAZDA,MAZDA CX-30,mazda-cx-30
@@ -780,6 +790,7 @@ MINI,ONE 1.6 HATCH,mini-cooper
 MITSUBISHI,ATTRAGE,mitsubishi-attrage
 MITSUBISHI,MIRAGE,mitsubishi-mirage
 MITSUBISHI,OUTLANDER PHEV,mitsubishi-outlander
+MITSUBISHI,PAJERO,mitsubishi-pajero
 MITSUBISHI,PAJERO SPORT,mitsubishi-pajero-sport
 MITSUBISHI,TRITON,mitsubishi-triton
 MITSUBISHI,TRITON C-CAB 2.5 DID (T/C) GL,mitsubishi-triton
@@ -1006,6 +1017,8 @@ RIDDARA,HORIZON PRO 4WD SUNROOF,riddara-rd6
 RIDDARA,RD6 2WD,riddara-rd6
 RIDDARA,RD6 86KWH 2WD,riddara-rd6
 RIDDARA,RD6 ECON,riddara-rd6
+RIDDARA,RD6 ECON L 73KWH 2WD,riddara-rd6
+RIDDARA,RD6 ECON L 73KWH 4WD,riddara-rd6
 RIDDARA,RD6 PRO 2WD,riddara-rd6
 SUBARU,FORESTER 2.0I-L,subaru-forester
 SUBARU,FORESTER 2.0I-L ES,subaru-forester
@@ -1145,11 +1158,13 @@ TOYOTA,ALPHARD 2.5S C PACKAGE,toyota-alphard
 TOYOTA,ALPHARD 2.5S G PACKAGE,toyota-alphard
 TOYOTA,ALPHARD 2.5X,toyota-alphard
 TOYOTA,ALPHARD 2.5X SIDE LIFT UP SEAT,toyota-alphard
+TOYOTA,ALPHARD 2.5Z 4WD,toyota-alphard
 TOYOTA,ALPHARD 3.5 GF,toyota-alphard
 TOYOTA,ALPHARD 3.5 SC,toyota-alphard
 TOYOTA,ALPHARD 3.5 SC PACKAGE,toyota-alphard
 TOYOTA,ALPHARD 3.5 VIP,toyota-alphard
 TOYOTA,ALPHARD EXECUTIVE LOUNGE,toyota-alphard
+TOYOTA,ALPHARD G HYBRID 2.5L 2WD,toyota-alphard
 TOYOTA,ALPHARD GF HYBRID 2.5L,toyota-alphard
 TOYOTA,ALPHARD GF PACKAGE,toyota-alphard
 TOYOTA,ALPHARD GRADE HV X HYBRID,toyota-alphard
@@ -1228,7 +1243,27 @@ TOYOTA,COMMUTER,toyota-commuter
 TOYOTA,COMMUTER (SILVER) E4,toyota-commuter
 TOYOTA,COROLLA,toyota-corolla
 TOYOTA,COROLLA CROSS,toyota-corolla-cross
+TOYOTA,CROWN CROSSOVER G,toyota-crown-crossover
+TOYOTA,CROWN CROSSOVER G ADVANCED,toyota-crown-crossover
+TOYOTA,CROWN CROSSOVER G LEATHER,toyota-crown-crossover
+TOYOTA,CROWN CROSSOVER HYBRID G ADV,toyota-crown-crossover
+TOYOTA,CROWN CROSSOVER RS ADVANCE,toyota-crown-crossover
+TOYOTA,CROWN CROSSOVER RS ADVANCED,toyota-crown-crossover
+TOYOTA,CROWN SPORT RS,toyota-crown-sport
+TOYOTA,CROWN SPORT RS 70TH,toyota-crown-sport
+TOYOTA,CROWN SPORT Z,toyota-crown-sport
+TOYOTA,CROWN SPORT Z 2.5L,toyota-crown-sport
+TOYOTA,CROWN SPORT Z THE 70TH,toyota-crown-sport
 TOYOTA,FORTUNER,toyota-fortuner
+TOYOTA,GR SUPRA,toyota-gr-supra
+TOYOTA,GR SUPRA RZ,toyota-gr-supra
+TOYOTA,GR SUPRA RZ 100 EDITION,toyota-gr-supra
+TOYOTA,GR SUPRA RZ 3.0,toyota-gr-supra
+TOYOTA,GR SUPRA RZ 35TH ANNIVERSARY,toyota-gr-supra
+TOYOTA,GR SUPRA RZ 6MT,toyota-gr-supra
+TOYOTA,GR SUPRA RZ MATTE WHITE EDIT,toyota-gr-supra
+TOYOTA,GR SUPRA RZ PLASMA ORANGE 100,toyota-gr-supra
+TOYOTA,GR SUPRA SZ-R,toyota-gr-supra
 TOYOTA,GR YARIS,toyota-gr-yaris
 TOYOTA,GR YARIS GRMN,toyota-gr-yaris
 TOYOTA,GR YARIS KALLE ROVANPERA,toyota-gr-yaris
@@ -1244,16 +1279,86 @@ TOYOTA,GR YARIS RC M/T 4WD,toyota-gr-yaris
 TOYOTA,GR YARIS RS 4WD,toyota-gr-yaris
 TOYOTA,GR YARIS RZ,toyota-gr-yaris
 TOYOTA,GR YARIS RZ HIGH PERFORMANCE,toyota-gr-yaris
+TOYOTA,GR86,toyota-gr86
+TOYOTA,GR86 10TH ANNIVERSARY,toyota-gr86
+TOYOTA,GR86 CUP CAR BASIC,toyota-gr86
+TOYOTA,GR86 CUP CAR BASIC HKS,toyota-gr86
+TOYOTA,GR86 RC,toyota-gr86
+TOYOTA,GR86 RZ,toyota-gr86
+TOYOTA,GR86 RZ 10TH ANNIVERSARY,toyota-gr86
+TOYOTA,GR86 RZ 2WD,toyota-gr86
+TOYOTA,GR86 RZ 40TH ANNIVERSARY,toyota-gr86
+TOYOTA,GR86 RZ 6MT,toyota-gr86
+TOYOTA,GR86 RZ AT,toyota-gr86
+TOYOTA,GR86 RZ GREDDY,toyota-gr86
+TOYOTA,GR86 RZ M/T,toyota-gr86
+TOYOTA,GR86 RZ RIDGE GREEN LIMITED,toyota-gr86
+TOYOTA,GR86 RZ YELLOW LIMITED,toyota-gr86
+TOYOTA,GR86 SARD GT1 CUP CAR,toyota-gr86
+TOYOTA,GR86 SZ,toyota-gr86
+TOYOTA,HARRIER 2.0 G,toyota-harrier
+TOYOTA,HARRIER 2.0 G LEATHER PACKAGE,toyota-harrier
+TOYOTA,HARRIER 2.0 S,toyota-harrier
+TOYOTA,HARRIER 2.0 TURBO,toyota-harrier
+TOYOTA,HARRIER 2.0 TURBO PREMIUM,toyota-harrier
+TOYOTA,HARRIER 2.0 Z,toyota-harrier
+TOYOTA,HARRIER 2.0 Z LEATHER PACKAGE,toyota-harrier
+TOYOTA,HARRIER 2.0L 2WD PREMIUM,toyota-harrier
+TOYOTA,HARRIER 2.0L 2WD TURBO,toyota-harrier
+TOYOTA,HARRIER 2.5 HYBRID G,toyota-harrier
+TOYOTA,HARRIER 2.5 HYBRID Z,toyota-harrier
+TOYOTA,HARRIER 2.5 HYBRID Z LEATHER,toyota-harrier
+TOYOTA,HARRIER 2.5L HYBRID,toyota-harrier
+TOYOTA,HARRIER G 2WD,toyota-harrier
+TOYOTA,HARRIER HYBRID 2.5L Z,toyota-harrier
+TOYOTA,HARRIER HYBRID G,toyota-harrier
+TOYOTA,HARRIER HYBRID G 2.5L,toyota-harrier
+TOYOTA,HARRIER HYBRID G PACKAGE,toyota-harrier
+TOYOTA,HARRIER HYBRID S,toyota-harrier
+TOYOTA,HARRIER HYBRID Z,toyota-harrier
+TOYOTA,HARRIER HYBRID Z 2.5L,toyota-harrier
+TOYOTA,HARRIER HYBRID Z E-FOUR,toyota-harrier
+TOYOTA,HARRIER HYBRID Z LEATHER,toyota-harrier
+TOYOTA,HARRIER S,toyota-harrier
+TOYOTA,HARRIER Z LEATHER PACKAGE,toyota-harrier
 TOYOTA,HIACE,toyota-hiace
 TOYOTA,HIACE MAJESTY,toyota-hiace-majesty
 TOYOTA,HILUX CHAMP,toyota-hilux-champ
 TOYOTA,HILUX REVO,toyota-hilux-revo
 TOYOTA,HILUX TRAVO,toyota-hilux-travo
 TOYOTA,INNOVA,toyota-innova
+TOYOTA,LAND CRUISER 250 GX,toyota-land-cruiser-250
+TOYOTA,LAND CRUISER 250 VX,toyota-land-cruiser-250
+TOYOTA,LAND CRUISER 250 VX 2.8L,toyota-land-cruiser-250
+TOYOTA,LAND CRUISER 250 VX FIRST,toyota-land-cruiser-250
+TOYOTA,LAND CRUISER 250 ZX,toyota-land-cruiser-250
+TOYOTA,LAND CRUISER 250 ZX 2.8L,toyota-land-cruiser-250
+TOYOTA,LAND CRUISER 250 ZX FIRST,toyota-land-cruiser-250
+TOYOTA,LAND CRUISER 300 GR SPORT,toyota-land-cruiser-300
+TOYOTA,LAND CRUISER 300 SAHARA 3.3L,toyota-land-cruiser-300
+TOYOTA,LAND CRUISER 300 SAHARA ZX,toyota-land-cruiser-300
+TOYOTA,LAND CRUISER 300 SERIES GR,toyota-land-cruiser-300
+TOYOTA,LAND CRUISER 300 ZX,toyota-land-cruiser-300
+TOYOTA,LAND CRUISER 300 ZX 3.3L,toyota-land-cruiser-300
+TOYOTA,LAND CRUISER 300 ZX 3.5L,toyota-land-cruiser-300
+TOYOTA,LAND CRUISER 300 ZX DIESEL,toyota-land-cruiser-300
+TOYOTA,LAND CRUISER 70 30TH,toyota-land-cruiser-70
+TOYOTA,LAND CRUISER 70 AX,toyota-land-cruiser-70
+TOYOTA,LAND CRUISER 70 AX 2.8L 4WD,toyota-land-cruiser-70
+TOYOTA,LAND CRUISER 70 PICKUP 30TH,toyota-land-cruiser-70
 TOYOTA,LAND CRUISER FJ,toyota-land-cruiser-fj
 TOYOTA,SIENTA,toyota-sienta
 TOYOTA,SIENTA HYBRID G 2WD,toyota-sienta
 TOYOTA,SIENTA HYBRID Z,toyota-sienta
+TOYOTA,SUPRA,toyota-gr-supra
+TOYOTA,SUPRA GR 3.0 PRO,toyota-gr-supra
+TOYOTA,SUPRA GR PRO 3.0,toyota-gr-supra
+TOYOTA,SUPRA RZ,toyota-gr-supra
+TOYOTA,SUPRA RZ 3.0L,toyota-gr-supra
+TOYOTA,SUPRA RZ PLASMA ORANGE 100,toyota-gr-supra
+TOYOTA,SUPRA SZ-R,toyota-gr-supra
+TOYOTA,SUPRA SZ-R 2.0,toyota-gr-supra
+TOYOTA,SUPRA SZ-R 2.0L,toyota-gr-supra
 TOYOTA,VELLFIRE,toyota-vellfire
 TOYOTA,VELLFIRE 2.4 Z PREMIER,toyota-vellfire
 TOYOTA,VELLFIRE 2.5,toyota-vellfire
@@ -1306,6 +1411,7 @@ TOYOTA,VELLFIRE Z GOLDEN EYES 2.5L,toyota-vellfire
 TOYOTA,VELLFIRE Z GOLDEN EYES III,toyota-vellfire
 TOYOTA,VELLFIRE Z PREMIER,toyota-vellfire
 TOYOTA,VELLFIRE Z PREMIER 2.4L,toyota-vellfire
+TOYOTA,VELLFIRE Z PREMIER 2WD,toyota-vellfire
 TOYOTA,VELLFIRE Z PREMIER 2WD 2.5L,toyota-vellfire
 TOYOTA,VELLFIRE Z PREMIER E-FOUR,toyota-vellfire
 TOYOTA,VELLFIRE Z PREMIER HYBRID,toyota-vellfire
@@ -1314,6 +1420,7 @@ TOYOTA,VELLFIRE ZG EDITION 2.5L,toyota-vellfire
 TOYOTA,VELOZ,toyota-veloz
 TOYOTA,VIOS,toyota-vios
 TOYOTA,VIOS 1.5E A/T,toyota-vios
+TOYOTA,VIOS 1.5G A/T IVORY,toyota-vios
 TOYOTA,VIOS 1.5J A/T,toyota-vios
 TOYOTA,VIOS 1.5J M/T,toyota-vios
 TOYOTA,VIOS 1.5S A/T,toyota-vios
@@ -1339,6 +1446,7 @@ VOLVO,EC40,volvo-ec40
 VOLVO,ES90,volvo-es90
 VOLVO,EX30,volvo-ex30
 VOLVO,EX40,volvo-ex40
+VOLVO,EX90,volvo-ex90
 VOLVO,S60,volvo-s60
 VOLVO,S60 T5,volvo-s60
 VOLVO,S90,volvo-s90

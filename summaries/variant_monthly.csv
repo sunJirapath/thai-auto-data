@@ -295,6 +295,15 @@ period,model_id,category,variant,units
 2021-01,toyota-corolla,RY1,COROLLA,431
 2021-01,toyota-corolla-cross,RY1,COROLLA CROSS,2520
 2021-01,toyota-fortuner,RY1,FORTUNER,2792
+2021-01,toyota-gr-supra,RY1,SUPRA GR 3.0 PRO,1
+2021-01,toyota-harrier,RY1,HARRIER 2.0 G,1
+2021-01,toyota-harrier,RY1,HARRIER 2.0L 2WD TURBO,1
+2021-01,toyota-harrier,RY1,HARRIER 2.5 HYBRID G,3
+2021-01,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z,1
+2021-01,toyota-harrier,RY1,HARRIER HYBRID G,3
+2021-01,toyota-harrier,RY1,HARRIER HYBRID G 2.5L,1
+2021-01,toyota-harrier,RY1,HARRIER HYBRID Z,1
+2021-01,toyota-harrier,RY1,HARRIER Z LEATHER PACKAGE,1
 2021-01,toyota-hiace,RY2,HIACE,5
 2021-01,toyota-hiace,RY3,HIACE,23
 2021-01,toyota-hiace-majesty,RY2,HIACE MAJESTY,256
@@ -619,6 +628,10 @@ period,model_id,category,variant,units
 2021-02,toyota-corolla-cross,RY1,COROLLA CROSS,2079
 2021-02,toyota-fortuner,RY1,FORTUNER,2119
 2021-02,toyota-fortuner,RY3,FORTUNER,1
+2021-02,toyota-harrier,RY1,HARRIER 2.0 TURBO,1
+2021-02,toyota-harrier,RY1,HARRIER 2.5 HYBRID G,2
+2021-02,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z,1
+2021-02,toyota-harrier,RY1,HARRIER HYBRID G,1
 2021-02,toyota-hiace,RY2,HIACE,5
 2021-02,toyota-hiace,RY3,HIACE,15
 2021-02,toyota-hiace-majesty,RY2,HIACE MAJESTY,227
@@ -987,6 +1000,16 @@ period,model_id,category,variant,units
 2021-03,toyota-corolla,RY1,COROLLA,652
 2021-03,toyota-corolla-cross,RY1,COROLLA CROSS,2185
 2021-03,toyota-fortuner,RY1,FORTUNER,2618
+2021-03,toyota-gr-supra,RY1,SUPRA,2
+2021-03,toyota-harrier,RY1,HARRIER 2.0 G,1
+2021-03,toyota-harrier,RY1,HARRIER 2.0 G LEATHER PACKAGE,1
+2021-03,toyota-harrier,RY1,HARRIER 2.5 HYBRID G,1
+2021-03,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z,1
+2021-03,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z LEATHER,1
+2021-03,toyota-harrier,RY1,HARRIER HYBRID G,2
+2021-03,toyota-harrier,RY1,HARRIER HYBRID Z,2
+2021-03,toyota-harrier,RY1,HARRIER HYBRID Z E-FOUR,1
+2021-03,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,1
 2021-03,toyota-hiace,RY2,HIACE,17
 2021-03,toyota-hiace,RY3,HIACE,29
 2021-03,toyota-hiace-majesty,RY2,HIACE MAJESTY,289
@@ -1307,6 +1330,11 @@ period,model_id,category,variant,units
 2021-04,toyota-corolla,RY1,COROLLA,486
 2021-04,toyota-corolla-cross,RY1,COROLLA CROSS,1586
 2021-04,toyota-fortuner,RY1,FORTUNER,1993
+2021-04,toyota-harrier,RY1,HARRIER 2.0 G,1
+2021-04,toyota-harrier,RY1,HARRIER HYBRID G,3
+2021-04,toyota-harrier,RY1,HARRIER HYBRID Z,1
+2021-04,toyota-harrier,RY1,HARRIER HYBRID Z 2.5L,1
+2021-04,toyota-harrier,RY1,HARRIER Z LEATHER PACKAGE,1
 2021-04,toyota-hiace,RY2,HIACE,10
 2021-04,toyota-hiace,RY3,HIACE,11
 2021-04,toyota-hiace-majesty,RY1,HIACE MAJESTY,1
@@ -1644,7 +1672,14 @@ period,model_id,category,variant,units
 2021-05,toyota-corolla,RY1,COROLLA,485
 2021-05,toyota-corolla-cross,RY1,COROLLA CROSS,1728
 2021-05,toyota-fortuner,RY1,FORTUNER,2164
+2021-05,toyota-gr-supra,RY1,SUPRA,1
 2021-05,toyota-gr-yaris,RY1,GR YARIS,4
+2021-05,toyota-harrier,RY1,HARRIER 2.0 G LEATHER PACKAGE,1
+2021-05,toyota-harrier,RY1,HARRIER 2.0 TURBO PREMIUM,1
+2021-05,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z,1
+2021-05,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z LEATHER,1
+2021-05,toyota-harrier,RY1,HARRIER HYBRID G,2
+2021-05,toyota-harrier,RY1,HARRIER HYBRID Z,1
 2021-05,toyota-hiace,RY2,HIACE,10
 2021-05,toyota-hiace,RY3,HIACE,13
 2021-05,toyota-hiace-majesty,RY2,HIACE MAJESTY,135
@@ -1966,8 +2001,15 @@ period,model_id,category,variant,units
 2021-06,toyota-corolla,RY1,COROLLA,414
 2021-06,toyota-corolla-cross,RY1,COROLLA CROSS,1484
 2021-06,toyota-fortuner,RY1,FORTUNER,2070
+2021-06,toyota-gr-supra,RY1,SUPRA,1
+2021-06,toyota-gr-supra,RY1,SUPRA RZ,1
 2021-06,toyota-gr-yaris,RY1,GR YARIS,6
 2021-06,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,1
+2021-06,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z,2
+2021-06,toyota-harrier,RY1,HARRIER HYBRID 2.5L Z,4
+2021-06,toyota-harrier,RY1,HARRIER HYBRID G,3
+2021-06,toyota-harrier,RY1,HARRIER HYBRID Z,1
+2021-06,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,2
 2021-06,toyota-hiace,RY2,HIACE,2
 2021-06,toyota-hiace,RY3,HIACE,3
 2021-06,toyota-hiace-majesty,RY2,HIACE MAJESTY,86
@@ -2233,6 +2275,7 @@ period,model_id,category,variant,units
 2021-07,toyota-corolla,RY1,COROLLA,509
 2021-07,toyota-corolla-cross,RY1,COROLLA CROSS,1127
 2021-07,toyota-fortuner,RY1,FORTUNER,1370
+2021-07,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z LEATHER,1
 2021-07,toyota-hiace,RY2,HIACE,12
 2021-07,toyota-hiace,RY3,HIACE,18
 2021-07,toyota-hiace-majesty,RY2,HIACE MAJESTY,29
@@ -2557,8 +2600,13 @@ period,model_id,category,variant,units
 2021-08,toyota-corolla,RY1,COROLLA,556
 2021-08,toyota-corolla-cross,RY1,COROLLA CROSS,1588
 2021-08,toyota-fortuner,RY1,FORTUNER,1834
+2021-08,toyota-gr-supra,RY1,SUPRA,2
 2021-08,toyota-gr-yaris,RY1,GR YARIS,8
 2021-08,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,1
+2021-08,toyota-harrier,RY1,HARRIER 2.0 G,1
+2021-08,toyota-harrier,RY1,HARRIER HYBRID G,2
+2021-08,toyota-harrier,RY1,HARRIER HYBRID Z,2
+2021-08,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,1
 2021-08,toyota-hiace,RY2,HIACE,13
 2021-08,toyota-hiace,RY3,HIACE,33
 2021-08,toyota-hiace-majesty,RY2,HIACE MAJESTY,39
@@ -2896,7 +2944,13 @@ period,model_id,category,variant,units
 2021-09,toyota-corolla,RY1,COROLLA,421
 2021-09,toyota-corolla-cross,RY1,COROLLA CROSS,1159
 2021-09,toyota-fortuner,RY1,FORTUNER,1411
+2021-09,toyota-gr-supra,RY1,SUPRA,1
+2021-09,toyota-gr-supra,RY1,SUPRA SZ-R,1
 2021-09,toyota-gr-yaris,RY1,GR YARIS,28
+2021-09,toyota-harrier,RY1,HARRIER 2.0 G,1
+2021-09,toyota-harrier,RY1,HARRIER 2.5 HYBRID G,1
+2021-09,toyota-harrier,RY1,HARRIER HYBRID G,1
+2021-09,toyota-harrier,RY1,HARRIER HYBRID Z,1
 2021-09,toyota-hiace,RY1,HIACE,1
 2021-09,toyota-hiace,RY2,HIACE,11
 2021-09,toyota-hiace,RY3,HIACE,27
@@ -3207,7 +3261,13 @@ period,model_id,category,variant,units
 2021-10,toyota-corolla,RY1,COROLLA,542
 2021-10,toyota-corolla-cross,RY1,COROLLA CROSS,1058
 2021-10,toyota-fortuner,RY1,FORTUNER,1100
+2021-10,toyota-gr-supra,RY1,SUPRA,1
+2021-10,toyota-gr-supra,RY1,SUPRA GR 3.0 PRO,1
 2021-10,toyota-gr-yaris,RY1,GR YARIS,14
+2021-10,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z,1
+2021-10,toyota-harrier,RY1,HARRIER HYBRID G,1
+2021-10,toyota-harrier,RY1,HARRIER HYBRID S,1
+2021-10,toyota-harrier,RY1,HARRIER HYBRID Z,1
 2021-10,toyota-hiace,RY2,HIACE,16
 2021-10,toyota-hiace,RY3,HIACE,13
 2021-10,toyota-hiace-majesty,RY2,HIACE MAJESTY,43
@@ -3542,8 +3602,15 @@ period,model_id,category,variant,units
 2021-11,toyota-corolla,RY1,COROLLA,570
 2021-11,toyota-corolla-cross,RY1,COROLLA CROSS,1233
 2021-11,toyota-fortuner,RY1,FORTUNER,1613
+2021-11,toyota-gr-supra,RY1,SUPRA,1
+2021-11,toyota-gr-supra,RY1,SUPRA GR 3.0 PRO,1
 2021-11,toyota-gr-yaris,RY1,GR YARIS,18
 2021-11,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,1
+2021-11,toyota-harrier,RY1,HARRIER 2.0L 2WD PREMIUM,1
+2021-11,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z,1
+2021-11,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z LEATHER,1
+2021-11,toyota-harrier,RY1,HARRIER HYBRID G,1
+2021-11,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,1
 2021-11,toyota-hiace,RY2,HIACE,17
 2021-11,toyota-hiace,RY3,HIACE,15
 2021-11,toyota-hiace-majesty,RY2,HIACE MAJESTY,42
@@ -3859,7 +3926,12 @@ period,model_id,category,variant,units
 2021-12,toyota-corolla,RY1,COROLLA,475
 2021-12,toyota-corolla-cross,RY1,COROLLA CROSS,1023
 2021-12,toyota-fortuner,RY1,FORTUNER,1195
+2021-12,toyota-gr-supra,RY1,SUPRA,1
 2021-12,toyota-gr-yaris,RY1,GR YARIS,3
+2021-12,toyota-harrier,RY1,HARRIER 2.0 G,1
+2021-12,toyota-harrier,RY1,HARRIER 2.5 HYBRID G,1
+2021-12,toyota-harrier,RY1,HARRIER HYBRID Z 2.5L,1
+2021-12,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,1
 2021-12,toyota-hiace,RY2,HIACE,7
 2021-12,toyota-hiace,RY3,HIACE,9
 2021-12,toyota-hiace-majesty,RY2,HIACE MAJESTY,36
@@ -4196,6 +4268,10 @@ period,model_id,category,variant,units
 2022-01,toyota-corolla-cross,RY1,COROLLA CROSS,1864
 2022-01,toyota-fortuner,RY1,FORTUNER,2296
 2022-01,toyota-gr-yaris,RY1,GR YARIS,6
+2022-01,toyota-harrier,RY1,HARRIER 2.0 G LEATHER PACKAGE,1
+2022-01,toyota-harrier,RY1,HARRIER 2.5 HYBRID G,3
+2022-01,toyota-harrier,RY1,HARRIER HYBRID G,5
+2022-01,toyota-harrier,RY1,HARRIER HYBRID Z,1
 2022-01,toyota-hiace,RY2,HIACE,12
 2022-01,toyota-hiace,RY3,HIACE,85
 2022-01,toyota-hiace-majesty,RY2,HIACE MAJESTY,46
@@ -4527,6 +4603,10 @@ period,model_id,category,variant,units
 2022-02,toyota-fortuner,RY1,FORTUNER,2944
 2022-02,toyota-gr-yaris,RY1,GR YARIS,4
 2022-02,toyota-gr-yaris,RY1,GR YARIS RALLYE EDITION,1
+2022-02,toyota-harrier,RY1,HARRIER 2.5 HYBRID G,1
+2022-02,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z,1
+2022-02,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z LEATHER,2
+2022-02,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,1
 2022-02,toyota-hiace,RY2,HIACE,6
 2022-02,toyota-hiace,RY3,HIACE,40
 2022-02,toyota-hiace-majesty,RY2,HIACE MAJESTY,37
@@ -4886,7 +4966,14 @@ period,model_id,category,variant,units
 2022-03,toyota-corolla,RY1,COROLLA,860
 2022-03,toyota-corolla-cross,RY1,COROLLA CROSS,2204
 2022-03,toyota-fortuner,RY1,FORTUNER,3151
+2022-03,toyota-gr-supra,RY1,SUPRA,1
 2022-03,toyota-gr-yaris,RY1,GR YARIS,11
+2022-03,toyota-gr86,RY1,GR86 RZ 2WD,1
+2022-03,toyota-harrier,RY1,HARRIER 2.5 HYBRID G,1
+2022-03,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z LEATHER,2
+2022-03,toyota-harrier,RY1,HARRIER G 2WD,1
+2022-03,toyota-harrier,RY1,HARRIER HYBRID G,1
+2022-03,toyota-harrier,RY1,HARRIER HYBRID Z,2
 2022-03,toyota-hiace,RY2,HIACE,12
 2022-03,toyota-hiace,RY3,HIACE,13
 2022-03,toyota-hiace-majesty,RY2,HIACE MAJESTY,45
@@ -5237,8 +5324,11 @@ period,model_id,category,variant,units
 2022-04,toyota-corolla,RY1,COROLLA,473
 2022-04,toyota-corolla-cross,RY1,COROLLA CROSS,1476
 2022-04,toyota-fortuner,RY1,FORTUNER,2141
+2022-04,toyota-gr-supra,RY1,SUPRA,2
+2022-04,toyota-gr-supra,RY1,SUPRA SZ-R 2.0,1
 2022-04,toyota-gr-yaris,RY1,GR YARIS,3
 2022-04,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,1
+2022-04,toyota-harrier,RY1,HARRIER HYBRID Z,1
 2022-04,toyota-hiace,RY2,HIACE,6
 2022-04,toyota-hiace,RY3,HIACE,12
 2022-04,toyota-hiace-majesty,RY2,HIACE MAJESTY,15
@@ -5588,6 +5678,8 @@ period,model_id,category,variant,units
 2022-05,toyota-corolla-cross,RY1,COROLLA CROSS,1698
 2022-05,toyota-fortuner,RY1,FORTUNER,2547
 2022-05,toyota-gr-yaris,RY1,GR YARIS,3
+2022-05,toyota-harrier,RY1,HARRIER HYBRID G,1
+2022-05,toyota-harrier,RY1,HARRIER HYBRID Z,1
 2022-05,toyota-hiace,RY2,HIACE,29
 2022-05,toyota-hiace,RY3,HIACE,23
 2022-05,toyota-hiace-majesty,RY2,HIACE MAJESTY,26
@@ -5595,6 +5687,7 @@ period,model_id,category,variant,units
 2022-05,toyota-hilux-revo,RY2,HILUX REVO,178
 2022-05,toyota-hilux-revo,RY3,HILUX REVO,8761
 2022-05,toyota-innova,RY1,INNOVA,36
+2022-05,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,1
 2022-05,toyota-sienta,RY1,SIENTA,62
 2022-05,toyota-vellfire,RY1,VELLFIRE,2
 2022-05,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID X E-FOUR,1
@@ -5939,8 +6032,13 @@ period,model_id,category,variant,units
 2022-06,toyota-corolla,RY1,COROLLA,552
 2022-06,toyota-corolla-cross,RY1,COROLLA CROSS,1937
 2022-06,toyota-fortuner,RY1,FORTUNER,2458
+2022-06,toyota-gr-supra,RY1,GR SUPRA RZ,1
 2022-06,toyota-gr-yaris,RY1,GR YARIS,4
 2022-06,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,2
+2022-06,toyota-harrier,RY1,HARRIER G 2WD,1
+2022-06,toyota-harrier,RY1,HARRIER HYBRID G,2
+2022-06,toyota-harrier,RY1,HARRIER HYBRID S,1
+2022-06,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,1
 2022-06,toyota-hiace,RY2,HIACE,5
 2022-06,toyota-hiace,RY3,HIACE,3
 2022-06,toyota-hiace-majesty,RY2,HIACE MAJESTY,20
@@ -5948,6 +6046,10 @@ period,model_id,category,variant,units
 2022-06,toyota-hilux-revo,RY2,HILUX REVO,178
 2022-06,toyota-hilux-revo,RY3,HILUX REVO,8404
 2022-06,toyota-innova,RY1,INNOVA,43
+2022-06,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,1
+2022-06,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX 3.3L,1
+2022-06,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX DIESEL,1
+2022-06,toyota-land-cruiser-70,RY1,LAND CRUISER 70 PICKUP 30TH,1
 2022-06,toyota-sienta,RY1,SIENTA,43
 2022-06,toyota-vellfire,RY1,VELLFIRE,4
 2022-06,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z E-FOUR,3
@@ -6272,8 +6374,13 @@ period,model_id,category,variant,units
 2022-07,toyota-corolla,RY1,COROLLA,337
 2022-07,toyota-corolla-cross,RY1,COROLLA CROSS,1583
 2022-07,toyota-fortuner,RY1,FORTUNER,1677
+2022-07,toyota-gr-supra,RY1,SUPRA,1
 2022-07,toyota-gr-yaris,RY1,GR YARIS,1
 2022-07,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,1
+2022-07,toyota-harrier,RY1,HARRIER HYBRID G,4
+2022-07,toyota-harrier,RY1,HARRIER HYBRID S,1
+2022-07,toyota-harrier,RY1,HARRIER HYBRID Z,1
+2022-07,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,3
 2022-07,toyota-hiace,RY2,HIACE,2
 2022-07,toyota-hiace,RY3,HIACE,10
 2022-07,toyota-hiace-majesty,RY2,HIACE MAJESTY,13
@@ -6281,6 +6388,7 @@ period,model_id,category,variant,units
 2022-07,toyota-hilux-revo,RY2,HILUX REVO,84
 2022-07,toyota-hilux-revo,RY3,HILUX REVO,6885
 2022-07,toyota-innova,RY1,INNOVA,31
+2022-07,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,2
 2022-07,toyota-sienta,RY1,SIENTA,33
 2022-07,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID V-L,1
 2022-07,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z E-FOUR,4
@@ -6643,7 +6751,15 @@ period,model_id,category,variant,units
 2022-08,toyota-corolla,RY1,COROLLA,437
 2022-08,toyota-corolla-cross,RY1,COROLLA CROSS,1952
 2022-08,toyota-fortuner,RY1,FORTUNER,1926
+2022-08,toyota-gr-supra,RY1,SUPRA,1
 2022-08,toyota-gr-yaris,RY1,GR YARIS,2
+2022-08,toyota-gr86,RY1,GR86 RZ 2WD,2
+2022-08,toyota-harrier,RY1,HARRIER 2.0 G,1
+2022-08,toyota-harrier,RY1,HARRIER 2.5 HYBRID G,1
+2022-08,toyota-harrier,RY1,HARRIER HYBRID G,2
+2022-08,toyota-harrier,RY1,HARRIER HYBRID S,1
+2022-08,toyota-harrier,RY1,HARRIER HYBRID Z,1
+2022-08,toyota-harrier,RY1,HARRIER HYBRID Z 2.5L,1
 2022-08,toyota-hiace,RY2,HIACE,10
 2022-08,toyota-hiace,RY3,HIACE,9
 2022-08,toyota-hiace-majesty,RY2,HIACE MAJESTY,23
@@ -6651,6 +6767,7 @@ period,model_id,category,variant,units
 2022-08,toyota-hilux-revo,RY2,HILUX REVO,126
 2022-08,toyota-hilux-revo,RY3,HILUX REVO,9038
 2022-08,toyota-innova,RY1,INNOVA,29
+2022-08,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX DIESEL,1
 2022-08,toyota-sienta,RY1,SIENTA,116
 2022-08,toyota-vellfire,RY1,VELLFIRE,3
 2022-08,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID V-L,1
@@ -7007,6 +7124,10 @@ period,model_id,category,variant,units
 2022-09,toyota-corolla-cross,RY1,COROLLA CROSS,2167
 2022-09,toyota-fortuner,RY1,FORTUNER,2098
 2022-09,toyota-fortuner,RY3,FORTUNER,1
+2022-09,toyota-gr86,RY1,GR86 RZ 2WD,1
+2022-09,toyota-harrier,RY1,HARRIER 2.0 Z,1
+2022-09,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z LEATHER,2
+2022-09,toyota-harrier,RY1,HARRIER HYBRID G,3
 2022-09,toyota-hiace,RY2,HIACE,46
 2022-09,toyota-hiace,RY3,HIACE,26
 2022-09,toyota-hiace-majesty,RY2,HIACE MAJESTY,17
@@ -7014,6 +7135,7 @@ period,model_id,category,variant,units
 2022-09,toyota-hilux-revo,RY2,HILUX REVO,1620
 2022-09,toyota-hilux-revo,RY3,HILUX REVO,7214
 2022-09,toyota-innova,RY1,INNOVA,23
+2022-09,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,1
 2022-09,toyota-sienta,RY1,SIENTA,123
 2022-09,toyota-vellfire,RY1,VELLFIRE,2
 2022-09,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID V-L,1
@@ -7356,6 +7478,10 @@ period,model_id,category,variant,units
 2022-10,toyota-fortuner,RY1,FORTUNER,2131
 2022-10,toyota-gr-yaris,RY1,GR YARIS,1
 2022-10,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,2
+2022-10,toyota-gr86,RY1,GR86 RZ 2WD,1
+2022-10,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z LEATHER,1
+2022-10,toyota-harrier,RY1,HARRIER HYBRID G,1
+2022-10,toyota-harrier,RY1,HARRIER HYBRID Z,1
 2022-10,toyota-hiace,RY2,HIACE,12
 2022-10,toyota-hiace,RY3,HIACE,10
 2022-10,toyota-hiace-majesty,RY2,HIACE MAJESTY,11
@@ -7715,7 +7841,12 @@ period,model_id,category,variant,units
 2022-11,toyota-corolla,RY1,COROLLA,488
 2022-11,toyota-corolla-cross,RY1,COROLLA CROSS,1730
 2022-11,toyota-fortuner,RY1,FORTUNER,2185
+2022-11,toyota-gr-supra,RY1,SUPRA RZ 3.0L,1
 2022-11,toyota-gr-yaris,RY1,GR YARIS,1
+2022-11,toyota-gr86,RY1,GR86,1
+2022-11,toyota-gr86,RY1,GR86 RZ 2WD,1
+2022-11,toyota-harrier,RY1,HARRIER 2.0 G,1
+2022-11,toyota-harrier,RY1,HARRIER HYBRID S,1
 2022-11,toyota-hiace,RY2,HIACE,15
 2022-11,toyota-hiace,RY3,HIACE,12
 2022-11,toyota-hiace-majesty,RY2,HIACE MAJESTY,8
@@ -7723,6 +7854,9 @@ period,model_id,category,variant,units
 2022-11,toyota-hilux-revo,RY2,HILUX REVO,124
 2022-11,toyota-hilux-revo,RY3,HILUX REVO,6173
 2022-11,toyota-innova,RY1,INNOVA,45
+2022-11,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,1
+2022-11,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,2
+2022-11,toyota-land-cruiser-70,RY1,LAND CRUISER 70 30TH,1
 2022-11,toyota-sienta,RY1,SIENTA,63
 2022-11,toyota-vellfire,RY1,VELLFIRE,4
 2022-11,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID X E-FOUR,1
@@ -8041,7 +8175,10 @@ period,model_id,category,variant,units
 2022-12,toyota-corolla,RY1,COROLLA,438
 2022-12,toyota-corolla-cross,RY1,COROLLA CROSS,1211
 2022-12,toyota-fortuner,RY1,FORTUNER,1576
+2022-12,toyota-gr-supra,RY1,SUPRA,1
+2022-12,toyota-gr-supra,RY1,SUPRA SZ-R 2.0L,1
 2022-12,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,1
+2022-12,toyota-harrier,RY1,HARRIER HYBRID G,1
 2022-12,toyota-hiace,RY2,HIACE,24
 2022-12,toyota-hiace,RY3,HIACE,5
 2022-12,toyota-hiace-majesty,RY2,HIACE MAJESTY,10
@@ -8049,6 +8186,8 @@ period,model_id,category,variant,units
 2022-12,toyota-hilux-revo,RY2,HILUX REVO,110
 2022-12,toyota-hilux-revo,RY3,HILUX REVO,4606
 2022-12,toyota-innova,RY1,INNOVA,44
+2022-12,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,1
+2022-12,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX 3.3L,1
 2022-12,toyota-sienta,RY1,SIENTA,47
 2022-12,toyota-vellfire,RY1,VELLFIRE,4
 2022-12,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID X E-FOUR,1
@@ -8386,6 +8525,9 @@ period,model_id,category,variant,units
 2023-01,toyota-fortuner,RY1,FORTUNER,3090
 2023-01,toyota-gr-yaris,RY1,GR YARIS,1
 2023-01,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,1
+2023-01,toyota-harrier,RY1,HARRIER 2.0 Z LEATHER PACKAGE,1
+2023-01,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z LEATHER,1
+2023-01,toyota-harrier,RY1,HARRIER HYBRID G,1
 2023-01,toyota-hiace,RY2,HIACE,20
 2023-01,toyota-hiace,RY3,HIACE,27
 2023-01,toyota-hiace-majesty,RY2,HIACE MAJESTY,13
@@ -8393,6 +8535,8 @@ period,model_id,category,variant,units
 2023-01,toyota-hilux-revo,RY2,HILUX REVO,116
 2023-01,toyota-hilux-revo,RY3,HILUX REVO,7430
 2023-01,toyota-innova,RY1,INNOVA,40
+2023-01,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,1
+2023-01,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,2
 2023-01,toyota-sienta,RY1,SIENTA,78
 2023-01,toyota-vellfire,RY1,VELLFIRE,3
 2023-01,toyota-vellfire,RY1,VELLFIRE 2.5 GOLDEN EYES III,3
@@ -8749,6 +8893,10 @@ period,model_id,category,variant,units
 2023-02,toyota-corolla-cross,RY1,COROLLA CROSS,2186
 2023-02,toyota-fortuner,RY1,FORTUNER,3065
 2023-02,toyota-gr-yaris,RY1,GR YARIS,1
+2023-02,toyota-gr86,RY1,GR86,4
+2023-02,toyota-gr86,RY1,GR86 RZ 2WD,2
+2023-02,toyota-harrier,RY1,HARRIER HYBRID G,2
+2023-02,toyota-harrier,RY1,HARRIER HYBRID Z,1
 2023-02,toyota-hiace,RY2,HIACE,24
 2023-02,toyota-hiace,RY3,HIACE,47
 2023-02,toyota-hiace-majesty,RY2,HIACE MAJESTY,13
@@ -8756,6 +8904,9 @@ period,model_id,category,variant,units
 2023-02,toyota-hilux-revo,RY2,HILUX REVO,89
 2023-02,toyota-hilux-revo,RY3,HILUX REVO,6658
 2023-02,toyota-innova,RY1,INNOVA,31
+2023-02,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,2
+2023-02,toyota-land-cruiser-300,RY1,LAND CRUISER 300 SERIES GR,1
+2023-02,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,1
 2023-02,toyota-sienta,RY1,SIENTA,69
 2023-02,toyota-vellfire,RY1,VELLFIRE,1
 2023-02,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID ZR G,1
@@ -9116,8 +9267,14 @@ period,model_id,category,variant,units
 2023-03,toyota-commuter,RY3,COMMUTER,4
 2023-03,toyota-corolla,RY1,COROLLA,425
 2023-03,toyota-corolla-cross,RY1,COROLLA CROSS,2270
+2023-03,toyota-crown-crossover,RY1,CROWN CROSSOVER G ADVANCED,1
+2023-03,toyota-crown-crossover,RY1,CROWN CROSSOVER G LEATHER,1
 2023-03,toyota-fortuner,RY1,FORTUNER,2841
 2023-03,toyota-gr-yaris,RY1,GR YARIS,1
+2023-03,toyota-gr86,RY1,GR86,2
+2023-03,toyota-gr86,RY1,GR86 RZ 2WD,1
+2023-03,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z,1
+2023-03,toyota-harrier,RY1,HARRIER HYBRID G,1
 2023-03,toyota-hiace,RY2,HIACE,19
 2023-03,toyota-hiace,RY3,HIACE,25
 2023-03,toyota-hiace-majesty,RY2,HIACE MAJESTY,16
@@ -9125,6 +9282,8 @@ period,model_id,category,variant,units
 2023-03,toyota-hilux-revo,RY2,HILUX REVO,118
 2023-03,toyota-hilux-revo,RY3,HILUX REVO,6876
 2023-03,toyota-innova,RY1,INNOVA,29
+2023-03,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,2
+2023-03,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX 3.3L,1
 2023-03,toyota-sienta,RY1,SIENTA,72
 2023-03,toyota-vellfire,RY1,VELLFIRE,1
 2023-03,toyota-vellfire,RY1,VELLFIRE 2.5Z G EDITION,2
@@ -9451,7 +9610,16 @@ period,model_id,category,variant,units
 2023-04,toyota-commuter,RY2,COMMUTER,324
 2023-04,toyota-corolla,RY1,COROLLA,250
 2023-04,toyota-corolla-cross,RY1,COROLLA CROSS,1500
+2023-04,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,1
 2023-04,toyota-fortuner,RY1,FORTUNER,2124
+2023-04,toyota-gr-supra,RY1,GR SUPRA,1
+2023-04,toyota-gr-supra,RY1,SUPRA RZ,1
+2023-04,toyota-gr86,RY1,GR86,2
+2023-04,toyota-gr86,RY1,GR86 10TH ANNIVERSARY,2
+2023-04,toyota-gr86,RY1,GR86 RC,1
+2023-04,toyota-harrier,RY1,HARRIER 2.0 S,1
+2023-04,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z,1
+2023-04,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z LEATHER,1
 2023-04,toyota-hiace,RY2,HIACE,4
 2023-04,toyota-hiace,RY3,HIACE,11
 2023-04,toyota-hiace-majesty,RY2,HIACE MAJESTY,3
@@ -9459,6 +9627,8 @@ period,model_id,category,variant,units
 2023-04,toyota-hilux-revo,RY2,HILUX REVO,84
 2023-04,toyota-hilux-revo,RY3,HILUX REVO,5076
 2023-04,toyota-innova,RY1,INNOVA,13
+2023-04,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,1
+2023-04,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX DIESEL,1
 2023-04,toyota-sienta,RY1,SIENTA,51
 2023-04,toyota-vellfire,RY1,VELLFIRE,2
 2023-04,toyota-vellfire,RY1,VELLFIRE 2.5 GOLDEN EYES III,1
@@ -9795,6 +9965,11 @@ period,model_id,category,variant,units
 2023-05,toyota-corolla-cross,RY1,COROLLA CROSS,1675
 2023-05,toyota-fortuner,RY1,FORTUNER,2359
 2023-05,toyota-gr-yaris,RY1,GR YARIS,1
+2023-05,toyota-gr86,RY1,GR86,1
+2023-05,toyota-gr86,RY1,GR86 RZ 10TH ANNIVERSARY,1
+2023-05,toyota-gr86,RY1,GR86 RZ 2WD,3
+2023-05,toyota-gr86,RY1,GR86 SZ,1
+2023-05,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,1
 2023-05,toyota-hiace,RY2,HIACE,12
 2023-05,toyota-hiace,RY3,HIACE,13
 2023-05,toyota-hiace-majesty,RY2,HIACE MAJESTY,4
@@ -9802,6 +9977,9 @@ period,model_id,category,variant,units
 2023-05,toyota-hilux-revo,RY2,HILUX REVO,112
 2023-05,toyota-hilux-revo,RY3,HILUX REVO,6755
 2023-05,toyota-innova,RY1,INNOVA,22
+2023-05,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,1
+2023-05,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX DIESEL,1
+2023-05,toyota-land-cruiser-70,RY1,LAND CRUISER 70 30TH,1
 2023-05,toyota-sienta,RY1,SIENTA,59
 2023-05,toyota-vellfire,RY1,VELLFIRE,3
 2023-05,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID ZR G,1
@@ -10144,9 +10322,18 @@ period,model_id,category,variant,units
 2023-06,toyota-commuter,RY3,COMMUTER,6
 2023-06,toyota-corolla,RY1,COROLLA,484
 2023-06,toyota-corolla-cross,RY1,COROLLA CROSS,1784
+2023-06,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,1
 2023-06,toyota-fortuner,RY1,FORTUNER,2041
+2023-06,toyota-gr-supra,RY1,GR SUPRA,1
+2023-06,toyota-gr-supra,RY1,SUPRA,1
 2023-06,toyota-gr-yaris,RY1,GR YARIS,3
 2023-06,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,1
+2023-06,toyota-gr86,RY1,GR86 RC,1
+2023-06,toyota-gr86,RY1,GR86 RZ 10TH ANNIVERSARY,2
+2023-06,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z,1
+2023-06,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z LEATHER,1
+2023-06,toyota-harrier,RY1,HARRIER 2.5L HYBRID,1
+2023-06,toyota-harrier,RY1,HARRIER HYBRID G,2
 2023-06,toyota-hiace,RY2,HIACE,26
 2023-06,toyota-hiace,RY3,HIACE,17
 2023-06,toyota-hiace-majesty,RY2,HIACE MAJESTY,1
@@ -10154,6 +10341,8 @@ period,model_id,category,variant,units
 2023-06,toyota-hilux-revo,RY2,HILUX REVO,268
 2023-06,toyota-hilux-revo,RY3,HILUX REVO,5828
 2023-06,toyota-innova,RY1,INNOVA,6
+2023-06,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,1
+2023-06,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX DIESEL,1
 2023-06,toyota-sienta,RY1,SIENTA,59
 2023-06,toyota-vellfire,RY1,VELLFIRE,2
 2023-06,toyota-vellfire,RY1,VELLFIRE 2.5 GOLDEN EYES III,1
@@ -10496,8 +10685,18 @@ period,model_id,category,variant,units
 2023-07,toyota-commuter,RY3,COMMUTER,12
 2023-07,toyota-corolla,RY1,COROLLA,530
 2023-07,toyota-corolla-cross,RY1,COROLLA CROSS,1600
+2023-07,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,1
 2023-07,toyota-fortuner,RY1,FORTUNER,1745
 2023-07,toyota-gr-yaris,RY1,GR YARIS RZ,1
+2023-07,toyota-gr86,RY1,GR86,1
+2023-07,toyota-gr86,RY1,GR86 10TH ANNIVERSARY,1
+2023-07,toyota-gr86,RY1,GR86 CUP CAR BASIC,2
+2023-07,toyota-gr86,RY1,GR86 RC,1
+2023-07,toyota-gr86,RY1,GR86 RZ,2
+2023-07,toyota-gr86,RY1,GR86 RZ 10TH ANNIVERSARY,1
+2023-07,toyota-gr86,RY1,GR86 RZ 2WD,1
+2023-07,toyota-gr86,RY1,GR86 SZ,1
+2023-07,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z LEATHER,1
 2023-07,toyota-hiace,RY2,HIACE,15
 2023-07,toyota-hiace,RY3,HIACE,9
 2023-07,toyota-hiace-majesty,RY2,HIACE MAJESTY,3
@@ -10505,6 +10704,8 @@ period,model_id,category,variant,units
 2023-07,toyota-hilux-revo,RY2,HILUX REVO,102
 2023-07,toyota-hilux-revo,RY3,HILUX REVO,5355
 2023-07,toyota-innova,RY1,INNOVA,1
+2023-07,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,1
+2023-07,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX DIESEL,2
 2023-07,toyota-sienta,RY1,SIENTA,23
 2023-07,toyota-vellfire,RY1,VELLFIRE 2.5 GOLDEN EYES III,1
 2023-07,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID ZR G,1
@@ -10848,9 +11049,16 @@ period,model_id,category,variant,units
 2023-08,toyota-commuter,RY3,COMMUTER,5
 2023-08,toyota-corolla,RY1,COROLLA,646
 2023-08,toyota-corolla-cross,RY1,COROLLA CROSS,1858
+2023-08,toyota-crown-crossover,RY1,CROWN CROSSOVER G ADVANCED,2
+2023-08,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,1
 2023-08,toyota-fortuner,RY1,FORTUNER,2011
 2023-08,toyota-gr-yaris,RY1,GR YARIS,2
 2023-08,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,3
+2023-08,toyota-gr86,RY1,GR86,1
+2023-08,toyota-gr86,RY1,GR86 10TH ANNIVERSARY,3
+2023-08,toyota-gr86,RY1,GR86 RC,3
+2023-08,toyota-gr86,RY1,GR86 RZ 10TH ANNIVERSARY,2
+2023-08,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z LEATHER,1
 2023-08,toyota-hiace,RY2,HIACE,18
 2023-08,toyota-hiace,RY3,HIACE,14
 2023-08,toyota-hiace-majesty,RY2,HIACE MAJESTY,7
@@ -11205,8 +11413,16 @@ period,model_id,category,variant,units
 2023-09,toyota-commuter,RY3,COMMUTER,1
 2023-09,toyota-corolla,RY1,COROLLA,704
 2023-09,toyota-corolla-cross,RY1,COROLLA CROSS,1524
+2023-09,toyota-crown-crossover,RY1,CROWN CROSSOVER G ADVANCED,2
+2023-09,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,1
 2023-09,toyota-fortuner,RY1,FORTUNER,1870
+2023-09,toyota-gr-supra,RY1,GR SUPRA,2
 2023-09,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,2
+2023-09,toyota-gr86,RY1,GR86 CUP CAR BASIC,2
+2023-09,toyota-gr86,RY1,GR86 RC,3
+2023-09,toyota-gr86,RY1,GR86 RZ,1
+2023-09,toyota-harrier,RY1,HARRIER 2.0 Z LEATHER PACKAGE,1
+2023-09,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,1
 2023-09,toyota-hiace,RY2,HIACE,23
 2023-09,toyota-hiace,RY3,HIACE,16
 2023-09,toyota-hiace-majesty,RY2,HIACE MAJESTY,7
@@ -11214,6 +11430,8 @@ period,model_id,category,variant,units
 2023-09,toyota-hilux-revo,RY2,HILUX REVO,79
 2023-09,toyota-hilux-revo,RY3,HILUX REVO,5236
 2023-09,toyota-innova,RY1,INNOVA,131
+2023-09,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,1
+2023-09,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX 3.3L,3
 2023-09,toyota-sienta,RY1,SIENTA,7
 2023-09,toyota-vellfire,RY1,VELLFIRE,5
 2023-09,toyota-vellfire,RY1,VELLFIRE HYBRID X 2.5L,1
@@ -11552,9 +11770,17 @@ period,model_id,category,variant,units
 2023-10,toyota-commuter,RY3,COMMUTER,2
 2023-10,toyota-corolla,RY1,COROLLA,615
 2023-10,toyota-corolla-cross,RY1,COROLLA CROSS,1227
+2023-10,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCE,2
 2023-10,toyota-fortuner,RY1,FORTUNER,1820
+2023-10,toyota-gr-supra,RY1,GR SUPRA RZ,1
+2023-10,toyota-gr-supra,RY1,GR SUPRA RZ MATTE WHITE EDIT,1
+2023-10,toyota-gr-supra,RY1,SUPRA RZ 3.0L,1
 2023-10,toyota-gr-yaris,RY1,GR YARIS,1
 2023-10,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,1
+2023-10,toyota-gr86,RY1,GR86 CUP CAR BASIC,2
+2023-10,toyota-gr86,RY1,GR86 RZ 10TH ANNIVERSARY,4
+2023-10,toyota-harrier,RY1,HARRIER 2.5 HYBRID G,1
+2023-10,toyota-harrier,RY1,HARRIER HYBRID G,1
 2023-10,toyota-hiace,RY2,HIACE,16
 2023-10,toyota-hiace,RY3,HIACE,18
 2023-10,toyota-hiace-majesty,RY2,HIACE MAJESTY,5
@@ -11562,6 +11788,9 @@ period,model_id,category,variant,units
 2023-10,toyota-hilux-revo,RY2,HILUX REVO,102
 2023-10,toyota-hilux-revo,RY3,HILUX REVO,4790
 2023-10,toyota-innova,RY1,INNOVA,115
+2023-10,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,2
+2023-10,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX 3.3L,1
+2023-10,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX DIESEL,1
 2023-10,toyota-sienta,RY1,SIENTA,5
 2023-10,toyota-vellfire,RY1,VELLFIRE,8
 2023-10,toyota-veloz,RY1,VELOZ,828
@@ -11895,8 +12124,17 @@ period,model_id,category,variant,units
 2023-11,toyota-commuter,RY3,COMMUTER,3
 2023-11,toyota-corolla,RY1,COROLLA,453
 2023-11,toyota-corolla-cross,RY1,COROLLA CROSS,1272
+2023-11,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCE,1
+2023-11,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,1
 2023-11,toyota-fortuner,RY1,FORTUNER,1639
+2023-11,toyota-gr-supra,RY1,GR SUPRA RZ,1
+2023-11,toyota-gr-supra,RY1,SUPRA RZ 3.0L,1
 2023-11,toyota-gr-yaris,RY1,GR YARIS RC,1
+2023-11,toyota-gr86,RY1,GR86 CUP CAR BASIC,3
+2023-11,toyota-gr86,RY1,GR86 RZ,2
+2023-11,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z LEATHER,1
+2023-11,toyota-harrier,RY1,HARRIER HYBRID G,1
+2023-11,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,1
 2023-11,toyota-hiace,RY2,HIACE,38
 2023-11,toyota-hiace,RY3,HIACE,55
 2023-11,toyota-hiace-majesty,RY2,HIACE MAJESTY,6
@@ -12228,6 +12466,9 @@ period,model_id,category,variant,units
 2023-12,toyota-corolla-cross,RY1,COROLLA CROSS,809
 2023-12,toyota-fortuner,RY1,FORTUNER,1031
 2023-12,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,1
+2023-12,toyota-gr86,RY1,GR86 RC,4
+2023-12,toyota-gr86,RY1,GR86 RZ 10TH ANNIVERSARY,5
+2023-12,toyota-harrier,RY1,HARRIER HYBRID Z,2
 2023-12,toyota-hiace,RY2,HIACE,56
 2023-12,toyota-hiace,RY3,HIACE,7
 2023-12,toyota-hilux-revo,RY1,HILUX REVO,1947
@@ -12590,8 +12831,19 @@ period,model_id,category,variant,units
 2024-01,toyota-commuter,RY3,COMMUTER,6
 2024-01,toyota-corolla,RY1,COROLLA,318
 2024-01,toyota-corolla-cross,RY1,COROLLA CROSS,2087
+2024-01,toyota-crown-crossover,RY1,CROWN CROSSOVER G ADVANCED,2
+2024-01,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCE,3
+2024-01,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,1
 2024-01,toyota-fortuner,RY1,FORTUNER,1972
+2024-01,toyota-gr-supra,RY1,GR SUPRA RZ,1
 2024-01,toyota-gr-yaris,RY1,GR YARIS GRMN,1
+2024-01,toyota-gr86,RY1,GR86,1
+2024-01,toyota-gr86,RY1,GR86 RC,1
+2024-01,toyota-gr86,RY1,GR86 RZ 10TH ANNIVERSARY,3
+2024-01,toyota-gr86,RY1,GR86 RZ 2WD,1
+2024-01,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z LEATHER,1
+2024-01,toyota-harrier,RY1,HARRIER HYBRID G,1
+2024-01,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,2
 2024-01,toyota-hiace,RY2,HIACE,134
 2024-01,toyota-hiace,RY3,HIACE,54
 2024-01,toyota-hiace-majesty,RY2,HIACE MAJESTY,8
@@ -12968,8 +13220,19 @@ period,model_id,category,variant,units
 2024-02,toyota-commuter,RY3,COMMUTER,3
 2024-02,toyota-corolla,RY1,COROLLA,331
 2024-02,toyota-corolla-cross,RY1,COROLLA CROSS,1392
+2024-02,toyota-crown-crossover,RY1,CROWN CROSSOVER G ADVANCED,1
+2024-02,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,1
 2024-02,toyota-fortuner,RY1,FORTUNER,1637
+2024-02,toyota-gr-supra,RY1,GR SUPRA,1
+2024-02,toyota-gr-supra,RY1,GR SUPRA RZ,3
 2024-02,toyota-gr-yaris,RY1,GR YARIS RC,2
+2024-02,toyota-gr86,RY1,GR86,2
+2024-02,toyota-gr86,RY1,GR86 CUP CAR BASIC,4
+2024-02,toyota-gr86,RY1,GR86 RC,4
+2024-02,toyota-gr86,RY1,GR86 RZ 10TH ANNIVERSARY,2
+2024-02,toyota-gr86,RY1,GR86 RZ 2WD,2
+2024-02,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z LEATHER,1
+2024-02,toyota-harrier,RY1,HARRIER HYBRID G,2
 2024-02,toyota-hiace,RY2,HIACE,108
 2024-02,toyota-hiace,RY3,HIACE,22
 2024-02,toyota-hiace-majesty,RY2,HIACE MAJESTY,5
@@ -12978,6 +13241,7 @@ period,model_id,category,variant,units
 2024-02,toyota-hilux-revo,RY2,HILUX REVO,78
 2024-02,toyota-hilux-revo,RY3,HILUX REVO,4821
 2024-02,toyota-innova,RY1,INNOVA,215
+2024-02,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,1
 2024-02,toyota-sienta,RY1,SIENTA,2
 2024-02,toyota-vellfire,RY1,VELLFIRE,10
 2024-02,toyota-vellfire,RY1,VELLFIRE 2.5 ZG EDITION,1
@@ -13338,10 +13602,21 @@ period,model_id,category,variant,units
 2024-03,toyota-commuter,RY3,COMMUTER,1
 2024-03,toyota-corolla,RY1,COROLLA,333
 2024-03,toyota-corolla-cross,RY1,COROLLA CROSS,1320
+2024-03,toyota-crown-crossover,RY1,CROWN CROSSOVER G ADVANCED,2
 2024-03,toyota-fortuner,RY1,FORTUNER,1535
+2024-03,toyota-gr-supra,RY1,GR SUPRA RZ,1
 2024-03,toyota-gr-yaris,RY1,GR YARIS,1
 2024-03,toyota-gr-yaris,RY1,GR YARIS RC,2
 2024-03,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,2
+2024-03,toyota-gr86,RY1,GR86,2
+2024-03,toyota-gr86,RY1,GR86 CUP CAR BASIC,1
+2024-03,toyota-gr86,RY1,GR86 RC,3
+2024-03,toyota-gr86,RY1,GR86 RZ 10TH ANNIVERSARY,2
+2024-03,toyota-gr86,RY1,GR86 RZ 2WD,1
+2024-03,toyota-harrier,RY1,HARRIER 2.5 HYBRID G,1
+2024-03,toyota-harrier,RY1,HARRIER HYBRID G,2
+2024-03,toyota-harrier,RY1,HARRIER HYBRID G PACKAGE,1
+2024-03,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,2
 2024-03,toyota-hiace,RY2,HIACE,82
 2024-03,toyota-hiace,RY3,HIACE,15
 2024-03,toyota-hiace-majesty,RY2,HIACE MAJESTY,3
@@ -13351,6 +13626,9 @@ period,model_id,category,variant,units
 2024-03,toyota-hilux-revo,RY2,HILUX REVO,94
 2024-03,toyota-hilux-revo,RY3,HILUX REVO,4724
 2024-03,toyota-innova,RY1,INNOVA,200
+2024-03,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,1
+2024-03,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX 3.3L,1
+2024-03,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX DIESEL,1
 2024-03,toyota-sienta,RY1,SIENTA,3
 2024-03,toyota-vellfire,RY1,VELLFIRE,15
 2024-03,toyota-vellfire,RY1,VELLFIRE 2.4 Z PREMIER,1
@@ -13705,9 +13983,17 @@ period,model_id,category,variant,units
 2024-04,toyota-commuter,RY3,COMMUTER,4
 2024-04,toyota-corolla,RY1,COROLLA,220
 2024-04,toyota-corolla-cross,RY1,COROLLA CROSS,1303
+2024-04,toyota-crown-crossover,RY1,CROWN CROSSOVER G ADVANCED,2
+2024-04,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCE,3
+2024-04,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,2
 2024-04,toyota-fortuner,RY1,FORTUNER,1241
+2024-04,toyota-gr-supra,RY1,SUPRA,1
 2024-04,toyota-gr-yaris,RY1,GR YARIS,1
 2024-04,toyota-gr-yaris,RY1,GR YARIS RC,2
+2024-04,toyota-gr86,RY1,GR86,1
+2024-04,toyota-gr86,RY1,GR86 RC,4
+2024-04,toyota-gr86,RY1,GR86 RZ 10TH ANNIVERSARY,2
+2024-04,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,1
 2024-04,toyota-hiace,RY1,HIACE,1
 2024-04,toyota-hiace,RY2,HIACE,39
 2024-04,toyota-hiace,RY3,HIACE,6
@@ -13718,6 +14004,7 @@ period,model_id,category,variant,units
 2024-04,toyota-hilux-revo,RY2,HILUX REVO,87
 2024-04,toyota-hilux-revo,RY3,HILUX REVO,3762
 2024-04,toyota-innova,RY1,INNOVA,227
+2024-04,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,1
 2024-04,toyota-sienta,RY1,SIENTA,1
 2024-04,toyota-vellfire,RY1,VELLFIRE,5
 2024-04,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID X E-FOUR,1
@@ -14088,7 +14375,20 @@ period,model_id,category,variant,units
 2024-05,toyota-commuter,RY3,COMMUTER,6
 2024-05,toyota-corolla,RY1,COROLLA,186
 2024-05,toyota-corolla-cross,RY1,COROLLA CROSS,1413
+2024-05,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,1
+2024-05,toyota-crown-sport,RY1,CROWN SPORT Z,2
 2024-05,toyota-fortuner,RY1,FORTUNER,1198
+2024-05,toyota-gr-supra,RY1,GR SUPRA RZ 100 EDITION,1
+2024-05,toyota-gr-supra,RY1,GR SUPRA RZ 35TH ANNIVERSARY,1
+2024-05,toyota-gr-supra,RY1,SUPRA RZ 3.0L,1
+2024-05,toyota-gr86,RY1,GR86,1
+2024-05,toyota-gr86,RY1,GR86 RC,4
+2024-05,toyota-gr86,RY1,GR86 RZ,1
+2024-05,toyota-gr86,RY1,GR86 RZ 10TH ANNIVERSARY,1
+2024-05,toyota-gr86,RY1,GR86 RZ 40TH ANNIVERSARY,1
+2024-05,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z LEATHER,2
+2024-05,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,4
+2024-05,toyota-harrier,RY1,HARRIER S,1
 2024-05,toyota-hiace,RY2,HIACE,29
 2024-05,toyota-hiace,RY3,HIACE,7
 2024-05,toyota-hiace-majesty,RY2,HIACE MAJESTY,2
@@ -14098,6 +14398,10 @@ period,model_id,category,variant,units
 2024-05,toyota-hilux-revo,RY2,HILUX REVO,173
 2024-05,toyota-hilux-revo,RY3,HILUX REVO,4110
 2024-05,toyota-innova,RY1,INNOVA,223
+2024-05,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,3
+2024-05,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,2
+2024-05,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX 3.3L,1
+2024-05,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,1
 2024-05,toyota-sienta,RY1,SIENTA,2
 2024-05,toyota-vellfire,RY1,VELLFIRE,10
 2024-05,toyota-vellfire,RY1,VELLFIRE 2.4 Z PREMIER,1
@@ -14466,8 +14770,20 @@ period,model_id,category,variant,units
 2024-06,toyota-commuter,RY3,COMMUTER,5
 2024-06,toyota-corolla,RY1,COROLLA,263
 2024-06,toyota-corolla-cross,RY1,COROLLA CROSS,1637
+2024-06,toyota-crown-crossover,RY1,CROWN CROSSOVER G ADVANCED,1
+2024-06,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCE,1
+2024-06,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,4
+2024-06,toyota-crown-sport,RY1,CROWN SPORT Z,1
 2024-06,toyota-fortuner,RY1,FORTUNER,1283
+2024-06,toyota-gr-supra,RY1,GR SUPRA RZ,3
 2024-06,toyota-gr-yaris,RY1,GR YARIS RC,1
+2024-06,toyota-gr86,RY1,GR86 CUP CAR BASIC,5
+2024-06,toyota-gr86,RY1,GR86 RZ,1
+2024-06,toyota-gr86,RY1,GR86 RZ 10TH ANNIVERSARY,3
+2024-06,toyota-gr86,RY1,GR86 RZ 2WD,1
+2024-06,toyota-gr86,RY1,GR86 RZ 40TH ANNIVERSARY,1
+2024-06,toyota-harrier,RY1,HARRIER HYBRID G,2
+2024-06,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,1
 2024-06,toyota-hiace,RY2,HIACE,45
 2024-06,toyota-hiace,RY3,HIACE,10
 2024-06,toyota-hiace-majesty,RY2,HIACE MAJESTY,56
@@ -14477,6 +14793,8 @@ period,model_id,category,variant,units
 2024-06,toyota-hilux-revo,RY2,HILUX REVO,162
 2024-06,toyota-hilux-revo,RY3,HILUX REVO,4075
 2024-06,toyota-innova,RY1,INNOVA,224
+2024-06,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,1
+2024-06,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX DIESEL,1
 2024-06,toyota-sienta,RY1,SIENTA,1
 2024-06,toyota-vellfire,RY1,VELLFIRE,12
 2024-06,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,1
@@ -14846,8 +15164,19 @@ period,model_id,category,variant,units
 2024-07,toyota-commuter,RY3,COMMUTER,4
 2024-07,toyota-corolla,RY1,COROLLA,223
 2024-07,toyota-corolla-cross,RY1,COROLLA CROSS,1609
+2024-07,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCE,1
+2024-07,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,1
+2024-07,toyota-crown-sport,RY1,CROWN SPORT Z,1
+2024-07,toyota-crown-sport,RY1,CROWN SPORT Z 2.5L,1
 2024-07,toyota-fortuner,RY1,FORTUNER,1276
 2024-07,toyota-gr-yaris,RY1,GR YARIS RC,1
+2024-07,toyota-gr86,RY1,GR86 CUP CAR BASIC,1
+2024-07,toyota-gr86,RY1,GR86 RC,1
+2024-07,toyota-gr86,RY1,GR86 RZ,1
+2024-07,toyota-gr86,RY1,GR86 RZ 10TH ANNIVERSARY,1
+2024-07,toyota-gr86,RY1,GR86 RZ 40TH ANNIVERSARY,1
+2024-07,toyota-harrier,RY1,HARRIER HYBRID G,1
+2024-07,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,1
 2024-07,toyota-hiace,RY2,HIACE,89
 2024-07,toyota-hiace,RY3,HIACE,8
 2024-07,toyota-hiace-majesty,RY1,HIACE MAJESTY,1
@@ -14858,6 +15187,8 @@ period,model_id,category,variant,units
 2024-07,toyota-hilux-revo,RY2,HILUX REVO,141
 2024-07,toyota-hilux-revo,RY3,HILUX REVO,3879
 2024-07,toyota-innova,RY1,INNOVA,227
+2024-07,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,2
+2024-07,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,1
 2024-07,toyota-sienta,RY1,SIENTA,1
 2024-07,toyota-vellfire,RY1,VELLFIRE,10
 2024-07,toyota-vellfire,RY1,VELLFIRE 2.4 Z PREMIER,3
@@ -15034,6 +15365,7 @@ period,model_id,category,variant,units
 2024-08,mazda-cx-8,RY1,MAZDA CX-8,41
 2024-08,mazda-mazda2,RY1,MAZDA 2,456
 2024-08,mazda-mazda3,RY1,MAZDA 3,66
+2024-08,mazda-mazda6,RY1,MAZDA 6,1
 2024-08,mazda-mx-5,RY1,MAZDA MX-5,1
 2024-08,mercedes-benz-a-class,RY1,A 200,34
 2024-08,mercedes-benz-c-class,RY1,AMG C43 4MATIC COUPE,1
@@ -15229,9 +15561,18 @@ period,model_id,category,variant,units
 2024-08,toyota-commuter,RY3,COMMUTER,3
 2024-08,toyota-corolla,RY1,COROLLA,327
 2024-08,toyota-corolla-cross,RY1,COROLLA CROSS,1520
+2024-08,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCE,2
+2024-08,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,1
+2024-08,toyota-crown-sport,RY1,CROWN SPORT Z,1
 2024-08,toyota-fortuner,RY1,FORTUNER,1036
+2024-08,toyota-gr-supra,RY1,GR SUPRA RZ,2
 2024-08,toyota-gr-yaris,RY1,GR YARIS RALLYE,1
 2024-08,toyota-gr-yaris,RY1,GR YARIS RC,3
+2024-08,toyota-gr86,RY1,GR86 CUP CAR BASIC,1
+2024-08,toyota-gr86,RY1,GR86 RC,3
+2024-08,toyota-gr86,RY1,GR86 RZ,2
+2024-08,toyota-gr86,RY1,GR86 RZ 10TH ANNIVERSARY,1
+2024-08,toyota-harrier,RY1,HARRIER HYBRID G,2
 2024-08,toyota-hiace,RY2,HIACE,75
 2024-08,toyota-hiace,RY3,HIACE,9
 2024-08,toyota-hiace-majesty,RY2,HIACE MAJESTY,166
@@ -15242,6 +15583,10 @@ period,model_id,category,variant,units
 2024-08,toyota-hilux-revo,RY2,HILUX REVO,162
 2024-08,toyota-hilux-revo,RY3,HILUX REVO,3625
 2024-08,toyota-innova,RY1,INNOVA,219
+2024-08,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,1
+2024-08,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,1
+2024-08,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,2
+2024-08,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,4
 2024-08,toyota-vellfire,RY1,VELLFIRE,10
 2024-08,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,2
 2024-08,toyota-vellfire,RY1,VELLFIRE HYBRID EXECUTIVE,1
@@ -15425,6 +15770,7 @@ period,model_id,category,variant,units
 2024-09,mazda-cx-8,RY1,MAZDA CX-8,40
 2024-09,mazda-mazda2,RY1,MAZDA 2,357
 2024-09,mazda-mazda3,RY1,MAZDA 3,64
+2024-09,mazda-mazda6,RY1,MAZDA 6,4
 2024-09,mercedes-benz-a-class,RY1,A 200,31
 2024-09,mercedes-benz-c-class,RY1,AMG C43 4MATIC COUPE,1
 2024-09,mercedes-benz-c-class,RY1,C 200 COUPE,20
@@ -15615,8 +15961,18 @@ period,model_id,category,variant,units
 2024-09,toyota-commuter,RY3,COMMUTER,2
 2024-09,toyota-corolla,RY1,COROLLA,253
 2024-09,toyota-corolla-cross,RY1,COROLLA CROSS,1255
+2024-09,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCE,1
+2024-09,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,1
+2024-09,toyota-crown-sport,RY1,CROWN SPORT Z,1
 2024-09,toyota-fortuner,RY1,FORTUNER,989
+2024-09,toyota-gr-supra,RY1,GR SUPRA RZ 6MT,1
 2024-09,toyota-gr-yaris,RY1,GR YARIS RC,2
+2024-09,toyota-gr86,RY1,GR86 CUP CAR BASIC,1
+2024-09,toyota-gr86,RY1,GR86 RZ 10TH ANNIVERSARY,2
+2024-09,toyota-harrier,RY1,HARRIER 2.5 HYBRID G,1
+2024-09,toyota-harrier,RY1,HARRIER HYBRID G,1
+2024-09,toyota-harrier,RY1,HARRIER HYBRID Z,1
+2024-09,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,1
 2024-09,toyota-hiace,RY1,HIACE,1
 2024-09,toyota-hiace,RY2,HIACE,74
 2024-09,toyota-hiace,RY3,HIACE,13
@@ -15627,6 +15983,9 @@ period,model_id,category,variant,units
 2024-09,toyota-hilux-revo,RY2,HILUX REVO,131
 2024-09,toyota-hilux-revo,RY3,HILUX REVO,3511
 2024-09,toyota-innova,RY1,INNOVA,191
+2024-09,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,1
+2024-09,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,2
+2024-09,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,7
 2024-09,toyota-vellfire,RY1,VELLFIRE,10
 2024-09,toyota-vellfire,RY1,VELLFIRE 2.4 Z PREMIER,1
 2024-09,toyota-vellfire,RY1,VELLFIRE 250,1
@@ -16029,7 +16388,17 @@ period,model_id,category,variant,units
 2024-10,toyota-commuter,RY3,COMMUTER,6
 2024-10,toyota-corolla,RY1,COROLLA,234
 2024-10,toyota-corolla-cross,RY1,COROLLA CROSS,1183
+2024-10,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,1
+2024-10,toyota-crown-sport,RY1,CROWN SPORT Z,1
 2024-10,toyota-fortuner,RY1,FORTUNER,892
+2024-10,toyota-gr-supra,RY1,GR SUPRA,1
+2024-10,toyota-gr-supra,RY1,GR SUPRA RZ,2
+2024-10,toyota-gr86,RY1,GR86 CUP CAR BASIC,1
+2024-10,toyota-gr86,RY1,GR86 RC,2
+2024-10,toyota-gr86,RY1,GR86 RZ 10TH ANNIVERSARY,1
+2024-10,toyota-gr86,RY1,GR86 RZ 2WD,1
+2024-10,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z LEATHER,1
+2024-10,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,1
 2024-10,toyota-hiace,RY2,HIACE,76
 2024-10,toyota-hiace,RY3,HIACE,11
 2024-10,toyota-hiace-majesty,RY2,HIACE MAJESTY,176
@@ -16039,6 +16408,10 @@ period,model_id,category,variant,units
 2024-10,toyota-hilux-revo,RY2,HILUX REVO,105
 2024-10,toyota-hilux-revo,RY3,HILUX REVO,3043
 2024-10,toyota-innova,RY1,INNOVA,150
+2024-10,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX,1
+2024-10,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,3
+2024-10,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,2
+2024-10,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,3
 2024-10,toyota-vellfire,RY1,VELLFIRE,14
 2024-10,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,1
 2024-10,toyota-vellfire,RY1,VELLFIRE GOLDEN EYES III,1
@@ -16222,6 +16595,7 @@ period,model_id,category,variant,units
 2024-11,mazda-cx-8,RY1,MAZDA CX-8,30
 2024-11,mazda-mazda2,RY1,MAZDA 2,362
 2024-11,mazda-mazda3,RY1,MAZDA 3,44
+2024-11,mazda-mazda6,RY1,MAZDA 6,2
 2024-11,mazda-mx-5,RY1,MAZDA MX-5,3
 2024-11,mercedes-benz-a-class,RY1,A 200,32
 2024-11,mercedes-benz-c-class,RY1,AMG C43 4MATIC COUPE,3
@@ -16433,8 +16807,22 @@ period,model_id,category,variant,units
 2024-11,toyota-commuter,RY3,COMMUTER,9
 2024-11,toyota-corolla,RY1,COROLLA,281
 2024-11,toyota-corolla-cross,RY1,COROLLA CROSS,1088
+2024-11,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCE,1
+2024-11,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,1
+2024-11,toyota-crown-sport,RY1,CROWN SPORT Z,1
+2024-11,toyota-crown-sport,RY1,CROWN SPORT Z 2.5L,1
 2024-11,toyota-fortuner,RY1,FORTUNER,844
+2024-11,toyota-gr-supra,RY1,GR SUPRA,1
+2024-11,toyota-gr-supra,RY1,GR SUPRA RZ,2
+2024-11,toyota-gr-supra,RY1,SUPRA RZ PLASMA ORANGE 100,1
 2024-11,toyota-gr-yaris,RY1,GR YARIS RC,2
+2024-11,toyota-gr86,RY1,GR86 RC,1
+2024-11,toyota-gr86,RY1,GR86 RZ 10TH ANNIVERSARY,3
+2024-11,toyota-gr86,RY1,GR86 RZ 2WD,1
+2024-11,toyota-gr86,RY1,GR86 RZ 40TH ANNIVERSARY,1
+2024-11,toyota-gr86,RY1,GR86 SARD GT1 CUP CAR,1
+2024-11,toyota-harrier,RY1,HARRIER HYBRID G,2
+2024-11,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,2
 2024-11,toyota-hiace,RY2,HIACE,89
 2024-11,toyota-hiace,RY3,HIACE,17
 2024-11,toyota-hiace-majesty,RY2,HIACE MAJESTY,207
@@ -16444,6 +16832,9 @@ period,model_id,category,variant,units
 2024-11,toyota-hilux-revo,RY2,HILUX REVO,143
 2024-11,toyota-hilux-revo,RY3,HILUX REVO,2964
 2024-11,toyota-innova,RY1,INNOVA,124
+2024-11,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,3
+2024-11,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,2
+2024-11,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,5
 2024-11,toyota-vellfire,RY1,VELLFIRE,14
 2024-11,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,2
 2024-11,toyota-vellfire,RY1,VELLFIRE HYBRID EXECUTIVE,2
@@ -16809,9 +17200,14 @@ period,model_id,category,variant,units
 2024-12,toyota-commuter,RY3,COMMUTER,7
 2024-12,toyota-corolla,RY1,COROLLA,153
 2024-12,toyota-corolla-cross,RY1,COROLLA CROSS,662
+2024-12,toyota-crown-crossover,RY1,CROWN CROSSOVER G,1
+2024-12,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,1
 2024-12,toyota-fortuner,RY1,FORTUNER,623
 2024-12,toyota-gr-yaris,RY1,GR YARIS RZ,1
 2024-12,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,1
+2024-12,toyota-gr86,RY1,GR86 RC,1
+2024-12,toyota-harrier,RY1,HARRIER HYBRID G,1
+2024-12,toyota-harrier,RY1,HARRIER HYBRID Z,1
 2024-12,toyota-hiace,RY2,HIACE,48
 2024-12,toyota-hiace,RY3,HIACE,12
 2024-12,toyota-hiace-majesty,RY2,HIACE MAJESTY,124
@@ -16822,6 +17218,11 @@ period,model_id,category,variant,units
 2024-12,toyota-hilux-revo,RY2,HILUX REVO,155
 2024-12,toyota-hilux-revo,RY3,HILUX REVO,2130
 2024-12,toyota-innova,RY1,INNOVA,118
+2024-12,toyota-land-cruiser-250,RY1,LAND CRUISER 250 VX FIRST,1
+2024-12,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX,1
+2024-12,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,2
+2024-12,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX 3.3L,1
+2024-12,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,1
 2024-12,toyota-vellfire,RY1,VELLFIRE,8
 2024-12,toyota-vellfire,RY1,VELLFIRE 2.4 Z PREMIER,1
 2024-12,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,1
@@ -17013,6 +17414,7 @@ period,model_id,category,variant,units
 2025-01,mazda-cx-8,RY1,MAZDA CX-8,24
 2025-01,mazda-mazda2,RY1,MAZDA 2,481
 2025-01,mazda-mazda3,RY1,MAZDA 3,48
+2025-01,mazda-mazda6,RY1,MAZDA 6,1
 2025-01,mazda-mx-5,RY1,MAZDA MX-5,1
 2025-01,mercedes-benz-a-class,RY1,A 200,53
 2025-01,mercedes-benz-amg-gt,RY1,AMG GT 53 4MATIC+,1
@@ -17220,10 +17622,20 @@ period,model_id,category,variant,units
 2025-01,toyota-commuter,RY3,COMMUTER,13
 2025-01,toyota-corolla,RY1,COROLLA,476
 2025-01,toyota-corolla-cross,RY1,COROLLA CROSS,1602
+2025-01,toyota-crown-crossover,RY1,CROWN CROSSOVER G ADVANCED,2
+2025-01,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,1
+2025-01,toyota-crown-sport,RY1,CROWN SPORT Z,1
+2025-01,toyota-crown-sport,RY1,CROWN SPORT Z 2.5L,2
 2025-01,toyota-fortuner,RY1,FORTUNER,1553
+2025-01,toyota-gr-supra,RY1,GR SUPRA RZ,1
 2025-01,toyota-gr-yaris,RY1,GR YARIS,1
 2025-01,toyota-gr-yaris,RY1,GR YARIS RC,1
 2025-01,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,3
+2025-01,toyota-gr86,RY1,GR86 CUP CAR BASIC,1
+2025-01,toyota-gr86,RY1,GR86 RC,4
+2025-01,toyota-gr86,RY1,GR86 SZ,1
+2025-01,toyota-harrier,RY1,HARRIER HYBRID Z,1
+2025-01,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,6
 2025-01,toyota-hiace,RY2,HIACE,76
 2025-01,toyota-hiace,RY3,HIACE,21
 2025-01,toyota-hiace-majesty,RY2,HIACE MAJESTY,246
@@ -17233,6 +17645,11 @@ period,model_id,category,variant,units
 2025-01,toyota-hilux-revo,RY2,HILUX REVO,95
 2025-01,toyota-hilux-revo,RY3,HILUX REVO,3378
 2025-01,toyota-innova,RY1,INNOVA,198
+2025-01,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,1
+2025-01,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,2
+2025-01,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,4
+2025-01,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX 3.3L,1
+2025-01,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,3
 2025-01,toyota-vellfire,RY1,VELLFIRE,28
 2025-01,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,1
 2025-01,toyota-vellfire,RY1,VELLFIRE HYBRID EXECUTIVE,2
@@ -17434,6 +17851,7 @@ period,model_id,category,variant,units
 2025-02,mazda-cx-8,RY1,MAZDA CX-8,17
 2025-02,mazda-mazda2,RY1,MAZDA 2,373
 2025-02,mazda-mazda3,RY1,MAZDA 3,39
+2025-02,mazda-mazda6,RY1,MAZDA 6,1
 2025-02,mercedes-benz-a-class,RY1,A 200,43
 2025-02,mercedes-benz-c-class,RY1,AMG C43 4MATIC COUPE,3
 2025-02,mercedes-benz-c-class,RY1,C 200 COUPE,15
@@ -17648,9 +18066,16 @@ period,model_id,category,variant,units
 2025-02,toyota-commuter,RY3,COMMUTER,4
 2025-02,toyota-corolla,RY1,COROLLA,204
 2025-02,toyota-corolla-cross,RY1,COROLLA CROSS,1265
+2025-02,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCE,1
+2025-02,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,3
+2025-02,toyota-crown-sport,RY1,CROWN SPORT Z,1
 2025-02,toyota-fortuner,RY1,FORTUNER,1202
+2025-02,toyota-gr-supra,RY1,GR SUPRA RZ,2
 2025-02,toyota-gr-yaris,RY1,GR YARIS RC,1
 2025-02,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,3
+2025-02,toyota-gr86,RY1,GR86 RC,5
+2025-02,toyota-harrier,RY1,HARRIER HYBRID Z,1
+2025-02,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,1
 2025-02,toyota-hiace,RY2,HIACE,65
 2025-02,toyota-hiace,RY3,HIACE,7
 2025-02,toyota-hiace-majesty,RY2,HIACE MAJESTY,223
@@ -17660,6 +18085,9 @@ period,model_id,category,variant,units
 2025-02,toyota-hilux-revo,RY2,HILUX REVO,215
 2025-02,toyota-hilux-revo,RY3,HILUX REVO,4226
 2025-02,toyota-innova,RY1,INNOVA,159
+2025-02,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,2
+2025-02,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,2
+2025-02,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,9
 2025-02,toyota-vellfire,RY1,VELLFIRE,36
 2025-02,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,3
 2025-02,toyota-vellfire,RY1,VELLFIRE HYBRID EXECUTIVE,2
@@ -17860,6 +18288,7 @@ period,model_id,category,variant,units
 2025-03,mazda-cx-8,RY1,MAZDA CX-8,20
 2025-03,mazda-mazda2,RY1,MAZDA 2,379
 2025-03,mazda-mazda3,RY1,MAZDA 3,24
+2025-03,mazda-mazda6,RY1,MAZDA 6,3
 2025-03,mazda-mx-5,RY1,MAZDA MX-5,1
 2025-03,mercedes-benz-a-class,RY1,A 200,30
 2025-03,mercedes-benz-c-class,RY1,AMG C43 4MATIC COUPE,2
@@ -18074,8 +18503,15 @@ period,model_id,category,variant,units
 2025-03,toyota-commuter,RY3,COMMUTER,6
 2025-03,toyota-corolla,RY1,COROLLA,449
 2025-03,toyota-corolla-cross,RY1,COROLLA CROSS,1310
+2025-03,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,1
 2025-03,toyota-fortuner,RY1,FORTUNER,1199
+2025-03,toyota-gr-supra,RY1,GR SUPRA RZ,1
 2025-03,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,3
+2025-03,toyota-gr86,RY1,GR86 CUP CAR BASIC,2
+2025-03,toyota-gr86,RY1,GR86 RC,5
+2025-03,toyota-gr86,RY1,GR86 RZ,1
+2025-03,toyota-harrier,RY1,HARRIER HYBRID Z,1
+2025-03,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,5
 2025-03,toyota-hiace,RY2,HIACE,66
 2025-03,toyota-hiace,RY3,HIACE,10
 2025-03,toyota-hiace-majesty,RY2,HIACE MAJESTY,333
@@ -18085,6 +18521,13 @@ period,model_id,category,variant,units
 2025-03,toyota-hilux-revo,RY2,HILUX REVO,158
 2025-03,toyota-hilux-revo,RY3,HILUX REVO,3191
 2025-03,toyota-innova,RY1,INNOVA,140
+2025-03,toyota-land-cruiser-250,RY1,LAND CRUISER 250 VX,1
+2025-03,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX,6
+2025-03,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,4
+2025-03,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,1
+2025-03,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX 3.3L,1
+2025-03,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX DIESEL,1
+2025-03,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,2
 2025-03,toyota-sienta,RY1,SIENTA,1
 2025-03,toyota-vellfire,RY1,VELLFIRE,46
 2025-03,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,4
@@ -18276,6 +18719,7 @@ period,model_id,category,variant,units
 2025-04,mazda-cx-8,RY1,MAZDA CX-8,12
 2025-04,mazda-mazda2,RY1,MAZDA 2,313
 2025-04,mazda-mazda3,RY1,MAZDA 3,26
+2025-04,mazda-mazda6,RY1,MAZDA 6,1
 2025-04,mazda-mx-5,RY1,MAZDA MX-5,1
 2025-04,mercedes-benz-a-class,RY1,A 200,21
 2025-04,mercedes-benz-c-class,RY1,AMG C43 4MATIC COUPE,2
@@ -18481,9 +18925,15 @@ period,model_id,category,variant,units
 2025-04,toyota-commuter,RY3,COMMUTER,1
 2025-04,toyota-corolla,RY1,COROLLA,273
 2025-04,toyota-corolla-cross,RY1,COROLLA CROSS,1214
+2025-04,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,4
 2025-04,toyota-fortuner,RY1,FORTUNER,1207
+2025-04,toyota-gr-supra,RY1,GR SUPRA RZ,2
 2025-04,toyota-gr-yaris,RY1,GR YARIS RC,1
 2025-04,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,1
+2025-04,toyota-gr86,RY1,GR86 RC,2
+2025-04,toyota-gr86,RY1,GR86 RZ 10TH ANNIVERSARY,1
+2025-04,toyota-gr86,RY1,GR86 RZ 2WD,2
+2025-04,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,2
 2025-04,toyota-hiace,RY2,HIACE,43
 2025-04,toyota-hiace,RY3,HIACE,21
 2025-04,toyota-hiace-majesty,RY2,HIACE MAJESTY,209
@@ -18493,6 +18943,11 @@ period,model_id,category,variant,units
 2025-04,toyota-hilux-revo,RY2,HILUX REVO,94
 2025-04,toyota-hilux-revo,RY3,HILUX REVO,2837
 2025-04,toyota-innova,RY1,INNOVA,124
+2025-04,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX,2
+2025-04,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,5
+2025-04,toyota-land-cruiser-300,RY1,LAND CRUISER 300 SAHARA ZX,1
+2025-04,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,1
+2025-04,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,3
 2025-04,toyota-vellfire,RY1,VELLFIRE,36
 2025-04,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,4
 2025-04,toyota-vellfire,RY1,VELLFIRE 250,1
@@ -18515,6 +18970,7 @@ period,model_id,category,variant,units
 2025-04,volvo-ec40,RY1,EC40,26
 2025-04,volvo-ex30,RY1,EX30,80
 2025-04,volvo-ex40,RY1,EX40,35
+2025-04,volvo-ex90,RY1,EX90,1
 2025-04,volvo-s60,RY1,S60,6
 2025-04,volvo-s90,RY1,S90,4
 2025-04,volvo-v60,RY1,V60,8
@@ -18692,6 +19148,7 @@ period,model_id,category,variant,units
 2025-05,mazda-cx-8,RY1,MAZDA CX-8,20
 2025-05,mazda-mazda2,RY1,MAZDA 2,379
 2025-05,mazda-mazda3,RY1,MAZDA 3,31
+2025-05,mazda-mazda6,RY1,MAZDA 6,1
 2025-05,mazda-mx-5,RY1,MX-5,1
 2025-05,mercedes-benz-a-class,RY1,A 200,31
 2025-05,mercedes-benz-c-class,RY1,AMG C43 4MATIC COUPE,2
@@ -18901,10 +19358,21 @@ period,model_id,category,variant,units
 2025-05,toyota-commuter,RY3,COMMUTER,16
 2025-05,toyota-corolla,RY1,COROLLA,261
 2025-05,toyota-corolla-cross,RY1,COROLLA CROSS,1254
+2025-05,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,3
+2025-05,toyota-crown-sport,RY1,CROWN SPORT Z,2
 2025-05,toyota-fortuner,RY1,FORTUNER,1413
+2025-05,toyota-gr-supra,RY1,GR SUPRA SZ-R,1
 2025-05,toyota-gr-yaris,RY1,GR YARIS,1
 2025-05,toyota-gr-yaris,RY1,GR YARIS RC,2
 2025-05,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,2
+2025-05,toyota-gr86,RY1,GR86 CUP CAR BASIC,1
+2025-05,toyota-gr86,RY1,GR86 RC,2
+2025-05,toyota-gr86,RY1,GR86 RZ 2WD,1
+2025-05,toyota-gr86,RY1,GR86 RZ GREDDY,1
+2025-05,toyota-gr86,RY1,GR86 RZ RIDGE GREEN LIMITED,2
+2025-05,toyota-harrier,RY1,HARRIER HYBRID G,2
+2025-05,toyota-harrier,RY1,HARRIER HYBRID Z,1
+2025-05,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,2
 2025-05,toyota-hiace,RY2,HIACE,46
 2025-05,toyota-hiace,RY3,HIACE,15
 2025-05,toyota-hiace-majesty,RY2,HIACE MAJESTY,189
@@ -18914,6 +19382,13 @@ period,model_id,category,variant,units
 2025-05,toyota-hilux-revo,RY2,HILUX REVO,160
 2025-05,toyota-hilux-revo,RY3,HILUX REVO,3021
 2025-05,toyota-innova,RY1,INNOVA,109
+2025-05,toyota-land-cruiser-250,RY1,LAND CRUISER 250 VX,1
+2025-05,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX,1
+2025-05,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX 2.8L,1
+2025-05,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,1
+2025-05,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,1
+2025-05,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX 3.3L,3
+2025-05,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,1
 2025-05,toyota-sienta,RY1,SIENTA,2
 2025-05,toyota-vellfire,RY1,VELLFIRE,41
 2025-05,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,1
@@ -18933,6 +19408,7 @@ period,model_id,category,variant,units
 2025-05,volvo-ec40,RY1,EC40,32
 2025-05,volvo-ex30,RY1,EX30,74
 2025-05,volvo-ex40,RY1,EX40,37
+2025-05,volvo-ex90,RY1,EX90,5
 2025-05,volvo-s60,RY1,S60,3
 2025-05,volvo-s90,RY1,S90,3
 2025-05,volvo-v60,RY1,V60,26
@@ -19109,6 +19585,7 @@ period,model_id,category,variant,units
 2025-06,mazda-cx-8,RY1,MAZDA CX-8,25
 2025-06,mazda-mazda2,RY1,MAZDA 2,294
 2025-06,mazda-mazda3,RY1,MAZDA 3,32
+2025-06,mazda-mazda6,RY1,MAZDA 6,1
 2025-06,mercedes-benz-a-class,RY1,A 200,35
 2025-06,mercedes-benz-c-class,RY1,AMG C43 4MATIC COUPE,2
 2025-06,mercedes-benz-c-class,RY1,C 200 COUPE,7
@@ -19315,10 +19792,17 @@ period,model_id,category,variant,units
 2025-06,toyota-commuter,RY3,COMMUTER,7
 2025-06,toyota-corolla,RY1,COROLLA,169
 2025-06,toyota-corolla-cross,RY1,COROLLA CROSS,1257
+2025-06,toyota-crown-crossover,RY1,CROWN CROSSOVER G ADVANCED,1
+2025-06,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,4
+2025-06,toyota-crown-sport,RY1,CROWN SPORT Z,1
 2025-06,toyota-fortuner,RY1,FORTUNER,1287
+2025-06,toyota-gr-supra,RY1,GR SUPRA RZ MATTE WHITE EDIT,1
 2025-06,toyota-gr-yaris,RY1,GR YARIS RC,1
 2025-06,toyota-gr-yaris,RY1,GR YARIS RC AT,1
 2025-06,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,2
+2025-06,toyota-gr86,RY1,GR86 RC,7
+2025-06,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z LEATHER,1
+2025-06,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,5
 2025-06,toyota-hiace,RY2,HIACE,38
 2025-06,toyota-hiace,RY3,HIACE,14
 2025-06,toyota-hiace-majesty,RY2,HIACE MAJESTY,191
@@ -19329,6 +19813,11 @@ period,model_id,category,variant,units
 2025-06,toyota-hilux-revo,RY2,HILUX REVO,190
 2025-06,toyota-hilux-revo,RY3,HILUX REVO,3047
 2025-06,toyota-innova,RY1,INNOVA,141
+2025-06,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,1
+2025-06,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,3
+2025-06,toyota-land-cruiser-300,RY1,LAND CRUISER 300 SAHARA 3.3L,1
+2025-06,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX 3.3L,1
+2025-06,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,2
 2025-06,toyota-sienta,RY1,SIENTA,2
 2025-06,toyota-vellfire,RY1,VELLFIRE,40
 2025-06,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,4
@@ -19348,6 +19837,7 @@ period,model_id,category,variant,units
 2025-06,volvo-ec40,RY1,EC40,34
 2025-06,volvo-ex30,RY1,EX30,55
 2025-06,volvo-ex40,RY1,EX40,41
+2025-06,volvo-ex90,RY1,EX90,2
 2025-06,volvo-s60,RY1,S60,10
 2025-06,volvo-s90,RY1,S90,2
 2025-06,volvo-v60,RY1,V60,13
@@ -19761,10 +20251,19 @@ period,model_id,category,variant,units
 2025-07,toyota-commuter,RY3,COMMUTER,22
 2025-07,toyota-corolla,RY1,COROLLA,281
 2025-07,toyota-corolla-cross,RY1,COROLLA CROSS,1253
+2025-07,toyota-crown-crossover,RY1,CROWN CROSSOVER G ADVANCED,1
+2025-07,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,1
+2025-07,toyota-crown-sport,RY1,CROWN SPORT Z,3
 2025-07,toyota-fortuner,RY1,FORTUNER,1446
+2025-07,toyota-gr-supra,RY1,GR SUPRA RZ,2
+2025-07,toyota-gr-supra,RY1,GR SUPRA RZ 6MT,1
 2025-07,toyota-gr-yaris,RY1,GR YARIS,1
 2025-07,toyota-gr-yaris,RY1,GR YARIS RC,1
 2025-07,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,4
+2025-07,toyota-gr86,RY1,GR86 CUP CAR BASIC,1
+2025-07,toyota-gr86,RY1,GR86 RC,4
+2025-07,toyota-gr86,RY1,GR86 RZ 2WD,2
+2025-07,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,2
 2025-07,toyota-hiace,RY2,HIACE,43
 2025-07,toyota-hiace,RY3,HIACE,13
 2025-07,toyota-hiace-majesty,RY2,HIACE MAJESTY,199
@@ -19774,6 +20273,13 @@ period,model_id,category,variant,units
 2025-07,toyota-hilux-revo,RY2,HILUX REVO,184
 2025-07,toyota-hilux-revo,RY3,HILUX REVO,3062
 2025-07,toyota-innova,RY1,INNOVA,146
+2025-07,toyota-land-cruiser-250,RY1,LAND CRUISER 250 VX,1
+2025-07,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX,2
+2025-07,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX 2.8L,1
+2025-07,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,1
+2025-07,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,1
+2025-07,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,2
+2025-07,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,1
 2025-07,toyota-vellfire,RY1,VELLFIRE,28
 2025-07,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,3
 2025-07,toyota-vellfire,RY1,VELLFIRE HYBRID EXECUTIVE,1
@@ -19796,6 +20302,7 @@ period,model_id,category,variant,units
 2025-07,volvo-ec40,RY1,EC40,39
 2025-07,volvo-ex30,RY1,EX30,71
 2025-07,volvo-ex40,RY1,EX40,30
+2025-07,volvo-ex90,RY1,EX90,8
 2025-07,volvo-s60,RY1,S60,4
 2025-07,volvo-s90,RY1,S90,5
 2025-07,volvo-v60,RY1,V60,11
@@ -19993,6 +20500,7 @@ period,model_id,category,variant,units
 2025-08,mazda-cx-8,RY1,MAZDA CX-8,14
 2025-08,mazda-mazda2,RY1,MAZDA 2,276
 2025-08,mazda-mazda3,RY1,MAZDA 3,28
+2025-08,mazda-mazda6,RY1,MAZDA 6,1
 2025-08,mercedes-benz-a-class,RY1,A 200,34
 2025-08,mercedes-benz-c-class,RY1,AMG C43 4MATIC COUPE,2
 2025-08,mercedes-benz-c-class,RY1,C 200 COUPE,9
@@ -20196,9 +20704,20 @@ period,model_id,category,variant,units
 2025-08,toyota-commuter,RY3,COMMUTER,15
 2025-08,toyota-corolla,RY1,COROLLA,198
 2025-08,toyota-corolla-cross,RY1,COROLLA CROSS,1085
+2025-08,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,1
+2025-08,toyota-crown-sport,RY1,CROWN SPORT Z,1
 2025-08,toyota-fortuner,RY1,FORTUNER,1118
+2025-08,toyota-gr-supra,RY1,GR SUPRA SZ-R,1
 2025-08,toyota-gr-yaris,RY1,GR YARIS RC,2
 2025-08,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,1
+2025-08,toyota-gr86,RY1,GR86 CUP CAR BASIC,1
+2025-08,toyota-gr86,RY1,GR86 RC,3
+2025-08,toyota-gr86,RY1,GR86 RZ,3
+2025-08,toyota-gr86,RY1,GR86 RZ 10TH ANNIVERSARY,1
+2025-08,toyota-gr86,RY1,GR86 RZ 2WD,1
+2025-08,toyota-gr86,RY1,GR86 RZ RIDGE GREEN LIMITED,1
+2025-08,toyota-harrier,RY1,HARRIER HYBRID G,1
+2025-08,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,1
 2025-08,toyota-hiace,RY2,HIACE,37
 2025-08,toyota-hiace,RY3,HIACE,10
 2025-08,toyota-hiace-majesty,RY2,HIACE MAJESTY,168
@@ -20208,6 +20727,12 @@ period,model_id,category,variant,units
 2025-08,toyota-hilux-revo,RY2,HILUX REVO,184
 2025-08,toyota-hilux-revo,RY3,HILUX REVO,2985
 2025-08,toyota-innova,RY1,INNOVA,79
+2025-08,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX,3
+2025-08,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX 2.8L,1
+2025-08,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,3
+2025-08,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,1
+2025-08,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX 3.3L,1
+2025-08,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,5
 2025-08,toyota-sienta,RY1,SIENTA,2
 2025-08,toyota-vellfire,RY1,VELLFIRE,11
 2025-08,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,5
@@ -20229,6 +20754,7 @@ period,model_id,category,variant,units
 2025-08,volvo-ec40,RY1,EC40,28
 2025-08,volvo-ex30,RY1,EX30,50
 2025-08,volvo-ex40,RY1,EX40,37
+2025-08,volvo-ex90,RY1,EX90,8
 2025-08,volvo-s60,RY1,S60,9
 2025-08,volvo-s90,RY1,S90,4
 2025-08,volvo-v60,RY1,V60,13
@@ -20646,11 +21172,21 @@ period,model_id,category,variant,units
 2025-09,toyota-commuter,RY3,COMMUTER,9
 2025-09,toyota-corolla,RY1,COROLLA,288
 2025-09,toyota-corolla-cross,RY1,COROLLA CROSS,1209
+2025-09,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCE,1
+2025-09,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,3
+2025-09,toyota-crown-sport,RY1,CROWN SPORT RS,1
+2025-09,toyota-crown-sport,RY1,CROWN SPORT Z,1
 2025-09,toyota-fortuner,RY1,FORTUNER,1102
 2025-09,toyota-gr-yaris,RY1,GR YARIS,1
 2025-09,toyota-gr-yaris,RY1,GR YARIS RC,2
 2025-09,toyota-gr-yaris,RY1,GR YARIS RC AT,1
 2025-09,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,3
+2025-09,toyota-gr86,RY1,GR86 CUP CAR BASIC,2
+2025-09,toyota-gr86,RY1,GR86 RC,2
+2025-09,toyota-gr86,RY1,GR86 RZ,1
+2025-09,toyota-gr86,RY1,GR86 RZ 2WD,1
+2025-09,toyota-harrier,RY1,HARRIER HYBRID G,1
+2025-09,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,2
 2025-09,toyota-hiace,RY2,HIACE,49
 2025-09,toyota-hiace,RY3,HIACE,12
 2025-09,toyota-hiace-majesty,RY2,HIACE MAJESTY,134
@@ -20661,6 +21197,13 @@ period,model_id,category,variant,units
 2025-09,toyota-hilux-revo,RY2,HILUX REVO,118
 2025-09,toyota-hilux-revo,RY3,HILUX REVO,3056
 2025-09,toyota-innova,RY1,INNOVA,82
+2025-09,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX,1
+2025-09,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX 2.8L,1
+2025-09,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,3
+2025-09,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,1
+2025-09,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX 3.3L,3
+2025-09,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,6
+2025-09,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX 2.8L 4WD,1
 2025-09,toyota-vellfire,RY1,VELLFIRE,21
 2025-09,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,3
 2025-09,toyota-vellfire,RY1,VELLFIRE HYBRID EXECUTIVE,3
@@ -20684,6 +21227,7 @@ period,model_id,category,variant,units
 2025-09,volvo-ec40,RY1,EC40,27
 2025-09,volvo-ex30,RY1,EX30,64
 2025-09,volvo-ex40,RY1,EX40,47
+2025-09,volvo-ex90,RY1,EX90,3
 2025-09,volvo-s60,RY1,S60,6
 2025-09,volvo-s90,RY1,S90,5
 2025-09,volvo-v60,RY1,V60,13
@@ -21086,11 +21630,19 @@ period,model_id,category,variant,units
 2025-10,toyota-commuter,RY3,COMMUTER,11
 2025-10,toyota-corolla,RY1,COROLLA,201
 2025-10,toyota-corolla-cross,RY1,COROLLA CROSS,1209
+2025-10,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,2
 2025-10,toyota-fortuner,RY1,FORTUNER,981
+2025-10,toyota-gr-supra,RY1,GR SUPRA RZ,1
+2025-10,toyota-gr-supra,RY1,GR SUPRA RZ 3.0,1
 2025-10,toyota-gr-yaris,RY1,GR YARIS,4
 2025-10,toyota-gr-yaris,RY1,GR YARIS RC,2
 2025-10,toyota-gr-yaris,RY1,GR YARIS RC AT,1
 2025-10,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,2
+2025-10,toyota-gr86,RY1,GR86 CUP CAR BASIC,1
+2025-10,toyota-gr86,RY1,GR86 RC,4
+2025-10,toyota-gr86,RY1,GR86 RZ 2WD,1
+2025-10,toyota-gr86,RY1,GR86 RZ RIDGE GREEN LIMITED,2
+2025-10,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,1
 2025-10,toyota-hiace,RY2,HIACE,59
 2025-10,toyota-hiace,RY3,HIACE,11
 2025-10,toyota-hiace-majesty,RY2,HIACE MAJESTY,129
@@ -21101,6 +21653,11 @@ period,model_id,category,variant,units
 2025-10,toyota-hilux-revo,RY2,HILUX REVO,155
 2025-10,toyota-hilux-revo,RY3,HILUX REVO,2750
 2025-10,toyota-innova,RY1,INNOVA,67
+2025-10,toyota-land-cruiser-250,RY1,LAND CRUISER 250 VX 2.8L,1
+2025-10,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX,2
+2025-10,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,1
+2025-10,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,1
+2025-10,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,1
 2025-10,toyota-sienta,RY1,SIENTA HYBRID G 2WD,1
 2025-10,toyota-vellfire,RY1,VELLFIRE,21
 2025-10,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,8
@@ -21122,6 +21679,7 @@ period,model_id,category,variant,units
 2025-10,volvo-ec40,RY1,EC40,27
 2025-10,volvo-ex30,RY1,EX30,53
 2025-10,volvo-ex40,RY1,EX40,46
+2025-10,volvo-ex90,RY1,EX90,3
 2025-10,volvo-s60,RY1,S60,5
 2025-10,volvo-s90,RY1,S90,13
 2025-10,volvo-v60,RY1,V60,12
@@ -21542,10 +22100,15 @@ period,model_id,category,variant,units
 2025-11,toyota-corolla,RY1,COROLLA,280
 2025-11,toyota-corolla-cross,RY1,COROLLA CROSS,1022
 2025-11,toyota-fortuner,RY1,FORTUNER,953
+2025-11,toyota-gr-supra,RY1,GR SUPRA RZ PLASMA ORANGE 100,1
 2025-11,toyota-gr-yaris,RY1,GR YARIS,5
 2025-11,toyota-gr-yaris,RY1,GR YARIS RC,2
 2025-11,toyota-gr-yaris,RY1,GR YARIS RC M/T 4WD,1
 2025-11,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,3
+2025-11,toyota-gr86,RY1,GR86 CUP CAR BASIC,2
+2025-11,toyota-gr86,RY1,GR86 RC,3
+2025-11,toyota-gr86,RY1,GR86 RZ,1
+2025-11,toyota-gr86,RY1,GR86 RZ RIDGE GREEN LIMITED,2
 2025-11,toyota-hiace,RY2,HIACE,39
 2025-11,toyota-hiace,RY3,HIACE,22
 2025-11,toyota-hiace-majesty,RY2,HIACE MAJESTY,170
@@ -21557,6 +22120,12 @@ period,model_id,category,variant,units
 2025-11,toyota-hilux-travo,RY1,HILUX TRAVO,13
 2025-11,toyota-hilux-travo,RY3,HILUX TRAVO,16
 2025-11,toyota-innova,RY1,INNOVA,107
+2025-11,toyota-land-cruiser-250,RY1,LAND CRUISER 250 GX,1
+2025-11,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX,1
+2025-11,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,1
+2025-11,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,1
+2025-11,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX 3.3L,1
+2025-11,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,2
 2025-11,toyota-vellfire,RY1,VELLFIRE,14
 2025-11,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,1
 2025-11,toyota-vellfire,RY1,VELLFIRE HYBRID EXECUTIVE,2
@@ -21576,6 +22145,7 @@ period,model_id,category,variant,units
 2025-11,volvo-ec40,RY1,EC40,25
 2025-11,volvo-ex30,RY1,EX30,64
 2025-11,volvo-ex40,RY1,EX40,45
+2025-11,volvo-ex90,RY1,EX90,7
 2025-11,volvo-s60,RY1,S60,2
 2025-11,volvo-s60,RY1,S60 T5,1
 2025-11,volvo-s90,RY1,S90,3
@@ -21973,8 +22543,12 @@ period,model_id,category,variant,units
 2025-12,toyota-corolla,RY1,COROLLA,204
 2025-12,toyota-corolla-cross,RY1,COROLLA CROSS,778
 2025-12,toyota-fortuner,RY1,FORTUNER,803
+2025-12,toyota-gr-supra,RY1,GR SUPRA RZ 3.0,1
+2025-12,toyota-gr-supra,RY1,GR SUPRA RZ PLASMA ORANGE 100,1
 2025-12,toyota-gr-yaris,RY1,GR YARIS RC,3
 2025-12,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,1
+2025-12,toyota-gr86,RY1,GR86 RC,3
+2025-12,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,1
 2025-12,toyota-hiace,RY2,HIACE,38
 2025-12,toyota-hiace,RY3,HIACE,7
 2025-12,toyota-hiace-majesty,RY2,HIACE MAJESTY,134
@@ -21988,6 +22562,13 @@ period,model_id,category,variant,units
 2025-12,toyota-hilux-travo,RY2,HILUX TRAVO,110
 2025-12,toyota-hilux-travo,RY3,HILUX TRAVO,220
 2025-12,toyota-innova,RY1,INNOVA,109
+2025-12,toyota-land-cruiser-250,RY1,LAND CRUISER 250 VX,1
+2025-12,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX,3
+2025-12,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX 2.8L,1
+2025-12,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,2
+2025-12,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,2
+2025-12,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX 3.3L,1
+2025-12,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,1
 2025-12,toyota-vellfire,RY1,VELLFIRE,7
 2025-12,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,3
 2025-12,toyota-vellfire,RY1,VELLFIRE HYBRID EXECUTIVE,2
@@ -22005,6 +22586,7 @@ period,model_id,category,variant,units
 2025-12,volvo-ec40,RY1,EC40,11
 2025-12,volvo-ex30,RY1,EX30,32
 2025-12,volvo-ex40,RY1,EX40,20
+2025-12,volvo-ex90,RY1,EX90,2
 2025-12,volvo-s60,RY1,S60,3
 2025-12,volvo-s90,RY1,S90,3
 2025-12,volvo-v60,RY1,V60,2
@@ -22212,6 +22794,7 @@ period,model_id,category,variant,units
 2026-01,mazda-cx-8,RY1,MAZDA CX-8,8
 2026-01,mazda-mazda2,RY1,MAZDA 2,498
 2026-01,mazda-mazda3,RY1,MAZDA 3,30
+2026-01,mazda-mazda6,RY1,MAZDA 6,2
 2026-01,mazda-mx-5,RY1,MX-5,1
 2026-01,mercedes-benz-a-class,RY1,A 200,30
 2026-01,mercedes-benz-c-class,RY1,C 200 COUPE,4
@@ -22423,12 +23006,23 @@ period,model_id,category,variant,units
 2026-01,toyota-commuter,RY3,COMMUTER,2
 2026-01,toyota-corolla,RY1,COROLLA,186
 2026-01,toyota-corolla-cross,RY1,COROLLA CROSS,1468
+2026-01,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,2
+2026-01,toyota-crown-sport,RY1,CROWN SPORT Z,3
 2026-01,toyota-fortuner,RY1,FORTUNER,1435
+2026-01,toyota-gr-supra,RY1,GR SUPRA,1
 2026-01,toyota-gr-yaris,RY1,GR YARIS,1
 2026-01,toyota-gr-yaris,RY1,GR YARIS RC,3
 2026-01,toyota-gr-yaris,RY1,GR YARIS RC AT,1
 2026-01,toyota-gr-yaris,RY1,GR YARIS RZ,1
 2026-01,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,2
+2026-01,toyota-gr86,RY1,GR86 RC,4
+2026-01,toyota-gr86,RY1,GR86 RZ,1
+2026-01,toyota-gr86,RY1,GR86 RZ 2WD,1
+2026-01,toyota-gr86,RY1,GR86 RZ 6MT,1
+2026-01,toyota-gr86,RY1,GR86 RZ AT,1
+2026-01,toyota-gr86,RY1,GR86 RZ M/T,1
+2026-01,toyota-gr86,RY1,GR86 SZ,1
+2026-01,toyota-harrier,RY1,HARRIER HYBRID G,1
 2026-01,toyota-hiace,RY1,HIACE,1
 2026-01,toyota-hiace,RY2,HIACE,44
 2026-01,toyota-hiace,RY3,HIACE,15
@@ -22443,6 +23037,15 @@ period,model_id,category,variant,units
 2026-01,toyota-hilux-travo,RY2,HILUX TRAVO,144
 2026-01,toyota-hilux-travo,RY3,HILUX TRAVO,639
 2026-01,toyota-innova,RY1,INNOVA,151
+2026-01,toyota-land-cruiser-250,RY1,LAND CRUISER 250 GX,1
+2026-01,toyota-land-cruiser-250,RY1,LAND CRUISER 250 VX,3
+2026-01,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX,6
+2026-01,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX 2.8L,1
+2026-01,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,6
+2026-01,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,2
+2026-01,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,4
+2026-01,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,3
+2026-01,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX 2.8L 4WD,1
 2026-01,toyota-vellfire,RY1,VELLFIRE,11
 2026-01,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,10
 2026-01,toyota-vellfire,RY1,VELLFIRE HYBRID Z 2.5L,1
@@ -22461,6 +23064,7 @@ period,model_id,category,variant,units
 2026-01,volvo-ec40,RY1,EC40,34
 2026-01,volvo-ex30,RY1,EX30,76
 2026-01,volvo-ex40,RY1,EX40,59
+2026-01,volvo-ex90,RY1,EX90,4
 2026-01,volvo-s60,RY1,S60,4
 2026-01,volvo-s90,RY1,S90,6
 2026-01,volvo-v60,RY1,V60,2
@@ -22607,6 +23211,7 @@ period,model_id,category,variant,units
 2026-02,honda-cr-v,RY1,CR-V,727
 2026-02,honda-e-n1,RY1,E:N1,28
 2026-02,honda-hr-v,RY1,HR-V,2355
+2026-02,honda-prelude,RY1,PRELUDE E:HEV,1
 2026-02,honda-step-wgn,RY1,STEP WGN,2
 2026-02,honda-step-wgn,RY1,STEP WGN E-HEV SPADA PREMIUM,11
 2026-02,honda-wr-v,RY1,WR-V,3
@@ -22656,6 +23261,7 @@ period,model_id,category,variant,units
 2026-02,mazda-cx-8,RY1,MAZDA CX-8,14
 2026-02,mazda-mazda2,RY1,MAZDA 2,430
 2026-02,mazda-mazda3,RY1,MAZDA 3,20
+2026-02,mazda-mazda6,RY1,MAZDA 6,3
 2026-02,mercedes-benz-a-class,RY1,A 200,31
 2026-02,mercedes-benz-amg-gt,RY1,AMG GT 63 4MATIC+,1
 2026-02,mercedes-benz-c-class,RY1,AMG C43 4MATIC COUPE,2
@@ -22870,12 +23476,19 @@ period,model_id,category,variant,units
 2026-02,toyota-commuter,RY3,COMMUTER,5
 2026-02,toyota-corolla,RY1,COROLLA,136
 2026-02,toyota-corolla-cross,RY1,COROLLA CROSS,1170
+2026-02,toyota-crown-crossover,RY1,CROWN CROSSOVER G ADVANCED,2
+2026-02,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,2
 2026-02,toyota-fortuner,RY1,FORTUNER,1300
+2026-02,toyota-gr-supra,RY1,GR SUPRA RZ PLASMA ORANGE 100,1
 2026-02,toyota-gr-yaris,RY1,GR YARIS,1
 2026-02,toyota-gr-yaris,RY1,GR YARIS RC AT,1
 2026-02,toyota-gr-yaris,RY1,GR YARIS RS 4WD,1
 2026-02,toyota-gr-yaris,RY1,GR YARIS RZ,1
 2026-02,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,1
+2026-02,toyota-gr86,RY1,GR86 RC,4
+2026-02,toyota-gr86,RY1,GR86 RZ,1
+2026-02,toyota-gr86,RY1,GR86 SZ,1
+2026-02,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,1
 2026-02,toyota-hiace,RY2,HIACE,47
 2026-02,toyota-hiace,RY3,HIACE,12
 2026-02,toyota-hiace-majesty,RY2,HIACE MAJESTY,145
@@ -22888,6 +23501,13 @@ period,model_id,category,variant,units
 2026-02,toyota-hilux-travo,RY2,HILUX TRAVO,99
 2026-02,toyota-hilux-travo,RY3,HILUX TRAVO,705
 2026-02,toyota-innova,RY1,INNOVA,115
+2026-02,toyota-land-cruiser-250,RY1,LAND CRUISER 250 GX,2
+2026-02,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX,7
+2026-02,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX 2.8L,1
+2026-02,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,1
+2026-02,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,1
+2026-02,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,4
+2026-02,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,3
 2026-02,toyota-vellfire,RY1,VELLFIRE,17
 2026-02,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,11
 2026-02,toyota-vellfire,RY1,VELLFIRE EXECUTIVE LOUNGE,1
@@ -22908,6 +23528,7 @@ period,model_id,category,variant,units
 2026-02,volvo-ec40,RY1,EC40,39
 2026-02,volvo-ex30,RY1,EX30,37
 2026-02,volvo-ex40,RY1,EX40,34
+2026-02,volvo-ex90,RY1,EX90,6
 2026-02,volvo-s60,RY1,S60,1
 2026-02,volvo-s90,RY1,S90,5
 2026-02,volvo-v60,RY1,V60,1
@@ -23065,6 +23686,7 @@ period,model_id,category,variant,units
 2026-03,honda-hr-v,RY1,HR-V,2284
 2026-03,honda-jazz,RY1,JAZZ,1
 2026-03,honda-odyssey,RY1,ODYSSEY E-HEV ABSOLUTE EX,4
+2026-03,honda-prelude,RY1,PRELUDE E:HEV,2
 2026-03,honda-step-wgn,RY1,STEP WGN,24
 2026-03,honda-step-wgn,RY1,STEP WGN E-HEV SPADA PREMIUM,17
 2026-03,honda-step-wgn,RY1,STEPWAGON E:HEV SPADA PREMIUM,1
@@ -23114,6 +23736,7 @@ period,model_id,category,variant,units
 2026-03,mazda-cx-8,RY1,MAZDA CX-8,12
 2026-03,mazda-mazda2,RY1,MAZDA 2,494
 2026-03,mazda-mazda3,RY1,MAZDA 3,19
+2026-03,mazda-mazda6,RY1,MAZDA 6,1
 2026-03,mercedes-benz-a-class,RY1,A 200,26
 2026-03,mercedes-benz-amg-gt,RY1,AMG GT 63 4MATIC+,1
 2026-03,mercedes-benz-c-class,RY1,C 200 COUPE,2
@@ -23336,13 +23959,24 @@ period,model_id,category,variant,units
 2026-03,toyota-commuter,RY3,COMMUTER,3
 2026-03,toyota-corolla,RY1,COROLLA,278
 2026-03,toyota-corolla-cross,RY1,COROLLA CROSS,1655
+2026-03,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,1
+2026-03,toyota-crown-sport,RY1,CROWN SPORT RS 70TH,1
 2026-03,toyota-fortuner,RY1,FORTUNER,1617
+2026-03,toyota-gr-supra,RY1,GR SUPRA RZ,1
+2026-03,toyota-gr-supra,RY1,GR SUPRA RZ 3.0,2
 2026-03,toyota-gr-yaris,RY1,GR YARIS,1
 2026-03,toyota-gr-yaris,RY1,GR YARIS RC,2
 2026-03,toyota-gr-yaris,RY1,GR YARIS RC 8AT 4WD,1
 2026-03,toyota-gr-yaris,RY1,GR YARIS RC AERO PERFORMANCE,1
 2026-03,toyota-gr-yaris,RY1,GR YARIS RZ,1
 2026-03,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,5
+2026-03,toyota-gr86,RY1,GR86 CUP CAR BASIC,2
+2026-03,toyota-gr86,RY1,GR86 RC,3
+2026-03,toyota-gr86,RY1,GR86 RZ,2
+2026-03,toyota-gr86,RY1,GR86 RZ 2WD,1
+2026-03,toyota-gr86,RY1,GR86 RZ YELLOW LIMITED,1
+2026-03,toyota-gr86,RY1,GR86 SZ,1
+2026-03,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,3
 2026-03,toyota-hiace,RY2,HIACE,72
 2026-03,toyota-hiace,RY3,HIACE,10
 2026-03,toyota-hiace-majesty,RY2,HIACE MAJESTY,156
@@ -23355,6 +23989,14 @@ period,model_id,category,variant,units
 2026-03,toyota-hilux-travo,RY2,HILUX TRAVO,179
 2026-03,toyota-hilux-travo,RY3,HILUX TRAVO,1153
 2026-03,toyota-innova,RY1,INNOVA,160
+2026-03,toyota-land-cruiser-250,RY1,LAND CRUISER 250 VX,1
+2026-03,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX,4
+2026-03,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX 2.8L,2
+2026-03,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,4
+2026-03,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,2
+2026-03,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,2
+2026-03,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,2
+2026-03,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX 2.8L 4WD,1
 2026-03,toyota-vellfire,RY1,VELLFIRE,21
 2026-03,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,7
 2026-03,toyota-vellfire,RY1,VELLFIRE 250,1
@@ -23376,6 +24018,7 @@ period,model_id,category,variant,units
 2026-03,volvo-es90,RY1,ES90,1
 2026-03,volvo-ex30,RY1,EX30,45
 2026-03,volvo-ex40,RY1,EX40,48
+2026-03,volvo-ex90,RY1,EX90,3
 2026-03,volvo-s60,RY1,S60,4
 2026-03,volvo-s90,RY1,S90,3
 2026-03,volvo-v60,RY1,V60,2
@@ -23577,6 +24220,7 @@ period,model_id,category,variant,units
 2026-04,mazda-cx-8,RY1,MAZDA CX-8,9
 2026-04,mazda-mazda2,RY1,MAZDA 2,365
 2026-04,mazda-mazda3,RY1,MAZDA 3,15
+2026-04,mazda-mazda6,RY1,MAZDA 6,2
 2026-04,mercedes-benz-a-class,RY1,A 200,11
 2026-04,mercedes-benz-c-class,RY1,AMG C 43 4MATIC,1
 2026-04,mercedes-benz-c-class,RY1,C 200 COUPE,2
@@ -23794,13 +24438,24 @@ period,model_id,category,variant,units
 2026-04,toyota-commuter,RY3,COMMUTER,1
 2026-04,toyota-corolla,RY1,COROLLA,97
 2026-04,toyota-corolla-cross,RY1,COROLLA CROSS,1202
+2026-04,toyota-crown-sport,RY1,CROWN SPORT Z 2.5L,1
 2026-04,toyota-fortuner,RY1,FORTUNER,1381
+2026-04,toyota-gr-supra,RY1,GR SUPRA,1
+2026-04,toyota-gr-supra,RY1,GR SUPRA RZ 3.0,1
 2026-04,toyota-gr-yaris,RY1,GR YARIS,1
 2026-04,toyota-gr-yaris,RY1,GR YARIS KALLE ROVANPERA,1
 2026-04,toyota-gr-yaris,RY1,GR YARIS OGIER EDITION 4WD,1
 2026-04,toyota-gr-yaris,RY1,GR YARIS RC 8AT,1
 2026-04,toyota-gr-yaris,RY1,GR YARIS RC AT,1
 2026-04,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,5
+2026-04,toyota-gr86,RY1,GR86,1
+2026-04,toyota-gr86,RY1,GR86 CUP CAR BASIC,1
+2026-04,toyota-gr86,RY1,GR86 RC,1
+2026-04,toyota-gr86,RY1,GR86 RZ,1
+2026-04,toyota-gr86,RY1,GR86 RZ 10TH ANNIVERSARY,1
+2026-04,toyota-gr86,RY1,GR86 RZ 2WD,1
+2026-04,toyota-gr86,RY1,GR86 RZ 6MT,1
+2026-04,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,1
 2026-04,toyota-hiace,RY2,HIACE,27
 2026-04,toyota-hiace,RY3,HIACE,14
 2026-04,toyota-hiace-majesty,RY2,HIACE MAJESTY,131
@@ -23813,6 +24468,14 @@ period,model_id,category,variant,units
 2026-04,toyota-hilux-travo,RY2,HILUX TRAVO,155
 2026-04,toyota-hilux-travo,RY3,HILUX TRAVO,1073
 2026-04,toyota-innova,RY1,INNOVA,134
+2026-04,toyota-land-cruiser-250,RY1,LAND CRUISER 250 GX,3
+2026-04,toyota-land-cruiser-250,RY1,LAND CRUISER 250 VX,1
+2026-04,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX,2
+2026-04,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX 2.8L,2
+2026-04,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,2
+2026-04,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,1
+2026-04,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,1
+2026-04,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,4
 2026-04,toyota-sienta,RY1,SIENTA,3
 2026-04,toyota-vellfire,RY1,VELLFIRE,13
 2026-04,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,8
@@ -23834,6 +24497,7 @@ period,model_id,category,variant,units
 2026-04,volvo-es90,RY1,ES90,27
 2026-04,volvo-ex30,RY1,EX30,33
 2026-04,volvo-ex40,RY1,EX40,47
+2026-04,volvo-ex90,RY1,EX90,6
 2026-04,volvo-s90,RY1,S90,1
 2026-04,volvo-v60,RY1,V60,3
 2026-04,volvo-xc40,RY1,XC40,1
@@ -24006,6 +24670,7 @@ period,model_id,category,variant,units
 2026-05,honda-hr-v,RY1,HR-V,2305
 2026-05,honda-jazz,RY1,JAZZ,1
 2026-05,honda-odyssey,RY1,ODYSSEY E-HEV ABSOLUTE EX,1
+2026-05,honda-prelude,RY1,PRELUDE E:HEV,1
 2026-05,honda-step-wgn,RY1,STEP WGN,42
 2026-05,honda-step-wgn,RY1,STEP WGN E-HEV AIR,1
 2026-05,honda-step-wgn,RY1,STEP WGN E-HEV SPADA PREMIUM,13
@@ -24061,6 +24726,7 @@ period,model_id,category,variant,units
 2026-05,mazda-cx-8,RY1,MAZDA CX-8,10
 2026-05,mazda-mazda2,RY1,MAZDA 2,402
 2026-05,mazda-mazda3,RY1,MAZDA 3,15
+2026-05,mazda-mazda6,RY1,MAZDA 6,2
 2026-05,mercedes-benz-a-class,RY1,A 200,20
 2026-05,mercedes-benz-amg-gt,RY1,AMG GT R PRO,1
 2026-05,mercedes-benz-c-class,RY1,AMG C 43 4MATIC,1
@@ -24260,9 +24926,18 @@ period,model_id,category,variant,units
 2026-05,toyota-commuter,RY3,COMMUTER,4
 2026-05,toyota-corolla,RY1,COROLLA,93
 2026-05,toyota-corolla-cross,RY1,COROLLA CROSS,1413
+2026-05,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCE,1
+2026-05,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,2
+2026-05,toyota-crown-sport,RY1,CROWN SPORT Z,1
 2026-05,toyota-fortuner,RY1,FORTUNER,1276
+2026-05,toyota-gr-supra,RY1,GR SUPRA RZ 3.0,1
 2026-05,toyota-gr-yaris,RY1,GR YARIS RC 8AT 4WD,1
 2026-05,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,7
+2026-05,toyota-gr86,RY1,GR86 CUP CAR BASIC,1
+2026-05,toyota-gr86,RY1,GR86 RC,1
+2026-05,toyota-gr86,RY1,GR86 RZ,1
+2026-05,toyota-gr86,RY1,GR86 RZ 2WD,2
+2026-05,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,2
 2026-05,toyota-hiace,RY2,HIACE,49
 2026-05,toyota-hiace,RY3,HIACE,13
 2026-05,toyota-hiace-majesty,RY2,HIACE MAJESTY,133
@@ -24275,6 +24950,14 @@ period,model_id,category,variant,units
 2026-05,toyota-hilux-travo,RY2,HILUX TRAVO,154
 2026-05,toyota-hilux-travo,RY3,HILUX TRAVO,1313
 2026-05,toyota-innova,RY1,INNOVA,138
+2026-05,toyota-land-cruiser-250,RY1,LAND CRUISER 250 GX,1
+2026-05,toyota-land-cruiser-250,RY1,LAND CRUISER 250 VX,1
+2026-05,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX,10
+2026-05,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX 2.8L,2
+2026-05,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,2
+2026-05,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,2
+2026-05,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,7
+2026-05,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX 2.8L 4WD,2
 2026-05,toyota-land-cruiser-fj,RY1,LAND CRUISER FJ,34
 2026-05,toyota-sienta,RY1,SIENTA,1
 2026-05,toyota-vellfire,RY1,VELLFIRE,11
@@ -24298,6 +24981,7 @@ period,model_id,category,variant,units
 2026-05,volvo-es90,RY1,ES90,34
 2026-05,volvo-ex30,RY1,EX30,30
 2026-05,volvo-ex40,RY1,EX40,60
+2026-05,volvo-ex90,RY1,EX90,5
 2026-05,volvo-s60,RY1,S60,2
 2026-05,volvo-s90,RY1,S90,4
 2026-05,volvo-v60,RY1,V60,2
@@ -24523,6 +25207,7 @@ period,model_id,category,variant,units
 2026-06,mazda-cx-8,RY1,MAZDA CX-8,10
 2026-06,mazda-mazda2,RY1,MAZDA 2,321
 2026-06,mazda-mazda3,RY1,MAZDA 3,8
+2026-06,mazda-mazda6,RY1,MAZDA 6,2
 2026-06,mercedes-benz-a-class,RY1,A 200,16
 2026-06,mercedes-benz-c-class,RY1,C 200 COUPE,2
 2026-06,mercedes-benz-c-class,RY1,C 220 D,50
@@ -24725,10 +25410,23 @@ period,model_id,category,variant,units
 2026-06,toyota-commuter,RY3,COMMUTER,6
 2026-06,toyota-corolla,RY1,COROLLA,200
 2026-06,toyota-corolla-cross,RY1,COROLLA CROSS,1565
+2026-06,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,2
+2026-06,toyota-crown-sport,RY1,CROWN SPORT Z,1
+2026-06,toyota-crown-sport,RY1,CROWN SPORT Z THE 70TH,1
 2026-06,toyota-fortuner,RY1,FORTUNER,1050
+2026-06,toyota-gr-supra,RY1,GR SUPRA,2
+2026-06,toyota-gr-supra,RY1,GR SUPRA RZ,1
 2026-06,toyota-gr-yaris,RY1,GR YARIS RC,3
 2026-06,toyota-gr-yaris,RY1,GR YARIS RZ,1
 2026-06,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,2
+2026-06,toyota-gr86,RY1,GR86 CUP CAR BASIC,1
+2026-06,toyota-gr86,RY1,GR86 RC,4
+2026-06,toyota-gr86,RY1,GR86 RZ,2
+2026-06,toyota-gr86,RY1,GR86 RZ 2WD,1
+2026-06,toyota-gr86,RY1,GR86 RZ AT,1
+2026-06,toyota-gr86,RY1,GR86 SZ,1
+2026-06,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z LEATHER,1
+2026-06,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,2
 2026-06,toyota-hiace,RY2,HIACE,45
 2026-06,toyota-hiace,RY3,HIACE,12
 2026-06,toyota-hiace-majesty,RY2,HIACE MAJESTY,108
@@ -24741,6 +25439,16 @@ period,model_id,category,variant,units
 2026-06,toyota-hilux-travo,RY2,HILUX TRAVO,155
 2026-06,toyota-hilux-travo,RY3,HILUX TRAVO,1314
 2026-06,toyota-innova,RY1,INNOVA,110
+2026-06,toyota-land-cruiser-250,RY1,LAND CRUISER 250 GX,1
+2026-06,toyota-land-cruiser-250,RY1,LAND CRUISER 250 VX,2
+2026-06,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX,9
+2026-06,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX 2.8L,3
+2026-06,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,3
+2026-06,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,1
+2026-06,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,2
+2026-06,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX 3.3L,1
+2026-06,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,5
+2026-06,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX 2.8L 4WD,2
 2026-06,toyota-land-cruiser-fj,RY1,LAND CRUISER FJ,279
 2026-06,toyota-vellfire,RY1,VELLFIRE,17
 2026-06,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,9
@@ -24760,6 +25468,7 @@ period,model_id,category,variant,units
 2026-06,volvo-es90,RY1,ES90,26
 2026-06,volvo-ex30,RY1,EX30,10
 2026-06,volvo-ex40,RY1,EX40,58
+2026-06,volvo-ex90,RY1,EX90,9
 2026-06,volvo-s60,RY1,S60,1
 2026-06,volvo-v60,RY1,V60,1
 2026-06,volvo-xc40,RY1,XC40,3
@@ -24925,6 +25634,7 @@ period,model_id,category,variant,units
 2026-07,honda-e-n2,RY1,E:N2,6
 2026-07,honda-hr-v,RY1,HR-V,1734
 2026-07,honda-odyssey,RY1,ODYSSEY E-HEV ABSOLUTE EX,1
+2026-07,honda-prelude,RY1,PRELUDE E:HEV,1
 2026-07,honda-step-wgn,RY1,STEP WGN,59
 2026-07,honda-step-wgn,RY1,STEP WGN E-HEV AIR,1
 2026-07,honda-step-wgn,RY1,STEP WGN E-HEV SPADA PREMIUM,10
@@ -25186,8 +25896,19 @@ period,model_id,category,variant,units
 2026-07,toyota-commuter,RY3,COMMUTER,8
 2026-07,toyota-corolla,RY1,COROLLA,113
 2026-07,toyota-corolla-cross,RY1,COROLLA CROSS,1418
+2026-07,toyota-crown-crossover,RY1,CROWN CROSSOVER HYBRID G ADV,1
+2026-07,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,2
+2026-07,toyota-crown-sport,RY1,CROWN SPORT Z,1
 2026-07,toyota-fortuner,RY1,FORTUNER,950
+2026-07,toyota-gr-supra,RY1,GR SUPRA,1
+2026-07,toyota-gr-supra,RY1,GR SUPRA RZ 3.0,1
+2026-07,toyota-gr-supra,RY1,GR SUPRA SZ-R,1
 2026-07,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,4
+2026-07,toyota-gr86,RY1,GR86,1
+2026-07,toyota-gr86,RY1,GR86 CUP CAR BASIC,1
+2026-07,toyota-gr86,RY1,GR86 CUP CAR BASIC HKS,1
+2026-07,toyota-gr86,RY1,GR86 RZ YELLOW LIMITED,1
+2026-07,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,1
 2026-07,toyota-hiace,RY2,HIACE,52
 2026-07,toyota-hiace,RY3,HIACE,19
 2026-07,toyota-hiace-majesty,RY2,HIACE MAJESTY,147
@@ -25200,6 +25921,16 @@ period,model_id,category,variant,units
 2026-07,toyota-hilux-travo,RY2,HILUX TRAVO,135
 2026-07,toyota-hilux-travo,RY3,HILUX TRAVO,1239
 2026-07,toyota-innova,RY1,INNOVA,103
+2026-07,toyota-land-cruiser-250,RY1,LAND CRUISER 250 GX,1
+2026-07,toyota-land-cruiser-250,RY1,LAND CRUISER 250 VX,4
+2026-07,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX,6
+2026-07,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX 2.8L,1
+2026-07,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,3
+2026-07,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,2
+2026-07,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,1
+2026-07,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX 3.3L,1
+2026-07,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,7
+2026-07,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX 2.8L 4WD,1
 2026-07,toyota-land-cruiser-fj,RY1,LAND CRUISER FJ,380
 2026-07,toyota-vellfire,RY1,VELLFIRE,8
 2026-07,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,6
@@ -25222,6 +25953,7 @@ period,model_id,category,variant,units
 2026-07,volvo-es90,RY1,ES90,18
 2026-07,volvo-ex30,RY1,EX30,6
 2026-07,volvo-ex40,RY1,EX40,22
+2026-07,volvo-ex90,RY1,EX90,9
 2026-07,volvo-s60,RY1,S60,2
 2026-07,volvo-s90,RY1,S90,3
 2026-07,volvo-v60,RY1,V60,2
@@ -25389,6 +26121,7 @@ period,model_id,category,variant,units
 2026-08,honda-e-n2,RY1,E:N2,8
 2026-08,honda-hr-v,RY1,HR-V,1896
 2026-08,honda-odyssey,RY1,ODYSSEY E-HEV ABSOLUTE EX,1
+2026-08,honda-prelude,RY1,PRELUDE HYBRID,1
 2026-08,honda-step-wgn,RY1,STEP WGN,66
 2026-08,honda-step-wgn,RY1,STEP WGN E-HEV AIR,1
 2026-08,honda-step-wgn,RY1,STEP WGN E-HEV SPADA PREMIUM,16
@@ -25647,11 +26380,22 @@ period,model_id,category,variant,units
 2026-08,toyota-commuter,RY2,COMMUTER,447
 2026-08,toyota-corolla,RY1,COROLLA,128
 2026-08,toyota-corolla-cross,RY1,COROLLA CROSS,1530
+2026-08,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,4
 2026-08,toyota-fortuner,RY1,FORTUNER,972
+2026-08,toyota-gr-supra,RY1,GR SUPRA,2
+2026-08,toyota-gr-supra,RY1,GR SUPRA RZ,1
+2026-08,toyota-gr-supra,RY1,GR SUPRA RZ 3.0,2
 2026-08,toyota-gr-yaris,RY1,GR YARIS,2
 2026-08,toyota-gr-yaris,RY1,GR YARIS RC,2
 2026-08,toyota-gr-yaris,RY1,GR YARIS RC AERO PERFORMANCE,1
 2026-08,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,5
+2026-08,toyota-gr86,RY1,GR86 CUP CAR BASIC,2
+2026-08,toyota-gr86,RY1,GR86 RC,5
+2026-08,toyota-gr86,RY1,GR86 RZ,1
+2026-08,toyota-gr86,RY1,GR86 RZ 2WD,3
+2026-08,toyota-gr86,RY1,GR86 RZ RIDGE GREEN LIMITED,2
+2026-08,toyota-gr86,RY1,GR86 RZ YELLOW LIMITED,1
+2026-08,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,3
 2026-08,toyota-hiace,RY2,HIACE,29
 2026-08,toyota-hiace,RY3,HIACE,3
 2026-08,toyota-hiace-majesty,RY2,HIACE MAJESTY,98
@@ -25664,6 +26408,16 @@ period,model_id,category,variant,units
 2026-08,toyota-hilux-travo,RY2,HILUX TRAVO,158
 2026-08,toyota-hilux-travo,RY3,HILUX TRAVO,1365
 2026-08,toyota-innova,RY1,INNOVA,114
+2026-08,toyota-land-cruiser-250,RY1,LAND CRUISER 250 GX,1
+2026-08,toyota-land-cruiser-250,RY1,LAND CRUISER 250 VX,3
+2026-08,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX,6
+2026-08,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX 2.8L,1
+2026-08,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,2
+2026-08,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,1
+2026-08,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,1
+2026-08,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX 3.3L,1
+2026-08,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,5
+2026-08,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX 2.8L 4WD,1
 2026-08,toyota-land-cruiser-fj,RY1,LAND CRUISER FJ,418
 2026-08,toyota-sienta,RY1,SIENTA,1
 2026-08,toyota-vellfire,RY1,VELLFIRE,8
@@ -25685,6 +26439,7 @@ period,model_id,category,variant,units
 2026-08,volvo-es90,RY1,ES90,22
 2026-08,volvo-ex30,RY1,EX30,16
 2026-08,volvo-ex40,RY1,EX40,21
+2026-08,volvo-ex90,RY1,EX90,2
 2026-08,volvo-s60,RY1,S60,1
 2026-08,volvo-s90,RY1,S90,2
 2026-08,volvo-xc40,RY1,XC40,2
@@ -25854,6 +26609,7 @@ period,model_id,category,variant,units
 2026-09,honda-e-n2,RY1,E:N2,11
 2026-09,honda-hr-v,RY1,HR-V,1834
 2026-09,honda-odyssey,RY1,ODYSSEY E-HEV ABSOLUTE EX,1
+2026-09,honda-prelude,RY1,PRELUDE E:HEV,1
 2026-09,honda-step-wgn,RY1,STEP WGN,62
 2026-09,honda-step-wgn,RY1,STEP WGN AIR EX 2WD,1
 2026-09,honda-step-wgn,RY1,STEP WGN E-HEV SPADA PREMIUM,15
@@ -25909,6 +26665,7 @@ period,model_id,category,variant,units
 2026-09,mazda-cx-8,RY1,MAZDA CX-8,25
 2026-09,mazda-mazda2,RY1,MAZDA 2,315
 2026-09,mazda-mazda3,RY1,MAZDA 3,10
+2026-09,mazda-mazda6,RY1,MAZDA 6,1
 2026-09,mazda-mazda6e,RY1,MAZDA6E,317
 2026-09,mercedes-benz-a-class,RY1,A 200,10
 2026-09,mercedes-benz-c-class,RY1,AMG C43 4MATIC COUPE,2
@@ -25987,6 +26744,7 @@ period,model_id,category,variant,units
 2026-09,mitsubishi-attrage,RY1,ATTRAGE,77
 2026-09,mitsubishi-mirage,RY1,MIRAGE,162
 2026-09,mitsubishi-outlander,RY1,OUTLANDER PHEV,1
+2026-09,mitsubishi-pajero,RY1,PAJERO,37
 2026-09,mitsubishi-pajero-sport,RY1,PAJERO SPORT,139
 2026-09,mitsubishi-triton,RY1,TRITON,294
 2026-09,mitsubishi-triton,RY2,TRITON,2
@@ -26100,11 +26858,21 @@ period,model_id,category,variant,units
 2026-09,toyota-corolla,RY1,COROLLA,119
 2026-09,toyota-corolla-cross,RY1,COROLLA CROSS,1410
 2026-09,toyota-fortuner,RY1,FORTUNER,967
+2026-09,toyota-gr-supra,RY1,GR SUPRA,1
+2026-09,toyota-gr-supra,RY1,GR SUPRA RZ,1
 2026-09,toyota-gr-yaris,RY1,GR YARIS,1
 2026-09,toyota-gr-yaris,RY1,GR YARIS RC,1
 2026-09,toyota-gr-yaris,RY1,GR YARIS RC AERO PERFORMANCE,3
 2026-09,toyota-gr-yaris,RY1,GR YARIS RZ,1
 2026-09,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,5
+2026-09,toyota-gr86,RY1,GR86 CUP CAR BASIC,1
+2026-09,toyota-gr86,RY1,GR86 RC,4
+2026-09,toyota-gr86,RY1,GR86 RZ,3
+2026-09,toyota-gr86,RY1,GR86 RZ 10TH ANNIVERSARY,1
+2026-09,toyota-gr86,RY1,GR86 RZ 2WD,6
+2026-09,toyota-gr86,RY1,GR86 RZ 6MT,1
+2026-09,toyota-harrier,RY1,HARRIER 2.5 HYBRID Z LEATHER,1
+2026-09,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,4
 2026-09,toyota-hiace,RY2,HIACE,39
 2026-09,toyota-hiace,RY3,HIACE,7
 2026-09,toyota-hiace-majesty,RY2,HIACE MAJESTY,98
@@ -26117,6 +26885,13 @@ period,model_id,category,variant,units
 2026-09,toyota-hilux-travo,RY2,HILUX TRAVO,176
 2026-09,toyota-hilux-travo,RY3,HILUX TRAVO,1316
 2026-09,toyota-innova,RY1,INNOVA,95
+2026-09,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX,9
+2026-09,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX 2.8L,1
+2026-09,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,4
+2026-09,toyota-land-cruiser-300,RY1,LAND CRUISER 300 GR SPORT,1
+2026-09,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,2
+2026-09,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX 3.3L,1
+2026-09,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,9
 2026-09,toyota-land-cruiser-fj,RY1,LAND CRUISER FJ,361
 2026-09,toyota-vellfire,RY1,VELLFIRE,11
 2026-09,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID EXECUTIVE,1
@@ -26140,6 +26915,7 @@ period,model_id,category,variant,units
 2026-09,volvo-es90,RY1,ES90,17
 2026-09,volvo-ex30,RY1,EX30,13
 2026-09,volvo-ex40,RY1,EX40,17
+2026-09,volvo-ex90,RY1,EX90,5
 2026-09,volvo-s90,RY1,S90,2
 2026-09,volvo-xc40,RY1,XC40,1
 2026-09,volvo-xc60,RY1,XC60,12
@@ -26161,3 +26937,479 @@ period,model_id,category,variant,units
 2026-09,zeekr-009,RY1,ZEEKR 009,194
 2026-09,zeekr-7x,RY1,ZEEKR 7X,249
 2026-09,zeekr-x,RY1,ZEEKR X,196
+2026-10,aion-hyptec-ht,RY1,HYPTEC HT 620 PREMIUM,145
+2026-10,aion-ut,RY1,AION UT 420 STANDARD,279
+2026-10,aion-ut,RY1,AION UT 500 PREMIUM,152
+2026-10,aion-v,RY1,AION V 500 PREMIUM,319
+2026-10,aion-v,RY1,AION V 505 PREMIUM,37
+2026-10,aion-v,RY1,AION V 602 LUXURY,211
+2026-10,aion-y-plus,RY1,AION Y PLUS,3
+2026-10,aion-y-plus,RY1,AION Y PLUS 410 PREMIUM,85
+2026-10,aion-y-plus,RY1,AION Y PLUS 490 PREMIUM,4
+2026-10,avatr-07,RY1,AVATR 07 MAX,16
+2026-10,avatr-07,RY1,AVATR 07 ULTRA AWD,16
+2026-10,avatr-11,RY1,AVATR 11 LONG RANGE,33
+2026-10,avatr-11,RY1,AVATR 11 ROYAL EDITION,4
+2026-10,avatr-11,RY1,AVATR 11 STANDARD RANGE,1
+2026-10,avatr-11,RY1,AVATR 11 ULTRA,6
+2026-10,avatr-11,RY1,AVATR 11 ULTRA AWD,11
+2026-10,bmw-2-series-coupe,RY1,M2 RHD,1
+2026-10,bmw-2-series-coupe,RY1,M240I XDRIVE COUPE RHD MX,1
+2026-10,bmw-2-series-gran-coupe,RY1,220 GRAN COUPE M SPORT PR,26
+2026-10,bmw-2-series-gran-coupe,RY1,220I GRAN COUPE M SPORT,11
+2026-10,bmw-3-series,RY1,320D M SPORT,51
+2026-10,bmw-3-series,RY1,320LI LIMOUSINE LWB RHD,11
+2026-10,bmw-3-series,RY1,330E M SPORT,57
+2026-10,bmw-3-series,RY1,M3 COMPETITION M X-DRIVE,1
+2026-10,bmw-3-series,RY1,M340I XDRIVE,5
+2026-10,bmw-4-series,RY1,420I COUPE RHD,1
+2026-10,bmw-4-series,RY1,430I CONVERTIBLE RHD,4
+2026-10,bmw-4-series,RY1,430I COUPE RHD,7
+2026-10,bmw-5-series,RY1,520D M SPORT,38
+2026-10,bmw-5-series,RY1,520D M SPORT PRO,12
+2026-10,bmw-5-series,RY1,530E INSPIRING,5
+2026-10,bmw-5-series,RY1,530E LUXURY,2
+2026-10,bmw-5-series,RY1,530E M SPORT,20
+2026-10,bmw-5-series,RY1,530E M SPORT PRO,11
+2026-10,bmw-7-series,RY1,740D M SPORT,1
+2026-10,bmw-7-series,RY1,750E XDRIVE M SPORT,4
+2026-10,bmw-i4,RY1,I4 EDRIVE35 GRAN COUPE RH,1
+2026-10,bmw-i5,RY1,I5 EDRIVE40 M SPORT,7
+2026-10,bmw-i5,RY1,I5 EDRIVE40 RHD,5
+2026-10,bmw-i5,RY1,I5 M60 XDRIVE RHD,1
+2026-10,bmw-i7,RY1,I7 EDRIVE50 RHD,2
+2026-10,bmw-i7,RY1,I7 XDRIVE60 LIMOUSINE RHD,4
+2026-10,bmw-ix,RY1,IX XDRIVE40 RHD,1
+2026-10,bmw-ix,RY1,IX XDRIVE50 RHD,2
+2026-10,bmw-ix1,RY1,IX1 EDRIVE20L,54
+2026-10,bmw-ix2,RY1,IX2 XDRIVE30 RHD,1
+2026-10,bmw-ix3,RY1,IX3 50 XDRIVE,4
+2026-10,bmw-ix3,RY1,IX3 M SPORT RHD,4
+2026-10,bmw-x1,RY1,X1 SDRIVE20I M SPORT,110
+2026-10,bmw-x1,RY1,X1 SDRIVE20I XLINE,2
+2026-10,bmw-x3,RY1,X3 20D XDRIVE M SPORT PRO,58
+2026-10,bmw-x3,RY1,X3 20D XDRIVE RHD,1
+2026-10,bmw-x3,RY1,X3 M50 XDRIVE,7
+2026-10,bmw-x3,RY1,X3 M50 XDRIVE RHD,1
+2026-10,bmw-x3,RY1,X3 XDRIVE20D XLINE,1
+2026-10,bmw-x3,RY1,X3 XDRIVE30E M SPORT,5
+2026-10,bmw-x4,RY1,X4 M RHD,1
+2026-10,bmw-x4,RY1,X4 XDRIVE20D RHD,11
+2026-10,bmw-x5,RY1,X5 XDRIVE30D M SPORT,7
+2026-10,bmw-x5,RY1,X5 XDRIVE45E M SPORT,1
+2026-10,bmw-x5,RY1,X5 XDRIVE50E RHD,8
+2026-10,bmw-x6,RY1,X6 XDRIVE40I M SPORT,11
+2026-10,bmw-x7,RY1,X7 M50D RHD,1
+2026-10,bmw-x7,RY1,X7 XDRIVE30D M SPORT,1
+2026-10,bmw-x7,RY1,X7 XDRIVE40D M SPORT,9
+2026-10,bmw-xm,RY1,XM 50E RHD,5
+2026-10,bmw-z4,RY1,Z4 SDRIVE30I RHD,1
+2026-10,byd-atto-1,RY1,BYD ATTO 1 DYNAMIC,5
+2026-10,byd-atto-1,RY1,BYD ATTO 1 PREMIUM,420
+2026-10,byd-atto-2,RY1,BYD ATTO 2 DYNAMIC,7
+2026-10,byd-atto-2,RY1,BYD ATTO 2 PREMIUM,350
+2026-10,byd-atto-3,RY1,BYD ATTO3 (410KM-PREMIUM),357
+2026-10,byd-atto-3,RY1,BYD ATTO3 (480KM-EXT),1235
+2026-10,byd-dolphin,RY1,BYD DOLPHIN (435KM-STD),251
+2026-10,byd-dolphin,RY1,BYD DOLPHIN (490KM-EXT),74
+2026-10,byd-m6,RY1,BYD M6 DYNAMIC,4
+2026-10,byd-m6,RY1,BYD M6 EXTENDED,64
+2026-10,byd-seal-5,RY1,BYD SEAL 5 DM-I DYNAMIC,13
+2026-10,byd-seal-5,RY1,BYD SEAL 5 DM-I PREMIUM,94
+2026-10,byd-seal-5,RY1,BYD SEAL 5 DM-I STANDARD,202
+2026-10,byd-seal-6,RY1,BYD SEAL 6 DYNAMIC,3
+2026-10,byd-seal-6,RY1,BYD SEAL 6 PREMIUM,11
+2026-10,byd-seal-6,RY1,BYD SEAL 6 STANDARD,2
+2026-10,byd-sealion-5,RY1,BYD SEALION5 DM-I DYNAMIC,194
+2026-10,byd-sealion-5,RY1,BYD SEALION5 DM-I PREMIUM,159
+2026-10,byd-sealion-6,RY1,BYD SEALION6 DM-I DYNAMIC,27
+2026-10,byd-sealion-6,RY1,BYD SEALION6 DM-I PREMIUM,262
+2026-10,byd-sealion-7,RY1,BYD SEALION 7 AWD,26
+2026-10,byd-sealion-7,RY1,BYD SEALION 7 PERFORMANCE,72
+2026-10,byd-sealion-7,RY1,BYD SEALION 7 RWD,49
+2026-10,changan-lumin,RY1,LUMIN L DC,108
+2026-10,changan-nevo-q05,RY1,NEVO Q05,676
+2026-10,chery-q,RY1,Q QLICK,11
+2026-10,chery-q,RY1,Q QOOL,128
+2026-10,chery-q,RY1,Q QUINT,577
+2026-10,chery-tiggo-8,RY1,TIGGO8 PHEV 2WD ESTEEM,1
+2026-10,chery-tiggo-8,RY1,TIGGO8 PHEV 4WD ELITE,9
+2026-10,chery-v23,RY1,V23 2WD PLUS,193
+2026-10,chery-v23,RY1,V23 4WD PEAK,173
+2026-10,deepal-hunter-k50,RY1,HUNTER K50,1
+2026-10,deepal-s05,RY1,S05 MAX,497
+2026-10,deepal-s05,RY1,S05 MAX LONG RANGE,44
+2026-10,deepal-s05,RY1,S05 REEV MAX,80
+2026-10,deepal-s07,RY1,S07,83
+2026-10,deepal-s07,RY1,S07 L,3
+2026-10,denza-d9,RY1,DENZA D9 AWD,9
+2026-10,denza-d9,RY1,DENZA D9 FWD,55
+2026-10,denza-z9-gt,RY1,DENZA Z9GT PERFORMANCE,9
+2026-10,ford-everest,RY1,EVEREST,462
+2026-10,ford-mustang,RY1,MUSTANG,1
+2026-10,ford-mustang,RY1,MUSTANG 2.3 ECOBOOST PREMIUM,1
+2026-10,ford-mustang,RY1,MUSTANG 2.3L ECOBOOST FASTBACK,1
+2026-10,ford-mustang,RY1,MUSTANG 2.3L ECOBOOST PREMIUM,1
+2026-10,ford-ranger,RY1,RANGER,431
+2026-10,ford-ranger,RY1,RANGER SUPER DUTY,15
+2026-10,ford-ranger,RY1,RANGER SWB,1
+2026-10,ford-ranger,RY2,RANGER,9
+2026-10,ford-ranger,RY3,RANGER,15
+2026-10,ford-ranger,RY3,RANGER SWB,1
+2026-10,ford-ranger-raptor,RY1,RANGER RAPTOR,83
+2026-10,ford-ranger-raptor,RY2,RANGER RAPTOR,12
+2026-10,forthing-friday,RY1,FRIDAY EV,7
+2026-10,gac-gn8,RY1,GN8 PHEV PREMIUM,33
+2026-10,gac-m8,RY1,M8 PHEV PREMIUM,5
+2026-10,geely-ex2,RY1,EX2,1433
+2026-10,geely-ex5,RY1,EX5,133
+2026-10,gwm-ora-5,RY1,ORA 5,833
+2026-10,gwm-tank-300,RY1,300 HYBRID,4
+2026-10,gwm-tank-300,RY1,GWM TANK 300,321
+2026-10,gwm-tank-500,RY1,500 HYBRID,5
+2026-10,gwm-tank-500,RY1,GWM TANK 500,31
+2026-10,gwm-wey-g9,RY1,WEY G9,3
+2026-10,gwm-wey-g9,RY1,WEY G9 PLUG-IN HYBRID,36
+2026-10,haval-h6,RY1,H6 HEV PRO,1
+2026-10,haval-h6,RY1,H6 HEV ULTRA,2
+2026-10,haval-h6,RY1,H6 HYBRID,12
+2026-10,haval-h6,RY1,H6 PLUG-IN HYBRID,44
+2026-10,haval-jolion,RY1,JOLION HYBRID,1
+2026-10,honda-accord,RY1,ACCORD,143
+2026-10,honda-city,RY1,CITY,1471
+2026-10,honda-city-hatchback,RY1,CITY HATCHBACK,1332
+2026-10,honda-civic,RY1,CIVIC,879
+2026-10,honda-civic-type-r,RY1,CIVIC TYPE R,7
+2026-10,honda-civic-type-r,RY1,CIVIC TYPE R RACING BLACK,2
+2026-10,honda-cr-v,RY1,CR-V,375
+2026-10,honda-e-n1,RY1,E:N1,1
+2026-10,honda-e-n2,RY1,E:N2,5
+2026-10,honda-hr-v,RY1,HR-V,1464
+2026-10,honda-odyssey,RY1,ODYSSEY E-HEV ABSOLUTE EX,1
+2026-10,honda-prelude,RY1,PRELUDE HYBRID,3
+2026-10,honda-step-wgn,RY1,STEP WGN,56
+2026-10,honda-step-wgn,RY1,STEP WGN E-HEV AIR,1
+2026-10,honda-step-wgn,RY1,STEP WGN E-HEV SPADA PREMIUM,9
+2026-10,honda-wr-v,RY1,WR-V,2
+2026-10,hyundai-creta,RY1,CRETA,1
+2026-10,hyundai-h-1,RY2,H-1,2
+2026-10,hyundai-ioniq-5,RY1,IONIQ5,123
+2026-10,hyundai-palisade,RY1,PALISADE,14
+2026-10,hyundai-santa-fe,RY1,SANTA FE,20
+2026-10,hyundai-stargazer,RY1,STARGAZER,16
+2026-10,hyundai-staria,RY2,STARIA,44
+2026-10,hyundai-staria,RY2,STARIA HEV,4
+2026-10,isuzu-d-max,RY1,D-MAX,1618
+2026-10,isuzu-d-max,RY2,D-MAX,3
+2026-10,isuzu-d-max,RY3,D-MAX,1807
+2026-10,isuzu-mu-x,RY1,MU-X,625
+2026-10,jaecoo-5,RY1,5 EV LONG RANGE MAX,10
+2026-10,jaecoo-5,RY1,5 EV MAX+,1717
+2026-10,jaecoo-5,RY1,5 EV ULTRA,11
+2026-10,jaecoo-6,RY1,6 EV 2WD MAX,38
+2026-10,jaecoo-6,RY1,6 EV LONG RANGE 2WD PRO,215
+2026-10,jaecoo-6,RY1,6 EV LONG RANGE 4WD,29
+2026-10,jaecoo-6t,RY1,6T EV LONG RANGE 4WD,48
+2026-10,jaecoo-6t,RY1,6T REEV 2WD MAX,262
+2026-10,jaecoo-6t,RY1,6T REEV 4WD ULTRA,885
+2026-10,jaecoo-7,RY1,7 SHS MAX,12
+2026-10,kia-carnival,RY1,CARNIVAL,3
+2026-10,kia-carnival,RY1,CARNIVAL HEV 7P LUXURY,9
+2026-10,kia-carnival,RY1,CARNIVAL HEV 7P PREMIUM,1
+2026-10,kia-carnival,RY2,CARNIVAL,36
+2026-10,kia-ev5,RY1,EV5,23
+2026-10,kia-ev9,RY1,EV9 GT LINE AWD,2
+2026-10,kia-sorento,RY1,SORENTO,8
+2026-10,leapmotor-b10,RY1,B10 DESIGN BEV,5
+2026-10,leapmotor-c10,RY1,C10 EV,6
+2026-10,lepas-l6,RY1,L6 BEV PREMIUM,337
+2026-10,lexus-es,RY1,ES350E,4
+2026-10,lexus-es,RY1,ES350H,9
+2026-10,lexus-is,RY1,IS300H,7
+2026-10,lexus-lbx,RY1,LBX,2
+2026-10,lexus-lm,RY1,LM350H,21
+2026-10,lexus-lm,RY1,LM500H,2
+2026-10,lexus-lx,RY1,LX 600,1
+2026-10,lexus-nx,RY1,NX350H,6
+2026-10,lexus-nx,RY1,NX450H+,1
+2026-10,lexus-rx,RY1,RX350H,6
+2026-10,lexus-rx,RY1,RX450H+,1
+2026-10,lexus-rx,RY1,RX500H,2
+2026-10,lexus-rz,RY1,RZ350E,4
+2026-10,lexus-rz,RY1,RZ500E,2
+2026-10,lexus-ux,RY1,UX300H,1
+2026-10,mazda-bt-50,RY1,MAZDA BT-50,4
+2026-10,mazda-cx-3,RY1,CX-3,27
+2026-10,mazda-cx-3,RY1,MAZDA CX-3,2
+2026-10,mazda-cx-30,RY1,MAZDA CX-30,91
+2026-10,mazda-cx-5,RY1,MAZDA CX-5,49
+2026-10,mazda-cx-6e,RY1,CX-6E,1
+2026-10,mazda-cx-8,RY1,MAZDA CX-8,41
+2026-10,mazda-mazda2,RY1,MAZDA 2,233
+2026-10,mazda-mazda3,RY1,MAZDA 3,8
+2026-10,mazda-mazda6,RY1,MAZDA 6,1
+2026-10,mazda-mazda6e,RY1,MAZDA6E,264
+2026-10,mazda-mx-5,RY1,MX-5,1
+2026-10,mercedes-benz-a-class,RY1,A 200,7
+2026-10,mercedes-benz-c-class,RY1,AMG C43 4MATIC COUPE,1
+2026-10,mercedes-benz-c-class,RY1,C 200 COUPE,1
+2026-10,mercedes-benz-c-class,RY1,C 220 D,39
+2026-10,mercedes-benz-c-class,RY1,C 350 E,34
+2026-10,mercedes-benz-cla,RY1,CLA 250+ ELECTRIC,60
+2026-10,mercedes-benz-cle,RY1,AMG CLE 53 4MATIC COUPE,7
+2026-10,mercedes-benz-cle,RY1,CLE 300 4MATIC COUPE,14
+2026-10,mercedes-benz-cle,RY1,MERCEDES-AMG CLE 53,12
+2026-10,mercedes-benz-cls,RY1,AMG CLS 53 4MATIC,4
+2026-10,mercedes-benz-cls,RY1,CLS 220 D,14
+2026-10,mercedes-benz-cls,RY1,CLS 300 D,1
+2026-10,mercedes-benz-e-class,RY1,AMG E 53 4MATIC+,1
+2026-10,mercedes-benz-e-class,RY1,E 220 D,28
+2026-10,mercedes-benz-e-class,RY1,E 300 E,2
+2026-10,mercedes-benz-e-class,RY1,E 350 E,60
+2026-10,mercedes-benz-eqe,RY1,AMG EQE 53 4MATIC+,1
+2026-10,mercedes-benz-eqe,RY1,EQE 300,3
+2026-10,mercedes-benz-eqe-suv,RY1,EQE 350 4MATIC SUV,12
+2026-10,mercedes-benz-eqs,RY1,EQS 500 4MATIC,1
+2026-10,mercedes-benz-eqs-suv,RY1,EQS 450 4MATIC SUV,6
+2026-10,mercedes-benz-eqs-suv,RY1,EQS 500 4MATIC SUV,1
+2026-10,mercedes-benz-g-class,RY1,AMG G63,1
+2026-10,mercedes-benz-g-class,RY1,G 450 D,6
+2026-10,mercedes-benz-g-class,RY1,G400 D,1
+2026-10,mercedes-benz-g-class,RY1,G400 D PROFESSIONAL,2
+2026-10,mercedes-benz-g-class,RY1,G450D AMG LINE,1
+2026-10,mercedes-benz-gla,RY1,GLA 200,41
+2026-10,mercedes-benz-glc,RY1,GLC 220 D,1
+2026-10,mercedes-benz-glc,RY1,GLC 220 D 4MATIC,18
+2026-10,mercedes-benz-glc,RY1,GLC 350 E 4MATIC,12
+2026-10,mercedes-benz-glc,RY1,GLC 350 E 4MATIC COUPE,23
+2026-10,mercedes-benz-gle,RY1,AMG GLE 53 4MATIC+,1
+2026-10,mercedes-benz-gle,RY1,AMG GLE 53 HYBRID 4MATIC+,1
+2026-10,mercedes-benz-gle,RY1,GLE 300 D 4MATIC,8
+2026-10,mercedes-benz-gle,RY1,MERCEDES-AMG GLE 53,4
+2026-10,mercedes-benz-gls,RY1,GLS 450 D 4MATIC,7
+2026-10,mercedes-benz-maybach-s-class,RY1,MAYBACH S 580 E,12
+2026-10,mercedes-benz-s-class,RY1,S 350 D,2
+2026-10,mercedes-benz-s-class,RY1,S 580 E,3
+2026-10,mercedes-benz-sprinter,RY2,SPRINTER 419 CDI (907),1
+2026-10,mercedes-benz-sprinter,RY2,SPRINTER 419 CDI VAN,2
+2026-10,mercedes-benz-v-class,RY1,V 250 D,1
+2026-10,mercedes-benz-v-class,RY1,V 300 D,3
+2026-10,mercedes-benz-vito,RY2,VITO 119 CDI TOURER,4
+2026-10,mg-cyberster,RY1,CYBERSTER,5
+2026-10,mg-extender,RY1,MG EXTENDER,1
+2026-10,mg-extender,RY3,MG EXTENDER,4
+2026-10,mg-hs,RY1,HS,3
+2026-10,mg-hs,RY1,HS PHEV,9
+2026-10,mg-im5,RY1,IM5,79
+2026-10,mg-im6,RY1,IM6,74
+2026-10,mg-maxus-7,RY1,MAXUS 7,50
+2026-10,mg-maxus-9,RY1,MAXUS 9,15
+2026-10,mg-mg3,RY1,MG3,56
+2026-10,mg-mg3,RY1,NEW MG3,1
+2026-10,mg-mg4,RY1,MG4 ELECTRIC,206
+2026-10,mg-mg5,RY1,MG5,79
+2026-10,mg-s5,RY1,S5 EV,666
+2026-10,mg-urban,RY1,URBAN,1146
+2026-10,mg-vs,RY1,VS HEV,1
+2026-10,mg-zs,RY1,ZS,16
+2026-10,mini-aceman,RY1,ACEMAN SE RHD,39
+2026-10,mini-aceman,RY1,JCW ACEMAN E,2
+2026-10,mini-cooper,RY1,COOPER SE RHD,60
+2026-10,mini-cooper,RY1,JCW CONVERTIBLE RHD,2
+2026-10,mini-cooper,RY1,JCW E,11
+2026-10,mini-cooper,RY1,JCW RHD,1
+2026-10,mini-countryman,RY1,COUNTRYMAN S ALL4,19
+2026-10,mitsubishi-attrage,RY1,ATTRAGE,49
+2026-10,mitsubishi-mirage,RY1,MIRAGE,179
+2026-10,mitsubishi-pajero,RY1,PAJERO,7
+2026-10,mitsubishi-pajero-sport,RY1,PAJERO SPORT,132
+2026-10,mitsubishi-triton,RY1,TRITON,177
+2026-10,mitsubishi-triton,RY2,TRITON,2
+2026-10,mitsubishi-triton,RY3,TRITON,213
+2026-10,mitsubishi-xforce,RY1,XFORCE HEV,749
+2026-10,mitsubishi-xpander,RY1,XPANDER,2
+2026-10,mitsubishi-xpander,RY1,XPANDER HEV,57
+2026-10,mitsubishi-xpander-cross,RY1,XPANDER CROSS HEV,389
+2026-10,neta-v-ii,RY1,NETA V-II,3
+2026-10,neta-x,RY1,NETA X,1
+2026-10,nissan-almera,RY1,ALMERA,109
+2026-10,nissan-gt-r,RY1,GT-R PURE EDITION,1
+2026-10,nissan-kicks,RY1,KICKS,150
+2026-10,nissan-march,RY1,MARCH,1
+2026-10,nissan-navara,RY1,NAVARA,46
+2026-10,nissan-navara,RY3,NAVARA,30
+2026-10,nissan-serena,RY1,SERENA,126
+2026-10,nissan-serena,RY1,SERENA E-POWER,85
+2026-10,nissan-terra,RY1,TERRA,1
+2026-10,nissan-x-trail,RY1,X-TRAIL E-POWER,21
+2026-10,omoda-c5,RY1,C5 EV MAX+,268
+2026-10,poer-sahar,RY1,POER SAHAR,17
+2026-10,poer-sahar,RY1,SAHAR HYBRID,2
+2026-10,poer-sahar,RY3,POER SAHAR,1
+2026-10,porsche-718,RY1,718 CAYMAN GT4,1
+2026-10,porsche-718,RY1,718 CAYMAN STYLE EDITION,2
+2026-10,porsche-911,RY1,911 CARRERA,2
+2026-10,porsche-911,RY1,911 CARRERA 4 GTS,2
+2026-10,porsche-911,RY1,911 CARRERA CABRIOLET,2
+2026-10,porsche-911,RY1,911 CARRERA GTS,1
+2026-10,porsche-911,RY1,911 CARRERA S,1
+2026-10,porsche-911,RY1,911 DAKAR,1
+2026-10,porsche-911,RY1,911 GT3 RS,1
+2026-10,porsche-911,RY1,911 S/T,1
+2026-10,porsche-911,RY1,911 SPIRIT 70,3
+2026-10,porsche-911,RY1,911 TARGA 4,1
+2026-10,porsche-911,RY1,911 TARGA 4S,1
+2026-10,porsche-cayenne,RY1,CAYENNE COUPE,1
+2026-10,porsche-cayenne,RY1,CAYENNE E-HYBRID,1
+2026-10,porsche-cayenne,RY1,CAYENNE E-HYBRID COUPE,9
+2026-10,porsche-cayenne,RY1,CAYENNE S E-HYBRID COUPE,37
+2026-10,porsche-macan,RY1,MACAN,3
+2026-10,porsche-macan,RY1,MACAN 4,2
+2026-10,porsche-macan,RY1,MACAN 4 ELECTRIC,1
+2026-10,porsche-panamera,RY1,PANAMERA 4 E-HYBRID,4
+2026-10,porsche-panamera,RY1,PANAMERA 4 E-HYBRID EXEC.,3
+2026-10,porsche-taycan,RY1,TAYCAN,2
+2026-10,porsche-taycan,RY1,TAYCAN 4,1
+2026-10,porsche-taycan,RY1,TAYCAN 4 CROSS TURISMO,1
+2026-10,porsche-taycan,RY1,TAYCAN 4S,2
+2026-10,riddara-rd6,RY1,HORIZON 4WD,6
+2026-10,riddara-rd6,RY1,HORIZON PRO 4WD,2
+2026-10,riddara-rd6,RY1,RD6 86KWH 2WD,6
+2026-10,riddara-rd6,RY1,RD6 ECON,28
+2026-10,riddara-rd6,RY1,RD6 ECON L 73KWH 2WD,1
+2026-10,riddara-rd6,RY1,RD6 ECON L 73KWH 4WD,1
+2026-10,riddara-rd6,RY1,RD6 PRO 2WD,101
+2026-10,subaru-forester,RY1,FORESTER 2.0I-L ES,1
+2026-10,subaru-forester,RY1,FORESTER 2.5I-S AWD CVT,2
+2026-10,subaru-xv,RY1,XV 2.0I-P ES,2
+2026-10,suzuki-carry,RY2,CARRY 1.5L MT,1
+2026-10,suzuki-carry,RY3,CARRY 1.5L MT,31
+2026-10,suzuki-celerio,RY1,CELERIO GA 1.0L MT,2
+2026-10,suzuki-celerio,RY1,CELERIO GL 1.0L CVT,1
+2026-10,suzuki-celerio,RY1,CELERIO GX 1.0L CVT,1
+2026-10,suzuki-ertiga,RY1,ERTIGA GX 1.5L,1
+2026-10,suzuki-fronx,RY1,FRONX 1.5L,265
+2026-10,suzuki-jimny,RY1,JIMNY 1.5L 4AT,7
+2026-10,suzuki-jimny,RY1,JIMNY ALPHA 4WD,1
+2026-10,suzuki-jimny,RY1,JIMNY NOMADE FC 4WD,3
+2026-10,suzuki-jimny,RY1,JIMNY NOMADE FC 5 DOOR,3
+2026-10,suzuki-swift,RY1,SWIFT GL 1.2L CVT,9
+2026-10,suzuki-swift,RY1,SWIFT GL NEXT 1.2L CVT,6
+2026-10,suzuki-swift,RY1,SWIFT GLX 1.2L CVT,5
+2026-10,suzuki-swift,RY1,SWIFT GLX-NAVI 1.2L CVT,1
+2026-10,suzuki-xl7,RY1,XL7 1.5L,2
+2026-10,tesla-model-3,RY1,MODEL 3,529
+2026-10,tesla-model-3,RY1,MODEL 3 LONG RANGE RWD,1
+2026-10,tesla-model-3,RY1,MODEL 3 PERFORMANCE,2
+2026-10,tesla-model-3,RY1,MODEL 3 STANDARD,4
+2026-10,tesla-model-y,RY1,MODEL Y,131
+2026-10,tesla-model-y,RY1,MODEL Y L,189
+2026-10,toyota-alphard,RY1,ALPHARD,43
+2026-10,toyota-alphard,RY1,ALPHARD 2.5 HYBRID G,1
+2026-10,toyota-alphard,RY1,ALPHARD 2.5 HYBRID Z,7
+2026-10,toyota-alphard,RY1,ALPHARD 2.5 Z,2
+2026-10,toyota-alphard,RY1,ALPHARD 2.5S C PACKAGE,1
+2026-10,toyota-alphard,RY1,ALPHARD 2.5Z 4WD,1
+2026-10,toyota-alphard,RY1,ALPHARD EXECUTIVE LOUNGE,1
+2026-10,toyota-alphard,RY1,ALPHARD G HYBRID 2.5L 2WD,2
+2026-10,toyota-alphard,RY1,ALPHARD HYBRID EXECUTIVE,4
+2026-10,toyota-alphard,RY1,ALPHARD HYBRID G,7
+2026-10,toyota-alphard,RY1,ALPHARD HYBRID G E-FOUR,1
+2026-10,toyota-alphard,RY1,ALPHARD HYBRID X,9
+2026-10,toyota-alphard,RY1,ALPHARD HYBRID X E-FOUR,2
+2026-10,toyota-alphard,RY1,ALPHARD HYBRID Z,1
+2026-10,toyota-alphard,RY1,ALPHARD HYBRID Z 2.5L,18
+2026-10,toyota-alphard,RY1,ALPHARD HYBRID Z 2WD,82
+2026-10,toyota-alphard,RY1,ALPHARD HYBRID Z E-FOUR,18
+2026-10,toyota-alphard,RY1,ALPHARD Z 2.5L,2
+2026-10,toyota-alphard,RY1,ALPHARD Z 2WD,7
+2026-10,toyota-alphard,RY1,ALPHARD Z 2WD 2.5L,3
+2026-10,toyota-alphard,RY1,ALPHARD Z HYBRID 2.5L,10
+2026-10,toyota-bz4x,RY1,BZ4X,149
+2026-10,toyota-camry,RY1,CAMRY,308
+2026-10,toyota-commuter,RY1,COMMUTER,46
+2026-10,toyota-commuter,RY2,COMMUTER,377
+2026-10,toyota-commuter,RY3,COMMUTER,1
+2026-10,toyota-corolla,RY1,COROLLA,119
+2026-10,toyota-corolla-cross,RY1,COROLLA CROSS,1169
+2026-10,toyota-crown-crossover,RY1,CROWN CROSSOVER RS ADVANCED,2
+2026-10,toyota-crown-sport,RY1,CROWN SPORT Z 2.5L,1
+2026-10,toyota-fortuner,RY1,FORTUNER,762
+2026-10,toyota-gr-supra,RY1,GR SUPRA,1
+2026-10,toyota-gr-supra,RY1,GR SUPRA RZ,1
+2026-10,toyota-gr-supra,RY1,SUPRA GR PRO 3.0,1
+2026-10,toyota-gr-yaris,RY1,GR YARIS,2
+2026-10,toyota-gr-yaris,RY1,GR YARIS RC AT,2
+2026-10,toyota-gr-yaris,RY1,GR YARIS RZ HIGH PERFORMANCE,1
+2026-10,toyota-gr86,RY1,GR86,1
+2026-10,toyota-gr86,RY1,GR86 CUP CAR BASIC,2
+2026-10,toyota-gr86,RY1,GR86 RC,3
+2026-10,toyota-gr86,RY1,GR86 RZ 10TH ANNIVERSARY,1
+2026-10,toyota-gr86,RY1,GR86 RZ 2WD,1
+2026-10,toyota-harrier,RY1,HARRIER HYBRID Z LEATHER,3
+2026-10,toyota-hiace,RY2,HIACE,39
+2026-10,toyota-hiace,RY3,HIACE,5
+2026-10,toyota-hiace-majesty,RY2,HIACE MAJESTY,78
+2026-10,toyota-hilux-champ,RY2,HILUX CHAMP,5
+2026-10,toyota-hilux-champ,RY3,HILUX CHAMP,463
+2026-10,toyota-hilux-revo,RY1,HILUX REVO,371
+2026-10,toyota-hilux-revo,RY2,HILUX REVO,29
+2026-10,toyota-hilux-revo,RY3,HILUX REVO,1568
+2026-10,toyota-hilux-travo,RY1,HILUX TRAVO,1442
+2026-10,toyota-hilux-travo,RY2,HILUX TRAVO,160
+2026-10,toyota-hilux-travo,RY3,HILUX TRAVO,1089
+2026-10,toyota-innova,RY1,INNOVA,67
+2026-10,toyota-land-cruiser-250,RY1,LAND CRUISER 250 GX,1
+2026-10,toyota-land-cruiser-250,RY1,LAND CRUISER 250 VX,4
+2026-10,toyota-land-cruiser-250,RY1,LAND CRUISER 250 VX 2.8L,2
+2026-10,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX,10
+2026-10,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX 2.8L,1
+2026-10,toyota-land-cruiser-250,RY1,LAND CRUISER 250 ZX FIRST,1
+2026-10,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX,2
+2026-10,toyota-land-cruiser-300,RY1,LAND CRUISER 300 ZX 3.5L,1
+2026-10,toyota-land-cruiser-70,RY1,LAND CRUISER 70 AX,6
+2026-10,toyota-land-cruiser-fj,RY1,LAND CRUISER FJ,279
+2026-10,toyota-vellfire,RY1,VELLFIRE,7
+2026-10,toyota-vellfire,RY1,VELLFIRE 2.5 HYBRID Z PREMIER,13
+2026-10,toyota-vellfire,RY1,VELLFIRE HYBRID EXECUTIVE,2
+2026-10,toyota-vellfire,RY1,VELLFIRE HYBRID Z 2.5L,1
+2026-10,toyota-vellfire,RY1,VELLFIRE HYBRID Z PREMIER,114
+2026-10,toyota-vellfire,RY1,VELLFIRE PHEV EXECUTIVE LOUNGE,2
+2026-10,toyota-vellfire,RY1,VELLFIRE Z PREMIER 2.4L,1
+2026-10,toyota-vellfire,RY1,VELLFIRE Z PREMIER 2WD,1
+2026-10,toyota-vellfire,RY1,VELLFIRE Z PREMIER E-FOUR,2
+2026-10,toyota-vellfire,RY1,VELLFIRE Z PREMIER HYBRID 2.5L,9
+2026-10,toyota-veloz,RY1,VELOZ,316
+2026-10,toyota-vios,RY1,VIOS 1.5G A/T IVORY,1
+2026-10,toyota-voxy,RY1,VOXY HYBRID S-Z,1
+2026-10,toyota-yaris,RY1,YARIS,341
+2026-10,toyota-yaris-ativ,RY1,YARIS ATIV,5164
+2026-10,toyota-yaris-cross,RY1,YARIS CROSS,2698
+2026-10,volvo-c40,RY1,C40,1
+2026-10,volvo-ec40,RY1,EC40,21
+2026-10,volvo-es90,RY1,ES90,12
+2026-10,volvo-ex30,RY1,EX30,3
+2026-10,volvo-ex40,RY1,EX40,12
+2026-10,volvo-ex90,RY1,EX90,4
+2026-10,volvo-s90,RY1,S90,3
+2026-10,volvo-v60,RY1,V60,1
+2026-10,volvo-xc40,RY1,XC40,5
+2026-10,volvo-xc60,RY1,XC60,11
+2026-10,volvo-xc90,RY1,XC90,5
+2026-10,wuling-air-ev,RY1,AIR EV LR,1
+2026-10,wuling-air-ev,RY1,AIR EV SR,2
+2026-10,wuling-binguo,RY1,BINGOU SRDTH CCS2,1
+2026-10,wuling-darion,RY1,DARION EV,233
+2026-10,wuling-porta-ev,RY3,PORTA EV,242
+2026-10,xpeng-g6,RY1,G6 AWD PERFORMANCE,16
+2026-10,xpeng-g6,RY1,G6 LONG RANGE,3
+2026-10,xpeng-g6,RY1,G6 RWD LONG RANGE,174
+2026-10,xpeng-g6,RY1,G6 RWD STANDARD RANGE,59
+2026-10,xpeng-x9,RY1,X9 AWD LONG RANGE,40
+2026-10,xpeng-x9,RY1,X9 FWD LONG RANGE,91
+2026-10,xpeng-x9,RY1,X9 FWD STANDARD RANGE,64
+2026-10,xpeng-x9,RY1,X9 LONG RANGE(EXECUTIVE),10
+2026-10,xpeng-x9,RY1,X9 LONG RANGE(LUXURY),3
+2026-10,zeekr-009,RY1,ZEEKR 009,167
+2026-10,zeekr-7x,RY1,ZEEKR 7X,201
+2026-10,zeekr-x,RY1,ZEEKR X,174

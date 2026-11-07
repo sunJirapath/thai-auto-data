@@ -4,7 +4,7 @@
 
 **ยอดจดทะเบียนรถยนต์ใหม่ประเทศไทย รายเดือน** แยกยี่ห้อ รุ่น จังหวัด และชนิดเชื้อเพลิง (รถยนต์ไฟฟ้า EV ไฮบริด) ตั้งแต่ ม.ค. 2564 จากกรมการขนส่งทางบก พร้อมราคารถยนต์จากเว็บไซต์ทางการ ดาวน์โหลด CSV ฟรี · [อ่านภาษาไทย](README.th.md)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23348748.svg)](https://doi.org/10.5281/zenodo.23348748) [![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](LICENSE) ![Data: 2021-01 to 2026-09](https://img.shields.io/badge/data-2021--01%20to%202026--09-green.svg) ![Format: CSV](https://img.shields.io/badge/format-CSV-orange.svg) [![Site](https://img.shields.io/badge/site-GitHub%20Pages-black.svg)](https://sunjirapath.github.io/thai-auto-data/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23348748.svg)](https://doi.org/10.5281/zenodo.23348748) [![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](LICENSE) ![Data: 2021-01 to 2026-10](https://img.shields.io/badge/data-2021--01%20to%202026--10-green.svg) ![Format: CSV](https://img.shields.io/badge/format-CSV-orange.svg) [![Site](https://img.shields.io/badge/site-GitHub%20Pages-black.svg)](https://sunjirapath.github.io/thai-auto-data/)
 
 Open data on the Thai car market: monthly new-vehicle registrations by brand and model, plus prices from official manufacturer websites, as plain CSV files you can download and use directly.
 
@@ -33,9 +33,9 @@ Open data on the Thai car market: monthly new-vehicle registrations by brand and
 | [`data/aliases.csv`](data/aliases.csv) | Mapping from the DLT's original model strings to `model_id` (exact matches only) |
 | [`data/sources.csv`](data/sources.csv) | Source registry: original URL, retrieval date, SHA-256, and accepted/rejected status with the reason |
 
-**Coverage:** January 2021 to September 2026 (BE 2564 to 2569), 69 months, none missing.
+**Coverage:** January 2021 to October 2026 (BE 2564 to 2569), 70 months, none missing.
 
-<!-- pending -->**Pending full data:** October 2026 has the national total only (53,750 registrations, RY1 to RY3). Brand, model, province and fuel data follow when the DLT publishes the full file.<!-- /pending -->
+<!-- pending --><!-- /pending -->
 
 **Prices:** 579 official-website prices for 158 models so far (Toyota, Honda, Isuzu, Mitsubishi, Ford, Nissan, Mazda, Suzuki, BYD, MG, GWM/Haval/ORA/Tank, Changan/Deepal, Chery, Omoda/Jaecoo, AION, Wuling, Tesla, Hyundai, Kia, XPENG, BMW, MINI, Volvo and AVATR), covering 92% of the last 12 months' registrations, each linked to the page it came from. Price history starts from the first observation, so it is not complete back in time.
 
@@ -56,7 +56,7 @@ import pandas as pd
 
 base = "https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/"
 brands = pd.read_csv(base + "summaries/brand_monthly.csv")
-print(brands[brands.period == "2026-09"].head(10))   # top 10 brands, September 2026
+print(brands[brands.period == "2026-10"].head(10))   # top 10 brands, October 2026
 ```
 
 DuckDB / SQL:
@@ -90,7 +90,7 @@ Or clone the whole repository: `git clone https://github.com/sunJirapath/thai-au
 
 The data is updated when the DLT publishes a new monthly file. Every file is checked before it is accepted. The row count must not be abnormally low, the month inside the file must match its title, and every count must be a nonnegative integer. A file that fails is logged in `data/sources.csv` with the reason and is not used.
 
-The data comes from the DLT Transport Statistics website (web.dlt.go.th/statistics), which updates monthly. On every import, each category total must match the DLT's own monthly totals file to the vehicle. As of 14 October 2026, the latest month is September 2026 (processed by the DLT on 5 October 2026).
+The data comes from the DLT Transport Statistics website (web.dlt.go.th/statistics), which updates monthly. On every import, each category total must match the DLT's own monthly totals file to the vehicle. As of 8 November 2026, the latest month is October 2026 (processed by the DLT on 4 November 2026).
 
 **After every data refresh** (right after the summarize step of the collector job on the NAS, which lives outside this repo) run `python scripts/build_seo.py`. It rebuilds the crawlable HTML in `index.html`, the static summary pages `brands/`, `models/` and `ev/`, and `sitemap.xml`; commit them with the data. `python scripts/build_seo.py --check` exits 1 if any of them is out of date (no writes). There is no CI in this repo, so run it by hand.
 

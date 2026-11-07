@@ -8,7 +8,7 @@
 | Where | [web.dlt.go.th/statistics](https://web.dlt.go.th/statistics/) → ข้อมูลด้านทะเบียนรถ → สถิติการจดทะเบียนรถใหม่ → "รถใหม่ (พ.ร.บ.รถยนต์) จำแนกตามยี่ห้อรถ รุ่นรถ และจังหวัด" |
 | Format | One xlsx with every month since January 2021: year (BE), month, vehicle category, province, brand, model, count |
 | Counts | New vehicles only. Used vehicles registered again are excluded (note in the file). |
-| Update frequency | Monthly. The file in use covers January 2021 to September 2026 and was processed by the DLT on 5 October 2026. |
+| Update frequency | Monthly. The file in use covers January 2021 to October 2026 and was processed by the DLT on 4 November 2026. |
 | License | Not stated on the page. The same statistics are published on the DLT open-data portal under the Thai government "Open Data Common" license; see below. |
 | Used for | `data/registrations/`, `summaries/` |
 | Exact file used | Listed in [`data/sources.csv`](data/sources.csv) with the download URL, retrieval date and SHA-256 |
