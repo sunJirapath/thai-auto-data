@@ -3149,6 +3149,7 @@ period,category,kind,id,units
 2023-03,RY1,m,toyota-corolla-cross,16
 2023-03,RY1,m,toyota-fortuner,35
 2023-03,RY1,m,toyota-hilux-revo,38
+2023-03,RY1,m,toyota-land-cruiser-300,1
 2023-03,RY1,m,toyota-veloz,11
 2023-03,RY1,m,toyota-yaris,17
 2023-03,RY1,m,toyota-yaris-ativ,77
@@ -5506,7 +5507,7 @@ period,category,kind,id,units
 2024-10,RY1,m,byd-atto-3,7
 2024-10,RY1,m,byd-dolphin,17
 2024-10,RY1,m,byd-seal,3
-2024-10,RY1,m,ford-everest,6
+2024-10,RY1,m,ford-everest,7
 2024-10,RY1,m,ford-ranger,11
 2024-10,RY1,m,ford-ranger-raptor,1
 2024-10,RY1,m,gwm-tank-300,1

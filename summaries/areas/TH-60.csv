@@ -1062,6 +1062,7 @@ period,category,kind,id,units
 2021-10,RY1,m,honda-civic,13
 2021-10,RY1,m,honda-cr-v,4
 2021-10,RY1,m,honda-jazz,1
+2021-10,RY1,m,hyundai-h-1,1
 2021-10,RY1,m,isuzu-d-max,63
 2021-10,RY1,m,isuzu-mu-x,8
 2021-10,RY1,m,lexus-lm,1
@@ -1996,7 +1997,7 @@ period,category,kind,id,units
 2022-06,RY1,f,phev,2
 2022-06,RY1,m,bmw-3-series,2
 2022-06,RY1,m,bmw-x1,3
-2022-06,RY1,m,ford-everest,4
+2022-06,RY1,m,ford-everest,5
 2022-06,RY1,m,ford-ranger,16
 2022-06,RY1,m,haval-h6,1
 2022-06,RY1,m,haval-jolion,1

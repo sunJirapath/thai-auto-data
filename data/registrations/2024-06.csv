@@ -137,7 +137,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-06,RY1,HONDA,ELEVATE,1,honda,,dlt-web-aeaaf410
 2024-06,RY1,HONDA,HR-V,2388,honda,honda-hr-v,dlt-web-aeaaf410
 2024-06,RY1,HONDA,JAZZ,1,honda,honda-jazz,dlt-web-aeaaf410
-2024-06,RY1,HONDA,JAZZ'15,1,honda,,dlt-web-aeaaf410
+2024-06,RY1,HONDA,JAZZ'15,1,honda,honda-jazz,dlt-web-aeaaf410
 2024-06,RY1,HONDA,ODYSSEY e-HEV ABSOLUTE EX,3,honda,honda-odyssey,dlt-web-aeaaf410
 2024-06,RY1,HONDA,S660 ALPHA,1,honda,,dlt-web-aeaaf410
 2024-06,RY1,HONDA,STEP WGN SPADA HYBRID PREMIUM,1,honda,honda-step-wgn,dlt-web-aeaaf410
@@ -192,8 +192,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-06,RY1,MAZDA,MAZDA CX-30,271,mazda,mazda-cx-30,dlt-web-aeaaf410
 2024-06,RY1,MAZDA,MAZDA CX-5,29,mazda,mazda-cx-5,dlt-web-aeaaf410
 2024-06,RY1,MAZDA,MAZDA CX-8,46,mazda,mazda-cx-8,dlt-web-aeaaf410
-2024-06,RY1,MAZDA,ROADSTER NR-A,1,mazda,,dlt-web-aeaaf410
-2024-06,RY1,MAZDA,ROADSTER RF VS,1,mazda,,dlt-web-aeaaf410
+2024-06,RY1,MAZDA,ROADSTER NR-A,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2024-06,RY1,MAZDA,ROADSTER RF VS,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2024-06,RY1,MCLAREN,ARTURA-COUPE,1,mclaren,,dlt-web-aeaaf410
 2024-06,RY1,MERCEDES BENZ,A 200,33,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2024-06,RY1,MERCEDES BENZ,AMG C43 4MATIC Coupe,3,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
@@ -284,7 +284,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-06,RY1,NISSAN,KICKS,358,nissan,nissan-kicks,dlt-web-aeaaf410
 2024-06,RY1,NISSAN,NAVARA,105,nissan,nissan-navara,dlt-web-aeaaf410
 2024-06,RY1,NISSAN,NOTE,1,nissan,nissan-note,dlt-web-aeaaf410
-2024-06,RY1,NISSAN,SERENA E-POWER AUTECH,1,nissan,,dlt-web-aeaaf410
+2024-06,RY1,NISSAN,SERENA E-POWER AUTECH,1,nissan,nissan-serena,dlt-web-aeaaf410
 2024-06,RY1,NISSAN,SYLPHY 1.6 E CVT,1,nissan,nissan-sylphy,dlt-web-aeaaf410
 2024-06,RY1,NISSAN,TERRA,43,nissan,nissan-terra,dlt-web-aeaaf410
 2024-06,RY1,ORA,GOOD CAT,238,ora,ora-good-cat,dlt-web-aeaaf410
@@ -442,7 +442,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-06,RY1,TOYOTA,VOXY SZ HYBRID 1.8L,1,toyota,toyota-voxy,dlt-web-aeaaf410
 2024-06,RY1,TOYOTA,YARIS ATIV,3893,toyota,toyota-yaris-ativ,dlt-web-aeaaf410
 2024-06,RY1,TOYOTA,YARIS CROSS,3511,toyota,toyota-yaris-cross,dlt-web-aeaaf410
-2024-06,RY1,TOYOTA,YARIS GRMN CIRCUIT PACKAGE,1,toyota,,dlt-web-aeaaf410
+2024-06,RY1,TOYOTA,YARIS GRMN CIRCUIT PACKAGE,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
 2024-06,RY1,TOYOTA,Yaris,732,toyota,toyota-yaris,dlt-web-aeaaf410
 2024-06,RY1,TOYOTA,ZVW30R-AHXEBT  CB,1,toyota,,dlt-web-aeaaf410
 2024-06,RY1,VOLKSWAGEN,ID BUZZ,3,volkswagen,,dlt-web-aeaaf410

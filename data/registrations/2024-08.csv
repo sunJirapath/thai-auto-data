@@ -134,7 +134,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY1,HAVAL,JOLION HYBRID,181,haval,haval-jolion,dlt-web-aeaaf410
 2024-08,RY1,HONDA,ACCORD,194,honda,honda-accord,dlt-web-aeaaf410
 2024-08,RY1,HONDA,ACCORD HYBRID,1,honda,honda-accord,dlt-web-aeaaf410
-2024-08,RY1,HONDA,ACCORD'13,1,honda,,dlt-web-aeaaf410
+2024-08,RY1,HONDA,ACCORD'13,1,honda,honda-accord,dlt-web-aeaaf410
 2024-08,RY1,HONDA,BR-V,17,honda,honda-br-v,dlt-web-aeaaf410
 2024-08,RY1,HONDA,CITY,1310,honda,honda-city,dlt-web-aeaaf410
 2024-08,RY1,HONDA,CITY HATCHBACK,1442,honda,honda-city-hatchback,dlt-web-aeaaf410
@@ -440,7 +440,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY1,TOYOTA,LAND CRUISER PRADO TZ G 2.8L,1,toyota,,dlt-web-aeaaf410
 2024-08,RY1,TOYOTA,LAND CRUISER PRADO TZ-G,2,toyota,,dlt-web-aeaaf410
 2024-08,RY1,TOYOTA,LAND CRUISER ZX,2,toyota,,dlt-web-aeaaf410
-2024-08,RY1,TOYOTA,LANDCRUISER LC300 ZX,1,toyota,,dlt-web-aeaaf410
+2024-08,RY1,TOYOTA,LANDCRUISER LC300 ZX,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2024-08,RY1,TOYOTA,NOAH HYBRID S-Z,1,toyota,,dlt-web-aeaaf410
 2024-08,RY1,TOYOTA,NOAH HYBRID X,6,toyota,,dlt-web-aeaaf410
 2024-08,RY1,TOYOTA,NOAH HYBRID X 2WD,3,toyota,,dlt-web-aeaaf410
@@ -463,7 +463,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY1,TOYOTA,VOXY SZ HYBRID 1.8L,1,toyota,toyota-voxy,dlt-web-aeaaf410
 2024-08,RY1,TOYOTA,YARIS ATIV,3885,toyota,toyota-yaris-ativ,dlt-web-aeaaf410
 2024-08,RY1,TOYOTA,YARIS CROSS,2984,toyota,toyota-yaris-cross,dlt-web-aeaaf410
-2024-08,RY1,TOYOTA,YARIS GRMN CIRCUIT PACKAGE,1,toyota,,dlt-web-aeaaf410
+2024-08,RY1,TOYOTA,YARIS GRMN CIRCUIT PACKAGE,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
 2024-08,RY1,TOYOTA,Yaris,597,toyota,toyota-yaris,dlt-web-aeaaf410
 2024-08,RY1,VOLKSWAGEN,ID BUZZ,2,volkswagen,,dlt-web-aeaaf410
 2024-08,RY1,VOLKSWAGEN,ID BUZZ FIRST EDITION,1,volkswagen,,dlt-web-aeaaf410
@@ -521,7 +521,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY3,ISUZU,D-MAX,2405,isuzu,isuzu-d-max,dlt-web-aeaaf410
 2024-08,RY3,ISUZU,ไม่ระบุ,122,isuzu,,dlt-web-aeaaf410
 2024-08,RY3,MAZDA,MAZDA BT-50,4,mazda,mazda-bt-50,dlt-web-aeaaf410
-2024-08,RY3,MAZDA,MAZDA BT50,1,mazda,,dlt-web-aeaaf410
+2024-08,RY3,MAZDA,MAZDA BT50,1,mazda,mazda-bt-50,dlt-web-aeaaf410
 2024-08,RY3,MG,MG EXTENDER,70,mg,mg-extender,dlt-web-aeaaf410
 2024-08,RY3,MITSUBISHI,KP3TEYJFPRU,1,mitsubishi,,dlt-web-aeaaf410
 2024-08,RY3,MITSUBISHI,TRITON,264,mitsubishi,mitsubishi-triton,dlt-web-aeaaf410
@@ -538,7 +538,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY3,TOYOTA,HIACE,9,toyota,toyota-hiace,dlt-web-aeaaf410
 2024-08,RY3,TOYOTA,HILUX CHAMP,1043,toyota,toyota-hilux-champ,dlt-web-aeaaf410
 2024-08,RY3,TOYOTA,HILUX REVO,3625,toyota,toyota-hilux-revo,dlt-web-aeaaf410
-2024-08,RY3,TOYOTA,LANDCRUISER SINGLE CAB LC79,1,toyota,,dlt-web-aeaaf410
+2024-08,RY3,TOYOTA,LANDCRUISER SINGLE CAB LC79,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2024-08,RY3,UD TRUCKS,PKE250ELRM,1,ud-trucks,,dlt-web-aeaaf410
 2024-08,RY3,UD TRUCKS,PKE250HLRM,3,ud-trucks,,dlt-web-aeaaf410
 2024-08,RY3,VOLVO,FM1342R49400ALSI-TH,4,volvo,,dlt-web-aeaaf410

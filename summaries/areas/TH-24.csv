@@ -1122,7 +1122,7 @@ period,category,kind,id,units
 2021-12,RY1,f,petrol,116
 2021-12,RY1,f,phev,1
 2021-12,RY1,m,ford-everest,1
-2021-12,RY1,m,ford-ranger,11
+2021-12,RY1,m,ford-ranger,12
 2021-12,RY1,m,ford-ranger-raptor,1
 2021-12,RY1,m,honda-accord,3
 2021-12,RY1,m,honda-city,15
@@ -1719,6 +1719,7 @@ period,category,kind,id,units
 2022-06,RY1,m,honda-civic,3
 2022-06,RY1,m,honda-hr-v,3
 2022-06,RY1,m,honda-jazz,2
+2022-06,RY1,m,hyundai-h-1,1
 2022-06,RY1,m,isuzu-d-max,102
 2022-06,RY1,m,isuzu-mu-x,17
 2022-06,RY1,m,mazda-mazda2,4

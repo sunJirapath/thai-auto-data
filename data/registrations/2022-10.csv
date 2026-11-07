@@ -99,8 +99,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-10,RY1,FIAT,500ELECTRIC HATCHBACK LA PRIMA,1,fiat,,dlt-web-aeaaf410
 2022-10,RY1,FOMM,FOMM ONE,3,fomm,,dlt-web-aeaaf410
 2022-10,RY1,FORD,EVEREST,690,ford,ford-everest,dlt-web-aeaaf410
-2022-10,RY1,FORD,FORD EVEREST zJAE9BC,1,ford,,dlt-web-aeaaf410
-2022-10,RY1,FORD,FORD RANGER,1,ford,,dlt-web-aeaaf410
+2022-10,RY1,FORD,FORD EVEREST zJAE9BC,1,ford,ford-everest,dlt-web-aeaaf410
+2022-10,RY1,FORD,FORD RANGER,1,ford,ford-ranger,dlt-web-aeaaf410
 2022-10,RY1,FORD,FORD RANGER iFBT9AH,1,ford,,dlt-web-aeaaf410
 2022-10,RY1,FORD,FORD RANGER iFBW9B4,1,ford,,dlt-web-aeaaf410
 2022-10,RY1,FORD,MUSTANG,5,ford,ford-mustang,dlt-web-aeaaf410
@@ -117,7 +117,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-10,RY1,HAVAL,JOLION HYBRID,201,haval,haval-jolion,dlt-web-aeaaf410
 2022-10,RY1,HONDA,ACCORD,241,honda,honda-accord,dlt-web-aeaaf410
 2022-10,RY1,HONDA,ACCORD HYBRID,5,honda,honda-accord,dlt-web-aeaaf410
-2022-10,RY1,HONDA,ACCORDHYBRID'14,1,honda,,dlt-web-aeaaf410
+2022-10,RY1,HONDA,ACCORDHYBRID'14,1,honda,honda-accord,dlt-web-aeaaf410
 2022-10,RY1,HONDA,BR-V,85,honda,honda-br-v,dlt-web-aeaaf410
 2022-10,RY1,HONDA,BRIO AMAZE,2,honda,,dlt-web-aeaaf410
 2022-10,RY1,HONDA,CITY,1811,honda,honda-city,dlt-web-aeaaf410
@@ -125,7 +125,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-10,RY1,HONDA,CIVIC,860,honda,honda-civic,dlt-web-aeaaf410
 2022-10,RY1,HONDA,CR-V,149,honda,honda-cr-v,dlt-web-aeaaf410
 2022-10,RY1,HONDA,HR-V,1091,honda,honda-hr-v,dlt-web-aeaaf410
-2022-10,RY1,HONDA,HR-V'15,1,honda,,dlt-web-aeaaf410
+2022-10,RY1,HONDA,HR-V'15,1,honda,honda-hr-v,dlt-web-aeaaf410
 2022-10,RY1,HONDA,JAZZ,29,honda,honda-jazz,dlt-web-aeaaf410
 2022-10,RY1,HONDA,MOBILIO,6,honda,,dlt-web-aeaaf410
 2022-10,RY1,HONDA,MOBILIO'15,1,honda,,dlt-web-aeaaf410
@@ -138,7 +138,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-10,RY1,HONDA,STEP WGN SPADA PREMIUM LINE,1,honda,honda-step-wgn,dlt-web-aeaaf410
 2022-10,RY1,HONDA,STEPWGN e:HEV SPADA,1,honda,honda-step-wgn,dlt-web-aeaaf410
 2022-10,RY1,HYUNDAI,CRETA,20,hyundai,hyundai-creta,dlt-web-aeaaf410
-2022-10,RY1,HYUNDAI,GRAND STAREX,1,hyundai,,dlt-web-aeaaf410
+2022-10,RY1,HYUNDAI,GRAND STAREX,1,hyundai,hyundai-h-1,dlt-web-aeaaf410
 2022-10,RY1,HYUNDAI,IONIQ EV,1,hyundai,,dlt-web-aeaaf410
 2022-10,RY1,HYUNDAI,TUCSON,1,hyundai,,dlt-web-aeaaf410
 2022-10,RY1,ISUZU,D-MAX,6455,isuzu,isuzu-d-max,dlt-web-aeaaf410
@@ -275,8 +275,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-10,RY1,NISSAN,MARCH,43,nissan,nissan-march,dlt-web-aeaaf410
 2022-10,RY1,NISSAN,NAVARA,132,nissan,nissan-navara,dlt-web-aeaaf410
 2022-10,RY1,NISSAN,NOTE,12,nissan,nissan-note,dlt-web-aeaaf410
-2022-10,RY1,NISSAN,SERENA HYBRID 2.0 X,2,nissan,,dlt-web-aeaaf410
-2022-10,RY1,NISSAN,SERENA HYBRID E-POWER X,1,nissan,,dlt-web-aeaaf410
+2022-10,RY1,NISSAN,SERENA HYBRID 2.0 X,2,nissan,nissan-serena,dlt-web-aeaaf410
+2022-10,RY1,NISSAN,SERENA HYBRID E-POWER X,1,nissan,nissan-serena,dlt-web-aeaaf410
 2022-10,RY1,NISSAN,TEANA,1,nissan,,dlt-web-aeaaf410
 2022-10,RY1,NISSAN,TERRA,108,nissan,nissan-terra,dlt-web-aeaaf410
 2022-10,RY1,ORA,GOOD CAT,447,ora,ora-good-cat,dlt-web-aeaaf410
@@ -412,8 +412,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-10,RY1,TOYOTA,Innova,22,toyota,toyota-innova,dlt-web-aeaaf410
 2022-10,RY1,TOYOTA,LAND CRUISER GR SPORT,1,toyota,,dlt-web-aeaaf410
 2022-10,RY1,TOYOTA,LAND CRUISER ZX,1,toyota,,dlt-web-aeaaf410
-2022-10,RY1,TOYOTA,LANDCRUISER LC300 GR SPORT,1,toyota,,dlt-web-aeaaf410
-2022-10,RY1,TOYOTA,LANDCRUISER LC300 SAHARA,1,toyota,,dlt-web-aeaaf410
+2022-10,RY1,TOYOTA,LANDCRUISER LC300 GR SPORT,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
+2022-10,RY1,TOYOTA,LANDCRUISER LC300 SAHARA,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2022-10,RY1,TOYOTA,LANDCRUISER PRADO 2.8 TXL,1,toyota,,dlt-web-aeaaf410
 2022-10,RY1,TOYOTA,NOAH HYBRID S-Z,1,toyota,,dlt-web-aeaaf410
 2022-10,RY1,TOYOTA,NOAH HYBRID X,1,toyota,,dlt-web-aeaaf410

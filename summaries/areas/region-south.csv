@@ -272,7 +272,7 @@ period,category,kind,id,units
 2021-02,RY1,m,bmw-x5,3
 2021-02,RY1,m,bmw-x7,1
 2021-02,RY1,m,bmw-z4,2
-2021-02,RY1,m,ford-everest,47
+2021-02,RY1,m,ford-everest,48
 2021-02,RY1,m,ford-ranger,127
 2021-02,RY1,m,ford-ranger-raptor,17
 2021-02,RY1,m,honda-accord,19
@@ -1066,6 +1066,7 @@ period,category,kind,id,units
 2021-06,RY1,m,honda-cr-v,37
 2021-06,RY1,m,honda-hr-v,51
 2021-06,RY1,m,honda-jazz,55
+2021-06,RY1,m,hyundai-h-1,1
 2021-06,RY1,m,isuzu-d-max,653
 2021-06,RY1,m,isuzu-mu-x,120
 2021-06,RY1,m,lexus-lx,1
@@ -4041,7 +4042,7 @@ period,category,kind,id,units
 2022-09,RY1,m,bmw-x6,1
 2022-09,RY1,m,bmw-x7,3
 2022-09,RY1,m,bmw-z4,1
-2022-09,RY1,m,ford-everest,60
+2022-09,RY1,m,ford-everest,61
 2022-09,RY1,m,ford-ranger,172
 2022-09,RY1,m,ford-ranger-raptor,1
 2022-09,RY1,m,haval-h6,27
@@ -5388,6 +5389,7 @@ period,category,kind,id,units
 2023-03,RY1,m,toyota-corolla-cross,147
 2023-03,RY1,m,toyota-fortuner,300
 2023-03,RY1,m,toyota-hilux-revo,367
+2023-03,RY1,m,toyota-land-cruiser-300,1
 2023-03,RY1,m,toyota-sienta,3
 2023-03,RY1,m,toyota-veloz,133
 2023-03,RY1,m,toyota-yaris,165
@@ -6416,7 +6418,7 @@ period,category,kind,id,units
 2023-08,RY1,m,byd-atto-3,120
 2023-08,RY1,m,byd-dolphin,12
 2023-08,RY1,m,ford-everest,110
-2023-08,RY1,m,ford-ranger,158
+2023-08,RY1,m,ford-ranger,159
 2023-08,RY1,m,ford-ranger-raptor,37
 2023-08,RY1,m,haval-h6,21
 2023-08,RY1,m,haval-jolion,18
@@ -7124,7 +7126,7 @@ period,category,kind,id,units
 2023-11,RY1,m,byd-e6,1
 2023-11,RY1,m,byd-seal,18
 2023-11,RY1,m,ford-everest,119
-2023-11,RY1,m,ford-ranger,134
+2023-11,RY1,m,ford-ranger,135
 2023-11,RY1,m,ford-ranger-raptor,42
 2023-11,RY1,m,gwm-tank-300,2
 2023-11,RY1,m,gwm-tank-500,4
@@ -9796,7 +9798,7 @@ period,category,kind,id,units
 2024-10,RY1,m,byd-seal,7
 2024-10,RY1,m,changan-lumin,1
 2024-10,RY1,m,deepal-s07,3
-2024-10,RY1,m,ford-everest,63
+2024-10,RY1,m,ford-everest,64
 2024-10,RY1,m,ford-ranger,105
 2024-10,RY1,m,ford-ranger-raptor,30
 2024-10,RY1,m,gwm-tank-300,3
@@ -11931,7 +11933,7 @@ period,category,kind,id,units
 2025-06,RY1,m,deepal-l07,1
 2025-06,RY1,m,deepal-s07,14
 2025-06,RY1,m,denza-d9,26
-2025-06,RY1,m,ford-everest,75
+2025-06,RY1,m,ford-everest,76
 2025-06,RY1,m,ford-ranger,71
 2025-06,RY1,m,ford-ranger-raptor,12
 2025-06,RY1,m,geely-ex5,2
@@ -14777,7 +14779,7 @@ period,category,kind,id,units
 2026-04,RY1,m,deepal-s05,45
 2026-04,RY1,m,deepal-s07,17
 2026-04,RY1,m,denza-d9,1
-2026-04,RY1,m,ford-everest,72
+2026-04,RY1,m,ford-everest,73
 2026-04,RY1,m,ford-ranger,68
 2026-04,RY1,m,ford-ranger-raptor,8
 2026-04,RY1,m,geely-ex2,77

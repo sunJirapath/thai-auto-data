@@ -118,7 +118,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-02,RY1,FOMM,FOMM ONE,3,fomm,,dlt-web-aeaaf410
 2024-02,RY1,FORD,EVEREST,1036,ford,ford-everest,dlt-web-aeaaf410
 2024-02,RY1,FORD,EcoSport,1,ford,,dlt-web-aeaaf410
-2024-02,RY1,FORD,FORD EVEREST zFAE9BC,1,ford,,dlt-web-aeaaf410
+2024-02,RY1,FORD,FORD EVEREST zFAE9BC,1,ford,ford-everest,dlt-web-aeaaf410
 2024-02,RY1,FORD,MUSTANG,6,ford,ford-mustang,dlt-web-aeaaf410
 2024-02,RY1,FORD,MUSTANG 2.3L ECOBOOST FASTBACK,1,ford,ford-mustang,dlt-web-aeaaf410
 2024-02,RY1,FORD,MUSTANG ECOBOOST FASTBACK,1,ford,ford-mustang,dlt-web-aeaaf410
@@ -139,13 +139,13 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-02,RY1,HONDA,CITY HATCHBACK,1188,honda,honda-city-hatchback,dlt-web-aeaaf410
 2024-02,RY1,HONDA,CIVIC,1286,honda,honda-civic,dlt-web-aeaaf410
 2024-02,RY1,HONDA,CIVIC TYPE R,12,honda,honda-civic-type-r,dlt-web-aeaaf410
-2024-02,RY1,HONDA,CIVIC'12,1,honda,,dlt-web-aeaaf410
+2024-02,RY1,HONDA,CIVIC'12,1,honda,honda-civic,dlt-web-aeaaf410
 2024-02,RY1,HONDA,CR-V,1438,honda,honda-cr-v,dlt-web-aeaaf410
 2024-02,RY1,HONDA,E ADVANCE,1,honda,,dlt-web-aeaaf410
 2024-02,RY1,HONDA,HR-V,2574,honda,honda-hr-v,dlt-web-aeaaf410
 2024-02,RY1,HONDA,JAZZ,2,honda,honda-jazz,dlt-web-aeaaf410
-2024-02,RY1,HONDA,JAZZ'09,1,honda,,dlt-web-aeaaf410
-2024-02,RY1,HONDA,JAZZ'15,1,honda,,dlt-web-aeaaf410
+2024-02,RY1,HONDA,JAZZ'09,1,honda,honda-jazz,dlt-web-aeaaf410
+2024-02,RY1,HONDA,JAZZ'15,1,honda,honda-jazz,dlt-web-aeaaf410
 2024-02,RY1,HONDA,MOBILIO'15,1,honda,,dlt-web-aeaaf410
 2024-02,RY1,HONDA,N-BOX CUSTOM G-EX TURBO,1,honda,,dlt-web-aeaaf410
 2024-02,RY1,HONDA,ODYSSEY ABSOLUTE EX,1,honda,honda-odyssey,dlt-web-aeaaf410
@@ -198,9 +198,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-02,RY1,MAZDA,MAZDA CX-5,31,mazda,mazda-cx-5,dlt-web-aeaaf410
 2024-02,RY1,MAZDA,MAZDA CX-8,52,mazda,mazda-cx-8,dlt-web-aeaaf410
 2024-02,RY1,MAZDA,MAZDA MX-5,1,mazda,mazda-mx-5,dlt-web-aeaaf410
-2024-02,RY1,MAZDA,MX-5 ROADSTER 990S,1,mazda,,dlt-web-aeaaf410
-2024-02,RY1,MAZDA,ROADSTER 990S,1,mazda,,dlt-web-aeaaf410
-2024-02,RY1,MAZDA,ROADSTER BROWN TOP,1,mazda,,dlt-web-aeaaf410
+2024-02,RY1,MAZDA,MX-5 ROADSTER 990S,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2024-02,RY1,MAZDA,ROADSTER 990S,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2024-02,RY1,MAZDA,ROADSTER BROWN TOP,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2024-02,RY1,MCLAREN,ARTURA-COUPE,3,mclaren,,dlt-web-aeaaf410
 2024-02,RY1,MERCEDES BENZ,A 200,56,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2024-02,RY1,MERCEDES BENZ,AMG C 43 4MATIC,1,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
@@ -440,7 +440,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-02,RY1,TOYOTA,LAND CRUISER PRADO TX 7 SEAT,1,toyota,,dlt-web-aeaaf410
 2024-02,RY1,TOYOTA,LAND CRUISER PRADO TZ G 2.8L,2,toyota,,dlt-web-aeaaf410
 2024-02,RY1,TOYOTA,LAND CRUISER PRADO TZ-G,1,toyota,,dlt-web-aeaaf410
-2024-02,RY1,TOYOTA,LANDCRUISER LC300 ZX,1,toyota,,dlt-web-aeaaf410
+2024-02,RY1,TOYOTA,LANDCRUISER LC300 ZX,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2024-02,RY1,TOYOTA,NOAH HYBRID X,14,toyota,,dlt-web-aeaaf410
 2024-02,RY1,TOYOTA,SIENTA,2,toyota,toyota-sienta,dlt-web-aeaaf410
 2024-02,RY1,TOYOTA,TR TRANSFORMER,1,toyota,,dlt-web-aeaaf410
@@ -459,7 +459,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-02,RY1,TOYOTA,VOXY SZ,1,toyota,toyota-voxy,dlt-web-aeaaf410
 2024-02,RY1,TOYOTA,YARIS ATIV,4741,toyota,toyota-yaris-ativ,dlt-web-aeaaf410
 2024-02,RY1,TOYOTA,YARIS CROSS,2934,toyota,toyota-yaris-cross,dlt-web-aeaaf410
-2024-02,RY1,TOYOTA,YARIS GRMN CIRCUIT PACKAGE,2,toyota,,dlt-web-aeaaf410
+2024-02,RY1,TOYOTA,YARIS GRMN CIRCUIT PACKAGE,2,toyota,toyota-gr-yaris,dlt-web-aeaaf410
 2024-02,RY1,TOYOTA,Yaris,998,toyota,toyota-yaris,dlt-web-aeaaf410
 2024-02,RY1,VOLKSWAGEN,ID BUZZ,6,volkswagen,,dlt-web-aeaaf410
 2024-02,RY1,VOLKSWAGEN,ID BUZZ STYLE SWB PRO,1,volkswagen,,dlt-web-aeaaf410
@@ -525,4 +525,4 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-02,RY3,TOYOTA,HIACE,22,toyota,toyota-hiace,dlt-web-aeaaf410
 2024-02,RY3,TOYOTA,HILUX CHAMP,191,toyota,toyota-hilux-champ,dlt-web-aeaaf410
 2024-02,RY3,TOYOTA,HILUX REVO,4821,toyota,toyota-hilux-revo,dlt-web-aeaaf410
-2024-02,RY3,TOYOTA,LAND CRUISER 79 PICK UP,1,toyota,,dlt-web-aeaaf410
+2024-02,RY3,TOYOTA,LAND CRUISER 79 PICK UP,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410

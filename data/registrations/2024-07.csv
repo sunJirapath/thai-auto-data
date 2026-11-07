@@ -208,9 +208,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-07,RY1,MAZDA,MAZDA CX-30,184,mazda,mazda-cx-30,dlt-web-aeaaf410
 2024-07,RY1,MAZDA,MAZDA CX-5,19,mazda,mazda-cx-5,dlt-web-aeaaf410
 2024-07,RY1,MAZDA,MAZDA CX-8,35,mazda,mazda-cx-8,dlt-web-aeaaf410
-2024-07,RY1,MAZDA,MX-5 ROADSTER 990S,1,mazda,,dlt-web-aeaaf410
-2024-07,RY1,MAZDA,ROADSTER 990S,3,mazda,,dlt-web-aeaaf410
-2024-07,RY1,MAZDA,ROADSTER BROWN TOP,1,mazda,,dlt-web-aeaaf410
+2024-07,RY1,MAZDA,MX-5 ROADSTER 990S,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2024-07,RY1,MAZDA,ROADSTER 990S,3,mazda,mazda-mx-5,dlt-web-aeaaf410
+2024-07,RY1,MAZDA,ROADSTER BROWN TOP,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2024-07,RY1,MCLAREN,ARTURA-COUPE,1,mclaren,,dlt-web-aeaaf410
 2024-07,RY1,MERCEDES BENZ,A 200,45,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2024-07,RY1,MERCEDES BENZ,AMG C 43 4MATIC,1,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
@@ -435,7 +435,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-07,RY1,TOYOTA,HILUX REVO,2247,toyota,toyota-hilux-revo,dlt-web-aeaaf410
 2024-07,RY1,TOYOTA,INNOVA,227,toyota,toyota-innova,dlt-web-aeaaf410
 2024-07,RY1,TOYOTA,KUN61R-NKASYT  B0,1,toyota,,dlt-web-aeaaf410
-2024-07,RY1,TOYOTA,LAND CRUISER 3.5L GR SPORT,1,toyota,,dlt-web-aeaaf410
+2024-07,RY1,TOYOTA,LAND CRUISER 3.5L GR SPORT,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2024-07,RY1,TOYOTA,LAND CRUISER 300 GR SPORT,2,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2024-07,RY1,TOYOTA,LAND CRUISER 70 AX,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2024-07,RY1,TOYOTA,LAND CRUISER AX,1,toyota,,dlt-web-aeaaf410
@@ -468,8 +468,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-07,RY1,TOYOTA,VOXY SZ HYBRID 1.8L,1,toyota,toyota-voxy,dlt-web-aeaaf410
 2024-07,RY1,TOYOTA,YARIS ATIV,3967,toyota,toyota-yaris-ativ,dlt-web-aeaaf410
 2024-07,RY1,TOYOTA,YARIS CROSS,3329,toyota,toyota-yaris-cross,dlt-web-aeaaf410
-2024-07,RY1,TOYOTA,YARIS GR CIRCUIT PACK,1,toyota,,dlt-web-aeaaf410
-2024-07,RY1,TOYOTA,YARIS GRMN RALLY PACKAGE,1,toyota,,dlt-web-aeaaf410
+2024-07,RY1,TOYOTA,YARIS GR CIRCUIT PACK,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
+2024-07,RY1,TOYOTA,YARIS GRMN RALLY PACKAGE,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
 2024-07,RY1,TOYOTA,Yaris,729,toyota,toyota-yaris,dlt-web-aeaaf410
 2024-07,RY1,VOLT,VOLT FOR FOUR,4,volt,,dlt-web-aeaaf410
 2024-07,RY1,VOLVO,C40,72,volvo,volvo-c40,dlt-web-aeaaf410

@@ -176,7 +176,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-09,RY1,HONDA,WR-V,1,honda,honda-wr-v,dlt-web-aeaaf410
 2026-09,RY1,HONDA,e:N1,8,honda,honda-e-n1,dlt-web-aeaaf410
 2026-09,RY1,HONDA,e:N2,11,honda,honda-e-n2,dlt-web-aeaaf410
-2026-09,RY1,HONGQI,HONGQI E-HS9,9,hongqi,,dlt-web-aeaaf410
+2026-09,RY1,HONGQI,HONGQI E-HS9,9,hongqi,hongqi-e-hs9,dlt-web-aeaaf410
 2026-09,RY1,HYUNDAI,CRETA,1,hyundai,hyundai-creta,dlt-web-aeaaf410
 2026-09,RY1,HYUNDAI,IONIQ5,126,hyundai,hyundai-ioniq-5,dlt-web-aeaaf410
 2026-09,RY1,HYUNDAI,IONIQ5 N,1,hyundai,hyundai-ioniq-5,dlt-web-aeaaf410
@@ -243,9 +243,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-09,RY1,MAZDA,MAZDA CX-5,52,mazda,mazda-cx-5,dlt-web-aeaaf410
 2026-09,RY1,MAZDA,MAZDA CX-8,25,mazda,mazda-cx-8,dlt-web-aeaaf410
 2026-09,RY1,MAZDA,MAZDA6e,317,mazda,mazda-mazda6e,dlt-web-aeaaf410
-2026-09,RY1,MAZDA,ROADSTER RF VS,1,mazda,,dlt-web-aeaaf410
-2026-09,RY1,MAZDA,ROADSTER S LEATHER PACKAGE,2,mazda,,dlt-web-aeaaf410
-2026-09,RY1,MAZDA,ROADSTER S SPECIAL PACKAGE,2,mazda,,dlt-web-aeaaf410
+2026-09,RY1,MAZDA,ROADSTER RF VS,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2026-09,RY1,MAZDA,ROADSTER S LEATHER PACKAGE,2,mazda,mazda-mx-5,dlt-web-aeaaf410
+2026-09,RY1,MAZDA,ROADSTER S SPECIAL PACKAGE,2,mazda,mazda-mx-5,dlt-web-aeaaf410
 2026-09,RY1,MERCEDES BENZ,A 200,10,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2026-09,RY1,MERCEDES BENZ,AMG C43 4MATIC Coupe,2,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
 2026-09,RY1,MERCEDES BENZ,AMG CLE 53 4MATIC coupe,19,mercedes-benz,mercedes-benz-cle,dlt-web-aeaaf410
@@ -333,7 +333,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-09,RY1,MITSUBISHI,XPANDER HEV,65,mitsubishi,mitsubishi-xpander,dlt-web-aeaaf410
 2026-09,RY1,NETA,NETA V-II,7,neta,neta-v-ii,dlt-web-aeaaf410
 2026-09,RY1,NETA,NETA X,2,neta,neta-x,dlt-web-aeaaf410
-2026-09,RY1,NIO,firefly,1,nio,,dlt-web-aeaaf410
+2026-09,RY1,NIO,firefly,1,nio,nio-firefly,dlt-web-aeaaf410
 2026-09,RY1,NISSAN,ALMERA,123,nissan,nissan-almera,dlt-web-aeaaf410
 2026-09,RY1,NISSAN,BDWARBZN17XHAY211Z,1,nissan,,dlt-web-aeaaf410
 2026-09,RY1,NISSAN,GT-R PURE EDITION,2,nissan,nissan-gt-r,dlt-web-aeaaf410
@@ -486,7 +486,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-09,RY1,TOYOTA,YARIS,343,toyota,toyota-yaris,dlt-web-aeaaf410
 2026-09,RY1,TOYOTA,YARIS ATIV,6032,toyota,toyota-yaris-ativ,dlt-web-aeaaf410
 2026-09,RY1,TOYOTA,YARIS CROSS,2818,toyota,toyota-yaris-cross,dlt-web-aeaaf410
-2026-09,RY1,TOYOTA,YARIS GR CIRCUIT PACK,1,toyota,,dlt-web-aeaaf410
+2026-09,RY1,TOYOTA,YARIS GR CIRCUIT PACK,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
 2026-09,RY1,TOYOTA,ZRE171R-GEXEMT A1,1,toyota,,dlt-web-aeaaf410
 2026-09,RY1,VOLKSWAGEN,GOLF GTI CLUB 45 EDITION,1,volkswagen,,dlt-web-aeaaf410
 2026-09,RY1,VOLKSWAGEN,ID BUZZ ELECTRIC,1,volkswagen,,dlt-web-aeaaf410
@@ -546,7 +546,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-09,RY3,FOTON,BJ1045V8JD3-FA,3,foton,,dlt-web-aeaaf410
 2026-09,RY3,FOTON,BJ1045V9JD4-R1,3,foton,,dlt-web-aeaaf410
 2026-09,RY3,FOTON,eTUNLAND,5,foton,,dlt-web-aeaaf410
-2026-09,RY3,FOTON,eVIEWCONNECT,113,foton,,dlt-web-aeaaf410
+2026-09,RY3,FOTON,eVIEWCONNECT,113,foton,foton-eview-connect,dlt-web-aeaaf410
 2026-09,RY3,HINO,FG8JJ1A-JJT,1,hino,,dlt-web-aeaaf410
 2026-09,RY3,HINO,FG8JJ3A-ACDMH,1,hino,,dlt-web-aeaaf410
 2026-09,RY3,HINO,FM8JN3D-CDDMH,1,hino,,dlt-web-aeaaf410

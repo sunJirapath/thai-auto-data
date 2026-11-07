@@ -97,10 +97,10 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-05,RY1,FERRARI,GTC 4 LUSSO,1,ferrari,,dlt-web-aeaaf410
 2021-05,RY1,FOMM,FOMM ONE,3,fomm,,dlt-web-aeaaf410
 2021-05,RY1,FORD,EVEREST,516,ford,ford-everest,dlt-web-aeaaf410
-2021-05,RY1,FORD,FORD EVEREST zFAE9GD,1,ford,,dlt-web-aeaaf410
+2021-05,RY1,FORD,FORD EVEREST zFAE9GD,1,ford,ford-everest,dlt-web-aeaaf410
 2021-05,RY1,FORD,FORD RANGER iJBT9AH,1,ford,,dlt-web-aeaaf410
 2021-05,RY1,FORD,Focus,1,ford,,dlt-web-aeaaf410
-2021-05,RY1,FORD,Ford Everest,1,ford,,dlt-web-aeaaf410
+2021-05,RY1,FORD,Ford Everest,1,ford,ford-everest,dlt-web-aeaaf410
 2021-05,RY1,FORD,Ford Focus,2,ford,,dlt-web-aeaaf410
 2021-05,RY1,FORD,MUSTANG,7,ford,ford-mustang,dlt-web-aeaaf410
 2021-05,RY1,FORD,MUSTANG 2.3 ECOBOOST,1,ford,ford-mustang,dlt-web-aeaaf410
@@ -131,7 +131,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-05,RY1,HONDA,STEP WGN E HEV SPADA G EX,1,honda,honda-step-wgn,dlt-web-aeaaf410
 2021-05,RY1,HONDA,STEPWAGON SPADA HYBRID,1,honda,honda-step-wgn,dlt-web-aeaaf410
 2021-05,RY1,HONDA,STEPWAGON SPADA HYBRID EHEV G,2,honda,honda-step-wgn,dlt-web-aeaaf410
-2021-05,RY1,HYUNDAI,GRAND STAREX,21,hyundai,,dlt-web-aeaaf410
+2021-05,RY1,HYUNDAI,GRAND STAREX,21,hyundai,hyundai-h-1,dlt-web-aeaaf410
 2021-05,RY1,HYUNDAI,H-1,1,hyundai,hyundai-h-1,dlt-web-aeaaf410
 2021-05,RY1,HYUNDAI,IONIQ EV,1,hyundai,,dlt-web-aeaaf410
 2021-05,RY1,HYUNDAI,KONA EV,2,hyundai,,dlt-web-aeaaf410
@@ -164,11 +164,11 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-05,RY1,MASERATI,LEVANTE S GRANSPORT,1,maserati,,dlt-web-aeaaf410
 2021-05,RY1,MAZDA,MAZDA 2,1908,mazda,mazda-mazda2,dlt-web-aeaaf410
 2021-05,RY1,MAZDA,MAZDA 3,299,mazda,mazda-mazda3,dlt-web-aeaaf410
-2021-05,RY1,MAZDA,MAZDA BT50,1,mazda,,dlt-web-aeaaf410
+2021-05,RY1,MAZDA,MAZDA BT50,1,mazda,mazda-bt-50,dlt-web-aeaaf410
 2021-05,RY1,MAZDA,MAZDA CX-3,413,mazda,mazda-cx-3,dlt-web-aeaaf410
 2021-05,RY1,MAZDA,MAZDA CX-30,806,mazda,mazda-cx-30,dlt-web-aeaaf410
 2021-05,RY1,MAZDA,MAZDA CX-8,146,mazda,mazda-cx-8,dlt-web-aeaaf410
-2021-05,RY1,MAZDA,MX-5 ROADSTER100TH ANNIVERSARY,1,mazda,,dlt-web-aeaaf410
+2021-05,RY1,MAZDA,MX-5 ROADSTER100TH ANNIVERSARY,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2021-05,RY1,MAZDA,Mazda BT-50,50,mazda,mazda-bt-50,dlt-web-aeaaf410
 2021-05,RY1,MAZDA,Mazda CX-5,103,mazda,mazda-cx-5,dlt-web-aeaaf410
 2021-05,RY1,MCLAREN,720S COUPE,1,mclaren,,dlt-web-aeaaf410
@@ -279,10 +279,10 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-05,RY1,NISSAN,LEAF,1,nissan,nissan-leaf,dlt-web-aeaaf410
 2021-05,RY1,NISSAN,MARCH,281,nissan,nissan-march,dlt-web-aeaaf410
 2021-05,RY1,NISSAN,NAVARA,300,nissan,nissan-navara,dlt-web-aeaaf410
-2021-05,RY1,NISSAN,NISSAN ALMERA NISMO VL CVT,1,nissan,,dlt-web-aeaaf410
+2021-05,RY1,NISSAN,NISSAN ALMERA NISMO VL CVT,1,nissan,nissan-almera,dlt-web-aeaaf410
 2021-05,RY1,NISSAN,NOTE,266,nissan,nissan-note,dlt-web-aeaaf410
-2021-05,RY1,NISSAN,SERENA HYBRID 2.0 X,1,nissan,,dlt-web-aeaaf410
-2021-05,RY1,NISSAN,SERENA HYBRID E-POWER X,1,nissan,,dlt-web-aeaaf410
+2021-05,RY1,NISSAN,SERENA HYBRID 2.0 X,1,nissan,nissan-serena,dlt-web-aeaaf410
+2021-05,RY1,NISSAN,SERENA HYBRID E-POWER X,1,nissan,nissan-serena,dlt-web-aeaaf410
 2021-05,RY1,NISSAN,SYLPHY,10,nissan,nissan-sylphy,dlt-web-aeaaf410
 2021-05,RY1,NISSAN,TEANA,6,nissan,,dlt-web-aeaaf410
 2021-05,RY1,NISSAN,TERRA,40,nissan,nissan-terra,dlt-web-aeaaf410
@@ -406,7 +406,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-05,RY1,TOYOTA,LAND CRUISER ACTIVE 2.8,1,toyota,,dlt-web-aeaaf410
 2021-05,RY1,TOYOTA,LANDCRUISER PRADO 2.8,1,toyota,,dlt-web-aeaaf410
 2021-05,RY1,TOYOTA,LANDCRUISER PRADO 2.8 TZG,2,toyota,,dlt-web-aeaaf410
-2021-05,RY1,TOYOTA,LANDCRUISER70 30TH ANNIVERSARY,2,toyota,,dlt-web-aeaaf410
+2021-05,RY1,TOYOTA,LANDCRUISER70 30TH ANNIVERSARY,2,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2021-05,RY1,TOYOTA,SUPRA,1,toyota,toyota-gr-supra,dlt-web-aeaaf410
 2021-05,RY1,TOYOTA,Sienta,131,toyota,toyota-sienta,dlt-web-aeaaf410
 2021-05,RY1,TOYOTA,TR TRANSFORMER,1,toyota,,dlt-web-aeaaf410
@@ -470,7 +470,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-05,RY3,CHEVROLET,COLORADO,2,chevrolet,,dlt-web-aeaaf410
 2021-05,RY3,CHEVROLET,COLORADO X-CAB,17,chevrolet,,dlt-web-aeaaf410
 2021-05,RY3,DAIHATSU,HIJET CARGO,1,daihatsu,,dlt-web-aeaaf410
-2021-05,RY3,FORD,FORD RANGER,1,ford,,dlt-web-aeaaf410
+2021-05,RY3,FORD,FORD RANGER,1,ford,ford-ranger,dlt-web-aeaaf410
 2021-05,RY3,FORD,RANGER,899,ford,ford-ranger,dlt-web-aeaaf410
 2021-05,RY3,FORD,RANGER SWB,4,ford,ford-ranger,dlt-web-aeaaf410
 2021-05,RY3,FORD,ไม่ระบุ,12,ford,,dlt-web-aeaaf410
@@ -484,7 +484,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-05,RY3,KIA,K2500,2,kia,,dlt-web-aeaaf410
 2021-05,RY3,LAND ROVER,DEFENDER 110 PICK UP,1,land-rover,,dlt-web-aeaaf410
 2021-05,RY3,MAN,TGL 12.250 4X2 BB,6,man,,dlt-web-aeaaf410
-2021-05,RY3,MAZDA,MAZDA BT50,1,mazda,,dlt-web-aeaaf410
+2021-05,RY3,MAZDA,MAZDA BT50,1,mazda,mazda-bt-50,dlt-web-aeaaf410
 2021-05,RY3,MAZDA,Mazda BT-50,49,mazda,mazda-bt-50,dlt-web-aeaaf410
 2021-05,RY3,MG,MG EXTENDER,236,mg,mg-extender,dlt-web-aeaaf410
 2021-05,RY3,MITSUBISHI,KA5TNCNUERU,1,mitsubishi,,dlt-web-aeaaf410

@@ -130,7 +130,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-07,RY1,FARIZON,FARIZON SUPERVAN SV6,2,farizon,,dlt-web-aeaaf410
 2026-07,RY1,FERRARI,296 GTB,1,ferrari,,dlt-web-aeaaf410
 2026-07,RY1,FORD,EVEREST,551,ford,ford-everest,dlt-web-aeaaf410
-2026-07,RY1,FORD,Ford Everest,1,ford,,dlt-web-aeaaf410
+2026-07,RY1,FORD,Ford Everest,1,ford,ford-everest,dlt-web-aeaaf410
 2026-07,RY1,FORD,MUSTANG,1,ford,ford-mustang,dlt-web-aeaaf410
 2026-07,RY1,FORD,MUSTANG 5.0 GT FASTBACK,1,ford,ford-mustang,dlt-web-aeaaf410
 2026-07,RY1,FORD,RANGER,483,ford,ford-ranger,dlt-web-aeaaf410
@@ -231,9 +231,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-07,RY1,MAZDA,MAZDA CX-5,44,mazda,mazda-cx-5,dlt-web-aeaaf410
 2026-07,RY1,MAZDA,MAZDA CX-8,8,mazda,mazda-cx-8,dlt-web-aeaaf410
 2026-07,RY1,MAZDA,MAZDA6e,55,mazda,mazda-mazda6e,dlt-web-aeaaf410
-2026-07,RY1,MAZDA,ROADSTER RF VS,2,mazda,,dlt-web-aeaaf410
-2026-07,RY1,MAZDA,ROADSTER S SPECIAL PACKAGE,1,mazda,,dlt-web-aeaaf410
-2026-07,RY1,MAZDA,ROADSTER SPIRIT RACING 12R,1,mazda,,dlt-web-aeaaf410
+2026-07,RY1,MAZDA,ROADSTER RF VS,2,mazda,mazda-mx-5,dlt-web-aeaaf410
+2026-07,RY1,MAZDA,ROADSTER S SPECIAL PACKAGE,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2026-07,RY1,MAZDA,ROADSTER SPIRIT RACING 12R,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2026-07,RY1,MERCEDES BENZ,A 200,14,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2026-07,RY1,MERCEDES BENZ,AMG CLE 53 4MATIC coupe,4,mercedes-benz,mercedes-benz-cle,dlt-web-aeaaf410
 2026-07,RY1,MERCEDES BENZ,AMG CLS 53 4MATIC,14,mercedes-benz,mercedes-benz-cls,dlt-web-aeaaf410
@@ -316,7 +316,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-07,RY1,MITSUBISHI,XPANDER HEV,60,mitsubishi,mitsubishi-xpander,dlt-web-aeaaf410
 2026-07,RY1,NETA,NETA V-II,10,neta,neta-v-ii,dlt-web-aeaaf410
 2026-07,RY1,NETA,NETA X,1,neta,neta-x,dlt-web-aeaaf410
-2026-07,RY1,NIO,firefly,1,nio,,dlt-web-aeaaf410
+2026-07,RY1,NIO,firefly,1,nio,nio-firefly,dlt-web-aeaaf410
 2026-07,RY1,NISSAN,ALMERA,149,nissan,nissan-almera,dlt-web-aeaaf410
 2026-07,RY1,NISSAN,FAIRLADY Z,1,nissan,,dlt-web-aeaaf410
 2026-07,RY1,NISSAN,GT-R NISMO,1,nissan,nissan-gt-r,dlt-web-aeaaf410
@@ -443,7 +443,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-07,RY1,TOYOTA,CROWN SPORT Z,1,toyota,toyota-crown-sport,dlt-web-aeaaf410
 2026-07,RY1,TOYOTA,Corolla,113,toyota,toyota-corolla,dlt-web-aeaaf410
 2026-07,RY1,TOYOTA,Fortuner,950,toyota,toyota-fortuner,dlt-web-aeaaf410
-2026-07,RY1,TOYOTA,GR 86 RZ,1,toyota,,dlt-web-aeaaf410
+2026-07,RY1,TOYOTA,GR 86 RZ,1,toyota,toyota-gr86,dlt-web-aeaaf410
 2026-07,RY1,TOYOTA,GR SUPRA,1,toyota,toyota-gr-supra,dlt-web-aeaaf410
 2026-07,RY1,TOYOTA,GR SUPRA RZ 3.0,1,toyota,toyota-gr-supra,dlt-web-aeaaf410
 2026-07,RY1,TOYOTA,GR SUPRA SZ-R,1,toyota,toyota-gr-supra,dlt-web-aeaaf410
@@ -466,7 +466,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-07,RY1,TOYOTA,LAND CRUISER 300 ZX 3.3L,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2026-07,RY1,TOYOTA,LAND CRUISER 70 AX,7,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2026-07,RY1,TOYOTA,LAND CRUISER 70 AX 2.8L 4WD,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
-2026-07,RY1,TOYOTA,LAND CRUISER 76 AX 4WD,1,toyota,,dlt-web-aeaaf410
+2026-07,RY1,TOYOTA,LAND CRUISER 76 AX 4WD,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2026-07,RY1,TOYOTA,LAND CRUISER FJ,380,toyota,toyota-land-cruiser-fj,dlt-web-aeaaf410
 2026-07,RY1,TOYOTA,LAND CRUISER ZX,1,toyota,,dlt-web-aeaaf410
 2026-07,RY1,TOYOTA,LANDCRUISER PRADO 2.8 DIESEL,1,toyota,,dlt-web-aeaaf410
@@ -554,7 +554,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-07,RY3,DAIHATSU,HIJET CARGO CRUISE 2WD,2,daihatsu,,dlt-web-aeaaf410
 2026-07,RY3,DAIHATSU,HIJET CARGO CRUISE TURBO,1,daihatsu,,dlt-web-aeaaf410
 2026-07,RY3,DAIHATSU,HIJET CARGO DELUXE,2,daihatsu,,dlt-web-aeaaf410
-2026-07,RY3,FORD,FORD RANGER,1,ford,,dlt-web-aeaaf410
+2026-07,RY3,FORD,FORD RANGER,1,ford,ford-ranger,dlt-web-aeaaf410
 2026-07,RY3,FORD,RANGER,42,ford,ford-ranger,dlt-web-aeaaf410
 2026-07,RY3,FORD,RANGER SWB,1,ford,ford-ranger,dlt-web-aeaaf410
 2026-07,RY3,FOTON,BJ1031EVJA4,1,foton,,dlt-web-aeaaf410
@@ -580,7 +580,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-07,RY3,TOYOTA,HILUX CHAMP,536,toyota,toyota-hilux-champ,dlt-web-aeaaf410
 2026-07,RY3,TOYOTA,HILUX REVO,1805,toyota,toyota-hilux-revo,dlt-web-aeaaf410
 2026-07,RY3,TOYOTA,HILUX TRAVO,1239,toyota,toyota-hilux-travo,dlt-web-aeaaf410
-2026-07,RY3,TOYOTA,LANDCRUISER SINGLE CAB LC79,1,toyota,,dlt-web-aeaaf410
+2026-07,RY3,TOYOTA,LANDCRUISER SINGLE CAB LC79,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2026-07,RY3,UD TRUCKS,CWE08N43R280CSS9,4,ud-trucks,,dlt-web-aeaaf410
 2026-07,RY3,UD TRUCKS,CWE08N43R350CSS9,1,ud-trucks,,dlt-web-aeaaf410
 2026-07,RY3,UD TRUCKS,PKE250CELRM,3,ud-trucks,,dlt-web-aeaaf410

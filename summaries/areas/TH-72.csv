@@ -819,7 +819,7 @@ period,category,kind,id,units
 2021-09,RY1,f,hev,5
 2021-09,RY1,f,petrol,73
 2021-09,RY1,m,bmw-x1,1
-2021-09,RY1,m,ford-everest,1
+2021-09,RY1,m,ford-everest,2
 2021-09,RY1,m,ford-ranger,5
 2021-09,RY1,m,honda-br-v,1
 2021-09,RY1,m,honda-city,6
@@ -4706,7 +4706,7 @@ period,category,kind,id,units
 2024-11,RY1,m,byd-dolphin,5
 2024-11,RY1,m,byd-m6,3
 2024-11,RY1,m,ford-everest,3
-2024-11,RY1,m,ford-ranger,3
+2024-11,RY1,m,ford-ranger,4
 2024-11,RY1,m,ford-ranger-raptor,1
 2024-11,RY1,m,honda-city,5
 2024-11,RY1,m,honda-city-hatchback,6

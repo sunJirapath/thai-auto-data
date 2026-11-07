@@ -107,8 +107,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-05,RY1,FERRARI,ROMA,1,ferrari,,dlt-web-aeaaf410
 2022-05,RY1,FOMM,FOMM ONE,4,fomm,,dlt-web-aeaaf410
 2022-05,RY1,FORD,EVEREST,472,ford,ford-everest,dlt-web-aeaaf410
-2022-05,RY1,FORD,FORD EVEREST zFAE9BC,1,ford,,dlt-web-aeaaf410
-2022-05,RY1,FORD,FORD RANGER,2,ford,,dlt-web-aeaaf410
+2022-05,RY1,FORD,FORD EVEREST zFAE9BC,1,ford,ford-everest,dlt-web-aeaaf410
+2022-05,RY1,FORD,FORD RANGER,2,ford,ford-ranger,dlt-web-aeaaf410
 2022-05,RY1,FORD,FORD RANGER iJBW9B4,1,ford,,dlt-web-aeaaf410
 2022-05,RY1,FORD,Ford Ecosport,1,ford,,dlt-web-aeaaf410
 2022-05,RY1,FORD,Ford Focus,1,ford,,dlt-web-aeaaf410
@@ -127,12 +127,12 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-05,RY1,HAVAL,JOLION HYBRID,217,haval,haval-jolion,dlt-web-aeaaf410
 2022-05,RY1,HONDA,ACCORD,476,honda,honda-accord,dlt-web-aeaaf410
 2022-05,RY1,HONDA,ACCORD HYBRID,17,honda,honda-accord,dlt-web-aeaaf410
-2022-05,RY1,HONDA,ACCORD'13,1,honda,,dlt-web-aeaaf410
+2022-05,RY1,HONDA,ACCORD'13,1,honda,honda-accord,dlt-web-aeaaf410
 2022-05,RY1,HONDA,BR-V,73,honda,honda-br-v,dlt-web-aeaaf410
 2022-05,RY1,HONDA,CITY,2427,honda,honda-city,dlt-web-aeaaf410
 2022-05,RY1,HONDA,CITY HATCHBACK,2081,honda,honda-city-hatchback,dlt-web-aeaaf410
 2022-05,RY1,HONDA,CIVIC,1583,honda,honda-civic,dlt-web-aeaaf410
-2022-05,RY1,HONDA,CIVIC'12,1,honda,,dlt-web-aeaaf410
+2022-05,RY1,HONDA,CIVIC'12,1,honda,honda-civic,dlt-web-aeaaf410
 2022-05,RY1,HONDA,CR-V,296,honda,honda-cr-v,dlt-web-aeaaf410
 2022-05,RY1,HONDA,E ADVANCE,1,honda,,dlt-web-aeaaf410
 2022-05,RY1,HONDA,HR-V,1370,honda,honda-hr-v,dlt-web-aeaaf410
@@ -152,7 +152,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-05,RY1,HONDA,STEPWAGON SPADA HYBRID EHEV G,2,honda,honda-step-wgn,dlt-web-aeaaf410
 2022-05,RY1,HONGQI,H9,1,hongqi,,dlt-web-aeaaf410
 2022-05,RY1,HYUNDAI,CRETA,24,hyundai,hyundai-creta,dlt-web-aeaaf410
-2022-05,RY1,HYUNDAI,GRAND STAREX,2,hyundai,,dlt-web-aeaaf410
+2022-05,RY1,HYUNDAI,GRAND STAREX,2,hyundai,hyundai-h-1,dlt-web-aeaaf410
 2022-05,RY1,ISUZU,D-MAX,9178,isuzu,isuzu-d-max,dlt-web-aeaaf410
 2022-05,RY1,ISUZU,mu-X,1685,isuzu,isuzu-mu-x,dlt-web-aeaaf410
 2022-05,RY1,ISUZU,ไม่ระบุ,2,isuzu,,dlt-web-aeaaf410
@@ -417,7 +417,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-05,RY1,TOYOTA,Corolla,571,toyota,toyota-corolla,dlt-web-aeaaf410
 2022-05,RY1,TOYOTA,ESQUIRE GI 7 SEATS,1,toyota,,dlt-web-aeaaf410
 2022-05,RY1,TOYOTA,Fortuner,2547,toyota,toyota-fortuner,dlt-web-aeaaf410
-2022-05,RY1,TOYOTA,GR 86 RZ 2.5L,1,toyota,,dlt-web-aeaaf410
+2022-05,RY1,TOYOTA,GR 86 RZ 2.5L,1,toyota,toyota-gr86,dlt-web-aeaaf410
 2022-05,RY1,TOYOTA,GR YARIS,3,toyota,toyota-gr-yaris,dlt-web-aeaaf410
 2022-05,RY1,TOYOTA,HARRIER HYBRID G,1,toyota,toyota-harrier,dlt-web-aeaaf410
 2022-05,RY1,TOYOTA,HARRIER HYBRID Z,1,toyota,toyota-harrier,dlt-web-aeaaf410
@@ -426,7 +426,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-05,RY1,TOYOTA,KUN26R-PRPSYT  A7,1,toyota,,dlt-web-aeaaf410
 2022-05,RY1,TOYOTA,LAND CRUISER 300 ZX,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2022-05,RY1,TOYOTA,LAND CRUISER PRADO TZ G 2.8L,1,toyota,,dlt-web-aeaaf410
-2022-05,RY1,TOYOTA,LANDCRUISER LC300 SAHARA,1,toyota,,dlt-web-aeaaf410
+2022-05,RY1,TOYOTA,LANDCRUISER LC300 SAHARA,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2022-05,RY1,TOYOTA,LANDCRUISER PRADO 2.8 TZG,1,toyota,,dlt-web-aeaaf410
 2022-05,RY1,TOYOTA,Sienta,62,toyota,toyota-sienta,dlt-web-aeaaf410
 2022-05,RY1,TOYOTA,TR TRANSFORMER,4,toyota,,dlt-web-aeaaf410

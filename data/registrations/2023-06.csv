@@ -128,7 +128,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-06,RY1,HONDA,CR-V,435,honda,honda-cr-v,dlt-web-aeaaf410
 2023-06,RY1,HONDA,HR-V,2271,honda,honda-hr-v,dlt-web-aeaaf410
 2023-06,RY1,HONDA,JAZZ,7,honda,honda-jazz,dlt-web-aeaaf410
-2023-06,RY1,HONDA,JAZZ'09,1,honda,,dlt-web-aeaaf410
+2023-06,RY1,HONDA,JAZZ'09,1,honda,honda-jazz,dlt-web-aeaaf410
 2023-06,RY1,HONDA,MOBILIO,1,honda,,dlt-web-aeaaf410
 2023-06,RY1,HONDA,N-BOX CUSTOM G-L TURBO,1,honda,,dlt-web-aeaaf410
 2023-06,RY1,HONDA,N-ONE RS SPOON,1,honda,,dlt-web-aeaaf410
@@ -143,7 +143,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-06,RY1,HONDA,WR-V,232,honda,honda-wr-v,dlt-web-aeaaf410
 2023-06,RY1,HONDA,ไม่ระบุ,1,honda,,dlt-web-aeaaf410
 2023-06,RY1,HYUNDAI,CRETA,15,hyundai,hyundai-creta,dlt-web-aeaaf410
-2023-06,RY1,HYUNDAI,GRAND STAREX,1,hyundai,,dlt-web-aeaaf410
+2023-06,RY1,HYUNDAI,GRAND STAREX,1,hyundai,hyundai-h-1,dlt-web-aeaaf410
 2023-06,RY1,HYUNDAI,STARGAZER,91,hyundai,hyundai-stargazer,dlt-web-aeaaf410
 2023-06,RY1,ISUZU,D-MAX,5644,isuzu,isuzu-d-max,dlt-web-aeaaf410
 2023-06,RY1,ISUZU,MU-X,2116,isuzu,isuzu-mu-x,dlt-web-aeaaf410
@@ -188,7 +188,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-06,RY1,MAZDA,MAZDA CX-5,59,mazda,mazda-cx-5,dlt-web-aeaaf410
 2023-06,RY1,MAZDA,MAZDA CX-8,117,mazda,mazda-cx-8,dlt-web-aeaaf410
 2023-06,RY1,MAZDA,MAZDA MX-5,2,mazda,mazda-mx-5,dlt-web-aeaaf410
-2023-06,RY1,MAZDA,MX-5 ROADSTER 990S,3,mazda,,dlt-web-aeaaf410
+2023-06,RY1,MAZDA,MX-5 ROADSTER 990S,3,mazda,mazda-mx-5,dlt-web-aeaaf410
 2023-06,RY1,MCLAREN,ARTURA-COUPE,1,mclaren,,dlt-web-aeaaf410
 2023-06,RY1,MERCEDES BENZ,A 200,80,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2023-06,RY1,MERCEDES BENZ,AMG C43 4MATIC Coupe,14,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
@@ -417,7 +417,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-06,RY1,TOYOTA,Corolla,7,toyota,toyota-corolla,dlt-web-aeaaf410
 2023-06,RY1,TOYOTA,FORTUNER,2034,toyota,toyota-fortuner,dlt-web-aeaaf410
 2023-06,RY1,TOYOTA,Fortuner,7,toyota,toyota-fortuner,dlt-web-aeaaf410
-2023-06,RY1,TOYOTA,GR 86 RZ,3,toyota,,dlt-web-aeaaf410
+2023-06,RY1,TOYOTA,GR 86 RZ,3,toyota,toyota-gr86,dlt-web-aeaaf410
 2023-06,RY1,TOYOTA,GR SUPRA,1,toyota,toyota-gr-supra,dlt-web-aeaaf410
 2023-06,RY1,TOYOTA,GR YARIS,3,toyota,toyota-gr-yaris,dlt-web-aeaaf410
 2023-06,RY1,TOYOTA,GR YARIS RZ HIGH PERFORMANCE,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
@@ -454,7 +454,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-06,RY1,TOYOTA,VOXY SZ 2.0L,1,toyota,toyota-voxy,dlt-web-aeaaf410
 2023-06,RY1,TOYOTA,YARIS,1952,toyota,toyota-yaris,dlt-web-aeaaf410
 2023-06,RY1,TOYOTA,YARIS ATIV,4464,toyota,toyota-yaris-ativ,dlt-web-aeaaf410
-2023-06,RY1,TOYOTA,YARIS GR CIRCUIT PACK,1,toyota,,dlt-web-aeaaf410
+2023-06,RY1,TOYOTA,YARIS GR CIRCUIT PACK,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
 2023-06,RY1,TOYOTA,Yaris,1,toyota,toyota-yaris,dlt-web-aeaaf410
 2023-06,RY1,VOLKSWAGEN,ID4 CROZZ PURE PLUS,1,volkswagen,,dlt-web-aeaaf410
 2023-06,RY1,VOLT,VOLT FOR FOUR,33,volt,,dlt-web-aeaaf410

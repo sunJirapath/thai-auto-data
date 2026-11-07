@@ -253,6 +253,7 @@ BYD,BYD SEAL 6 STANDARD,byd-seal-6
 BYD,BYD SEAL EXD AWD,byd-seal
 BYD,BYD SEAL EXD RWD,byd-seal
 BYD,BYD SEAL STD RWD,byd-seal
+BYD,BYD SEAL U (DMI-PREMIUM),byd-sealion-6
 BYD,BYD SEALION 6,byd-sealion-6
 BYD,BYD SEALION 6 DM-I DYNAMIC,byd-sealion-6
 BYD,BYD SEALION 6 DM-I PREMIUM,byd-sealion-6
@@ -295,6 +296,13 @@ DENZA,DENZA D9 AWD,denza-d9
 DENZA,DENZA D9 FWD,denza-d9
 DENZA,DENZA Z9GT PERFORMANCE,denza-z9-gt
 FORD,EVEREST,ford-everest
+FORD,FORD EVEREST,ford-everest
+FORD,FORD EVEREST ZFAE9BC,ford-everest
+FORD,FORD EVEREST ZFAE9GD,ford-everest
+FORD,FORD EVEREST ZJAE9BC,ford-everest
+FORD,FORD EVEREST ZJAE9GD,ford-everest
+FORD,FORD EVEREST ZJAJ9BC,ford-everest
+FORD,FORD RANGER,ford-ranger
 FORD,MUSTANG,ford-mustang
 FORD,MUSTANG 2.3 ECOBOOST,ford-mustang
 FORD,MUSTANG 2.3 ECOBOOST FASTBACK,ford-mustang
@@ -331,10 +339,14 @@ FORD,MUSTANG MACH-E STANDARD,ford-mustang-mach-e
 FORD,MUSTANG SHELBY GT500,ford-mustang
 FORD,MUSTANG SHELBY SUPER SNAKE,ford-mustang
 FORD,RANGER,ford-ranger
+FORD,RANGER MODEL UR53RAA,ford-ranger
 FORD,RANGER RAPTOR,ford-ranger-raptor
 FORD,RANGER SUPER DUTY,ford-ranger
 FORD,RANGER SWB,ford-ranger
+FORD,RANGER UL88RAA,ford-ranger
+FORD,RANGER/ค.ศ.2005,ford-ranger
 FORTHING,FRIDAY EV,forthing-friday
+FOTON,EVIEWCONNECT,foton-eview-connect
 GAC,GN8 PHEV PREMIUM,gac-gn8
 GAC,M8 PHEV PREMIUM,gac-m8
 GEELY,EX2,geely-ex2
@@ -356,20 +368,41 @@ HAVAL,H6 PLUG-IN HYBRID,haval-h6
 HAVAL,JOLION HYBRID,haval-jolion
 HONDA,ACCORD,honda-accord
 HONDA,ACCORD HYBRID,honda-accord
+HONDA,ACCORD HYBRID'15,honda-accord
+HONDA,ACCORD'13,honda-accord
+HONDA,ACCORD'14,honda-accord
+HONDA,ACCORD'15,honda-accord
+HONDA,ACCORDHYBRID'14,honda-accord
 HONDA,BR-V,honda-br-v
 HONDA,CITY,honda-city
+HONDA,CITY CNG'14,honda-city
 HONDA,CITY HATCHBACK,honda-city-hatchback
+HONDA,CITY'10,honda-city
+HONDA,CITY'11,honda-city
+HONDA,CITY'14,honda-city
 HONDA,CIVIC,honda-civic
 HONDA,CIVIC TYPE R,honda-civic-type-r
 HONDA,CIVIC TYPE R GT,honda-civic-type-r
 HONDA,CIVIC TYPE R LIMITED EDITION,honda-civic-type-r
 HONDA,CIVIC TYPE R RACING BLACK,honda-civic-type-r
 HONDA,CIVIC TYPE R SPOON,honda-civic-type-r
+HONDA,CIVIC'12,honda-civic
+HONDA,CIVIC'13,honda-civic
 HONDA,CR-V,honda-cr-v
+HONDA,CR-V'07,honda-cr-v
+HONDA,CR-V'10,honda-cr-v
+HONDA,CR-V'13,honda-cr-v
+HONDA,CR-V'14,honda-cr-v
+HONDA,CR-V'16,honda-cr-v
 HONDA,E:N1,honda-e-n1
 HONDA,E:N2,honda-e-n2
 HONDA,HR-V,honda-hr-v
+HONDA,HR-V'15,honda-hr-v
 HONDA,JAZZ,honda-jazz
+HONDA,JAZZ HYBRID'12,honda-jazz
+HONDA,JAZZ'09,honda-jazz
+HONDA,JAZZ'15,honda-jazz
+HONDA,JAZZ'16,honda-jazz
 HONDA,ODYSSEY ABSOLUTE,honda-odyssey
 HONDA,ODYSSEY ABSOLUTE EX,honda-odyssey
 HONDA,ODYSSEY ABSOLUTE EX 2.4L,honda-odyssey
@@ -411,7 +444,9 @@ HONDA,STEPWGN SPADA 1.5L,honda-step-wgn
 HONDA,STEPWGN SPADA HYBRID G,honda-step-wgn
 HONDA,STEPWGN SPADA HYBRID G-EX,honda-step-wgn
 HONDA,WR-V,honda-wr-v
+HONGQI,HONGQI E-HS9,hongqi-e-hs9
 HYUNDAI,CRETA,hyundai-creta
+HYUNDAI,GRAND STAREX,hyundai-h-1
 HYUNDAI,H-1,hyundai-h-1
 HYUNDAI,IONIQ5,hyundai-ioniq-5
 HYUNDAI,IONIQ5 N,hyundai-ioniq-5
@@ -423,6 +458,7 @@ HYUNDAI,STARGAZER,hyundai-stargazer
 HYUNDAI,STARIA,hyundai-staria
 HYUNDAI,STARIA HEV,hyundai-staria
 ISUZU,D-MAX,isuzu-d-max
+ISUZU,D-MAX NEW STYLE,isuzu-d-max
 ISUZU,MU-X,isuzu-mu-x
 JAECOO,5 EV LONG RANGE DYNAMIC,jaecoo-5
 JAECOO,5 EV LONG RANGE MAX,jaecoo-5
@@ -477,6 +513,7 @@ LEXUS,LX570S 8 SEATS,lexus-lx
 LEXUS,LX600 7 SEAT,lexus-lx
 LEXUS,LX600 EXECUTIVE,lexus-lx
 LEXUS,LX600 F SPORT,lexus-lx
+LEXUS,LX700H,lexus-lx
 LEXUS,NX300,lexus-nx
 LEXUS,NX300H,lexus-nx
 LEXUS,NX350H,lexus-nx
@@ -500,13 +537,42 @@ MAZDA,MAZDA 2,mazda-mazda2
 MAZDA,MAZDA 3,mazda-mazda3
 MAZDA,MAZDA 6,mazda-mazda6
 MAZDA,MAZDA BT-50,mazda-bt-50
+MAZDA,MAZDA BT50,mazda-bt-50
 MAZDA,MAZDA CX-3,mazda-cx-3
 MAZDA,MAZDA CX-30,mazda-cx-30
 MAZDA,MAZDA CX-5,mazda-cx-5
 MAZDA,MAZDA CX-8,mazda-cx-8
 MAZDA,MAZDA MX-5,mazda-mx-5
+MAZDA,MAZDA3,mazda-mazda3
 MAZDA,MAZDA6E,mazda-mazda6e
 MAZDA,MX-5,mazda-mx-5
+MAZDA,MX-5 ROADSTER,mazda-mx-5
+MAZDA,MX-5 ROADSTER 30TH ANNIVERSARY,mazda-mx-5
+MAZDA,MX-5 ROADSTER 990S,mazda-mx-5
+MAZDA,MX-5 ROADSTER BROWN TOP,mazda-mx-5
+MAZDA,MX-5 ROADSTER NR-A,mazda-mx-5
+MAZDA,MX-5 ROADSTER RF 100TH,mazda-mx-5
+MAZDA,MX-5 ROADSTER S,mazda-mx-5
+MAZDA,MX-5 ROADSTER S SPECIAL PACKAG,mazda-mx-5
+MAZDA,MX-5 ROADSTER100TH ANNIVERSARY,mazda-mx-5
+MAZDA,MX-5 ROADSTER30TH ANNIVERSARY,mazda-mx-5
+MAZDA,ROADSTER,mazda-mx-5
+MAZDA,ROADSTER 35TH ANNIVERSARY,mazda-mx-5
+MAZDA,ROADSTER 990S,mazda-mx-5
+MAZDA,ROADSTER 990S 1.5L,mazda-mx-5
+MAZDA,ROADSTER 990S 2WD 6MT,mazda-mx-5
+MAZDA,ROADSTER BROWN TOP,mazda-mx-5
+MAZDA,ROADSTER NR-A,mazda-mx-5
+MAZDA,ROADSTER RF,mazda-mx-5
+MAZDA,ROADSTER RF 35TH ANNIVERSARY,mazda-mx-5
+MAZDA,ROADSTER RF S,mazda-mx-5
+MAZDA,ROADSTER RF VS,mazda-mx-5
+MAZDA,ROADSTER RF VS TERRACOTTA,mazda-mx-5
+MAZDA,ROADSTER S,mazda-mx-5
+MAZDA,ROADSTER S LEATHER PACKAGE,mazda-mx-5
+MAZDA,ROADSTER S SPECIAL PACKAGE,mazda-mx-5
+MAZDA,ROADSTER SPIRIT RACING,mazda-mx-5
+MAZDA,ROADSTER SPIRIT RACING 12R,mazda-mx-5
 MERCEDES,G63 AMG BRABUS 800,mercedes-benz-g-class
 MERCEDES BENZ,A 180,mercedes-benz-a-class
 MERCEDES BENZ,A 200,mercedes-benz-a-class
@@ -802,6 +868,7 @@ MITSUBISHI,XPANDER HEV,mitsubishi-xpander
 NETA,NETA V,neta-v
 NETA,NETA V-II,neta-v-ii
 NETA,NETA X,neta-x
+NIO,FIREFLY,nio-firefly
 NISSAN,ALMERA,nissan-almera
 NISSAN,GT-R,nissan-gt-r
 NISSAN,GT-R BLACK EDITION,nissan-gt-r
@@ -829,9 +896,17 @@ NISSAN,KICKS,nissan-kicks
 NISSAN,LEAF,nissan-leaf
 NISSAN,MARCH,nissan-march
 NISSAN,NAVARA,nissan-navara
+NISSAN,NISSAN ALMERA NISMO VL CVT,nissan-almera
 NISSAN,NOTE,nissan-note
+NISSAN,NOTE X E-POWER,nissan-note
 NISSAN,SERENA,nissan-serena
 NISSAN,SERENA E-POWER,nissan-serena
+NISSAN,SERENA E-POWER AUTECH,nissan-serena
+NISSAN,SERENA HYBRID 2.0 HIGHWAY,nissan-serena
+NISSAN,SERENA HYBRID 2.0 HIGHWAY STAR,nissan-serena
+NISSAN,SERENA HYBRID 2.0 X,nissan-serena
+NISSAN,SERENA HYBRID E-POWER HIGHWAY,nissan-serena
+NISSAN,SERENA HYBRID E-POWER X,nissan-serena
 NISSAN,SYLPHY,nissan-sylphy
 NISSAN,SYLPHY 1.6 E CVT,nissan-sylphy
 NISSAN,SYLPHY 1.6 V CVT,nissan-sylphy
@@ -1117,6 +1192,8 @@ TESLA,MODEL Y REAR-WHEEL DRIVE,tesla-model-y
 TESLA,MODEL Y RWD,tesla-model-y
 TESLA,MODEL Y STANDARD,tesla-model-y
 TESLA,MODEL Y STANDARD RANGE,tesla-model-y
+TESLA,MODEL3 LONG RANGE PER,tesla-model-3
+TESLA,MODEL3 LONG RANGE PERFORMANCE,tesla-model-3
 TOYOTA,ALPHARD,toyota-alphard
 TOYOTA,ALPHARD 2.5,toyota-alphard
 TOYOTA,ALPHARD 2.5 HYBRID EXE,toyota-alphard
@@ -1241,6 +1318,7 @@ TOYOTA,CAMRY 2.5G ESPORT,toyota-camry
 TOYOTA,CAMRY HV,toyota-camry
 TOYOTA,COMMUTER,toyota-commuter
 TOYOTA,COMMUTER (SILVER) E4,toyota-commuter
+TOYOTA,COMUTER,toyota-commuter
 TOYOTA,COROLLA,toyota-corolla
 TOYOTA,COROLLA CROSS,toyota-corolla-cross
 TOYOTA,CROWN CROSSOVER G,toyota-crown-crossover
@@ -1255,6 +1333,9 @@ TOYOTA,CROWN SPORT Z,toyota-crown-sport
 TOYOTA,CROWN SPORT Z 2.5L,toyota-crown-sport
 TOYOTA,CROWN SPORT Z THE 70TH,toyota-crown-sport
 TOYOTA,FORTUNER,toyota-fortuner
+TOYOTA,GR 86 RZ,toyota-gr86
+TOYOTA,GR 86 RZ 2.4L,toyota-gr86
+TOYOTA,GR 86 RZ 2.5L,toyota-gr86
 TOYOTA,GR SUPRA,toyota-gr-supra
 TOYOTA,GR SUPRA RZ,toyota-gr-supra
 TOYOTA,GR SUPRA RZ 100 EDITION,toyota-gr-supra
@@ -1334,6 +1415,8 @@ TOYOTA,LAND CRUISER 250 VX FIRST,toyota-land-cruiser-250
 TOYOTA,LAND CRUISER 250 ZX,toyota-land-cruiser-250
 TOYOTA,LAND CRUISER 250 ZX 2.8L,toyota-land-cruiser-250
 TOYOTA,LAND CRUISER 250 ZX FIRST,toyota-land-cruiser-250
+TOYOTA,LAND CRUISER 3.3L GR SPORT,toyota-land-cruiser-300
+TOYOTA,LAND CRUISER 3.5L GR SPORT,toyota-land-cruiser-300
 TOYOTA,LAND CRUISER 300 GR SPORT,toyota-land-cruiser-300
 TOYOTA,LAND CRUISER 300 SAHARA 3.3L,toyota-land-cruiser-300
 TOYOTA,LAND CRUISER 300 SAHARA ZX,toyota-land-cruiser-300
@@ -1346,7 +1429,27 @@ TOYOTA,LAND CRUISER 70 30TH,toyota-land-cruiser-70
 TOYOTA,LAND CRUISER 70 AX,toyota-land-cruiser-70
 TOYOTA,LAND CRUISER 70 AX 2.8L 4WD,toyota-land-cruiser-70
 TOYOTA,LAND CRUISER 70 PICKUP 30TH,toyota-land-cruiser-70
+TOYOTA,LAND CRUISER 71 HARDTOP 4.0L,toyota-land-cruiser-70
+TOYOTA,LAND CRUISER 76 AX 4WD,toyota-land-cruiser-70
+TOYOTA,LAND CRUISER 79 PICK UP,toyota-land-cruiser-70
+TOYOTA,LAND CRUISER 79 PICK UP 4.2,toyota-land-cruiser-70
 TOYOTA,LAND CRUISER FJ,toyota-land-cruiser-fj
+TOYOTA,LAND CRUISER GX 3.5L,toyota-land-cruiser-300
+TOYOTA,LAND CRUISER PICK UP 70TH,toyota-land-cruiser-70
+TOYOTA,LANDCRUISER 70 GXL,toyota-land-cruiser-70
+TOYOTA,LANDCRUISER 70 GXL DOUBLE CAB,toyota-land-cruiser-70
+TOYOTA,LANDCRUISER 70PICKUP 30TH,toyota-land-cruiser-70
+TOYOTA,LANDCRUISER 79 4.5L DIESEL V8,toyota-land-cruiser-70
+TOYOTA,LANDCRUISER HARDTOP 4.0L,toyota-land-cruiser-70
+TOYOTA,LANDCRUISER LC300 AX,toyota-land-cruiser-300
+TOYOTA,LANDCRUISER LC300 GR SPORT,toyota-land-cruiser-300
+TOYOTA,LANDCRUISER LC300 GX,toyota-land-cruiser-300
+TOYOTA,LANDCRUISER LC300 SAHARA,toyota-land-cruiser-300
+TOYOTA,LANDCRUISER LC300 SAHARA ZX,toyota-land-cruiser-300
+TOYOTA,LANDCRUISER LC300 ZX,toyota-land-cruiser-300
+TOYOTA,LANDCRUISER SINGLE CAB LC79,toyota-land-cruiser-70
+TOYOTA,LANDCRUISER300SAHARA3.3L V6,toyota-land-cruiser-300
+TOYOTA,LANDCRUISER70 30TH ANNIVERSARY,toyota-land-cruiser-70
 TOYOTA,SIENTA,toyota-sienta
 TOYOTA,SIENTA HYBRID G 2WD,toyota-sienta
 TOYOTA,SIENTA HYBRID Z,toyota-sienta
@@ -1441,6 +1544,10 @@ TOYOTA,VOXY ZS,toyota-voxy
 TOYOTA,YARIS,toyota-yaris
 TOYOTA,YARIS ATIV,toyota-yaris-ativ
 TOYOTA,YARIS CROSS,toyota-yaris-cross
+TOYOTA,YARIS GR CIRCUIT PACK,toyota-gr-yaris
+TOYOTA,YARIS GRMN CIRCUIT PACKAGE,toyota-gr-yaris
+TOYOTA,YARIS GRMN RALLY PACKAGE,toyota-gr-yaris
+TOYOTA,YARIS RZ HIGH PERFORMANCE,toyota-gr-yaris
 VOLVO,C40,volvo-c40
 VOLVO,EC40,volvo-ec40
 VOLVO,ES90,volvo-es90

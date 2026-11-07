@@ -229,7 +229,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-10,RY1,MAZDA,MAZDA CX-5,44,mazda,mazda-cx-5,dlt-web-aeaaf410
 2025-10,RY1,MAZDA,MAZDA CX-8,18,mazda,mazda-cx-8,dlt-web-aeaaf410
 2025-10,RY1,MAZDA,MX-5,2,mazda,mazda-mx-5,dlt-web-aeaaf410
-2025-10,RY1,MAZDA,ROADSTER S LEATHER PACKAGE,1,mazda,,dlt-web-aeaaf410
+2025-10,RY1,MAZDA,ROADSTER S LEATHER PACKAGE,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2025-10,RY1,MERCEDES BENZ,A 200,27,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2025-10,RY1,MERCEDES BENZ,AMG C43 4MATIC Coupe,2,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
 2025-10,RY1,MERCEDES BENZ,AMG CLE 53 4MATIC coupe,6,mercedes-benz,mercedes-benz-cle,dlt-web-aeaaf410
@@ -459,9 +459,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-10,RY1,TOYOTA,LAND CRUISER 250 ZX FIRST,1,toyota,toyota-land-cruiser-250,dlt-web-aeaaf410
 2025-10,RY1,TOYOTA,LAND CRUISER 300 GR SPORT,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2025-10,RY1,TOYOTA,LAND CRUISER 300 ZX,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
-2025-10,RY1,TOYOTA,LAND CRUISER 71 HARDTOP 4.0L,1,toyota,,dlt-web-aeaaf410
+2025-10,RY1,TOYOTA,LAND CRUISER 71 HARDTOP 4.0L,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2025-10,RY1,TOYOTA,LAND CRUISER AX,1,toyota,,dlt-web-aeaaf410
-2025-10,RY1,TOYOTA,LANDCRUISER LC300 ZX,1,toyota,,dlt-web-aeaaf410
+2025-10,RY1,TOYOTA,LANDCRUISER LC300 ZX,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2025-10,RY1,TOYOTA,NOAH HYBRID X 2WD,3,toyota,,dlt-web-aeaaf410
 2025-10,RY1,TOYOTA,ROOMY CUSTOM GT,1,toyota,,dlt-web-aeaaf410
 2025-10,RY1,TOYOTA,SIENTA HYBRID G 2WD,1,toyota,toyota-sienta,dlt-web-aeaaf410

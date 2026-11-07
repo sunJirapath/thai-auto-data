@@ -100,7 +100,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-07,RY1,FIAT,DUCATO SINGLE CAB,1,fiat,,dlt-web-aeaaf410
 2023-07,RY1,FOMM,FOMM ONE,7,fomm,,dlt-web-aeaaf410
 2023-07,RY1,FORD,EVEREST,899,ford,ford-everest,dlt-web-aeaaf410
-2023-07,RY1,FORD,FORD EVEREST,1,ford,,dlt-web-aeaaf410
+2023-07,RY1,FORD,FORD EVEREST,1,ford,ford-everest,dlt-web-aeaaf410
 2023-07,RY1,FORD,MUSTANG,2,ford,ford-mustang,dlt-web-aeaaf410
 2023-07,RY1,FORD,MUSTANG 2.3 ECOBOOST PREMIUM,1,ford,ford-mustang,dlt-web-aeaaf410
 2023-07,RY1,FORD,MUSTANG 5.0L V8 GT,1,ford,ford-mustang,dlt-web-aeaaf410
@@ -136,7 +136,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-07,RY1,HONDA,STEPWGN e:HEV SPADA,1,honda,honda-step-wgn,dlt-web-aeaaf410
 2023-07,RY1,HONDA,WR-V,232,honda,honda-wr-v,dlt-web-aeaaf410
 2023-07,RY1,HYUNDAI,CRETA,7,hyundai,hyundai-creta,dlt-web-aeaaf410
-2023-07,RY1,HYUNDAI,GRAND STAREX,1,hyundai,,dlt-web-aeaaf410
+2023-07,RY1,HYUNDAI,GRAND STAREX,1,hyundai,hyundai-h-1,dlt-web-aeaaf410
 2023-07,RY1,HYUNDAI,STARGAZER,152,hyundai,hyundai-stargazer,dlt-web-aeaaf410
 2023-07,RY1,ISUZU,D-MAX,4252,isuzu,isuzu-d-max,dlt-web-aeaaf410
 2023-07,RY1,ISUZU,MU-X,1759,isuzu,isuzu-mu-x,dlt-web-aeaaf410
@@ -173,13 +173,13 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-07,RY1,MAZDA,MAZDA 2,894,mazda,mazda-mazda2,dlt-web-aeaaf410
 2023-07,RY1,MAZDA,MAZDA 3,88,mazda,mazda-mazda3,dlt-web-aeaaf410
 2023-07,RY1,MAZDA,MAZDA BT-50,75,mazda,mazda-bt-50,dlt-web-aeaaf410
-2023-07,RY1,MAZDA,MAZDA BT50,1,mazda,,dlt-web-aeaaf410
+2023-07,RY1,MAZDA,MAZDA BT50,1,mazda,mazda-bt-50,dlt-web-aeaaf410
 2023-07,RY1,MAZDA,MAZDA CX-3,189,mazda,mazda-cx-3,dlt-web-aeaaf410
 2023-07,RY1,MAZDA,MAZDA CX-30,272,mazda,mazda-cx-30,dlt-web-aeaaf410
 2023-07,RY1,MAZDA,MAZDA CX-5,29,mazda,mazda-cx-5,dlt-web-aeaaf410
 2023-07,RY1,MAZDA,MAZDA CX-8,169,mazda,mazda-cx-8,dlt-web-aeaaf410
-2023-07,RY1,MAZDA,MX-5 ROADSTER NR-A,1,mazda,,dlt-web-aeaaf410
-2023-07,RY1,MAZDA,ROADSTER BROWN TOP,1,mazda,,dlt-web-aeaaf410
+2023-07,RY1,MAZDA,MX-5 ROADSTER NR-A,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2023-07,RY1,MAZDA,ROADSTER BROWN TOP,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2023-07,RY1,MCLAREN,ARTURA-COUPE,2,mclaren,,dlt-web-aeaaf410
 2023-07,RY1,MERCEDES BENZ,A 200,74,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2023-07,RY1,MERCEDES BENZ,AMG C43 4MATIC Coupe,8,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
@@ -485,7 +485,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-07,RY3,KIA,K2500,1,kia,,dlt-web-aeaaf410
 2023-07,RY3,MAN,TGL 12.250 4X2 BB CH,4,man,,dlt-web-aeaaf410
 2023-07,RY3,MAZDA,MAZDA BT-50,23,mazda,mazda-bt-50,dlt-web-aeaaf410
-2023-07,RY3,MAZDA,MAZDA BT50,1,mazda,,dlt-web-aeaaf410
+2023-07,RY3,MAZDA,MAZDA BT50,1,mazda,mazda-bt-50,dlt-web-aeaaf410
 2023-07,RY3,MERCEDES BENZ,VITO 116 CDI VAN EX.LONG,1,mercedes-benz,mercedes-benz-vito,dlt-web-aeaaf410
 2023-07,RY3,MG,MG EXTENDER,30,mg,mg-extender,dlt-web-aeaaf410
 2023-07,RY3,MITSUBISHI,TRITON,566,mitsubishi,mitsubishi-triton,dlt-web-aeaaf410

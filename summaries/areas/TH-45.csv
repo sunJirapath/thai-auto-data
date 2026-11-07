@@ -257,7 +257,7 @@ period,category,kind,id,units
 2021-03,RY1,m,bmw-5-series,1
 2021-03,RY1,m,bmw-x5,1
 2021-03,RY1,m,ford-everest,1
-2021-03,RY1,m,ford-ranger,18
+2021-03,RY1,m,ford-ranger,19
 2021-03,RY1,m,honda-accord,3
 2021-03,RY1,m,honda-br-v,2
 2021-03,RY1,m,honda-city,31
@@ -747,6 +747,7 @@ period,category,kind,id,units
 2021-08,RY1,m,honda-civic,3
 2021-08,RY1,m,honda-cr-v,1
 2021-08,RY1,m,honda-jazz,1
+2021-08,RY1,m,hyundai-h-1,1
 2021-08,RY1,m,isuzu-d-max,45
 2021-08,RY1,m,isuzu-mu-x,13
 2021-08,RY1,m,mazda-mazda2,7

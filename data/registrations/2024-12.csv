@@ -129,7 +129,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-12,RY1,HONDA,BR-V,4,honda,honda-br-v,dlt-web-aeaaf410
 2024-12,RY1,HONDA,BRIO'13,1,honda,,dlt-web-aeaaf410
 2024-12,RY1,HONDA,CITY,705,honda,honda-city,dlt-web-aeaaf410
-2024-12,RY1,HONDA,CITY CNG'14,1,honda,,dlt-web-aeaaf410
+2024-12,RY1,HONDA,CITY CNG'14,1,honda,honda-city,dlt-web-aeaaf410
 2024-12,RY1,HONDA,CITY HATCHBACK,858,honda,honda-city-hatchback,dlt-web-aeaaf410
 2024-12,RY1,HONDA,CIVIC,608,honda,honda-civic,dlt-web-aeaaf410
 2024-12,RY1,HONDA,CIVIC TYPE R,2,honda,honda-civic-type-r,dlt-web-aeaaf410
@@ -193,7 +193,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-12,RY1,MAZDA,MAZDA CX-5,27,mazda,mazda-cx-5,dlt-web-aeaaf410
 2024-12,RY1,MAZDA,MAZDA CX-8,26,mazda,mazda-cx-8,dlt-web-aeaaf410
 2024-12,RY1,MAZDA,MX-30,1,mazda,,dlt-web-aeaaf410
-2024-12,RY1,MAZDA,ROADSTER 990S,1,mazda,,dlt-web-aeaaf410
+2024-12,RY1,MAZDA,ROADSTER 990S,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2024-12,RY1,MERCEDES BENZ,A 200,22,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2024-12,RY1,MERCEDES BENZ,AMG C 43 4MATIC,1,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
 2024-12,RY1,MERCEDES BENZ,AMG C43 4MATIC Coupe,3,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
@@ -396,8 +396,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-12,RY1,TOYOTA,LAND CRUISER 70 AX,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2024-12,RY1,TOYOTA,LAND CRUISER PRADO 2.7 TX-L,1,toyota,,dlt-web-aeaaf410
 2024-12,RY1,TOYOTA,LAND CRUISER ZX,1,toyota,,dlt-web-aeaaf410
-2024-12,RY1,TOYOTA,LANDCRUISER LC300 GR SPORT,1,toyota,,dlt-web-aeaaf410
-2024-12,RY1,TOYOTA,LANDCRUISER LC300 ZX,1,toyota,,dlt-web-aeaaf410
+2024-12,RY1,TOYOTA,LANDCRUISER LC300 GR SPORT,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
+2024-12,RY1,TOYOTA,LANDCRUISER LC300 ZX,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2024-12,RY1,TOYOTA,NOAH HYBRID S-Z,1,toyota,,dlt-web-aeaaf410
 2024-12,RY1,TOYOTA,NOAH HYBRID X,1,toyota,,dlt-web-aeaaf410
 2024-12,RY1,TOYOTA,TR TRANSFORMER,3,toyota,,dlt-web-aeaaf410

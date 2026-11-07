@@ -105,10 +105,10 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-08,RY1,FERRARI,SF90 STRADALE,1,ferrari,,dlt-web-aeaaf410
 2023-08,RY1,FOMM,FOMM ONE,9,fomm,,dlt-web-aeaaf410
 2023-08,RY1,FORD,EVEREST,1163,ford,ford-everest,dlt-web-aeaaf410
-2023-08,RY1,FORD,FORD EVEREST zFAE9GD,1,ford,,dlt-web-aeaaf410
+2023-08,RY1,FORD,FORD EVEREST zFAE9GD,1,ford,ford-everest,dlt-web-aeaaf410
 2023-08,RY1,FORD,FORD RANGER iFBW9AR,2,ford,,dlt-web-aeaaf410
 2023-08,RY1,FORD,Focus,1,ford,,dlt-web-aeaaf410
-2023-08,RY1,FORD,Ford Ranger,1,ford,,dlt-web-aeaaf410
+2023-08,RY1,FORD,Ford Ranger,1,ford,ford-ranger,dlt-web-aeaaf410
 2023-08,RY1,FORD,MUSTANG,3,ford,ford-mustang,dlt-web-aeaaf410
 2023-08,RY1,FORD,MUSTANG 2.3 ECOBOOST,1,ford,ford-mustang,dlt-web-aeaaf410
 2023-08,RY1,FORD,MUSTANG MACH 1,1,ford,ford-mustang,dlt-web-aeaaf410
@@ -125,7 +125,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-08,RY1,HONDA,BRIO AMAZE,1,honda,,dlt-web-aeaaf410
 2023-08,RY1,HONDA,CITY,1669,honda,honda-city,dlt-web-aeaaf410
 2023-08,RY1,HONDA,CITY HATCHBACK,2154,honda,honda-city-hatchback,dlt-web-aeaaf410
-2023-08,RY1,HONDA,CITY'14,1,honda,,dlt-web-aeaaf410
+2023-08,RY1,HONDA,CITY'14,1,honda,honda-city,dlt-web-aeaaf410
 2023-08,RY1,HONDA,CIVIC,1307,honda,honda-civic,dlt-web-aeaaf410
 2023-08,RY1,HONDA,CIVIC TYPE R,9,honda,honda-civic-type-r,dlt-web-aeaaf410
 2023-08,RY1,HONDA,CIVIC TYPE R GT,1,honda,honda-civic-type-r,dlt-web-aeaaf410
@@ -134,7 +134,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-08,RY1,HONDA,FREED,1,honda,,dlt-web-aeaaf410
 2023-08,RY1,HONDA,HR-V,1894,honda,honda-hr-v,dlt-web-aeaaf410
 2023-08,RY1,HONDA,JAZZ,2,honda,honda-jazz,dlt-web-aeaaf410
-2023-08,RY1,HONDA,JAZZ'15,1,honda,,dlt-web-aeaaf410
+2023-08,RY1,HONDA,JAZZ'15,1,honda,honda-jazz,dlt-web-aeaaf410
 2023-08,RY1,HONDA,MOBILIO,2,honda,,dlt-web-aeaaf410
 2023-08,RY1,HONDA,N BOX G,1,honda,,dlt-web-aeaaf410
 2023-08,RY1,HONDA,N VAN PLUS TURBO,1,honda,,dlt-web-aeaaf410
@@ -194,9 +194,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-08,RY1,MAZDA,MAZDA CX-30,352,mazda,mazda-cx-30,dlt-web-aeaaf410
 2023-08,RY1,MAZDA,MAZDA CX-5,38,mazda,mazda-cx-5,dlt-web-aeaaf410
 2023-08,RY1,MAZDA,MAZDA CX-8,138,mazda,mazda-cx-8,dlt-web-aeaaf410
-2023-08,RY1,MAZDA,MX-5 ROADSTER NR-A,1,mazda,,dlt-web-aeaaf410
-2023-08,RY1,MAZDA,ROADSTER 990S,1,mazda,,dlt-web-aeaaf410
-2023-08,RY1,MAZDA,ROADSTER RF VS TERRACOTTA,1,mazda,,dlt-web-aeaaf410
+2023-08,RY1,MAZDA,MX-5 ROADSTER NR-A,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2023-08,RY1,MAZDA,ROADSTER 990S,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2023-08,RY1,MAZDA,ROADSTER RF VS TERRACOTTA,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2023-08,RY1,MCLAREN,720S COUPE,2,mclaren,,dlt-web-aeaaf410
 2023-08,RY1,MCLAREN,ARTURA-COUPE,2,mclaren,,dlt-web-aeaaf410
 2023-08,RY1,MERCEDES BENZ,A 200,91,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
@@ -290,7 +290,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-08,RY1,NISSAN,MARCH,2,nissan,nissan-march,dlt-web-aeaaf410
 2023-08,RY1,NISSAN,NAVARA,126,nissan,nissan-navara,dlt-web-aeaaf410
 2023-08,RY1,NISSAN,NOTE,2,nissan,nissan-note,dlt-web-aeaaf410
-2023-08,RY1,NISSAN,SERENA HYBRID 2.0 HIGHWAY STAR,2,nissan,,dlt-web-aeaaf410
+2023-08,RY1,NISSAN,SERENA HYBRID 2.0 HIGHWAY STAR,2,nissan,nissan-serena,dlt-web-aeaaf410
 2023-08,RY1,NISSAN,TERRA,93,nissan,nissan-terra,dlt-web-aeaaf410
 2023-08,RY1,NISSAN,X-TRAIL,1,nissan,nissan-x-trail,dlt-web-aeaaf410
 2023-08,RY1,ORA,GOOD CAT,598,ora,ora-good-cat,dlt-web-aeaaf410
@@ -426,7 +426,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-08,RY1,TOYOTA,Corolla,1,toyota,toyota-corolla,dlt-web-aeaaf410
 2023-08,RY1,TOYOTA,FORTUNER,2004,toyota,toyota-fortuner,dlt-web-aeaaf410
 2023-08,RY1,TOYOTA,Fortuner,7,toyota,toyota-fortuner,dlt-web-aeaaf410
-2023-08,RY1,TOYOTA,GR 86 RZ,1,toyota,,dlt-web-aeaaf410
+2023-08,RY1,TOYOTA,GR 86 RZ,1,toyota,toyota-gr86,dlt-web-aeaaf410
 2023-08,RY1,TOYOTA,GR COROLLA RZ,1,toyota,,dlt-web-aeaaf410
 2023-08,RY1,TOYOTA,GR COROLLA RZ MORIZO EDITION,1,toyota,,dlt-web-aeaaf410
 2023-08,RY1,TOYOTA,GR YARIS,2,toyota,toyota-gr-yaris,dlt-web-aeaaf410
@@ -459,7 +459,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-08,RY1,TOYOTA,VOXY SZ HYBRID,2,toyota,toyota-voxy,dlt-web-aeaaf410
 2023-08,RY1,TOYOTA,YARIS,1810,toyota,toyota-yaris,dlt-web-aeaaf410
 2023-08,RY1,TOYOTA,YARIS ATIV,4280,toyota,toyota-yaris-ativ,dlt-web-aeaaf410
-2023-08,RY1,TOYOTA,YARIS GR CIRCUIT PACK,1,toyota,,dlt-web-aeaaf410
+2023-08,RY1,TOYOTA,YARIS GR CIRCUIT PACK,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
 2023-08,RY1,TOYOTA,Yaris,6,toyota,toyota-yaris,dlt-web-aeaaf410
 2023-08,RY1,VOLT,VOLT FOR FOUR,85,volt,,dlt-web-aeaaf410
 2023-08,RY1,VOLT,VOLT FOR TWO,12,volt,,dlt-web-aeaaf410
@@ -507,7 +507,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-08,RY3,CHEVROLET,COLORADO X-CAB,1,chevrolet,,dlt-web-aeaaf410
 2023-08,RY3,DAIHATSU,HIJET CARGO,7,daihatsu,,dlt-web-aeaaf410
 2023-08,RY3,DAIHATSU,HIJET TRUCK JUMBO EXTRA,1,daihatsu,,dlt-web-aeaaf410
-2023-08,RY3,FORD,FORD RANGER,1,ford,,dlt-web-aeaaf410
+2023-08,RY3,FORD,FORD RANGER,1,ford,ford-ranger,dlt-web-aeaaf410
 2023-08,RY3,FORD,RANGER,463,ford,ford-ranger,dlt-web-aeaaf410
 2023-08,RY3,FORD,RANGER SWB,10,ford,ford-ranger,dlt-web-aeaaf410
 2023-08,RY3,FOTON,BJ1031EVJA3,7,foton,,dlt-web-aeaaf410
@@ -533,4 +533,4 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-08,RY3,TOYOTA,HILUX REVO,6262,toyota,toyota-hilux-revo,dlt-web-aeaaf410
 2023-08,RY3,TOYOTA,"HILUX TIGER C-CAB / 2L,P/S",1,toyota,,dlt-web-aeaaf410
 2023-08,RY3,TOYOTA,Hilux Revo,6,toyota,toyota-hilux-revo,dlt-web-aeaaf410
-2023-08,RY3,TOYOTA,LAND CRUISER 79 PICK UP 4.2,1,toyota,,dlt-web-aeaaf410
+2023-08,RY3,TOYOTA,LAND CRUISER 79 PICK UP 4.2,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410

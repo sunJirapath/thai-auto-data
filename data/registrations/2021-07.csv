@@ -105,7 +105,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-07,RY1,HONDA,S660 CVT TURBO,1,honda,,dlt-web-aeaaf410
 2021-07,RY1,HONDA,STEP WGN e-HEV SPADA G EX,1,honda,honda-step-wgn,dlt-web-aeaaf410
 2021-07,RY1,HONDA,STEPWAGON SPADA HYBRID EHEV G,1,honda,honda-step-wgn,dlt-web-aeaaf410
-2021-07,RY1,HYUNDAI,GRAND STAREX,6,hyundai,,dlt-web-aeaaf410
+2021-07,RY1,HYUNDAI,GRAND STAREX,6,hyundai,hyundai-h-1,dlt-web-aeaaf410
 2021-07,RY1,HYUNDAI,IONIQ EV,1,hyundai,,dlt-web-aeaaf410
 2021-07,RY1,HYUNDAI,KONA EV,9,hyundai,,dlt-web-aeaaf410
 2021-07,RY1,ISUZU,D-MAX,4341,isuzu,isuzu-d-max,dlt-web-aeaaf410

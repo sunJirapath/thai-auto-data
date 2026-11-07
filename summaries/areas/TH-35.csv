@@ -3628,6 +3628,7 @@ period,category,kind,id,units
 2024-11,RY3,bf,isuzu|diesel,25
 2024-11,RY3,bf,toyota|diesel,9
 2024-11,RY3,f,diesel,35
+2024-11,RY3,m,ford-ranger,1
 2024-11,RY3,m,isuzu-d-max,25
 2024-11,RY3,m,toyota-hilux-revo,9
 2024-12,RY1,b,ford,2

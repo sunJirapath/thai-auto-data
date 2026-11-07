@@ -102,7 +102,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-11,RY1,FOMM,FOMM ONE,2,fomm,,dlt-web-aeaaf410
 2021-11,RY1,FORD,EVEREST,367,ford,ford-everest,dlt-web-aeaaf410
 2021-11,RY1,FORD,EcoSport,1,ford,,dlt-web-aeaaf410
-2021-11,RY1,FORD,Ford Everest,1,ford,,dlt-web-aeaaf410
+2021-11,RY1,FORD,Ford Everest,1,ford,ford-everest,dlt-web-aeaaf410
 2021-11,RY1,FORD,MUSTANG,5,ford,ford-mustang,dlt-web-aeaaf410
 2021-11,RY1,FORD,MUSTANG 2.3L CONVERTIBLE,1,ford,ford-mustang,dlt-web-aeaaf410
 2021-11,RY1,FORD,MUSTANG 2.3L ECOBOOST FASTBACK,2,ford,ford-mustang,dlt-web-aeaaf410
@@ -136,7 +136,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-11,RY1,HONDA,STEPWAGON SPADA2.0 HYBRID,1,honda,honda-step-wgn,dlt-web-aeaaf410
 2021-11,RY1,HONDA,STEPWGN HYBRID MODULO X 2.0L,1,honda,honda-step-wgn,dlt-web-aeaaf410
 2021-11,RY1,HONDA,STEPWGN SPADA HYBRID G-EX,1,honda,honda-step-wgn,dlt-web-aeaaf410
-2021-11,RY1,HYUNDAI,GRAND STAREX,5,hyundai,,dlt-web-aeaaf410
+2021-11,RY1,HYUNDAI,GRAND STAREX,5,hyundai,hyundai-h-1,dlt-web-aeaaf410
 2021-11,RY1,ISUZU,D-MAX,4985,isuzu,isuzu-d-max,dlt-web-aeaaf410
 2021-11,RY1,ISUZU,mu-X,906,isuzu,isuzu-mu-x,dlt-web-aeaaf410
 2021-11,RY1,ISUZU,ไม่ระบุ,5,isuzu,,dlt-web-aeaaf410
@@ -172,7 +172,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-11,RY1,MASERATI,LEVANTE S GRANSPORT,1,maserati,,dlt-web-aeaaf410
 2021-11,RY1,MAZDA,MAZDA 2,1403,mazda,mazda-mazda2,dlt-web-aeaaf410
 2021-11,RY1,MAZDA,MAZDA 3,139,mazda,mazda-mazda3,dlt-web-aeaaf410
-2021-11,RY1,MAZDA,MAZDA BT50,1,mazda,,dlt-web-aeaaf410
+2021-11,RY1,MAZDA,MAZDA BT50,1,mazda,mazda-bt-50,dlt-web-aeaaf410
 2021-11,RY1,MAZDA,MAZDA CX-3,342,mazda,mazda-cx-3,dlt-web-aeaaf410
 2021-11,RY1,MAZDA,MAZDA CX-30,394,mazda,mazda-cx-30,dlt-web-aeaaf410
 2021-11,RY1,MAZDA,MAZDA CX-8,52,mazda,mazda-cx-8,dlt-web-aeaaf410
@@ -415,8 +415,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-11,RY1,TOYOTA,Hilux Revo,3020,toyota,toyota-hilux-revo,dlt-web-aeaaf410
 2021-11,RY1,TOYOTA,Innova,34,toyota,toyota-innova,dlt-web-aeaaf410
 2021-11,RY1,TOYOTA,LAND CRUISER PRADO TZ-G,1,toyota,,dlt-web-aeaaf410
-2021-11,RY1,TOYOTA,LANDCRUISER 70PICKUP 30TH,1,toyota,,dlt-web-aeaaf410
-2021-11,RY1,TOYOTA,LANDCRUISER 79 4.5L DIESEL V8,1,toyota,,dlt-web-aeaaf410
+2021-11,RY1,TOYOTA,LANDCRUISER 70PICKUP 30TH,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
+2021-11,RY1,TOYOTA,LANDCRUISER 79 4.5L DIESEL V8,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2021-11,RY1,TOYOTA,LANDCRUISER PRADO 2.8,1,toyota,,dlt-web-aeaaf410
 2021-11,RY1,TOYOTA,LANDCRUISER PRADO 2.8 TZG,1,toyota,,dlt-web-aeaaf410
 2021-11,RY1,TOYOTA,SUPRA,1,toyota,toyota-gr-supra,dlt-web-aeaaf410

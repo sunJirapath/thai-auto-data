@@ -91,10 +91,10 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-09,RY1,FERRARI,ROMA,1,ferrari,,dlt-web-aeaaf410
 2021-09,RY1,FOMM,FOMM ONE,5,fomm,,dlt-web-aeaaf410
 2021-09,RY1,FORD,EVEREST,311,ford,ford-everest,dlt-web-aeaaf410
-2021-09,RY1,FORD,FORD EVEREST zFAE9BC,1,ford,,dlt-web-aeaaf410
-2021-09,RY1,FORD,FORD EVEREST zFAE9GD,1,ford,,dlt-web-aeaaf410
-2021-09,RY1,FORD,FORD EVEREST zJAE9BC,2,ford,,dlt-web-aeaaf410
-2021-09,RY1,FORD,FORD RANGER,1,ford,,dlt-web-aeaaf410
+2021-09,RY1,FORD,FORD EVEREST zFAE9BC,1,ford,ford-everest,dlt-web-aeaaf410
+2021-09,RY1,FORD,FORD EVEREST zFAE9GD,1,ford,ford-everest,dlt-web-aeaaf410
+2021-09,RY1,FORD,FORD EVEREST zJAE9BC,2,ford,ford-everest,dlt-web-aeaaf410
+2021-09,RY1,FORD,FORD RANGER,1,ford,ford-ranger,dlt-web-aeaaf410
 2021-09,RY1,FORD,FORD RANGER iFBW9B4,1,ford,,dlt-web-aeaaf410
 2021-09,RY1,FORD,Ford Focus,1,ford,,dlt-web-aeaaf410
 2021-09,RY1,FORD,MUSTANG,5,ford,ford-mustang,dlt-web-aeaaf410
@@ -114,7 +114,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-09,RY1,HONDA,BR-V,101,honda,honda-br-v,dlt-web-aeaaf410
 2021-09,RY1,HONDA,CITY,1881,honda,honda-city,dlt-web-aeaaf410
 2021-09,RY1,HONDA,CITY HATCHBACK,2028,honda,honda-city-hatchback,dlt-web-aeaaf410
-2021-09,RY1,HONDA,CITY'14,1,honda,,dlt-web-aeaaf410
+2021-09,RY1,HONDA,CITY'14,1,honda,honda-city,dlt-web-aeaaf410
 2021-09,RY1,HONDA,CIVIC,1093,honda,honda-civic,dlt-web-aeaaf410
 2021-09,RY1,HONDA,CIVIC TYPE R,1,honda,honda-civic-type-r,dlt-web-aeaaf410
 2021-09,RY1,HONDA,CIVIC TYPE R GT,1,honda,honda-civic-type-r,dlt-web-aeaaf410
@@ -132,7 +132,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-09,RY1,HONDA,STEP WGN e-HEV SPADA G EX,1,honda,honda-step-wgn,dlt-web-aeaaf410
 2021-09,RY1,HONDA,STEPWAGON SPADA HYBRID EHEV G,4,honda,honda-step-wgn,dlt-web-aeaaf410
 2021-09,RY1,HONDA,STEPWGN e:HEV SPADA G EX,1,honda,honda-step-wgn,dlt-web-aeaaf410
-2021-09,RY1,HYUNDAI,GRAND STAREX,7,hyundai,,dlt-web-aeaaf410
+2021-09,RY1,HYUNDAI,GRAND STAREX,7,hyundai,hyundai-h-1,dlt-web-aeaaf410
 2021-09,RY1,HYUNDAI,IONIQ EV,1,hyundai,,dlt-web-aeaaf410
 2021-09,RY1,ISUZU,D-MAX,4769,isuzu,isuzu-d-max,dlt-web-aeaaf410
 2021-09,RY1,ISUZU,mu-X,1015,isuzu,isuzu-mu-x,dlt-web-aeaaf410
@@ -281,7 +281,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-09,RY1,NISSAN,MARCH,172,nissan,nissan-march,dlt-web-aeaaf410
 2021-09,RY1,NISSAN,NAVARA,168,nissan,nissan-navara,dlt-web-aeaaf410
 2021-09,RY1,NISSAN,NOTE,164,nissan,nissan-note,dlt-web-aeaaf410
-2021-09,RY1,NISSAN,SERENA HYBRID 2.0 X,1,nissan,,dlt-web-aeaaf410
+2021-09,RY1,NISSAN,SERENA HYBRID 2.0 X,1,nissan,nissan-serena,dlt-web-aeaaf410
 2021-09,RY1,NISSAN,SYLPHY,5,nissan,nissan-sylphy,dlt-web-aeaaf410
 2021-09,RY1,NISSAN,TEANA,1,nissan,,dlt-web-aeaaf410
 2021-09,RY1,NISSAN,TERRA,59,nissan,nissan-terra,dlt-web-aeaaf410
@@ -481,7 +481,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-09,RY3,HINO,FM8JN1D-SGT,2,hino,,dlt-web-aeaaf410
 2021-09,RY3,HINO,XZU600R-HKMLKT3,52,hino,,dlt-web-aeaaf410
 2021-09,RY3,ISUZU,D-MAX,6234,isuzu,isuzu-d-max,dlt-web-aeaaf410
-2021-09,RY3,ISUZU,D-MAX New Style,1,isuzu,,dlt-web-aeaaf410
+2021-09,RY3,ISUZU,D-MAX New Style,1,isuzu,isuzu-d-max,dlt-web-aeaaf410
 2021-09,RY3,ISUZU,ไม่ระบุ,297,isuzu,,dlt-web-aeaaf410
 2021-09,RY3,KIA,K2500,1,kia,,dlt-web-aeaaf410
 2021-09,RY3,MAZDA,Mazda BT-50,42,mazda,mazda-bt-50,dlt-web-aeaaf410
@@ -498,6 +498,6 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-09,RY3,TOYOTA,Hiace,27,toyota,toyota-hiace,dlt-web-aeaaf410
 2021-09,RY3,TOYOTA,Hilux Revo,6279,toyota,toyota-hilux-revo,dlt-web-aeaaf410
 2021-09,RY3,TOYOTA,KUN15R-TRMDHT  B8,1,toyota,,dlt-web-aeaaf410
-2021-09,RY3,TOYOTA,LAND CRUISER 79 PICK UP,1,toyota,,dlt-web-aeaaf410
+2021-09,RY3,TOYOTA,LAND CRUISER 79 PICK UP,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2021-09,RY3,TOYOTA,TGN16R-URMDMT  A7,1,toyota,,dlt-web-aeaaf410
 2021-09,RY3,VOLVO,FM1364R52,1,volvo,,dlt-web-aeaaf410

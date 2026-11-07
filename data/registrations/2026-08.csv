@@ -153,7 +153,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-08,RY1,HONDA,CIVIC TYPE R,9,honda,honda-civic-type-r,dlt-web-aeaaf410
 2026-08,RY1,HONDA,CR-V,619,honda,honda-cr-v,dlt-web-aeaaf410
 2026-08,RY1,HONDA,HR-V,1896,honda,honda-hr-v,dlt-web-aeaaf410
-2026-08,RY1,HONDA,JAZZ'16,1,honda,,dlt-web-aeaaf410
+2026-08,RY1,HONDA,JAZZ'16,1,honda,honda-jazz,dlt-web-aeaaf410
 2026-08,RY1,HONDA,MOBILIO,1,honda,,dlt-web-aeaaf410
 2026-08,RY1,HONDA,MOBILIO'15,1,honda,,dlt-web-aeaaf410
 2026-08,RY1,HONDA,N BOX JOY TURBO,1,honda,,dlt-web-aeaaf410
@@ -237,8 +237,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-08,RY1,MAZDA,MAZDA CX-5,51,mazda,mazda-cx-5,dlt-web-aeaaf410
 2026-08,RY1,MAZDA,MAZDA CX-8,17,mazda,mazda-cx-8,dlt-web-aeaaf410
 2026-08,RY1,MAZDA,MAZDA6e,232,mazda,mazda-mazda6e,dlt-web-aeaaf410
-2026-08,RY1,MAZDA,ROADSTER S SPECIAL PACKAGE,4,mazda,,dlt-web-aeaaf410
-2026-08,RY1,MAZDA,ROADSTER SPIRIT RACING 12R,1,mazda,,dlt-web-aeaaf410
+2026-08,RY1,MAZDA,ROADSTER S SPECIAL PACKAGE,4,mazda,mazda-mx-5,dlt-web-aeaaf410
+2026-08,RY1,MAZDA,ROADSTER SPIRIT RACING 12R,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2026-08,RY1,MCLAREN,ARTURA COUPE,1,mclaren,,dlt-web-aeaaf410
 2026-08,RY1,MCLAREN,ARTURA SPIDER,1,mclaren,,dlt-web-aeaaf410
 2026-08,RY1,MERCEDES BENZ,A 200,11,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
@@ -329,7 +329,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-08,RY1,NETA,NETA V-II,3,neta,neta-v-ii,dlt-web-aeaaf410
 2026-08,RY1,NETA,NETA X,6,neta,neta-x,dlt-web-aeaaf410
 2026-08,RY1,NEX,NPD,1,nex,,dlt-web-aeaaf410
-2026-08,RY1,NIO,firefly,5,nio,,dlt-web-aeaaf410
+2026-08,RY1,NIO,firefly,5,nio,nio-firefly,dlt-web-aeaaf410
 2026-08,RY1,NISSAN,ALMERA,102,nissan,nissan-almera,dlt-web-aeaaf410
 2026-08,RY1,NISSAN,BLGURGWJ32EHAA----,1,nissan,,dlt-web-aeaaf410
 2026-08,RY1,NISSAN,ELGRAND 250 HIGHWAY STAR,1,nissan,,dlt-web-aeaaf410
@@ -474,8 +474,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-08,RY1,TOYOTA,LAND CRUISER 70 AX,5,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2026-08,RY1,TOYOTA,LAND CRUISER 70 AX 2.8L 4WD,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2026-08,RY1,TOYOTA,LAND CRUISER FJ,418,toyota,toyota-land-cruiser-fj,dlt-web-aeaaf410
-2026-08,RY1,TOYOTA,LANDCRUISER 70 GXL DOUBLE CAB,1,toyota,,dlt-web-aeaaf410
-2026-08,RY1,TOYOTA,LANDCRUISER LC300 GX,1,toyota,,dlt-web-aeaaf410
+2026-08,RY1,TOYOTA,LANDCRUISER 70 GXL DOUBLE CAB,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
+2026-08,RY1,TOYOTA,LANDCRUISER LC300 GX,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2026-08,RY1,TOYOTA,NOAH HYBRID X 2WD,1,toyota,,dlt-web-aeaaf410
 2026-08,RY1,TOYOTA,Sienta,1,toyota,toyota-sienta,dlt-web-aeaaf410
 2026-08,RY1,TOYOTA,VELLFIRE,8,toyota,toyota-vellfire,dlt-web-aeaaf410
@@ -556,7 +556,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-08,RY3,FOTON,BJ1045V8JD3-FA,1,foton,,dlt-web-aeaaf410
 2026-08,RY3,FOTON,BJ1045V9JD4-R1,148,foton,,dlt-web-aeaaf410
 2026-08,RY3,FOTON,eTUNLAND,1,foton,,dlt-web-aeaaf410
-2026-08,RY3,FOTON,eVIEWCONNECT,31,foton,,dlt-web-aeaaf410
+2026-08,RY3,FOTON,eVIEWCONNECT,31,foton,foton-eview-connect,dlt-web-aeaaf410
 2026-08,RY3,GWM,POER,1,gwm,,dlt-web-aeaaf410
 2026-08,RY3,GWM,POER SAHAR,2,gwm,poer-sahar,dlt-web-aeaaf410
 2026-08,RY3,HINO,XZU600R-WKMLST3,36,hino,,dlt-web-aeaaf410

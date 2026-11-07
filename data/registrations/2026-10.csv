@@ -184,7 +184,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-10,RY1,HONDA,WR-V,2,honda,honda-wr-v,dlt-web-aeaaf410
 2026-10,RY1,HONDA,e:N1,1,honda,honda-e-n1,dlt-web-aeaaf410
 2026-10,RY1,HONDA,e:N2,5,honda,honda-e-n2,dlt-web-aeaaf410
-2026-10,RY1,HONGQI,HONGQI E-HS9,12,hongqi,,dlt-web-aeaaf410
+2026-10,RY1,HONGQI,HONGQI E-HS9,12,hongqi,hongqi-e-hs9,dlt-web-aeaaf410
 2026-10,RY1,HYUNDAI,CRETA,1,hyundai,hyundai-creta,dlt-web-aeaaf410
 2026-10,RY1,HYUNDAI,IONIQ5,123,hyundai,hyundai-ioniq-5,dlt-web-aeaaf410
 2026-10,RY1,HYUNDAI,PALISADE,14,hyundai,hyundai-palisade,dlt-web-aeaaf410
@@ -227,7 +227,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-10,RY1,LEXUS,LM350H,21,lexus,lexus-lm,dlt-web-aeaaf410
 2026-10,RY1,LEXUS,LM500H,2,lexus,lexus-lm,dlt-web-aeaaf410
 2026-10,RY1,LEXUS,LX 600,1,lexus,lexus-lx,dlt-web-aeaaf410
-2026-10,RY1,LEXUS,LX700H,1,lexus,,dlt-web-aeaaf410
+2026-10,RY1,LEXUS,LX700H,1,lexus,lexus-lx,dlt-web-aeaaf410
 2026-10,RY1,LEXUS,NX350H,6,lexus,lexus-nx,dlt-web-aeaaf410
 2026-10,RY1,LEXUS,NX450H+,1,lexus,lexus-nx,dlt-web-aeaaf410
 2026-10,RY1,LEXUS,RX350H,6,lexus,lexus-rx,dlt-web-aeaaf410
@@ -254,10 +254,10 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-10,RY1,MAZDA,MAZDA CX-8,41,mazda,mazda-cx-8,dlt-web-aeaaf410
 2026-10,RY1,MAZDA,MAZDA6e,264,mazda,mazda-mazda6e,dlt-web-aeaaf410
 2026-10,RY1,MAZDA,MX-5,1,mazda,mazda-mx-5,dlt-web-aeaaf410
-2026-10,RY1,MAZDA,ROADSTER 35TH ANNIVERSARY,1,mazda,,dlt-web-aeaaf410
-2026-10,RY1,MAZDA,ROADSTER S SPECIAL PACKAGE,1,mazda,,dlt-web-aeaaf410
-2026-10,RY1,MAZDA,ROADSTER SPIRIT RACING,1,mazda,,dlt-web-aeaaf410
-2026-10,RY1,MAZDA,ROADSTER SPIRIT RACING 12R,2,mazda,,dlt-web-aeaaf410
+2026-10,RY1,MAZDA,ROADSTER 35TH ANNIVERSARY,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2026-10,RY1,MAZDA,ROADSTER S SPECIAL PACKAGE,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2026-10,RY1,MAZDA,ROADSTER SPIRIT RACING,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2026-10,RY1,MAZDA,ROADSTER SPIRIT RACING 12R,2,mazda,mazda-mx-5,dlt-web-aeaaf410
 2026-10,RY1,MERCEDES BENZ,A 200,7,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2026-10,RY1,MERCEDES BENZ,AMG C43 4MATIC Coupe,1,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
 2026-10,RY1,MERCEDES BENZ,AMG CLE 53 4MATIC coupe,7,mercedes-benz,mercedes-benz-cle,dlt-web-aeaaf410
@@ -335,7 +335,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-10,RY1,MITSUBISHI,XPANDER HEV,57,mitsubishi,mitsubishi-xpander,dlt-web-aeaaf410
 2026-10,RY1,NETA,NETA V-II,3,neta,neta-v-ii,dlt-web-aeaaf410
 2026-10,RY1,NETA,NETA X,1,neta,neta-x,dlt-web-aeaaf410
-2026-10,RY1,NIO,firefly,4,nio,,dlt-web-aeaaf410
+2026-10,RY1,NIO,firefly,4,nio,nio-firefly,dlt-web-aeaaf410
 2026-10,RY1,NISSAN,ALMERA,109,nissan,nissan-almera,dlt-web-aeaaf410
 2026-10,RY1,NISSAN,CVPGRDFD22NHNA,1,nissan,,dlt-web-aeaaf410
 2026-10,RY1,NISSAN,GT-R PURE EDITION,1,nissan,nissan-gt-r,dlt-web-aeaaf410
@@ -544,7 +544,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-10,RY3,FOTON,BJ1044V9JB3-R1,3,foton,,dlt-web-aeaaf410
 2026-10,RY3,FOTON,BJ1045V9JD4-R1,2,foton,,dlt-web-aeaaf410
 2026-10,RY3,FOTON,eTUNLAND,5,foton,,dlt-web-aeaaf410
-2026-10,RY3,FOTON,eVIEWCONNECT,227,foton,,dlt-web-aeaaf410
+2026-10,RY3,FOTON,eVIEWCONNECT,227,foton,foton-eview-connect,dlt-web-aeaaf410
 2026-10,RY3,GWM,POER,1,gwm,,dlt-web-aeaaf410
 2026-10,RY3,GWM,POER SAHAR,1,gwm,poer-sahar,dlt-web-aeaaf410
 2026-10,RY3,HINO,FM8JN3D-CDDMH,1,hino,,dlt-web-aeaaf410

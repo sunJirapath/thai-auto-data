@@ -122,7 +122,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-09,RY1,BYD,BYD SEAL EXD AWD,15,byd,byd-seal,dlt-web-aeaaf410
 2025-09,RY1,BYD,BYD SEAL EXD RWD,41,byd,byd-seal,dlt-web-aeaaf410
 2025-09,RY1,BYD,BYD SEAL STD RWD,6,byd,byd-seal,dlt-web-aeaaf410
-2025-09,RY1,BYD,BYD SEAL U (DMI-PREMIUM),7,byd,,dlt-web-aeaaf410
+2025-09,RY1,BYD,BYD SEAL U (DMI-PREMIUM),7,byd,byd-sealion-6,dlt-web-aeaaf410
 2025-09,RY1,BYD,BYD SEALION 6,5,byd,byd-sealion-6,dlt-web-aeaaf410
 2025-09,RY1,BYD,BYD SEALION 6 DM-i DYNAMIC,65,byd,byd-sealion-6,dlt-web-aeaaf410
 2025-09,RY1,BYD,BYD SEALION 6 DM-i PREMIUM,219,byd,byd-sealion-6,dlt-web-aeaaf410
@@ -241,8 +241,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-09,RY1,MAZDA,MAZDA CX-5,44,mazda,mazda-cx-5,dlt-web-aeaaf410
 2025-09,RY1,MAZDA,MAZDA CX-8,10,mazda,mazda-cx-8,dlt-web-aeaaf410
 2025-09,RY1,MAZDA,MX-5,1,mazda,mazda-mx-5,dlt-web-aeaaf410
-2025-09,RY1,MAZDA,ROADSTER 990S,3,mazda,,dlt-web-aeaaf410
-2025-09,RY1,MAZDA,ROADSTER RF 35TH ANNIVERSARY,2,mazda,,dlt-web-aeaaf410
+2025-09,RY1,MAZDA,ROADSTER 990S,3,mazda,mazda-mx-5,dlt-web-aeaaf410
+2025-09,RY1,MAZDA,ROADSTER RF 35TH ANNIVERSARY,2,mazda,mazda-mx-5,dlt-web-aeaaf410
 2025-09,RY1,MERCEDES BENZ,A 200,33,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2025-09,RY1,MERCEDES BENZ,AMG C43 4MATIC Coupe,2,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
 2025-09,RY1,MERCEDES BENZ,AMG CLE 53 4MATIC coupe,9,mercedes-benz,mercedes-benz-cle,dlt-web-aeaaf410
@@ -486,10 +486,10 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-09,RY1,TOYOTA,LAND CRUISER 300 ZX 3.3L,3,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2025-09,RY1,TOYOTA,LAND CRUISER 70 AX,6,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2025-09,RY1,TOYOTA,LAND CRUISER 70 AX 2.8L 4WD,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
-2025-09,RY1,TOYOTA,LANDCRUISER LC300 GR SPORT,1,toyota,,dlt-web-aeaaf410
-2025-09,RY1,TOYOTA,LANDCRUISER LC300 GX,1,toyota,,dlt-web-aeaaf410
-2025-09,RY1,TOYOTA,LANDCRUISER LC300 SAHARA,1,toyota,,dlt-web-aeaaf410
-2025-09,RY1,TOYOTA,LANDCRUISER LC300 ZX,1,toyota,,dlt-web-aeaaf410
+2025-09,RY1,TOYOTA,LANDCRUISER LC300 GR SPORT,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
+2025-09,RY1,TOYOTA,LANDCRUISER LC300 GX,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
+2025-09,RY1,TOYOTA,LANDCRUISER LC300 SAHARA,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
+2025-09,RY1,TOYOTA,LANDCRUISER LC300 ZX,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2025-09,RY1,TOYOTA,NOAH HYBRID S-Z,1,toyota,,dlt-web-aeaaf410
 2025-09,RY1,TOYOTA,NOAH HYBRID X 2WD,2,toyota,,dlt-web-aeaaf410
 2025-09,RY1,TOYOTA,TR TRANSFORMER MAXI,1,toyota,,dlt-web-aeaaf410

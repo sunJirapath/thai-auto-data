@@ -219,7 +219,7 @@ period,category,kind,id,units
 2021-03,RY1,m,bmw-x1,1
 2021-03,RY1,m,bmw-x3,1
 2021-03,RY1,m,ford-everest,2
-2021-03,RY1,m,ford-ranger,1
+2021-03,RY1,m,ford-ranger,2
 2021-03,RY1,m,ford-ranger-raptor,1
 2021-03,RY1,m,honda-city,4
 2021-03,RY1,m,honda-city-hatchback,3
@@ -632,6 +632,7 @@ period,category,kind,id,units
 2021-08,RY1,m,honda-city-hatchback,3
 2021-08,RY1,m,honda-civic,2
 2021-08,RY1,m,honda-hr-v,2
+2021-08,RY1,m,hyundai-h-1,1
 2021-08,RY1,m,isuzu-d-max,4
 2021-08,RY1,m,isuzu-mu-x,2
 2021-08,RY1,m,mercedes-benz-gle,1
@@ -2718,6 +2719,7 @@ period,category,kind,id,units
 2023-07,RY1,m,honda-city-hatchback,5
 2023-07,RY1,m,honda-cr-v,1
 2023-07,RY1,m,honda-hr-v,1
+2023-07,RY1,m,hyundai-h-1,1
 2023-07,RY1,m,isuzu-d-max,14
 2023-07,RY1,m,isuzu-mu-x,3
 2023-07,RY1,m,mazda-mazda2,1
@@ -6662,6 +6664,7 @@ period,category,kind,id,units
 2026-10,RY3,bf,ud-trucks|diesel,2
 2026-10,RY3,f,bev,1
 2026-10,RY3,f,diesel,15
+2026-10,RY3,m,foton-eview-connect,1
 2026-10,RY3,m,isuzu-d-max,7
 2026-10,RY3,m,toyota-hilux-champ,2
 2026-10,RY3,m,toyota-hilux-revo,2

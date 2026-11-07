@@ -134,7 +134,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-02,RY1,FERRARI,12Cilindri Spider,1,ferrari,,dlt-web-aeaaf410
 2026-02,RY1,FERRARI,296 GTB,1,ferrari,,dlt-web-aeaaf410
 2026-02,RY1,FORD,EVEREST,664,ford,ford-everest,dlt-web-aeaaf410
-2026-02,RY1,FORD,FORD RANGER,1,ford,,dlt-web-aeaaf410
+2026-02,RY1,FORD,FORD RANGER,1,ford,ford-ranger,dlt-web-aeaaf410
 2026-02,RY1,FORD,MUSTANG,3,ford,ford-mustang,dlt-web-aeaaf410
 2026-02,RY1,FORD,MUSTANG 2.3 ECOBOOST PREMIUM,1,ford,ford-mustang,dlt-web-aeaaf410
 2026-02,RY1,FORD,MUSTANG 5.0 GT PREMIUM,1,ford,ford-mustang,dlt-web-aeaaf410
@@ -227,10 +227,10 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-02,RY1,MAZDA,MAZDA CX-30,118,mazda,mazda-cx-30,dlt-web-aeaaf410
 2026-02,RY1,MAZDA,MAZDA CX-5,50,mazda,mazda-cx-5,dlt-web-aeaaf410
 2026-02,RY1,MAZDA,MAZDA CX-8,14,mazda,mazda-cx-8,dlt-web-aeaaf410
-2026-02,RY1,MAZDA,MX-5 ROADSTER,1,mazda,,dlt-web-aeaaf410
-2026-02,RY1,MAZDA,ROADSTER 990S 2WD 6MT,1,mazda,,dlt-web-aeaaf410
-2026-02,RY1,MAZDA,ROADSTER RF 35TH ANNIVERSARY,1,mazda,,dlt-web-aeaaf410
-2026-02,RY1,MAZDA,ROADSTER S LEATHER PACKAGE,1,mazda,,dlt-web-aeaaf410
+2026-02,RY1,MAZDA,MX-5 ROADSTER,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2026-02,RY1,MAZDA,ROADSTER 990S 2WD 6MT,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2026-02,RY1,MAZDA,ROADSTER RF 35TH ANNIVERSARY,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2026-02,RY1,MAZDA,ROADSTER S LEATHER PACKAGE,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2026-02,RY1,MCLAREN,750S SPIDER,1,mclaren,,dlt-web-aeaaf410
 2026-02,RY1,MCLAREN,GTS,1,mclaren,,dlt-web-aeaaf410
 2026-02,RY1,MERCEDES BENZ,A 200,31,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
@@ -456,7 +456,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-02,RY1,TOYOTA,CROWN CROSSOVER RS ADVANCED,2,toyota,toyota-crown-crossover,dlt-web-aeaaf410
 2026-02,RY1,TOYOTA,Corolla,136,toyota,toyota-corolla,dlt-web-aeaaf410
 2026-02,RY1,TOYOTA,Fortuner,1300,toyota,toyota-fortuner,dlt-web-aeaaf410
-2026-02,RY1,TOYOTA,GR 86 RZ 2.4L,1,toyota,,dlt-web-aeaaf410
+2026-02,RY1,TOYOTA,GR 86 RZ 2.4L,1,toyota,toyota-gr86,dlt-web-aeaaf410
 2026-02,RY1,TOYOTA,GR COROLLA,1,toyota,,dlt-web-aeaaf410
 2026-02,RY1,TOYOTA,GR COROLLA RZ,2,toyota,,dlt-web-aeaaf410
 2026-02,RY1,TOYOTA,GR SUPRA RZ PLASMA ORANGE 100,1,toyota,toyota-gr-supra,dlt-web-aeaaf410
@@ -479,10 +479,10 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-02,RY1,TOYOTA,LAND CRUISER 300 GR SPORT,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2026-02,RY1,TOYOTA,LAND CRUISER 300 ZX,4,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2026-02,RY1,TOYOTA,LAND CRUISER 70 AX,3,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
-2026-02,RY1,TOYOTA,LAND CRUISER 76 AX 4WD,1,toyota,,dlt-web-aeaaf410
+2026-02,RY1,TOYOTA,LAND CRUISER 76 AX 4WD,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2026-02,RY1,TOYOTA,LAND CRUISER GR SPORT,1,toyota,,dlt-web-aeaaf410
-2026-02,RY1,TOYOTA,LANDCRUISER HARDTOP 4.0L,1,toyota,,dlt-web-aeaaf410
-2026-02,RY1,TOYOTA,LANDCRUISER LC300 SAHARA,1,toyota,,dlt-web-aeaaf410
+2026-02,RY1,TOYOTA,LANDCRUISER HARDTOP 4.0L,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
+2026-02,RY1,TOYOTA,LANDCRUISER LC300 SAHARA,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2026-02,RY1,TOYOTA,NOAH HYBRID X,1,toyota,,dlt-web-aeaaf410
 2026-02,RY1,TOYOTA,NOAH HYBRID X 2WD,1,toyota,,dlt-web-aeaaf410
 2026-02,RY1,TOYOTA,TR TRANSFORMER,1,toyota,,dlt-web-aeaaf410

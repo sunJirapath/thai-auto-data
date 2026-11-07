@@ -91,9 +91,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-10,RY1,FERRARI,ROMA,1,ferrari,,dlt-web-aeaaf410
 2021-10,RY1,FIAT,BENIMAR MILEO 282,1,fiat,,dlt-web-aeaaf410
 2021-10,RY1,FORD,EVEREST,287,ford,ford-everest,dlt-web-aeaaf410
-2021-10,RY1,FORD,FORD EVEREST zFAE9BC,2,ford,,dlt-web-aeaaf410
-2021-10,RY1,FORD,FORD EVEREST zJAE9BC,2,ford,,dlt-web-aeaaf410
-2021-10,RY1,FORD,FORD RANGER,1,ford,,dlt-web-aeaaf410
+2021-10,RY1,FORD,FORD EVEREST zFAE9BC,2,ford,ford-everest,dlt-web-aeaaf410
+2021-10,RY1,FORD,FORD EVEREST zJAE9BC,2,ford,ford-everest,dlt-web-aeaaf410
+2021-10,RY1,FORD,FORD RANGER,1,ford,ford-ranger,dlt-web-aeaaf410
 2021-10,RY1,FORD,FORD RANGER iFBW9B4,1,ford,,dlt-web-aeaaf410
 2021-10,RY1,FORD,FORD RANGER iJBW9AH,1,ford,,dlt-web-aeaaf410
 2021-10,RY1,FORD,FORD RANGER iJBW9AR,1,ford,,dlt-web-aeaaf410
@@ -116,7 +116,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-10,RY1,HONDA,BR-V,72,honda,honda-br-v,dlt-web-aeaaf410
 2021-10,RY1,HONDA,CITY,1329,honda,honda-city,dlt-web-aeaaf410
 2021-10,RY1,HONDA,CITY HATCHBACK,1509,honda,honda-city-hatchback,dlt-web-aeaaf410
-2021-10,RY1,HONDA,CITY'14,1,honda,,dlt-web-aeaaf410
+2021-10,RY1,HONDA,CITY'14,1,honda,honda-city,dlt-web-aeaaf410
 2021-10,RY1,HONDA,CIVIC,950,honda,honda-civic,dlt-web-aeaaf410
 2021-10,RY1,HONDA,CR-V,271,honda,honda-cr-v,dlt-web-aeaaf410
 2021-10,RY1,HONDA,FREED,1,honda,,dlt-web-aeaaf410
@@ -126,7 +126,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-10,RY1,HONDA,ODYSSEY ABSOLUTE EX 2.4L,1,honda,honda-odyssey,dlt-web-aeaaf410
 2021-10,RY1,HONDA,ODYSSEY ABSOLUTE EX HYBRID,2,honda,honda-odyssey,dlt-web-aeaaf410
 2021-10,RY1,HONDA,STEP WGN e-HEV SPADA G,1,honda,honda-step-wgn,dlt-web-aeaaf410
-2021-10,RY1,HYUNDAI,GRAND STAREX,9,hyundai,,dlt-web-aeaaf410
+2021-10,RY1,HYUNDAI,GRAND STAREX,9,hyundai,hyundai-h-1,dlt-web-aeaaf410
 2021-10,RY1,ISUZU,D-MAX,3928,isuzu,isuzu-d-max,dlt-web-aeaaf410
 2021-10,RY1,ISUZU,mu-X,674,isuzu,isuzu-mu-x,dlt-web-aeaaf410
 2021-10,RY1,ISUZU,ไม่ระบุ,1,isuzu,,dlt-web-aeaaf410
@@ -379,7 +379,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-10,RY1,TOYOTA,HARRIER HYBRID Z,1,toyota,toyota-harrier,dlt-web-aeaaf410
 2021-10,RY1,TOYOTA,Hilux Revo,2277,toyota,toyota-hilux-revo,dlt-web-aeaaf410
 2021-10,RY1,TOYOTA,Innova,26,toyota,toyota-innova,dlt-web-aeaaf410
-2021-10,RY1,TOYOTA,LANDCRUISER 70PICKUP 30TH,1,toyota,,dlt-web-aeaaf410
+2021-10,RY1,TOYOTA,LANDCRUISER 70PICKUP 30TH,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2021-10,RY1,TOYOTA,LANDCRUISER PRADO 2.8,1,toyota,,dlt-web-aeaaf410
 2021-10,RY1,TOYOTA,LANDCRUISER PRADO TZG 2.8L,1,toyota,,dlt-web-aeaaf410
 2021-10,RY1,TOYOTA,NCP150R-BEPDKT AA,1,toyota,,dlt-web-aeaaf410
@@ -436,9 +436,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-10,RY3,CHEVROLET,COLORADO,1,chevrolet,,dlt-web-aeaaf410
 2021-10,RY3,CHEVROLET,COLORADO X-CAB,4,chevrolet,,dlt-web-aeaaf410
 2021-10,RY3,DAIHATSU,HIJET CARGO,1,daihatsu,,dlt-web-aeaaf410
-2021-10,RY3,FORD,FORD RANGER,1,ford,,dlt-web-aeaaf410
+2021-10,RY3,FORD,FORD RANGER,1,ford,ford-ranger,dlt-web-aeaaf410
 2021-10,RY3,FORD,RANGER,672,ford,ford-ranger,dlt-web-aeaaf410
-2021-10,RY3,FORD,RANGER MODEL UR53RAA,1,ford,,dlt-web-aeaaf410
+2021-10,RY3,FORD,RANGER MODEL UR53RAA,1,ford,ford-ranger,dlt-web-aeaaf410
 2021-10,RY3,FORD,RANGER SWB,5,ford,ford-ranger,dlt-web-aeaaf410
 2021-10,RY3,FORD,ไม่ระบุ,1,ford,,dlt-web-aeaaf410
 2021-10,RY3,FOTON,BJ1041V8JD3-RF,2,foton,,dlt-web-aeaaf410
@@ -466,5 +466,5 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-10,RY3,TOYOTA,HIACE DX ROUTE VAN,1,toyota,,dlt-web-aeaaf410
 2021-10,RY3,TOYOTA,Hiace,13,toyota,toyota-hiace,dlt-web-aeaaf410
 2021-10,RY3,TOYOTA,Hilux Revo,6502,toyota,toyota-hilux-revo,dlt-web-aeaaf410
-2021-10,RY3,TOYOTA,LAND CRUISER 79 PICK UP,1,toyota,,dlt-web-aeaaf410
+2021-10,RY3,TOYOTA,LAND CRUISER 79 PICK UP,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2021-10,RY3,TOYOTA,LN152R-CRMSSTA,1,toyota,,dlt-web-aeaaf410

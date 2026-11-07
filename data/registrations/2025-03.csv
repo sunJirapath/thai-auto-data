@@ -226,8 +226,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-03,RY1,MAZDA,MAZDA CX-5,68,mazda,mazda-cx-5,dlt-web-aeaaf410
 2025-03,RY1,MAZDA,MAZDA CX-8,20,mazda,mazda-cx-8,dlt-web-aeaaf410
 2025-03,RY1,MAZDA,MAZDA MX-5,1,mazda,mazda-mx-5,dlt-web-aeaaf410
-2025-03,RY1,MAZDA,ROADSTER,1,mazda,,dlt-web-aeaaf410
-2025-03,RY1,MAZDA,ROADSTER 990S 1.5L,1,mazda,,dlt-web-aeaaf410
+2025-03,RY1,MAZDA,ROADSTER,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2025-03,RY1,MAZDA,ROADSTER 990S 1.5L,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2025-03,RY1,MERCEDES BENZ,A 200,30,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2025-03,RY1,MERCEDES BENZ,AMG C43 4MATIC Coupe,2,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
 2025-03,RY1,MERCEDES BENZ,AMG CLE 53 4MATIC coupe,7,mercedes-benz,mercedes-benz-cle,dlt-web-aeaaf410
@@ -469,7 +469,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-03,RY1,TOYOTA,LAND CRUISER PRADO 2.7 TX-L,1,toyota,,dlt-web-aeaaf410
 2025-03,RY1,TOYOTA,LAND CRUISER PRADO TX,1,toyota,,dlt-web-aeaaf410
 2025-03,RY1,TOYOTA,LAND CRUISER ZX,5,toyota,,dlt-web-aeaaf410
-2025-03,RY1,TOYOTA,LANDCRUISER LC300 GR SPORT,1,toyota,,dlt-web-aeaaf410
+2025-03,RY1,TOYOTA,LANDCRUISER LC300 GR SPORT,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2025-03,RY1,TOYOTA,NOAH HYBRID X,1,toyota,,dlt-web-aeaaf410
 2025-03,RY1,TOYOTA,NOAH HYBRID X 2WD,4,toyota,,dlt-web-aeaaf410
 2025-03,RY1,TOYOTA,SIENTA,1,toyota,toyota-sienta,dlt-web-aeaaf410

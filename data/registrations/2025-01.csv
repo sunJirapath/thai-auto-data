@@ -217,7 +217,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-01,RY1,MAZDA,MAZDA CX-5,44,mazda,mazda-cx-5,dlt-web-aeaaf410
 2025-01,RY1,MAZDA,MAZDA CX-8,24,mazda,mazda-cx-8,dlt-web-aeaaf410
 2025-01,RY1,MAZDA,MAZDA MX-5,1,mazda,mazda-mx-5,dlt-web-aeaaf410
-2025-01,RY1,MAZDA,ROADSTER 990S 1.5L,1,mazda,,dlt-web-aeaaf410
+2025-01,RY1,MAZDA,ROADSTER 990S 1.5L,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2025-01,RY1,MCLAREN,ARTURA-COUPE,1,mclaren,,dlt-web-aeaaf410
 2025-01,RY1,MERCEDES BENZ,A 200,53,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2025-01,RY1,MERCEDES BENZ,AMG C 43 4MATIC,1,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
@@ -317,7 +317,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-01,RY1,NISSAN,KICKS,282,nissan,nissan-kicks,dlt-web-aeaaf410
 2025-01,RY1,NISSAN,NAVARA,118,nissan,nissan-navara,dlt-web-aeaaf410
 2025-01,RY1,NISSAN,SERENA,12,nissan,nissan-serena,dlt-web-aeaaf410
-2025-01,RY1,NISSAN,SERENA HYBRID 2.0 HIGHWAY STAR,1,nissan,,dlt-web-aeaaf410
+2025-01,RY1,NISSAN,SERENA HYBRID 2.0 HIGHWAY STAR,1,nissan,nissan-serena,dlt-web-aeaaf410
 2025-01,RY1,NISSAN,SYLPHY 1.6 E CVT,1,nissan,nissan-sylphy,dlt-web-aeaaf410
 2025-01,RY1,NISSAN,TERRA,68,nissan,nissan-terra,dlt-web-aeaaf410
 2025-01,RY1,OMODA,C5 EV Long Range Plus,9,omoda,omoda-c5,dlt-web-aeaaf410
@@ -454,14 +454,14 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-01,RY1,TOYOTA,LAND CRUISER 300 ZX,4,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2025-01,RY1,TOYOTA,LAND CRUISER 300 ZX 3.3L,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2025-01,RY1,TOYOTA,LAND CRUISER 70 AX,3,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
-2025-01,RY1,TOYOTA,LAND CRUISER 71 HARDTOP 4.0L,1,toyota,,dlt-web-aeaaf410
+2025-01,RY1,TOYOTA,LAND CRUISER 71 HARDTOP 4.0L,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2025-01,RY1,TOYOTA,LAND CRUISER AX,1,toyota,,dlt-web-aeaaf410
 2025-01,RY1,TOYOTA,LAND CRUISER GR SPORT,1,toyota,,dlt-web-aeaaf410
-2025-01,RY1,TOYOTA,LAND CRUISER GX 3.5L,1,toyota,,dlt-web-aeaaf410
+2025-01,RY1,TOYOTA,LAND CRUISER GX 3.5L,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2025-01,RY1,TOYOTA,LAND CRUISER PRADO 2.7 TX-L,1,toyota,,dlt-web-aeaaf410
 2025-01,RY1,TOYOTA,LAND CRUISER PRADO TX L,1,toyota,,dlt-web-aeaaf410
-2025-01,RY1,TOYOTA,LANDCRUISER LC300 GR SPORT,2,toyota,,dlt-web-aeaaf410
-2025-01,RY1,TOYOTA,LANDCRUISER LC300 SAHARA,1,toyota,,dlt-web-aeaaf410
+2025-01,RY1,TOYOTA,LANDCRUISER LC300 GR SPORT,2,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
+2025-01,RY1,TOYOTA,LANDCRUISER LC300 SAHARA,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2025-01,RY1,TOYOTA,NOAH HYBRID X,1,toyota,,dlt-web-aeaaf410
 2025-01,RY1,TOYOTA,NOAH HYBRID X 2WD,2,toyota,,dlt-web-aeaaf410
 2025-01,RY1,TOYOTA,TR TRANSFORMER,1,toyota,,dlt-web-aeaaf410
@@ -519,7 +519,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-01,RY2,NISSAN,UVL4RDRE26KWDMER9E,1,nissan,,dlt-web-aeaaf410
 2025-01,RY2,SUZUKI,CARRY 1.5L MT,10,suzuki,suzuki-carry,dlt-web-aeaaf410
 2025-01,RY2,TOYOTA,COMMUTER,476,toyota,toyota-commuter,dlt-web-aeaaf410
-2025-01,RY2,TOYOTA,COMUTER,1,toyota,,dlt-web-aeaaf410
+2025-01,RY2,TOYOTA,COMUTER,1,toyota,toyota-commuter,dlt-web-aeaaf410
 2025-01,RY2,TOYOTA,HIACE,76,toyota,toyota-hiace,dlt-web-aeaaf410
 2025-01,RY2,TOYOTA,HIACE MAJESTY,246,toyota,toyota-hiace-majesty,dlt-web-aeaaf410
 2025-01,RY2,TOYOTA,HILUX CHAMP,6,toyota,toyota-hilux-champ,dlt-web-aeaaf410
@@ -534,7 +534,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-01,RY3,DAIHATSU,HIJET CARGO,5,daihatsu,,dlt-web-aeaaf410
 2025-01,RY3,DAIHATSU,HIJET CARGO CRUISE TURBO,2,daihatsu,,dlt-web-aeaaf410
 2025-01,RY3,DFSK,EQ1020TF,1,dfsk,,dlt-web-aeaaf410
-2025-01,RY3,FORD,FORD RANGER,1,ford,,dlt-web-aeaaf410
+2025-01,RY3,FORD,FORD RANGER,1,ford,ford-ranger,dlt-web-aeaaf410
 2025-01,RY3,FORD,RANGER,128,ford,ford-ranger,dlt-web-aeaaf410
 2025-01,RY3,FORD,RANGER SWB,1,ford,ford-ranger,dlt-web-aeaaf410
 2025-01,RY3,FOTON,BJ1044EVJAR,1,foton,,dlt-web-aeaaf410
@@ -565,7 +565,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-01,RY3,TOYOTA,HIACE,21,toyota,toyota-hiace,dlt-web-aeaaf410
 2025-01,RY3,TOYOTA,HILUX CHAMP,828,toyota,toyota-hilux-champ,dlt-web-aeaaf410
 2025-01,RY3,TOYOTA,Hilux Revo,3378,toyota,toyota-hilux-revo,dlt-web-aeaaf410
-2025-01,RY3,TOYOTA,LAND CRUISER 79 PICK UP,1,toyota,,dlt-web-aeaaf410
+2025-01,RY3,TOYOTA,LAND CRUISER 79 PICK UP,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2025-01,RY3,TOYOTA,ไม่ระบุ,1,toyota,,dlt-web-aeaaf410
 2025-01,RY3,UD TRUCKS,CWE08N43R350CSS9,1,ud-trucks,,dlt-web-aeaaf410
 2025-01,RY3,UD TRUCKS,PKE250CHLRM,3,ud-trucks,,dlt-web-aeaaf410

@@ -4637,6 +4637,7 @@ period,category,kind,id,units
 2024-09,RY1,m,toyota-corolla-cross,6
 2024-09,RY1,m,toyota-fortuner,3
 2024-09,RY1,m,toyota-hilux-revo,18
+2024-09,RY1,m,toyota-land-cruiser-300,1
 2024-09,RY1,m,toyota-veloz,2
 2024-09,RY1,m,toyota-yaris,4
 2024-09,RY1,m,toyota-yaris-ativ,21
@@ -6474,6 +6475,7 @@ period,category,kind,id,units
 2026-03,RY3,bf,toyota|diesel,23
 2026-03,RY3,f,diesel,35
 2026-03,RY3,f,petrol,1
+2026-03,RY3,m,ford-ranger,1
 2026-03,RY3,m,isuzu-d-max,10
 2026-03,RY3,m,mitsubishi-triton,1
 2026-03,RY3,m,suzuki-carry,1

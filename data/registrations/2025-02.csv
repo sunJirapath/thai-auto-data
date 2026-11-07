@@ -123,7 +123,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-02,RY1,DENZA,DENZA D9 FWD,167,denza,denza-d9,dlt-web-aeaaf410
 2025-02,RY1,FERRARI,296 GTS,1,ferrari,,dlt-web-aeaaf410
 2025-02,RY1,FORD,EVEREST,743,ford,ford-everest,dlt-web-aeaaf410
-2025-02,RY1,FORD,FORD RANGER,1,ford,,dlt-web-aeaaf410
+2025-02,RY1,FORD,FORD RANGER,1,ford,ford-ranger,dlt-web-aeaaf410
 2025-02,RY1,FORD,MUSTANG,2,ford,ford-mustang,dlt-web-aeaaf410
 2025-02,RY1,FORD,MUSTANG ECOBOOST 2.3,1,ford,ford-mustang,dlt-web-aeaaf410
 2025-02,RY1,FORD,RANGER,796,ford,ford-ranger,dlt-web-aeaaf410
@@ -144,7 +144,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-02,RY1,HONDA,CIVIC TYPE R,7,honda,honda-civic-type-r,dlt-web-aeaaf410
 2025-02,RY1,HONDA,CR-V,658,honda,honda-cr-v,dlt-web-aeaaf410
 2025-02,RY1,HONDA,HR-V,2060,honda,honda-hr-v,dlt-web-aeaaf410
-2025-02,RY1,HONDA,JAZZ HYBRID'12,1,honda,,dlt-web-aeaaf410
+2025-02,RY1,HONDA,JAZZ HYBRID'12,1,honda,honda-jazz,dlt-web-aeaaf410
 2025-02,RY1,HONDA,MOBILIO,1,honda,,dlt-web-aeaaf410
 2025-02,RY1,HONDA,N VAN TEN STYLE FUN,1,honda,,dlt-web-aeaaf410
 2025-02,RY1,HONDA,ODYSSEY e-HEV ABSOLUTE EX,2,honda,honda-odyssey,dlt-web-aeaaf410
@@ -207,9 +207,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-02,RY1,MAZDA,MAZDA CX-30,88,mazda,mazda-cx-30,dlt-web-aeaaf410
 2025-02,RY1,MAZDA,MAZDA CX-5,96,mazda,mazda-cx-5,dlt-web-aeaaf410
 2025-02,RY1,MAZDA,MAZDA CX-8,17,mazda,mazda-cx-8,dlt-web-aeaaf410
-2025-02,RY1,MAZDA,MX-5 ROADSTER BROWN TOP,1,mazda,,dlt-web-aeaaf410
-2025-02,RY1,MAZDA,ROADSTER 990S,2,mazda,,dlt-web-aeaaf410
-2025-02,RY1,MAZDA,ROADSTER S LEATHER PACKAGE,1,mazda,,dlt-web-aeaaf410
+2025-02,RY1,MAZDA,MX-5 ROADSTER BROWN TOP,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2025-02,RY1,MAZDA,ROADSTER 990S,2,mazda,mazda-mx-5,dlt-web-aeaaf410
+2025-02,RY1,MAZDA,ROADSTER S LEATHER PACKAGE,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2025-02,RY1,MAZDA,RX-7 SPIRIT R TYPE A,1,mazda,,dlt-web-aeaaf410
 2025-02,RY1,MCLAREN,ARTURA COUPE,1,mclaren,,dlt-web-aeaaf410
 2025-02,RY1,MERCEDES BENZ,A 200,43,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
@@ -517,7 +517,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-02,RY3,BYD,T3,5,byd,byd-t3,dlt-web-aeaaf410
 2025-02,RY3,DAIHATSU,HIJET CARGO,10,daihatsu,,dlt-web-aeaaf410
 2025-02,RY3,DAIHATSU,HIJET TRUCK JUMBO EXTRA,1,daihatsu,,dlt-web-aeaaf410
-2025-02,RY3,FORD,FORD RANGER,1,ford,,dlt-web-aeaaf410
+2025-02,RY3,FORD,FORD RANGER,1,ford,ford-ranger,dlt-web-aeaaf410
 2025-02,RY3,FORD,RANGER,125,ford,ford-ranger,dlt-web-aeaaf410
 2025-02,RY3,FORD,RANGER SWB,1,ford,ford-ranger,dlt-web-aeaaf410
 2025-02,RY3,FOTON,BJ1031EVJA3,11,foton,,dlt-web-aeaaf410
@@ -543,6 +543,6 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-02,RY3,TOYOTA,HIACE,7,toyota,toyota-hiace,dlt-web-aeaaf410
 2025-02,RY3,TOYOTA,HILUX CHAMP,694,toyota,toyota-hilux-champ,dlt-web-aeaaf410
 2025-02,RY3,TOYOTA,HILUX REVO,4226,toyota,toyota-hilux-revo,dlt-web-aeaaf410
-2025-02,RY3,TOYOTA,LANDCRUISER SINGLE CAB LC79,1,toyota,,dlt-web-aeaaf410
+2025-02,RY3,TOYOTA,LANDCRUISER SINGLE CAB LC79,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2025-02,RY3,UD TRUCKS,PKE250CELRM,1,ud-trucks,,dlt-web-aeaaf410
 2025-02,RY3,VOLVO,FMX1364R56420CLHI,1,volvo,,dlt-web-aeaaf410

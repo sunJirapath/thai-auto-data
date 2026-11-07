@@ -100,8 +100,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-01,RY1,FERRARI,F8 SPIDER,1,ferrari,,dlt-web-aeaaf410
 2022-01,RY1,FERRARI,F8 TRIBUTO,3,ferrari,,dlt-web-aeaaf410
 2022-01,RY1,FORD,EVEREST,426,ford,ford-everest,dlt-web-aeaaf410
-2022-01,RY1,FORD,FORD EVEREST zFAE9GD,1,ford,,dlt-web-aeaaf410
-2022-01,RY1,FORD,FORD EVEREST zJAE9BC,1,ford,,dlt-web-aeaaf410
+2022-01,RY1,FORD,FORD EVEREST zFAE9GD,1,ford,ford-everest,dlt-web-aeaaf410
+2022-01,RY1,FORD,FORD EVEREST zJAE9BC,1,ford,ford-everest,dlt-web-aeaaf410
 2022-01,RY1,FORD,FORD RANGER iJBW9AR,1,ford,,dlt-web-aeaaf410
 2022-01,RY1,FORD,FORD RANGER iJBW9B4,1,ford,,dlt-web-aeaaf410
 2022-01,RY1,FORD,Focus,1,ford,,dlt-web-aeaaf410
@@ -132,7 +132,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-01,RY1,HONDA,CIVIC TYPE R GT,1,honda,honda-civic-type-r,dlt-web-aeaaf410
 2022-01,RY1,HONDA,CR-V,437,honda,honda-cr-v,dlt-web-aeaaf410
 2022-01,RY1,HONDA,HR-V,637,honda,honda-hr-v,dlt-web-aeaaf410
-2022-01,RY1,HONDA,HR-V'15,1,honda,,dlt-web-aeaaf410
+2022-01,RY1,HONDA,HR-V'15,1,honda,honda-hr-v,dlt-web-aeaaf410
 2022-01,RY1,HONDA,JAZZ,781,honda,honda-jazz,dlt-web-aeaaf410
 2022-01,RY1,HONDA,MOBILIO,12,honda,,dlt-web-aeaaf410
 2022-01,RY1,HONDA,N BOX CUSTOM L TURBO,1,honda,,dlt-web-aeaaf410
@@ -146,7 +146,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-01,RY1,HONDA,STEPWAGON SPADA2.0 HYBRID,1,honda,honda-step-wgn,dlt-web-aeaaf410
 2022-01,RY1,HONDA,STEPWGN SPADA HYBRID G,1,honda,honda-step-wgn,dlt-web-aeaaf410
 2022-01,RY1,HONDA,STEPWGN e:HEV SPADA G EX,2,honda,honda-step-wgn,dlt-web-aeaaf410
-2022-01,RY1,HYUNDAI,GRAND STAREX,2,hyundai,,dlt-web-aeaaf410
+2022-01,RY1,HYUNDAI,GRAND STAREX,2,hyundai,hyundai-h-1,dlt-web-aeaaf410
 2022-01,RY1,ISUZU,D-MAX,7327,isuzu,isuzu-d-max,dlt-web-aeaaf410
 2022-01,RY1,ISUZU,mu-X,1374,isuzu,isuzu-mu-x,dlt-web-aeaaf410
 2022-01,RY1,ISUZU,ไม่ระบุ,2,isuzu,,dlt-web-aeaaf410
@@ -469,6 +469,6 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-01,RY3,TOYOTA,Hiace,85,toyota,toyota-hiace,dlt-web-aeaaf410
 2022-01,RY3,TOYOTA,Hilux Revo,9694,toyota,toyota-hilux-revo,dlt-web-aeaaf410
 2022-01,RY3,TOYOTA,KDH222R-LEMDYT A1,1,toyota,,dlt-web-aeaaf410
-2022-01,RY3,TOYOTA,LAND CRUISER 79 PICK UP 4.2,2,toyota,,dlt-web-aeaaf410
+2022-01,RY3,TOYOTA,LAND CRUISER 79 PICK UP 4.2,2,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2022-01,RY3,UD TRUCKS,PKE250ELRM,1,ud-trucks,,dlt-web-aeaaf410
 2022-01,RY3,WULING,GXA5032XXYEV,1,wuling,,dlt-web-aeaaf410

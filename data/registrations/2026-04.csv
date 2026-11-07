@@ -125,7 +125,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-04,RY1,FERRARI,296 GTS,2,ferrari,,dlt-web-aeaaf410
 2026-04,RY1,FERRARI,PUROSANGUE,1,ferrari,,dlt-web-aeaaf410
 2026-04,RY1,FORD,EVEREST,554,ford,ford-everest,dlt-web-aeaaf410
-2026-04,RY1,FORD,FORD EVEREST zFAE9BC,1,ford,,dlt-web-aeaaf410
+2026-04,RY1,FORD,FORD EVEREST zFAE9BC,1,ford,ford-everest,dlt-web-aeaaf410
 2026-04,RY1,FORD,MUSTANG,1,ford,ford-mustang,dlt-web-aeaaf410
 2026-04,RY1,FORD,RANGER,536,ford,ford-ranger,dlt-web-aeaaf410
 2026-04,RY1,FORD,RANGER RAPTOR,103,ford,ford-ranger-raptor,dlt-web-aeaaf410
@@ -225,8 +225,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-04,RY1,MAZDA,MAZDA CX-30,110,mazda,mazda-cx-30,dlt-web-aeaaf410
 2026-04,RY1,MAZDA,MAZDA CX-5,35,mazda,mazda-cx-5,dlt-web-aeaaf410
 2026-04,RY1,MAZDA,MAZDA CX-8,9,mazda,mazda-cx-8,dlt-web-aeaaf410
-2026-04,RY1,MAZDA,ROADSTER 35TH ANNIVERSARY,1,mazda,,dlt-web-aeaaf410
-2026-04,RY1,MAZDA,ROADSTER RF 35TH ANNIVERSARY,1,mazda,,dlt-web-aeaaf410
+2026-04,RY1,MAZDA,ROADSTER 35TH ANNIVERSARY,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2026-04,RY1,MAZDA,ROADSTER RF 35TH ANNIVERSARY,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2026-04,RY1,MERCEDES BENZ,A 200,11,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2026-04,RY1,MERCEDES BENZ,AMG C 43 4MATIC,1,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
 2026-04,RY1,MERCEDES BENZ,AMG CLE 53 4MATIC coupe,7,mercedes-benz,mercedes-benz-cle,dlt-web-aeaaf410
@@ -444,8 +444,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-04,RY1,TOYOTA,CROWN SPORT Z 2.5L,1,toyota,toyota-crown-sport,dlt-web-aeaaf410
 2026-04,RY1,TOYOTA,Corolla,97,toyota,toyota-corolla,dlt-web-aeaaf410
 2026-04,RY1,TOYOTA,Fortuner,1381,toyota,toyota-fortuner,dlt-web-aeaaf410
-2026-04,RY1,TOYOTA,GR 86 RZ,1,toyota,,dlt-web-aeaaf410
-2026-04,RY1,TOYOTA,GR 86 RZ 2.4L,1,toyota,,dlt-web-aeaaf410
+2026-04,RY1,TOYOTA,GR 86 RZ,1,toyota,toyota-gr86,dlt-web-aeaaf410
+2026-04,RY1,TOYOTA,GR 86 RZ 2.4L,1,toyota,toyota-gr86,dlt-web-aeaaf410
 2026-04,RY1,TOYOTA,GR COROLLA RZ AT,1,toyota,,dlt-web-aeaaf410
 2026-04,RY1,TOYOTA,GR SUPRA,1,toyota,toyota-gr-supra,dlt-web-aeaaf410
 2026-04,RY1,TOYOTA,GR SUPRA RZ 3.0,1,toyota,toyota-gr-supra,dlt-web-aeaaf410

@@ -241,9 +241,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-05,RY1,MAZDA,MAZDA CX-30,107,mazda,mazda-cx-30,dlt-web-aeaaf410
 2026-05,RY1,MAZDA,MAZDA CX-5,48,mazda,mazda-cx-5,dlt-web-aeaaf410
 2026-05,RY1,MAZDA,MAZDA CX-8,10,mazda,mazda-cx-8,dlt-web-aeaaf410
-2026-05,RY1,MAZDA,ROADSTER S LEATHER PACKAGE,2,mazda,,dlt-web-aeaaf410
-2026-05,RY1,MAZDA,ROADSTER S SPECIAL PACKAGE,1,mazda,,dlt-web-aeaaf410
-2026-05,RY1,MAZDA,ROADSTER SPIRIT RACING 12R,2,mazda,,dlt-web-aeaaf410
+2026-05,RY1,MAZDA,ROADSTER S LEATHER PACKAGE,2,mazda,mazda-mx-5,dlt-web-aeaaf410
+2026-05,RY1,MAZDA,ROADSTER S SPECIAL PACKAGE,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2026-05,RY1,MAZDA,ROADSTER SPIRIT RACING 12R,2,mazda,mazda-mx-5,dlt-web-aeaaf410
 2026-05,RY1,MCLAREN,ARTURA SPIDER,1,mclaren,,dlt-web-aeaaf410
 2026-05,RY1,MERCEDES BENZ,A 200,20,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2026-05,RY1,MERCEDES BENZ,AMG C 43 4MATIC,1,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
@@ -327,7 +327,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-05,RY1,MITSUBISHI,XPANDER CROSS HEV,456,mitsubishi,mitsubishi-xpander-cross,dlt-web-aeaaf410
 2026-05,RY1,MITSUBISHI,XPANDER HEV,116,mitsubishi,mitsubishi-xpander,dlt-web-aeaaf410
 2026-05,RY1,NETA,NETA V-II,22,neta,neta-v-ii,dlt-web-aeaaf410
-2026-05,RY1,NIO,firefly,6,nio,,dlt-web-aeaaf410
+2026-05,RY1,NIO,firefly,6,nio,nio-firefly,dlt-web-aeaaf410
 2026-05,RY1,NISSAN,ALMERA,156,nissan,nissan-almera,dlt-web-aeaaf410
 2026-05,RY1,NISSAN,GT-R BLACK EDITION,1,nissan,nissan-gt-r,dlt-web-aeaaf410
 2026-05,RY1,NISSAN,KICKS,99,nissan,nissan-kicks,dlt-web-aeaaf410
@@ -486,7 +486,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-05,RY1,TOYOTA,YARIS,308,toyota,toyota-yaris,dlt-web-aeaaf410
 2026-05,RY1,TOYOTA,YARIS ATIV,5716,toyota,toyota-yaris-ativ,dlt-web-aeaaf410
 2026-05,RY1,TOYOTA,YARIS CROSS,3139,toyota,toyota-yaris-cross,dlt-web-aeaaf410
-2026-05,RY1,TOYOTA,YARIS GRMN CIRCUIT PACKAGE,1,toyota,,dlt-web-aeaaf410
+2026-05,RY1,TOYOTA,YARIS GRMN CIRCUIT PACKAGE,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
 2026-05,RY1,VOLKSWAGEN,CADDY MAXI 1.5 TSI,1,volkswagen,,dlt-web-aeaaf410
 2026-05,RY1,VOLKSWAGEN,ID BUZZ,2,volkswagen,,dlt-web-aeaaf410
 2026-05,RY1,VOLKSWAGEN,T-CROSS STYLE 1.0 TSI,1,volkswagen,,dlt-web-aeaaf410
@@ -579,7 +579,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-05,RY3,TOYOTA,HILUX CHAMP,550,toyota,toyota-hilux-champ,dlt-web-aeaaf410
 2026-05,RY3,TOYOTA,HILUX REVO,1854,toyota,toyota-hilux-revo,dlt-web-aeaaf410
 2026-05,RY3,TOYOTA,HILUX TRAVO,1313,toyota,toyota-hilux-travo,dlt-web-aeaaf410
-2026-05,RY3,TOYOTA,LAND CRUISER 79 PICK UP 4.2,1,toyota,,dlt-web-aeaaf410
+2026-05,RY3,TOYOTA,LAND CRUISER 79 PICK UP 4.2,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2026-05,RY3,UD TRUCKS,CWE08N43R280CSS9,1,ud-trucks,,dlt-web-aeaaf410
 2026-05,RY3,UD TRUCKS,CWE11N43R410CSSI,1,ud-trucks,,dlt-web-aeaaf410
 2026-05,RY3,UD TRUCKS,PKE250CELRM,1,ud-trucks,,dlt-web-aeaaf410

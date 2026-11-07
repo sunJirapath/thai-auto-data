@@ -96,9 +96,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-08,RY1,FIAT,ABARTH 595 COMPETIZIONE,1,fiat,,dlt-web-aeaaf410
 2021-08,RY1,FOMM,FOMM ONE,5,fomm,,dlt-web-aeaaf410
 2021-08,RY1,FORD,EVEREST,366,ford,ford-everest,dlt-web-aeaaf410
-2021-08,RY1,FORD,FORD EVEREST zJAE9BC,2,ford,,dlt-web-aeaaf410
-2021-08,RY1,FORD,FORD EVEREST zJAE9GD,1,ford,,dlt-web-aeaaf410
-2021-08,RY1,FORD,FORD RANGER,1,ford,,dlt-web-aeaaf410
+2021-08,RY1,FORD,FORD EVEREST zJAE9BC,2,ford,ford-everest,dlt-web-aeaaf410
+2021-08,RY1,FORD,FORD EVEREST zJAE9GD,1,ford,ford-everest,dlt-web-aeaaf410
+2021-08,RY1,FORD,FORD RANGER,1,ford,ford-ranger,dlt-web-aeaaf410
 2021-08,RY1,FORD,Focus,1,ford,,dlt-web-aeaaf410
 2021-08,RY1,FORD,MUSTANG,5,ford,ford-mustang,dlt-web-aeaaf410
 2021-08,RY1,FORD,MUSTANG 2.3 ECOBOOST,1,ford,ford-mustang,dlt-web-aeaaf410
@@ -137,7 +137,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-08,RY1,HONDA,STEPWAGON SPADA2.0 HYBRID,1,honda,honda-step-wgn,dlt-web-aeaaf410
 2021-08,RY1,HONDA,STEPWGN SPADA HYBRID G-EX,2,honda,honda-step-wgn,dlt-web-aeaaf410
 2021-08,RY1,HONDA,STEPWGN e:HEV SPADA G EX,1,honda,honda-step-wgn,dlt-web-aeaaf410
-2021-08,RY1,HYUNDAI,GRAND STAREX,10,hyundai,,dlt-web-aeaaf410
+2021-08,RY1,HYUNDAI,GRAND STAREX,10,hyundai,hyundai-h-1,dlt-web-aeaaf410
 2021-08,RY1,ISUZU,D-MAX,4564,isuzu,isuzu-d-max,dlt-web-aeaaf410
 2021-08,RY1,ISUZU,mu-X,1154,isuzu,isuzu-mu-x,dlt-web-aeaaf410
 2021-08,RY1,JAGUAR,F-TYPE 2.0L T/C RWD AUTO,1,jaguar,,dlt-web-aeaaf410
@@ -391,7 +391,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-08,RY1,TOYOTA,KUN61R-NKASYT  A8,1,toyota,,dlt-web-aeaaf410
 2021-08,RY1,TOYOTA,LAND CRUISER PRADO TZ-G,1,toyota,,dlt-web-aeaaf410
 2021-08,RY1,TOYOTA,LANDCRUISER PRADO 2.8 TZG,1,toyota,,dlt-web-aeaaf410
-2021-08,RY1,TOYOTA,LANDCRUISER70 30TH ANNIVERSARY,1,toyota,,dlt-web-aeaaf410
+2021-08,RY1,TOYOTA,LANDCRUISER70 30TH ANNIVERSARY,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2021-08,RY1,TOYOTA,SUPRA,2,toyota,toyota-gr-supra,dlt-web-aeaaf410
 2021-08,RY1,TOYOTA,Sienta,95,toyota,toyota-sienta,dlt-web-aeaaf410
 2021-08,RY1,TOYOTA,TR TRANSFORMER,12,toyota,,dlt-web-aeaaf410
@@ -450,10 +450,10 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-08,RY3,CHEVROLET,COLORADO,1,chevrolet,,dlt-web-aeaaf410
 2021-08,RY3,CHEVROLET,COLORADO X-CAB,11,chevrolet,,dlt-web-aeaaf410
 2021-08,RY3,DOUZ,ไม่ระบุ,1,douz,,dlt-web-aeaaf410
-2021-08,RY3,FORD,FORD RANGER,2,ford,,dlt-web-aeaaf410
+2021-08,RY3,FORD,FORD RANGER,2,ford,ford-ranger,dlt-web-aeaaf410
 2021-08,RY3,FORD,RANGER,964,ford,ford-ranger,dlt-web-aeaaf410
 2021-08,RY3,FORD,RANGER SWB,7,ford,ford-ranger,dlt-web-aeaaf410
-2021-08,RY3,FORD,RANGER UL88RAA,1,ford,,dlt-web-aeaaf410
+2021-08,RY3,FORD,RANGER UL88RAA,1,ford,ford-ranger,dlt-web-aeaaf410
 2021-08,RY3,FORD,ไม่ระบุ,5,ford,,dlt-web-aeaaf410
 2021-08,RY3,FOTON,BJ1041V8JD3-RF,7,foton,,dlt-web-aeaaf410
 2021-08,RY3,HINO,FG8JF1D-JJT,2,hino,,dlt-web-aeaaf410

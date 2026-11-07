@@ -91,8 +91,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-12,RY1,FIAT,500 LA PRIMA,1,fiat,,dlt-web-aeaaf410
 2021-12,RY1,FOMM,FOMM ONE,2,fomm,,dlt-web-aeaaf410
 2021-12,RY1,FORD,EVEREST,322,ford,ford-everest,dlt-web-aeaaf410
-2021-12,RY1,FORD,FORD EVEREST zFAE9GD,1,ford,,dlt-web-aeaaf410
-2021-12,RY1,FORD,FORD RANGER,3,ford,,dlt-web-aeaaf410
+2021-12,RY1,FORD,FORD EVEREST zFAE9GD,1,ford,ford-everest,dlt-web-aeaaf410
+2021-12,RY1,FORD,FORD RANGER,3,ford,ford-ranger,dlt-web-aeaaf410
 2021-12,RY1,FORD,FORD RANGER iFBW9B4,1,ford,,dlt-web-aeaaf410
 2021-12,RY1,FORD,FORD RANGER iJBW9B4,1,ford,,dlt-web-aeaaf410
 2021-12,RY1,FORD,MUSTANG,4,ford,ford-mustang,dlt-web-aeaaf410
@@ -124,7 +124,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-12,RY1,HONDA,STEPWAGON SPADA HYBRID EHEV G,1,honda,honda-step-wgn,dlt-web-aeaaf410
 2021-12,RY1,HONDA,STEPWAGON SPADA2.0 HYBRID,1,honda,honda-step-wgn,dlt-web-aeaaf410
 2021-12,RY1,HONDA,STEPWGN SPADA HYBRID G-EX,1,honda,honda-step-wgn,dlt-web-aeaaf410
-2021-12,RY1,HYUNDAI,GRAND STAREX,4,hyundai,,dlt-web-aeaaf410
+2021-12,RY1,HYUNDAI,GRAND STAREX,4,hyundai,hyundai-h-1,dlt-web-aeaaf410
 2021-12,RY1,ISUZU,D-MAX,4506,isuzu,isuzu-d-max,dlt-web-aeaaf410
 2021-12,RY1,ISUZU,mu-X,782,isuzu,isuzu-mu-x,dlt-web-aeaaf410
 2021-12,RY1,ISUZU,ไม่ระบุ,2,isuzu,,dlt-web-aeaaf410
@@ -245,7 +245,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-12,RY1,NISSAN,MARCH,112,nissan,nissan-march,dlt-web-aeaaf410
 2021-12,RY1,NISSAN,NAVARA,128,nissan,nissan-navara,dlt-web-aeaaf410
 2021-12,RY1,NISSAN,NOTE,128,nissan,nissan-note,dlt-web-aeaaf410
-2021-12,RY1,NISSAN,SERENA HYBRID 2.0 HIGHWAY,1,nissan,,dlt-web-aeaaf410
+2021-12,RY1,NISSAN,SERENA HYBRID 2.0 HIGHWAY,1,nissan,nissan-serena,dlt-web-aeaaf410
 2021-12,RY1,NISSAN,SKYLINE GT-R V SPEC,1,nissan,,dlt-web-aeaaf410
 2021-12,RY1,NISSAN,SKYLINE GT-R V SPEC II NUR,1,nissan,,dlt-web-aeaaf410
 2021-12,RY1,NISSAN,SYLPHY 1.6 E CVT,2,nissan,nissan-sylphy,dlt-web-aeaaf410
@@ -431,7 +431,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-12,RY3,HINO,FM8JN1D-SGT,3,hino,,dlt-web-aeaaf410
 2021-12,RY3,HINO,XZU600R-HKMLKT3,82,hino,,dlt-web-aeaaf410
 2021-12,RY3,ISUZU,D-MAX,5365,isuzu,isuzu-d-max,dlt-web-aeaaf410
-2021-12,RY3,ISUZU,D-MAX New Style,1,isuzu,,dlt-web-aeaaf410
+2021-12,RY3,ISUZU,D-MAX New Style,1,isuzu,isuzu-d-max,dlt-web-aeaaf410
 2021-12,RY3,ISUZU,mu-X,1,isuzu,isuzu-mu-x,dlt-web-aeaaf410
 2021-12,RY3,ISUZU,ไม่ระบุ,245,isuzu,,dlt-web-aeaaf410
 2021-12,RY3,JMC,JX1032DBR,1,jmc,,dlt-web-aeaaf410

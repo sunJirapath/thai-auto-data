@@ -123,14 +123,14 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-03,RY1,FIAT,ABARTH 595 PISTA,1,fiat,,dlt-web-aeaaf410
 2021-03,RY1,FOMM,FOMM ONE,6,fomm,,dlt-web-aeaaf410
 2021-03,RY1,FORD,EVEREST,563,ford,ford-everest,dlt-web-aeaaf410
-2021-03,RY1,FORD,FORD EVEREST zFAE9GD,2,ford,,dlt-web-aeaaf410
-2021-03,RY1,FORD,FORD EVEREST zJAE9BC,5,ford,,dlt-web-aeaaf410
-2021-03,RY1,FORD,FORD EVEREST zJAE9GD,2,ford,,dlt-web-aeaaf410
-2021-03,RY1,FORD,FORD RANGER,3,ford,,dlt-web-aeaaf410
+2021-03,RY1,FORD,FORD EVEREST zFAE9GD,2,ford,ford-everest,dlt-web-aeaaf410
+2021-03,RY1,FORD,FORD EVEREST zJAE9BC,5,ford,ford-everest,dlt-web-aeaaf410
+2021-03,RY1,FORD,FORD EVEREST zJAE9GD,2,ford,ford-everest,dlt-web-aeaaf410
+2021-03,RY1,FORD,FORD RANGER,3,ford,ford-ranger,dlt-web-aeaaf410
 2021-03,RY1,FORD,FORD RANGER iFBT9AR,1,ford,,dlt-web-aeaaf410
 2021-03,RY1,FORD,FORD RANGER iFBW9AR,1,ford,,dlt-web-aeaaf410
 2021-03,RY1,FORD,Ford Ecosport,1,ford,,dlt-web-aeaaf410
-2021-03,RY1,FORD,Ford Everest,1,ford,,dlt-web-aeaaf410
+2021-03,RY1,FORD,Ford Everest,1,ford,ford-everest,dlt-web-aeaaf410
 2021-03,RY1,FORD,Ford Fiesta,1,ford,,dlt-web-aeaaf410
 2021-03,RY1,FORD,MUSTANG,4,ford,ford-mustang,dlt-web-aeaaf410
 2021-03,RY1,FORD,MUSTANG 2.3 ECOBOOST,2,ford,ford-mustang,dlt-web-aeaaf410
@@ -143,18 +143,18 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-03,RY1,FOTON,TUNLAND DC 4X2 S PREMIUM,5,foton,,dlt-web-aeaaf410
 2021-03,RY1,HONDA,ACCORD,188,honda,honda-accord,dlt-web-aeaaf410
 2021-03,RY1,HONDA,ACCORD HYBRID,291,honda,honda-accord,dlt-web-aeaaf410
-2021-03,RY1,HONDA,ACCORD'14,1,honda,,dlt-web-aeaaf410
+2021-03,RY1,HONDA,ACCORD'14,1,honda,honda-accord,dlt-web-aeaaf410
 2021-03,RY1,HONDA,BR-V,212,honda,honda-br-v,dlt-web-aeaaf410
 2021-03,RY1,HONDA,BRIO AMAZE,1,honda,,dlt-web-aeaaf410
 2021-03,RY1,HONDA,CITY,3298,honda,honda-city,dlt-web-aeaaf410
 2021-03,RY1,HONDA,CITY HATCHBACK,1181,honda,honda-city-hatchback,dlt-web-aeaaf410
 2021-03,RY1,HONDA,CIVIC,1701,honda,honda-civic,dlt-web-aeaaf410
 2021-03,RY1,HONDA,CR-V,687,honda,honda-cr-v,dlt-web-aeaaf410
-2021-03,RY1,HONDA,CR-V'10,1,honda,,dlt-web-aeaaf410
+2021-03,RY1,HONDA,CR-V'10,1,honda,honda-cr-v,dlt-web-aeaaf410
 2021-03,RY1,HONDA,E ADVANCE,3,honda,,dlt-web-aeaaf410
 2021-03,RY1,HONDA,HR-V,701,honda,honda-hr-v,dlt-web-aeaaf410
 2021-03,RY1,HONDA,JAZZ,1242,honda,honda-jazz,dlt-web-aeaaf410
-2021-03,RY1,HONDA,JAZZ'15,2,honda,,dlt-web-aeaaf410
+2021-03,RY1,HONDA,JAZZ'15,2,honda,honda-jazz,dlt-web-aeaaf410
 2021-03,RY1,HONDA,MOBILIO,28,honda,,dlt-web-aeaaf410
 2021-03,RY1,HONDA,N-BOX CUSTOM G-L TURBO,1,honda,,dlt-web-aeaaf410
 2021-03,RY1,HONDA,S660 CVT TURBO,1,honda,,dlt-web-aeaaf410
@@ -162,7 +162,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-03,RY1,HONDA,STEP WGN E HEV SPADA G EX,1,honda,honda-step-wgn,dlt-web-aeaaf410
 2021-03,RY1,HONDA,STEPWAGON SPADA HYBRID,2,honda,honda-step-wgn,dlt-web-aeaaf410
 2021-03,RY1,HONDA,STEPWAGON SPADA HYBRID EHEV G,1,honda,honda-step-wgn,dlt-web-aeaaf410
-2021-03,RY1,HYUNDAI,GRAND STAREX,12,hyundai,,dlt-web-aeaaf410
+2021-03,RY1,HYUNDAI,GRAND STAREX,12,hyundai,hyundai-h-1,dlt-web-aeaaf410
 2021-03,RY1,HYUNDAI,IONIQ EV,1,hyundai,,dlt-web-aeaaf410
 2021-03,RY1,ISUZU,D-MAX,7885,isuzu,isuzu-d-max,dlt-web-aeaaf410
 2021-03,RY1,ISUZU,mu-X,1939,isuzu,isuzu-mu-x,dlt-web-aeaaf410
@@ -315,7 +315,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-03,RY1,NISSAN,MARCH,321,nissan,nissan-march,dlt-web-aeaaf410
 2021-03,RY1,NISSAN,NAVARA,346,nissan,nissan-navara,dlt-web-aeaaf410
 2021-03,RY1,NISSAN,NOTE,286,nissan,nissan-note,dlt-web-aeaaf410
-2021-03,RY1,NISSAN,SERENA HYBRID 2.0 HIGHWAY,1,nissan,,dlt-web-aeaaf410
+2021-03,RY1,NISSAN,SERENA HYBRID 2.0 HIGHWAY,1,nissan,nissan-serena,dlt-web-aeaaf410
 2021-03,RY1,NISSAN,SYLPHY,11,nissan,nissan-sylphy,dlt-web-aeaaf410
 2021-03,RY1,NISSAN,SYLPHY 1.6 E CVT,1,nissan,nissan-sylphy,dlt-web-aeaaf410
 2021-03,RY1,NISSAN,TDWAREZE12EHA-----,1,nissan,,dlt-web-aeaaf410
@@ -542,7 +542,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2021-03,RY3,CHEVROLET,COLORADO X-CAB,33,chevrolet,,dlt-web-aeaaf410
 2021-03,RY3,DAIHATSU,HIJET CARGO,4,daihatsu,,dlt-web-aeaaf410
 2021-03,RY3,DAIHATSU,HIJET TRUCK JUMBO SAIIIt,1,daihatsu,,dlt-web-aeaaf410
-2021-03,RY3,FORD,FORD RANGER,1,ford,,dlt-web-aeaaf410
+2021-03,RY3,FORD,FORD RANGER,1,ford,ford-ranger,dlt-web-aeaaf410
 2021-03,RY3,FORD,FORD RANGER iJCT9AH,2,ford,,dlt-web-aeaaf410
 2021-03,RY3,FORD,RANGER,862,ford,ford-ranger,dlt-web-aeaaf410
 2021-03,RY3,FORD,RANGER SWB,7,ford,ford-ranger,dlt-web-aeaaf410

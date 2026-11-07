@@ -467,7 +467,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-08,RY1,TOYOTA,VOXY HYBRID SZ 1.8L,1,toyota,toyota-voxy,dlt-web-aeaaf410
 2025-08,RY1,TOYOTA,YARIS ATIV,4261,toyota,toyota-yaris-ativ,dlt-web-aeaaf410
 2025-08,RY1,TOYOTA,YARIS CROSS,2805,toyota,toyota-yaris-cross,dlt-web-aeaaf410
-2025-08,RY1,TOYOTA,YARIS GRMN CIRCUIT PACKAGE,1,toyota,,dlt-web-aeaaf410
+2025-08,RY1,TOYOTA,YARIS GRMN CIRCUIT PACKAGE,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
 2025-08,RY1,TOYOTA,Yaris,419,toyota,toyota-yaris,dlt-web-aeaaf410
 2025-08,RY1,VIAUTO,BOMA,1,viauto,,dlt-web-aeaaf410
 2025-08,RY1,VOLVO,C40,10,volvo,volvo-c40,dlt-web-aeaaf410
@@ -520,7 +520,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-08,RY3,DAIHATSU,HIJET CARGO,2,daihatsu,,dlt-web-aeaaf410
 2025-08,RY3,DAIHATSU,HIJET TRUCK JUMBO 4WD,1,daihatsu,,dlt-web-aeaaf410
 2025-08,RY3,DAIHATSU,HIJET TRUCK JUMBO EXTRA,1,daihatsu,,dlt-web-aeaaf410
-2025-08,RY3,FORD,FORD RANGER,1,ford,,dlt-web-aeaaf410
+2025-08,RY3,FORD,FORD RANGER,1,ford,ford-ranger,dlt-web-aeaaf410
 2025-08,RY3,FORD,RANGER,80,ford,ford-ranger,dlt-web-aeaaf410
 2025-08,RY3,FOTON,BJ1031EVJA3,6,foton,,dlt-web-aeaaf410
 2025-08,RY3,FOTON,BJ1044EVJAR,1,foton,,dlt-web-aeaaf410

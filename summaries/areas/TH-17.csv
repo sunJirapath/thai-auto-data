@@ -188,7 +188,7 @@ period,category,kind,id,units
 2021-03,RY1,m,honda-city-hatchback,2
 2021-03,RY1,m,honda-civic,1
 2021-03,RY1,m,honda-hr-v,2
-2021-03,RY1,m,honda-jazz,3
+2021-03,RY1,m,honda-jazz,4
 2021-03,RY1,m,isuzu-d-max,31
 2021-03,RY1,m,isuzu-mu-x,4
 2021-03,RY1,m,mazda-cx-30,1
@@ -4281,6 +4281,7 @@ period,category,kind,id,units
 2026-07,RY3,bf,ford|diesel,1
 2026-07,RY3,bf,isuzu|diesel,1
 2026-07,RY3,f,diesel,2
+2026-07,RY3,m,ford-ranger,1
 2026-07,RY3,m,isuzu-d-max,1
 2026-08,RY1,b,aion,1
 2026-08,RY1,b,bmw,1

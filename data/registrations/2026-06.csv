@@ -142,7 +142,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-06,RY1,FERRARI,F8 SPIDER,1,ferrari,,dlt-web-aeaaf410
 2026-06,RY1,FERRARI,PORTOFINO M,1,ferrari,,dlt-web-aeaaf410
 2026-06,RY1,FORD,EVEREST,547,ford,ford-everest,dlt-web-aeaaf410
-2026-06,RY1,FORD,FORD RANGER,1,ford,,dlt-web-aeaaf410
+2026-06,RY1,FORD,FORD RANGER,1,ford,ford-ranger,dlt-web-aeaaf410
 2026-06,RY1,FORD,MUSTANG,2,ford,ford-mustang,dlt-web-aeaaf410
 2026-06,RY1,FORD,MUSTANG 5.0 GT PREMIUM,1,ford,ford-mustang,dlt-web-aeaaf410
 2026-06,RY1,FORD,MUSTANG ECOBOOST 2.3,1,ford,ford-mustang,dlt-web-aeaaf410
@@ -172,7 +172,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-06,RY1,HONDA,CITY HATCHBACK,1160,honda,honda-city-hatchback,dlt-web-aeaaf410
 2026-06,RY1,HONDA,CIVIC,1123,honda,honda-civic,dlt-web-aeaaf410
 2026-06,RY1,HONDA,CIVIC TYPE R,7,honda,honda-civic-type-r,dlt-web-aeaaf410
-2026-06,RY1,HONDA,CIVIC'13,1,honda,,dlt-web-aeaaf410
+2026-06,RY1,HONDA,CIVIC'13,1,honda,honda-civic,dlt-web-aeaaf410
 2026-06,RY1,HONDA,CR-V,749,honda,honda-cr-v,dlt-web-aeaaf410
 2026-06,RY1,HONDA,E ADVANCE,1,honda,,dlt-web-aeaaf410
 2026-06,RY1,HONDA,HR-V,2172,honda,honda-hr-v,dlt-web-aeaaf410
@@ -252,11 +252,11 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-06,RY1,MAZDA,MAZDA CX-30,90,mazda,mazda-cx-30,dlt-web-aeaaf410
 2026-06,RY1,MAZDA,MAZDA CX-5,50,mazda,mazda-cx-5,dlt-web-aeaaf410
 2026-06,RY1,MAZDA,MAZDA CX-8,10,mazda,mazda-cx-8,dlt-web-aeaaf410
-2026-06,RY1,MAZDA,MAZDA3,2,mazda,,dlt-web-aeaaf410
-2026-06,RY1,MAZDA,MX-5 ROADSTER30TH ANNIVERSARY,1,mazda,,dlt-web-aeaaf410
-2026-06,RY1,MAZDA,ROADSTER S SPECIAL PACKAGE,1,mazda,,dlt-web-aeaaf410
-2026-06,RY1,MAZDA,ROADSTER SPIRIT RACING,1,mazda,,dlt-web-aeaaf410
-2026-06,RY1,MAZDA,ROADSTER SPIRIT RACING 12R,1,mazda,,dlt-web-aeaaf410
+2026-06,RY1,MAZDA,MAZDA3,2,mazda,mazda-mazda3,dlt-web-aeaaf410
+2026-06,RY1,MAZDA,MX-5 ROADSTER30TH ANNIVERSARY,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2026-06,RY1,MAZDA,ROADSTER S SPECIAL PACKAGE,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2026-06,RY1,MAZDA,ROADSTER SPIRIT RACING,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2026-06,RY1,MAZDA,ROADSTER SPIRIT RACING 12R,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2026-06,RY1,MCLAREN,750S COUPE,1,mclaren,,dlt-web-aeaaf410
 2026-06,RY1,MERCEDES BENZ,A 200,16,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2026-06,RY1,MERCEDES BENZ,AMG CLE 53 4MATIC coupe,6,mercedes-benz,mercedes-benz-cle,dlt-web-aeaaf410
@@ -341,7 +341,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-06,RY1,MITSUBISHI,ไม่ระบุ,1,mitsubishi,,dlt-web-aeaaf410
 2026-06,RY1,MORGAN,PLUS SIX SUPERSPORT,1,morgan,,dlt-web-aeaaf410
 2026-06,RY1,NETA,NETA V-II,61,neta,neta-v-ii,dlt-web-aeaaf410
-2026-06,RY1,NIO,firefly,7,nio,,dlt-web-aeaaf410
+2026-06,RY1,NIO,firefly,7,nio,nio-firefly,dlt-web-aeaaf410
 2026-06,RY1,NISSAN,ALMERA,161,nissan,nissan-almera,dlt-web-aeaaf410
 2026-06,RY1,NISSAN,GT-R PURE EDITION,1,nissan,nissan-gt-r,dlt-web-aeaaf410
 2026-06,RY1,NISSAN,KICKS,217,nissan,nissan-kicks,dlt-web-aeaaf410
@@ -465,7 +465,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-06,RY1,TOYOTA,CROWN SPORT Z THE 70TH,1,toyota,toyota-crown-sport,dlt-web-aeaaf410
 2026-06,RY1,TOYOTA,Corolla,200,toyota,toyota-corolla,dlt-web-aeaaf410
 2026-06,RY1,TOYOTA,Fortuner,1050,toyota,toyota-fortuner,dlt-web-aeaaf410
-2026-06,RY1,TOYOTA,GR 86 RZ,1,toyota,,dlt-web-aeaaf410
+2026-06,RY1,TOYOTA,GR 86 RZ,1,toyota,toyota-gr86,dlt-web-aeaaf410
 2026-06,RY1,TOYOTA,GR COROLLA,1,toyota,,dlt-web-aeaaf410
 2026-06,RY1,TOYOTA,GR SUPRA,2,toyota,toyota-gr-supra,dlt-web-aeaaf410
 2026-06,RY1,TOYOTA,GR SUPRA RZ,1,toyota,toyota-gr-supra,dlt-web-aeaaf410
@@ -494,7 +494,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-06,RY1,TOYOTA,LAND CRUISER 70 AX,5,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2026-06,RY1,TOYOTA,LAND CRUISER 70 AX 2.8L 4WD,2,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2026-06,RY1,TOYOTA,LAND CRUISER FJ,279,toyota,toyota-land-cruiser-fj,dlt-web-aeaaf410
-2026-06,RY1,TOYOTA,LANDCRUISER LC300 GR SPORT,1,toyota,,dlt-web-aeaaf410
+2026-06,RY1,TOYOTA,LANDCRUISER LC300 GR SPORT,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2026-06,RY1,TOYOTA,PRIUS HYBRID X 2WD,1,toyota,,dlt-web-aeaaf410
 2026-06,RY1,TOYOTA,VELLFIRE,17,toyota,toyota-vellfire,dlt-web-aeaaf410
 2026-06,RY1,TOYOTA,VELLFIRE 2.5 HYBRID Z PREMIER,9,toyota,toyota-vellfire,dlt-web-aeaaf410

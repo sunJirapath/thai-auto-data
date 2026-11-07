@@ -160,8 +160,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-04,RY1,MAZDA,MAZDA CX-30,338,mazda,mazda-cx-30,dlt-web-aeaaf410
 2023-04,RY1,MAZDA,MAZDA CX-5,47,mazda,mazda-cx-5,dlt-web-aeaaf410
 2023-04,RY1,MAZDA,MAZDA CX-8,88,mazda,mazda-cx-8,dlt-web-aeaaf410
-2023-04,RY1,MAZDA,MX-5 ROADSTER 990S,1,mazda,,dlt-web-aeaaf410
-2023-04,RY1,MAZDA,MX-5 ROADSTER NR-A,1,mazda,,dlt-web-aeaaf410
+2023-04,RY1,MAZDA,MX-5 ROADSTER 990S,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2023-04,RY1,MAZDA,MX-5 ROADSTER NR-A,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2023-04,RY1,MCLAREN,720S COUPE,1,mclaren,,dlt-web-aeaaf410
 2023-04,RY1,MCLAREN,720S SPIDER,1,mclaren,,dlt-web-aeaaf410
 2023-04,RY1,MCLAREN,765LT SPIDER V8 4.0L,1,mclaren,,dlt-web-aeaaf410
@@ -407,7 +407,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-04,RY1,TOYOTA,VOXY SZ HYBRID,1,toyota,toyota-voxy,dlt-web-aeaaf410
 2023-04,RY1,TOYOTA,YARIS,752,toyota,toyota-yaris,dlt-web-aeaaf410
 2023-04,RY1,TOYOTA,YARIS ATIV,5053,toyota,toyota-yaris-ativ,dlt-web-aeaaf410
-2023-04,RY1,TOYOTA,YARIS GR CIRCUIT PACK,1,toyota,,dlt-web-aeaaf410
+2023-04,RY1,TOYOTA,YARIS GR CIRCUIT PACK,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
 2023-04,RY1,TOYOTA,Yaris,2,toyota,toyota-yaris,dlt-web-aeaaf410
 2023-04,RY1,VOLVO,C40,59,volvo,volvo-c40,dlt-web-aeaaf410
 2023-04,RY1,VOLVO,S60,10,volvo,volvo-s60,dlt-web-aeaaf410
@@ -448,7 +448,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-04,RY3,CHEVROLET,COLORADO X-CAB,1,chevrolet,,dlt-web-aeaaf410
 2023-04,RY3,DAIHATSU,HIJET CARGO,12,daihatsu,,dlt-web-aeaaf410
 2023-04,RY3,DFSK,EVO-P3,1,dfsk,,dlt-web-aeaaf410
-2023-04,RY3,FORD,FORD RANGER,1,ford,,dlt-web-aeaaf410
+2023-04,RY3,FORD,FORD RANGER,1,ford,ford-ranger,dlt-web-aeaaf410
 2023-04,RY3,FORD,FORD RANGER zFEA9GD,1,ford,,dlt-web-aeaaf410
 2023-04,RY3,FORD,RANGER,364,ford,ford-ranger,dlt-web-aeaaf410
 2023-04,RY3,FORD,RANGER SWB,8,ford,ford-ranger,dlt-web-aeaaf410
@@ -457,7 +457,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-04,RY3,HINO,FG8JF1D-JJT,1,hino,,dlt-web-aeaaf410
 2023-04,RY3,HINO,XZU600R-HKMLKT3,32,hino,,dlt-web-aeaaf410
 2023-04,RY3,ISUZU,D-MAX,4642,isuzu,isuzu-d-max,dlt-web-aeaaf410
-2023-04,RY3,ISUZU,D-MAX New Style,2,isuzu,,dlt-web-aeaaf410
+2023-04,RY3,ISUZU,D-MAX New Style,2,isuzu,isuzu-d-max,dlt-web-aeaaf410
 2023-04,RY3,ISUZU,RODEO S 3.0,1,isuzu,,dlt-web-aeaaf410
 2023-04,RY3,ISUZU,ไม่ระบุ,166,isuzu,,dlt-web-aeaaf410
 2023-04,RY3,KIA,K2500,1,kia,,dlt-web-aeaaf410
@@ -470,4 +470,4 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-04,RY3,TOYOTA,HIACE,11,toyota,toyota-hiace,dlt-web-aeaaf410
 2023-04,RY3,TOYOTA,HILUX REVO,5074,toyota,toyota-hilux-revo,dlt-web-aeaaf410
 2023-04,RY3,TOYOTA,Hilux Revo,2,toyota,toyota-hilux-revo,dlt-web-aeaaf410
-2023-04,RY3,TOYOTA,LAND CRUISER 79 PICK UP 4.2,1,toyota,,dlt-web-aeaaf410
+2023-04,RY3,TOYOTA,LAND CRUISER 79 PICK UP 4.2,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410

@@ -94,7 +94,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-12,RY1,FERRARI,SF90 STRADALE,1,ferrari,,dlt-web-aeaaf410
 2022-12,RY1,FOMM,FOMM ONE,1,fomm,,dlt-web-aeaaf410
 2022-12,RY1,FORD,EVEREST,721,ford,ford-everest,dlt-web-aeaaf410
-2022-12,RY1,FORD,FORD EVEREST zJAE9BC,1,ford,,dlt-web-aeaaf410
+2022-12,RY1,FORD,FORD EVEREST zJAE9BC,1,ford,ford-everest,dlt-web-aeaaf410
 2022-12,RY1,FORD,MUSTANG,5,ford,ford-mustang,dlt-web-aeaaf410
 2022-12,RY1,FORD,MUSTANG 2.3 ECOBOOST PREMIUM,2,ford,ford-mustang,dlt-web-aeaaf410
 2022-12,RY1,FORD,MUSTANG 2.3L ECOBOOST FASTBACK,2,ford,ford-mustang,dlt-web-aeaaf410
@@ -132,7 +132,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-12,RY1,HONDA,STEPWGN e:HEV SPADA G EX,1,honda,honda-step-wgn,dlt-web-aeaaf410
 2022-12,RY1,HYUNDAI,COUNTY,1,hyundai,,dlt-web-aeaaf410
 2022-12,RY1,HYUNDAI,CRETA,28,hyundai,hyundai-creta,dlt-web-aeaaf410
-2022-12,RY1,HYUNDAI,GRAND STAREX,1,hyundai,,dlt-web-aeaaf410
+2022-12,RY1,HYUNDAI,GRAND STAREX,1,hyundai,hyundai-h-1,dlt-web-aeaaf410
 2022-12,RY1,ISUZU,D-MAX,5413,isuzu,isuzu-d-max,dlt-web-aeaaf410
 2022-12,RY1,ISUZU,mu-X,1427,isuzu,isuzu-mu-x,dlt-web-aeaaf410
 2022-12,RY1,JEEP,GLADIATOR RUBICON 4dr,1,jeep,,dlt-web-aeaaf410
@@ -252,7 +252,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-12,RY1,NISSAN,MARCH,22,nissan,nissan-march,dlt-web-aeaaf410
 2022-12,RY1,NISSAN,NAVARA,69,nissan,nissan-navara,dlt-web-aeaaf410
 2022-12,RY1,NISSAN,NOTE,8,nissan,nissan-note,dlt-web-aeaaf410
-2022-12,RY1,NISSAN,SERENA HYBRID 2.0 HIGHWAY STAR,1,nissan,,dlt-web-aeaaf410
+2022-12,RY1,NISSAN,SERENA HYBRID 2.0 HIGHWAY STAR,1,nissan,nissan-serena,dlt-web-aeaaf410
 2022-12,RY1,NISSAN,TDWARFZE12EHA-----,1,nissan,,dlt-web-aeaaf410
 2022-12,RY1,NISSAN,TERRA,63,nissan,nissan-terra,dlt-web-aeaaf410
 2022-12,RY1,ORA,GOOD CAT,252,ora,ora-good-cat,dlt-web-aeaaf410
@@ -360,7 +360,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-12,RY1,TOYOTA,Corolla,438,toyota,toyota-corolla,dlt-web-aeaaf410
 2022-12,RY1,TOYOTA,D-Cab 4X2 2.5 J W PS-M/T,1,toyota,,dlt-web-aeaaf410
 2022-12,RY1,TOYOTA,Fortuner,1576,toyota,toyota-fortuner,dlt-web-aeaaf410
-2022-12,RY1,TOYOTA,GR 86 RZ,1,toyota,,dlt-web-aeaaf410
+2022-12,RY1,TOYOTA,GR 86 RZ,1,toyota,toyota-gr86,dlt-web-aeaaf410
 2022-12,RY1,TOYOTA,GR YARIS RZ HIGH PERFORMANCE,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
 2022-12,RY1,TOYOTA,HARRIER HYBRID G,1,toyota,toyota-harrier,dlt-web-aeaaf410
 2022-12,RY1,TOYOTA,Hilux Revo,2899,toyota,toyota-hilux-revo,dlt-web-aeaaf410

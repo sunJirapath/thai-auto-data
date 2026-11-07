@@ -209,7 +209,7 @@ period,category,kind,id,units
 2021-02,RY1,m,bmw-x3,1
 2021-02,RY1,m,bmw-x5,1
 2021-02,RY1,m,bmw-z4,1
-2021-02,RY1,m,ford-everest,12
+2021-02,RY1,m,ford-everest,13
 2021-02,RY1,m,ford-ranger,42
 2021-02,RY1,m,ford-ranger-raptor,7
 2021-02,RY1,m,honda-accord,6
@@ -10382,7 +10382,7 @@ period,category,kind,id,units
 2026-04,RY1,m,deepal-s05,19
 2026-04,RY1,m,deepal-s07,10
 2026-04,RY1,m,denza-d9,1
-2026-04,RY1,m,ford-everest,24
+2026-04,RY1,m,ford-everest,25
 2026-04,RY1,m,ford-ranger,21
 2026-04,RY1,m,ford-ranger-raptor,3
 2026-04,RY1,m,geely-ex2,44

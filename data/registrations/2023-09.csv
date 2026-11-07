@@ -111,7 +111,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-09,RY1,FERRARI,SF90 STRADALE,2,ferrari,,dlt-web-aeaaf410
 2023-09,RY1,FOMM,FOMM ONE,7,fomm,,dlt-web-aeaaf410
 2023-09,RY1,FORD,EVEREST,1052,ford,ford-everest,dlt-web-aeaaf410
-2023-09,RY1,FORD,FORD EVEREST zJAE9BC,1,ford,,dlt-web-aeaaf410
+2023-09,RY1,FORD,FORD EVEREST zJAE9BC,1,ford,ford-everest,dlt-web-aeaaf410
 2023-09,RY1,FORD,Focus,1,ford,,dlt-web-aeaaf410
 2023-09,RY1,FORD,MUSTANG 2.3 ECOBOOST PREMIUM,1,ford,ford-mustang,dlt-web-aeaaf410
 2023-09,RY1,FORD,MUSTANG ECOBOOST PREMIUM,1,ford,ford-mustang,dlt-web-aeaaf410
@@ -140,7 +140,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-09,RY1,HONDA,STEPWGN e:HEV SPADA,1,honda,honda-step-wgn,dlt-web-aeaaf410
 2023-09,RY1,HONDA,WR-V,226,honda,honda-wr-v,dlt-web-aeaaf410
 2023-09,RY1,HYUNDAI,CRETA,50,hyundai,hyundai-creta,dlt-web-aeaaf410
-2023-09,RY1,HYUNDAI,GRAND STAREX,1,hyundai,,dlt-web-aeaaf410
+2023-09,RY1,HYUNDAI,GRAND STAREX,1,hyundai,hyundai-h-1,dlt-web-aeaaf410
 2023-09,RY1,HYUNDAI,KONA EV,1,hyundai,,dlt-web-aeaaf410
 2023-09,RY1,HYUNDAI,STARGAZER,178,hyundai,hyundai-stargazer,dlt-web-aeaaf410
 2023-09,RY1,ISUZU,D-MAX,4049,isuzu,isuzu-d-max,dlt-web-aeaaf410
@@ -187,8 +187,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-09,RY1,MAZDA,MAZDA CX-30,272,mazda,mazda-cx-30,dlt-web-aeaaf410
 2023-09,RY1,MAZDA,MAZDA CX-5,34,mazda,mazda-cx-5,dlt-web-aeaaf410
 2023-09,RY1,MAZDA,MAZDA CX-8,111,mazda,mazda-cx-8,dlt-web-aeaaf410
-2023-09,RY1,MAZDA,MX-5 ROADSTER S SPECIAL PACKAG,1,mazda,,dlt-web-aeaaf410
-2023-09,RY1,MAZDA,ROADSTER 990S,2,mazda,,dlt-web-aeaaf410
+2023-09,RY1,MAZDA,MX-5 ROADSTER S SPECIAL PACKAG,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2023-09,RY1,MAZDA,ROADSTER 990S,2,mazda,mazda-mx-5,dlt-web-aeaaf410
 2023-09,RY1,MCLAREN,ARTURA-COUPE,1,mclaren,,dlt-web-aeaaf410
 2023-09,RY1,MERCEDES BENZ,A 200,55,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2023-09,RY1,MERCEDES BENZ,AMG C43 4MATIC Coupe,7,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
@@ -417,7 +417,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-09,RY1,TOYOTA,Corolla,4,toyota,toyota-corolla,dlt-web-aeaaf410
 2023-09,RY1,TOYOTA,FORTUNER,1864,toyota,toyota-fortuner,dlt-web-aeaaf410
 2023-09,RY1,TOYOTA,Fortuner,6,toyota,toyota-fortuner,dlt-web-aeaaf410
-2023-09,RY1,TOYOTA,GR 86 RZ,1,toyota,,dlt-web-aeaaf410
+2023-09,RY1,TOYOTA,GR 86 RZ,1,toyota,toyota-gr86,dlt-web-aeaaf410
 2023-09,RY1,TOYOTA,GR COROLLA MORIZO EDITION,1,toyota,,dlt-web-aeaaf410
 2023-09,RY1,TOYOTA,GR SUPRA,2,toyota,toyota-gr-supra,dlt-web-aeaaf410
 2023-09,RY1,TOYOTA,GR YARIS RZ HIGH PERFORMANCE,2,toyota,toyota-gr-yaris,dlt-web-aeaaf410

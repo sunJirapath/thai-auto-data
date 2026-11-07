@@ -99,7 +99,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-09,RY1,FERRARI,ROMA,1,ferrari,,dlt-web-aeaaf410
 2022-09,RY1,FOMM,FOMM ONE,6,fomm,,dlt-web-aeaaf410
 2022-09,RY1,FORD,EVEREST,672,ford,ford-everest,dlt-web-aeaaf410
-2022-09,RY1,FORD,FORD EVEREST zFAE9BC,2,ford,,dlt-web-aeaaf410
+2022-09,RY1,FORD,FORD EVEREST zFAE9BC,2,ford,ford-everest,dlt-web-aeaaf410
 2022-09,RY1,FORD,MUSTANG,4,ford,ford-mustang,dlt-web-aeaaf410
 2022-09,RY1,FORD,MUSTANG 2.3 ECOBOOST PREMIUM,3,ford,ford-mustang,dlt-web-aeaaf410
 2022-09,RY1,FORD,MUSTANG 2.3L ECOBOOST,1,ford,ford-mustang,dlt-web-aeaaf410
@@ -115,7 +115,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-09,RY1,HAVAL,JOLION HYBRID,207,haval,haval-jolion,dlt-web-aeaaf410
 2022-09,RY1,HONDA,ACCORD,281,honda,honda-accord,dlt-web-aeaaf410
 2022-09,RY1,HONDA,ACCORD HYBRID,7,honda,honda-accord,dlt-web-aeaaf410
-2022-09,RY1,HONDA,ACCORD HYBRID'15,1,honda,,dlt-web-aeaaf410
+2022-09,RY1,HONDA,ACCORD HYBRID'15,1,honda,honda-accord,dlt-web-aeaaf410
 2022-09,RY1,HONDA,BR-V,69,honda,honda-br-v,dlt-web-aeaaf410
 2022-09,RY1,HONDA,CITY,1882,honda,honda-city,dlt-web-aeaaf410
 2022-09,RY1,HONDA,CITY HATCHBACK,1885,honda,honda-city-hatchback,dlt-web-aeaaf410
@@ -124,7 +124,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-09,RY1,HONDA,CR-V,220,honda,honda-cr-v,dlt-web-aeaaf410
 2022-09,RY1,HONDA,HR-V,1784,honda,honda-hr-v,dlt-web-aeaaf410
 2022-09,RY1,HONDA,JAZZ,51,honda,honda-jazz,dlt-web-aeaaf410
-2022-09,RY1,HONDA,JAZZ'16,1,honda,,dlt-web-aeaaf410
+2022-09,RY1,HONDA,JAZZ'16,1,honda,honda-jazz,dlt-web-aeaaf410
 2022-09,RY1,HONDA,MOBILIO,4,honda,,dlt-web-aeaaf410
 2022-09,RY1,HONDA,ODYSSEY ABSOLUTE EX HYBRID,1,honda,honda-odyssey,dlt-web-aeaaf410
 2022-09,RY1,HONDA,ODYSSEY e-HEV ABSOLUTE EX,3,honda,honda-odyssey,dlt-web-aeaaf410
@@ -136,10 +136,10 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-09,RY1,HONDA,STEPWAGON SPADA HYBRID EHEV G,3,honda,honda-step-wgn,dlt-web-aeaaf410
 2022-09,RY1,HONDA,STEPWGN e:HEV SPADA G EX,4,honda,honda-step-wgn,dlt-web-aeaaf410
 2022-09,RY1,HYUNDAI,CRETA,23,hyundai,hyundai-creta,dlt-web-aeaaf410
-2022-09,RY1,HYUNDAI,GRAND STAREX,1,hyundai,,dlt-web-aeaaf410
+2022-09,RY1,HYUNDAI,GRAND STAREX,1,hyundai,hyundai-h-1,dlt-web-aeaaf410
 2022-09,RY1,HYUNDAI,IONIQ EV,1,hyundai,,dlt-web-aeaaf410
 2022-09,RY1,ISUZU,D-MAX,10418,isuzu,isuzu-d-max,dlt-web-aeaaf410
-2022-09,RY1,ISUZU,D-MAX New Style,1,isuzu,,dlt-web-aeaaf410
+2022-09,RY1,ISUZU,D-MAX New Style,1,isuzu,isuzu-d-max,dlt-web-aeaaf410
 2022-09,RY1,ISUZU,mu-X,1869,isuzu,isuzu-mu-x,dlt-web-aeaaf410
 2022-09,RY1,ISUZU,ไม่ระบุ,2,isuzu,,dlt-web-aeaaf410
 2022-09,RY1,JAGUAR,I-PACE AWD S,1,jaguar,,dlt-web-aeaaf410
@@ -504,5 +504,5 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-09,RY3,TOYOTA,HILUX TIGER ECO 5 M/T (B-CAB),1,toyota,,dlt-web-aeaaf410
 2022-09,RY3,TOYOTA,Hiace,26,toyota,toyota-hiace,dlt-web-aeaaf410
 2022-09,RY3,TOYOTA,Hilux Revo,7214,toyota,toyota-hilux-revo,dlt-web-aeaaf410
-2022-09,RY3,TOYOTA,LAND CRUISER 79 PICK UP 4.2,1,toyota,,dlt-web-aeaaf410
-2022-09,RY3,TOYOTA,LAND CRUISER PICK UP 70TH,1,toyota,,dlt-web-aeaaf410
+2022-09,RY3,TOYOTA,LAND CRUISER 79 PICK UP 4.2,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
+2022-09,RY3,TOYOTA,LAND CRUISER PICK UP 70TH,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410

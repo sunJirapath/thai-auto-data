@@ -613,6 +613,7 @@ period,category,kind,id,units
 2021-06,RY1,m,honda-cr-v,2
 2021-06,RY1,m,honda-hr-v,5
 2021-06,RY1,m,honda-jazz,20
+2021-06,RY1,m,hyundai-h-1,1
 2021-06,RY1,m,isuzu-d-max,214
 2021-06,RY1,m,isuzu-mu-x,20
 2021-06,RY1,m,lexus-es,1
@@ -4280,6 +4281,7 @@ period,category,kind,id,units
 2024-02,RY1,m,honda-civic,2
 2024-02,RY1,m,honda-cr-v,5
 2024-02,RY1,m,honda-hr-v,10
+2024-02,RY1,m,honda-jazz,1
 2024-02,RY1,m,honda-wr-v,1
 2024-02,RY1,m,isuzu-d-max,73
 2024-02,RY1,m,isuzu-mu-x,12

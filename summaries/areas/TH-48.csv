@@ -327,6 +327,7 @@ period,category,kind,id,units
 2021-04,RY1,m,honda-civic,3
 2021-04,RY1,m,honda-hr-v,1
 2021-04,RY1,m,honda-jazz,3
+2021-04,RY1,m,hyundai-h-1,1
 2021-04,RY1,m,isuzu-d-max,24
 2021-04,RY1,m,isuzu-mu-x,1
 2021-04,RY1,m,mazda-cx-3,4
@@ -1329,7 +1330,7 @@ period,category,kind,id,units
 2022-03,RY3,f,petrol,1
 2022-03,RY3,m,ford-ranger,2
 2022-03,RY3,m,isuzu-d-max,25
-2022-03,RY3,m,mazda-bt-50,2
+2022-03,RY3,m,mazda-bt-50,3
 2022-03,RY3,m,mitsubishi-triton,5
 2022-03,RY3,m,nissan-navara,2
 2022-03,RY3,m,suzuki-carry,1
@@ -3826,6 +3827,7 @@ period,category,kind,id,units
 2024-10,RY1,m,honda-hr-v,2
 2024-10,RY1,m,isuzu-d-max,7
 2024-10,RY1,m,isuzu-mu-x,4
+2024-10,RY1,m,mazda-bt-50,1
 2024-10,RY1,m,mazda-cx-3,2
 2024-10,RY1,m,mazda-cx-30,1
 2024-10,RY1,m,mazda-cx-5,1

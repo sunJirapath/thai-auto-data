@@ -134,7 +134,7 @@ period,category,kind,id,units
 2021-02,RY1,f,hev,2
 2021-02,RY1,f,petrol,141
 2021-02,RY1,m,bmw-5-series,1
-2021-02,RY1,m,ford-everest,2
+2021-02,RY1,m,ford-everest,3
 2021-02,RY1,m,ford-ranger,15
 2021-02,RY1,m,ford-ranger-raptor,1
 2021-02,RY1,m,honda-accord,2
@@ -233,7 +233,7 @@ period,category,kind,id,units
 2021-03,RY1,f,diesel,95
 2021-03,RY1,f,hev,6
 2021-03,RY1,f,petrol,162
-2021-03,RY1,m,ford-everest,3
+2021-03,RY1,m,ford-everest,5
 2021-03,RY1,m,ford-ranger,16
 2021-03,RY1,m,honda-accord,1
 2021-03,RY1,m,honda-br-v,3
@@ -800,6 +800,7 @@ period,category,kind,id,units
 2021-09,RY1,f,phev,1
 2021-09,RY1,m,bmw-3-series,1
 2021-09,RY1,m,bmw-x1,1
+2021-09,RY1,m,ford-everest,1
 2021-09,RY1,m,ford-ranger,8
 2021-09,RY1,m,honda-br-v,1
 2021-09,RY1,m,honda-city,10

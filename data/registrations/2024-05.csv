@@ -189,7 +189,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-05,RY1,MAZDA,MAZDA CX-30,210,mazda,mazda-cx-30,dlt-web-aeaaf410
 2024-05,RY1,MAZDA,MAZDA CX-5,20,mazda,mazda-cx-5,dlt-web-aeaaf410
 2024-05,RY1,MAZDA,MAZDA CX-8,40,mazda,mazda-cx-8,dlt-web-aeaaf410
-2024-05,RY1,MAZDA,ROADSTER 990S,2,mazda,,dlt-web-aeaaf410
+2024-05,RY1,MAZDA,ROADSTER 990S,2,mazda,mazda-mx-5,dlt-web-aeaaf410
 2024-05,RY1,MCLAREN,720S COUPE,1,mclaren,,dlt-web-aeaaf410
 2024-05,RY1,MERCEDES BENZ,A 200,41,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2024-05,RY1,MERCEDES BENZ,AMG CLS 53 4MATIC,18,mercedes-benz,mercedes-benz-cls,dlt-web-aeaaf410
@@ -433,8 +433,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-05,RY1,TOYOTA,LAND CRUISER PRADO TX 7 SEAT,1,toyota,,dlt-web-aeaaf410
 2024-05,RY1,TOYOTA,LAND CRUISER PRADO TZ G 2.8L,1,toyota,,dlt-web-aeaaf410
 2024-05,RY1,TOYOTA,LAND CRUISER ZX,2,toyota,,dlt-web-aeaaf410
-2024-05,RY1,TOYOTA,LANDCRUISER LC300 AX,1,toyota,,dlt-web-aeaaf410
-2024-05,RY1,TOYOTA,LANDCRUISER LC300 GR SPORT,1,toyota,,dlt-web-aeaaf410
+2024-05,RY1,TOYOTA,LANDCRUISER LC300 AX,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
+2024-05,RY1,TOYOTA,LANDCRUISER LC300 GR SPORT,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2024-05,RY1,TOYOTA,NOAH HYBRID X,8,toyota,,dlt-web-aeaaf410
 2024-05,RY1,TOYOTA,NOAH SZ 2.0L,1,toyota,,dlt-web-aeaaf410
 2024-05,RY1,TOYOTA,SIENTA,2,toyota,toyota-sienta,dlt-web-aeaaf410
@@ -455,7 +455,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-05,RY1,TOYOTA,VOXY SZ 2.0L,1,toyota,toyota-voxy,dlt-web-aeaaf410
 2024-05,RY1,TOYOTA,YARIS ATIV,3964,toyota,toyota-yaris-ativ,dlt-web-aeaaf410
 2024-05,RY1,TOYOTA,YARIS CROSS,3025,toyota,toyota-yaris-cross,dlt-web-aeaaf410
-2024-05,RY1,TOYOTA,YARIS GRMN CIRCUIT PACKAGE,1,toyota,,dlt-web-aeaaf410
+2024-05,RY1,TOYOTA,YARIS GRMN CIRCUIT PACKAGE,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
 2024-05,RY1,TOYOTA,Yaris,720,toyota,toyota-yaris,dlt-web-aeaaf410
 2024-05,RY1,TOYOTA,Yaris 1.2G CVT,1,toyota,,dlt-web-aeaaf410
 2024-05,RY1,VOLKSWAGEN,ID BUZZ,1,volkswagen,,dlt-web-aeaaf410
@@ -507,7 +507,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-05,RY3,HINO,XZU600R-HKMLKT3,27,hino,,dlt-web-aeaaf410
 2024-05,RY3,HOMIDA,PICKMAN-KAI,1,homida,,dlt-web-aeaaf410
 2024-05,RY3,ISUZU,D-MAX,2801,isuzu,isuzu-d-max,dlt-web-aeaaf410
-2024-05,RY3,ISUZU,D-MAX New Style,1,isuzu,,dlt-web-aeaaf410
+2024-05,RY3,ISUZU,D-MAX New Style,1,isuzu,isuzu-d-max,dlt-web-aeaaf410
 2024-05,RY3,ISUZU,ไม่ระบุ,203,isuzu,,dlt-web-aeaaf410
 2024-05,RY3,MAZDA,MAZDA BT-50,9,mazda,mazda-bt-50,dlt-web-aeaaf410
 2024-05,RY3,MG,MG EXTENDER,19,mg,mg-extender,dlt-web-aeaaf410

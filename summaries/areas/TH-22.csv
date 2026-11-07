@@ -4067,7 +4067,7 @@ period,category,kind,id,units
 2023-11,RY1,m,byd-atto-3,5
 2023-11,RY1,m,byd-dolphin,12
 2023-11,RY1,m,byd-seal,1
-2023-11,RY1,m,ford-everest,10
+2023-11,RY1,m,ford-everest,11
 2023-11,RY1,m,ford-ranger,10
 2023-11,RY1,m,ford-ranger-raptor,8
 2023-11,RY1,m,haval-h6,4
@@ -4873,7 +4873,7 @@ period,category,kind,id,units
 2024-05,RY3,f,diesel,154
 2024-05,RY3,f,petrol,1
 2024-05,RY3,m,ford-ranger,6
-2024-05,RY3,m,isuzu-d-max,57
+2024-05,RY3,m,isuzu-d-max,58
 2024-05,RY3,m,mitsubishi-triton,11
 2024-05,RY3,m,suzuki-carry,1
 2024-05,RY3,m,toyota-hilux-champ,15

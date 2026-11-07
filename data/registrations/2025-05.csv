@@ -134,7 +134,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-05,RY1,FERRARI,812 COMPETIZIONE A,1,ferrari,,dlt-web-aeaaf410
 2025-05,RY1,FERRARI,PUROSANGUE,2,ferrari,,dlt-web-aeaaf410
 2025-05,RY1,FORD,EVEREST,713,ford,ford-everest,dlt-web-aeaaf410
-2025-05,RY1,FORD,Ford Everest,1,ford,,dlt-web-aeaaf410
+2025-05,RY1,FORD,Ford Everest,1,ford,ford-everest,dlt-web-aeaaf410
 2025-05,RY1,FORD,Ford Focus,1,ford,,dlt-web-aeaaf410
 2025-05,RY1,FORD,MUSTANG,3,ford,ford-mustang,dlt-web-aeaaf410
 2025-05,RY1,FORD,MUSTANG ECOBOOST FASTBACK,1,ford,ford-mustang,dlt-web-aeaaf410
@@ -157,7 +157,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-05,RY1,HONDA,CIVIC,1034,honda,honda-civic,dlt-web-aeaaf410
 2025-05,RY1,HONDA,CIVIC TYPE R,5,honda,honda-civic-type-r,dlt-web-aeaaf410
 2025-05,RY1,HONDA,CR-V,622,honda,honda-cr-v,dlt-web-aeaaf410
-2025-05,RY1,HONDA,CR-V'14,1,honda,,dlt-web-aeaaf410
+2025-05,RY1,HONDA,CR-V'14,1,honda,honda-cr-v,dlt-web-aeaaf410
 2025-05,RY1,HONDA,HR-V,2117,honda,honda-hr-v,dlt-web-aeaaf410
 2025-05,RY1,HONDA,JAZZ,1,honda,honda-jazz,dlt-web-aeaaf410
 2025-05,RY1,HONDA,N-BOX JOY TURBO,1,honda,,dlt-web-aeaaf410
@@ -173,7 +173,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-05,RY1,HONDA,ไม่ระบุ,1,honda,,dlt-web-aeaaf410
 2025-05,RY1,HYUNDAI,CRETA,9,hyundai,hyundai-creta,dlt-web-aeaaf410
 2025-05,RY1,HYUNDAI,ELANTRA N,1,hyundai,,dlt-web-aeaaf410
-2025-05,RY1,HYUNDAI,GRAND STAREX,1,hyundai,,dlt-web-aeaaf410
+2025-05,RY1,HYUNDAI,GRAND STAREX,1,hyundai,hyundai-h-1,dlt-web-aeaaf410
 2025-05,RY1,HYUNDAI,IONIQ5,14,hyundai,hyundai-ioniq-5,dlt-web-aeaaf410
 2025-05,RY1,HYUNDAI,IONIQ5 N,2,hyundai,hyundai-ioniq-5,dlt-web-aeaaf410
 2025-05,RY1,HYUNDAI,IONIQ5 N LINE,1,hyundai,hyundai-ioniq-5,dlt-web-aeaaf410
@@ -230,8 +230,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-05,RY1,MAZDA,MAZDA CX-5,68,mazda,mazda-cx-5,dlt-web-aeaaf410
 2025-05,RY1,MAZDA,MAZDA CX-8,20,mazda,mazda-cx-8,dlt-web-aeaaf410
 2025-05,RY1,MAZDA,MX-5,1,mazda,mazda-mx-5,dlt-web-aeaaf410
-2025-05,RY1,MAZDA,ROADSTER RF 35TH ANNIVERSARY,1,mazda,,dlt-web-aeaaf410
-2025-05,RY1,MAZDA,ROADSTER S LEATHER PACKAGE,1,mazda,,dlt-web-aeaaf410
+2025-05,RY1,MAZDA,ROADSTER RF 35TH ANNIVERSARY,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2025-05,RY1,MAZDA,ROADSTER S LEATHER PACKAGE,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2025-05,RY1,MCLAREN,750S COUPE,1,mclaren,,dlt-web-aeaaf410
 2025-05,RY1,MERCEDES BENZ,A 200,31,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2025-05,RY1,MERCEDES BENZ,AMG C43 4MATIC Coupe,2,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
@@ -475,7 +475,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-05,RY1,TOYOTA,LAND CRUISER 70 AX,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2025-05,RY1,TOYOTA,LAND CRUISER GR SPORT,1,toyota,,dlt-web-aeaaf410
 2025-05,RY1,TOYOTA,LAND CRUISER PRADO TZ-G,1,toyota,,dlt-web-aeaaf410
-2025-05,RY1,TOYOTA,LANDCRUISER LC300 AX,1,toyota,,dlt-web-aeaaf410
+2025-05,RY1,TOYOTA,LANDCRUISER LC300 AX,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2025-05,RY1,TOYOTA,NOAH HYBRID X,2,toyota,,dlt-web-aeaaf410
 2025-05,RY1,TOYOTA,NOAH HYBRID X 2WD,3,toyota,,dlt-web-aeaaf410
 2025-05,RY1,TOYOTA,Sienta,2,toyota,toyota-sienta,dlt-web-aeaaf410

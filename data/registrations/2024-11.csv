@@ -126,8 +126,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-11,RY1,FERRARI,PUROSANGUE,1,ferrari,,dlt-web-aeaaf410
 2024-11,RY1,FERRARI,ROMA SPIDER,1,ferrari,,dlt-web-aeaaf410
 2024-11,RY1,FORD,EVEREST,518,ford,ford-everest,dlt-web-aeaaf410
-2024-11,RY1,FORD,FORD EVEREST,1,ford,,dlt-web-aeaaf410
-2024-11,RY1,FORD,FORD RANGER,1,ford,,dlt-web-aeaaf410
+2024-11,RY1,FORD,FORD EVEREST,1,ford,ford-everest,dlt-web-aeaaf410
+2024-11,RY1,FORD,FORD RANGER,1,ford,ford-ranger,dlt-web-aeaaf410
 2024-11,RY1,FORD,MUSTANG,5,ford,ford-mustang,dlt-web-aeaaf410
 2024-11,RY1,FORD,MUSTANG 5.0 GT PREMIUM,1,ford,ford-mustang,dlt-web-aeaaf410
 2024-11,RY1,FORD,MUSTANG ECOBOOST 2.3,1,ford,ford-mustang,dlt-web-aeaaf410
@@ -155,7 +155,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-11,RY1,HONDA,WR-V,99,honda,honda-wr-v,dlt-web-aeaaf410
 2024-11,RY1,HONDA,e:N1,53,honda,honda-e-n1,dlt-web-aeaaf410
 2024-11,RY1,HYUNDAI,CRETA,14,hyundai,hyundai-creta,dlt-web-aeaaf410
-2024-11,RY1,HYUNDAI,GRAND STAREX,1,hyundai,,dlt-web-aeaaf410
+2024-11,RY1,HYUNDAI,GRAND STAREX,1,hyundai,hyundai-h-1,dlt-web-aeaaf410
 2024-11,RY1,HYUNDAI,IONIQ5,4,hyundai,hyundai-ioniq-5,dlt-web-aeaaf410
 2024-11,RY1,HYUNDAI,IONIQ5 N,1,hyundai,hyundai-ioniq-5,dlt-web-aeaaf410
 2024-11,RY1,HYUNDAI,IONIQ6,7,hyundai,,dlt-web-aeaaf410
@@ -211,8 +211,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-11,RY1,MAZDA,MAZDA CX-5,41,mazda,mazda-cx-5,dlt-web-aeaaf410
 2024-11,RY1,MAZDA,MAZDA CX-8,30,mazda,mazda-cx-8,dlt-web-aeaaf410
 2024-11,RY1,MAZDA,MAZDA MX-5,3,mazda,mazda-mx-5,dlt-web-aeaaf410
-2024-11,RY1,MAZDA,ROADSTER 990S 1.5L,1,mazda,,dlt-web-aeaaf410
-2024-11,RY1,MAZDA,ROADSTER NR-A,1,mazda,,dlt-web-aeaaf410
+2024-11,RY1,MAZDA,ROADSTER 990S 1.5L,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2024-11,RY1,MAZDA,ROADSTER NR-A,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2024-11,RY1,MCLAREN,GT,1,mclaren,,dlt-web-aeaaf410
 2024-11,RY1,MERCEDES BENZ,A 200,32,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2024-11,RY1,MERCEDES BENZ,AMG C43 4MATIC Coupe,3,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
@@ -452,8 +452,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-11,RY1,TOYOTA,LAND CRUISER GR SPORT,1,toyota,,dlt-web-aeaaf410
 2024-11,RY1,TOYOTA,LAND CRUISER PRADO TX L,1,toyota,,dlt-web-aeaaf410
 2024-11,RY1,TOYOTA,LAND CRUISER ZX,3,toyota,,dlt-web-aeaaf410
-2024-11,RY1,TOYOTA,LANDCRUISER 70 GXL,1,toyota,,dlt-web-aeaaf410
-2024-11,RY1,TOYOTA,LANDCRUISER LC300 GR SPORT,1,toyota,,dlt-web-aeaaf410
+2024-11,RY1,TOYOTA,LANDCRUISER 70 GXL,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
+2024-11,RY1,TOYOTA,LANDCRUISER LC300 GR SPORT,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2024-11,RY1,TOYOTA,LANDCRUISER PRADO TXL PACKAGE,1,toyota,,dlt-web-aeaaf410
 2024-11,RY1,TOYOTA,NOAH HYBRID X,2,toyota,,dlt-web-aeaaf410
 2024-11,RY1,TOYOTA,NOAH HYBRID X 2WD,2,toyota,,dlt-web-aeaaf410
@@ -517,7 +517,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-11,RY3,CHEVROLET,COLORADO X-CAB,1,chevrolet,,dlt-web-aeaaf410
 2024-11,RY3,DAIHATSU,HIJET CARGO,1,daihatsu,,dlt-web-aeaaf410
 2024-11,RY3,DAIHATSU,HIJET CARGO DELUX,2,daihatsu,,dlt-web-aeaaf410
-2024-11,RY3,FORD,FORD RANGER,1,ford,,dlt-web-aeaaf410
+2024-11,RY3,FORD,FORD RANGER,1,ford,ford-ranger,dlt-web-aeaaf410
 2024-11,RY3,FORD,FORD RANGER iFCS9D5,1,ford,,dlt-web-aeaaf410
 2024-11,RY3,FORD,RANGER,109,ford,ford-ranger,dlt-web-aeaaf410
 2024-11,RY3,FOTON,BJ1041V8JD3-RF,1,foton,,dlt-web-aeaaf410

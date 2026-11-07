@@ -236,9 +236,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-03,RY1,MAZDA,MAZDA CX-30,132,mazda,mazda-cx-30,dlt-web-aeaaf410
 2026-03,RY1,MAZDA,MAZDA CX-5,75,mazda,mazda-cx-5,dlt-web-aeaaf410
 2026-03,RY1,MAZDA,MAZDA CX-8,12,mazda,mazda-cx-8,dlt-web-aeaaf410
-2026-03,RY1,MAZDA,MAZDA3,4,mazda,,dlt-web-aeaaf410
-2026-03,RY1,MAZDA,ROADSTER S LEATHER PACKAGE,2,mazda,,dlt-web-aeaaf410
-2026-03,RY1,MAZDA,ROADSTER S SPECIAL PACKAGE,1,mazda,,dlt-web-aeaaf410
+2026-03,RY1,MAZDA,MAZDA3,4,mazda,mazda-mazda3,dlt-web-aeaaf410
+2026-03,RY1,MAZDA,ROADSTER S LEATHER PACKAGE,2,mazda,mazda-mx-5,dlt-web-aeaaf410
+2026-03,RY1,MAZDA,ROADSTER S SPECIAL PACKAGE,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2026-03,RY1,MERCEDES BENZ,A 200,26,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2026-03,RY1,MERCEDES BENZ,AMG CLE 53 4MATIC coupe,6,mercedes-benz,mercedes-benz-cle,dlt-web-aeaaf410
 2026-03,RY1,MERCEDES BENZ,AMG CLS 53 4MATIC,12,mercedes-benz,mercedes-benz-cls,dlt-web-aeaaf410
@@ -460,7 +460,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-03,RY1,TOYOTA,CROWN SPORT RS 70TH,1,toyota,toyota-crown-sport,dlt-web-aeaaf410
 2026-03,RY1,TOYOTA,Corolla,278,toyota,toyota-corolla,dlt-web-aeaaf410
 2026-03,RY1,TOYOTA,Fortuner,1617,toyota,toyota-fortuner,dlt-web-aeaaf410
-2026-03,RY1,TOYOTA,GR 86 RZ,1,toyota,,dlt-web-aeaaf410
+2026-03,RY1,TOYOTA,GR 86 RZ,1,toyota,toyota-gr86,dlt-web-aeaaf410
 2026-03,RY1,TOYOTA,GR COROLLA,1,toyota,,dlt-web-aeaaf410
 2026-03,RY1,TOYOTA,GR SUPRA RZ,1,toyota,toyota-gr-supra,dlt-web-aeaaf410
 2026-03,RY1,TOYOTA,GR SUPRA RZ 3.0,2,toyota,toyota-gr-supra,dlt-web-aeaaf410
@@ -488,7 +488,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-03,RY1,TOYOTA,LAND CRUISER 300 ZX,2,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2026-03,RY1,TOYOTA,LAND CRUISER 70 AX,2,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2026-03,RY1,TOYOTA,LAND CRUISER 70 AX 2.8L 4WD,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
-2026-03,RY1,TOYOTA,LANDCRUISER LC300 ZX,1,toyota,,dlt-web-aeaaf410
+2026-03,RY1,TOYOTA,LANDCRUISER LC300 ZX,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2026-03,RY1,TOYOTA,ROOMY CUSTOM G T 1.0L,1,toyota,,dlt-web-aeaaf410
 2026-03,RY1,TOYOTA,TR TRANSFORMER,2,toyota,,dlt-web-aeaaf410
 2026-03,RY1,TOYOTA,VELLFIRE,21,toyota,toyota-vellfire,dlt-web-aeaaf410
@@ -567,7 +567,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-03,RY3,DAIHATSU,HIJET CARGO,2,daihatsu,,dlt-web-aeaaf410
 2026-03,RY3,DAIHATSU,HIJET CARGO 4WD,1,daihatsu,,dlt-web-aeaaf410
 2026-03,RY3,DAIHATSU,HIJET TRUCK,2,daihatsu,,dlt-web-aeaaf410
-2026-03,RY3,FORD,FORD RANGER,2,ford,,dlt-web-aeaaf410
+2026-03,RY3,FORD,FORD RANGER,2,ford,ford-ranger,dlt-web-aeaaf410
 2026-03,RY3,FORD,RANGER,24,ford,ford-ranger,dlt-web-aeaaf410
 2026-03,RY3,FORD,RANGER SWB,3,ford,ford-ranger,dlt-web-aeaaf410
 2026-03,RY3,FOTON,BJ1031EVJA3,1,foton,,dlt-web-aeaaf410

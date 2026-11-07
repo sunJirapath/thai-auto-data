@@ -231,9 +231,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-11,RY1,MAZDA,MAZDA CX-8,10,mazda,mazda-cx-8,dlt-web-aeaaf410
 2025-11,RY1,MAZDA,MAZDA MX-5,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2025-11,RY1,MAZDA,MX-5,1,mazda,mazda-mx-5,dlt-web-aeaaf410
-2025-11,RY1,MAZDA,MX-5 ROADSTER S,1,mazda,,dlt-web-aeaaf410
-2025-11,RY1,MAZDA,ROADSTER RF 35TH ANNIVERSARY,1,mazda,,dlt-web-aeaaf410
-2025-11,RY1,MAZDA,ROADSTER S LEATHER PACKAGE,1,mazda,,dlt-web-aeaaf410
+2025-11,RY1,MAZDA,MX-5 ROADSTER S,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2025-11,RY1,MAZDA,ROADSTER RF 35TH ANNIVERSARY,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2025-11,RY1,MAZDA,ROADSTER S LEATHER PACKAGE,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2025-11,RY1,MERCEDES BENZ,A 200,24,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2025-11,RY1,MERCEDES BENZ,AMG C 43 4MATIC,1,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
 2025-11,RY1,MERCEDES BENZ,AMG C43 4MATIC Coupe,2,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
@@ -537,7 +537,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-11,RY3,CHEVROLET,COLORADO X-CAB,1,chevrolet,,dlt-web-aeaaf410
 2025-11,RY3,DAIHATSU,HIJET CARGO,4,daihatsu,,dlt-web-aeaaf410
 2025-11,RY3,DAIHATSU,HIJET TRUCK,1,daihatsu,,dlt-web-aeaaf410
-2025-11,RY3,FORD,FORD RANGER,1,ford,,dlt-web-aeaaf410
+2025-11,RY3,FORD,FORD RANGER,1,ford,ford-ranger,dlt-web-aeaaf410
 2025-11,RY3,FORD,RANGER,58,ford,ford-ranger,dlt-web-aeaaf410
 2025-11,RY3,FORD,RANGER SWB,1,ford,ford-ranger,dlt-web-aeaaf410
 2025-11,RY3,FOTON,BJ1031EVJA3,2,foton,,dlt-web-aeaaf410

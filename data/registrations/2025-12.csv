@@ -141,7 +141,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-12,RY1,FERRARI,PORTOFINO M,1,ferrari,,dlt-web-aeaaf410
 2025-12,RY1,FOMM,FOMM ONE,2,fomm,,dlt-web-aeaaf410
 2025-12,RY1,FORD,EVEREST,430,ford,ford-everest,dlt-web-aeaaf410
-2025-12,RY1,FORD,FORD RANGER,1,ford,,dlt-web-aeaaf410
+2025-12,RY1,FORD,FORD RANGER,1,ford,ford-ranger,dlt-web-aeaaf410
 2025-12,RY1,FORD,MUSTANG 5.0 GT PREMIUM,1,ford,ford-mustang,dlt-web-aeaaf410
 2025-12,RY1,FORD,MUSTANG ECOBOOST FASTBACK,1,ford,ford-mustang,dlt-web-aeaaf410
 2025-12,RY1,FORD,MUSTANG MACH-E AWD,1,ford,ford-mustang-mach-e,dlt-web-aeaaf410
@@ -231,7 +231,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-12,RY1,MAZDA,MAZDA CX-5,35,mazda,mazda-cx-5,dlt-web-aeaaf410
 2025-12,RY1,MAZDA,MAZDA CX-8,8,mazda,mazda-cx-8,dlt-web-aeaaf410
 2025-12,RY1,MAZDA,MX-5,1,mazda,mazda-mx-5,dlt-web-aeaaf410
-2025-12,RY1,MAZDA,ROADSTER RF 35TH ANNIVERSARY,1,mazda,,dlt-web-aeaaf410
+2025-12,RY1,MAZDA,ROADSTER RF 35TH ANNIVERSARY,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2025-12,RY1,MERCEDES BENZ,A 200,18,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2025-12,RY1,MERCEDES BENZ,AMG CLE 53 4MATIC coupe,8,mercedes-benz,mercedes-benz-cle,dlt-web-aeaaf410
 2025-12,RY1,MERCEDES BENZ,AMG CLS 53 4MATIC,18,mercedes-benz,mercedes-benz-cls,dlt-web-aeaaf410
@@ -432,7 +432,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-12,RY1,TOYOTA,Corolla,204,toyota,toyota-corolla,dlt-web-aeaaf410
 2025-12,RY1,TOYOTA,D-Cab 4x4 2.8G A/T,1,toyota,,dlt-web-aeaaf410
 2025-12,RY1,TOYOTA,Fortuner,803,toyota,toyota-fortuner,dlt-web-aeaaf410
-2025-12,RY1,TOYOTA,GR 86 RZ 2.4L,1,toyota,,dlt-web-aeaaf410
+2025-12,RY1,TOYOTA,GR 86 RZ 2.4L,1,toyota,toyota-gr86,dlt-web-aeaaf410
 2025-12,RY1,TOYOTA,GR COROLLA RZ,1,toyota,,dlt-web-aeaaf410
 2025-12,RY1,TOYOTA,GR SUPRA RZ 3.0,1,toyota,toyota-gr-supra,dlt-web-aeaaf410
 2025-12,RY1,TOYOTA,GR SUPRA RZ PLASMA ORANGE 100,1,toyota,toyota-gr-supra,dlt-web-aeaaf410
@@ -467,7 +467,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-12,RY1,TOYOTA,YARIS,286,toyota,toyota-yaris,dlt-web-aeaaf410
 2025-12,RY1,TOYOTA,YARIS ATIV,3530,toyota,toyota-yaris-ativ,dlt-web-aeaaf410
 2025-12,RY1,TOYOTA,YARIS CROSS,1902,toyota,toyota-yaris-cross,dlt-web-aeaaf410
-2025-12,RY1,TOYOTA,YARIS GRMN CIRCUIT PACKAGE,1,toyota,,dlt-web-aeaaf410
+2025-12,RY1,TOYOTA,YARIS GRMN CIRCUIT PACKAGE,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
 2025-12,RY1,VOLT,VOLT FOR FOUR,1,volt,,dlt-web-aeaaf410
 2025-12,RY1,VOLVO,C40,3,volvo,volvo-c40,dlt-web-aeaaf410
 2025-12,RY1,VOLVO,EC40,11,volvo,volvo-ec40,dlt-web-aeaaf410
@@ -539,7 +539,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-12,RY3,KING LONG,DRACON,1,king-long,,dlt-web-aeaaf410
 2025-12,RY3,KING LONG,VENUS 3,8,king-long,,dlt-web-aeaaf410
 2025-12,RY3,MAZDA,MAZDA BT-50,1,mazda,mazda-bt-50,dlt-web-aeaaf410
-2025-12,RY3,MAZDA,MAZDA BT50,1,mazda,,dlt-web-aeaaf410
+2025-12,RY3,MAZDA,MAZDA BT50,1,mazda,mazda-bt-50,dlt-web-aeaaf410
 2025-12,RY3,MG,MG EXTENDER,16,mg,mg-extender,dlt-web-aeaaf410
 2025-12,RY3,MITSUBISHI,TRITON,279,mitsubishi,mitsubishi-triton,dlt-web-aeaaf410
 2025-12,RY3,NEOMOR,D01,1,neomor,,dlt-web-aeaaf410

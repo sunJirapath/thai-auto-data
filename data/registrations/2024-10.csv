@@ -124,7 +124,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-10,RY1,FERRARI,PUROSANGUE,1,ferrari,,dlt-web-aeaaf410
 2024-10,RY1,FOMM,FOMM ONE,1,fomm,,dlt-web-aeaaf410
 2024-10,RY1,FORD,EVEREST,647,ford,ford-everest,dlt-web-aeaaf410
-2024-10,RY1,FORD,FORD EVEREST,1,ford,,dlt-web-aeaaf410
+2024-10,RY1,FORD,FORD EVEREST,1,ford,ford-everest,dlt-web-aeaaf410
 2024-10,RY1,FORD,FORD FIESTA,1,ford,,dlt-web-aeaaf410
 2024-10,RY1,FORD,FORD RANGER iJBW9B4,1,ford,,dlt-web-aeaaf410
 2024-10,RY1,FORD,MUSTANG,2,ford,ford-mustang,dlt-web-aeaaf410
@@ -203,16 +203,16 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-10,RY1,MAZDA,MAZDA 2,394,mazda,mazda-mazda2,dlt-web-aeaaf410
 2024-10,RY1,MAZDA,MAZDA 3,56,mazda,mazda-mazda3,dlt-web-aeaaf410
 2024-10,RY1,MAZDA,MAZDA BT-50,16,mazda,mazda-bt-50,dlt-web-aeaaf410
-2024-10,RY1,MAZDA,MAZDA BT50,1,mazda,,dlt-web-aeaaf410
+2024-10,RY1,MAZDA,MAZDA BT50,1,mazda,mazda-bt-50,dlt-web-aeaaf410
 2024-10,RY1,MAZDA,MAZDA CX-3,73,mazda,mazda-cx-3,dlt-web-aeaaf410
 2024-10,RY1,MAZDA,MAZDA CX-30,159,mazda,mazda-cx-30,dlt-web-aeaaf410
 2024-10,RY1,MAZDA,MAZDA CX-5,32,mazda,mazda-cx-5,dlt-web-aeaaf410
 2024-10,RY1,MAZDA,MAZDA CX-8,28,mazda,mazda-cx-8,dlt-web-aeaaf410
 2024-10,RY1,MAZDA,MAZDA MX-5,2,mazda,mazda-mx-5,dlt-web-aeaaf410
-2024-10,RY1,MAZDA,MX-5 ROADSTER 990S,1,mazda,,dlt-web-aeaaf410
-2024-10,RY1,MAZDA,ROADSTER 990S,2,mazda,,dlt-web-aeaaf410
-2024-10,RY1,MAZDA,ROADSTER RF,1,mazda,,dlt-web-aeaaf410
-2024-10,RY1,MAZDA,ROADSTER S LEATHER PACKAGE,1,mazda,,dlt-web-aeaaf410
+2024-10,RY1,MAZDA,MX-5 ROADSTER 990S,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2024-10,RY1,MAZDA,ROADSTER 990S,2,mazda,mazda-mx-5,dlt-web-aeaaf410
+2024-10,RY1,MAZDA,ROADSTER RF,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2024-10,RY1,MAZDA,ROADSTER S LEATHER PACKAGE,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2024-10,RY1,MCLAREN,750S COUPE,2,mclaren,,dlt-web-aeaaf410
 2024-10,RY1,MCLAREN,GT,1,mclaren,,dlt-web-aeaaf410
 2024-10,RY1,MERCEDES BENZ,A 200,33,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
@@ -475,9 +475,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-10,RY1,TOYOTA,VOXY SZ HYBRID 1.8L,1,toyota,toyota-voxy,dlt-web-aeaaf410
 2024-10,RY1,TOYOTA,YARIS ATIV,3405,toyota,toyota-yaris-ativ,dlt-web-aeaaf410
 2024-10,RY1,TOYOTA,YARIS CROSS,2511,toyota,toyota-yaris-cross,dlt-web-aeaaf410
-2024-10,RY1,TOYOTA,YARIS GR CIRCUIT PACK,1,toyota,,dlt-web-aeaaf410
-2024-10,RY1,TOYOTA,YARIS GRMN CIRCUIT PACKAGE,1,toyota,,dlt-web-aeaaf410
-2024-10,RY1,TOYOTA,YARIS GRMN RALLY PACKAGE,1,toyota,,dlt-web-aeaaf410
+2024-10,RY1,TOYOTA,YARIS GR CIRCUIT PACK,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
+2024-10,RY1,TOYOTA,YARIS GRMN CIRCUIT PACKAGE,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
+2024-10,RY1,TOYOTA,YARIS GRMN RALLY PACKAGE,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
 2024-10,RY1,TOYOTA,Yaris,538,toyota,toyota-yaris,dlt-web-aeaaf410
 2024-10,RY1,VOLKSWAGEN,ID BUZZ,2,volkswagen,,dlt-web-aeaaf410
 2024-10,RY1,VOLVO,C40,49,volvo,volvo-c40,dlt-web-aeaaf410
@@ -533,7 +533,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-10,RY3,ISUZU,ไม่ระบุ,134,isuzu,,dlt-web-aeaaf410
 2024-10,RY3,JAC,HFC1040EV3,1,jac,,dlt-web-aeaaf410
 2024-10,RY3,MAZDA,MAZDA BT-50,5,mazda,mazda-bt-50,dlt-web-aeaaf410
-2024-10,RY3,MAZDA,MAZDA BT50,1,mazda,,dlt-web-aeaaf410
+2024-10,RY3,MAZDA,MAZDA BT50,1,mazda,mazda-bt-50,dlt-web-aeaaf410
 2024-10,RY3,MERCEDES BENZ,SPRINTER 319 CDI,1,mercedes-benz,mercedes-benz-sprinter,dlt-web-aeaaf410
 2024-10,RY3,MG,MG EXTENDER,41,mg,mg-extender,dlt-web-aeaaf410
 2024-10,RY3,MINE MOBILITY,MTS-MT30,4,mine-mobility,,dlt-web-aeaaf410
@@ -549,7 +549,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-10,RY3,TOYOTA,HIACE,11,toyota,toyota-hiace,dlt-web-aeaaf410
 2024-10,RY3,TOYOTA,HILUX CHAMP,847,toyota,toyota-hilux-champ,dlt-web-aeaaf410
 2024-10,RY3,TOYOTA,HILUX REVO,3043,toyota,toyota-hilux-revo,dlt-web-aeaaf410
-2024-10,RY3,TOYOTA,LAND CRUISER 79 PICK UP,1,toyota,,dlt-web-aeaaf410
+2024-10,RY3,TOYOTA,LAND CRUISER 79 PICK UP,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2024-10,RY3,TOYOTA,ไม่ระบุ,1,toyota,,dlt-web-aeaaf410
 2024-10,RY3,UD TRUCKS,CWE08N43R350SS9,2,ud-trucks,,dlt-web-aeaaf410
 2024-10,RY3,UD TRUCKS,PKE250HLRM,4,ud-trucks,,dlt-web-aeaaf410

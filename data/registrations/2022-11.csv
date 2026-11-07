@@ -100,8 +100,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-11,RY1,FERRARI,SF90 SPIDER,1,ferrari,,dlt-web-aeaaf410
 2022-11,RY1,FOMM,FOMM ONE,3,fomm,,dlt-web-aeaaf410
 2022-11,RY1,FORD,EVEREST,940,ford,ford-everest,dlt-web-aeaaf410
-2022-11,RY1,FORD,FORD EVEREST zFAE9GD,1,ford,,dlt-web-aeaaf410
-2022-11,RY1,FORD,Ford Everest,1,ford,,dlt-web-aeaaf410
+2022-11,RY1,FORD,FORD EVEREST zFAE9GD,1,ford,ford-everest,dlt-web-aeaaf410
+2022-11,RY1,FORD,Ford Everest,1,ford,ford-everest,dlt-web-aeaaf410
 2022-11,RY1,FORD,MUSTANG,5,ford,ford-mustang,dlt-web-aeaaf410
 2022-11,RY1,FORD,MUSTANG 2.3L ECOBOOST FASTBACK,1,ford,ford-mustang,dlt-web-aeaaf410
 2022-11,RY1,FORD,MUSTANG MACH-E AWD,1,ford,ford-mustang-mach-e,dlt-web-aeaaf410
@@ -121,7 +121,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-11,RY1,HONDA,CIVIC,869,honda,honda-civic,dlt-web-aeaaf410
 2022-11,RY1,HONDA,CIVIC TYPE R,1,honda,honda-civic-type-r,dlt-web-aeaaf410
 2022-11,RY1,HONDA,CR-V,168,honda,honda-cr-v,dlt-web-aeaaf410
-2022-11,RY1,HONDA,CR-V'13,1,honda,,dlt-web-aeaaf410
+2022-11,RY1,HONDA,CR-V'13,1,honda,honda-cr-v,dlt-web-aeaaf410
 2022-11,RY1,HONDA,HR-V,740,honda,honda-hr-v,dlt-web-aeaaf410
 2022-11,RY1,HONDA,JAZZ,27,honda,honda-jazz,dlt-web-aeaaf410
 2022-11,RY1,HONDA,MOBILIO,5,honda,,dlt-web-aeaaf410
@@ -392,7 +392,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-11,RY1,TOYOTA,FJ CRUISER,1,toyota,,dlt-web-aeaaf410
 2022-11,RY1,TOYOTA,FJ CRUISER 4.0L,1,toyota,,dlt-web-aeaaf410
 2022-11,RY1,TOYOTA,Fortuner,2185,toyota,toyota-fortuner,dlt-web-aeaaf410
-2022-11,RY1,TOYOTA,GR 86 RZ,1,toyota,,dlt-web-aeaaf410
+2022-11,RY1,TOYOTA,GR 86 RZ,1,toyota,toyota-gr86,dlt-web-aeaaf410
 2022-11,RY1,TOYOTA,GR YARIS,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
 2022-11,RY1,TOYOTA,GR86,1,toyota,toyota-gr86,dlt-web-aeaaf410
 2022-11,RY1,TOYOTA,GR86 RZ 2WD,1,toyota,toyota-gr86,dlt-web-aeaaf410
@@ -406,7 +406,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-11,RY1,TOYOTA,LAND CRUISER 70 30TH,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2022-11,RY1,TOYOTA,LAND CRUISER ACTIVE 2.8,1,toyota,,dlt-web-aeaaf410
 2022-11,RY1,TOYOTA,LAND CRUISER PRADO TZ G 2.8L,1,toyota,,dlt-web-aeaaf410
-2022-11,RY1,TOYOTA,LANDCRUISER LC300 GR SPORT,1,toyota,,dlt-web-aeaaf410
+2022-11,RY1,TOYOTA,LANDCRUISER LC300 GR SPORT,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2022-11,RY1,TOYOTA,LANDCRUISER PRADO 2.8,1,toyota,,dlt-web-aeaaf410
 2022-11,RY1,TOYOTA,LANDCRUISER PRADO 2.8 TXL,1,toyota,,dlt-web-aeaaf410
 2022-11,RY1,TOYOTA,SUPRA RZ 3.0L,1,toyota,toyota-gr-supra,dlt-web-aeaaf410

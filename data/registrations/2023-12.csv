@@ -100,8 +100,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-12,RY1,FOMM,FOMM ONE,1,fomm,,dlt-web-aeaaf410
 2023-12,RY1,FORD,EVEREST,570,ford,ford-everest,dlt-web-aeaaf410
 2023-12,RY1,FORD,EcoSport,1,ford,,dlt-web-aeaaf410
-2023-12,RY1,FORD,FORD EVEREST zJAE9GD,1,ford,,dlt-web-aeaaf410
-2023-12,RY1,FORD,FORD RANGER,1,ford,,dlt-web-aeaaf410
+2023-12,RY1,FORD,FORD EVEREST zJAE9GD,1,ford,ford-everest,dlt-web-aeaaf410
+2023-12,RY1,FORD,FORD RANGER,1,ford,ford-ranger,dlt-web-aeaaf410
 2023-12,RY1,FORD,FORD RANGER iFBT9AR,1,ford,,dlt-web-aeaaf410
 2023-12,RY1,FORD,FORD RANGER iJBT9B4,1,ford,,dlt-web-aeaaf410
 2023-12,RY1,FORD,MUSTANG,2,ford,ford-mustang,dlt-web-aeaaf410
@@ -132,7 +132,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-12,RY1,HONDA,STEPWGN e:HEV SPADA,2,honda,honda-step-wgn,dlt-web-aeaaf410
 2023-12,RY1,HONDA,WR-V,94,honda,honda-wr-v,dlt-web-aeaaf410
 2023-12,RY1,HYUNDAI,CRETA,18,hyundai,hyundai-creta,dlt-web-aeaaf410
-2023-12,RY1,HYUNDAI,GRAND STAREX,1,hyundai,,dlt-web-aeaaf410
+2023-12,RY1,HYUNDAI,GRAND STAREX,1,hyundai,hyundai-h-1,dlt-web-aeaaf410
 2023-12,RY1,HYUNDAI,STARGAZER,69,hyundai,hyundai-stargazer,dlt-web-aeaaf410
 2023-12,RY1,ISUZU,CAB4 LS 3.0,1,isuzu,,dlt-web-aeaaf410
 2023-12,RY1,ISUZU,D-MAX,2912,isuzu,isuzu-d-max,dlt-web-aeaaf410
@@ -168,7 +168,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-12,RY1,MAZDA,MAZDA CX-5,16,mazda,mazda-cx-5,dlt-web-aeaaf410
 2023-12,RY1,MAZDA,MAZDA CX-8,48,mazda,mazda-cx-8,dlt-web-aeaaf410
 2023-12,RY1,MAZDA,MAZDA MX-5,1,mazda,mazda-mx-5,dlt-web-aeaaf410
-2023-12,RY1,MAZDA,MX-5 ROADSTER 990S,1,mazda,,dlt-web-aeaaf410
+2023-12,RY1,MAZDA,MX-5 ROADSTER 990S,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2023-12,RY1,MCLAREN,720S COUPE,1,mclaren,,dlt-web-aeaaf410
 2023-12,RY1,MCLAREN,720S SPIDER,1,mclaren,,dlt-web-aeaaf410
 2023-12,RY1,MCLAREN,ARTURA-COUPE,1,mclaren,,dlt-web-aeaaf410
@@ -379,7 +379,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-12,RY1,TOYOTA,LAND CRUISER PRADO TZ G 2.8L,1,toyota,,dlt-web-aeaaf410
 2023-12,RY1,TOYOTA,LAND CRUISER PRADO TZ-G,1,toyota,,dlt-web-aeaaf410
 2023-12,RY1,TOYOTA,LAND CRUISER ZX,1,toyota,,dlt-web-aeaaf410
-2023-12,RY1,TOYOTA,LANDCRUISER LC300 GR SPORT,1,toyota,,dlt-web-aeaaf410
+2023-12,RY1,TOYOTA,LANDCRUISER LC300 GR SPORT,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2023-12,RY1,TOYOTA,NOAH HYBRID X,1,toyota,,dlt-web-aeaaf410
 2023-12,RY1,TOYOTA,SIENTA,1,toyota,toyota-sienta,dlt-web-aeaaf410
 2023-12,RY1,TOYOTA,Sienta,1,toyota,toyota-sienta,dlt-web-aeaaf410
@@ -398,7 +398,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-12,RY1,TOYOTA,YARIS,764,toyota,toyota-yaris,dlt-web-aeaaf410
 2023-12,RY1,TOYOTA,YARIS ATIV,3232,toyota,toyota-yaris-ativ,dlt-web-aeaaf410
 2023-12,RY1,TOYOTA,YARIS CROSS,1164,toyota,toyota-yaris-cross,dlt-web-aeaaf410
-2023-12,RY1,TOYOTA,YARIS GRMN CIRCUIT PACKAGE,3,toyota,,dlt-web-aeaaf410
+2023-12,RY1,TOYOTA,YARIS GRMN CIRCUIT PACKAGE,3,toyota,toyota-gr-yaris,dlt-web-aeaaf410
 2023-12,RY1,VOLKSWAGEN,SCIROCCO 2.0 TSI,1,volkswagen,,dlt-web-aeaaf410
 2023-12,RY1,VOLT,VOLT FOR FOUR,11,volt,,dlt-web-aeaaf410
 2023-12,RY1,VOLVO,C40,46,volvo,volvo-c40,dlt-web-aeaaf410
@@ -461,7 +461,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-12,RY3,TOYOTA,COMMUTER,5,toyota,toyota-commuter,dlt-web-aeaaf410
 2023-12,RY3,TOYOTA,HIACE,7,toyota,toyota-hiace,dlt-web-aeaaf410
 2023-12,RY3,TOYOTA,HILUX REVO,3262,toyota,toyota-hilux-revo,dlt-web-aeaaf410
-2023-12,RY3,TOYOTA,LAND CRUISER 79 PICK UP 4.2,1,toyota,,dlt-web-aeaaf410
+2023-12,RY3,TOYOTA,LAND CRUISER 79 PICK UP 4.2,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2023-12,RY3,TOYOTA,TGN16R-URMDMT  A7,2,toyota,,dlt-web-aeaaf410
 2023-12,RY3,TOYOTA,TGN16R-URMDMT  A8,3,toyota,,dlt-web-aeaaf410
 2023-12,RY3,TOYOTA,ไม่ระบุ,1,toyota,,dlt-web-aeaaf410

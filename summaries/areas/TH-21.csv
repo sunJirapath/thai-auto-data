@@ -327,7 +327,7 @@ period,category,kind,id,units
 2021-03,RY1,m,bmw-7-series,1
 2021-03,RY1,m,bmw-x1,1
 2021-03,RY1,m,bmw-x4,1
-2021-03,RY1,m,ford-everest,12
+2021-03,RY1,m,ford-everest,13
 2021-03,RY1,m,ford-ranger,32
 2021-03,RY1,m,ford-ranger-raptor,4
 2021-03,RY1,m,honda-accord,8
@@ -470,7 +470,7 @@ period,category,kind,id,units
 2021-04,RY1,m,bmw-3-series,3
 2021-04,RY1,m,bmw-5-series,1
 2021-04,RY1,m,bmw-x5,2
-2021-04,RY1,m,ford-everest,5
+2021-04,RY1,m,ford-everest,6
 2021-04,RY1,m,ford-ranger,32
 2021-04,RY1,m,honda-accord,3
 2021-04,RY1,m,honda-br-v,1
@@ -1006,7 +1006,7 @@ period,category,kind,id,units
 2021-08,RY1,f,phev,3
 2021-08,RY1,m,bmw-3-series,1
 2021-08,RY1,m,bmw-5-series,1
-2021-08,RY1,m,ford-everest,1
+2021-08,RY1,m,ford-everest,2
 2021-08,RY1,m,ford-ranger,10
 2021-08,RY1,m,honda-accord,2
 2021-08,RY1,m,honda-city,7
@@ -1265,7 +1265,7 @@ period,category,kind,id,units
 2021-10,RY1,f,phev,3
 2021-10,RY1,m,bmw-3-series,1
 2021-10,RY1,m,bmw-5-series,1
-2021-10,RY1,m,ford-everest,13
+2021-10,RY1,m,ford-everest,14
 2021-10,RY1,m,ford-ranger,24
 2021-10,RY1,m,ford-ranger-raptor,5
 2021-10,RY1,m,haval-h6,1
@@ -1975,7 +1975,7 @@ period,category,kind,id,units
 2022-03,RY1,m,bmw-6-series,1
 2022-03,RY1,m,bmw-x1,2
 2022-03,RY1,m,bmw-x7,1
-2022-03,RY1,m,ford-everest,20
+2022-03,RY1,m,ford-everest,21
 2022-03,RY1,m,ford-ranger,46
 2022-03,RY1,m,ford-ranger-raptor,2
 2022-03,RY1,m,haval-h6,14
@@ -2496,7 +2496,7 @@ period,category,kind,id,units
 2022-06,RY3,bf,toyota|diesel,78
 2022-06,RY3,f,diesel,354
 2022-06,RY3,f,petrol,1
-2022-06,RY3,m,ford-ranger,15
+2022-06,RY3,m,ford-ranger,16
 2022-06,RY3,m,isuzu-d-max,202
 2022-06,RY3,m,mg-extender,1
 2022-06,RY3,m,mitsubishi-triton,41
@@ -2863,7 +2863,7 @@ period,category,kind,id,units
 2022-09,RY1,m,bmw-5-series,2
 2022-09,RY1,m,bmw-x1,4
 2022-09,RY1,m,bmw-x3,2
-2022-09,RY1,m,ford-everest,30
+2022-09,RY1,m,ford-everest,31
 2022-09,RY1,m,ford-ranger,23
 2022-09,RY1,m,haval-h6,3
 2022-09,RY1,m,honda-city,9
@@ -3541,7 +3541,7 @@ period,category,kind,id,units
 2023-01,RY3,bf,toyota|diesel,79
 2023-01,RY3,f,diesel,215
 2023-01,RY3,f,petrol,4
-2023-01,RY3,m,ford-ranger,1
+2023-01,RY3,m,ford-ranger,2
 2023-01,RY3,m,isuzu-d-max,118
 2023-01,RY3,m,mazda-bt-50,1
 2023-01,RY3,m,mg-extender,2
@@ -3886,7 +3886,7 @@ period,category,kind,id,units
 2023-03,RY3,f,diesel,319
 2023-03,RY3,f,gas,1
 2023-03,RY3,f,petrol,1
-2023-03,RY3,m,ford-ranger,7
+2023-03,RY3,m,ford-ranger,8
 2023-03,RY3,m,isuzu-d-max,189
 2023-03,RY3,m,mazda-bt-50,2
 2023-03,RY3,m,mitsubishi-triton,13
@@ -7638,7 +7638,7 @@ period,category,kind,id,units
 2025-02,RY3,bf,volvo|diesel,1
 2025-02,RY3,f,diesel,118
 2025-02,RY3,f,petrol,4
-2025-02,RY3,m,ford-ranger,4
+2025-02,RY3,m,ford-ranger,5
 2025-02,RY3,m,isuzu-d-max,55
 2025-02,RY3,m,mg-extender,3
 2025-02,RY3,m,mitsubishi-triton,2

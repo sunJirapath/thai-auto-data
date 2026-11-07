@@ -97,7 +97,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-05,RY1,FERRARI,PORTOFINO M,2,ferrari,,dlt-web-aeaaf410
 2023-05,RY1,FERRARI,ROMA,2,ferrari,,dlt-web-aeaaf410
 2023-05,RY1,FORD,EVEREST,1171,ford,ford-everest,dlt-web-aeaaf410
-2023-05,RY1,FORD,FORD EVEREST zJAE9BC,1,ford,,dlt-web-aeaaf410
+2023-05,RY1,FORD,FORD EVEREST zJAE9BC,1,ford,ford-everest,dlt-web-aeaaf410
 2023-05,RY1,FORD,Focus,1,ford,,dlt-web-aeaaf410
 2023-05,RY1,FORD,MUSTANG,4,ford,ford-mustang,dlt-web-aeaaf410
 2023-05,RY1,FORD,MUSTANG 2.3L ECOBOOST FASTBACK,2,ford,ford-mustang,dlt-web-aeaaf410
@@ -114,7 +114,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-05,RY1,HONDA,BR-V,85,honda,honda-br-v,dlt-web-aeaaf410
 2023-05,RY1,HONDA,CITY,2036,honda,honda-city,dlt-web-aeaaf410
 2023-05,RY1,HONDA,CITY HATCHBACK,2342,honda,honda-city-hatchback,dlt-web-aeaaf410
-2023-05,RY1,HONDA,CITY'11,1,honda,,dlt-web-aeaaf410
+2023-05,RY1,HONDA,CITY'11,1,honda,honda-city,dlt-web-aeaaf410
 2023-05,RY1,HONDA,CIVIC,1536,honda,honda-civic,dlt-web-aeaaf410
 2023-05,RY1,HONDA,CIVIC TYPE R,7,honda,honda-civic-type-r,dlt-web-aeaaf410
 2023-05,RY1,HONDA,CR-V,374,honda,honda-cr-v,dlt-web-aeaaf410
@@ -135,7 +135,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-05,RY1,HONDA,STEPWGN e:HEV SPADA,4,honda,honda-step-wgn,dlt-web-aeaaf410
 2023-05,RY1,HONDA,WR-V,138,honda,honda-wr-v,dlt-web-aeaaf410
 2023-05,RY1,HYUNDAI,CRETA,47,hyundai,hyundai-creta,dlt-web-aeaaf410
-2023-05,RY1,HYUNDAI,GRAND STAREX,1,hyundai,,dlt-web-aeaaf410
+2023-05,RY1,HYUNDAI,GRAND STAREX,1,hyundai,hyundai-h-1,dlt-web-aeaaf410
 2023-05,RY1,HYUNDAI,IONIQ EV,1,hyundai,,dlt-web-aeaaf410
 2023-05,RY1,HYUNDAI,STARGAZER,23,hyundai,hyundai-stargazer,dlt-web-aeaaf410
 2023-05,RY1,ISUZU,CAB4 SL 2.5,1,isuzu,,dlt-web-aeaaf410
@@ -173,7 +173,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-05,RY1,MAZDA,MAZDA CX-30,431,mazda,mazda-cx-30,dlt-web-aeaaf410
 2023-05,RY1,MAZDA,MAZDA CX-5,54,mazda,mazda-cx-5,dlt-web-aeaaf410
 2023-05,RY1,MAZDA,MAZDA CX-8,151,mazda,mazda-cx-8,dlt-web-aeaaf410
-2023-05,RY1,MAZDA,MX-5 ROADSTER 990S,7,mazda,,dlt-web-aeaaf410
+2023-05,RY1,MAZDA,MX-5 ROADSTER 990S,7,mazda,mazda-mx-5,dlt-web-aeaaf410
 2023-05,RY1,MCLAREN,765LT SPIDER V8 4.0L,1,mclaren,,dlt-web-aeaaf410
 2023-05,RY1,MERCEDES BENZ,A 200,92,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2023-05,RY1,MERCEDES BENZ,AMG C43 4MATIC Coupe,11,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
@@ -347,7 +347,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-05,RY1,TESLA,MODEL Y RWD,1,tesla,tesla-model-y,dlt-web-aeaaf410
 2023-05,RY1,TESLA,MODEL Y STANDARD,1,tesla,tesla-model-y,dlt-web-aeaaf410
 2023-05,RY1,TESLA,MODEL Y STANDARD RANGE,1,tesla,tesla-model-y,dlt-web-aeaaf410
-2023-05,RY1,TESLA,MODEL3 LONG RANGE PER,1,tesla,,dlt-web-aeaaf410
+2023-05,RY1,TESLA,MODEL3 LONG RANGE PER,1,tesla,tesla-model-3,dlt-web-aeaaf410
 2023-05,RY1,TESLA,Model 3 Long Range,125,tesla,tesla-model-3,dlt-web-aeaaf410
 2023-05,RY1,TESLA,Model 3 Performance,46,tesla,tesla-model-3,dlt-web-aeaaf410
 2023-05,RY1,TESLA,Model 3 Rear-Wheel Drive,58,tesla,tesla-model-3,dlt-web-aeaaf410
@@ -406,8 +406,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-05,RY1,TOYOTA,LAND CRUISER 300 ZX DIESEL,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2023-05,RY1,TOYOTA,LAND CRUISER 70 30TH,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2023-05,RY1,TOYOTA,LAND CRUISER PRADO TZ G 2.8L,1,toyota,,dlt-web-aeaaf410
-2023-05,RY1,TOYOTA,LANDCRUISER LC300 SAHARA,1,toyota,,dlt-web-aeaaf410
-2023-05,RY1,TOYOTA,LANDCRUISER LC300 SAHARA ZX,1,toyota,,dlt-web-aeaaf410
+2023-05,RY1,TOYOTA,LANDCRUISER LC300 SAHARA,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
+2023-05,RY1,TOYOTA,LANDCRUISER LC300 SAHARA ZX,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2023-05,RY1,TOYOTA,LANDCRUISER PRADO 2.8 DIESEL,2,toyota,,dlt-web-aeaaf410
 2023-05,RY1,TOYOTA,NCP93R-BEPRKT  A4,1,toyota,,dlt-web-aeaaf410
 2023-05,RY1,TOYOTA,SIENTA,59,toyota,toyota-sienta,dlt-web-aeaaf410
@@ -422,7 +422,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-05,RY1,TOYOTA,VOXY SZ,2,toyota,toyota-voxy,dlt-web-aeaaf410
 2023-05,RY1,TOYOTA,YARIS,1638,toyota,toyota-yaris,dlt-web-aeaaf410
 2023-05,RY1,TOYOTA,YARIS ATIV,4572,toyota,toyota-yaris-ativ,dlt-web-aeaaf410
-2023-05,RY1,TOYOTA,YARIS RZ HIGH PERFORMANCE,1,toyota,,dlt-web-aeaaf410
+2023-05,RY1,TOYOTA,YARIS RZ HIGH PERFORMANCE,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
 2023-05,RY1,TOYOTA,Yaris,2,toyota,toyota-yaris,dlt-web-aeaaf410
 2023-05,RY1,VOLVO,C40,75,volvo,volvo-c40,dlt-web-aeaaf410
 2023-05,RY1,VOLVO,S60,14,volvo,volvo-s60,dlt-web-aeaaf410
@@ -483,5 +483,5 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-05,RY3,TOYOTA,HIACE,13,toyota,toyota-hiace,dlt-web-aeaaf410
 2023-05,RY3,TOYOTA,HILUX REVO,6751,toyota,toyota-hilux-revo,dlt-web-aeaaf410
 2023-05,RY3,TOYOTA,Hilux Revo,4,toyota,toyota-hilux-revo,dlt-web-aeaaf410
-2023-05,RY3,TOYOTA,LAND CRUISER 79 PICK UP 4.2,1,toyota,,dlt-web-aeaaf410
+2023-05,RY3,TOYOTA,LAND CRUISER 79 PICK UP 4.2,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2023-05,RY3,VOLVO,PANTHER 8X8,3,volvo,,dlt-web-aeaaf410

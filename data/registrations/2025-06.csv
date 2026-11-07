@@ -127,7 +127,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-06,RY1,FERRARI,F8 TRIBUTO,1,ferrari,,dlt-web-aeaaf410
 2025-06,RY1,FERRARI,PUROSANGUE,1,ferrari,,dlt-web-aeaaf410
 2025-06,RY1,FORD,EVEREST,659,ford,ford-everest,dlt-web-aeaaf410
-2025-06,RY1,FORD,FORD EVEREST zFAE9BC,1,ford,,dlt-web-aeaaf410
+2025-06,RY1,FORD,FORD EVEREST zFAE9BC,1,ford,ford-everest,dlt-web-aeaaf410
 2025-06,RY1,FORD,MUSTANG,1,ford,ford-mustang,dlt-web-aeaaf410
 2025-06,RY1,FORD,MUSTANG ECOBOOST FASTBACK,1,ford,ford-mustang,dlt-web-aeaaf410
 2025-06,RY1,FORD,RANGER,760,ford,ford-ranger,dlt-web-aeaaf410
@@ -213,8 +213,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-06,RY1,MAZDA,MAZDA CX-30,85,mazda,mazda-cx-30,dlt-web-aeaaf410
 2025-06,RY1,MAZDA,MAZDA CX-5,63,mazda,mazda-cx-5,dlt-web-aeaaf410
 2025-06,RY1,MAZDA,MAZDA CX-8,25,mazda,mazda-cx-8,dlt-web-aeaaf410
-2025-06,RY1,MAZDA,ROADSTER 990S,1,mazda,,dlt-web-aeaaf410
-2025-06,RY1,MAZDA,ROADSTER S LEATHER PACKAGE,2,mazda,,dlt-web-aeaaf410
+2025-06,RY1,MAZDA,ROADSTER 990S,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2025-06,RY1,MAZDA,ROADSTER S LEATHER PACKAGE,2,mazda,mazda-mx-5,dlt-web-aeaaf410
 2025-06,RY1,MCLAREN,ARTURA SPIDER,1,mclaren,,dlt-web-aeaaf410
 2025-06,RY1,MERCEDES BENZ,A 200,35,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2025-06,RY1,MERCEDES BENZ,AMG C43 4MATIC Coupe,2,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
@@ -431,7 +431,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-06,RY1,TOYOTA,CROWN SPORT Z,1,toyota,toyota-crown-sport,dlt-web-aeaaf410
 2025-06,RY1,TOYOTA,CROWN Z 2.5L,1,toyota,,dlt-web-aeaaf410
 2025-06,RY1,TOYOTA,Fortuner,1287,toyota,toyota-fortuner,dlt-web-aeaaf410
-2025-06,RY1,TOYOTA,GR 86 RZ,1,toyota,,dlt-web-aeaaf410
+2025-06,RY1,TOYOTA,GR 86 RZ,1,toyota,toyota-gr86,dlt-web-aeaaf410
 2025-06,RY1,TOYOTA,GR SUPRA RZ MATTE WHITE EDIT,1,toyota,toyota-gr-supra,dlt-web-aeaaf410
 2025-06,RY1,TOYOTA,GR YARIS RC,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
 2025-06,RY1,TOYOTA,GR YARIS RC AT,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
@@ -544,7 +544,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2025-06,RY3,TOYOTA,HIACE,14,toyota,toyota-hiace,dlt-web-aeaaf410
 2025-06,RY3,TOYOTA,HILUX CHAMP,734,toyota,toyota-hilux-champ,dlt-web-aeaaf410
 2025-06,RY3,TOYOTA,HILUX REVO,3047,toyota,toyota-hilux-revo,dlt-web-aeaaf410
-2025-06,RY3,TOYOTA,LAND CRUISER 79 PICK UP,1,toyota,,dlt-web-aeaaf410
+2025-06,RY3,TOYOTA,LAND CRUISER 79 PICK UP,1,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2025-06,RY3,TOYOTA,ไม่ระบุ,1,toyota,,dlt-web-aeaaf410
 2025-06,RY3,UD TRUCKS,CWE08N43R280CSS9,4,ud-trucks,,dlt-web-aeaaf410
 2025-06,RY3,UD TRUCKS,PKE250CHLRM,1,ud-trucks,,dlt-web-aeaaf410

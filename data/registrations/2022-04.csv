@@ -92,8 +92,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-04,RY1,FERRARI,F8 TRIBUTO,2,ferrari,,dlt-web-aeaaf410
 2022-04,RY1,FOMM,FOMM ONE,1,fomm,,dlt-web-aeaaf410
 2022-04,RY1,FORD,EVEREST,449,ford,ford-everest,dlt-web-aeaaf410
-2022-04,RY1,FORD,FORD EVEREST zFAE9GD,1,ford,,dlt-web-aeaaf410
-2022-04,RY1,FORD,FORD RANGER,1,ford,,dlt-web-aeaaf410
+2022-04,RY1,FORD,FORD EVEREST zFAE9GD,1,ford,ford-everest,dlt-web-aeaaf410
+2022-04,RY1,FORD,FORD RANGER,1,ford,ford-ranger,dlt-web-aeaaf410
 2022-04,RY1,FORD,FORD RANGER iFBW9B4,1,ford,,dlt-web-aeaaf410
 2022-04,RY1,FORD,FORD RANGER iJBT9AR,2,ford,,dlt-web-aeaaf410
 2022-04,RY1,FORD,FORD RANGER iJBW9B4,1,ford,,dlt-web-aeaaf410
@@ -126,7 +126,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-04,RY1,HONDA,E ADVANCE,1,honda,,dlt-web-aeaaf410
 2022-04,RY1,HONDA,HR-V,1267,honda,honda-hr-v,dlt-web-aeaaf410
 2022-04,RY1,HONDA,JAZZ,372,honda,honda-jazz,dlt-web-aeaaf410
-2022-04,RY1,HONDA,JAZZ'15,1,honda,,dlt-web-aeaaf410
+2022-04,RY1,HONDA,JAZZ'15,1,honda,honda-jazz,dlt-web-aeaaf410
 2022-04,RY1,HONDA,MOBILIO,9,honda,,dlt-web-aeaaf410
 2022-04,RY1,HONDA,N BOX CUSTOM L TURBO,2,honda,,dlt-web-aeaaf410
 2022-04,RY1,HONDA,N BOX L TURBO,1,honda,,dlt-web-aeaaf410
@@ -140,7 +140,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-04,RY1,HONDA,STEP WGN e-HEV SPADA G EX,1,honda,honda-step-wgn,dlt-web-aeaaf410
 2022-04,RY1,HONDA,STEPWAGON SPADA HYBRID EHEV G,3,honda,honda-step-wgn,dlt-web-aeaaf410
 2022-04,RY1,HYUNDAI,CRETA,2,hyundai,hyundai-creta,dlt-web-aeaaf410
-2022-04,RY1,HYUNDAI,GRAND STAREX,2,hyundai,,dlt-web-aeaaf410
+2022-04,RY1,HYUNDAI,GRAND STAREX,2,hyundai,hyundai-h-1,dlt-web-aeaaf410
 2022-04,RY1,ISUZU,D-MAX,8004,isuzu,isuzu-d-max,dlt-web-aeaaf410
 2022-04,RY1,ISUZU,mu-X,1606,isuzu,isuzu-mu-x,dlt-web-aeaaf410
 2022-04,RY1,ISUZU,ไม่ระบุ,1,isuzu,,dlt-web-aeaaf410
@@ -491,6 +491,6 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2022-04,RY3,TOYOTA,Commuter,1,toyota,toyota-commuter,dlt-web-aeaaf410
 2022-04,RY3,TOYOTA,Hiace,12,toyota,toyota-hiace,dlt-web-aeaaf410
 2022-04,RY3,TOYOTA,Hilux Revo,7397,toyota,toyota-hilux-revo,dlt-web-aeaaf410
-2022-04,RY3,TOYOTA,LAND CRUISER 79 PICK UP 4.2,2,toyota,,dlt-web-aeaaf410
+2022-04,RY3,TOYOTA,LAND CRUISER 79 PICK UP 4.2,2,toyota,toyota-land-cruiser-70,dlt-web-aeaaf410
 2022-04,RY3,TOYOTA,TGN16R-TRMDKT  A7,1,toyota,,dlt-web-aeaaf410
 2022-04,RY3,VOLKSWAGEN,TRANSPORTER 6.1 PANEL VAN,1,volkswagen,,dlt-web-aeaaf410

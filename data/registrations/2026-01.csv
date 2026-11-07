@@ -243,8 +243,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-01,RY1,MAZDA,MAZDA CX-5,88,mazda,mazda-cx-5,dlt-web-aeaaf410
 2026-01,RY1,MAZDA,MAZDA CX-8,8,mazda,mazda-cx-8,dlt-web-aeaaf410
 2026-01,RY1,MAZDA,MX-5,1,mazda,mazda-mx-5,dlt-web-aeaaf410
-2026-01,RY1,MAZDA,ROADSTER 990S,1,mazda,,dlt-web-aeaaf410
-2026-01,RY1,MAZDA,ROADSTER RF 35TH ANNIVERSARY,1,mazda,,dlt-web-aeaaf410
+2026-01,RY1,MAZDA,ROADSTER 990S,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2026-01,RY1,MAZDA,ROADSTER RF 35TH ANNIVERSARY,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2026-01,RY1,MCLAREN,GTS,1,mclaren,,dlt-web-aeaaf410
 2026-01,RY1,MERCEDES BENZ,A 200,30,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2026-01,RY1,MERCEDES BENZ,AMG CLE 53 4MATIC coupe,4,mercedes-benz,mercedes-benz-cle,dlt-web-aeaaf410
@@ -460,7 +460,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-01,RY1,TOYOTA,Corolla,186,toyota,toyota-corolla,dlt-web-aeaaf410
 2026-01,RY1,TOYOTA,D-Cab 2x4 2.4E A/T,1,toyota,,dlt-web-aeaaf410
 2026-01,RY1,TOYOTA,Fortuner,1435,toyota,toyota-fortuner,dlt-web-aeaaf410
-2026-01,RY1,TOYOTA,GR 86 RZ,1,toyota,,dlt-web-aeaaf410
+2026-01,RY1,TOYOTA,GR 86 RZ,1,toyota,toyota-gr86,dlt-web-aeaaf410
 2026-01,RY1,TOYOTA,GR COROLLA RZ,1,toyota,,dlt-web-aeaaf410
 2026-01,RY1,TOYOTA,GR SUPRA,1,toyota,toyota-gr-supra,dlt-web-aeaaf410
 2026-01,RY1,TOYOTA,GR YARIS,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
@@ -578,7 +578,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2026-01,RY3,HINO,XZU600R-WKTLST3,1,hino,,dlt-web-aeaaf410
 2026-01,RY3,HONDA,ACTY TRUCK,1,honda,,dlt-web-aeaaf410
 2026-01,RY3,ISUZU,D-MAX,2137,isuzu,isuzu-d-max,dlt-web-aeaaf410
-2026-01,RY3,ISUZU,D-MAX New Style,1,isuzu,,dlt-web-aeaaf410
+2026-01,RY3,ISUZU,D-MAX New Style,1,isuzu,isuzu-d-max,dlt-web-aeaaf410
 2026-01,RY3,ISUZU,ไม่ระบุ,134,isuzu,,dlt-web-aeaaf410
 2026-01,RY3,JAC,HFC1040EV3,4,jac,,dlt-web-aeaaf410
 2026-01,RY3,MAZDA,MAZDA BT-50,1,mazda,mazda-bt-50,dlt-web-aeaaf410

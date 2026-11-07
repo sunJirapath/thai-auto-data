@@ -119,7 +119,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-03,RY1,FERRARI,296 GTS,1,ferrari,,dlt-web-aeaaf410
 2024-03,RY1,FERRARI,PUROSANGUE,2,ferrari,,dlt-web-aeaaf410
 2024-03,RY1,FORD,EVEREST,882,ford,ford-everest,dlt-web-aeaaf410
-2024-03,RY1,FORD,FORD EVEREST,1,ford,,dlt-web-aeaaf410
+2024-03,RY1,FORD,FORD EVEREST,1,ford,ford-everest,dlt-web-aeaaf410
 2024-03,RY1,FORD,MUSTANG,2,ford,ford-mustang,dlt-web-aeaaf410
 2024-03,RY1,FORD,MUSTANG MACH-E EXTENDED RANGE,3,ford,ford-mustang-mach-e,dlt-web-aeaaf410
 2024-03,RY1,FORD,RANGER,1243,ford,ford-ranger,dlt-web-aeaaf410
@@ -193,10 +193,10 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-03,RY1,MAZDA,MAZDA CX-30,206,mazda,mazda-cx-30,dlt-web-aeaaf410
 2024-03,RY1,MAZDA,MAZDA CX-5,22,mazda,mazda-cx-5,dlt-web-aeaaf410
 2024-03,RY1,MAZDA,MAZDA CX-8,63,mazda,mazda-cx-8,dlt-web-aeaaf410
-2024-03,RY1,MAZDA,MX-5 ROADSTER 990S,1,mazda,,dlt-web-aeaaf410
-2024-03,RY1,MAZDA,ROADSTER,1,mazda,,dlt-web-aeaaf410
-2024-03,RY1,MAZDA,ROADSTER 990S,3,mazda,,dlt-web-aeaaf410
-2024-03,RY1,MAZDA,ROADSTER RF VS TERRACOTTA,1,mazda,,dlt-web-aeaaf410
+2024-03,RY1,MAZDA,MX-5 ROADSTER 990S,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2024-03,RY1,MAZDA,ROADSTER,1,mazda,mazda-mx-5,dlt-web-aeaaf410
+2024-03,RY1,MAZDA,ROADSTER 990S,3,mazda,mazda-mx-5,dlt-web-aeaaf410
+2024-03,RY1,MAZDA,ROADSTER RF VS TERRACOTTA,1,mazda,mazda-mx-5,dlt-web-aeaaf410
 2024-03,RY1,MERCEDES BENZ,A 200,46,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2024-03,RY1,MERCEDES BENZ,AMG C 43 4MATIC,1,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
 2024-03,RY1,MERCEDES BENZ,AMG C43 4MATIC Coupe,2,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
@@ -366,7 +366,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-03,RY1,SUZUKI,SWIFT GL PLUS 1.2L CVT,3,suzuki,suzuki-swift,dlt-web-aeaaf410
 2024-03,RY1,SUZUKI,SWIFT GLX 1.2L CVT,131,suzuki,suzuki-swift,dlt-web-aeaaf410
 2024-03,RY1,SUZUKI,XL7 1.5L,32,suzuki,suzuki-xl7,dlt-web-aeaaf410
-2024-03,RY1,TESLA,MODEL3 LONG RANGE PERFORMANCE,1,tesla,,dlt-web-aeaaf410
+2024-03,RY1,TESLA,MODEL3 LONG RANGE PERFORMANCE,1,tesla,tesla-model-3,dlt-web-aeaaf410
 2024-03,RY1,TESLA,Model 3 Long Range,195,tesla,tesla-model-3,dlt-web-aeaaf410
 2024-03,RY1,TESLA,Model 3 Performance,1,tesla,tesla-model-3,dlt-web-aeaaf410
 2024-03,RY1,TESLA,Model 3 Rear-Wheel Drive,297,tesla,tesla-model-3,dlt-web-aeaaf410
@@ -411,7 +411,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-03,RY1,TOYOTA,CROWN CROSSOVER G ADVANCED,2,toyota,toyota-crown-crossover,dlt-web-aeaaf410
 2024-03,RY1,TOYOTA,Corolla,333,toyota,toyota-corolla,dlt-web-aeaaf410
 2024-03,RY1,TOYOTA,Fortuner,1535,toyota,toyota-fortuner,dlt-web-aeaaf410
-2024-03,RY1,TOYOTA,GR 86 RZ,1,toyota,,dlt-web-aeaaf410
+2024-03,RY1,TOYOTA,GR 86 RZ,1,toyota,toyota-gr86,dlt-web-aeaaf410
 2024-03,RY1,TOYOTA,GR SUPRA RZ,1,toyota,toyota-gr-supra,dlt-web-aeaaf410
 2024-03,RY1,TOYOTA,GR YARIS,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
 2024-03,RY1,TOYOTA,GR YARIS RC,2,toyota,toyota-gr-yaris,dlt-web-aeaaf410
@@ -431,8 +431,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-03,RY1,TOYOTA,LAND CRUISER 300 ZX 3.3L,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2024-03,RY1,TOYOTA,LAND CRUISER 300 ZX DIESEL,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2024-03,RY1,TOYOTA,LAND CRUISER PRADO TZ G 2.8L,2,toyota,,dlt-web-aeaaf410
-2024-03,RY1,TOYOTA,LANDCRUISER LC300 AX,1,toyota,,dlt-web-aeaaf410
-2024-03,RY1,TOYOTA,LANDCRUISER LC300 ZX,1,toyota,,dlt-web-aeaaf410
+2024-03,RY1,TOYOTA,LANDCRUISER LC300 AX,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
+2024-03,RY1,TOYOTA,LANDCRUISER LC300 ZX,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
 2024-03,RY1,TOYOTA,LANDCRUISER PRADO 2.8 DIESEL,1,toyota,,dlt-web-aeaaf410
 2024-03,RY1,TOYOTA,NOAH HYBRID X,10,toyota,,dlt-web-aeaaf410
 2024-03,RY1,TOYOTA,SIENTA,3,toyota,toyota-sienta,dlt-web-aeaaf410
@@ -454,7 +454,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-03,RY1,TOYOTA,VOXY S-Z 2WD,1,toyota,toyota-voxy,dlt-web-aeaaf410
 2024-03,RY1,TOYOTA,YARIS ATIV,4297,toyota,toyota-yaris-ativ,dlt-web-aeaaf410
 2024-03,RY1,TOYOTA,YARIS CROSS,3607,toyota,toyota-yaris-cross,dlt-web-aeaaf410
-2024-03,RY1,TOYOTA,YARIS GR CIRCUIT PACK,1,toyota,,dlt-web-aeaaf410
+2024-03,RY1,TOYOTA,YARIS GR CIRCUIT PACK,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
 2024-03,RY1,TOYOTA,Yaris,997,toyota,toyota-yaris,dlt-web-aeaaf410
 2024-03,RY1,VOLKSWAGEN,ID BUZZ,11,volkswagen,,dlt-web-aeaaf410
 2024-03,RY1,VOLT,VOLT FOR FOUR,3,volt,,dlt-web-aeaaf410
