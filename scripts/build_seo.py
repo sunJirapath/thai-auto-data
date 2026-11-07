@@ -6,7 +6,7 @@ Run from anywhere after each data refresh (no dependencies, standard library onl
     python scripts/build_seo.py          # rewrite index.html, brands/ models/ ev/ and sitemap.xml
     python scripts/build_seo.py --check  # exit 1 if any of them is out of date (no writes)
 
-In index.html it rewrites only the regions between  <!-- seo:NAME:start --> ... <!-- seo:NAME:end -->,
+In index.html it rewrites only the regions between <!-- seo:NAME:start --> ... <!-- seo:NAME:end -->,
 plus the JSON-LD "description"/"temporalCoverage" values. brands/, models/ and ev/ are generated whole.
 """
 import csv
@@ -35,6 +35,11 @@ def n(x):
     return f"{int(x):,}"
 
 
+def month_names(period):
+    y, m = (int(p) for p in period.split("-"))
+    return f"{TH_MONTHS[m - 1]} {y + 543}", f"{EN_MONTHS[m - 1]} {y}"
+
+
 def build_facts():
     market = rows("summaries/market_monthly.csv")
     ok = [r for r in market if r["status"] == "ok"]
@@ -46,9 +51,9 @@ def build_facts():
                    key=lambda r: int(r["rank"]))[:25]
     top_m = sorted((r for r in rows("summaries/model_monthly.csv") if r["period"] == per),
                    key=lambda r: int(r["rank"]))[:25]
-    y, m = (int(p) for p in per.split("-"))
-    return dict(per=per, first=first["period"], total=int(last["total"]), mom=last["mom_pct"],
-                yoy=last["yoy_pct"], th=f"{TH_MONTHS[m - 1]} {y + 543}", en=f"{EN_MONTHS[m - 1]} {y}",
+    latest = max((r for r in market if r["status"] in ("ok", "provisional")), key=lambda r: r["period"])
+    th, en = month_names(per)
+    return dict(per=per, first=first["period"], total=int(last["total"]), th=th, en=en, latest=latest,
                 brands=brands, models=models, top_b=top_b, top_m=top_m)
 
 
@@ -77,17 +82,44 @@ def m_rows(f, rs):
 
 def static_html(f):
     b_body, m_body = b_rows(f, f["top_b"][:10]), m_rows(f, f["top_m"][:10])
+    latest = f["latest"]
+    per = latest["period"]
+    th, en = month_names(per)
+    total = n(latest["total"])
+    provisional = latest["status"] == "provisional"
+    note_th = " · ยอดรวมเบื้องต้น รอข้อมูลแยกยี่ห้อและรุ่น" if provisional else ""
+    note_en = " · Provisional national total, brand and model data pending" if provisional else ""
     return f"""<section class="card" id="seoStatic" data-page="overview" aria-labelledby="seoStaticH">
-    <h2 id="seoStaticH">ยอดจดทะเบียนรถยนต์ใหม่ล่าสุด: {f['th']} <span class="sub" lang="en">{f['en']}</span></h2>
-    <p>ชุดข้อมูลเปิดนี้รวบรวมยอดจดทะเบียนรถยนต์ใหม่ในประเทศไทยรายเดือน (ร.ย.1–3) แยกตามยี่ห้อ รุ่น จังหวัด และประเภทเชื้อเพลิง รวมถึงรถยนต์ไฟฟ้า EV ตั้งแต่ {f['first']} จากกรมการขนส่งทางบก พร้อมราคาจากเว็บไซต์ผู้ผลิต ดาวน์โหลด CSV ได้ฟรี (CC BY 4.0) <b>ตัวเลขทั้งหมดเป็นยอดจดทะเบียน ไม่ใช่ยอดขาย</b></p>
-    <p lang="en">Monthly new-vehicle registrations in Thailand (DLT categories RY1–3) by brand, model, province and fuel type since {f['first']}, with official manufacturer prices. Latest month: {f['en']}, {n(f['total'])} new registrations (month on month {pct(f['mom'])}, year on year {pct(f['yoy'])}). <b>All figures are registrations, not sales.</b></p>
-    <div class="two">
-      <div>{table(f"Top 10 brands, {f['per']} · 10 อันดับยี่ห้อ", ["#", "Brand · ยี่ห้อ", "Units · คัน", "Share · ส่วนแบ่ง"], b_body)}</div>
-      <div>{table(f"Top 10 models, {f['per']} · 10 อันดับรุ่น", ["#", "Model · รุ่น", "Brand · ยี่ห้อ", "Units · คัน", "Share · ส่วนแบ่ง"], m_body)}</div>
-    </div>
-    <p class="note">Source: Department of Land Transport (กรมการขนส่งทางบก), new registrations RY1–3, counted in the province of registration. · <a href="#/data">Cite &amp; download</a></p>
-    <p class="note"><a href="brands/">ยี่ห้อ · Brands</a> · <a href="models/">รุ่น · Models</a> · <a href="ev/">รถยนต์ไฟฟ้า · EV and fuel</a></p>
+    <h2 id="seoStaticH"><span class="locale-copy" lang="th">สรุปเดือน <time datetime="{per}">{th}</time></span><span class="locale-copy" lang="en"><time datetime="{per}">{en}</time> summary</span></h2>
+    <p class="note locale-copy" lang="th"><strong>{total} คัน</strong> จดทะเบียนใหม่ทั่วประเทศ (ร.ย.1–3){note_th}<br>เทียบเดือนก่อน {pct(latest['mom_pct'])} · เทียบเดือนเดียวกันปีก่อน {pct(latest['yoy_pct'])}</p>
+    <p class="note locale-copy" lang="en"><strong>{total} vehicles</strong> newly registered nationwide (RY1–3){note_en}<br>Month on month {pct(latest['mom_pct'])} · Year on year {pct(latest['yoy_pct'])}</p>
+    <p class="note"><a href="brands/">อันดับยี่ห้อ · Brands</a> · <a href="models/">อันดับรุ่น · Models</a> · <a href="ev/">ยอดจดทะเบียน EV</a> · <a href="summaries/market_monthly.csv">ยอดรายเดือน CSV</a></p>
+    <p class="note locale-copy" lang="th">ที่มา <a href="https://web.dlt.go.th/statistics/">กรมการขนส่งทางบก</a> · <a href="data/sources.csv">ทะเบียนแหล่งข้อมูล</a></p>
+    <p class="note locale-copy" lang="en">Source <a href="https://web.dlt.go.th/statistics/">Department of Land Transport</a> · <a href="data/sources.csv">Source register</a></p>
+    <details>
+      <summary><span class="locale-copy" lang="th">10 อันดับยี่ห้อและรุ่น เดือน{f['th']}</span><span class="locale-copy" lang="en">Top 10 brands and models in {f['en']}</span></summary>
+      <div class="two">
+        <div>{table(f"10 อันดับยี่ห้อ · Top brands, {f['per']}", ["#", "Brand · ยี่ห้อ", "Units · คัน", "Share · ส่วนแบ่ง"], b_body)}</div>
+        <div>{table(f"10 อันดับรุ่น · Top models, {f['per']}", ["#", "Model · รุ่น", "Brand · ยี่ห้อ", "Units · คัน", "Share · ส่วนแบ่ง"], m_body)}</div>
+      </div>
+    </details>
   </section>"""
+
+
+def home_meta(f):
+    latest = f["latest"]
+    th, _ = month_names(latest["period"])
+    title = escape(f"ยอดจดทะเบียนรถยนต์ล่าสุด {th} | thai-auto-data")
+    coverage = ("ยอดรวมเบื้องต้น รอข้อมูลยี่ห้อและรุ่น" if latest["status"] == "provisional"
+                else "ดูอันดับยี่ห้อ รุ่น และยอดจดทะเบียน EV")
+    desc = escape(f"{th} ไทยจดทะเบียนรถยนต์ใหม่ {n(latest['total'])} คัน (ร.ย.1–3) "
+                  f"จากกรมการขนส่งทางบก {coverage} พร้อม CSV")
+    return f"""<title>{title}</title>
+<meta name="description" content="{desc}">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="{desc}">
+<meta name="twitter:title" content="{title}">
+<meta name="twitter:description" content="{desc}">"""
 
 
 def json_str(s):
@@ -177,7 +209,7 @@ def page_html(slug, p):
   <p lang="en">{p['en']}</p>
   {p['body']}
   <p class="note">Source: Department of Land Transport (กรมการขนส่งทางบก), new registrations RY1–3 · CC BY 4.0 · CSV: {csv}</p>
-  <p class="note"><a href="../{p['app']}">ดูแบบโต้ตอบ · Open in the interactive app</a> · <a href="../">← thai-auto-data</a></p>
+  <p class="note"><a href="../">ยอดจดทะเบียนรถยนต์ล่าสุดทั่วประเทศ</a> · <a href="../{p['app']}">ดูแบบโต้ตอบ · Open in the interactive app</a></p>
 </section>
 </main>
 </body>
@@ -192,6 +224,7 @@ def region(html, name, body):
 
 
 def build_index(html, f):
+    html = region(html, "head", home_meta(f))
     html = region(html, "static", static_html(f))
     html = re.sub(r'("description": )"[^"\n]*(?:\\.[^"\n]*)*"(,\n "url")',
                   lambda m: m.group(1) + json_str(description(f)) + m.group(2), html, count=1)
@@ -220,6 +253,7 @@ def main():
     j = json.loads(ld)
     assert j["@type"] == "Dataset" and j["temporalCoverage"] == f"{f['first']}/{f['per']}"
     assert new_idx.count("<table>") >= 2 and f["en"] in new_idx
+    assert f'<time datetime="{f["latest"]["period"]}">' in new_idx
     out = {idx_p: new_idx}
     urls = {idx_p: SITE}
     for slug, p in pages(f).items():

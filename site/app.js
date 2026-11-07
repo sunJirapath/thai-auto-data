@@ -11,11 +11,11 @@
   })();
   // L('English', 'ไทย'): the Thai text when the page is in Thai (the default), else the English
   function L(en, th) { return LANG === 'th' && th !== undefined ? th : en; }
+  var overviewTitle = L('New Car Registrations in Thailand | thai-auto-data', document.title);
   function yearOf(ce) { return LANG === 'en' ? ce : ce + 543; }
   var REGION_EN = { central: 'Central', east: 'East', northeast: 'Northeast', north: 'North', west: 'West', south: 'South' };
   function provName(iso) { var p = D.provinceInfo[iso]; return LANG === 'en' ? p.name_en : p.name_th; }
-  // The HTML is written in English. In Thai, its text and labels come from site/i18n-th.js (English -> Thai),
-  // and each main heading keeps its English name as a small subtitle.
+  // Translate dashboard controls from site/i18n-th.js. The landing summary already has both languages.
   function translateStatic() {
     document.documentElement.lang = LANG;
     if (LANG !== 'th') return;
@@ -953,7 +953,7 @@
     var a = el('a', { href: out.toDataURL('image/png'), download: name });
     document.body.appendChild(a); a.click(); a.remove();
   }
-  Chart.register({ id: 'exportTools', afterInit: function (chart) {
+  if (window.Chart) Chart.register({ id: 'exportTools', afterInit: function (chart) {
     var box = chart.canvas.parentNode, next = box && box.nextElementSibling;
     if (!box || !box.parentNode || (next && next.classList.contains('chart-tools'))) return;
     var canvas = chart.canvas, tools = el('div', { class: 'chart-tools' });
@@ -2540,7 +2540,8 @@
     document.getElementById('fArea').parentNode.hidden = !pf.area;
     setNav(page === 'brand' || page === 'model' ? '' : page);
     var title = document.querySelector('.side-nav a[data-nav="' + page + '"]');
-    if (!m) document.title = (page === 'overview' ? L('New Car Registrations', 'ยอดจดทะเบียนรถยนต์ใหม่') + ' · ' + L('Thai Car Market', 'ตลาดรถยนต์ไทย') : title ? title.textContent : L('Thai Car Market', 'ตลาดรถยนต์ไทย')) + ' · thai-auto-data';
+    if (page === 'overview') document.title = overviewTitle;
+    else if (!m) document.title = (title ? title.textContent : L('Thai Car Market', 'ตลาดรถยนต์ไทย')) + ' · thai-auto-data';
     renderExplorer();
     if (changed) window.scrollTo(0, 0);
   }
@@ -2572,6 +2573,12 @@
     if (a.getAttribute('data-lang') === LANG) a.setAttribute('aria-current', 'true');
     a.addEventListener('click', function (e) { e.preventDefault(); if (a.getAttribute('data-lang') !== LANG) setLang(a.getAttribute('data-lang')); });
   });
+  if (!window.Chart) {
+    var unavailable = document.getElementById('status');
+    unavailable.className = 'status error';
+    unavailable.textContent = L('Could not load the interactive charts.', 'โหลดกราฟแบบโต้ตอบไม่สำเร็จ');
+    return;
+  }
   Promise.all([
     load('summaries/market_monthly.csv'), load('summaries/brand_monthly.csv'), load('summaries/model_monthly.csv'),
     load('data/brands.csv'), load('data/models.csv'), load('data/prices.csv'),
