@@ -6,6 +6,7 @@
   --up: #006300; --down: #b4302f; --hatch: #c3c2b7;
   --f-bev: #1baf7a; --f-phev: #2b9fbf; --f-hev: #2a78d6; --f-petrol: #eda100; --f-diesel: #7a756c; --f-gas: #8b6fd6;
   --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100; --s5: #e87ba4; --s6: #5f6b7a; --s7: #4a3aa7; --s8: #e34948;
+  --r-north: #7c4dcc; --r-northeast: #c99700; --r-central: #cf2e7c; --r-south: #0a97ab;
   --font: "IBM Plex Sans Thai", system-ui, -apple-system, "Segoe UI", "Noto Sans Thai", sans-serif;
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
@@ -15,6 +16,7 @@
   --up: #0ca30c; --down: #e66767; --hatch: #4a4a46;
   --f-bev: #199e70; --f-phev: #36a9c9; --f-hev: #3987e5; --f-petrol: #c98500; --f-diesel: #8f8a80; --f-gas: #9085e9;
   --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181; --s6: #9aa5b4; --s7: #9085e9; --s8: #e66767;
+  --r-north: #a98af0; --r-northeast: #e6b422; --r-central: #f06aa8; --r-south: #2dc4d9;
 } }
 :root[data-theme="dark"] {
   color-scheme: dark;
@@ -23,6 +25,7 @@
   --up: #0ca30c; --down: #e66767; --hatch: #4a4a46;
   --f-bev: #199e70; --f-phev: #36a9c9; --f-hev: #3987e5; --f-petrol: #c98500; --f-diesel: #8f8a80; --f-gas: #9085e9;
   --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181; --s6: #9aa5b4; --s7: #9085e9; --s8: #e66767;
+  --r-north: #a98af0; --r-northeast: #e6b422; --r-central: #f06aa8; --r-south: #2dc4d9;
 }
 * { box-sizing: border-box; }
 html { background: var(--page); }
@@ -146,7 +149,9 @@ td.move.up { color: var(--up); } td.move.down { color: var(--down); }
 .heatmap th[scope="row"] { position: static; text-align: left; color: var(--ink); font-size: .85rem; }
 .heat-wrap { max-height: none; }
 .prose p { margin: 4px 0; font-size: .88rem; }
-.geo-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; }
+.geo-head { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; min-height: 28px; }
+.geo-head .chart-tools { margin-top: 0; }   /* buttons follow their own chart's title, not the neighbouring map's */
+#geoMetric { margin: 4px 0 8px; align-self: start; width: fit-content; }
 .filters .share { margin-left: auto; }
 @media (max-width: 520px) { .tiles { grid-template-columns: 1fr 1fr; gap: 8px; } .tile .value { font-size: 1.15rem; } .tile { padding: 10px; } }
 .lang-switch { display: inline-flex; border: 1px solid var(--axis); border-radius: 6px; overflow: hidden; }

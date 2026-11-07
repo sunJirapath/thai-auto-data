@@ -215,14 +215,16 @@
     <div class="stats" id="mStats"></div>
     <div class="chart-box tall"><canvas id="marketChart" role="img" aria-label="Chart of new registrations for the selected filters"></canvas></div>
     <p class="note" id="mNote"></p>
+    <div class="seg" id="geoMetric" role="group" aria-label="Unit for the map and regions"></div>
     <div class="two">
       <div>
-        <div class="geo-head"><h3>By region <span class="sub">click a bar to filter</span></h3><div class="seg" id="geoMetric" role="group" aria-label="Unit for the map and regions"></div></div>
+        <div class="geo-head"><h3>By region <span class="sub">click a bar to filter</span></h3></div>
         <div class="chart-box" id="regionBox"><canvas id="regionChart" role="img" aria-label="Registrations by region"></canvas></div>
       </div>
       <div>
-        <h3>Province map <span class="sub">click a province to filter</span></h3>
+        <div class="geo-head"><h3>Province map <span class="sub">click a province to filter</span></h3></div>
         <div class="map-wrap" id="mapWrap"></div>
+        <div class="map-legend" id="mapRegions"></div>
         <div class="map-legend" id="mapLegend"></div>
         <p class="note map-credit">Province boundaries: <a href="https://www.geoboundaries.org/">geoBoundaries</a> © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (ODbL) · Population: Department of Provincial Administration (house registration, Dec 2024)</p>
       </div>

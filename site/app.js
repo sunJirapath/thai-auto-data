@@ -441,6 +441,9 @@
   var GRAINS = [['m', L('Monthly', 'รายเดือน')], ['q', L('Quarterly', 'รายไตรมาส')], ['y', L('Yearly', 'รายปี')]];
   var M = { range: '12', grain: 'm', cats: { RY1: true, RY2: true, RY3: true }, area: 'all', from: null, to: null, metric: 'units' };
 
+  // 4 map hues: east and west share the central hue, as in the traditional four-region split
+  var HUE = { north: '--r-north', northeast: '--r-northeast', central: '--r-central', east: '--r-central', west: '--r-central', south: '--r-south', bkk: '--r-central' };
+  var MIX = [30, 48, 66, 84, 100]; // class 1..5 = share of the hue over the card surface; stronger = more
   function regionGroup(iso) { return iso === 'TH-10' ? 'bkk' : D.provinceInfo[iso].region; }
   function areaProvinces(area) {
     if (area === 'all') return null;
@@ -733,7 +736,7 @@
       if (M.area.indexOf('region:') === 0) return g === M.area.slice(7) || (M.area === 'region:central' && g === 'bkk');
       return g === regionGroup(M.area.slice(5));
     }
-    var accent = css('--accent'), dim = css('--axis');
+    var dim = css('--axis');
     var ro = baseOptions();
     ro.indexAxis = 'y';
     ro.interaction = { mode: 'nearest', intersect: true, axis: 'y' };
@@ -769,7 +772,7 @@
       type: 'bar', options: ro, plugins: [barLabels],
       data: { labels: REGION_GROUPS.map(function (g) { return g[1]; }),
         datasets: [{ data: values,
-          backgroundColor: REGION_GROUPS.map(function (g) { return activeGroup(g[0]) ? accent : dim; }),
+          backgroundColor: REGION_GROUPS.map(function (g) { return activeGroup(g[0]) ? css(HUE[g[0]]) : dim; }),
           borderRadius: 4, borderSkipped: 'start', maxBarThickness: 22 }] }
     });
 
@@ -778,7 +781,6 @@
     var vals = Object.keys(byIso).map(metric).filter(function (v) { return v > 0; }).sort(function (a, b) { return a - b; });
     var breaks = [0.2, 0.4, 0.6, 0.8].map(function (q) { return vals[Math.floor(q * (vals.length - 1))]; });
     function cls(v) { if (!v) return -1; var k = 0; while (k < breaks.length && v > breaks[k]) k++; return k; }
-    var colors = [1, 2, 3, 4, 5].map(function (n) { return css('--q' + n); });
     var rank = Object.keys(byIso).sort(function (a, b) { return metric(b) - metric(a); });
     var wrap = document.getElementById('mapWrap');
     wrap.textContent = '';
@@ -790,7 +792,7 @@
     D.map.paths.forEach(function (f) {
       var path = document.createElementNS(NS, 'path'), v = byIso[f.iso], k = cls(metric(f.iso)), info = D.provinceInfo[f.iso];
       path.setAttribute('d', f.d);
-      path.setAttribute('fill', k < 0 ? css('--grid') : colors[k]);
+      path.style.fill = k < 0 ? 'var(--grid)' : 'color-mix(in srgb, var(' + HUE[info.region] + ') ' + MIX[k] + '%, var(--surface))';
       path.setAttribute('class', 'prov' + (selSet[f.iso] ? ' sel' : ''));
       path.setAttribute('tabindex', '0');
       var change = prevOk && prevIso[f.iso] ? pctText(100 * (v - prevIso[f.iso]) / prevIso[f.iso]) : '—';
@@ -821,10 +823,16 @@
     var legend = document.getElementById('mapLegend');
     legend.textContent = '';
     var edges = [vals[0]].concat(breaks).concat([vals[vals.length - 1]]);
-    colors.forEach(function (c, k) {
-      var sw = el('i'); sw.style.background = c;
+    MIX.forEach(function (m, k) {
+      var sw = el('i'); sw.style.background = 'color-mix(in srgb, var(--ink-2) ' + m + '%, var(--surface))';
       var lo = percap ? edges[k].toFixed(1) : fmt(edges[k]), hi = percap ? edges[k + 1].toFixed(1) : fmt(edges[k + 1]);
-      legend.appendChild(add(el('span'), sw, document.createTextNode(k === colors.length - 1 ? '> ' + lo : lo + '–' + hi)));
+      legend.appendChild(add(el('span'), sw, document.createTextNode(k === MIX.length - 1 ? '> ' + lo : lo + '–' + hi)));
+    });
+    var key = document.getElementById('mapRegions');
+    key.textContent = '';
+    [['--r-north', L('North', 'เหนือ')], ['--r-northeast', L('Northeast', 'อีสาน')], ['--r-central', L('Central · East · West', 'กลาง · ตะวันออก · ตะวันตก')], ['--r-south', L('South', 'ใต้')]].forEach(function (r) {
+      var sw = el('i'); sw.style.background = 'var(' + r[0] + ')';
+      key.appendChild(add(el('span'), sw, document.createTextNode(r[1])));
     });
 
     var trs = rank.map(function (i, n) {
@@ -954,8 +962,8 @@
     document.body.appendChild(a); a.click(); a.remove();
   }
   Chart.register({ id: 'exportTools', afterInit: function (chart) {
-    var box = chart.canvas.parentNode, next = box && box.nextElementSibling;
-    if (!box || !box.parentNode || (next && next.classList.contains('chart-tools'))) return;
+    var box = chart.canvas.parentNode, next = box && box.nextElementSibling, head = box && box.previousElementSibling;
+    if (!box || !box.parentNode || (next && next.classList.contains('chart-tools')) || (head && head.querySelector('.chart-tools'))) return;
     var canvas = chart.canvas, tools = el('div', { class: 'chart-tools' });
     function stem() { return 'thai-auto-data-' + (canvas.id || 'chart').replace(/Chart$/, '') + '-' + selectedMonths()[0] + '-' + selectedMonths().slice(-1)[0]; }
     [['CSV', L('Download the chart data (CSV)', 'ดาวน์โหลดข้อมูลกราฟ (CSV)')], ['PNG', L('Download the chart as an image (PNG)', 'ดาวน์โหลดภาพกราฟ (PNG)')]].forEach(function (t) {
@@ -967,7 +975,8 @@
       });
       tools.appendChild(btn);
     });
-    box.parentNode.insertBefore(tools, box.nextSibling);
+    // a chart with a .geo-head title row keeps its buttons in that row, level with the map's title
+    if (head && head.classList.contains('geo-head')) head.appendChild(tools); else box.parentNode.insertBefore(tools, box.nextSibling);
   } });
   var barLabels = {
     id: 'barLabels',
