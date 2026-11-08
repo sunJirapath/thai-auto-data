@@ -153,9 +153,9 @@ def json_str(s):
 
 def description(f):
     return (f"ยอดจดทะเบียนรถยนต์ใหม่ในประเทศไทยรายเดือน (ร.ย.1–3) แยกยี่ห้อ รุ่น จังหวัด และเชื้อเพลิง ตั้งแต่ {f['first']} ถึง {f['per']} "
-            f"จากกรมการขนส่งทางบก พร้อมราคารถจากเว็บไซต์ผู้ผลิต เป็นยอดจดทะเบียน ไม่ใช่ยอดขาย. "
+            f"จากกรมการขนส่งทางบก พร้อมราคารถจากเว็บไซต์ผู้ผลิต (บางรุ่นใช้แหล่งไม่ทางการและระบุว่ายังไม่ยืนยัน) เป็นยอดจดทะเบียน ไม่ใช่ยอดขาย. "
             f"Monthly new vehicle registrations in Thailand (DLT categories RY1-RY3) by brand, model, province and fuel type "
-            f"from {f['first']} to {f['per']}, with prices from official manufacturer websites. Registrations, not sales. "
+            f"from {f['first']} to {f['per']}, with prices from official manufacturer websites (non-official sources marked unverified). Registrations, not sales. "
             f"Missing data is left empty, never 0.")
 
 

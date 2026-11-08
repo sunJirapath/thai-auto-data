@@ -6,7 +6,7 @@
 
 *Thailand new car registration open data (monthly, by brand, model, province and fuel type, 2021 to now) with official car prices, as CSV. English: [README.md](README.md)*
 
-ข้อมูลเปิด (open data) ตลาดรถยนต์ไทย: ยอดรถจดทะเบียนใหม่รายเดือน แยกยี่ห้อและรุ่น และราคาจากเว็บไซต์ทางการของค่ายรถ ในรูปแบบ CSV ที่ดาวน์โหลดและนำไปใช้ต่อได้ทันที
+ข้อมูลเปิด (open data) ตลาดรถยนต์ไทย: ยอดรถจดทะเบียนใหม่รายเดือน แยกยี่ห้อและรุ่น และราคาจากเว็บไซต์ทางการของค่ายรถ (บางรุ่นใช้แหล่งไม่ทางการและระบุว่ายังไม่ยืนยัน) ในรูปแบบ CSV ที่ดาวน์โหลดและนำไปใช้ต่อได้ทันที
 
 ใช้ดูยอดจดทะเบียนรถยนต์ใหม่รายยี่ห้อและรายรุ่น ส่วนแบ่งตลาดรถยนต์ ยอดจดทะเบียนรถยนต์ไฟฟ้า (EV) และไฮบริด ยอดรายจังหวัดและรายภาค และราคารถยนต์ ข้อมูลเป็นยอดจดทะเบียน ไม่ใช่ยอดขาย แต่ใช้แทนยอดขายรถยนต์ได้ใกล้เคียง
 
@@ -22,7 +22,7 @@
 | [`summaries/brand_monthly.csv`](summaries/brand_monthly.csv) | ยอดรายยี่ห้อต่อเดือน ส่วนแบ่งตลาด อันดับ และ YoY |
 | [`summaries/model_monthly.csv`](summaries/model_monthly.csv) | ยอดรายรุ่น (ระดับ model) ต่อเดือน ส่วนแบ่งตลาด อันดับ และ YoY |
 | [`summaries/variant_monthly.csv`](summaries/variant_monthly.csv) | ยอดรายเดือนแยกตามชื่อรุ่นย่อยที่กรมฯ บันทึก (เฉพาะชื่อที่จับคู่กับรุ่นได้) |
-| [`data/prices.csv`](data/prices.csv) | ราคาจากเว็บไซต์ทางการของค่ายรถ แยกรุ่นย่อย บันทึกแบบต่อท้าย (ไม่ลบประวัติ) ทุกแถวมีลิงก์แหล่งที่มา |
+| [`data/prices.csv`](data/prices.csv) | ราคาแยกรุ่นย่อย บันทึกแบบต่อท้าย (ไม่ลบประวัติ) ทุกแถวมีลิงก์แหล่งที่มา แถว `status=verified` มาจากเว็บไซต์ทางการของค่ายรถ แถว `status=unverified` มาจากหน้าเว็บไม่ทางการที่ระบุไว้ใน `note` |
 | [`data/registrations_by_province/YYYY-MM.csv`](data/registrations_by_province) | ข้อมูลรายเดือนระดับแถวแยกจังหวัด (จังหวัด ประเภท ยี่ห้อ รุ่น) รวมทุกจังหวัดแล้วเท่ากับไฟล์ระดับประเทศทุกแถว |
 | [`summaries/province_monthly.csv`](summaries/province_monthly.csv) | ยอดรายเดือนแยกจังหวัดและประเภทรถ |
 | [`summaries/areas/`](summaries/areas) | ยอดรายยี่ห้อและรายรุ่นต่อเดือนแยกพื้นที่: ทั้งประเทศ (`all`), ต่างจังหวัด (`upcountry`), 6 ภาค (`region-*`) และ 77 จังหวัด (`TH-xx`) |
@@ -39,7 +39,7 @@
 
 <!-- pending --><!-- /pending -->
 
-**ราคา:** ตอนนี้มีราคาจากเว็บไซต์ทางการ 184 รุ่น 622 รายการ (Toyota, Lexus, Honda, Isuzu, Mitsubishi, Ford, Nissan, Mazda, Subaru, Suzuki, BYD, MG, GWM/Haval/ORA/Tank/POER, Changan/Deepal, Chery, Omoda/Jaecoo, AION, Wuling, Tesla, Hyundai, Kia, XPENG, Zeekr, Denza, BMW, MINI, Mercedes-Benz, Porsche, Volvo และ AVATR) ครอบคลุม 93% ของยอดจดทะเบียน 12 เดือนล่าสุด ทุกแถวมีลิงก์หน้าเว็บที่ใช้อ้างอิง ประวัติราคาเริ่มจากวันที่บันทึก จึงไม่ครบย้อนหลัง
+**ราคา:** ตอนนี้มีราคาจากเว็บไซต์ทางการ 184 รุ่น 622 รายการ และราคาจากแหล่งไม่ทางการที่ยังไม่ยืนยันอีก 6 รุ่น 19 รายการ (Toyota, Lexus, Honda, Isuzu, Mitsubishi, Ford, Nissan, Mazda, Subaru, Suzuki, BYD, MG, GWM/Haval/ORA/Tank/POER, Changan/Deepal, Chery, Omoda/Jaecoo, AION, Wuling, Tesla, Hyundai, Kia, XPENG, Zeekr, Denza, BMW, MINI, Mercedes-Benz, Porsche, Volvo และ AVATR) ครอบคลุม 93% ของยอดจดทะเบียน 12 เดือนล่าสุด ทุกแถวมีลิงก์หน้าเว็บที่ใช้อ้างอิง ประวัติราคาเริ่มจากวันที่บันทึก จึงไม่ครบย้อนหลัง
 
 ถ้าเดือนใดไม่มีข้อมูลจากต้นทาง จะแสดงเป็น `status=missing` และเว้นตัวเลขว่าง **ไม่ใช่ 0** รายละเอียดอยู่ใน [DATA_SOURCES.md](DATA_SOURCES.md) เดือนที่กรมฯ ลงแค่ยอดรวมทั้งประเทศ (RY1-RY3) ก่อนไฟล์ยี่ห้อ-รุ่น จะอยู่ใน `summaries/market_monthly.csv` เป็น `status=provisional` ไม่มีแถวยี่ห้อหรือรุ่น แหล่งที่มาอยู่ใน `data/provisional_totals.csv` และจะเปลี่ยนเป็น `ok` เมื่อไฟล์เต็มมา
 
@@ -103,7 +103,7 @@ ORDER BY period;
 - รถยนต์ไฟฟ้า (EV, BEV) ไฮบริด (HEV, PHEV) มีสัดส่วนเท่าไร และโตเร็วแค่ไหน
 - แบรนด์จีนกับแบรนด์ญี่ปุ่น ส่วนแบ่งตลาดเปลี่ยนไปอย่างไร
 - จังหวัดหรือภาคไหนจดทะเบียนรถใหม่มาก ต่อประชากรเท่าไร
-- ราคารถจากเว็บไซต์ทางการของแต่ละรุ่นย่อย พร้อมลิงก์ที่มา
+- ราคารถของแต่ละรุ่นย่อย พร้อมลิงก์ที่มา (เว็บไซต์ทางการ หรือแหล่งไม่ทางการที่ระบุไว้)
 
 **หมายเหตุ:** ข้อมูลนี้เป็นยอดจดทะเบียน ใช้แทน "ยอดขายรถยนต์" ได้โดยประมาณเท่านั้น ถ้าอ้างอิงตัวเลข ให้เรียกว่ายอดจดทะเบียน
 
