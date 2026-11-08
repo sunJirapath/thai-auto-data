@@ -34,6 +34,9 @@
       'ข้อมูลจาก thai-auto-data โดย sunJirapath, https://doi.org/10.5281/zenodo.23348748, สัญญาอนุญาต CC BY 4.0\n' +
       'ข้อมูลต้นฉบับจากกรมการขนส่งทางบก (web.dlt.go.th/statistics)';
   }
+  function scrollToEl(node) {
+    if (node) node.scrollIntoView({ block: 'start' });
+  }
   function setLang(lang) {
     try { localStorage.setItem('lang', lang); } catch (e) { /* private mode: the link still carries it */ }
     var h = location.hash || '#/', base = h.split('?')[0], q = (h.split('?')[1] || '').split('&').filter(function (kv) { return kv && kv.indexOf('lang=') !== 0; });
@@ -475,7 +478,7 @@
   var M = { range: '12', grain: 'm', cats: { RY1: true, RY2: true, RY3: true }, area: 'all', from: null, to: null, metric: 'units' };
 
   // Region bars retain the four-region hues. The map uses a single metric scale.
-  var HUE = { north: '--r-north', northeast: '--r-northeast', central: '--r-central', east: '--r-central', west: '--r-central', south: '--r-south', bkk: '--r-central' };
+  var HUE = { north: '--r-north', northeast: '--r-northeast', central: '--r-central', east: '--r-east', west: '--r-west', south: '--r-south', bkk: '--r-bkk' };
   function regionGroup(iso) { return iso === 'TH-10' ? 'bkk' : D.provinceInfo[iso].region; }
   function areaProvinces(area) {
     if (area === 'all') return null;
@@ -640,6 +643,8 @@
           var my = chart.scales.y.getPixelForValue(mark);
           if (my > y - 20 && my < y + 2) y = my - 3;   // the last-year mark sits where the label goes: lift the label just above it
         }
+        var hi = opts.hi && opts.hi[i];
+        ctx.font = (hi ? '600 12px ' : '11px ') + css('--font'); ctx.fillStyle = hi ? css('--ink') : css('--ink-2');
         ctx.fillText(fmtK(t), meta.data[i].x, y - 5);
       });
       ctx.restore();
@@ -716,7 +721,26 @@
     opt.scales.x.stacked = true; opt.scales.y.stacked = true;
     opt.scales.y.ticks.callback = kTicks;
     opt.layout = { padding: { top: 18 } };
-    opt.plugins.totalLabels = { totals: order.map(function (k) { return buckets[k].total; }), topIndex: topIndex, marks: marks };
+    var totals = order.map(function (k) { return buckets[k].total; });
+    var full = order.filter(function (k) { return !buckets[k].prov && buckets[k].months.length === (M.grain === 'm' ? 1 : M.grain === 'q' ? 3 : 12); });
+    var peakK = full.reduce(function (m, k) { return !m || buckets[k].total > buckets[m].total ? k : m; }, null);
+    var lowK = full.reduce(function (m, k) { return !m || buckets[k].total < buckets[m].total ? k : m; }, null);
+    var lastK = order[order.length - 1];
+    opt.plugins.totalLabels = { totals: totals, topIndex: topIndex, marks: marks,
+      hi: order.map(function (k) { return k === peakK || k === lastK; }) };
+    var insight = document.getElementById('mInsight');
+    if (!insight) {
+      insight = el('p', { class: 'note', id: 'mInsight' });
+      document.getElementById('marketChart').parentNode.parentNode.insertBefore(insight, document.getElementById('marketChart').parentNode);
+    }
+    var avg = full.length ? full.reduce(function (s, k) { return s + buckets[k].total; }, 0) / full.length : 0;
+    insight.textContent = '';
+    if (full.length >= 3 && peakK !== lowK) {
+      function part(label, k) { return label + ' ' + bucketLabel(k, buckets[k].months.length) + ' ' + fmt(buckets[k].total) + L(' units', ' คัน'); }
+      var lastFull = full[full.length - 1], dv = avg ? 100 * (buckets[lastFull].total - avg) / avg : 0;
+      insight.textContent = part(L('Peak', 'สูงสุด'), peakK) + ' · ' + part(L('Lowest', 'ต่ำสุด'), lowK) + ' · ' +
+        bucketLabel(lastFull, buckets[lastFull].months.length) + ' ' + (dv >= 0 ? L('is above', 'สูงกว่า') : L('is below', 'ต่ำกว่า')) + L(' the period average by ', 'ค่าเฉลี่ยช่วงนี้ ') + Math.abs(dv).toFixed(1) + '%';
+    }
     opt.plugins.tooltip.callbacks = {
       title: function (items) {
         var b = buckets[order[items[0].dataIndex]];
@@ -797,6 +821,7 @@
     ro.plugins.legend.display = false;
     ro.scales.x.grid = { color: css('--grid') }; ro.scales.x.ticks.callback = kTicks;
     ro.scales.y.grid = { display: false };
+    ro.scales.y.ticks.callback = function (v) { return wrapLabel(this.getLabelForValue(v), Math.max(30, this.maxWidth - 14)); };
     var groupPop = {};
     REGION_GROUPS.forEach(function (g) { groupPop[g[0]] = 0; });
     Object.keys(byIso).forEach(function (i) { groupPop[regionGroup(i)] += D.population[i]; });
@@ -810,8 +835,10 @@
     // Bangkok (company and leasing registrations) is often several times any region: cap the axis so the others stay readable
     var rest = Math.max.apply(null, values.slice(1)), capped = !percap && values[0] > 3 * rest;
     if (capped) ro.scales.x.max = Math.ceil(1.3 * rest / 10000) * 10000;
-    ro.layout = { padding: { right: 96 } };
-    ro.plugins.barLabels = { labels: values.map(function (v) { return percap ? v.toFixed(1) : fmt(v); }) };
+    var valueLabels = values.map(function (v) { return percap ? v.toFixed(1) : fmt(v); });
+    var labelWidth = Math.max.apply(null, valueLabels.map(function (label) { return textWidth(label, '12px ' + css('--font')); }));
+    ro.layout = { padding: { right: 12 + Math.ceil(labelWidth) } };
+    ro.plugins.barLabels = { labels: valueLabels };
     document.getElementById('regionBasis').textContent = L('All regions · ', 'ทุกภูมิภาค · ') +
       (percap ? L('registrations per 1,000 people', 'ยอดจดทะเบียนต่อประชากร 1,000 คน') : L('new registrations (vehicles)', 'ยอดจดทะเบียนใหม่ (คัน)')) +
       (capped ? L(' · Bangkok’s bar is shortened to keep the other regions readable', ' · ตัดความยาวแท่งกรุงเทพฯ เพื่อให้อ่านค่าในภาคอื่นได้') : '');
@@ -855,15 +882,14 @@
       (1000 * areaUnits / areaPopulation).toFixed(1) + L(' per 1,000 people', ' คันต่อประชากร 1,000 คน');
     document.getElementById('mapRankings').href = '#/ranking' + filterQuery();
     if (D.map) renderProvinceMap({ metric: metric, percap: percap, selected: selSet, totals: byIso, per1000: per1000 });
+    else if (!D.mapFailed) loadMap();
   }
 
   function loadMap() {
     if (D.mapRequest) return;
     var message = document.getElementById('mapStatus'), retry = document.getElementById('mapRetry');
     D.mapFailed = false;
-    var loadButton = document.getElementById('mapLoad');
-    if (document.activeElement === retry || document.activeElement === loadButton) document.getElementById('mapArea').focus();
-    loadButton.hidden = true;
+    if (document.activeElement === retry) document.getElementById('mapArea').focus();
     retry.hidden = true;
     message.className = 'status loading';
     message.textContent = L('Loading province map…', 'กำลังโหลดแผนที่จังหวัด…');
@@ -885,7 +911,7 @@
       retry.hidden = false;
     }).finally(function () { D.mapRequest = null; });
   }
-  document.getElementById('mapLoad').onclick = document.getElementById('mapRetry').onclick = loadMap;
+  document.getElementById('mapRetry').onclick = loadMap;
   document.getElementById('mapArea').onclick = function () {
     setFilterPanel(true);
     document.getElementById('fArea').focus();
@@ -1133,26 +1159,6 @@
 
   var seriesDashes = [[], [8, 4], [3, 3], [10, 3, 2, 3], [2, 4], [12, 4], [6, 2, 2, 2], [8, 2, 2, 2, 2, 2], [1, 3]];
   var seriesMarkers = ['circle', 'triangle', 'rect', 'rectRot', 'cross', 'crossRot', 'star', 'line', 'dash'];
-  function patternedFill(chart, fill, index) {
-    var tiles = new Map(), size = 6 + 2 * (index % 3), direction = Math.floor(index / 3) % 3;
-    return function (context) {
-      var color = typeof fill === 'function' ? fill(context) : Array.isArray(fill) ? fill[context.dataIndex] : fill;
-      if (typeof color !== 'string') return color;
-      if (!tiles.has(color)) {
-        var tile = document.createElement('canvas'), ctx = tile.getContext('2d');
-        tile.width = tile.height = size;
-        ctx.fillStyle = color; ctx.fillRect(0, 0, size, size);
-        ctx.strokeStyle = css('--ink'); ctx.globalAlpha = 0.42;
-        ctx.beginPath();
-        if (direction === 0) { ctx.moveTo(0, 1); ctx.lineTo(size, 1); }
-        else if (direction === 1) { ctx.moveTo(1, 0); ctx.lineTo(1, size); }
-        else { ctx.moveTo(0, 0); ctx.lineTo(size, size); }
-        ctx.stroke();
-        tiles.set(color, chart.ctx.createPattern(tile, 'repeat'));
-      }
-      return tiles.get(color);
-    };
-  }
   if (window.Chart) Chart.register({
     id: 'seriesStyle',
     beforeInit: function (chart) {
@@ -1165,7 +1171,6 @@
         }
         if ((type === 'bar' || dataset.fill) && dataset.backgroundColor) {
           dataset.seriesColor = dataset.backgroundColor;
-          dataset.backgroundColor = patternedFill(chart, dataset.backgroundColor, i);
         }
       });
     }
@@ -1282,7 +1287,15 @@
     document.getElementById('rankEmpty').hidden = !!ids.length;
     rc.href = compareHref(kind, ids.filter(function (id) { return kind === 'b' || D.modelInfo[id]; }).slice(0, MAX_COMPARE));
     rc.textContent = kind === 'b' ? L('Compare the top 4 brands →', 'เปรียบเทียบ 4 ยี่ห้อแรก →') : L('Compare the top 4 models →', 'เปรียบเทียบ 4 รุ่นแรก →');
-    var trs = ids.slice(0, 50).map(function (id, i) {
+    var search = document.getElementById('rankSearch');
+    if (A.rankSearchKind !== kind) { search.value = ''; A.rankSearchKind = kind; }
+    search.placeholder = kind === 'b' ? L('Search a brand…', 'ค้นหายี่ห้อ…') : L('Search a model…', 'ค้นหารุ่น…');
+    search.setAttribute('aria-label', search.placeholder.replace('…', ''));
+    function renderRankTable() {
+    var q = search.value.trim().toLowerCase();
+    var shown = ids.map(function (id, i) { return i; }).filter(function (i) { return !q || nameFor(kind, ids[i]).toLowerCase().indexOf(q) >= 0; }).slice(0, 50);
+    var trs = shown.map(function (i) {
+      var id = ids[i];
       var tr = el('tr'), td = el('td', { class: 'name' });
       var on = trendIds(kind).indexOf(id) >= 0;
       var plus = el('button', { type: 'button', class: 'plus', 'data-id': id, 'aria-pressed': String(!!on), 'aria-label': L('Add ', 'เพิ่ม ') + nameFor(kind, id) + L(' to the trend chart', ' ลงกราฟเทรนด์') }, on ? '✓' : '＋');
@@ -1303,11 +1316,17 @@
     });
     var box = document.getElementById('rankTable');
     box.textContent = '';
-    box.closest('details').hidden = !trs.length;
+    box.closest('details').hidden = !ids.length;
+    if (q) box.closest('details').open = true;
+    if (!trs.length && ids.length) box.appendChild(el('p', { class: 'note' }, L('No match for “', 'ไม่พบ “') + search.value.trim() + L('” in this area and period', '” ในพื้นที่และช่วงที่เลือก')));
     if (trs.length) box.appendChild(table([['#', 1], [kind === 'b' ? L('Brand', 'ยี่ห้อ') : L('Model', 'รุ่น')], [L('Units', 'คัน'), 1], [L('Share', 'ส่วนแบ่ง'), 1], [priorText(months, 'title'), 1], [priorText(months, 'short'), 1], [L('Rank', 'อันดับ'), 1]], trs));
+    }
+    A.rankTable = renderRankTable; renderRankTable();
     document.getElementById('rankNote').textContent = (kind === 'm' ? L('Only matched model names are counted; share is of all units in the selected area and period · ', 'นับเฉพาะชื่อรุ่นที่จับคู่ได้ ส่วนแบ่งคิดจากยอดทั้งหมดในพื้นที่และช่วงที่เลือก · ') : L('Share is of all units in the selected area and period · ', 'ส่วนแบ่งคิดจากยอดทั้งหมดในพื้นที่และช่วงที่เลือก · ')) +
       L('Rank compared with ', 'อันดับเทียบกับ') + priorText(months, 'noun') + L(' · click a bar or name for details · click ＋ in the table to add it to the chart on the Trends page', ' · กดแท่งหรือชื่อเพื่อดูรายละเอียด · กด ＋ ในตารางเพื่อเพิ่มลงกราฟในหน้าเทรนด์');
   }
+  document.getElementById('rankSearch').addEventListener('input', function () { if (A.rankTable) A.rankTable(); });
+  document.getElementById('jumpMap').addEventListener('click', function () { scrollToEl(document.getElementById('geography')); });
   function trendIds(kind) { return A.custom[kind] || A.top5[kind] || []; }
   function toggleTrendId(kind, id) {
     var ids = trendIds(kind).slice(), i = ids.indexOf(id);
@@ -2338,7 +2357,9 @@
       tile(L('Latest month · ', 'เดือนล่าสุด · ') + monthLabel(last, true), fmt(lastV) + L(' units', ' คัน'), ''),
       tile(L('Models with units', 'รุ่นที่มียอด'), active.length + L(' models', ' รุ่น'), L('matched names under these filters', 'ที่จับคู่ชื่อได้ในตัวกรองนี้'))));
 
-    root.appendChild(add(el('div', { class: 'controls' }), link(compareHref('b', [brandId]), L('Compare with other brands →', 'เปรียบเทียบกับยี่ห้ออื่น →'), 'btn')));
+    var toModels = el('button', { type: 'button', class: 'btn' }, L('Models of this brand ↓', 'รายการรุ่นของยี่ห้อนี้ ↓'));
+    toModels.onclick = function () { scrollToEl(mc); };
+    root.appendChild(add(el('div', { class: 'controls' }), link(compareHref('b', [brandId]), L('Compare with other brands →', 'เปรียบเทียบกับยี่ห้ออื่น →'), 'btn'), toModels));
     barsVsLastYear('d-brand', root, L('Registrations', 'ยอดจดทะเบียน'), name, b.labels, seriesFor(idx, 'b', brandId, b, cats), prevSeriesFor(idx, 'b', brandId, b, cats));
 
     // powertrain mix of this brand
@@ -2496,7 +2517,16 @@
         link('https://github.com/sunJirapath/thai-auto-data/issues', L('Send a price with its source link', 'ส่งข้อมูลราคาพร้อมลิงก์แหล่งที่มา'))));
       return;
     }
-    var cur = currentPrices(modelId);
+    var cur = currentPrices(modelId), lists = cur.filter(function (p) { return p.price_type === 'list'; });
+    if (lists.length) {
+      var low = lists[0], seen = lists.reduce(function (m, p) { return p.observed_on > m ? p.observed_on : m; }, ''),
+        unv = lists.filter(function (p) { return p.status === 'unverified'; }).length;
+      pc.appendChild(add(el('section', { class: 'tiles' }),
+        tile(L('Starting price', 'ราคาเริ่มต้น'), baht(low.price_thb), L('List price, ', 'ราคาปกติ ') + low.variant),
+        tile(L('Latest observation', 'บันทึกล่าสุด'), dateLabel(seen), L('Promotions excluded', 'ไม่รวมโปรโมชัน')),
+        tile(L('Source status', 'สถานะแหล่งที่มา'), unv === lists.length ? L('Unverified', 'ยังไม่ยืนยัน') : unv ? L('Partly unverified', 'ยืนยันบางส่วน') : L('Official', 'เว็บไซต์ทางการ'),
+          unv ? unv + L(' of ', ' จาก ') + lists.length + L(' variants from non-official sources', ' รุ่นย่อยมาจากแหล่งไม่ทางการ') : L('All from the manufacturer website', 'ทุกรายการมาจากเว็บไซต์ผู้ผลิต'))));
+    }
     pc.appendChild(el('h3', {}, L('Latest recorded prices', 'ราคาล่าสุดที่บันทึก')));
     pc.appendChild(add(el('div', { class: 'table-wrap' }), table([[L('Variants', 'รุ่นย่อย')], [L('Category', 'ประเภท')], [L('Price', 'ราคา'), 1], [L('Observed on', 'วันที่บันทึก'), 1], [L('Source', 'แหล่งที่มา')]], cur.map(function (p) {
       return add(el('tr'), add(el('td'), sourceLabel(p.variant)), el('td', {}, p.price_type === 'list' ? L('List price', 'ราคาปกติ') : L('Promotion until ', 'โปรโมชัน ถึง ') + dateLabel(p.effective_to)),
