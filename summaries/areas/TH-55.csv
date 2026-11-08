@@ -2588,6 +2588,7 @@ period,category,kind,id,units
 2023-07,RY1,m,toyota-veloz,3
 2023-07,RY1,m,toyota-yaris,9
 2023-07,RY1,m,toyota-yaris-ativ,9
+2023-07,RY1,m,volt-for-four,1
 2023-07,RY2,b,toyota,1
 2023-07,RY2,bf,toyota|diesel,1
 2023-07,RY2,f,diesel,1
@@ -3466,6 +3467,7 @@ period,category,kind,id,units
 2024-06,RY1,m,honda-hr-v,6
 2024-06,RY1,m,hyundai-creta,1
 2024-06,RY1,m,isuzu-d-max,4
+2024-06,RY1,m,lamborghini-urus,1
 2024-06,RY1,m,mazda-bt-50,2
 2024-06,RY1,m,mazda-mazda2,1
 2024-06,RY1,m,mg-extender,1
@@ -3897,6 +3899,7 @@ period,category,kind,id,units
 2024-12,RY1,m,hyundai-creta,1
 2024-12,RY1,m,isuzu-d-max,4
 2024-12,RY1,m,isuzu-mu-x,2
+2024-12,RY1,m,mini-clubman,1
 2024-12,RY1,m,mitsubishi-mirage,1
 2024-12,RY1,m,mitsubishi-triton,2
 2024-12,RY1,m,mitsubishi-xpander,1

@@ -30,6 +30,7 @@ period,category,kind,id,units
 2021-01,RY1,f,hev,6
 2021-01,RY1,f,petrol,53
 2021-01,RY1,f,phev,1
+2021-01,RY1,m,audi-q3,1
 2021-01,RY1,m,bmw-x1,1
 2021-01,RY1,m,ford-ranger-raptor,1
 2021-01,RY1,m,honda-accord,2
@@ -2195,6 +2196,7 @@ period,category,kind,id,units
 2023-08,RY1,m,mazda-cx-8,1
 2023-08,RY1,m,mazda-mazda2,1
 2023-08,RY1,m,mg-ep,1
+2023-08,RY1,m,mini-clubman,1
 2023-08,RY1,m,mitsubishi-xpander,1
 2023-08,RY1,m,toyota-corolla-cross,1
 2023-08,RY1,m,toyota-hilux-revo,2
@@ -2246,6 +2248,7 @@ period,category,kind,id,units
 2023-09,RY1,f,diesel,22
 2023-09,RY1,f,hev,9
 2023-09,RY1,f,petrol,36
+2023-09,RY1,m,audi-a5,1
 2023-09,RY1,m,ford-ranger,3
 2023-09,RY1,m,honda-br-v,1
 2023-09,RY1,m,honda-city,16
@@ -2619,6 +2622,7 @@ period,category,kind,id,units
 2024-02,RY1,m,mitsubishi-triton,1
 2024-02,RY1,m,nissan-kicks,1
 2024-02,RY1,m,nissan-terra,1
+2024-02,RY1,m,suzuki-apv,1
 2024-02,RY1,m,toyota-corolla,1
 2024-02,RY1,m,toyota-fortuner,1
 2024-02,RY1,m,toyota-hilux-revo,2
@@ -2744,6 +2748,7 @@ period,category,kind,id,units
 2024-04,RY1,m,honda-wr-v,1
 2024-04,RY1,m,isuzu-d-max,11
 2024-04,RY1,m,isuzu-mu-x,2
+2024-04,RY1,m,jeep-gladiator,1
 2024-04,RY1,m,mazda-cx-30,2
 2024-04,RY1,m,mazda-mazda2,3
 2024-04,RY1,m,mg-mg5,5
@@ -3011,6 +3016,7 @@ period,category,kind,id,units
 2024-08,RY1,f,diesel,20
 2024-08,RY1,f,hev,14
 2024-08,RY1,f,petrol,24
+2024-08,RY1,m,audi-a5,1
 2024-08,RY1,m,byd-atto-3,1
 2024-08,RY1,m,ford-ranger,1
 2024-08,RY1,m,ford-ranger-raptor,2
@@ -3261,6 +3267,7 @@ period,category,kind,id,units
 2024-12,RY1,f,hev,3
 2024-12,RY1,f,petrol,9
 2024-12,RY1,f,phev,1
+2024-12,RY1,m,audi-tt,1
 2024-12,RY1,m,bmw-xm,1
 2024-12,RY1,m,ford-everest,2
 2024-12,RY1,m,ford-ranger,1
@@ -3446,6 +3453,7 @@ period,category,kind,id,units
 2025-03,RY1,m,honda-hr-v,7
 2025-03,RY1,m,isuzu-d-max,11
 2025-03,RY1,m,isuzu-mu-x,3
+2025-03,RY1,m,land-rover-defender,1
 2025-03,RY1,m,mazda-mazda2,3
 2025-03,RY1,m,mg-extender,1
 2025-03,RY1,m,mg-mg5,3
@@ -3454,6 +3462,7 @@ period,category,kind,id,units
 2025-03,RY1,m,mitsubishi-attrage,1
 2025-03,RY1,m,mitsubishi-mirage,2
 2025-03,RY1,m,mitsubishi-triton,2
+2025-03,RY1,m,peugeot-408,1
 2025-03,RY1,m,toyota-commuter,1
 2025-03,RY1,m,toyota-fortuner,2
 2025-03,RY1,m,toyota-yaris,1

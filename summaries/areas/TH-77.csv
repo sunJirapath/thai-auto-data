@@ -44,6 +44,7 @@ period,category,kind,id,units
 2021-01,RY1,m,honda-cr-v,6
 2021-01,RY1,m,honda-hr-v,10
 2021-01,RY1,m,honda-jazz,8
+2021-01,RY1,m,honda-mobilio,1
 2021-01,RY1,m,isuzu-d-max,39
 2021-01,RY1,m,isuzu-mu-x,2
 2021-01,RY1,m,mazda-cx-3,3
@@ -265,6 +266,7 @@ period,category,kind,id,units
 2021-03,RY1,f,phev,1
 2021-03,RY1,m,bmw-x3,1
 2021-03,RY1,m,bmw-x5,1
+2021-03,RY1,m,chevrolet-colorado,1
 2021-03,RY1,m,ford-everest,6
 2021-03,RY1,m,ford-ranger,5
 2021-03,RY1,m,ford-ranger-raptor,1
@@ -303,6 +305,7 @@ period,category,kind,id,units
 2021-03,RY1,m,nissan-note,2
 2021-03,RY1,m,nissan-x-trail,2
 2021-03,RY1,m,porsche-cayenne,1
+2021-03,RY1,m,proton-exora,1
 2021-03,RY1,m,suzuki-celerio,3
 2021-03,RY1,m,suzuki-ertiga,1
 2021-03,RY1,m,suzuki-swift,7
@@ -378,6 +381,7 @@ period,category,kind,id,units
 2021-04,RY1,f,hev,8
 2021-04,RY1,f,petrol,98
 2021-04,RY1,f,phev,1
+2021-04,RY1,m,chevrolet-trailblazer,1
 2021-04,RY1,m,ford-everest,3
 2021-04,RY1,m,ford-ranger,2
 2021-04,RY1,m,honda-br-v,1
@@ -406,6 +410,7 @@ period,category,kind,id,units
 2021-04,RY1,m,mitsubishi-triton,3
 2021-04,RY1,m,mitsubishi-xpander,3
 2021-04,RY1,m,nissan-almera,8
+2021-04,RY1,m,nissan-teana,1
 2021-04,RY1,m,suzuki-celerio,2
 2021-04,RY1,m,suzuki-swift,10
 2021-04,RY1,m,suzuki-xl7,3
@@ -475,6 +480,7 @@ period,category,kind,id,units
 2021-05,RY1,f,hev,5
 2021-05,RY1,f,petrol,100
 2021-05,RY1,f,phev,3
+2021-05,RY1,m,audi-rs4,1
 2021-05,RY1,m,bmw-3-series,1
 2021-05,RY1,m,bmw-x1,1
 2021-05,RY1,m,ford-everest,3
@@ -594,6 +600,7 @@ period,category,kind,id,units
 2021-06,RY1,m,honda-jazz,2
 2021-06,RY1,m,isuzu-d-max,42
 2021-06,RY1,m,isuzu-mu-x,10
+2021-06,RY1,m,lamborghini-huracan,1
 2021-06,RY1,m,mazda-cx-30,2
 2021-06,RY1,m,mazda-cx-5,1
 2021-06,RY1,m,mazda-cx-8,3
@@ -1581,6 +1588,7 @@ period,category,kind,id,units
 2022-04,RY1,m,honda-jazz,2
 2022-04,RY1,m,isuzu-d-max,46
 2022-04,RY1,m,isuzu-mu-x,7
+2022-04,RY1,m,land-rover-range-rover-sport,1
 2022-04,RY1,m,mazda-cx-3,1
 2022-04,RY1,m,mazda-mazda2,6
 2022-04,RY1,m,mercedes-benz-gla,1
@@ -1783,7 +1791,9 @@ period,category,kind,id,units
 2022-06,RY1,f,hev,15
 2022-06,RY1,f,petrol,81
 2022-06,RY1,f,phev,2
+2022-06,RY1,m,audi-tt,1
 2022-06,RY1,m,bmw-3-series,1
+2022-06,RY1,m,chevrolet-captiva,1
 2022-06,RY1,m,ford-everest,3
 2022-06,RY1,m,ford-ranger,2
 2022-06,RY1,m,honda-accord,1
@@ -2348,6 +2358,7 @@ period,category,kind,id,units
 2022-11,RY1,m,nissan-almera,8
 2022-11,RY1,m,nissan-kicks,3
 2022-11,RY1,m,nissan-navara,2
+2022-11,RY1,m,peugeot-3008,1
 2022-11,RY1,m,suzuki-celerio,2
 2022-11,RY1,m,suzuki-ertiga,1
 2022-11,RY1,m,suzuki-swift,2
@@ -2555,6 +2566,7 @@ period,category,kind,id,units
 2023-01,RY1,m,nissan-kicks,2
 2023-01,RY1,m,nissan-terra,1
 2023-01,RY1,m,ora-good-cat,1
+2023-01,RY1,m,subaru-outback,1
 2023-01,RY1,m,suzuki-celerio,6
 2023-01,RY1,m,suzuki-swift,9
 2023-01,RY1,m,suzuki-xl7,2
@@ -3292,6 +3304,7 @@ period,category,kind,id,units
 2023-08,RY1,f,hev,30
 2023-08,RY1,f,petrol,92
 2023-08,RY1,f,phev,4
+2023-08,RY1,m,audi-a5,1
 2023-08,RY1,m,byd-atto-3,6
 2023-08,RY1,m,byd-dolphin,1
 2023-08,RY1,m,ford-everest,3
@@ -3539,6 +3552,8 @@ period,category,kind,id,units
 2023-10,RY1,m,bmw-6-series,1
 2023-10,RY1,m,byd-atto-3,1
 2023-10,RY1,m,byd-dolphin,5
+2023-10,RY1,m,chevrolet-colorado,1
+2023-10,RY1,m,dfsk-glory-580,1
 2023-10,RY1,m,ford-everest,4
 2023-10,RY1,m,ford-ranger,9
 2023-10,RY1,m,ford-ranger-raptor,3
@@ -4020,6 +4035,7 @@ period,category,kind,id,units
 2024-02,RY1,f,hev,39
 2024-02,RY1,f,petrol,79
 2024-02,RY1,f,phev,1
+2024-02,RY1,m,audi-a5,1
 2024-02,RY1,m,bmw-i5,1
 2024-02,RY1,m,bmw-x1,1
 2024-02,RY1,m,bmw-x5,1
@@ -4027,6 +4043,7 @@ period,category,kind,id,units
 2024-02,RY1,m,byd-dolphin,3
 2024-02,RY1,m,byd-seal,3
 2024-02,RY1,m,deepal-s07,1
+2024-02,RY1,m,fomm-one,1
 2024-02,RY1,m,ford-everest,6
 2024-02,RY1,m,ford-ranger,5
 2024-02,RY1,m,ford-ranger-raptor,3
@@ -4628,6 +4645,7 @@ period,category,kind,id,units
 2024-07,RY1,m,mg-mg5,1
 2024-07,RY1,m,mg-vs,3
 2024-07,RY1,m,mg-zs,2
+2024-07,RY1,m,mini-clubman,1
 2024-07,RY1,m,mitsubishi-attrage,2
 2024-07,RY1,m,mitsubishi-mirage,3
 2024-07,RY1,m,mitsubishi-triton,2
@@ -4825,6 +4843,7 @@ period,category,kind,id,units
 2024-09,RY1,f,hev,32
 2024-09,RY1,f,petrol,41
 2024-09,RY1,f,phev,1
+2024-09,RY1,m,audi-q3,1
 2024-09,RY1,m,byd-atto-3,6
 2024-09,RY1,m,byd-dolphin,3
 2024-09,RY1,m,byd-seal,1
@@ -4934,6 +4953,7 @@ period,category,kind,id,units
 2024-10,RY1,m,byd-atto-3,3
 2024-10,RY1,m,byd-dolphin,5
 2024-10,RY1,m,byd-seal,1
+2024-10,RY1,m,fomm-one,1
 2024-10,RY1,m,ford-everest,11
 2024-10,RY1,m,ford-ranger,7
 2024-10,RY1,m,ford-ranger-raptor,1
@@ -5050,6 +5070,7 @@ period,category,kind,id,units
 2024-11,RY1,f,petrol,34
 2024-11,RY1,f,phev,5
 2024-11,RY1,m,aion-y-plus,1
+2024-11,RY1,m,audi-q8,1
 2024-11,RY1,m,bmw-x5,1
 2024-11,RY1,m,byd-atto-3,1
 2024-11,RY1,m,byd-dolphin,6
@@ -5163,6 +5184,7 @@ period,category,kind,id,units
 2024-12,RY1,f,hev,36
 2024-12,RY1,f,petrol,33
 2024-12,RY1,f,phev,1
+2024-12,RY1,m,audi-rs5,1
 2024-12,RY1,m,bmw-3-series,1
 2024-12,RY1,m,byd-atto-3,2
 2024-12,RY1,m,byd-dolphin,2
@@ -5297,6 +5319,7 @@ period,category,kind,id,units
 2025-01,RY1,m,honda-hr-v,7
 2025-01,RY1,m,isuzu-d-max,18
 2025-01,RY1,m,isuzu-mu-x,8
+2025-01,RY1,m,lotus-eletre,1
 2025-01,RY1,m,mazda-cx-3,1
 2025-01,RY1,m,mazda-cx-30,1
 2025-01,RY1,m,mazda-cx-5,1

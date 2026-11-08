@@ -674,6 +674,7 @@ period,category,kind,id,units
 2021-09,RY1,m,suzuki-celerio,3
 2021-09,RY1,m,suzuki-ciaz,1
 2021-09,RY1,m,suzuki-swift,1
+2021-09,RY1,m,toyota-avanza,1
 2021-09,RY1,m,toyota-commuter,5
 2021-09,RY1,m,toyota-fortuner,3
 2021-09,RY1,m,toyota-hilux-revo,2
@@ -1501,6 +1502,7 @@ period,category,kind,id,units
 2022-08,RY1,m,honda-city-hatchback,1
 2022-08,RY1,m,isuzu-d-max,12
 2022-08,RY1,m,isuzu-mu-x,1
+2022-08,RY1,m,jeep-wrangler,1
 2022-08,RY1,m,mazda-mazda2,4
 2022-08,RY1,m,mercedes-benz-cls,1
 2022-08,RY1,m,mg-extender,1

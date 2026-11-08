@@ -314,6 +314,7 @@ period,category,kind,id,units
 2021-06,RY1,m,honda-jazz,1
 2021-06,RY1,m,isuzu-d-max,23
 2021-06,RY1,m,isuzu-mu-x,2
+2021-06,RY1,m,jeep-gladiator,1
 2021-06,RY1,m,mg-zs,1
 2021-06,RY1,m,mitsubishi-attrage,1
 2021-06,RY1,m,mitsubishi-triton,1
@@ -371,6 +372,7 @@ period,category,kind,id,units
 2021-07,RY1,m,honda-civic,1
 2021-07,RY1,m,isuzu-d-max,7
 2021-07,RY1,m,isuzu-mu-x,3
+2021-07,RY1,m,jeep-wrangler,1
 2021-07,RY1,m,mercedes-benz-gla,1
 2021-07,RY1,m,mitsubishi-attrage,1
 2021-07,RY1,m,mitsubishi-mirage,1
@@ -1073,6 +1075,7 @@ period,category,kind,id,units
 2022-09,RY1,f,hev,7
 2022-09,RY1,f,petrol,31
 2022-09,RY1,f,phev,2
+2022-09,RY1,m,bentley-bentayga,1
 2022-09,RY1,m,ford-everest,1
 2022-09,RY1,m,ford-ranger,1
 2022-09,RY1,m,honda-accord,1
@@ -1489,6 +1492,7 @@ period,category,kind,id,units
 2023-05,RY1,f,hev,6
 2023-05,RY1,f,petrol,26
 2023-05,RY1,f,phev,2
+2023-05,RY1,m,audi-q3,1
 2023-05,RY1,m,ford-everest,1
 2023-05,RY1,m,honda-city,4
 2023-05,RY1,m,honda-city-hatchback,6
@@ -1763,6 +1767,7 @@ period,category,kind,id,units
 2023-10,RY1,m,isuzu-mu-x,8
 2023-10,RY1,m,mg-maxus-9,1
 2023-10,RY1,m,mg-mg5,1
+2023-10,RY1,m,subaru-outback,1
 2023-10,RY1,m,toyota-corolla,1
 2023-10,RY1,m,toyota-corolla-cross,3
 2023-10,RY1,m,toyota-fortuner,3
@@ -1967,6 +1972,7 @@ period,category,kind,id,units
 2024-02,RY1,m,honda-hr-v,1
 2024-02,RY1,m,isuzu-d-max,34
 2024-02,RY1,m,isuzu-mu-x,5
+2024-02,RY1,m,mini-countryman,1
 2024-02,RY1,m,toyota-alphard,1
 2024-02,RY1,m,toyota-corolla-cross,3
 2024-02,RY1,m,toyota-fortuner,2
@@ -2355,6 +2361,7 @@ period,category,kind,id,units
 2024-10,RY1,f,diesel,25
 2024-10,RY1,f,hev,8
 2024-10,RY1,f,petrol,18
+2024-10,RY1,m,audi-q8-e-tron,1
 2024-10,RY1,m,bmw-3-series,1
 2024-10,RY1,m,byd-dolphin,1
 2024-10,RY1,m,ford-ranger,2
@@ -3245,6 +3252,7 @@ period,category,kind,id,units
 2026-03,RY1,m,bmw-x7,1
 2026-03,RY1,m,byd-dolphin,1
 2026-03,RY1,m,byd-sealion-6,1
+2026-03,RY1,m,daihatsu-move-canbus,1
 2026-03,RY1,m,ford-everest,1
 2026-03,RY1,m,gwm-tank-300,1
 2026-03,RY1,m,honda-city-hatchback,6

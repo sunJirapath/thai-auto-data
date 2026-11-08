@@ -2414,6 +2414,7 @@ period,category,kind,id,units
 2025-04,RY1,f,hev,4
 2025-04,RY1,f,petrol,11
 2025-04,RY1,f,phev,2
+2025-04,RY1,m,audi-q3,1
 2025-04,RY1,m,byd-dolphin,1
 2025-04,RY1,m,byd-sealion-6,2
 2025-04,RY1,m,ford-everest,2
