@@ -249,20 +249,35 @@
       }
     };
   }
-  function kTicks(v) { return v >= 1000 ? (v / 1000) + 'k' : v; }
-  function fmtK(v) { return v >= 10000 ? (v / 1000).toFixed(v >= 100000 ? 0 : 1) + 'k' : fmt(v); }
+  function kTicks(v) { return v >= 1000 ? (v / 1000) + L('k', ' พัน') : v; }
+  function fmtK(v) { return v >= 10000 ? (v / 1000).toFixed(v >= 100000 ? 0 : 1) + L('k', ' พัน') : fmt(v); }
   // change in a share, in percentage points; rounding to 0.0 reads "no change", never "-0.0"
   function ptsText(d) { var r = Math.round(d * 10) / 10; return r === 0 ? L('no change', 'ไม่เปลี่ยน') : (r > 0 ? '▲ +' : '▼ ') + r.toFixed(1) + L(' pts', ' จุด'); }
   function ptsClass(d) { var r = Math.round(d * 10) / 10; return r > 0 ? 'up' : r < 0 ? 'down' : ''; }
   // fuel colours mean something: electrified in cool colours (BEV, PHEV, HEV), combustion in warm and neutral ones
   function fuelColor(code) { return css('--f-' + code); }
+  var thaiWordBreaks = LANG === 'th' && typeof Intl.Segmenter === 'function' ? new Intl.Segmenter('th') : null;
+  var shortThaiRegions = new Map([
+    ['กรุงเทพมหานคร', ['กรุงเทพฯ']],
+    ['ภาคกลาง (ไม่รวมกรุงเทพฯ)', ['ภาคกลาง', 'ไม่รวม กทม.']],
+    ['ภาคตะวันออก', ['ตะวันออก']],
+    ['ภาคตะวันออกเฉียงเหนือ', ['ภาคอีสาน']]
+  ]);
   function wrapLabel(text, width) {
     var lines = [], font = '12px ' + css('--font');
+    if (shortThaiRegions.has(text) && textWidth(text, font) > width) return shortThaiRegions.get(text);
     while (textWidth(text, font) > width && text.length > 1) {
       var cut = text.length - 1;
       while (cut > 1 && textWidth(text.slice(0, cut), font) > width) cut--;
-      var space = text.lastIndexOf(' ', cut);
-      if (space > 0) cut = space;
+      var boundary = text.lastIndexOf(' ', cut);
+      if (thaiWordBreaks) {
+        for (var token of thaiWordBreaks.segment(text)) {
+          if (token.index > cut) break;
+          boundary = Math.max(boundary, token.index);
+        }
+      }
+      if (boundary > 0) cut = boundary;
+      while (cut > 1 && /\p{Mark}/u.test(text[cut])) cut--;
       lines.push(text.slice(0, cut));
       text = text.slice(cut).trimStart();
     }
@@ -625,7 +640,7 @@
           var my = chart.scales.y.getPixelForValue(mark);
           if (my > y - 20 && my < y + 2) y = my - 3;   // the last-year mark sits where the label goes: lift the label just above it
         }
-        ctx.fillText(t >= 10000 ? (t / 1000).toFixed(t >= 100000 ? 0 : 1) + 'k' : fmt(t), meta.data[i].x, y - 5);
+        ctx.fillText(fmtK(t), meta.data[i].x, y - 5);
       });
       ctx.restore();
     }
@@ -722,8 +737,7 @@
       data: { labels: order.map(function (k) { return bucketLabel(k, buckets[k].months.length); }), datasets: datasets },
       options: opt, plugins: [totalLabels]
     });
-    var notes = [L('January is almost double December every year; the pattern is in the DLT data itself', 'ยอดเดือนมกราคมสูงกว่าธันวาคมเกือบเท่าตัวทุกปี เป็นรูปแบบที่อยู่ในข้อมูลของกรมฯ เอง'),
-      L('Many four-door pickups are registered as RY1', 'กระบะ 4 ประตูจำนวนมากจดเป็น ร.ย.1')];
+    var notes = [L('Many four-door pickups are registered as RY1', 'กระบะ 4 ประตูจำนวนมากจดเป็น ร.ย.1')];
     if (M.grain !== 'm') notes.push(L('* or (n mo) marks a period with incomplete data under the selected filters', '* หรือ (n ด.) คือช่วงที่มีข้อมูลไม่ครบในตัวกรองที่เลือก'));
     if (prov && chartMonths.indexOf(prov) >= 0) notes.push(L('Faded bar: ' + monthLabel(prov, true) + ' is a national total only (RY1–RY3), not yet split by brand and model; it is not in the stats and map', 'แท่งจาง: ' + monthLabel(prov, true) + ' มีเฉพาะยอดรวมทั้งประเทศ (ร.ย.1–3) ยังไม่แยกยี่ห้อและรุ่น ไม่นับในสถิติด้านบนและแผนที่'));
     if (M.area !== 'all') notes.push(L('Vehicles are counted where they are registered; company and leasing cars registered in Bangkok make Bangkok higher than local use', 'รถนับตามจังหวัดที่จดทะเบียน รถของบริษัทและลีสซิ่งที่จดในกรุงเทพฯ ทำให้ยอดกรุงเทพฯ สูงกว่าจำนวนผู้ใช้จริงในพื้นที่'));
@@ -2698,8 +2712,8 @@
     }
     if (unknown) pick.appendChild(el('p', { class: 'note' }, L('Some selections could not be found. Search to pick a replacement.', 'ไม่พบบางรายการ ลองค้นหาเพื่อเลือกรายการอื่น')));
     if (kind === 'm') pick.appendChild(el('p', { class: 'note' }, L(
-      'Fuel is recorded by brand and province. The DLT does not provide a fuel breakdown by model.',
-      'กรมการขนส่งทางบกเผยแพร่ชนิดเชื้อเพลิงแยกตามยี่ห้อและจังหวัด จึงไม่มีข้อมูลเชื้อเพลิงแยกตามรุ่น')));
+      'This dataset records fuel by brand and province. A fuel breakdown by model is unavailable here.',
+      'ชุดข้อมูลนี้แยกชนิดเชื้อเพลิงตามยี่ห้อและจังหวัด จึงแสดงรายละเอียดแยกตามรุ่นไม่ได้')));
     root.appendChild(pick);
     if (CMP.focus) {
       CMP.focus = false;
