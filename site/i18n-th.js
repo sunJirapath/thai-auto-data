@@ -1,5 +1,6 @@
 /* Thai text for the static HTML in index.html, keyed by its English. Text built in app.js carries its own Thai: L('English', 'ไทย'). */
 window.TH = {
+"The budget controls narrow the model list. The charts still show all price bands for the selected area and period.": "ตัวกรองงบประมาณใช้กับรายการรุ่นด้านล่าง ส่วนกราฟยังแสดงทุกช่วงราคาตามพื้นที่และช่วงเวลาที่เลือก",
 "Compare registrations by model": "เปรียบเทียบยอดจดทะเบียนรายรุ่น",
 "Vehicle categories explained": "ความหมายของประเภทรถ",
 "Monthly seasonality table": "ตารางยอดจดทะเบียนแยกตามเดือนและปี",

@@ -274,7 +274,7 @@
         if (meta.hidden) return;
         for (var k = ds.data.length - 1; k >= 0; k--) {
           var v = ds.data[k], pt = meta.data[k];
-          if (v !== null && v !== undefined && pt && isFinite(pt.y)) { items.push({ x: pt.x + 8, y: pt.y, text: ds.label, color: ds.borderColor }); break; }
+          if (v !== null && v !== undefined && pt && isFinite(pt.y)) { items.push({ x: pt.x + 8, y: pt.y, text: ds.label }); break; }
         }
       });
       items.sort(function (a, b) { return a.y - b.y; });
@@ -283,9 +283,10 @@
       if (over > 0) items.forEach(function (it) { it.y -= over; });
       ctx.save();
       ctx.font = opts.font; ctx.textBaseline = 'middle'; ctx.lineJoin = 'round';
+      ctx.fillStyle = css('--ink');
       items.forEach(function (it) {
         ctx.strokeStyle = css('--surface'); ctx.lineWidth = 3; ctx.strokeText(it.text, it.x, it.y);
-        ctx.fillStyle = it.color; ctx.fillText(it.text, it.x, it.y);
+        ctx.fillText(it.text, it.x, it.y);
       });
       ctx.restore();
     }
@@ -396,7 +397,7 @@
         var chip = el('span', { class: 'chip' });
         var dot = el('i'); dot.style.background = seriesColor(slots[id]);
         add(chip, dot, cfg.href ? link(cfg.href(id), cfg.nameOf(id), 'chip-link') : document.createTextNode(cfg.nameOf(id)));
-        var x = el('button', { type: 'button', 'aria-label': L('Remove ', 'ลบ ') + cfg.nameOf(id) }, '×');
+        var x = el('button', { type: 'button', 'aria-label': L('Remove ', 'ลบ ') + cfg.nameOf(id) }, L('Remove', 'ลบ'));
         x.addEventListener('click', function () { remove(id); });
         chip.appendChild(x); chips.appendChild(chip);
       });
@@ -595,6 +596,7 @@
     if (f.cats) ['RY1', 'RY2', 'RY3'].forEach(function (c) { M.cats[c] = true; });
     if (f.area) M.area = 'all';
     if (D.page === 'overview') M.metric = 'units';
+    if (D.page === 'prices') { budget.band = 'all'; budget.max = null; }
     D.controlsBuilt = false;
     buildControlsOnce();
     renderExplorer();
@@ -1444,6 +1446,10 @@
   function applyQuery(qs, page) {
     var P = Object.fromEntries(new URLSearchParams(qs));
     if (page === 'ranking') A.kind = P.rank === 'model' ? 'm' : 'b';
+    if (page === 'prices') {
+      budget.band = PRICE_BANDS.some(function (_, i) { return String(i) === P.band; }) ? P.band : 'all';
+      budget.max = P.max ? budgetLimit(+P.max) : null;
+    }
     var ps = okPeriods(), ranges = RANGES.map(function (r) { return r[0]; });
     M.range = ranges.indexOf(P.range) >= 0 ? P.range : '12';
     if (M.range === 'custom') {
@@ -1464,9 +1470,16 @@
     var base = (location.hash || '#/').split('?')[0];
     var query = new URLSearchParams(D.page === 'data' ? '' : filterQuery());
     if (D.page === 'ranking') query.set('rank', A.kind === 'm' ? 'model' : 'brand');
+    if (D.page === 'prices') {
+      if (budget.band !== 'all') query.set('band', budget.band);
+      if (budget.max !== null) query.set('max', budget.max);
+    }
     query.set('lang', LANG);
     var want = base + '?' + query;
-    if (want !== location.hash) history.replaceState(null, '', want);
+    if (want !== location.hash) {
+      history.replaceState(null, '', want);
+      document.getElementById('shareLink').textContent = L('Copy link to this view', 'คัดลอกลิงก์มุมมองนี้');
+    }
   }
 
   // ---------- page orchestration ----------
@@ -1525,7 +1538,6 @@
     D.focusRoute = false;
     document.querySelectorAll('.filter-echo').forEach(function (e) { e.textContent = filterText(); });
     syncHash();
-    document.getElementById('shareLink').textContent = L('Copy link to this view', 'คัดลอกลิงก์มุมมองนี้');
     if (!NEEDS_AREA[page]) {
       status.hidden = true;
       if (PAGE_RENDER[page]) PAGE_RENDER[page]();
@@ -1577,6 +1589,8 @@
     ['other', L('Unclassified / unmatched', 'ไม่ระบุ / ยังไม่จับคู่')]];
   var PRICE_BANDS = [[0, 600000, L('Under ฿600k', 'ต่ำกว่า 6 แสน')], [600000, 800000, L('฿600–800k', '6–8 แสน')], [800000, 1000000, L('฿800k–1M', '8 แสน–1 ล้าน')],
     [1000000, 1500000, L('฿1–1.5M', '1–1.5 ล้าน')], [1500000, 2000000, L('฿1.5–2M', '1.5–2 ล้าน')], [2000000, Infinity, L('฿2M and up', '2 ล้านขึ้นไป')]];
+  var budget = { band: 'all', max: null };
+  function budgetLimit(value) { return Number.isSafeInteger(value) && value >= 0 ? value : null; }
 
   function originGroup(brandId) {
     var c = D.brandCountry[brandId] || '';
@@ -2015,17 +2029,22 @@
       data: { datasets: [{ data: pts, backgroundColor: css('--accent'), borderColor: css('--surface'), borderWidth: 2, pointRadius: 6, pointHoverRadius: 8 }] }
     });
 
-    var picker = document.getElementById('budgetBand'), max = document.getElementById('budgetMax'), previous = picker.value;
+    var picker = document.getElementById('budgetBand'), max = document.getElementById('budgetMax');
     picker.replaceChildren(el('option', { value: 'all' }, L('All recorded prices', 'ราคาที่บันทึกทั้งหมด')));
     PRICE_BANDS.forEach(function (b, i) { picker.appendChild(el('option', { value: String(i) }, b[2])); });
-    picker.value = previous || 'all';
-    picker.onchange = max.oninput = showBudget;
+    picker.value = budget.band;
+    max.value = budget.max === null ? '' : budget.max;
+    picker.onchange = max.oninput = function () {
+      budget.band = picker.value;
+      budget.max = budgetLimit(max.valueAsNumber);
+      syncHash();
+      showBudget();
+    };
     showBudget();
 
     function showBudget() {
-      var scope = picker.value === 'all' ? priced : band[+picker.value].models;
-      var ceiling = max.valueAsNumber;
-      var ids = scope.filter(function (id) { return units[id] > 0 && (!Number.isFinite(ceiling) || priceRange(id)[0] <= ceiling); })
+      var scope = budget.band === 'all' ? priced : band[+budget.band].models;
+      var ids = scope.filter(function (id) { return units[id] > 0 && (budget.max === null || priceRange(id)[0] <= budget.max); })
         .sort(function (a, b) { return units[b] - units[a]; });
       var box = document.getElementById('budgetModels');
       var status = document.getElementById('budgetResult');
@@ -2622,7 +2641,7 @@
 
     var chips = el('div', { class: 'chips' });
     ids.forEach(function (id, i) {
-      var dot = el('i'), x = el('button', { type: 'button', 'aria-label': L('Remove ', 'ลบ ') + nameFor(kind, id) }, '×');
+      var dot = el('i'), x = el('button', { type: 'button', 'aria-label': L('Remove ', 'ลบ ') + nameFor(kind, id) }, L('Remove', 'ลบ'));
       dot.style.background = seriesColor(i);
       x.addEventListener('click', function () { go(ids.filter(function (y) { return y !== id; })); });
       chips.appendChild(add(el('span', { class: 'chip' }), dot, link(hrefFor(kind, id), nameFor(kind, id), 'chip-link'), x));
