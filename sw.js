@@ -1,7 +1,7 @@
 'use strict';
 
 const cachePrefix = 'thai-auto-data-offline-';
-const cacheName = cachePrefix + '1';
+const cacheName = cachePrefix + '2';
 const scope = new URL(self.registration.scope);
 const chart = 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js';
 const shell = [
@@ -29,7 +29,7 @@ self.addEventListener('fetch', event => {
   const local = url.origin === scope.origin && url.pathname.startsWith(scope.pathname);
   if (!local && url.href !== chart) return;
   const path = url.pathname.slice(scope.pathname.length);
-  if (local && !/^(?:$|(?:brands|models|ev)\/$|index\.html$|(?:site|summaries|data)\/)/.test(path)) return;
+  if (local && !/^(?:$|pages\/(?:brands|models|ev)\/$|index\.html$|(?:site|summaries|data)\/)/.test(path)) return;
 
   event.respondWith((async () => {
     const cache = await caches.open(cacheName);

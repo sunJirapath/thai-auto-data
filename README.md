@@ -92,7 +92,7 @@ The data is updated when the DLT publishes a new monthly file. Every file is che
 
 The data comes from the DLT Transport Statistics website (web.dlt.go.th/statistics), which updates monthly. On every import, each category total must match the DLT's own monthly totals file to the vehicle. As of 8 November 2026, the latest month is October 2026 (processed by the DLT on 4 November 2026).
 
-**After every data refresh** (right after the summarize step of the collector job on the NAS, which lives outside this repo) run `python scripts/build_seo.py`. It rebuilds the crawlable HTML in `index.html`, the static summary pages `brands/`, `models/`, `ev/`, `monthly/` and one `monthly/YYYY-MM/` page per data month, and `sitemap.xml`; commit them with the data (a new month adds a new untracked `monthly/YYYY-MM/` folder, so stage with `git add -A`, not by file name). `python scripts/build_seo.py --check` exits 1 if any of them is out of date (no writes). There is no CI in this repo, so run it by hand.
+**After every data refresh** (right after the summarize step of the collector job on the NAS, which lives outside this repo) run `python scripts/build_seo.py`. It rebuilds the crawlable HTML in `index.html`, the static summary pages `pages/brands/`, `pages/models/`, `pages/ev/`, `pages/monthly/` and one `pages/monthly/YYYY-MM/` page per data month, and `sitemap.xml`; commit them with the data (a new month adds a new untracked `pages/monthly/YYYY-MM/` folder, so stage with `git add -A`, not by file name). `python scripts/build_seo.py --check` exits 1 if any of them is out of date (no writes). There is no CI in this repo, so run it by hand.
 
 ## Questions this data can answer
 

@@ -3176,7 +3176,7 @@
 
   document.getElementById('shareLink').addEventListener('click', function () {
     var button = this;
-    var url = D.page === 'ranking' ? new URL((A.kind === 'b' ? 'brands/' : 'models/') + location.hash, location.href).href : location.href;
+    var url = D.page === 'ranking' ? new URL((A.kind === 'b' ? 'pages/brands/' : 'pages/models/') + location.hash, location.href).href : location.href;
     function done() {
       button.textContent = L('Link copied', 'คัดลอกลิงก์แล้ว');
       document.getElementById('viewNotice').textContent = L('Link copied.', 'คัดลอกลิงก์แล้ว');

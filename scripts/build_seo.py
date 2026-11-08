@@ -3,11 +3,11 @@
 
 Run from anywhere after each data refresh (no dependencies, standard library only):
 
-    python scripts/build_seo.py          # rewrite index.html, brands/ models/ ev/ monthly/ monthly/YYYY-MM/ and sitemap.xml
+    python scripts/build_seo.py          # rewrite index.html, pages/{brands,models,ev,monthly,monthly/YYYY-MM}/ and sitemap.xml
     python scripts/build_seo.py --check  # exit 1 if any of them is out of date (no writes)
 
 In index.html it rewrites only the regions between <!-- seo:NAME:start --> ... <!-- seo:NAME:end -->,
-plus the JSON-LD "description"/"temporalCoverage" values. brands/, models/ and ev/ are generated whole.
+plus the JSON-LD "description"/"temporalCoverage" values. pages/ is generated whole.
 """
 import csv
 import json
@@ -21,6 +21,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://sunjirapath.github.io/thai-auto-data/"
+GROUP = "pages"  # all static summary pages live here so the repo root stays small
 TH_MONTHS = ["มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน",
              "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม"]
 EN_MONTHS = ["January", "February", "March", "April", "May", "June", "July",
@@ -135,8 +136,8 @@ def static_html(f):
     </div>
     <details>
       <summary><span class="locale-copy" lang="th">10 อันดับยี่ห้อและรุ่น เดือน{f['th']}</span><span class="locale-copy" lang="en">Top 10 brands and models in {f['en']}</span></summary>
-      <p class="note locale-copy" lang="th"><a href="brands/">อันดับยี่ห้อ</a> · <a href="models/">อันดับรุ่น</a> · <a href="ev/">ยอดจดทะเบียน EV</a> · <a href="monthly/">ยอดจดทะเบียนรายเดือนย้อนหลัง</a> · <a href="summaries/market_monthly.csv">ยอดรายเดือน CSV</a></p>
-      <p class="note locale-copy" lang="en"><a href="#/ranking?rank=brand&amp;range=custom&amp;from={per}&amp;to={per}&amp;lang=en">Brand rankings</a> · <a href="#/ranking?rank=model&amp;range=custom&amp;from={per}&amp;to={per}&amp;lang=en">Model rankings</a> · <a href="#/powertrain?range=custom&amp;from={per}&amp;to={per}&amp;lang=en">EV registrations</a> · <a href="monthly/">Monthly archive (Thai and English)</a> · <a href="summaries/market_monthly.csv">Monthly totals CSV</a></p>
+      <p class="note locale-copy" lang="th"><a href="pages/brands/">อันดับยี่ห้อ</a> · <a href="pages/models/">อันดับรุ่น</a> · <a href="pages/ev/">ยอดจดทะเบียน EV</a> · <a href="pages/monthly/">ยอดจดทะเบียนรายเดือนย้อนหลัง</a> · <a href="summaries/market_monthly.csv">ยอดรายเดือน CSV</a></p>
+      <p class="note locale-copy" lang="en"><a href="#/ranking?rank=brand&amp;range=custom&amp;from={per}&amp;to={per}&amp;lang=en">Brand rankings</a> · <a href="#/ranking?rank=model&amp;range=custom&amp;from={per}&amp;to={per}&amp;lang=en">Model rankings</a> · <a href="#/powertrain?range=custom&amp;from={per}&amp;to={per}&amp;lang=en">EV registrations</a> · <a href="pages/monthly/">Monthly archive (Thai and English)</a> · <a href="summaries/market_monthly.csv">Monthly totals CSV</a></p>
       <div class="two">
         <div>{brand_table}</div>
         <div>{model_table}</div>
@@ -254,13 +255,13 @@ def monthly(f):
 
 
 def page_html(slug, p):
-    url, title = f"{SITE}{slug}/", f"{p['h1']} · thai-auto-data"
-    up = "../" * (slug.count("/") + 1)  # path from this page back to the repo root
+    url, title = f"{SITE}{GROUP}/{slug}/", f"{p['h1']} · thai-auto-data"
+    up = "../" * (slug.count("/") + 2)  # path from this page back to the repo root
     ld = json_str({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "thai-auto-data", "item": SITE},
         {"@type": "ListItem", "position": 2, "name": p["h1"], "item": url}]})
     csv = " · ".join(f"<a href=\"{RAW}{c}\">{c}</a>" for c in p["csv"])
-    share_script = ('<script>if (location.hash.startsWith("#/ranking?")) location.replace("../" + location.hash);</script>'
+    share_script = ('<script>if (location.hash.startsWith("#/ranking?")) location.replace("../../" + location.hash);</script>'
                     if slug in {"brands", "models"} else "")
     social_desc = escape({
         "brands": "อันดับยี่ห้อรถจดทะเบียนใหม่ในไทย · Thai car brand rankings by new registrations. Source: DLT.",
@@ -358,10 +359,10 @@ def main():
     out = {idx_p: new_idx}
     urls = {idx_p: SITE}
     for slug, p in {**pages(f), **monthly(f)}.items():
-        out[ROOT / slug / "index.html"] = h = page_html(slug, p)
-        urls[ROOT / slug / "index.html"] = f"{SITE}{slug}/"
+        out[ROOT / GROUP / slug / "index.html"] = h = page_html(slug, p)
+        urls[ROOT / GROUP / slug / "index.html"] = f"{SITE}{GROUP}/{slug}/"
         assert json.loads(re.search(r'ld\+json">(.*?)</script>', h, re.S).group(1))["@type"] == "BreadcrumbList"
-        assert h.count("<h1") == 1 and "<table>" in h and f'href="{"../" * (slug.count("/") + 1)}"' in h, f"{slug}: h1/table/home link"
+        assert h.count("<h1") == 1 and "<table>" in h and f'href="{"../" * (slug.count("/") + 2)}"' in h, f"{slug}: h1/table/home link"
     for h in out.values():
         desc = re.search(r'<meta name="description" content="([^"]*)"', h)
         assert desc and len(desc.group(1)) <= 160, f"meta description missing or over 160 chars: {desc and len(desc.group(1))}"
