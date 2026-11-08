@@ -42,14 +42,14 @@
   function setLang(lang) {
     try { localStorage.setItem('lang', lang); } catch (e) { /* private mode: the link still carries it */ }
     var h = location.hash || '#/', base = h.split('?')[0], q = (h.split('?')[1] || '').split('&').filter(function (kv) { return kv && kv.indexOf('lang=') !== 0; });
-    if (lang === 'en') q.push('lang=en');
+    q.push('lang=' + lang);
     var s = location.search.replace(/([?&])lang=(th|en)\b&?/, '$1').replace(/[?&]$/, ''); // a real ?lang=en must not outlive the switch
     history.replaceState(null, '', location.pathname + s + base + (q.length ? '?' + q.join('&') : ''));
     location.reload();
   }
 
   var TH_MONTHS = [L('Jan', 'ม.ค.'), L('Feb', 'ก.พ.'), L('Mar', 'มี.ค.'), L('Apr', 'เม.ย.'), L('May', 'พ.ค.'), L('Jun', 'มิ.ย.'), L('Jul', 'ก.ค.'), L('Aug', 'ส.ค.'), L('Sep', 'ก.ย.'), L('Oct', 'ต.ค.'), L('Nov', 'พ.ย.'), L('Dec', 'ธ.ค.')];
-  var CATS = [['ry1', L('RY1 Private car, up to 7 seats', 'ร.ย.1 รถยนต์นั่งส่วนบุคคลไม่เกิน 7 คน')], ['ry2', L('RY2 Private car, more than 7 seats', 'ร.ย.2 รถยนต์นั่งส่วนบุคคลเกิน 7 คน')], ['ry3', L('RY3 Private van & pickup', 'ร.ย.3 รถยนต์บรรทุกส่วนบุคคล')]];
+  var CATS = [['ry1', L('RY1 Private car, up to 7 seats', 'ร.ย.1 รถยนต์นั่งส่วนบุคคลไม่เกิน 7 คน')], ['ry2', L('RY2 Private car, more than 7 seats', 'ร.ย.2 รถยนต์นั่งส่วนบุคคลเกิน 7 คน')], ['ry3', L('RY3 Private truck', 'ร.ย.3 รถยนต์บรรทุกส่วนบุคคล')]];
   var CAT_LABEL = { RY1: L('RY1', 'ร.ย.1'), RY2: L('RY2', 'ร.ย.2'), RY3: L('RY3', 'ร.ย.3') };
   var MAX_SERIES = 8, MAX_COMPARE = 4;
   var charts = {};
@@ -358,7 +358,7 @@
     c.head.appendChild(controls);
     var chips = el('div', { class: 'chips' });
     var box = el('div', { class: 'chart-box' });
-    var canvas = el('canvas', { 'aria-label': cfg.title });
+    var canvas = el('canvas', { 'aria-label': cfg.title, 'data-export-key': cfg.key });
     box.appendChild(canvas);
     add(c, chips, box);
     root.appendChild(c);
@@ -414,6 +414,7 @@
       opt.plugins.tooltip.callbacks.label = function (ctx) {
         return ' ' + ctx.dataset.label + ': ' + (mode === 'units' ? fmt(ctx.raw) + L(' units', ' คัน') : (+ctx.raw).toFixed(2) + '%');
       };
+      canvas.dataset.unit = mode === 'units' ? 'registrations' : 'share';
       if (charts[cfg.key]) charts[cfg.key].destroy();
       charts[cfg.key] = new Chart(canvas, {
         type: 'line', data: { labels: cfg.labels ? cfg.labels() : D.market.map(function (r) { return monthLabel(r.period); }), datasets: datasets },
@@ -441,6 +442,8 @@
   var GRAINS = [['m', L('Monthly', 'รายเดือน')], ['q', L('Quarterly', 'รายไตรมาส')], ['y', L('Yearly', 'รายปี')]];
   var M = { range: '12', grain: 'm', cats: { RY1: true, RY2: true, RY3: true }, area: 'all', from: null, to: null, metric: 'units' };
 
+  // Region bars retain the four-region hues. The map uses a single metric scale.
+  var HUE = { north: '--r-north', northeast: '--r-northeast', central: '--r-central', east: '--r-central', west: '--r-central', south: '--r-south', bkk: '--r-central' };
   function regionGroup(iso) { return iso === 'TH-10' ? 'bkk' : D.provinceInfo[iso].region; }
   function areaProvinces(area) {
     if (area === 'all') return null;
@@ -571,6 +574,24 @@
     document.getElementById('fCustom').hidden = M.range !== 'custom';
   }
 
+  function setFilterPanel(open) {
+    document.getElementById('filterToggle').setAttribute('aria-expanded', String(open));
+  }
+  document.getElementById('filterToggle').onclick = function () {
+    setFilterPanel(this.getAttribute('aria-expanded') !== 'true');
+  };
+  document.getElementById('resetFilters').onclick = function () {
+    var f = pageFilters(D.page);
+    if (f.range) { M.range = '12'; M.from = null; M.to = null; }
+    if (f.grain) M.grain = 'm';
+    if (f.cats) ['RY1', 'RY2', 'RY3'].forEach(function (c) { M.cats[c] = true; });
+    if (f.area) M.area = 'all';
+    if (D.page === 'overview') M.metric = 'units';
+    D.controlsBuilt = false;
+    buildControlsOnce();
+    renderExplorer();
+  };
+
   // total above each stacked bar when there are few enough bars to read them
   var totalLabels = {
     id: 'totalLabels',
@@ -674,8 +695,12 @@
         return L('Total ', 'รวม ') + fmt(b.total) + L(' units', ' คัน') + (b.prevOk && b.prev ? L(' · vs last year ', ' · เทียบปีก่อน ') + pctText(100 * (b.total - b.prev) / b.prev) : '');
       }
     };
+    var marketCanvas = document.getElementById('marketChart');
+    marketCanvas.dataset.exportFrom = chartMonths[0];
+    marketCanvas.dataset.exportTo = chartMonths[chartMonths.length - 1];
+    marketCanvas.dataset.exportNote = chartMonths.includes(prov) ? L('Latest month provisional, national totals only', 'เดือนล่าสุดเป็นยอดรวมเบื้องต้นทั่วประเทศ') : '';
     if (charts.market) charts.market.destroy();
-    charts.market = new Chart(document.getElementById('marketChart'), {
+    charts.market = new Chart(marketCanvas, {
       data: { labels: order.map(function (k) { return bucketLabel(k, buckets[k].months.length); }), datasets: datasets },
       options: opt, plugins: [totalLabels]
     });
@@ -733,7 +758,7 @@
       if (M.area.indexOf('region:') === 0) return g === M.area.slice(7) || (M.area === 'region:central' && g === 'bkk');
       return g === regionGroup(M.area.slice(5));
     }
-    var accent = css('--accent'), dim = css('--axis');
+    var dim = css('--axis');
     var ro = baseOptions();
     ro.indexAxis = 'y';
     ro.interaction = { mode: 'nearest', intersect: true, axis: 'y' };
@@ -754,9 +779,10 @@
     var rest = Math.max.apply(null, values.slice(1)), capped = !percap && values[0] > 3 * rest;
     if (capped) ro.scales.x.max = Math.ceil(1.3 * rest / 10000) * 10000;
     ro.layout = { padding: { right: 96 } };
-    ro.plugins.barLabels = { labels: values.map(function (v, i) {
-      return (percap ? v.toFixed(1) : fmtK(v)) + (capped && i === 0 ? L(' · bar cut off', ' · ตัดแท่ง') : '');
-    }) };
+    ro.plugins.barLabels = { labels: values.map(function (v) { return percap ? v.toFixed(1) : fmt(v); }) };
+    document.getElementById('regionBasis').textContent = L('All regions · ', 'ทุกภูมิภาค · ') +
+      (percap ? L('registrations per 1,000 people', 'ยอดจดทะเบียนต่อประชากร 1,000 คน') : L('new registrations (vehicles)', 'ยอดจดทะเบียนใหม่ (คัน)')) +
+      (capped ? L(' · Bangkok’s bar is shortened to keep the other regions readable', ' · ตัดความยาวแท่งกรุงเทพฯ เพื่อให้อ่านค่าในภาคอื่นได้') : '');
     ro.onClick = function (e, els) {
       if (!els.length) return;
       var g = REGION_GROUPS[els[0].index][0], next = g === 'bkk' ? 'bkk' : 'region:' + g;
@@ -764,69 +790,20 @@
       document.getElementById('fArea').value = M.area;
       renderExplorer();
     };
+    var regionCanvas = document.getElementById('regionChart');
+    regionCanvas.dataset.unit = percap ? 'percap' : 'registrations';
+    regionCanvas.dataset.exportNote = percap ? L('Registered population (DOPA), ', 'ประชากรตามทะเบียนราษฎร (กรมการปกครอง) ') + D.populationAsOf : '';
     if (charts.region) charts.region.destroy();
-    charts.region = new Chart(document.getElementById('regionChart'), {
+    charts.region = new Chart(regionCanvas, {
       type: 'bar', options: ro, plugins: [barLabels],
       data: { labels: REGION_GROUPS.map(function (g) { return g[1]; }),
         datasets: [{ data: values,
-          backgroundColor: REGION_GROUPS.map(function (g) { return activeGroup(g[0]) ? accent : dim; }),
+          backgroundColor: REGION_GROUPS.map(function (g) { return activeGroup(g[0]) ? css(HUE[g[0]]) : dim; }),
           borderRadius: 4, borderSkipped: 'start', maxBarThickness: 22 }] }
     });
 
-    // choropleth with 5 quantile classes (Bangkok would flatten a linear scale)
     function metric(i) { return percap ? per1000(i) : byIso[i]; }
-    var vals = Object.keys(byIso).map(metric).filter(function (v) { return v > 0; }).sort(function (a, b) { return a - b; });
-    var breaks = [0.2, 0.4, 0.6, 0.8].map(function (q) { return vals[Math.floor(q * (vals.length - 1))]; });
-    function cls(v) { if (!v) return -1; var k = 0; while (k < breaks.length && v > breaks[k]) k++; return k; }
-    var colors = [1, 2, 3, 4, 5].map(function (n) { return css('--q' + n); });
     var rank = Object.keys(byIso).sort(function (a, b) { return metric(b) - metric(a); });
-    var wrap = document.getElementById('mapWrap');
-    wrap.textContent = '';
-    var NS = 'http://www.w3.org/2000/svg', svg = document.createElementNS(NS, 'svg');
-    svg.setAttribute('viewBox', D.map.viewBox); svg.setAttribute('role', 'img');
-    svg.setAttribute('aria-label', L('Map of registrations by province', 'แผนที่ยอดจดทะเบียนรายจังหวัด'));
-    var tip = el('div', { class: 'map-tip' });
-    tip.hidden = true;
-    D.map.paths.forEach(function (f) {
-      var path = document.createElementNS(NS, 'path'), v = byIso[f.iso], k = cls(metric(f.iso)), info = D.provinceInfo[f.iso];
-      path.setAttribute('d', f.d);
-      path.setAttribute('fill', k < 0 ? css('--grid') : colors[k]);
-      path.setAttribute('class', 'prov' + (selSet[f.iso] ? ' sel' : ''));
-      path.setAttribute('tabindex', '0');
-      var change = prevOk && prevIso[f.iso] ? pctText(100 * (v - prevIso[f.iso]) / prevIso[f.iso]) : '—';
-      var text = provName(f.iso) + ': ' + fmt(v) + L(' units · ', ' คัน · ') + per1000(f.iso).toFixed(1) + L(' per 1,000 people · ', ' ต่อ 1,000 คน · ') + (grand ? (100 * v / grand).toFixed(1) : 0) + L('% · rank ', '% · อันดับ ') + (rank.indexOf(f.iso) + 1) + ' · YoY ' + change;
-      path.setAttribute('aria-label', text);
-      path.addEventListener('pointermove', function (e) {
-        tip.textContent = text; tip.hidden = false;
-        var r = wrap.getBoundingClientRect();
-        tip.style.left = Math.max(0, Math.min(e.clientX - r.left + 12, r.width - 200)) + 'px';
-        tip.style.top = (e.clientY - r.top + 14) + 'px';
-      });
-      path.addEventListener('pointerleave', function () { tip.hidden = true; });
-      path.addEventListener('focus', function () {
-        tip.textContent = text; tip.hidden = false;
-        var r = wrap.getBoundingClientRect(), b = path.getBoundingClientRect();
-        tip.style.left = Math.max(0, Math.min(b.right - r.left + 6, r.width - 200)) + 'px';
-        tip.style.top = (b.top - r.top + b.height / 2) + 'px';
-      });
-      path.addEventListener('blur', function () { tip.hidden = true; });
-      function pick() { M.area = M.area === 'prov:' + f.iso ? 'all' : 'prov:' + f.iso; document.getElementById('fArea').value = M.area; renderExplorer(); }
-      path.addEventListener('click', pick);
-      path.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(); } });
-      svg.appendChild(path);
-    });
-    // draw selected provinces last so their outline sits on top
-    Array.prototype.slice.call(svg.querySelectorAll('.prov.sel')).forEach(function (p) { svg.appendChild(p); });
-    add(wrap, svg, tip);
-    var legend = document.getElementById('mapLegend');
-    legend.textContent = '';
-    var edges = [vals[0]].concat(breaks).concat([vals[vals.length - 1]]);
-    colors.forEach(function (c, k) {
-      var sw = el('i'); sw.style.background = c;
-      var lo = percap ? edges[k].toFixed(1) : fmt(edges[k]), hi = percap ? edges[k + 1].toFixed(1) : fmt(edges[k + 1]);
-      legend.appendChild(add(el('span'), sw, document.createTextNode(k === colors.length - 1 ? '> ' + lo : lo + '–' + hi)));
-    });
-
     var trs = rank.map(function (i, n) {
       var v = byIso[i], info = D.provinceInfo[i], tr = el('tr', selSet[i] ? { class: 'sel-row' } : {});
       add(tr, el('td', { class: 'n' }, String(n + 1)), el('td', {}, provName(i)), el('td', {}, D.regionName[info.region]),
@@ -837,6 +814,95 @@
     var pt = document.getElementById('provinceTable');
     pt.textContent = '';
     pt.appendChild(table([['#', 1], [L('Provinces', 'จังหวัด')], [L('Region', 'ภาค')], [L('Units', 'คัน'), 1], [L('Per 1,000 people', 'ต่อ 1,000 คน'), 1], [L('Share', 'ส่วนแบ่ง'), 1], [priorText(months, 'short'), 1]], trs));
+    document.getElementById('mapAreaEcho').textContent = L('Selected area: ', 'พื้นที่ที่เลือก: ') + areaLabel(M.area);
+    document.getElementById('populationBasis').textContent = L('Per 1,000 people uses registered population from the Department of Provincial Administration, ', 'อัตราต่อประชากร 1,000 คนใช้ข้อมูลประชากรตามทะเบียนราษฎรจากกรมการปกครอง เดือน') + monthLabel(D.populationAsOf, true);
+    if (D.map) renderProvinceMap({ metric: metric, percap: percap, selected: selSet, totals: byIso, per1000: per1000 });
+    else if (!D.mapFailed) loadMap();
+  }
+
+  function loadMap() {
+    if (D.mapRequest) return;
+    var message = document.getElementById('mapStatus'), retry = document.getElementById('mapRetry');
+    D.mapFailed = false;
+    if (document.activeElement === retry) document.getElementById('mapArea').focus();
+    retry.hidden = true;
+    message.className = 'status loading';
+    message.textContent = L('Loading province map…', 'กำลังโหลดแผนที่จังหวัด…');
+    D.mapRequest = fetch('site/th-provinces.geojson').then(function (r) {
+      if (!r.ok) throw new Error('site/th-provinces.geojson');
+      return r.json();
+    }).then(function (geo) {
+      D.map = prepareMap(geo);
+      if (D.map.paths.length === 0) throw new Error('Empty province geometry');
+    }).then(function () {
+      message.className = 'status';
+      message.textContent = '';
+      if (D.page === 'overview') renderGeo(selectedMonths(), selCats());
+    }).catch(function () {
+      D.map = null;
+      D.mapFailed = true;
+      message.className = 'status error';
+      message.textContent = L('The map could not load. You can still use the province table below.', 'โหลดแผนที่ไม่สำเร็จ ยังดูข้อมูลจากตารางจังหวัดด้านล่างได้');
+      retry.hidden = false;
+    }).finally(function () { D.mapRequest = null; });
+  }
+  document.getElementById('mapRetry').onclick = loadMap;
+  document.getElementById('mapArea').onclick = function () {
+    setFilterPanel(true);
+    document.getElementById('fArea').focus();
+  };
+
+  function renderProvinceMap(g) {
+    // Use up to five quantile bands on one scale so provinces can be compared across regions.
+    var vals = Object.keys(g.totals).map(g.metric).filter(function (v) { return v > 0; }).sort(function (a, b) { return a - b; });
+    var breaks = [0.2, 0.4, 0.6, 0.8].map(function (q) { return vals[Math.floor(q * (vals.length - 1))]; })
+      .filter(function (v, i, a) { return v < vals[vals.length - 1] && a.indexOf(v) === i; });
+    function cls(v) { var k = 0; while (k < breaks.length && v > breaks[k]) k++; return k; }
+    function shade(k) { return 'var(--q' + (breaks.length ? 1 + Math.round(4 * k / breaks.length) : 3) + ')'; }
+    var wrap = document.getElementById('mapWrap');
+    wrap.textContent = '';
+    var NS = 'http://www.w3.org/2000/svg', svg = document.createElementNS(NS, 'svg');
+    svg.setAttribute('viewBox', D.map.viewBox);
+    svg.setAttribute('aria-hidden', 'true');
+    var tip = el('div', { class: 'map-tip', 'aria-hidden': 'true' });
+    tip.hidden = true;
+    D.map.paths.forEach(function (f) {
+      var path = document.createElementNS(NS, 'path'), v = g.metric(f.iso);
+      path.setAttribute('d', f.d);
+      path.style.fill = v ? shade(cls(v)) : 'var(--grid)';
+      path.setAttribute('class', 'prov' + (g.selected[f.iso] ? ' sel' : ''));
+      var text = provName(f.iso) + ' · ' + D.regionName[D.provinceInfo[f.iso].region] + ' · ' + fmt(g.totals[f.iso]) +
+        L(' registrations · ', ' คัน · ') + g.per1000(f.iso).toFixed(1) + L(' per 1,000 people', ' คันต่อประชากร 1,000 คน');
+      path.addEventListener('pointermove', function (e) {
+        tip.textContent = text; tip.hidden = false;
+        var r = wrap.getBoundingClientRect();
+        tip.style.left = Math.max(0, Math.min(e.clientX - r.left + 12, r.width - 200)) + 'px';
+        tip.style.top = (e.clientY - r.top + 14) + 'px';
+      });
+      path.addEventListener('pointerleave', function () { tip.hidden = true; });
+      path.addEventListener('click', function () {
+        M.area = M.area === 'prov:' + f.iso ? 'all' : 'prov:' + f.iso;
+        document.getElementById('fArea').value = M.area;
+        renderExplorer();
+      });
+      svg.appendChild(path);
+    });
+    svg.querySelectorAll('.prov.sel').forEach(function (path) { svg.appendChild(path); });
+    add(wrap, svg, tip);
+    var legend = document.getElementById('mapLegend');
+    legend.textContent = '';
+    function key(fill, text) {
+      var sw = el('i', { 'aria-hidden': 'true' });
+      sw.style.background = fill;
+      legend.appendChild(add(el('span'), sw, document.createTextNode(text)));
+    }
+    function label(v) { return g.percap ? v.toFixed(2) : fmt(v); }
+    key('var(--grid)', '0');
+    if (vals.length) {
+      breaks.forEach(function (v, k) { key(shade(k), (k ? '> ' + label(breaks[k - 1]) + ' – ≤ ' : '≤ ') + label(v)); });
+      key(shade(breaks.length), breaks.length ? '> ' + label(breaks[breaks.length - 1]) : L('Above 0', 'มากกว่า 0'));
+    }
+    document.getElementById('mapUnit').textContent = g.percap ? L('Registrations per 1,000 people · band limits rounded', 'ยอดจดทะเบียนต่อประชากร 1,000 คน · ขอบช่วงปัดเศษ') : L('New registrations · vehicles', 'ยอดจดทะเบียนใหม่ · คัน');
   }
 
   // equirectangular projection scaled by cos(latitude); fine for a country Thailand's size
@@ -883,6 +949,9 @@
           o[r.category] = +r.units;
         });
         return idx;
+      }).catch(function (error) {
+        delete A.cache[key];
+        throw error;
       });
     }
     return A.cache[key];
@@ -925,49 +994,127 @@
   function filterText() {
     var f = pageFilters(D.page), ms = selectedMonths(), cats = selCats(), parts = [];
     if (f.area) parts.push(areaLabel(M.area));
-    if (f.range) parts.push(monthLabel(ms[0]) + ' – ' + monthLabel(ms[ms.length - 1]));
+    if (D.page === 'regions') parts.push(L('All regions', 'ทุกภูมิภาค'));
+    if (D.page === 'seasonality') ms = okPeriods().concat(provPeriod() || []);
+    if (f.range || D.page === 'seasonality') parts.push(monthLabel(ms[0]) + ' – ' + monthLabel(ms[ms.length - 1]));
     if (f.cats) parts.push(cats.length === 3 ? L('RY1–3', 'ร.ย.1–3') : cats.map(function (c) { return CAT_LABEL[c]; }).join(', '));
     return parts.join(' · ');
   }
 
-  // text at the end of each horizontal bar
-  // Every chart gets CSV / PNG buttons under it, added once per chart box when its first chart is created
-  function chartRows(chart) {
+  function chartExportContext(canvas) {
+    var id = canvas.id, data = canvas.dataset, months = selectedMonths();
+    var region = data.dimension === 'region' || /^(region|originRegion|segmentRegion|fuelRegion)Chart$/.test(id);
+    var isPrice = data.unit === 'price' || id === 'priceScatter' || id === 'priceBandChart';
+    var title = data.exportTitle || canvas.getAttribute('aria-label') || L('Registrations chart', 'กราฟยอดจดทะเบียน');
+    var detail = ['brand', 'model', 'compare'].includes(D.page) && document.querySelector('#detail .page-title');
+    if (detail && !title.includes(detail.textContent)) title += ' · ' + detail.textContent;
+    var area = region ? L('All regions', 'ทุกภูมิภาค') : areaLabel(M.area);
+    var from = data.exportFrom || months[0], to = data.exportTo || months[months.length - 1];
+    var scope = [area, from, to, selCats().join('/')];
+    if (data.unit === 'price') { from = ''; to = ''; scope = [L('Latest recorded list prices · observation dates vary', 'ราคาล่าสุดที่บันทึก · วันที่เก็บราคาต่างกันตามรุ่น')]; }
+    scope.push(chartExportUnit(data.unit || 'registrations'));
+    if (data.exportNote) scope.push(data.exportNote);
+    var source = isPrice ? L('thai-auto-data / DLT / official manufacturer websites', 'thai-auto-data / กรมการขนส่งทางบก / เว็บไซต์ทางการผู้ผลิต')
+      : L('thai-auto-data / Department of Land Transport', 'thai-auto-data / กรมการขนส่งทางบก');
+    var key = data.exportKey || id.replace(/Chart$/, '') || D.page;
+    var filename = ['thai-auto-data', key, ['brand', 'model', 'compare'].includes(D.page) ? D.detailArg : '',
+      region ? 'all-regions' : areaKey(M.area), from, to, selCats().join('-'), data.unit].filter(Boolean).join('-').toLowerCase().replace(/[^a-z0-9-]+/g, '-');
+    return { title: title, source: source, scope: scope, from: from, to: to, area: data.unit === 'price' ? '' : area,
+      categories: data.unit === 'price' ? '' : selCats().join('/'), filename: filename,
+      dimension: data.dimension || (region ? 'region' : 'period'), unit: data.unit || 'registrations', note: data.exportNote || '' };
+  }
+
+  function chartExportUnit(unit) {
+    return {
+      registrations: L('Registrations (vehicles)', 'ยอดจดทะเบียน (คัน)'), share: L('Share (%)', 'ส่วนแบ่ง (%)'),
+      rank: L('Rank', 'อันดับ'), increase: L('Registrations gained (vehicles)', 'ยอดจดทะเบียนเพิ่ม (คัน)'),
+      decrease: L('Registrations lost (vehicles)', 'ยอดจดทะเบียนลด (คัน)'),
+      percap: L('Registrations per 1,000 people', 'ยอดจดทะเบียนต่อประชากร 1,000 คน'),
+      price: L('List price range (THB)', 'ช่วงราคาบนเว็บไซต์ทางการ (บาท)')
+    }[unit];
+  }
+
+  function chartRows(chart, context) {
     var ds = chart.data.datasets, labels = chart.data.labels || [];
-    function cell(v) { return v === null || v === undefined ? '' : typeof v === 'number' && v % 1 ? +v.toFixed(2) : v; }
-    if (!labels.length) {   // scatter: one row per point
-      var rows = [[L('Series', 'ชุดข้อมูล'), 'x', 'y', L('Name', 'ชื่อ')]];
-      ds.forEach(function (d) { d.data.forEach(function (pt) { rows.push([d.label || '', cell(pt.x), cell(pt.y), pt.id ? modelName(pt.id) : '']); }); });
+    var dimensions = {
+      period: L('Period', 'ช่วงเวลา'), month: L('Month', 'เดือน'), brand: L('Brand', 'ยี่ห้อ'), model: L('Model', 'รุ่น'),
+      region: L('Region', 'ภูมิภาค'), band: L('Starting price band (THB)', 'ช่วงราคาเริ่มต้น (บาท)'),
+      launch: L('Month since first registration', 'เดือนนับจากเริ่มจดทะเบียน')
+    };
+    function cell(v) { return v === null || v === undefined ? '' : Array.isArray(v) ? v.join('–') : typeof v === 'number' && v % 1 ? +v.toFixed(2) : v; }
+    var head, rows;
+    if (chart.config.type === 'scatter') {
+      head = [L('Model', 'รุ่น'), L('Starting list price (THB)', 'ราคาเริ่มต้นบนเว็บไซต์ทางการ (บาท)'), chartExportUnit('registrations')];
+      rows = ds.flatMap(function (d) { return d.data.map(function (pt) { return [modelName(pt.id), cell(pt.x), cell(pt.y)]; }); });
+    } else {
+      head = [dimensions[context.dimension]].concat(ds.map(function (d) {
+        return d.label ? d.label + ' · ' + chartExportUnit(context.unit) : chartExportUnit(context.unit);
+      }));
+      rows = labels.map(function (lab, j) {
+        return [Array.isArray(lab) ? lab.join(' ') : lab].concat(ds.map(function (d) { return cell((d.exportData || d.data)[j]); }));
+      });
+    }
+    var fields = [L('Chart', 'กราฟ'), L('Area', 'พื้นที่'), L('From (YYYY-MM)', 'ตั้งแต่ (ค.ศ. YYYY-MM)'),
+      L('To (YYYY-MM)', 'ถึง (ค.ศ. YYYY-MM)'), L('Vehicle categories', 'ประเภทรถ'), L('Notes', 'หมายเหตุ'), L('Source', 'ที่มา')];
+    var values = [context.title, context.area, context.from, context.to, context.categories, context.note, context.source];
+    return [head.concat(fields)].concat(rows.length ? rows.map(function (r) { return r.concat(values); }) : [head.map(function () { return ''; }).concat(values)]);
+  }
+
+  function chartPNG(chart, context) {
+    var src = chart.canvas, out = document.createElement('canvas'), ctx = out.getContext('2d');
+    out.width = Math.max(480, src.width);
+    var titleFont = 'bold 16px ' + css('--font'), detailFont = '13px ' + css('--font');
+    var segmenter = new Intl.Segmenter(LANG, { granularity: 'word' });
+    function lines(text, font) {
+      ctx.font = font;
+      var rows = [], row = '';
+      for (var part of segmenter.segment(text)) {
+        if (row && ctx.measureText(row + part.segment).width > out.width - 32) { rows.push(row.trim()); row = ''; }
+        row += part.segment;
+      }
+      if (row.trim()) rows.push(row.trim());
       return rows;
     }
-    var head = [''].concat(ds.map(function (d, i) { return d.label || (ds.length === 1 ? L('Value', 'ค่า') : String(i + 1)); }));
-    return [head].concat(labels.map(function (lab, j) {
-      return [Array.isArray(lab) ? lab.join(' ') : lab].concat(ds.map(function (d) { return cell(d.data[j]); }));
-    }));
-  }
-  function chartPNG(chart, name) {
-    var src = chart.canvas, out = document.createElement('canvas'), ctx = out.getContext('2d');
-    out.width = src.width; out.height = src.height;
-    ctx.fillStyle = css('--surface'); ctx.fillRect(0, 0, out.width, out.height);   // a transparent PNG is unreadable in the other theme
-    ctx.drawImage(src, 0, 0);
-    var a = el('a', { href: out.toDataURL('image/png'), download: name });
+    var title = lines(context.title, titleFont);
+    var details = lines(context.scope.join(' · '), detailFont).concat(lines(context.source, detailFont));
+    var caption = 28 + 22 * title.length + 18 * details.length;
+    out.height = src.height + caption;
+    ctx.fillStyle = css('--surface'); ctx.fillRect(0, 0, out.width, out.height);
+    ctx.fillStyle = css('--ink');
+    ctx.font = titleFont;
+    title.forEach(function (line, i) { ctx.fillText(line, 16, 24 + 22 * i); });
+    ctx.font = detailFont;
+    details.forEach(function (line, i) { ctx.fillText(line, 16, 26 + 22 * title.length + 18 * i); });
+    ctx.drawImage(src, (out.width - src.width) / 2, caption);
+    var a = el('a', { href: out.toDataURL('image/png'), download: context.filename + '.png' });
     document.body.appendChild(a); a.click(); a.remove();
   }
+
   if (window.Chart) Chart.register({ id: 'exportTools', afterInit: function (chart) {
-    var box = chart.canvas.parentNode, next = box && box.nextElementSibling;
-    if (!box || !box.parentNode || (next && next.classList.contains('chart-tools'))) return;
-    var canvas = chart.canvas, tools = el('div', { class: 'chart-tools' });
-    function stem() { return 'thai-auto-data-' + (canvas.id || 'chart').replace(/Chart$/, '') + '-' + selectedMonths()[0] + '-' + selectedMonths().slice(-1)[0]; }
-    [['CSV', L('Download the chart data (CSV)', 'ดาวน์โหลดข้อมูลกราฟ (CSV)')], ['PNG', L('Download the chart as an image (PNG)', 'ดาวน์โหลดภาพกราฟ (PNG)')]].forEach(function (t) {
-      var btn = el('button', { type: 'button', 'aria-label': t[1], title: t[1] }, t[0]);
-      btn.addEventListener('click', function () {
-        var c = Chart.getChart(canvas);
-        if (!c) return;
-        if (t[0] === 'CSV') downloadCSV(stem() + '.csv', chartRows(c)); else chartPNG(c, stem() + '.png');
+    var canvas = chart.canvas;
+    var box = canvas.parentNode, next = box && box.nextElementSibling, head = box && box.previousElementSibling;
+    if (!box || !box.parentNode) return;
+    chart.exportContext = chartExportContext(canvas);
+    var tools = head && head.querySelector('.chart-tools') || (next && next.classList.contains('chart-tools') ? next : null);
+    if (!tools) {
+      tools = el('div', { class: 'chart-tools' });
+      ['CSV', 'PNG'].forEach(function (format) {
+        var btn = el('button', { type: 'button' }, format);
+        btn.addEventListener('click', function () {
+          var c = Chart.getChart(canvas);
+          if (!c) return;
+          if (format === 'CSV') downloadCSV(c.exportContext.filename + '.csv', chartRows(c, c.exportContext));
+          else chartPNG(c, c.exportContext);
+        });
+        tools.appendChild(btn);
       });
-      tools.appendChild(btn);
+      if (head && head.classList.contains('geo-head')) head.appendChild(tools); else box.parentNode.insertBefore(tools, box.nextSibling);
+    }
+    tools.querySelectorAll('button').forEach(function (button) {
+      var label = L('Download ', 'ดาวน์โหลด ') + chart.exportContext.title + ' (' + button.textContent + ')';
+      button.setAttribute('aria-label', label);
+      button.title = label;
     });
-    box.parentNode.insertBefore(tools, box.nextSibling);
   } });
   var barLabels = {
     id: 'barLabels',
@@ -1015,13 +1162,20 @@
     sortedIds(prev).forEach(function (id, i) { prevRank[id] = i + 1; });
     var ids = sortedIds(cur);
     var top = ids.slice(0, 15);
-    hbar('rank', document.getElementById('rankChart'), top.map(function (id) { return nameFor(kind, id); }),
+    var canvas = document.getElementById('rankChart');
+    canvas.dataset.dimension = kind === 'b' ? 'brand' : 'model';
+    canvas.dataset.exportKey = 'ranking-' + canvas.dataset.dimension;
+    canvas.dataset.exportTitle = kind === 'b' ? L('Brand ranking', 'อันดับยี่ห้อ') : L('Model ranking', 'อันดับรุ่น');
+    canvas.parentNode.hidden = !top.length;
+    if (top.length) hbar('rank', canvas, top.map(function (id) { return nameFor(kind, id); }),
       top.map(function (id) { return cur[id]; }),
       top.map(function (id) { return fmt(cur[id]) + L(' units · ', ' คัน · ') + (100 * cur[id] / total).toFixed(1) + '%'; }),
       function (i) { location.hash = hrefFor(kind, top[i]); },
       top.map(function (id) { return fmt(cur[id]) + ' · ' + (100 * cur[id] / total).toFixed(1) + '%'; }));
     A.top5[kind] = ids.slice(0, 5);
     var rc = document.getElementById('rankCompare');
+    rc.hidden = !ids.length;
+    document.getElementById('rankEmpty').hidden = !!ids.length;
     rc.href = compareHref(kind, ids.filter(function (id) { return kind === 'b' || D.modelInfo[id]; }).slice(0, MAX_COMPARE));
     rc.textContent = kind === 'b' ? L('Compare the top 4 brands →', 'เปรียบเทียบ 4 ยี่ห้อแรก →') : L('Compare the top 4 models →', 'เปรียบเทียบ 4 รุ่นแรก →');
     var trs = ids.slice(0, 50).map(function (id, i) {
@@ -1045,8 +1199,8 @@
     });
     var box = document.getElementById('rankTable');
     box.textContent = '';
-    box.appendChild(trs.length ? table([['#', 1], [kind === 'b' ? L('Brand', 'ยี่ห้อ') : L('Model', 'รุ่น')], [L('Units', 'คัน'), 1], [L('Share', 'ส่วนแบ่ง'), 1], [priorText(months, 'title'), 1], [priorText(months, 'short'), 1], [L('Rank', 'อันดับ'), 1]], trs)
-      : el('p', { class: 'note' }, L('No data for these filters', 'ไม่มีข้อมูลในตัวกรองนี้')));
+    box.closest('details').hidden = !trs.length;
+    if (trs.length) box.appendChild(table([['#', 1], [kind === 'b' ? L('Brand', 'ยี่ห้อ') : L('Model', 'รุ่น')], [L('Units', 'คัน'), 1], [L('Share', 'ส่วนแบ่ง'), 1], [priorText(months, 'title'), 1], [priorText(months, 'short'), 1], [L('Rank', 'อันดับ'), 1]], trs));
     document.getElementById('rankNote').textContent = (kind === 'm' ? L('Only matched model names are counted; share is of all units in the selected area and period · ', 'นับเฉพาะชื่อรุ่นที่จับคู่ได้ ส่วนแบ่งคิดจากยอดทั้งหมดในพื้นที่และช่วงที่เลือก · ') : L('Share is of all units in the selected area and period · ', 'ส่วนแบ่งคิดจากยอดทั้งหมดในพื้นที่และช่วงที่เลือก · ')) +
       L('Rank compared with ', 'อันดับเทียบกับ') + priorText(months, 'noun') + L(' · click a bar or name for details · click ＋ in the table to add it to the chart on the Trends page', ' · กดแท่งหรือชื่อเพื่อดูรายละเอียด · กด ＋ ในตารางเพื่อเพิ่มลงกราฟในหน้าเทรนด์');
   }
@@ -1078,8 +1232,13 @@
       if (end < 5) { var few = L('Needs at least 6 months of data', 'ต้องมีข้อมูลอย่างน้อย 6 เดือน'); hotEmpty(few, 'drop'); return hotEmpty(few); }
       var last3 = all.slice(end - 2, end + 1), prev3 = all.slice(end - 5, end - 2);
       cur = sumById(idx, 'm', last3, cats); prev = sumById(idx, 'm', prev3, cats);
+      months = last3;
       label = monthLabel(last3[0]) + '–' + monthLabel(last3[2]) + L(' vs ', ' เทียบ ') + monthLabel(prev3[0]) + '–' + monthLabel(prev3[2]);
     }
+    ['hot', 'drop'].forEach(function (key) {
+      Object.assign(document.getElementById(key + 'Chart').dataset, { dimension: 'model',
+        unit: key === 'hot' ? 'increase' : 'decrease', exportFrom: months[0], exportTo: months[months.length - 1], exportNote: label });
+    });
     var gains = {}, losses = {};
     Object.keys(cur).forEach(function (id) { var g = cur[id] - (prev[id] || 0); if (g > 0) gains[id] = g; });
     Object.keys(prev).forEach(function (id) { var d = prev[id] - (cur[id] || 0); if (d > 0) losses[id] = d; });
@@ -1201,30 +1360,34 @@
     if (cats.length < 3) q.push('cats=' + cats.join('.'));
     if (M.area !== 'all') q.push('area=' + encodeURIComponent(M.area));
     if (M.metric !== 'units') q.push('metric=' + M.metric);
-    if (LANG === 'en') q.push('lang=en');
-    return q.length ? '?' + q.join('&') : '';
+    q.push('lang=' + LANG);
+    return '?' + q.join('&');
   }
-  function applyQuery(qs) {
-    var P = {};
-    qs.split('&').forEach(function (kv) { var i = kv.indexOf('='); if (i > 0) P[kv.slice(0, i)] = decodeURIComponent(kv.slice(i + 1)); });
+  function applyQuery(qs, page) {
+    var P = Object.fromEntries(new URLSearchParams(qs));
+    if (page === 'ranking') A.kind = P.rank === 'model' ? 'm' : 'b';
     var ps = okPeriods(), ranges = RANGES.map(function (r) { return r[0]; });
     M.range = ranges.indexOf(P.range) >= 0 ? P.range : '12';
     if (M.range === 'custom') {
       M.from = ps.indexOf(P.from) >= 0 ? P.from : ps[Math.max(0, ps.length - 12)];
       M.to = ps.indexOf(P.to) >= 0 ? P.to : ps[ps.length - 1];
+      if (M.from > M.to) [M.from, M.to] = [M.to, M.from];
     }
     M.grain = ['m', 'q', 'y'].indexOf(P.grain) >= 0 ? P.grain : 'm';
-    var cats = (P.cats || 'RY1.RY2.RY3').split('.').filter(function (c) { return CAT_LABEL[c]; });
+    var cats = (P.cats || 'RY1.RY2.RY3').split('.').filter(function (c) { return ['RY1', 'RY2', 'RY3'].indexOf(c) >= 0; });
     if (!cats.length) cats = ['RY1', 'RY2', 'RY3'];
     ['RY1', 'RY2', 'RY3'].forEach(function (c) { M.cats[c] = cats.indexOf(c) >= 0; });
     var a = P.area || 'all';
-    M.area = a === 'all' || a === 'bkk' || a === 'upcountry' || (a.indexOf('region:') === 0 && D.regionName[a.slice(7)]) ||
-      (a.indexOf('prov:') === 0 && D.provinceInfo[a.slice(5)]) ? a : 'all';
+    M.area = a === 'all' || a === 'bkk' || a === 'upcountry' || (a.indexOf('region:') === 0 && Object.hasOwn(D.regionName, a.slice(7))) ||
+      (a.indexOf('prov:') === 0 && Object.hasOwn(D.provinceInfo, a.slice(5))) ? a : 'all';
     M.metric = P.metric === 'percap' ? 'percap' : 'units';
   }
   function syncHash() {
     var base = (location.hash || '#/').split('?')[0];
-    var want = base + (D.page === 'data' ? (LANG === 'en' ? '?lang=en' : '') : filterQuery());
+    var query = new URLSearchParams(D.page === 'data' ? '' : filterQuery());
+    if (D.page === 'ranking') query.set('rank', A.kind === 'm' ? 'model' : 'brand');
+    query.set('lang', LANG);
+    var want = base + '?' + query;
     if (want !== location.hash) history.replaceState(null, '', want);
   }
 
@@ -1236,7 +1399,7 @@
     trends: function (idx) { renderHomeTrends(idx); renderShareAndBump(idx); },
     origin: function (idx) { renderGroupPage(idx, ORIGIN); },
     segments: function (idx) { renderGroupPage(idx, SEGMENT); },
-    regions: function () { renderRegions(); },
+    regions: function (res) { renderRegions(res[0], res[1]); },
     seasonality: function () { renderSeasonality(); },
     prices: function (idx) { renderPricePage(idx); },
     launches: function (idx) { renderLaunches(idx); },
@@ -1253,19 +1416,56 @@
     var t = detail.querySelector('.page-title');
     document.title = (t ? t.textContent : L('Page not found', 'ไม่พบหน้านี้')) + ' · thai-auto-data';
   }
-  var NEEDS_AREA = { ranking: 1, trends: 1, origin: 1, segments: 1, prices: 1, launches: 1, powertrain: 1, brand: 1, model: 1, compare: 1 };
+  var NEEDS_AREA = { ranking: 1, trends: 1, origin: 1, segments: 1, regions: 1, prices: 1, launches: 1, powertrain: 1, brand: 1, model: 1, compare: 1 };
+  function showResults(page, show) {
+    var selector = '[data-page~="' + page + '"]' + (['brand', 'model', 'compare'].includes(page) ? ', #detail' : '');
+    document.querySelectorAll(selector).forEach(function (section) { section.hidden = !show; });
+  }
   function renderExplorer() {
     var page = D.page, token = ++A.token;
+    var status = document.getElementById('areaState'), message = document.getElementById('areaMessage');
+    var retry = document.getElementById('areaRetry');
+    var focusRoute = D.focusRoute;
+    D.focusRoute = false;
     document.querySelectorAll('.filter-echo').forEach(function (e) { e.textContent = filterText(); });
     syncHash();
-    if (!PAGE_RENDER[page]) return;
-    if (!NEEDS_AREA[page]) { PAGE_RENDER[page](); return; }
-    loadArea(areaKey(M.area)).then(function (idx) {
-      if (token === A.token && D.page === page) PAGE_RENDER[page](idx);
-    }).catch(function (e) {
-      flash(L('Could not load area data: ', 'โหลดข้อมูลพื้นที่ไม่สำเร็จ: ') + e.message);
+    if (!NEEDS_AREA[page]) {
+      status.hidden = true;
+      if (PAGE_RENDER[page]) PAGE_RENDER[page]();
+      if (focusRoute) focusPage();
+      return;
+    }
+    var key = page === 'regions' ? 'all' : areaKey(M.area), scope = [page, key, D.detailArg].join('/');
+    if (D.renderedScope !== scope) {
+      showResults(page, false);
+      status.hidden = false;
+      message.className = 'status loading';
+      message.textContent = L('Loading area data…', 'กำลังโหลดข้อมูลพื้นที่…');
+      if (focusRoute || document.activeElement === retry) focusTarget(message);
+      retry.hidden = true;
+    }
+    var request = page === 'regions' ? Promise.all([loadRegionGroups(), loadArea(key)]) : loadArea(key);
+    request.then(function (idx) {
+      if (token !== A.token) return;
+      var moveFocus = document.activeElement === message;
+      status.hidden = true;
+      showResults(page, true);
+      PAGE_RENDER[page](idx);
+      D.renderedScope = scope;
+      if (document.activeElement === message || ((moveFocus || focusRoute) && document.activeElement === document.body)) focusPage();
+    }).catch(function (error) {
+      if (token !== A.token) return;
+      showResults(page, false);
+      D.renderedScope = null;
+      status.hidden = false;
+      message.className = 'status error';
+      message.textContent = L('Could not load area data for ', 'โหลดข้อมูลพื้นที่ไม่สำเร็จสำหรับ ') +
+        (page === 'regions' ? L('all regions', 'ทุกภูมิภาค') : areaLabel(M.area));
+      retry.hidden = false;
+      console.error(error);
     });
   }
+  document.getElementById('areaRetry').onclick = renderExplorer;
 
   // ---------- analysis pages (all follow the shared filter bar) ----------
   var ORIGIN_GROUPS = [['JP', L('Japan', 'ญี่ปุ่น')], ['CN', L('China', 'จีน')], ['KR', L('South Korea', 'เกาหลีใต้')], ['EU', L('Europe', 'ยุโรป')], ['US', L('United States', 'สหรัฐฯ')], ['OT', L('Other / unknown', 'อื่นๆ / ไม่ระบุ')]];
@@ -1318,6 +1518,38 @@
       return { bkk: r[0], central: r[1], east: r[2], northeast: r[3], north: r[4], west: r[5], south: r[6] };
     });
   }
+  function renderRegionalChart(box, draw) {
+    var token = A.token, sibling = box.nextElementSibling;
+    var tools = sibling && sibling.classList.contains('chart-tools') ? sibling : null;
+    var status = (tools || box).nextElementSibling;
+    if (!status || !status.classList.contains('regional-status')) {
+      status = el('div', { class: 'regional-status controls' });
+      (tools || box).after(status);
+    }
+    var retry = el('button', { type: 'button', class: 'btn' }, L('Retry', 'ลองใหม่'));
+    var text = el('span', { class: 'status loading', role: 'status' }, L('Loading regional data…', 'กำลังโหลดข้อมูลภูมิภาค…'));
+    status.replaceChildren(text);
+    box.hidden = true;
+    status.hidden = false;
+    loadRegionGroups().then(function (groups) {
+      if (token !== A.token || !box.isConnected) return;
+      box.hidden = false;
+      status.hidden = true;
+      draw(groups);
+    }).catch(function (error) {
+      if (token !== A.token || !box.isConnected) return;
+      box.hidden = true;
+      status.hidden = false;
+      text.className = 'status error';
+      text.textContent = L('Regional data could not load.', 'โหลดข้อมูลภูมิภาคไม่สำเร็จ');
+      retry.onclick = function () {
+        focusTarget(status.closest('.card').querySelector('h2, h3'));
+        renderRegionalChart(box, draw);
+      };
+      status.appendChild(retry);
+      console.error(error);
+    });
+  }
   function groupTotals(groups, kind, months, cats) {
     var out = {};
     REGION_GROUPS.forEach(function (g) {
@@ -1331,6 +1563,7 @@
     return out;
   }
   function stackedArea(key, canvas, labels, series, opts) {
+    canvas.dataset.unit = 'share';
     var o = baseOptions();
     o.scales.y.stacked = true; o.scales.y.max = 100; o.scales.y.ticks.callback = function (v) { return v + '%'; };
     o.plugins.tooltip.itemSort = function (a, b) { return b.datasetIndex - a.datasetIndex; };
@@ -1385,6 +1618,7 @@
     };
     var bumpCanvas = document.getElementById('bumpChart');
     if (withEndLabels(o, bumpCanvas, top.map(brandLabel))) o.plugins.legend.display = false;
+    bumpCanvas.dataset.unit = 'rank';
     if (charts.bump) charts.bump.destroy();
     charts.bump = new Chart(bumpCanvas, {
       type: 'line', options: o, plugins: [endLabels],
@@ -1464,7 +1698,7 @@
       [L('Share of group', 'สัดส่วนในกลุ่ม'), 1], [priorText(months, 'short'), 1]], rows));
 
     // by region (100% bars), always all regions
-    loadRegionGroups().then(function (groups) {
+    renderRegionalChart(document.getElementById(g.key + 'RegionChart').parentNode, function (groups) {
       var gt = groupTotals(groups, g.kind, months, cats), bt = g.kind === 'm' ? groupTotals(groups, 'b', months, cats) : null;
       var mix = REGION_GROUPS.map(function (r) { return byGroup(gt[r[0]], bt ? sumValues(bt[r[0]]) : undefined); });
       var regTot = mix.map(sumValues);
@@ -1475,6 +1709,7 @@
       o.scales.y.grid = { display: false };
       o.interaction = { mode: 'index', intersect: false, axis: 'y' };
       o.plugins.tooltip.callbacks.label = function (c) { return ' ' + c.dataset.label + ': ' + c.raw.toFixed(1) + '%'; };
+      document.getElementById(g.key + 'RegionChart').dataset.unit = 'share';
       if (charts[g.key + 'Region']) charts[g.key + 'Region'].destroy();
       charts[g.key + 'Region'] = new Chart(document.getElementById(g.key + 'RegionChart'), {
         type: 'bar', options: o, plugins: [segLabels],
@@ -1488,55 +1723,52 @@
 
   // ----- regions page: brand x region heatmap -----
   var RG = { mode: 'share', kind: 'b', shade: 'col' };
-  function renderRegions() {
+  function renderRegions(groups, all) {
     var months = selectedMonths(), cats = selCats(), kind = RG.kind;
-    Promise.all([loadRegionGroups(), loadArea('all')]).then(function (res) {
-      var groups = res[0], all = res[1];
-      var gt = groupTotals(groups, kind, months, cats), bt = groupTotals(groups, 'b', months, cats);
-      var nat = sumById(all, kind, months, cats), natTot = sumValues(sumById(all, 'b', months, cats));
-      var regTot = {};
-      REGION_GROUPS.forEach(function (r) { regTot[r[0]] = sumValues(bt[r[0]]); });
-      var top = sortedIds(nat).slice(0, 20);
-      // each region column has its own colour; in share mode the shade compares within the column (who leads the region)
-      // or within the row (where each brand or model is strongest)
-      var share = function (r, id) { return regTot[r] ? 100 * (gt[r][id] || 0) / regTot[r] : 0; };
-      var colMax = {};
-      REGION_GROUPS.forEach(function (r) { colMax[r[0]] = Math.max.apply(null, top.map(function (id) { return share(r[0], id); })); });
-      document.getElementById('regionShade').hidden = RG.mode !== 'share';
-      var head = [[kind === 'b' ? L('Brand', 'ยี่ห้อ') : L('Model', 'รุ่น')], [L('Whole country', 'ทั้งประเทศ'), 1]].concat(REGION_GROUPS.map(function (r) { return [r[1].replace(L(' (excl. Bangkok)', ' (ไม่รวมกรุงเทพฯ)'), '*'), 1]; }));
-      var trs = top.map(function (id) {
-        var natShare = 100 * nat[id] / natTot, tr = el('tr');
-        var rowMax = Math.max.apply(null, REGION_GROUPS.map(function (r) { return regTot[r[0]] ? (gt[r[0]][id] || 0) / regTot[r[0]] : 0; })) * 100;
-        add(tr, add(el('td', { class: 'name' }), link(hrefFor(kind, id), nameFor(kind, id))), el('td', { class: 'n' }, natShare.toFixed(1) + '%'));
-        REGION_GROUPS.forEach(function (r, j) {
-          var v = share(r[0], id), td;
-          if (RG.mode === 'share') {
-            var max = RG.shade === 'col' ? colMax[r[0]] : rowMax, c = tint(seriesColor(j), max && v ? 10 + 70 * Math.sqrt(v / max) : 0);   // square root: one dominant brand would leave the rest pale
-            td = el('td', { class: 'n heat' }, v.toFixed(1) + '%');
-            td.style.background = c.bg; td.style.color = c.fg;
-          } else {
-            var ix = natShare ? 100 * v / natShare : 0, dev = ix - 100;
-            td = heatCell(Math.round(ix) + '', Math.min(80, Math.abs(dev) * 0.9), dev < 0);
-          }
-          td.title = nameFor(kind, id) + L(' in ', ' ใน') + r[1] + ': ' + fmt(gt[r[0]][id] || 0) + L(' units · ', ' คัน · ') + v.toFixed(2) + '%';
-          tr.appendChild(td);
-        });
-        return tr;
+    var gt = groupTotals(groups, kind, months, cats), bt = groupTotals(groups, 'b', months, cats);
+    var nat = sumById(all, kind, months, cats), natTot = sumValues(sumById(all, 'b', months, cats));
+    var regTot = {};
+    REGION_GROUPS.forEach(function (r) { regTot[r[0]] = sumValues(bt[r[0]]); });
+    var top = sortedIds(nat).slice(0, 20);
+    // each region column has its own colour; in share mode the shade compares within the column (who leads the region)
+    // or within the row (where each brand or model is strongest)
+    var share = function (r, id) { return regTot[r] ? 100 * (gt[r][id] || 0) / regTot[r] : 0; };
+    var colMax = {};
+    REGION_GROUPS.forEach(function (r) { colMax[r[0]] = Math.max.apply(null, top.map(function (id) { return share(r[0], id); })); });
+    document.getElementById('regionShade').hidden = RG.mode !== 'share';
+    var head = [[kind === 'b' ? L('Brand', 'ยี่ห้อ') : L('Model', 'รุ่น')], [L('Whole country', 'ทั้งประเทศ'), 1]].concat(REGION_GROUPS.map(function (r) { return [r[1].replace(L(' (excl. Bangkok)', ' (ไม่รวมกรุงเทพฯ)'), '*'), 1]; }));
+    var trs = top.map(function (id) {
+      var natShare = 100 * nat[id] / natTot, tr = el('tr');
+      var rowMax = Math.max.apply(null, REGION_GROUPS.map(function (r) { return regTot[r[0]] ? (gt[r[0]][id] || 0) / regTot[r[0]] : 0; })) * 100;
+      add(tr, add(el('td', { class: 'name' }), link(hrefFor(kind, id), nameFor(kind, id))), el('td', { class: 'n' }, natShare.toFixed(1) + '%'));
+      REGION_GROUPS.forEach(function (r, j) {
+        var v = share(r[0], id), td;
+        if (RG.mode === 'share') {
+          var max = RG.shade === 'col' ? colMax[r[0]] : rowMax, c = tint(seriesColor(j), max && v ? 10 + 70 * Math.sqrt(v / max) : 0);   // square root: one dominant brand would leave the rest pale
+          td = el('td', { class: 'n heat' }, v.toFixed(1) + '%');
+          td.style.background = c.bg; td.style.color = c.fg;
+        } else {
+          var ix = natShare ? 100 * v / natShare : 0, dev = ix - 100;
+          td = heatCell(Math.round(ix) + '', Math.min(80, Math.abs(dev) * 0.9), dev < 0);
+        }
+        td.title = nameFor(kind, id) + L(' in ', ' ใน') + r[1] + ': ' + fmt(gt[r[0]][id] || 0) + L(' units · ', ' คัน · ') + v.toFixed(2) + '%';
+        tr.appendChild(td);
       });
-      var box = document.getElementById('regionHeat');
-      box.textContent = '';
-      var t = table(head, trs); t.classList.add('heatmap');
-      Array.prototype.slice.call(t.querySelectorAll('thead th'), 2).forEach(function (th, j) { th.style.boxShadow = 'inset 0 3px 0 ' + seriesColor(j); });
-      box.appendChild(t);
-      var what = kind === 'b' ? L('brand', 'ยี่ห้อ') : L('model', 'รุ่น');
-      document.getElementById('regionHeatNote').textContent = RG.mode === 'share'
-        ? L('Each value is the share of the ', 'ตัวเลขคือส่วนแบ่งของแต่ละ') + what + L(' in that region; each region has its own colour · ', 'ในภาคนั้น แต่ละภาคมีสีของตัวเอง · ') +
-          (RG.shade === 'col'
-            ? L('shades compare within a column: the darkest cell is the ', 'สีเทียบภายในคอลัมน์: สีเข้มสุดคือ') + what + L(' with the highest share in that region', 'ที่มีส่วนแบ่งสูงสุดในภาคนั้น')
-            : L('shades compare within a row: the darkest cell is the region where the ', 'สีเทียบภายในแถว: สีเข้มสุดคือภาคที่') + what + L(' has its highest share', 'นั้นมีส่วนแบ่งสูงสุด')) +
-          L(' · * Central excludes Bangkok · sorted by national units', ' · * ภาคกลางไม่รวมกรุงเทพฯ · เรียงตามยอดทั้งประเทศ')
-        : L('Index = share in the region ÷ national share × 100 · above 100 (blue) = stronger than the national average · below 100 (red) = weaker · * Central excludes Bangkok', 'ดัชนี = ส่วนแบ่งในภาค ÷ ส่วนแบ่งทั้งประเทศ × 100 · มากกว่า 100 (สีน้ำเงิน) = แข็งกว่าค่าเฉลี่ยประเทศ · น้อยกว่า 100 (สีแดง) = อ่อนกว่า · * ภาคกลางไม่รวมกรุงเทพฯ');
+      return tr;
     });
+    var box = document.getElementById('regionHeat');
+    box.textContent = '';
+    var t = table(head, trs); t.classList.add('heatmap');
+    Array.prototype.slice.call(t.querySelectorAll('thead th'), 2).forEach(function (th, j) { th.style.boxShadow = 'inset 0 3px 0 ' + seriesColor(j); });
+    box.appendChild(t);
+    var what = kind === 'b' ? L('brand', 'ยี่ห้อ') : L('model', 'รุ่น');
+    document.getElementById('regionHeatNote').textContent = RG.mode === 'share'
+      ? L('Each value is the share of the ', 'ตัวเลขคือส่วนแบ่งของแต่ละ') + what + L(' in that region; each region has its own colour · ', 'ในภาคนั้น แต่ละภาคมีสีของตัวเอง · ') +
+        (RG.shade === 'col'
+          ? L('shades compare within a column: the darkest cell is the ', 'สีเทียบภายในคอลัมน์: สีเข้มสุดคือ') + what + L(' with the highest share in that region', 'ที่มีส่วนแบ่งสูงสุดในภาคนั้น')
+          : L('shades compare within a row: the darkest cell is the region where the ', 'สีเทียบภายในแถว: สีเข้มสุดคือภาคที่') + what + L(' has its highest share', 'นั้นมีส่วนแบ่งสูงสุด')) +
+        L(' · * Central excludes Bangkok · sorted by national units', ' · * ภาคกลางไม่รวมกรุงเทพฯ · เรียงตามยอดทั้งประเทศ')
+      : L('Index = share in the region ÷ national share × 100 · above 100 (blue) = stronger than the national average · below 100 (red) = weaker · * Central excludes Bangkok', 'ดัชนี = ส่วนแบ่งในภาค ÷ ส่วนแบ่งทั้งประเทศ × 100 · มากกว่า 100 (สีน้ำเงิน) = แข็งกว่าค่าเฉลี่ยประเทศ · น้อยกว่า 100 (สีแดง) = อ่อนกว่า · * ภาคกลางไม่รวมกรุงเทพฯ');
   }
 
   // ----- seasonality page: year x month heatmap and one line per year -----
@@ -1577,6 +1809,8 @@
     o.plugins.tooltip.callbacks.label = function (c) { return ' ' + c.dataset.label + ': ' + (c.raw === null ? L('No data', 'ไม่มีข้อมูล') : fmt(c.raw) + L(' units', ' คัน')); };
     if (charts.season) charts.season.destroy();
     var recent = ys.slice(-6), seasonCanvas = document.getElementById('seasonChart');
+    Object.assign(seasonCanvas.dataset, { dimension: 'month', exportFrom: all.find(function (p) { return p.startsWith(recent[0]); }),
+      exportTo: all[all.length - 1], exportNote: prov ? L('Latest month provisional, national totals only', 'เดือนล่าสุดเป็นยอดรวมเบื้องต้นทั่วประเทศ') : '' });
     // older years fade into the background, the latest year is bold orange
     function yearColor(i) { return i === recent.length - 1 ? seriesColor(1) : css('--q' + Math.max(1, 5 - (recent.length - 2 - i))); }
     if (withEndLabels(o, seasonCanvas, recent.map(function (y) { return String(yearOf(+y)); }))) o.plugins.legend.display = false;
@@ -1618,8 +1852,11 @@
       if (band[c.dataIndex] !== missing) return ms.map(modelName).join(', ');
       return L('Biggest without a price: ', 'รุ่นใหญ่ที่ยังไม่มีราคา: ') + ms.slice(0, 8).map(modelName).join(', ') + L(' · also units with unmatched model names', ' · รวมยอดที่ยังจับคู่ชื่อรุ่นไม่ได้');
     };
+    var priceCanvas = document.getElementById('priceBandChart');
+    priceCanvas.dataset.dimension = 'band';
+    priceCanvas.dataset.exportNote = L('Grouped by latest recorded official website starting prices', 'จัดกลุ่มตามราคาเริ่มต้นล่าสุดที่บันทึกจากเว็บไซต์ทางการ');
     if (charts.priceBand) charts.priceBand.destroy();
-    charts.priceBand = new Chart(document.getElementById('priceBandChart'), {
+    charts.priceBand = new Chart(priceCanvas, {
       type: 'bar', options: o,
       data: { labels: PRICE_BANDS.map(function (b) { return b[2]; }).concat(L('No price data', 'ยังไม่มีราคา')), datasets: [{ data: band.map(function (b) { return b.units; }),
         backgroundColor: band.map(function (b) { return b === missing ? css('--hatch') : css('--accent'); }), borderRadius: { topLeft: 4, topRight: 4 }, borderSkipped: 'start', maxBarThickness: 56 }] },
@@ -1644,6 +1881,7 @@
     so.scales.y.title = { display: true, text: L('Registrations in the selected period', 'ยอดจดทะเบียนในช่วงที่เลือก'), color: css('--muted') };
     so.plugins.tooltip.callbacks.label = function (c) { var p = c.raw; return ' ' + modelName(p.id) + ': ' + rangeText(priceRange(p.id)) + ' · ' + fmt(p.y) + L(' units', ' คัน'); };
     so.onClick = function (e, els) { if (els.length) location.hash = '#/model/' + pts[els[0].index].id + filterQuery(); };
+    document.getElementById('priceScatter').dataset.exportNote = priceCanvas.dataset.exportNote;
     if (charts.priceScatter) charts.priceScatter.destroy();
     charts.priceScatter = new Chart(document.getElementById('priceScatter'), {
       type: 'scatter', options: so, plugins: [{ id: 'ptLabels', afterDatasetsDraw: function (ch) {
@@ -1726,6 +1964,8 @@
     empty.hidden = !!top.length;
     empty.textContent = launches.length ? L('No new model has 3 months of data under these filters yet; see the table below', 'ยังไม่มีรุ่นใหม่ที่มีข้อมูลครบ 3 เดือนในตัวกรองนี้ ดูรายการได้ในตารางด้านล่าง')
       : L('No model launched in the selected period; try a longer range', 'ไม่มีรุ่นที่เริ่มมีทะเบียนในช่วงที่เลือก ลองเลือกช่วงที่ยาวขึ้น');
+    canvas.dataset.dimension = 'launch';
+    canvas.dataset.exportNote = LA.mode === 'cum' ? L('Cumulative since first registration', 'สะสมตั้งแต่เริ่มจดทะเบียน') : L('Monthly since first registration', 'รายเดือนนับจากเริ่มจดทะเบียน');
     if (top.length) charts.launch = new Chart(canvas, {
       type: 'line', options: o,
       data: { labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], datasets: top.map(function (x, i) {
@@ -1787,6 +2027,7 @@
     var bf = sumById(idx, 'bf', months, cats), bev = {}, bevTot = 0;
     Object.keys(bf).forEach(function (k) { var p = k.split('|'); if (p[1] === 'bev') { bev[p[0]] = bf[k]; bevTot += bf[k]; } });
     var topBev = sortedIds(bev).slice(0, 12);
+    document.getElementById('bevChart').dataset.dimension = 'brand';
     hbar('bevRank', document.getElementById('bevChart'), topBev.map(brandLabel), topBev.map(function (id) { return bev[id]; }),
       topBev.map(function (id) { return fmt(bev[id]) + L(' units · ', ' คัน · ') + (100 * bev[id] / bevTot).toFixed(1) + L('% of BEV', '% ของ BEV'); }),
       function (i) { location.hash = '#/brand/' + topBev[i] + filterQuery(); },
@@ -1801,6 +2042,7 @@
     o.scales.y.grid = { display: false };
     o.interaction = { mode: 'index', intersect: false, axis: 'y' };
     o.plugins.tooltip.callbacks.label = function (c) { return c.raw ? ' ' + c.dataset.label + ': ' + c.raw.toFixed(1) + '%' : null; };
+    Object.assign(document.getElementById('brandFuelChart').dataset, { dimension: 'brand', unit: 'share' });
     if (charts.brandFuel) charts.brandFuel.destroy();
     document.getElementById('brandFuelChart').parentNode.style.height = (60 + 30 * top.length) + 'px';
     charts.brandFuel = new Chart(document.getElementById('brandFuelChart'), {
@@ -1812,7 +2054,7 @@
     });
 
     // by region
-    loadRegionGroups().then(function (groups) {
+    renderRegionalChart(document.getElementById('fuelRegionChart').parentNode, function (groups) {
       var gt = groupTotals(groups, 'f', months, cats);
       var ro = baseOptions();
       ro.indexAxis = 'y';
@@ -1821,6 +2063,7 @@
       ro.scales.y.grid = { display: false };
       ro.interaction = { mode: 'index', intersect: false, axis: 'y' };
       ro.plugins.tooltip.callbacks.label = function (c) { return ' ' + c.dataset.label + ': ' + c.raw.toFixed(1) + '%'; };
+      document.getElementById('fuelRegionChart').dataset.unit = 'share';
       if (charts.fuelRegion) charts.fuelRegion.destroy();
       charts.fuelRegion = new Chart(document.getElementById('fuelRegionChart'), {
         type: 'bar', options: ro, plugins: [segLabels],
@@ -1859,7 +2102,7 @@
   function lastYearMark(c) { var bar = c.chart.getDatasetMeta(0).data[c.dataIndex]; return bar && bar.width ? bar.width / 2 + 3 : 8; }
   function barsVsLastYear(key, root, title, name, labels, values, prev) {
     var c = card(title, name);
-    var box = add(el('div', { class: 'chart-box' }), el('canvas', { 'aria-label': title + ' ' + name }));
+    var box = add(el('div', { class: 'chart-box' }), el('canvas', { 'aria-label': title + ' ' + name, 'data-export-key': key }));
     c.appendChild(box); root.appendChild(c);
     var o = baseOptions();
     o.scales.y.ticks.callback = kTicks;
@@ -1875,9 +2118,9 @@
   }
   function regionBreakdown(key, root, kind, id, name, months, cats) {
     var c = card(L('By region', 'แยกตามภูมิภาค'), name, L('Period and categories follow the filters, all regions shown · % is the share of ', 'ช่วงเวลาและประเภทรถตามตัวกรอง แสดงทุกภูมิภาค · % คือส่วนแบ่งของ') + name + L(' in that region\'s market', 'ในตลาดภาคนั้น'));
-    var box = add(el('div', { class: 'chart-box' }), el('canvas', { 'aria-label': L('Registrations of ', 'ยอดจดทะเบียนของ ') + name + L(' by region', ' แยกตามภูมิภาค') }));
+    var box = add(el('div', { class: 'chart-box' }), el('canvas', { 'aria-label': L('Registrations of ', 'ยอดจดทะเบียนของ ') + name + L(' by region', ' แยกตามภูมิภาค'), 'data-dimension': 'region', 'data-export-key': key }));
     c.appendChild(box); root.appendChild(c);
-    loadRegionGroups().then(function (groups) {
+    renderRegionalChart(box, function (groups) {
       var gt = groupTotals(groups, kind, months, cats), bt = groupTotals(groups, 'b', months, cats);
       var vals = REGION_GROUPS.map(function (r) { return gt[r[0]][id] || 0; });
       var shares = REGION_GROUPS.map(function (r, i) { var t = sumValues(bt[r[0]]); return t ? 100 * vals[i] / t : 0; });
@@ -1914,7 +2157,7 @@
 
     // powertrain mix of this brand
     var fc = card(L('Fuel type', 'ชนิดเชื้อเพลิง'), name, L('From the DLT brand × fuel file', 'จากไฟล์ยี่ห้อ × ชนิดเชื้อเพลิงของกรมฯ'));
-    var fbox = add(el('div', { class: 'chart-box' }), el('canvas', { 'aria-label': L('Registrations of ', 'ยอดจดทะเบียนของ ') + name + L(' by fuel type', ' ตามชนิดเชื้อเพลิง') }));
+    var fbox = add(el('div', { class: 'chart-box' }), el('canvas', { 'aria-label': L('Registrations of ', 'ยอดจดทะเบียนของ ') + name + L(' by fuel type', ' ตามชนิดเชื้อเพลิง'), 'data-export-key': 'brand-fuel' }));
     fc.appendChild(fbox); root.appendChild(fc);
     var fo = baseOptions();
     fo.scales.x.stacked = true; fo.scales.y.stacked = true; fo.scales.y.ticks.callback = kTicks;
@@ -2181,7 +2424,7 @@
     add(root, crumbs([[heading]]),
       el('h2', { class: 'page-title' }, ids.length > 1 ? ids.map(function (id) { return nameFor(kind, id); }).join(' vs ') : heading),
       el('p', { class: 'note filter-echo' }, filterText()));
-    function go(next) { location.hash = compareHref(kind, next); }
+    function go(next) { CMP.focus = true; location.hash = compareHref(kind, next); }
 
     // ----- picker -----
     var pick = card(kind === 'b' ? L('Choose brands', 'เลือกยี่ห้อ') : L('Choose models', 'เลือกรุ่น'), L('up to ', 'สูงสุด ') + MAX_COMPARE + ' ' + what,
@@ -2203,7 +2446,7 @@
           return { id: id, label: nameFor(kind, id), units: u, sub: u ? fmt(u) + L(' units', ' คัน') : L('none under these filters', 'ไม่มียอดในตัวกรองนี้') };
         });
       },
-      onPick: function (id) { CMP.focus = true; go(ids.concat([id])); }
+      onPick: function (id) { go(ids.concat([id])); }
     });
     add(pick.head, add(el('div', { class: 'controls' }), seg, combo));
 
@@ -2246,7 +2489,10 @@
     }
     if (unknown.length) pick.appendChild(el('p', { class: 'note' }, L('Not found, skipped: ', 'ไม่พบและข้ามไป: ') + unknown.join(', ')));
     root.appendChild(pick);
-    if (CMP.focus) { CMP.focus = false; if (!full) combo.input.focus(); }
+    if (CMP.focus) {
+      CMP.focus = false;
+      (full ? chips.querySelector('.chip:last-of-type button') : combo.input).focus();
+    }
     if (!ids.length) { pick.appendChild(el('p', { class: 'note' }, L('Nothing chosen yet. Pick at least 2 to compare', 'ยังไม่ได้เลือก เลือกอย่างน้อย 2 รายการเพื่อเปรียบเทียบ'))); return; }
 
     // ----- side-by-side table -----
@@ -2363,6 +2609,7 @@
     var rbox = add(el('div', { class: 'chart-box tall' }), el('canvas', { 'aria-label': L('Registrations comparison chart', 'กราฟเปรียบเทียบยอดจดทะเบียน') }));
     function drawTrend() {
       var units = CMP.mode === 'units', opt = baseOptions();
+      Object.assign(rbox.firstChild.dataset, { exportKey: 'compare-registrations', unit: units ? 'registrations' : 'share' });
       opt.plugins.legend.display = ids.length > 1 && !withEndLabels(opt, rbox.firstChild, ids.map(function (id) { return nameFor(kind, id); }));
       opt.scales.y.ticks.callback = units ? kTicks : function (v) { return v + '%'; };
       opt.plugins.tooltip.callbacks.label = function (ctx) {
@@ -2409,9 +2656,9 @@
     var c = card(L('Share by region', 'ส่วนแบ่งแยกตามภูมิภาค'), L('Compare', 'เปรียบเทียบ'),
       (kind === 'b' ? L('Each brand\'s share of each region\'s market', 'ส่วนแบ่งของแต่ละยี่ห้อในตลาดของแต่ละภาค') : L('Each model\'s share of each region\'s market', 'ส่วนแบ่งของแต่ละรุ่นในตลาดของแต่ละภาค')) +
       L('; period and categories follow the filters; all regions shown', ' ช่วงเวลาและประเภทรถตามตัวกรอง แสดงทุกภูมิภาค'));
-    var box = add(el('div', { class: 'chart-box tall' }), el('canvas', { 'aria-label': L('Share of the chosen items in each region', 'ส่วนแบ่งของรายการที่เลือกในแต่ละภูมิภาค') }));
+    var box = add(el('div', { class: 'chart-box tall' }), el('canvas', { 'aria-label': L('Share of the chosen items in each region', 'ส่วนแบ่งของรายการที่เลือกในแต่ละภูมิภาค'), 'data-dimension': 'region', 'data-unit': 'share', 'data-export-key': 'compare-regions' }));
     c.appendChild(box); root.appendChild(c);
-    loadRegionGroups().then(function (groups) {
+    renderRegionalChart(box, function (groups) {
       if (!box.isConnected) return;
       var gt = groupTotals(groups, kind, months, cats), bt = groupTotals(groups, 'b', months, cats);
       var o = baseOptions();
@@ -2433,7 +2680,7 @@
   // brands only: powertrain mix as 100% bars (one bar per brand)
   function fuelCompare(root, ids, bf, units) {
     var c = card(L('Fuel type', 'ชนิดเชื้อเพลิง'), L('Compare', 'เปรียบเทียบ'), L('Each brand\'s units by the fuel type the DLT records, under the filters above', 'สัดส่วนของยอดแต่ละยี่ห้อตามชนิดเชื้อเพลิงที่กรมฯ บันทึก ตามตัวกรองด้านบน'));
-    var box = add(el('div', { class: 'chart-box' }), el('canvas', { 'aria-label': L('Powertrain mix of the chosen brands', 'สัดส่วนชนิดเชื้อเพลิงของยี่ห้อที่เลือก') }));
+    var box = add(el('div', { class: 'chart-box' }), el('canvas', { 'aria-label': L('Powertrain mix of the chosen brands', 'สัดส่วนชนิดเชื้อเพลิงของยี่ห้อที่เลือก'), 'data-dimension': 'brand', 'data-unit': 'share', 'data-export-key': 'compare-fuel' }));
     box.style.height = (90 + 44 * ids.length) + 'px';
     c.appendChild(box); root.appendChild(c);
     var o = baseOptions();
@@ -2458,7 +2705,7 @@
     var pc = card(L('Price range', 'ช่วงราคา'), L('Price on the official website', 'ราคาบนเว็บไซต์ทางการ'), priced.length ? L('Bars span the lowest to highest price of the variants with data', 'แท่งคือช่วงราคาต่ำสุดถึงสูงสุดของรุ่นย่อยที่มีข้อมูล') : L('None of the selected models has a verified price yet', 'รุ่นที่เลือกยังไม่มีข้อมูลราคาที่ยืนยัน'));
     root.appendChild(pc);
     if (!priced.length) return;
-    var pbox = add(el('div', { class: 'chart-box' }), el('canvas', { 'aria-label': L('Price ranges of the selected models', 'ช่วงราคาของรุ่นที่เลือก') }));
+    var pbox = add(el('div', { class: 'chart-box' }), el('canvas', { 'aria-label': L('Price ranges of the selected models', 'ช่วงราคาของรุ่นที่เลือก'), 'data-dimension': 'model', 'data-unit': 'price', 'data-export-key': 'compare-price' }));
     pbox.style.height = (70 + 48 * priced.length) + 'px';
     pc.appendChild(pbox);
     var po = baseOptions();
@@ -2473,7 +2720,7 @@
       type: 'bar', options: po,
       data: {
         labels: priced.map(modelName),
-        datasets: [{ data: priced.map(function (id) { var r = priceRange(id); return r[0] === r[1] ? [r[0] - 2000, r[1] + 2000] : [r[0], r[1]]; }),
+        datasets: [{ exportData: priced.map(function (id) { return priceRange(id).slice(0, 2); }), data: priced.map(function (id) { var r = priceRange(id); return r[0] === r[1] ? [r[0] - 2000, r[1] + 2000] : [r[0], r[1]]; }),
           backgroundColor: priced.map(function (id) { return seriesColor(ids.indexOf(id)); }), borderRadius: 4, borderSkipped: false, maxBarThickness: 22 }]
       }
     });
@@ -2518,13 +2765,27 @@
     var lm = h.match(/[?&]lang=(th|en)\b/);
     if (lm && lm[1] !== LANG) { location.reload(); return; }   // a link with another lang= while the page is open: the text is set at load
     var parts = h.slice(2).split('?'), path = parts[0].replace(/\/$/, '');
-    buildControlsOnce();
-    if (parts.length > 1) { applyQuery(parts[1]); D.controlsBuilt = false; buildControlsOnce(); }
     var m = path.match(/^(brand|model|compare)(?:\/(.*))?$/), page;
-    if (m) { page = m[1]; D.detailArg = decodeURIComponent(m[2] || ''); }
-    else page = PAGES.indexOf(path || 'overview') >= 0 ? path || 'overview' : 'overview';
+    if (m) {
+      page = m[1]; D.detailArg = m[2] || '';
+      try { D.detailArg = decodeURIComponent(D.detailArg); } catch (e) { /* invalid ID */ }
+    } else {
+      page = PAGES.indexOf(path || 'overview') >= 0 ? path || 'overview' : 'overview';
+      D.detailArg = '';
+    }
+    if (parts.length > 1) {
+      applyQuery(parts[1], page);
+      D.controlsBuilt = false;
+    } else if (page === 'ranking' && A.kind !== 'b') {
+      A.kind = 'b';
+      D.controlsBuilt = false;
+    }
+    buildControlsOnce();
     var changed = page !== D.page || (m && D.lastArg !== D.detailArg);
+    var drawerOpen = document.body.classList.contains('nav-open');
+    D.focusRoute = !!D.page && (changed || drawerOpen);
     D.page = page; D.lastArg = D.detailArg;
+    document.getElementById('status').hidden = page === 'overview';
     destroyCharts('d-');
     document.querySelectorAll('[data-page]').forEach(function (sec) { sec.hidden = true; });
     var detail = document.getElementById('detail');
@@ -2537,43 +2798,97 @@
     document.getElementById('fCustom').hidden = !pf.range || M.range !== 'custom';
     document.getElementById('fGrain').hidden = !pf.grain;
     document.getElementById('fCats').hidden = !pf.cats;
+    document.getElementById('categoryHelp').hidden = !pf.cats;
     document.getElementById('fArea').parentNode.hidden = !pf.area;
     setNav(page === 'brand' || page === 'model' ? '' : page);
     var title = document.querySelector('.side-nav a[data-nav="' + page + '"]');
     if (page === 'overview') document.title = overviewTitle;
     else if (!m) document.title = (title ? title.textContent : L('Thai Car Market', 'ตลาดรถยนต์ไทย')) + ' · thai-auto-data';
     renderExplorer();
-    if (changed) window.scrollTo(0, 0);
   }
   function setNav(page) {
-    document.body.classList.remove('nav-open');   // a phone's drawer closes once a page is picked
-    document.getElementById('menuBtn').setAttribute('aria-expanded', 'false');
-    document.getElementById('navBackdrop').hidden = true;
+    setDrawer(false);
     document.querySelectorAll('.side-nav a').forEach(function (a) {
       if (a.getAttribute('data-nav') === page) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
     });
   }
 
   // ---------- boot ----------
-  // phones: the side navigation is a drawer opened by the Menu button
-  (function () {
-    var btn = document.getElementById('menuBtn'), back = document.getElementById('navBackdrop');
-    function open(on) {
-      document.body.classList.toggle('nav-open', on);
-      btn.setAttribute('aria-expanded', String(on));
-      back.hidden = !on;
-      if (on) document.querySelector('.side-nav a').focus();
+  function focusTarget(target) {
+    if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+    target.focus();
+  }
+  function focusPage() {
+    var root = ['brand', 'model', 'compare'].includes(D.page) ? document.getElementById('detail')
+      : document.querySelector('[data-page~="' + D.page + '"]:not([hidden])');
+    focusTarget(root && root.querySelector('h2') || document.getElementById('main'));
+  }
+
+  // phones: the side navigation becomes a modal drawer
+  var menu = document.getElementById('menuBtn'), side = document.getElementById('side');
+  var backdrop = document.getElementById('navBackdrop'), skip = document.getElementById('skipLink');
+  var closeDrawer = document.getElementById('drawerClose');
+  function setDrawer(open, restoreFocus) {
+    document.body.classList.toggle('nav-open', open);
+    document.querySelector('.page').inert = open;
+    skip.inert = open;
+    menu.setAttribute('aria-expanded', String(open));
+    backdrop.hidden = !open;
+    if (open) {
+      side.setAttribute('role', 'dialog');
+      side.setAttribute('aria-modal', 'true');
+      side.setAttribute('aria-label', L('Pages', 'หน้าเว็บ'));
+      closeDrawer.focus();
+    } else {
+      ['role', 'aria-modal', 'aria-label'].forEach(function (a) { side.removeAttribute(a); });
+      if (restoreFocus) menu.focus();
     }
-    btn.addEventListener('click', function () { open(!document.body.classList.contains('nav-open')); });
-    back.addEventListener('click', function () { open(false); });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && document.body.classList.contains('nav-open')) { open(false); btn.focus(); } });
-  })();
+  }
+  menu.onclick = function () { setDrawer(true); };
+  backdrop.onclick = closeDrawer.onclick = function () { setDrawer(false, true); };
+  skip.onclick = function (e) { e.preventDefault(); focusTarget(document.getElementById('main')); };
+  document.addEventListener('keydown', function (e) {
+    if (!document.body.classList.contains('nav-open')) return;
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      setDrawer(false, true);
+    } else if (e.key === 'Tab') {
+      var links = side.querySelectorAll('a[href]'), last = links[links.length - 1];
+      if ((e.shiftKey && document.activeElement === closeDrawer) || (!e.shiftKey && document.activeElement === last)) {
+        e.preventDefault();
+        (e.shiftKey ? last : closeDrawer).focus();
+      }
+    }
+  });
+  side.addEventListener('click', function (e) {
+    var link = e.target.closest('a[href]');
+    if (link && link.hash === location.hash && document.body.classList.contains('nav-open')) {
+      e.preventDefault();
+      setDrawer(false);
+      focusPage();
+    }
+  });
+  window.matchMedia('(max-width: 960px)').addEventListener('change', function (e) {
+    var active = document.activeElement;
+    var drawerOpen = document.body.classList.contains('nav-open');
+    if (e.matches) {
+      if (!drawerOpen && side.contains(active)) menu.focus();
+    } else if (drawerOpen) {
+      setDrawer(false);
+      if (active === closeDrawer || active === document.body) {
+        (side.querySelector('[aria-current="page"]') || side.querySelector('a')).focus();
+      }
+    }
+  });
   translateStatic();
+  var bootRetry = document.getElementById('bootRetry');
+  bootRetry.onclick = function () { location.reload(); };
   document.querySelectorAll('[data-lang]').forEach(function (a) {
     if (a.getAttribute('data-lang') === LANG) a.setAttribute('aria-current', 'true');
     a.addEventListener('click', function (e) { e.preventDefault(); if (a.getAttribute('data-lang') !== LANG) setLang(a.getAttribute('data-lang')); });
   });
   if (!window.Chart) {
+    bootRetry.hidden = false;
     var unavailable = document.getElementById('status');
     unavailable.className = 'status error';
     unavailable.textContent = L('Could not load the interactive charts.', 'โหลดกราฟแบบโต้ตอบไม่สำเร็จ');
@@ -2582,16 +2897,14 @@
   Promise.all([
     load('summaries/market_monthly.csv'), load('summaries/brand_monthly.csv'), load('summaries/model_monthly.csv'),
     load('data/brands.csv'), load('data/models.csv'), load('data/prices.csv'),
-    load('summaries/province_monthly.csv'), load('data/provinces.csv'), load('data/population.csv'),
-    fetch('site/th-provinces.geojson').then(function (r) { if (!r.ok) throw new Error('site/th-provinces.geojson'); return r.json(); })
+    load('summaries/province_monthly.csv'), load('data/provinces.csv'), load('data/population.csv')
   ]).then(function (res) {
     D.provBy = {};
     res[6].forEach(function (r) { var p = D.provBy[r.period] = D.provBy[r.period] || {}; (p[r.province_iso] = p[r.province_iso] || {})[r.category] = +r.units; });
     D.provinceInfo = {}; D.regionName = {};
     res[7].forEach(function (p) { D.provinceInfo[p.province_iso] = p; D.regionName[p.region] = LANG === 'en' ? REGION_EN[p.region] : p.region_th; });
-    D.map = prepareMap(res[9]);
     D.population = {}; res[8].forEach(function (p) { D.population[p.province_iso] = +p.population; D.populationAsOf = p.as_of; });
-    D.provisional = res[0].filter(function (r) { return r.status === 'provisional'; });   // national totals only: shown in the status line, never in charts or rankings
+    D.provisional = res[0].filter(function (r) { return r.status === 'provisional'; });   // national totals only; exclude from area analysis
     D.market = res[0].filter(function (r) { return r.status !== 'provisional'; }); D.brand = res[1]; D.model = res[2];
     D.okSet = {}; D.marketBy = {};
     D.market.forEach(function (r) { D.marketBy[r.period] = r; if (r.status === 'ok') D.okSet[r.period] = true; });
@@ -2601,12 +2914,7 @@
     D.modelInfo = {}; res[4].forEach(function (m) { D.modelInfo[m.model_id] = m; });
     D.pricesBy = {}; res[5].forEach(function (p) { (D.pricesBy[p.model_id] = D.pricesBy[p.model_id] || []).push(p); });
     D.brandRows = index(D.brand, 'brand_id'); D.modelRows = index(D.model, 'model_id');
-    D.statusText = L('Latest data: ', 'ข้อมูลล่าสุด: ') + monthLabel(lastOk(), true) + L(' · Source: Department of Land Transport', ' · แหล่งข้อมูล: กรมการขนส่งทางบก');
-    D.provisional.forEach(function (r) {
-      D.statusText += ' · ' + monthLabel(r.period, true) + L(': national total only, ', ': ยอดรวมทั้งประเทศเท่านั้น ') + fmt(r.total) +
-        (r.mom_pct === '' ? '' : ' (' + pctText(r.mom_pct) + ' ' + L('vs previous month', 'จากเดือนก่อน') + ')') +
-        L('; brand and model detail awaiting the DLT', ' · รอข้อมูลยี่ห้อและรุ่นจากกรมการขนส่งทางบก');
-    });
+    D.statusText = L('Latest complete data: ', 'ข้อมูลครบล่าสุด: ') + monthLabel(lastOk(), true) + L(' · Source: Department of Land Transport', ' · แหล่งข้อมูล: กรมการขนส่งทางบก');
     var stEl = document.getElementById('status');
     stEl.className = 'status';
     stEl.textContent = D.statusText;
@@ -2616,8 +2924,10 @@
     (mq.addEventListener ? mq.addEventListener.bind(mq, 'change') : mq.addListener.bind(mq))(function () { renderExplorer(); });
   }).catch(function (e) {
     var st = document.getElementById('status');
+    st.hidden = false;
     st.className = 'status error';
-    st.textContent = L('Failed to load data: ', 'โหลดข้อมูลไม่สำเร็จ: ') + e.message + L(' (open it through GitHub Pages or a local web server, not as a file)', ' (เปิดผ่าน GitHub Pages หรือ local web server ไม่ใช่ไฟล์ตรงๆ)');
+    st.textContent = L('Dashboard data could not load. Try again.', 'โหลดข้อมูลแดชบอร์ดไม่สำเร็จ กรุณาลองใหม่');
+    bootRetry.hidden = false;
     console.error(e);
   });
 

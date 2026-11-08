@@ -14,7 +14,7 @@ import json
 import re
 import sys
 from collections import Counter
-from datetime import date
+from datetime import date, timedelta
 from html import escape
 from pathlib import Path
 
@@ -53,7 +53,7 @@ def build_facts():
                    key=lambda r: int(r["rank"]))[:25]
     latest = max((r for r in market if r["status"] in ("ok", "provisional")), key=lambda r: r["period"])
     th, en = month_names(per)
-    return dict(per=per, first=first["period"], total=int(last["total"]), th=th, en=en, latest=latest,
+    return dict(per=per, first=first["period"], total=int(last["total"]), th=th, en=en, latest=latest, complete=last,
                 brands=brands, models=models, top_b=top_b, top_m=top_m)
 
 
@@ -82,22 +82,39 @@ def m_rows(f, rs):
 
 def static_html(f):
     b_body, m_body = b_rows(f, f["top_b"][:10]), m_rows(f, f["top_m"][:10])
-    latest = f["latest"]
-    per = latest["period"]
-    th, en = month_names(per)
-    total = n(latest["total"])
-    provisional = latest["status"] == "provisional"
-    note_th = " · ยอดรวมเบื้องต้น รอข้อมูลแยกยี่ห้อและรุ่น" if provisional else ""
-    note_en = " · Provisional national total, brand and model data pending" if provisional else ""
+    complete, latest = f["complete"], f["latest"]
+    per, th, en = f["per"], f["th"], f["en"]
+    total = n(complete["total"])
+    previous = (date.fromisoformat(per + "-01") - timedelta(days=1)).strftime("%Y-%m")
+    prev_th, prev_en = month_names(previous)
+    mom = pct(complete["mom_pct"])
+    compare_th = f"{mom} เทียบกับ {prev_th}" if complete["mom_pct"] else f"ไม่มีฐานเปรียบเทียบสำหรับ {prev_th}"
+    compare_en = f"{mom} vs {prev_en}" if complete["mom_pct"] else f"Comparison unavailable for {prev_en}"
+    provisional = ""
+    if latest["status"] == "provisional":
+        pending_period = latest["period"]
+        pending_th, pending_en = month_names(pending_period)
+        pending_total = n(latest["total"])
+        provisional = f"""
+    <div class="latest-provisional">
+      <p class="note locale-copy" lang="th"><time datetime="{pending_period}">{pending_th}</time> · ยอดจดทะเบียนเบื้องต้นทั่วประเทศ <strong>{pending_total} คัน</strong> · รอข้อมูลแยกยี่ห้อและรุ่น</p>
+      <p class="note locale-copy" lang="en"><time datetime="{pending_period}">{pending_en}</time> · Provisional national total <strong>{pending_total} registrations</strong> · Brand and model detail pending</p>
+    </div>"""
     return f"""<section class="card" id="seoStatic" data-page="overview" aria-labelledby="seoStaticH">
-    <h2 id="seoStaticH"><span class="locale-copy" lang="th">สรุปเดือน <time datetime="{per}">{th}</time></span><span class="locale-copy" lang="en"><time datetime="{per}">{en}</time> summary</span></h2>
-    <p class="note locale-copy" lang="th"><strong>{total} คัน</strong> จดทะเบียนใหม่ทั่วประเทศ (ร.ย.1–3){note_th}<br>เทียบเดือนก่อน {pct(latest['mom_pct'])} · เทียบเดือนเดียวกันปีก่อน {pct(latest['yoy_pct'])}</p>
-    <p class="note locale-copy" lang="en"><strong>{total} vehicles</strong> newly registered nationwide (RY1–3){note_en}<br>Month on month {pct(latest['mom_pct'])} · Year on year {pct(latest['yoy_pct'])}</p>
-    <p class="note"><a href="brands/">อันดับยี่ห้อ · Brands</a> · <a href="models/">อันดับรุ่น · Models</a> · <a href="ev/">ยอดจดทะเบียน EV</a> · <a href="summaries/market_monthly.csv">ยอดรายเดือน CSV</a></p>
+    <h2 id="seoStaticH"><span class="locale-copy" lang="th">เดือนล่าสุดที่ข้อมูลครบ · <time datetime="{per}">{th}</time></span><span class="locale-copy" lang="en">Latest complete month · <time datetime="{per}">{en}</time></span></h2>
+    <p class="note locale-copy" lang="th"><strong class="latest-count">{total} คัน</strong> จดทะเบียนใหม่ทั่วประเทศ (ร.ย.1–3) · {compare_th}</p>
+    <p class="note locale-copy" lang="en"><strong class="latest-count">{total} vehicles</strong> newly registered nationwide (RY1–3) · {compare_en}</p>
     <p class="note locale-copy" lang="th">ที่มา <a href="https://web.dlt.go.th/statistics/">กรมการขนส่งทางบก</a> · <a href="data/sources.csv">ทะเบียนแหล่งข้อมูล</a></p>
-    <p class="note locale-copy" lang="en">Source <a href="https://web.dlt.go.th/statistics/">Department of Land Transport</a> · <a href="data/sources.csv">Source register</a></p>
+    <p class="note locale-copy" lang="en">Source <a href="https://web.dlt.go.th/statistics/">Department of Land Transport</a> · <a href="data/sources.csv">Source register</a></p>{provisional}
+    <div class="controls">
+      <a class="btn" href="#/ranking"><span class="locale-copy" lang="th">ดูอันดับ</span><span class="locale-copy" lang="en">View rankings</span></a>
+      <a class="btn" href="#/compare/"><span class="locale-copy" lang="th">เปรียบเทียบรุ่น</span><span class="locale-copy" lang="en">Compare models</span></a>
+      <a class="btn" href="#/data"><span class="locale-copy" lang="th">ข้อมูลและการอ้างอิง</span><span class="locale-copy" lang="en">Data and citation</span></a>
+    </div>
     <details>
       <summary><span class="locale-copy" lang="th">10 อันดับยี่ห้อและรุ่น เดือน{f['th']}</span><span class="locale-copy" lang="en">Top 10 brands and models in {f['en']}</span></summary>
+      <p class="note locale-copy" lang="th"><a href="brands/">อันดับยี่ห้อ</a> · <a href="models/">อันดับรุ่น</a> · <a href="ev/">ยอดจดทะเบียน EV</a> · <a href="summaries/market_monthly.csv">ยอดรายเดือน CSV</a></p>
+      <p class="note locale-copy" lang="en"><a href="brands/">Brand rankings</a> · <a href="models/">Model rankings</a> · <a href="ev/">EV registrations</a> · <a href="summaries/market_monthly.csv">Monthly totals CSV</a></p>
       <div class="two">
         <div>{table(f"10 อันดับยี่ห้อ · Top brands, {f['per']}", ["#", "Brand · ยี่ห้อ", "Units · คัน", "Share · ส่วนแบ่ง"], b_body)}</div>
         <div>{table(f"10 อันดับรุ่น · Top models, {f['per']}", ["#", "Model · รุ่น", "Brand · ยี่ห้อ", "Units · คัน", "Share · ส่วนแบ่ง"], m_body)}</div>
