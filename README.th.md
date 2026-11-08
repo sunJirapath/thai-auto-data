@@ -39,7 +39,7 @@
 
 <!-- pending --><!-- /pending -->
 
-**ราคา:** ตอนนี้มีราคาจากเว็บไซต์ทางการ 184 รุ่น 622 รายการ และราคาจากแหล่งไม่ทางการที่ยังไม่ยืนยันอีก 12 รุ่น 37 รายการ (Toyota, Lexus, Honda, Isuzu, Mitsubishi, Ford, Nissan, Mazda, Subaru, Suzuki, BYD, MG, GWM/Haval/ORA/Tank/POER, Changan/Deepal, Chery, Omoda/Jaecoo, AION, Wuling, Tesla, Hyundai, Kia, XPENG, Zeekr, Denza, BMW, MINI, Mercedes-Benz, Porsche, Volvo, AVATR, Geely, Riddara, Lepas และ Leapmotor) ครอบคลุม 93% ของยอดจดทะเบียน 12 เดือนล่าสุด ทุกแถวมีลิงก์หน้าเว็บที่ใช้อ้างอิง ประวัติราคาเริ่มจากวันที่บันทึก จึงไม่ครบย้อนหลัง
+**ราคา:** ตอนนี้มีราคาจากเว็บไซต์ทางการ 184 รุ่น 622 รายการ และราคาจากแหล่งไม่ทางการที่ยังไม่ยืนยันอีก 13 รุ่น 41 รายการ (Toyota, Lexus, Honda, Isuzu, Mitsubishi, Ford, Nissan, Mazda, Subaru, Suzuki, BYD, MG, GWM/Haval/ORA/Tank/POER, Changan/Deepal, Chery, Omoda/Jaecoo, AION, Wuling, Tesla, Hyundai, Kia, XPENG, Zeekr, Denza, BMW, MINI, Mercedes-Benz, Porsche, Volvo, AVATR, Geely, Riddara, Lepas, Leapmotor และ Foton) ครอบคลุม 93% ของยอดจดทะเบียน 12 เดือนล่าสุด ทุกแถวมีลิงก์หน้าเว็บที่ใช้อ้างอิง ประวัติราคาเริ่มจากวันที่บันทึก จึงไม่ครบย้อนหลัง
 
 ถ้าเดือนใดไม่มีข้อมูลจากต้นทาง จะแสดงเป็น `status=missing` และเว้นตัวเลขว่าง **ไม่ใช่ 0** รายละเอียดอยู่ใน [DATA_SOURCES.md](DATA_SOURCES.md) เดือนที่กรมฯ ลงแค่ยอดรวมทั้งประเทศ (RY1-RY3) ก่อนไฟล์ยี่ห้อ-รุ่น จะอยู่ใน `summaries/market_monthly.csv` เป็น `status=provisional` ไม่มีแถวยี่ห้อหรือรุ่น แหล่งที่มาอยู่ใน `data/provisional_totals.csv` และจะเปลี่ยนเป็น `ok` เมื่อไฟล์เต็มมา
 
