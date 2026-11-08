@@ -2760,16 +2760,18 @@
     if (kind === 'm') tc.appendChild(el('p', { class: 'note' }, L(
       'Prices use the latest official list prices we recorded. Observation dates vary by model and promotions are excluded.',
       'ราคาอ้างอิงจากราคาปกติล่าสุดที่บันทึกจากเว็บไซต์ทางการ วันที่บันทึกต่างกันตามรุ่นและไม่รวมราคาโปรโมชัน')));
-    var t = el('table', { class: 'compare' }), thead = el('thead'), htr = el('tr'), tb = el('tbody'), csv = [[L('metric', 'รายการ')].concat(ids.map(function (id) { return nameFor(kind, id); }))];
+    var t = el('table', { class: 'compare' }), thead = el('thead'), htr = el('tr'), csv = [[L('metric', 'รายการ')].concat(ids.map(function (id) { return nameFor(kind, id); }))];
     htr.appendChild(el('th', { scope: 'col' }, L('Measure', 'รายการเปรียบเทียบ')));
     ids.forEach(function (id, i) {
       var dot = el('i', { class: 'dot' });
       dot.style.background = seriesColor(i);
       htr.appendChild(add(el('th', { scope: 'col' }), dot, link(hrefFor(kind, id), nameFor(kind, id))));
     });
-    add(t, add(thead, htr), tb);
+    add(t, add(thead, htr));
     groups.forEach(function (g) {
-      tb.appendChild(add(el('tr', { class: 'group' }), el('th', { scope: 'colgroup', colspan: String(ids.length + 1) }, g[0])));
+      var tb = el('tbody');
+      t.appendChild(tb);
+      tb.appendChild(add(el('tr', { class: 'group' }), el('th', { scope: 'rowgroup', colspan: String(ids.length + 1) }, g[0])));
       g[1].filter(Boolean).forEach(function (m) {
         var tr = el('tr'), best = null, row = [m[0]];
         if (m[2] && ids.length > 1) {

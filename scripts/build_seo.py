@@ -245,7 +245,7 @@ def page_html(slug, p):
 <meta name="twitter:image" content="{SITE}site/og-image.png">
 <meta name="twitter:image:alt" content="Thai new-vehicle registrations · ยอดจดทะเบียนรถใหม่ในไทย">
 <meta property="og:locale" content="th_TH">
-<link rel="stylesheet" href="../site/style.css?v=27">
+<link rel="stylesheet" href="../site/style.css?v=28">
 {share_script}
 <script type="application/ld+json">{ld}</script>
 </head>
