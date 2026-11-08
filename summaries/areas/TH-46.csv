@@ -32,6 +32,7 @@ period,category,kind,id,units
 2021-01,RY1,m,bmw-x3,1
 2021-01,RY1,m,ford-everest,1
 2021-01,RY1,m,ford-ranger,1
+2021-01,RY1,m,foton-tunland,1
 2021-01,RY1,m,honda-accord,1
 2021-01,RY1,m,honda-city,24
 2021-01,RY1,m,honda-civic,6
@@ -663,6 +664,7 @@ period,category,kind,id,units
 2021-08,RY1,f,hev,4
 2021-08,RY1,f,petrol,91
 2021-08,RY1,m,ford-ranger,7
+2021-08,RY1,m,foton-tunland,1
 2021-08,RY1,m,honda-city,8
 2021-08,RY1,m,honda-city-hatchback,14
 2021-08,RY1,m,honda-civic,3
@@ -773,6 +775,7 @@ period,category,kind,id,units
 2021-09,RY1,m,mg-extender,4
 2021-09,RY1,m,mg-mg3,6
 2021-09,RY1,m,mg-zs,4
+2021-09,RY1,m,mini-clubman,1
 2021-09,RY1,m,mitsubishi-attrage,5
 2021-09,RY1,m,mitsubishi-mirage,2
 2021-09,RY1,m,mitsubishi-pajero-sport,1
@@ -1051,6 +1054,7 @@ period,category,kind,id,units
 2021-12,RY1,m,suzuki-celerio,2
 2021-12,RY1,m,suzuki-ciaz,3
 2021-12,RY1,m,suzuki-swift,16
+2021-12,RY1,m,toyota-avanza,1
 2021-12,RY1,m,toyota-corolla,2
 2021-12,RY1,m,toyota-corolla-cross,2
 2021-12,RY1,m,toyota-fortuner,2
@@ -2839,6 +2843,7 @@ period,category,kind,id,units
 2023-07,RY1,m,toyota-veloz,5
 2023-07,RY1,m,toyota-yaris,8
 2023-07,RY1,m,toyota-yaris-ativ,17
+2023-07,RY1,m,volt-for-four,1
 2023-07,RY2,b,toyota,1
 2023-07,RY2,bf,toyota|diesel,1
 2023-07,RY2,f,diesel,1

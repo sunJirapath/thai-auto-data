@@ -92,6 +92,7 @@ period,category,kind,id,units
 2021-02,RY1,m,mercedes-benz-a-class,1
 2021-02,RY1,m,mg-mg3,1
 2021-02,RY1,m,mitsubishi-attrage,2
+2021-02,RY1,m,peugeot-5008,1
 2021-02,RY1,m,suzuki-swift,1
 2021-02,RY1,m,toyota-corolla-cross,2
 2021-02,RY1,m,toyota-fortuner,2
@@ -697,6 +698,7 @@ period,category,kind,id,units
 2021-12,RY1,f,diesel,14
 2021-12,RY1,f,hev,1
 2021-12,RY1,f,petrol,10
+2021-12,RY1,m,chevrolet-captiva,1
 2021-12,RY1,m,ford-ranger,3
 2021-12,RY1,m,ford-ranger-raptor,1
 2021-12,RY1,m,isuzu-d-max,3
@@ -1173,6 +1175,7 @@ period,category,kind,id,units
 2022-07,RY1,m,haval-h6,1
 2022-07,RY1,m,isuzu-d-max,14
 2022-07,RY1,m,isuzu-mu-x,3
+2022-07,RY1,m,jeep-wrangler,1
 2022-07,RY1,m,mazda-mazda2,6
 2022-07,RY1,m,mg-hs,2
 2022-07,RY1,m,mg-mg5,3
@@ -2764,6 +2767,7 @@ period,category,kind,id,units
 2024-09,RY1,f,hev,8
 2024-09,RY1,f,petrol,13
 2024-09,RY1,f,phev,2
+2024-09,RY1,m,audi-tt,1
 2024-09,RY1,m,bmw-x1,1
 2024-09,RY1,m,ford-everest,1
 2024-09,RY1,m,ford-ranger,3
@@ -2776,6 +2780,7 @@ period,category,kind,id,units
 2024-09,RY1,m,mazda-mazda2,1
 2024-09,RY1,m,mercedes-benz-c-class,1
 2024-09,RY1,m,mercedes-benz-glc,1
+2024-09,RY1,m,mini-clubman,1
 2024-09,RY1,m,mitsubishi-mirage,1
 2024-09,RY1,m,mitsubishi-pajero-sport,1
 2024-09,RY1,m,mitsubishi-triton,1

@@ -30,6 +30,7 @@ period,category,kind,id,units
 2021-01,RY1,f,diesel,100
 2021-01,RY1,f,hev,3
 2021-01,RY1,f,petrol,88
+2021-01,RY1,m,chevrolet-colorado,1
 2021-01,RY1,m,ford-ranger,7
 2021-01,RY1,m,honda-br-v,1
 2021-01,RY1,m,honda-city,4
@@ -681,6 +682,7 @@ period,category,kind,id,units
 2021-09,RY1,f,hev,3
 2021-09,RY1,f,petrol,79
 2021-09,RY1,m,ford-ranger,5
+2021-09,RY1,m,foton-tunland,1
 2021-09,RY1,m,honda-city,3
 2021-09,RY1,m,honda-city-hatchback,3
 2021-09,RY1,m,honda-civic,1
@@ -751,6 +753,7 @@ period,category,kind,id,units
 2021-10,RY1,f,diesel,57
 2021-10,RY1,f,hev,8
 2021-10,RY1,f,petrol,64
+2021-10,RY1,m,audi-a5,1
 2021-10,RY1,m,ford-ranger,6
 2021-10,RY1,m,honda-br-v,1
 2021-10,RY1,m,honda-city,1
@@ -1041,6 +1044,7 @@ period,category,kind,id,units
 2022-01,RY3,bf,nissan|diesel,6
 2022-01,RY3,bf,toyota|diesel,30
 2022-01,RY3,f,diesel,75
+2022-01,RY3,m,chevrolet-colorado,1
 2022-01,RY3,m,isuzu-d-max,27
 2022-01,RY3,m,mg-extender,1
 2022-01,RY3,m,mitsubishi-triton,8
@@ -1157,6 +1161,7 @@ period,category,kind,id,units
 2022-03,RY1,f,hev,2
 2022-03,RY1,f,petrol,66
 2022-03,RY1,f,phev,1
+2022-03,RY1,m,chevrolet-cruze,1
 2022-03,RY1,m,ford-everest,2
 2022-03,RY1,m,ford-ranger,13
 2022-03,RY1,m,honda-city,3
@@ -1229,6 +1234,7 @@ period,category,kind,id,units
 2022-04,RY1,f,diesel,82
 2022-04,RY1,f,hev,3
 2022-04,RY1,f,petrol,64
+2022-04,RY1,m,chevrolet-cruze,1
 2022-04,RY1,m,ford-everest,3
 2022-04,RY1,m,ford-ranger,5
 2022-04,RY1,m,honda-city,6
@@ -1828,6 +1834,7 @@ period,category,kind,id,units
 2022-11,RY3,m,mazda-bt-50,1
 2022-11,RY3,m,mitsubishi-triton,7
 2022-11,RY3,m,nissan-navara,3
+2022-11,RY3,m,tata-xenon,1
 2022-11,RY3,m,toyota-hilux-revo,14
 2022-12,RY1,b,chevrolet,1
 2022-12,RY1,b,ford,8
@@ -1863,6 +1870,7 @@ period,category,kind,id,units
 2022-12,RY1,f,diesel,68
 2022-12,RY1,f,hev,4
 2022-12,RY1,f,petrol,35
+2022-12,RY1,m,chevrolet-trailblazer,1
 2022-12,RY1,m,ford-everest,2
 2022-12,RY1,m,ford-ranger,4
 2022-12,RY1,m,ford-ranger-raptor,2
@@ -2308,6 +2316,7 @@ period,category,kind,id,units
 2023-06,RY1,f,diesel,82
 2023-06,RY1,f,hev,9
 2023-06,RY1,f,petrol,43
+2023-06,RY1,m,audi-tt,1
 2023-06,RY1,m,ford-everest,1
 2023-06,RY1,m,ford-ranger,11
 2023-06,RY1,m,honda-accord,1
@@ -3109,6 +3118,7 @@ period,category,kind,id,units
 2024-05,RY1,f,diesel,34
 2024-05,RY1,f,hev,14
 2024-05,RY1,f,petrol,30
+2024-05,RY1,m,audi-q3,1
 2024-05,RY1,m,ford-ranger,1
 2024-05,RY1,m,honda-city,1
 2024-05,RY1,m,honda-city-hatchback,3

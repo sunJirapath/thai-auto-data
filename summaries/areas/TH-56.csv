@@ -41,6 +41,7 @@ period,category,kind,id,units
 2021-01,RY1,m,honda-civic,9
 2021-01,RY1,m,honda-cr-v,4
 2021-01,RY1,m,honda-jazz,10
+2021-01,RY1,m,honda-mobilio,1
 2021-01,RY1,m,isuzu-d-max,26
 2021-01,RY1,m,isuzu-mu-x,4
 2021-01,RY1,m,mazda-bt-50,1
@@ -132,6 +133,7 @@ period,category,kind,id,units
 2021-02,RY1,m,honda-cr-v,4
 2021-02,RY1,m,honda-hr-v,1
 2021-02,RY1,m,honda-jazz,1
+2021-02,RY1,m,honda-mobilio,1
 2021-02,RY1,m,isuzu-d-max,17
 2021-02,RY1,m,isuzu-mu-x,1
 2021-02,RY1,m,mazda-cx-30,1
@@ -708,6 +710,7 @@ period,category,kind,id,units
 2021-08,RY1,m,nissan-terra,1
 2021-08,RY1,m,suzuki-celerio,3
 2021-08,RY1,m,suzuki-swift,1
+2021-08,RY1,m,toyota-avanza,1
 2021-08,RY1,m,toyota-corolla,1
 2021-08,RY1,m,toyota-corolla-cross,3
 2021-08,RY1,m,toyota-fortuner,3
@@ -1175,6 +1178,7 @@ period,category,kind,id,units
 2022-02,RY1,m,honda-jazz,3
 2022-02,RY1,m,isuzu-d-max,13
 2022-02,RY1,m,isuzu-mu-x,2
+2022-02,RY1,m,jeep-wrangler,1
 2022-02,RY1,m,mazda-mazda2,8
 2022-02,RY1,m,mg-extender,1
 2022-02,RY1,m,mg-mg5,1
@@ -1679,6 +1683,7 @@ period,category,kind,id,units
 2022-08,RY1,f,hev,12
 2022-08,RY1,f,petrol,77
 2022-08,RY1,f,phev,1
+2022-08,RY1,m,bentley-flying-spur,1
 2022-08,RY1,m,ford-ranger,3
 2022-08,RY1,m,honda-city,8
 2022-08,RY1,m,honda-city-hatchback,3
@@ -1993,6 +1998,7 @@ period,category,kind,id,units
 2022-12,RY1,f,diesel,39
 2022-12,RY1,f,hev,3
 2022-12,RY1,f,petrol,25
+2022-12,RY1,m,bentley-continental-gt,1
 2022-12,RY1,m,ford-everest,1
 2022-12,RY1,m,ford-ranger,3
 2022-12,RY1,m,ford-ranger-raptor,1
@@ -2131,7 +2137,7 @@ period,category,kind,id,units
 2023-01,RY3,bf,toyota|diesel,26
 2023-01,RY3,f,diesel,58
 2023-01,RY3,m,isuzu-d-max,26
-2023-01,RY3,m,mitsubishi-triton,4
+2023-01,RY3,m,mitsubishi-triton,5
 2023-01,RY3,m,nissan-navara,1
 2023-01,RY3,m,toyota-hilux-revo,26
 2023-02,RY1,b,ford,5
@@ -3349,6 +3355,7 @@ period,category,kind,id,units
 2024-03,RY1,m,honda-hr-v,7
 2024-03,RY1,m,isuzu-d-max,11
 2024-03,RY1,m,isuzu-mu-x,1
+2024-03,RY1,m,jeep-wrangler,1
 2024-03,RY1,m,mazda-cx-3,2
 2024-03,RY1,m,mazda-cx-30,1
 2024-03,RY1,m,mazda-mazda2,3
@@ -5610,6 +5617,7 @@ period,category,kind,id,units
 2026-06,RY1,m,chery-v23,2
 2026-06,RY1,m,deepal-s05,1
 2026-06,RY1,m,geely-ex2,10
+2026-06,RY1,m,gmc-yukon,1
 2026-06,RY1,m,gwm-tank-300,1
 2026-06,RY1,m,honda-city,1
 2026-06,RY1,m,honda-city-hatchback,6

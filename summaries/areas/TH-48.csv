@@ -46,6 +46,7 @@ period,category,kind,id,units
 2021-01,RY1,m,honda-civic,4
 2021-01,RY1,m,honda-hr-v,4
 2021-01,RY1,m,honda-jazz,8
+2021-01,RY1,m,honda-mobilio,1
 2021-01,RY1,m,isuzu-d-max,16
 2021-01,RY1,m,isuzu-mu-x,5
 2021-01,RY1,m,mazda-cx-30,3
@@ -147,6 +148,7 @@ period,category,kind,id,units
 2021-02,RY1,f,petrol,63
 2021-02,RY1,m,ford-everest,2
 2021-02,RY1,m,ford-ranger,4
+2021-02,RY1,m,foton-tunland,1
 2021-02,RY1,m,honda-city,7
 2021-02,RY1,m,honda-civic,5
 2021-02,RY1,m,honda-jazz,4
@@ -837,6 +839,7 @@ period,category,kind,id,units
 2021-10,RY1,m,nissan-note,1
 2021-10,RY1,m,suzuki-celerio,2
 2021-10,RY1,m,suzuki-swift,2
+2021-10,RY1,m,toyota-avanza,1
 2021-10,RY1,m,toyota-corolla,1
 2021-10,RY1,m,toyota-corolla-cross,2
 2021-10,RY1,m,toyota-fortuner,4
@@ -2665,6 +2668,7 @@ period,category,kind,id,units
 2023-07,RY1,m,toyota-veloz,1
 2023-07,RY1,m,toyota-yaris,11
 2023-07,RY1,m,toyota-yaris-ativ,6
+2023-07,RY1,m,volt-for-four,1
 2023-07,RY3,b,ford,1
 2023-07,RY3,b,isuzu,6
 2023-07,RY3,b,mg,1
@@ -4700,6 +4704,7 @@ period,category,kind,id,units
 2025-10,RY1,f,hev,16
 2025-10,RY1,f,petrol,23
 2025-10,RY1,f,phev,2
+2025-10,RY1,m,aston-martin-vantage,1
 2025-10,RY1,m,byd-atto-3,2
 2025-10,RY1,m,byd-dolphin,2
 2025-10,RY1,m,byd-seal-5,1
@@ -5601,6 +5606,7 @@ period,category,kind,id,units
 2026-09,RY1,m,mazda-bt-50,2
 2026-09,RY1,m,mazda-cx-3,2
 2026-09,RY1,m,mazda-mazda2,6
+2026-09,RY1,m,mercedes-benz-maybach-eqs-suv,1
 2026-09,RY1,m,mg-im5,1
 2026-09,RY1,m,mitsubishi-pajero-sport,2
 2026-09,RY1,m,nissan-almera,1

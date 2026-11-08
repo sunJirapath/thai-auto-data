@@ -1,44 +1,44 @@
 period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
-2024-08,RY1,ABARTH,595 COMPETIZIONE,1,abarth,,dlt-web-aeaaf410
+2024-08,RY1,ABARTH,595 COMPETIZIONE,1,abarth,abarth-595,dlt-web-aeaaf410
 2024-08,RY1,AION,AION Y PLUS,288,aion,aion-y-plus,dlt-web-aeaaf410
-2024-08,RY1,ASTON MARTIN,VANTAGE COUPE,1,aston-martin,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,A3 SB 35 TFSI S line,1,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,A4 40 TFSI S line IB,1,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,A4 AV 45 TFSI q S line BE,1,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,A4 AV 45 TFSI q S line IB,1,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,A5 CP 40 TFSI S line,5,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,A5 CP 40 TFSI S line eo,1,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,A5 CP 45 TFSI q S line BE,6,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,A5 SB 40 TFSI S line,4,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,A5 SB 40 TFSI S line eo,3,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,A5 SB 45 TFSI q S line BE,1,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,A6 40 TFSI S line,1,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,A8L 60 TFSIe q Pstg Sline,1,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,Q3 35 TFSI S line,2,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,Q3 40 TFSI q S line BE,1,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,Q3 SB 40 TFSI q S line BE,1,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,Q5 55 TFSI e q S line,2,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,Q5 55 TFSI e q S line BE,3,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,Q5 SB 55 TFSIe q S lineBE,1,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,Q7 60 TFSI e q S line BE,1,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,Q8 60 TFSI e q S line BE,5,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,Q8 SB etron 55 q Sline BE,2,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,Q8 etron 55 q BE,2,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,RS 3 Sportback quattro,2,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,RS 4 Avant q competition,1,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,RS 5 Coupe quattro,1,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,RS e-tron GT quattro,1,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,S3 Sportback quattro,1,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,TT Coupe 45 TFSI q S line,1,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,TT Coupe Final Icon Black,6,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,TT RS Coupe q,2,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,e-tron GT quattro PF,1,audi,,dlt-web-aeaaf410
-2024-08,RY1,AUDI,e-tron SB 55 q S line,1,audi,,dlt-web-aeaaf410
-2024-08,RY1,BENTLEY,BENTAYGA HYBRID,3,bentley,,dlt-web-aeaaf410
-2024-08,RY1,BENTLEY,CONTINENTAL GT,1,bentley,,dlt-web-aeaaf410
-2024-08,RY1,BENTLEY,CONTINENTAL GT V8,1,bentley,,dlt-web-aeaaf410
-2024-08,RY1,BENTLEY,FLYING SPUR AZURE HYBRID,2,bentley,,dlt-web-aeaaf410
-2024-08,RY1,BENTLEY,FLYING SPUR MULLINER HYBRID,1,bentley,,dlt-web-aeaaf410
+2024-08,RY1,ASTON MARTIN,VANTAGE COUPE,1,aston-martin,aston-martin-vantage,dlt-web-aeaaf410
+2024-08,RY1,AUDI,A3 SB 35 TFSI S line,1,audi,audi-a3,dlt-web-aeaaf410
+2024-08,RY1,AUDI,A4 40 TFSI S line IB,1,audi,audi-a4,dlt-web-aeaaf410
+2024-08,RY1,AUDI,A4 AV 45 TFSI q S line BE,1,audi,audi-a4,dlt-web-aeaaf410
+2024-08,RY1,AUDI,A4 AV 45 TFSI q S line IB,1,audi,audi-a4,dlt-web-aeaaf410
+2024-08,RY1,AUDI,A5 CP 40 TFSI S line,5,audi,audi-a5,dlt-web-aeaaf410
+2024-08,RY1,AUDI,A5 CP 40 TFSI S line eo,1,audi,audi-a5,dlt-web-aeaaf410
+2024-08,RY1,AUDI,A5 CP 45 TFSI q S line BE,6,audi,audi-a5,dlt-web-aeaaf410
+2024-08,RY1,AUDI,A5 SB 40 TFSI S line,4,audi,audi-a5,dlt-web-aeaaf410
+2024-08,RY1,AUDI,A5 SB 40 TFSI S line eo,3,audi,audi-a5,dlt-web-aeaaf410
+2024-08,RY1,AUDI,A5 SB 45 TFSI q S line BE,1,audi,audi-a5,dlt-web-aeaaf410
+2024-08,RY1,AUDI,A6 40 TFSI S line,1,audi,audi-a6,dlt-web-aeaaf410
+2024-08,RY1,AUDI,A8L 60 TFSIe q Pstg Sline,1,audi,audi-a8,dlt-web-aeaaf410
+2024-08,RY1,AUDI,Q3 35 TFSI S line,2,audi,audi-q3,dlt-web-aeaaf410
+2024-08,RY1,AUDI,Q3 40 TFSI q S line BE,1,audi,audi-q3,dlt-web-aeaaf410
+2024-08,RY1,AUDI,Q3 SB 40 TFSI q S line BE,1,audi,audi-q3,dlt-web-aeaaf410
+2024-08,RY1,AUDI,Q5 55 TFSI e q S line,2,audi,audi-q5,dlt-web-aeaaf410
+2024-08,RY1,AUDI,Q5 55 TFSI e q S line BE,3,audi,audi-q5,dlt-web-aeaaf410
+2024-08,RY1,AUDI,Q5 SB 55 TFSIe q S lineBE,1,audi,audi-q5,dlt-web-aeaaf410
+2024-08,RY1,AUDI,Q7 60 TFSI e q S line BE,1,audi,audi-q7,dlt-web-aeaaf410
+2024-08,RY1,AUDI,Q8 60 TFSI e q S line BE,5,audi,audi-q8,dlt-web-aeaaf410
+2024-08,RY1,AUDI,Q8 SB etron 55 q Sline BE,2,audi,audi-q8-e-tron,dlt-web-aeaaf410
+2024-08,RY1,AUDI,Q8 etron 55 q BE,2,audi,audi-q8-e-tron,dlt-web-aeaaf410
+2024-08,RY1,AUDI,RS 3 Sportback quattro,2,audi,audi-rs3,dlt-web-aeaaf410
+2024-08,RY1,AUDI,RS 4 Avant q competition,1,audi,audi-rs4,dlt-web-aeaaf410
+2024-08,RY1,AUDI,RS 5 Coupe quattro,1,audi,audi-rs5,dlt-web-aeaaf410
+2024-08,RY1,AUDI,RS e-tron GT quattro,1,audi,audi-e-tron-gt,dlt-web-aeaaf410
+2024-08,RY1,AUDI,S3 Sportback quattro,1,audi,audi-s3,dlt-web-aeaaf410
+2024-08,RY1,AUDI,TT Coupe 45 TFSI q S line,1,audi,audi-tt,dlt-web-aeaaf410
+2024-08,RY1,AUDI,TT Coupe Final Icon Black,6,audi,audi-tt,dlt-web-aeaaf410
+2024-08,RY1,AUDI,TT RS Coupe q,2,audi,audi-tt-rs,dlt-web-aeaaf410
+2024-08,RY1,AUDI,e-tron GT quattro PF,1,audi,audi-e-tron-gt,dlt-web-aeaaf410
+2024-08,RY1,AUDI,e-tron SB 55 q S line,1,audi,audi-e-tron,dlt-web-aeaaf410
+2024-08,RY1,BENTLEY,BENTAYGA HYBRID,3,bentley,bentley-bentayga,dlt-web-aeaaf410
+2024-08,RY1,BENTLEY,CONTINENTAL GT,1,bentley,bentley-continental-gt,dlt-web-aeaaf410
+2024-08,RY1,BENTLEY,CONTINENTAL GT V8,1,bentley,bentley-continental-gt,dlt-web-aeaaf410
+2024-08,RY1,BENTLEY,FLYING SPUR AZURE HYBRID,2,bentley,bentley-flying-spur,dlt-web-aeaaf410
+2024-08,RY1,BENTLEY,FLYING SPUR MULLINER HYBRID,1,bentley,bentley-flying-spur,dlt-web-aeaaf410
 2024-08,RY1,BMW,220i Gran Coupe M Sport,66,bmw,bmw-2-series-gran-coupe,dlt-web-aeaaf410
 2024-08,RY1,BMW,220i Gran Coupe Sport,1,bmw,bmw-2-series-gran-coupe,dlt-web-aeaaf410
 2024-08,RY1,BMW,320D,1,bmw,bmw-3-series,dlt-web-aeaaf410
@@ -107,19 +107,19 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY1,BYD,E6,6,byd,byd-e6,dlt-web-aeaaf410
 2024-08,RY1,CHANGAN,LUMIN,8,changan,changan-lumin,dlt-web-aeaaf410
 2024-08,RY1,CHANGAN,LUMIN L DC,27,changan,changan-lumin,dlt-web-aeaaf410
-2024-08,RY1,CHEVROLET,CORVETTE STINGRAY COUPE,1,chevrolet,,dlt-web-aeaaf410
-2024-08,RY1,CHEVROLET,CORVETTE STINGRAY COUPE 2LT,1,chevrolet,,dlt-web-aeaaf410
+2024-08,RY1,CHEVROLET,CORVETTE STINGRAY COUPE,1,chevrolet,chevrolet-corvette,dlt-web-aeaaf410
+2024-08,RY1,CHEVROLET,CORVETTE STINGRAY COUPE 2LT,1,chevrolet,chevrolet-corvette,dlt-web-aeaaf410
 2024-08,RY1,DEEPAL,L07,138,deepal,deepal-l07,dlt-web-aeaaf410
 2024-08,RY1,DEEPAL,S07,332,deepal,deepal-s07,dlt-web-aeaaf410
 2024-08,RY1,DEEPAL,S07 L,8,deepal,deepal-s07,dlt-web-aeaaf410
-2024-08,RY1,DFSK,GLORY 580 I-AUTO,1,dfsk,,dlt-web-aeaaf410
+2024-08,RY1,DFSK,GLORY 580 I-AUTO,1,dfsk,dfsk-glory-580,dlt-web-aeaaf410
 2024-08,RY1,FENGCHI,DYQ1030BEV1-H,3,fengchi,,dlt-web-aeaaf410
-2024-08,RY1,FERRARI,296 GTB,2,ferrari,,dlt-web-aeaaf410
-2024-08,RY1,FERRARI,F8 SPIDER,1,ferrari,,dlt-web-aeaaf410
-2024-08,RY1,FERRARI,PORTOFINO,1,ferrari,,dlt-web-aeaaf410
-2024-08,RY1,FERRARI,PUROSANGUE,3,ferrari,,dlt-web-aeaaf410
-2024-08,RY1,FERRARI,ROMA,1,ferrari,,dlt-web-aeaaf410
-2024-08,RY1,FOMM,FOMM ONE,1,fomm,,dlt-web-aeaaf410
+2024-08,RY1,FERRARI,296 GTB,2,ferrari,ferrari-296,dlt-web-aeaaf410
+2024-08,RY1,FERRARI,F8 SPIDER,1,ferrari,ferrari-f8,dlt-web-aeaaf410
+2024-08,RY1,FERRARI,PORTOFINO,1,ferrari,ferrari-portofino,dlt-web-aeaaf410
+2024-08,RY1,FERRARI,PUROSANGUE,3,ferrari,ferrari-purosangue,dlt-web-aeaaf410
+2024-08,RY1,FERRARI,ROMA,1,ferrari,ferrari-roma,dlt-web-aeaaf410
+2024-08,RY1,FOMM,FOMM ONE,1,fomm,fomm-one,dlt-web-aeaaf410
 2024-08,RY1,FORD,EVEREST,732,ford,ford-everest,dlt-web-aeaaf410
 2024-08,RY1,FORD,FORD RANGER iFBW9B4,1,ford,,dlt-web-aeaaf410
 2024-08,RY1,FORD,MUSTANG,5,ford,ford-mustang,dlt-web-aeaaf410
@@ -143,10 +143,10 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY1,HONDA,CR-V,774,honda,honda-cr-v,dlt-web-aeaaf410
 2024-08,RY1,HONDA,HR-V,2028,honda,honda-hr-v,dlt-web-aeaaf410
 2024-08,RY1,HONDA,JAZZ,1,honda,honda-jazz,dlt-web-aeaaf410
-2024-08,RY1,HONDA,N BOX G EX TURBO,1,honda,,dlt-web-aeaaf410
-2024-08,RY1,HONDA,NSX-R,1,honda,,dlt-web-aeaaf410
+2024-08,RY1,HONDA,N BOX G EX TURBO,1,honda,honda-n-box,dlt-web-aeaaf410
+2024-08,RY1,HONDA,NSX-R,1,honda,honda-nsx,dlt-web-aeaaf410
 2024-08,RY1,HONDA,ODYSSEY e-HEV ABSOLUTE EX,2,honda,honda-odyssey,dlt-web-aeaaf410
-2024-08,RY1,HONDA,S660 ALPHA,2,honda,,dlt-web-aeaaf410
+2024-08,RY1,HONDA,S660 ALPHA,2,honda,honda-s660,dlt-web-aeaaf410
 2024-08,RY1,HONDA,STEP WGN SPADA HYBRID PREMIUM,2,honda,honda-step-wgn,dlt-web-aeaaf410
 2024-08,RY1,HONDA,STEP WGN e-HEV AIR,5,honda,honda-step-wgn,dlt-web-aeaaf410
 2024-08,RY1,HONDA,STEP WGN e-HEV SPADA PREMIUM,21,honda,honda-step-wgn,dlt-web-aeaaf410
@@ -161,23 +161,23 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY1,HYUNDAI,STARGAZER,138,hyundai,hyundai-stargazer,dlt-web-aeaaf410
 2024-08,RY1,ISUZU,D-MAX,2007,isuzu,isuzu-d-max,dlt-web-aeaaf410
 2024-08,RY1,ISUZU,mu-X,1119,isuzu,isuzu-mu-x,dlt-web-aeaaf410
-2024-08,RY1,JAC,EVO-T8,9,jac,,dlt-web-aeaaf410
-2024-08,RY1,JAGUAR,I-PACE AWD S,1,jaguar,,dlt-web-aeaaf410
-2024-08,RY1,JEEP,COMPASS LIMITED,1,jeep,,dlt-web-aeaaf410
-2024-08,RY1,JEEP,GLADIATOR RUBICON,1,jeep,,dlt-web-aeaaf410
-2024-08,RY1,JEEP,RENEGADE TRAILHAWK 1.3 PHEV,1,jeep,,dlt-web-aeaaf410
+2024-08,RY1,JAC,EVO-T8,9,jac,jac-t8,dlt-web-aeaaf410
+2024-08,RY1,JAGUAR,I-PACE AWD S,1,jaguar,jaguar-i-pace,dlt-web-aeaaf410
+2024-08,RY1,JEEP,COMPASS LIMITED,1,jeep,jeep-compass,dlt-web-aeaaf410
+2024-08,RY1,JEEP,GLADIATOR RUBICON,1,jeep,jeep-gladiator,dlt-web-aeaaf410
+2024-08,RY1,JEEP,RENEGADE TRAILHAWK 1.3 PHEV,1,jeep,jeep-renegade,dlt-web-aeaaf410
 2024-08,RY1,KIA,CARNIVAL,11,kia,kia-carnival,dlt-web-aeaaf410
 2024-08,RY1,KIA,EV5,29,kia,kia-ev5,dlt-web-aeaaf410
 2024-08,RY1,KIA,EV9 GT LINE AWD,6,kia,kia-ev9,dlt-web-aeaaf410
 2024-08,RY1,KIA,SORENTO,31,kia,kia-sorento,dlt-web-aeaaf410
-2024-08,RY1,LAMBORGHINI,HURACAN EVO RWD,1,lamborghini,,dlt-web-aeaaf410
-2024-08,RY1,LAMBORGHINI,HURACAN TECNICA,2,lamborghini,,dlt-web-aeaaf410
-2024-08,RY1,LAMBORGHINI,URUS S,1,lamborghini,,dlt-web-aeaaf410
-2024-08,RY1,LAND ROVER,DEFENDER 2.0L T/C PETROL PHEV,1,land-rover,,dlt-web-aeaaf410
-2024-08,RY1,LAND ROVER,RANGE ROVER 3.0 LITRE T/C,4,land-rover,,dlt-web-aeaaf410
-2024-08,RY1,LAND ROVER,RANGE ROVER EVOQUE 1.5LITRE,2,land-rover,,dlt-web-aeaaf410
-2024-08,RY1,LAND ROVER,RANGE ROVER SPORT 3.0 LITRE,1,land-rover,,dlt-web-aeaaf410
-2024-08,RY1,LAND ROVER,RANGEROVER SPORTSV EDITION ONE,1,land-rover,,dlt-web-aeaaf410
+2024-08,RY1,LAMBORGHINI,HURACAN EVO RWD,1,lamborghini,lamborghini-huracan,dlt-web-aeaaf410
+2024-08,RY1,LAMBORGHINI,HURACAN TECNICA,2,lamborghini,lamborghini-huracan,dlt-web-aeaaf410
+2024-08,RY1,LAMBORGHINI,URUS S,1,lamborghini,lamborghini-urus,dlt-web-aeaaf410
+2024-08,RY1,LAND ROVER,DEFENDER 2.0L T/C PETROL PHEV,1,land-rover,land-rover-defender,dlt-web-aeaaf410
+2024-08,RY1,LAND ROVER,RANGE ROVER 3.0 LITRE T/C,4,land-rover,land-rover-range-rover,dlt-web-aeaaf410
+2024-08,RY1,LAND ROVER,RANGE ROVER EVOQUE 1.5LITRE,2,land-rover,land-rover-range-rover-evoque,dlt-web-aeaaf410
+2024-08,RY1,LAND ROVER,RANGE ROVER SPORT 3.0 LITRE,1,land-rover,land-rover-range-rover-sport,dlt-web-aeaaf410
+2024-08,RY1,LAND ROVER,RANGEROVER SPORTSV EDITION ONE,1,land-rover,land-rover-range-rover-sport,dlt-web-aeaaf410
 2024-08,RY1,LEXUS,ES300H,6,lexus,lexus-es,dlt-web-aeaaf410
 2024-08,RY1,LEXUS,LBX,2,lexus,lexus-lbx,dlt-web-aeaaf410
 2024-08,RY1,LEXUS,LM300h,2,lexus,lexus-lm,dlt-web-aeaaf410
@@ -192,12 +192,12 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY1,LEXUS,RX500H,3,lexus,lexus-rx,dlt-web-aeaaf410
 2024-08,RY1,LEXUS,RZ450E,6,lexus,lexus-rz,dlt-web-aeaaf410
 2024-08,RY1,LEXUS,UX250H,1,lexus,lexus-ux,dlt-web-aeaaf410
-2024-08,RY1,LOTUS,ELETRE R,13,lotus,,dlt-web-aeaaf410
-2024-08,RY1,LOTUS,ELETRE S,18,lotus,,dlt-web-aeaaf410
-2024-08,RY1,MASERATI,GHIBLI GT HYBRID,2,maserati,,dlt-web-aeaaf410
-2024-08,RY1,MASERATI,GRECALE GT HYBRID,1,maserati,,dlt-web-aeaaf410
-2024-08,RY1,MASERATI,MC20,1,maserati,,dlt-web-aeaaf410
-2024-08,RY1,MASERATI,QUATTROPORTE GRANLUSSO,1,maserati,,dlt-web-aeaaf410
+2024-08,RY1,LOTUS,ELETRE R,13,lotus,lotus-eletre,dlt-web-aeaaf410
+2024-08,RY1,LOTUS,ELETRE S,18,lotus,lotus-eletre,dlt-web-aeaaf410
+2024-08,RY1,MASERATI,GHIBLI GT HYBRID,2,maserati,maserati-ghibli,dlt-web-aeaaf410
+2024-08,RY1,MASERATI,GRECALE GT HYBRID,1,maserati,maserati-grecale,dlt-web-aeaaf410
+2024-08,RY1,MASERATI,MC20,1,maserati,maserati-mc20,dlt-web-aeaaf410
+2024-08,RY1,MASERATI,QUATTROPORTE GRANLUSSO,1,maserati,maserati-quattroporte,dlt-web-aeaaf410
 2024-08,RY1,MAZDA,MAZDA 2,456,mazda,mazda-mazda2,dlt-web-aeaaf410
 2024-08,RY1,MAZDA,MAZDA 3,66,mazda,mazda-mazda3,dlt-web-aeaaf410
 2024-08,RY1,MAZDA,MAZDA 6,1,mazda,mazda-mazda6,dlt-web-aeaaf410
@@ -207,8 +207,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY1,MAZDA,MAZDA CX-5,26,mazda,mazda-cx-5,dlt-web-aeaaf410
 2024-08,RY1,MAZDA,MAZDA CX-8,41,mazda,mazda-cx-8,dlt-web-aeaaf410
 2024-08,RY1,MAZDA,MAZDA MX-5,1,mazda,mazda-mx-5,dlt-web-aeaaf410
-2024-08,RY1,MCLAREN,750S SPIDER,1,mclaren,,dlt-web-aeaaf410
-2024-08,RY1,MCLAREN,765LT,1,mclaren,,dlt-web-aeaaf410
+2024-08,RY1,MCLAREN,750S SPIDER,1,mclaren,mclaren-750s,dlt-web-aeaaf410
+2024-08,RY1,MCLAREN,765LT,1,mclaren,mclaren-765lt,dlt-web-aeaaf410
 2024-08,RY1,MERCEDES BENZ,A 200,34,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2024-08,RY1,MERCEDES BENZ,AMG C43 4MATIC Coupe,1,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
 2024-08,RY1,MERCEDES BENZ,AMG CLS 53 4MATIC,12,mercedes-benz,mercedes-benz-cls,dlt-web-aeaaf410
@@ -253,7 +253,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY1,MERCEDES BENZ,S 350D LWB SALOON,1,mercedes-benz,mercedes-benz-s-class,dlt-web-aeaaf410
 2024-08,RY1,MERCEDES BENZ,S 580 e,14,mercedes-benz,mercedes-benz-s-class,dlt-web-aeaaf410
 2024-08,RY1,MERCEDES BENZ,S350D,1,mercedes-benz,mercedes-benz-s-class,dlt-web-aeaaf410
-2024-08,RY1,MERCEDES BENZ,SLC300,1,mercedes-benz,,dlt-web-aeaaf410
+2024-08,RY1,MERCEDES BENZ,SLC300,1,mercedes-benz,mercedes-benz-slc,dlt-web-aeaaf410
 2024-08,RY1,MERCEDES BENZ,V 250 d,8,mercedes-benz,mercedes-benz-v-class,dlt-web-aeaaf410
 2024-08,RY1,MERCEDES BENZ,ไม่ระบุ,1,mercedes-benz,,dlt-web-aeaaf410
 2024-08,RY1,MG,EP,51,mg,mg-ep,dlt-web-aeaaf410
@@ -270,14 +270,14 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY1,MG,ZS EV,56,mg,mg-zs-ev,dlt-web-aeaaf410
 2024-08,RY1,MINI,Cooper Hatch RHD,1,mini,mini-cooper,dlt-web-aeaaf410
 2024-08,RY1,MINI,Cooper S Cabrio RHD,7,mini,mini-cooper,dlt-web-aeaaf410
-2024-08,RY1,MINI,Cooper S Clubman RHD,8,mini,,dlt-web-aeaaf410
+2024-08,RY1,MINI,Cooper S Clubman RHD,8,mini,mini-clubman,dlt-web-aeaaf410
 2024-08,RY1,MINI,Cooper S Countryman,1,mini,mini-countryman,dlt-web-aeaaf410
 2024-08,RY1,MINI,Cooper S Countryman RHD,70,mini,mini-countryman,dlt-web-aeaaf410
 2024-08,RY1,MINI,Cooper S Hatch RHD,5,mini,mini-cooper,dlt-web-aeaaf410
 2024-08,RY1,MINI,Cooper SE Hatch RHD,3,mini,mini-cooper,dlt-web-aeaaf410
-2024-08,RY1,MINI,John Cooper Works ALL4 Cl,1,mini,,dlt-web-aeaaf410
-2024-08,RY1,MINI,John Cooper Works ALL4 Clubman,1,mini,,dlt-web-aeaaf410
-2024-08,RY1,MINI,John Cooper Works ALL4 Co,2,mini,,dlt-web-aeaaf410
+2024-08,RY1,MINI,John Cooper Works ALL4 Cl,1,mini,mini-clubman,dlt-web-aeaaf410
+2024-08,RY1,MINI,John Cooper Works ALL4 Clubman,1,mini,mini-clubman,dlt-web-aeaaf410
+2024-08,RY1,MINI,John Cooper Works ALL4 Co,2,mini,mini-countryman,dlt-web-aeaaf410
 2024-08,RY1,MINI,John Cooper Works Hatch R,4,mini,mini-cooper,dlt-web-aeaaf410
 2024-08,RY1,MITSUBISHI,ATTRAGE,322,mitsubishi,mitsubishi-attrage,dlt-web-aeaaf410
 2024-08,RY1,MITSUBISHI,KH4WGYPZRU,1,mitsubishi,,dlt-web-aeaaf410
@@ -293,8 +293,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY1,NEX,NPD,1,nex,,dlt-web-aeaaf410
 2024-08,RY1,NISSAN,ALMERA,268,nissan,nissan-almera,dlt-web-aeaaf410
 2024-08,RY1,NISSAN,BDWARGZN17XHAB----,1,nissan,,dlt-web-aeaaf410
-2024-08,RY1,NISSAN,ELGRAND 250 HIGHWAY STAR,1,nissan,,dlt-web-aeaaf410
-2024-08,RY1,NISSAN,FAIRLADY Z  VERSION ST,2,nissan,,dlt-web-aeaaf410
+2024-08,RY1,NISSAN,ELGRAND 250 HIGHWAY STAR,1,nissan,nissan-elgrand,dlt-web-aeaaf410
+2024-08,RY1,NISSAN,FAIRLADY Z  VERSION ST,2,nissan,nissan-fairlady-z,dlt-web-aeaaf410
 2024-08,RY1,NISSAN,GT-R,1,nissan,nissan-gt-r,dlt-web-aeaaf410
 2024-08,RY1,NISSAN,GT-R PREMIUM EDITION T-SPEC,1,nissan,nissan-gt-r,dlt-web-aeaaf410
 2024-08,RY1,NISSAN,GT-R PURE EDITION,1,nissan,nissan-gt-r,dlt-web-aeaaf410
@@ -306,9 +306,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY1,NISSAN,X-TRAIL,2,nissan,nissan-x-trail,dlt-web-aeaaf410
 2024-08,RY1,ORA,GOOD CAT,139,ora,ora-good-cat,dlt-web-aeaaf410
 2024-08,RY1,ORA,ORA 07,53,ora,ora-07,dlt-web-aeaaf410
-2024-08,RY1,PEUGEOT,2008 P24 BG,6,peugeot,,dlt-web-aeaaf410
-2024-08,RY1,PEUGEOT,3008 P84 BG,8,peugeot,,dlt-web-aeaaf410
-2024-08,RY1,PEUGEOT,5008 P87 BG,1,peugeot,,dlt-web-aeaaf410
+2024-08,RY1,PEUGEOT,2008 P24 BG,6,peugeot,peugeot-2008,dlt-web-aeaaf410
+2024-08,RY1,PEUGEOT,3008 P84 BG,8,peugeot,peugeot-3008,dlt-web-aeaaf410
+2024-08,RY1,PEUGEOT,5008 P87 BG,1,peugeot,peugeot-5008,dlt-web-aeaaf410
 2024-08,RY1,POCCO,DD L2,1,pocco,,dlt-web-aeaaf410
 2024-08,RY1,PORSCHE,718 BOXSTER STYLE EDITION,2,porsche,porsche-718,dlt-web-aeaaf410
 2024-08,RY1,PORSCHE,718 CAYMAN,1,porsche,porsche-718,dlt-web-aeaaf410
@@ -339,16 +339,16 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY1,PORSCHE,TAYCAN,10,porsche,porsche-taycan,dlt-web-aeaaf410
 2024-08,RY1,PORSCHE,TAYCAN 4S,5,porsche,porsche-taycan,dlt-web-aeaaf410
 2024-08,RY1,PORSCHE,TAYCAN GTS,4,porsche,porsche-taycan,dlt-web-aeaaf410
-2024-08,RY1,ROLLS-ROYCE,CULLINAN BLACK BADGE,1,rolls-royce,,dlt-web-aeaaf410
-2024-08,RY1,ROLLS-ROYCE,Ghost Extended,1,rolls-royce,,dlt-web-aeaaf410
-2024-08,RY1,SUBARU,BRZ,1,subaru,,dlt-web-aeaaf410
-2024-08,RY1,SUBARU,BRZ 2.4 RWD EyeSight 6AT,3,subaru,,dlt-web-aeaaf410
+2024-08,RY1,ROLLS-ROYCE,CULLINAN BLACK BADGE,1,rolls-royce,rolls-royce-cullinan,dlt-web-aeaaf410
+2024-08,RY1,ROLLS-ROYCE,Ghost Extended,1,rolls-royce,rolls-royce-ghost,dlt-web-aeaaf410
+2024-08,RY1,SUBARU,BRZ,1,subaru,subaru-brz,dlt-web-aeaaf410
+2024-08,RY1,SUBARU,BRZ 2.4 RWD EyeSight 6AT,3,subaru,subaru-brz,dlt-web-aeaaf410
 2024-08,RY1,SUBARU,FORESTER 2.0i-L ES,23,subaru,subaru-forester,dlt-web-aeaaf410
 2024-08,RY1,SUBARU,FORESTER 2.0i-S,1,subaru,subaru-forester,dlt-web-aeaaf410
 2024-08,RY1,SUBARU,FORESTER 2.0i-S ES,31,subaru,subaru-forester,dlt-web-aeaaf410
-2024-08,RY1,SUBARU,OUTBACK 2.5i-T EyeSight,1,subaru,,dlt-web-aeaaf410
-2024-08,RY1,SUBARU,WRX 4D 2.4 AWD 6MT,1,subaru,,dlt-web-aeaaf410
-2024-08,RY1,SUBARU,WRX 4D 2.4 EyeSight AWD CVT,2,subaru,,dlt-web-aeaaf410
+2024-08,RY1,SUBARU,OUTBACK 2.5i-T EyeSight,1,subaru,subaru-outback,dlt-web-aeaaf410
+2024-08,RY1,SUBARU,WRX 4D 2.4 AWD 6MT,1,subaru,subaru-wrx,dlt-web-aeaaf410
+2024-08,RY1,SUBARU,WRX 4D 2.4 EyeSight AWD CVT,2,subaru,subaru-wrx,dlt-web-aeaaf410
 2024-08,RY1,SUBARU,XV 2.0i-P ES,22,subaru,subaru-xv,dlt-web-aeaaf410
 2024-08,RY1,SUZUKI,CELERIO GA 1.0L,3,suzuki,suzuki-celerio,dlt-web-aeaaf410
 2024-08,RY1,SUZUKI,CELERIO GA 1.0L MT,25,suzuki,suzuki-celerio,dlt-web-aeaaf410
@@ -370,9 +370,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY1,SUZUKI,JIMNY SIERRA 4WD,3,suzuki,suzuki-jimny,dlt-web-aeaaf410
 2024-08,RY1,SUZUKI,JIMNY SIERRA JC,4,suzuki,suzuki-jimny,dlt-web-aeaaf410
 2024-08,RY1,SUZUKI,JIMNY SIERRA JC 4WD,4,suzuki,suzuki-jimny,dlt-web-aeaaf410
-2024-08,RY1,SUZUKI,SPACIA CUSTOM HYBRID XS TURBO,1,suzuki,,dlt-web-aeaaf410
-2024-08,RY1,SUZUKI,SPACIA GEAR HYBRID MY STYLE,1,suzuki,,dlt-web-aeaaf410
-2024-08,RY1,SUZUKI,SPACIA GEAR MY STYLE HYBRID,1,suzuki,,dlt-web-aeaaf410
+2024-08,RY1,SUZUKI,SPACIA CUSTOM HYBRID XS TURBO,1,suzuki,suzuki-spacia,dlt-web-aeaaf410
+2024-08,RY1,SUZUKI,SPACIA GEAR HYBRID MY STYLE,1,suzuki,suzuki-spacia,dlt-web-aeaaf410
+2024-08,RY1,SUZUKI,SPACIA GEAR MY STYLE HYBRID,1,suzuki,suzuki-spacia,dlt-web-aeaaf410
 2024-08,RY1,SUZUKI,SWIFT GL 1.2L CVT,74,suzuki,suzuki-swift,dlt-web-aeaaf410
 2024-08,RY1,SUZUKI,SWIFT GL NEXT 1.2L CVT,38,suzuki,suzuki-swift,dlt-web-aeaaf410
 2024-08,RY1,SUZUKI,SWIFT GLX 1.2L CVT,75,suzuki,suzuki-swift,dlt-web-aeaaf410
@@ -441,9 +441,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY1,TOYOTA,LAND CRUISER PRADO TZ-G,2,toyota,,dlt-web-aeaaf410
 2024-08,RY1,TOYOTA,LAND CRUISER ZX,2,toyota,,dlt-web-aeaaf410
 2024-08,RY1,TOYOTA,LANDCRUISER LC300 ZX,1,toyota,toyota-land-cruiser-300,dlt-web-aeaaf410
-2024-08,RY1,TOYOTA,NOAH HYBRID S-Z,1,toyota,,dlt-web-aeaaf410
-2024-08,RY1,TOYOTA,NOAH HYBRID X,6,toyota,,dlt-web-aeaaf410
-2024-08,RY1,TOYOTA,NOAH HYBRID X 2WD,3,toyota,,dlt-web-aeaaf410
+2024-08,RY1,TOYOTA,NOAH HYBRID S-Z,1,toyota,toyota-noah,dlt-web-aeaaf410
+2024-08,RY1,TOYOTA,NOAH HYBRID X,6,toyota,toyota-noah,dlt-web-aeaaf410
+2024-08,RY1,TOYOTA,NOAH HYBRID X 2WD,3,toyota,toyota-noah,dlt-web-aeaaf410
 2024-08,RY1,TOYOTA,TR TRANSFORMER,1,toyota,,dlt-web-aeaaf410
 2024-08,RY1,TOYOTA,VELLFIRE,10,toyota,toyota-vellfire,dlt-web-aeaaf410
 2024-08,RY1,TOYOTA,VELLFIRE 2.5 HYBRID Z PREMIER,2,toyota,toyota-vellfire,dlt-web-aeaaf410
@@ -465,9 +465,9 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY1,TOYOTA,YARIS CROSS,2984,toyota,toyota-yaris-cross,dlt-web-aeaaf410
 2024-08,RY1,TOYOTA,YARIS GRMN CIRCUIT PACKAGE,1,toyota,toyota-gr-yaris,dlt-web-aeaaf410
 2024-08,RY1,TOYOTA,Yaris,597,toyota,toyota-yaris,dlt-web-aeaaf410
-2024-08,RY1,VOLKSWAGEN,ID BUZZ,2,volkswagen,,dlt-web-aeaaf410
-2024-08,RY1,VOLKSWAGEN,ID BUZZ FIRST EDITION,1,volkswagen,,dlt-web-aeaaf410
-2024-08,RY1,VOLT,VOLT FOR FOUR,5,volt,,dlt-web-aeaaf410
+2024-08,RY1,VOLKSWAGEN,ID BUZZ,2,volkswagen,volkswagen-id-buzz,dlt-web-aeaaf410
+2024-08,RY1,VOLKSWAGEN,ID BUZZ FIRST EDITION,1,volkswagen,volkswagen-id-buzz,dlt-web-aeaaf410
+2024-08,RY1,VOLT,VOLT FOR FOUR,5,volt,volt-for-four,dlt-web-aeaaf410
 2024-08,RY1,VOLVO,C40,69,volvo,volvo-c40,dlt-web-aeaaf410
 2024-08,RY1,VOLVO,EC40,3,volvo,volvo-ec40,dlt-web-aeaaf410
 2024-08,RY1,VOLVO,EX30,91,volvo,volvo-ex30,dlt-web-aeaaf410
@@ -480,8 +480,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY1,VOLVO,XC90,11,volvo,volvo-xc90,dlt-web-aeaaf410
 2024-08,RY1,WULING,Air EV LR,13,wuling,wuling-air-ev,dlt-web-aeaaf410
 2024-08,RY1,WULING,Air EV SR,5,wuling,wuling-air-ev,dlt-web-aeaaf410
-2024-08,RY1,WULING,Bingou SRD,5,wuling,,dlt-web-aeaaf410
-2024-08,RY1,XEV,YOYO PLUS,1,xev,,dlt-web-aeaaf410
+2024-08,RY1,WULING,Bingou SRD,5,wuling,wuling-binguo,dlt-web-aeaaf410
+2024-08,RY1,XEV,YOYO PLUS,1,xev,xev-yoyo,dlt-web-aeaaf410
 2024-08,RY2,FORD,RANGER,8,ford,ford-ranger,dlt-web-aeaaf410
 2024-08,RY2,FORD,RANGER RAPTOR,2,ford,ford-ranger-raptor,dlt-web-aeaaf410
 2024-08,RY2,HONDA,WAVE110i,1,honda,,dlt-web-aeaaf410
@@ -502,7 +502,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY2,TOYOTA,KDH222R-LEMDYT A5,1,toyota,,dlt-web-aeaaf410
 2024-08,RY2,TOYOTA,TR TRANSFORMER,1,toyota,,dlt-web-aeaaf410
 2024-08,RY2,VOLKSWAGEN,CARAVELLE COMFORTLINE2.0L,11,volkswagen,,dlt-web-aeaaf410
-2024-08,RY2,VOLKSWAGEN,CARAVELLE T69 2.0 L,1,volkswagen,,dlt-web-aeaaf410
+2024-08,RY2,VOLKSWAGEN,CARAVELLE T69 2.0 L,1,volkswagen,volkswagen-caravelle,dlt-web-aeaaf410
 2024-08,RY3,BYD,T3,5,byd,byd-t3,dlt-web-aeaaf410
 2024-08,RY3,CHEVROLET,COLORADO X-CAB,1,chevrolet,,dlt-web-aeaaf410
 2024-08,RY3,DAIHATSU,HIJET CARGO,3,daihatsu,,dlt-web-aeaaf410
@@ -532,7 +532,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2024-08,RY3,SOKON,EC35,3,sokon,,dlt-web-aeaaf410
 2024-08,RY3,SUZUKI,CARRY 1.5L MT,63,suzuki,suzuki-carry,dlt-web-aeaaf410
 2024-08,RY3,TATA,SUPER ACE MINT,1,tata,,dlt-web-aeaaf410
-2024-08,RY3,TATA,XENON,1,tata,,dlt-web-aeaaf410
+2024-08,RY3,TATA,XENON,1,tata,tata-xenon,dlt-web-aeaaf410
 2024-08,RY3,THOMAS,ARFF 4x4,2,thomas,,dlt-web-aeaaf410
 2024-08,RY3,TOYOTA,COMMUTER,3,toyota,toyota-commuter,dlt-web-aeaaf410
 2024-08,RY3,TOYOTA,HIACE,9,toyota,toyota-hiace,dlt-web-aeaaf410
