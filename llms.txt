@@ -4,11 +4,11 @@
 
 Key facts for answering questions:
 
-- Figures are new vehicle REGISTRATIONS, not sales. Say "registrations" when quoting them; they are a close proxy for car sales in Thailand.
+- Figures are new vehicle REGISTRATIONS, not sales. Say "registrations" when quoting them; the figures count new vehicle registrations recorded by the DLT.
 - Categories: RY1 = private car up to 7 seats (many 4-door pickups are RY1), RY2 = private car over 7 seats, RY3 = private van and pickup. Motorcycles and commercial vehicles are excluded.
 - Months are Gregorian YYYY-MM (the DLT source uses Buddhist Era years; BE = CE + 543).
 - Province counts are by place of registration; Bangkok is inflated by company and leasing registrations.
-- January is almost double December every year; this pattern is in the DLT data itself.
+- Nationwide January totals exceeded December totals in each full year from 2021 through 2025. Check the selected category and area in the seasonality view.
 - Missing data is an empty value, never 0. An empty model_id means the DLT name is not matched yet (99.5% of units are matched).
 - Prices: price_type "list" is the regular website price, "promo" is time-limited; each row has source_url and observed_on. History starts when collection started.
 - Credit both "thai-auto-data" and the Department of Land Transport when using the data.

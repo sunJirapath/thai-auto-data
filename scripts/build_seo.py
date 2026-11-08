@@ -3,24 +3,25 @@
 
 Run from anywhere after each data refresh (no dependencies, standard library only):
 
-    python scripts/build_seo.py          # rewrite index.html, brands/ models/ ev/ monthly/ monthly/YYYY-MM/ and sitemap.xml
+    python scripts/build_seo.py          # rewrite index.html, pages/{brands,models,ev,monthly,monthly/YYYY-MM}/ and sitemap.xml
     python scripts/build_seo.py --check  # exit 1 if any of them is out of date (no writes)
 
 In index.html it rewrites only the regions between <!-- seo:NAME:start --> ... <!-- seo:NAME:end -->,
-plus the JSON-LD "description"/"temporalCoverage" values. brands/, models/ and ev/ are generated whole.
+plus the JSON-LD "description"/"temporalCoverage" values. pages/ is generated whole.
 """
 import csv
 import json
 import re
 import sys
 from collections import Counter
-from datetime import date, timedelta
+from datetime import date
 from functools import lru_cache
 from html import escape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://sunjirapath.github.io/thai-auto-data/"
+GROUP = "pages"  # all static summary pages live here so the repo root stays small
 TH_MONTHS = ["มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน",
              "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม"]
 EN_MONTHS = ["January", "February", "March", "April", "May", "June", "July",
@@ -84,18 +85,29 @@ def m_rows(f, rs):
         f"<td class=\"n\">{n(r['units'])}</td><td class=\"n\">{float(r['share_pct']):.1f}%</td></tr>" for r in rs)
 
 
+def locale_copy(th, en):
+    return f'<span class="locale-copy" lang="th">{escape(th)}</span><span class="locale-copy" lang="en">{escape(en)}</span>'
+
+
 def static_html(f):
     b_body, m_body = b_rows(f, f["top_b"][:10]), m_rows(f, f["top_m"][:10])
+    columns = [locale_copy("ยี่ห้อ", "Brand"), locale_copy("คัน", "Vehicles"), locale_copy("ส่วนแบ่ง", "Share")]
+    brand_table = table(locale_copy("10 อันดับยี่ห้อ", "Top 10 brands"), ["#", *columns], b_body)
+    model_table = table(locale_copy("10 อันดับรุ่น", "Top 10 models"), ["#", locale_copy("รุ่น", "Model"), *columns], m_body)
     complete, latest = f["complete"], f["latest"]
     per, th, en = f["per"], f["th"], f["en"]
     total = n(complete["total"])
-    previous = (date.fromisoformat(per + "-01") - timedelta(days=1)).strftime("%Y-%m")
+    previous = f"{int(per[:4]) - 1}{per[4:]}"
     prev_th, prev_en = month_names(previous)
-    mom = pct(complete["mom_pct"])
-    compare_th = f"{mom} เทียบกับ {prev_th}" if complete["mom_pct"] else f"ไม่มีฐานเปรียบเทียบสำหรับ {prev_th}"
-    compare_en = f"{mom} vs {prev_en}" if complete["mom_pct"] else f"Comparison unavailable for {prev_en}"
+    yoy = pct(complete["yoy_pct"])
+    compare_th = f"{yoy} เทียบกับ {prev_th}" if complete["yoy_pct"] else "ไม่มีข้อมูลเทียบกับปีก่อน"
+    compare_en = f"{yoy} vs {prev_en}" if complete["yoy_pct"] else "Year-over-year comparison unavailable"
+    leader = f["top_b"][0]
+    leader_name = escape(f["brands"][leader["brand_id"]])
+    leader_units = n(leader["units"])
     md = date.fromisoformat(f["modified"])
-    mod_th, mod_en = f"{md.day} {TH_MONTHS[md.month - 1]} {md.year + 543}", f"{EN_MONTHS[md.month - 1]} {md.day}, {md.year}"
+    mod_th = f"{md.day} {TH_MONTHS[md.month - 1]} {md.year + 543}"
+    mod_en = f"{EN_MONTHS[md.month - 1]} {md.day}, {md.year}"
     provisional = ""
     if latest["status"] == "provisional":
         pending_period = latest["period"]
@@ -108,24 +120,27 @@ def static_html(f):
     </div>"""
     return f"""<section class="card" id="seoStatic" data-page="overview" aria-labelledby="seoStaticH">
     <h2 id="seoStaticH"><span class="locale-copy" lang="th">เดือนล่าสุดที่ข้อมูลครบ · <time datetime="{per}">{th}</time></span><span class="locale-copy" lang="en">Latest complete month · <time datetime="{per}">{en}</time></span></h2>
-    <p class="note locale-copy" lang="th"><strong class="latest-count">{total} คัน</strong> จดทะเบียนใหม่ทั่วประเทศ (ร.ย.1–3) · {compare_th}</p>
-    <p class="note locale-copy" lang="en"><strong class="latest-count">{total} vehicles</strong> newly registered nationwide (RY1–3) · {compare_en}</p>
+    <p class="note locale-copy" lang="th"><strong class="latest-count">{total} คัน</strong> จดทะเบียนใหม่ทั่วประเทศ · {compare_th}</p>
+    <p class="note locale-copy" lang="en"><strong class="latest-count">{total} vehicles</strong> newly registered nationwide · {compare_en}</p>
     <p class="note locale-copy" lang="th">ที่มา <a href="https://web.dlt.go.th/statistics/">กรมการขนส่งทางบก</a> · <a href="data/sources.csv">ทะเบียนแหล่งข้อมูล</a></p>
-    <p class="note locale-copy" lang="en">Source <a href="https://web.dlt.go.th/statistics/">Department of Land Transport</a> · <a href="data/sources.csv">Source register</a></p>
+    <p class="note locale-copy" lang="en">Source <a href="https://web.dlt.go.th/statistics/">Department of Land Transport</a> · <a href="data/sources.csv">Source register</a></p>{provisional}
+    <p class="note locale-copy" lang="th">ยี่ห้อที่จดทะเบียนมากที่สุด <strong>{leader_name} · {leader_units} คัน</strong></p>
+    <p class="note locale-copy" lang="en">Most-registered brand <strong>{leader_name} · {leader_units} vehicles</strong></p>
     <p class="note locale-copy" lang="th">อัปเดตข้อมูลล่าสุด <time datetime="{f['modified']}">{mod_th}</time></p>
-    <p class="note locale-copy" lang="en">Data last updated <time datetime="{f['modified']}">{mod_en}</time></p>{provisional}
+    <p class="note locale-copy" lang="en">Data last updated <time datetime="{f['modified']}">{mod_en}</time></p>
     <div class="controls">
-      <a class="btn" href="#/ranking"><span class="locale-copy" lang="th">ดูอันดับ</span><span class="locale-copy" lang="en">View rankings</span></a>
+      <a class="btn" href="#/ranking?range=custom&amp;from={per}&amp;to={per}"><span class="locale-copy" lang="th">ดูอันดับ</span><span class="locale-copy" lang="en">View rankings</span></a>
       <a class="btn" href="#/compare/"><span class="locale-copy" lang="th">เปรียบเทียบรุ่น</span><span class="locale-copy" lang="en">Compare models</span></a>
-      <a class="btn" href="#/data"><span class="locale-copy" lang="th">ข้อมูลและการอ้างอิง</span><span class="locale-copy" lang="en">Data and citation</span></a>
+      <a class="btn" href="#/prices"><span class="locale-copy" lang="th">ดูตามช่วงราคา</span><span class="locale-copy" lang="en">Browse by budget</span></a>
+      <a class="btn" href="#/powertrain"><span class="locale-copy" lang="th">สัดส่วนรถไฟฟ้า</span><span class="locale-copy" lang="en">Electric vehicle share</span></a>
     </div>
     <details>
       <summary><span class="locale-copy" lang="th">10 อันดับยี่ห้อและรุ่น เดือน{f['th']}</span><span class="locale-copy" lang="en">Top 10 brands and models in {f['en']}</span></summary>
-      <p class="note locale-copy" lang="th"><a href="brands/">อันดับยี่ห้อ</a> · <a href="models/">อันดับรุ่น</a> · <a href="ev/">ยอดจดทะเบียน EV</a> · <a href="monthly/">ยอดจดทะเบียนรายเดือนย้อนหลัง</a> · <a href="summaries/market_monthly.csv">ยอดรายเดือน CSV</a></p>
-      <p class="note locale-copy" lang="en"><a href="brands/">Brand rankings</a> · <a href="models/">Model rankings</a> · <a href="ev/">EV registrations</a> · <a href="monthly/">Monthly history</a> · <a href="summaries/market_monthly.csv">Monthly totals CSV</a></p>
+      <p class="note locale-copy" lang="th"><a href="pages/brands/">อันดับยี่ห้อ</a> · <a href="pages/models/">อันดับรุ่น</a> · <a href="pages/ev/">ยอดจดทะเบียน EV</a> · <a href="pages/monthly/">ยอดจดทะเบียนรายเดือนย้อนหลัง</a> · <a href="summaries/market_monthly.csv">ยอดรายเดือน CSV</a></p>
+      <p class="note locale-copy" lang="en"><a href="#/ranking?rank=brand&amp;range=custom&amp;from={per}&amp;to={per}&amp;lang=en">Brand rankings</a> · <a href="#/ranking?rank=model&amp;range=custom&amp;from={per}&amp;to={per}&amp;lang=en">Model rankings</a> · <a href="#/powertrain?range=custom&amp;from={per}&amp;to={per}&amp;lang=en">EV registrations</a> · <a href="pages/monthly/">Monthly archive (Thai and English)</a> · <a href="summaries/market_monthly.csv">Monthly totals CSV</a></p>
       <div class="two">
-        <div>{table(f"10 อันดับยี่ห้อ · Top brands, {f['per']}", ["#", "Brand · ยี่ห้อ", "Units · คัน", "Share · ส่วนแบ่ง"], b_body)}</div>
-        <div>{table(f"10 อันดับรุ่น · Top models, {f['per']}", ["#", "Model · รุ่น", "Brand · ยี่ห้อ", "Units · คัน", "Share · ส่วนแบ่ง"], m_body)}</div>
+        <div>{brand_table}</div>
+        <div>{model_table}</div>
       </div>
     </details>
   </section>"""
@@ -176,9 +191,9 @@ def fuel_mix(f):
                    f"<td class=\"n\">{u / t * 100:.1f}%</td></tr>" for (th, en), u in mix.most_common())
     top = "".join(f"<tr><td>{i}</td><td>{escape(name)}</td><td class=\"n\">{n(u)}</td><td class=\"n\">{u / b * 100:.1f}%</td></tr>"
                   for i, (name, u) in enumerate(bev.most_common(10), 1))
-    per = f["per"]
-    t1 = table(f"Registrations by fuel, {per} · แยกตามเชื้อเพลิง", ["Fuel · เชื้อเพลิง", "Units · คัน", "Share · ส่วนแบ่ง"], fuel)
-    t2 = table(f"Top 10 BEV brands, {per} · 10 อันดับยี่ห้อ EV", ["#", "Brand · ยี่ห้อ", "Units · คัน", "Share of BEV · ส่วนแบ่ง"], top)
+    period = f"{f['th']} · {f['en']}"
+    t1 = table(f"แยกตามเชื้อเพลิง · Registrations by fuel · {period}", ["Fuel · เชื้อเพลิง", "Units · คัน", "Share · ส่วนแบ่ง"], fuel)
+    t2 = table(f"10 อันดับยี่ห้อ EV · Top 10 BEV brands · {period}", ["#", "Brand · ยี่ห้อ", "Units · คัน", "Share of BEV · ส่วนแบ่ง"], top)
     return f"<div class=\"two\"><div>{t1}</div><div>{t2}</div></div>"
 
 
@@ -187,19 +202,19 @@ def pages(f):
         return dict(h1=h1, app=app, csv=csv, body=body, desc=desc,
                     th=f"{what_th} {f['th']} จากทั้งหมด {n(f['total'])} คัน (ร.ย.1–3) เป็นยอดจดทะเบียน ไม่ใช่ยอดขาย",
                     en=f"{what_en} in {f['en']}, out of {n(f['total'])} new vehicles (DLT categories RY1–3). Registrations, not sales.")
-    cap = lambda s: f"{s}, {f['per']}"
+    cap = lambda s: f"{s} · {f['th']} · {f['en']}"
     return {
         "brands": one(f"ยอดจดทะเบียนรถยนต์ใหม่ แยกตามยี่ห้อ {f['th']} · Top car brands", "25 ยี่ห้อที่จดทะเบียนใหม่มากที่สุดในเดือน", "The 25 brands with the most new registrations",
                       f"อันดับ 25 ยี่ห้อรถยนต์ใหม่ที่จดทะเบียนมากที่สุดในไทย {f['th']} · Top 25 car brands by new registrations, {f['en']}",
                       table(cap("Top 25 brands · 25 อันดับยี่ห้อ"), ["#", "Brand · ยี่ห้อ", "Units · คัน", "Share · ส่วนแบ่ง"], b_rows(f, f["top_b"])),
-                      "#/ranking", ["summaries/brand_monthly.csv", "data/brands.csv"]),
+                      f"#/ranking?range=custom&amp;from={f['per']}&amp;to={f['per']}", ["summaries/brand_monthly.csv", "data/brands.csv"]),
         "models": one(f"ยอดจดทะเบียนรถยนต์ใหม่ แยกตามรุ่น {f['th']} · Top car models", "25 รุ่นที่จดทะเบียนใหม่มากที่สุดในเดือน", "The 25 models with the most new registrations",
                       f"อันดับ 25 รุ่นรถยนต์ใหม่ที่จดทะเบียนมากที่สุดในไทย {f['th']} · Top 25 car models by new registrations, {f['en']}",
                       table(cap("Top 25 models · 25 อันดับรุ่น"), ["#", "Model · รุ่น", "Brand · ยี่ห้อ", "Units · คัน", "Share · ส่วนแบ่ง"], m_rows(f, f["top_m"])),
-                      "#/ranking", ["summaries/model_monthly.csv", "data/models.csv"]),
+                      f"#/ranking?rank=model&amp;range=custom&amp;from={f['per']}&amp;to={f['per']}", ["summaries/model_monthly.csv", "data/models.csv"]),
         "ev": one(f"ยอดจดทะเบียนรถยนต์ไฟฟ้า EV และเชื้อเพลิง {f['th']} · EV and fuel mix", "สัดส่วนรถยนต์ใหม่ตามเชื้อเพลิง (BEV, HEV, PHEV, ดีเซล, เบนซิน) ในเดือน", "New registrations by fuel type, with the leading EV brands",
                   f"รถยนต์ใหม่จดทะเบียนตามเชื้อเพลิง (BEV, HEV, PHEV, ดีเซล, เบนซิน) และยี่ห้อ EV อันดับต้น {f['th']} · Thai registrations by fuel, {f['en']}",
-                  fuel_mix(f), "#/powertrain", [f"data/registrations_by_fuel/{f['per']}.csv", "data/fuel_types.csv"]),
+                  fuel_mix(f), f"#/powertrain?range=custom&amp;from={f['per']}&amp;to={f['per']}", [f"data/registrations_by_fuel/{f['per']}.csv", "data/fuel_types.csv"]),
     }
 
 
@@ -216,11 +231,13 @@ def monthly(f):
             f'<a href="../{periods[i - 1]}/">← {month_names(periods[i - 1])[0]}</a>' if i else "",
             f'<a href="../{periods[i + 1]}/">{month_names(periods[i + 1])[0]} →</a>' if i + 1 < len(periods) else "",
             '<a href="../">ยอดจดทะเบียนรายเดือนย้อนหลัง</a>') if x)
+        period_label = f"{m['th']} · {m['en']}"
         body = (f'<p class="note">{nav}</p>'
-                + table(f"10 อันดับยี่ห้อ · Top 10 brands, {per}", ["#", "Brand · ยี่ห้อ", "Units · คัน", "Share · ส่วนแบ่ง"], b_rows(m, m["top_b"][:10]))
-                + table(f"10 อันดับรุ่น · Top 10 models, {per}", ["#", "Model · รุ่น", "Brand · ยี่ห้อ", "Units · คัน", "Share · ส่วนแบ่ง"], m_rows(m, m["top_m"][:10])))
+                + table(f"10 อันดับยี่ห้อ · Top 10 brands · {period_label}", ["#", "Brand · ยี่ห้อ", "Units · คัน", "Share · ส่วนแบ่ง"], b_rows(m, m["top_b"][:10]))
+                + table(f"10 อันดับรุ่น · Top 10 models · {period_label}", ["#", "Model · รุ่น", "Brand · ยี่ห้อ", "Units · คัน", "Share · ส่วนแบ่ง"], m_rows(m, m["top_m"][:10])))
         out[f"monthly/{per}"] = dict(
-            h1=f"ยอดจดทะเบียนรถยนต์ใหม่ในประเทศไทย {m['th']} รวม {t} คัน", app="#/ranking", body=body,
+            h1=f"ยอดจดทะเบียนรถยนต์ใหม่ในประเทศไทย {m['th']} รวม {t} คัน",
+            app=f"#/ranking?range=custom&amp;from={per}&amp;to={per}", body=body,
             csv=["summaries/market_monthly.csv", "summaries/brand_monthly.csv", "summaries/model_monthly.csv"],
             desc=f"ยอดจดทะเบียนรถยนต์ใหม่ในไทย {m['th']} รวม {t} คัน (ร.ย.1–3) พร้อมอันดับยี่ห้อและรุ่น จากกรมการขนส่งทางบก · Thai new car registrations, {m['en']}",
             th=f"{m['th']} มีรถยนต์ใหม่จดทะเบียนทั่วประเทศ {t} คัน (ร.ย.1–3){mom}{yoy} เป็นยอดจดทะเบียน ไม่ใช่ยอดขาย",
@@ -233,17 +250,28 @@ def monthly(f):
         body=table("ยอดรวมรายเดือน · Monthly totals (เดือนล่าสุดอยู่บนสุด)", ["Month · เดือน", "Units · คัน", "MoM · เทียบเดือนก่อน", "YoY · เทียบปีก่อน"], hub_rows),
         desc=f"ตารางยอดจดทะเบียนรถยนต์ใหม่ในไทยรายเดือน {span} ทั้งหมด {len(periods)} เดือน จากกรมการขนส่งทางบก · Monthly Thai new car registrations",
         th=f"ยอดจดทะเบียนรถยนต์ใหม่ทั่วประเทศรายเดือน {span} (ร.ย.1–3) กดชื่อเดือนเพื่อดูอันดับยี่ห้อและรุ่น เป็นยอดจดทะเบียน ไม่ใช่ยอดขาย",
-        en=f"Monthly new vehicle registrations in Thailand, {periods[0]} to {f['per']} (DLT categories RY1–3). Registrations, not sales.")
+        en=f"Monthly new vehicle registrations in Thailand, {month_names(periods[0])[1]} to {f['en']} (DLT categories RY1–3). Registrations, not sales.")
     return {"monthly": hub, **dict(reversed(out.items()))}
 
 
 def page_html(slug, p):
-    url, title = f"{SITE}{slug}/", f"{p['h1']} · thai-auto-data"
-    up = "../" * (slug.count("/") + 1)  # path from this page back to the repo root
+    url, title = f"{SITE}{GROUP}/{slug}/", f"{p['h1']} · thai-auto-data"
+    up = "../" * (slug.count("/") + 2)  # path from this page back to the repo root
     ld = json_str({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "thai-auto-data", "item": SITE},
         {"@type": "ListItem", "position": 2, "name": p["h1"], "item": url}]})
     csv = " · ".join(f"<a href=\"{RAW}{c}\">{c}</a>" for c in p["csv"])
+    share_script = ('<script>if (location.hash.startsWith("#/ranking?")) location.replace("../../" + location.hash);</script>'
+                    if slug in {"brands", "models"} else "")
+    social_desc = escape({
+        "brands": "อันดับยี่ห้อรถจดทะเบียนใหม่ในไทย · Thai car brand rankings by new registrations. Source: DLT.",
+        "models": "อันดับรุ่นรถจดทะเบียนใหม่ในไทย · Thai car model rankings by new registrations. Source: DLT.",
+        "ev": p["desc"],
+    }.get(slug, p["desc"]))
+    social_title = {
+        "brands": "อันดับยี่ห้อรถจดทะเบียนใหม่ในไทย · Thai car brand rankings · thai-auto-data",
+        "models": "อันดับรุ่นรถจดทะเบียนใหม่ในไทย · Thai car model rankings · thai-auto-data",
+    }.get(slug, title)
     return f"""<!doctype html>
 <html lang="th">
 <head>
@@ -254,11 +282,22 @@ def page_html(slug, p):
 <link rel="canonical" href="{url}">
 <link rel="alternate" hreflang="th" href="{url}">
 <link rel="alternate" hreflang="x-default" href="{url}">
-<meta property="og:title" content="{escape(title)}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{escape(social_title)}">
+<meta property="og:description" content="{social_desc}">
 <meta property="og:url" content="{url}">
+<meta property="og:image" content="{SITE}site/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Thai new-vehicle registrations · ยอดจดทะเบียนรถใหม่ในไทย">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{escape(social_title)}">
+<meta name="twitter:description" content="{social_desc}">
+<meta name="twitter:image" content="{SITE}site/og-image.png">
+<meta name="twitter:image:alt" content="Thai new-vehicle registrations · ยอดจดทะเบียนรถใหม่ในไทย">
 <meta property="og:locale" content="th_TH">
-<meta property="og:locale:alternate" content="en_US">
-<link rel="stylesheet" href="{up}site/style.css">
+<link rel="stylesheet" href="{up}site/style.css?v=28">
+{share_script}
 <script type="application/ld+json">{ld}</script>
 </head>
 <body>
@@ -320,10 +359,10 @@ def main():
     out = {idx_p: new_idx}
     urls = {idx_p: SITE}
     for slug, p in {**pages(f), **monthly(f)}.items():
-        out[ROOT / slug / "index.html"] = h = page_html(slug, p)
-        urls[ROOT / slug / "index.html"] = f"{SITE}{slug}/"
+        out[ROOT / GROUP / slug / "index.html"] = h = page_html(slug, p)
+        urls[ROOT / GROUP / slug / "index.html"] = f"{SITE}{GROUP}/{slug}/"
         assert json.loads(re.search(r'ld\+json">(.*?)</script>', h, re.S).group(1))["@type"] == "BreadcrumbList"
-        assert h.count("<h1") == 1 and "<table>" in h and f'href="{"../" * (slug.count("/") + 1)}"' in h, f"{slug}: h1/table/home link"
+        assert h.count("<h1") == 1 and "<table>" in h and f'href="{"../" * (slug.count("/") + 2)}"' in h, f"{slug}: h1/table/home link"
     for h in out.values():
         desc = re.search(r'<meta name="description" content="([^"]*)"', h)
         assert desc and len(desc.group(1)) <= 160, f"meta description missing or over 160 chars: {desc and len(desc.group(1))}"
