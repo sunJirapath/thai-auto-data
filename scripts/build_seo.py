@@ -14,7 +14,7 @@ import json
 import re
 import sys
 from collections import Counter
-from datetime import date, timedelta
+from datetime import date
 from html import escape
 from pathlib import Path
 
@@ -80,16 +80,26 @@ def m_rows(f, rs):
         f"<td class=\"n\">{n(r['units'])}</td><td class=\"n\">{float(r['share_pct']):.1f}%</td></tr>" for r in rs)
 
 
+def locale_copy(th, en):
+    return f'<span class="locale-copy" lang="th">{escape(th)}</span><span class="locale-copy" lang="en">{escape(en)}</span>'
+
+
 def static_html(f):
     b_body, m_body = b_rows(f, f["top_b"][:10]), m_rows(f, f["top_m"][:10])
+    columns = [locale_copy("ยี่ห้อ", "Brand"), locale_copy("คัน", "Vehicles"), locale_copy("ส่วนแบ่ง", "Share")]
+    brand_table = table(locale_copy("10 อันดับยี่ห้อ", "Top 10 brands"), ["#", *columns], b_body)
+    model_table = table(locale_copy("10 อันดับรุ่น", "Top 10 models"), ["#", locale_copy("รุ่น", "Model"), *columns], m_body)
     complete, latest = f["complete"], f["latest"]
     per, th, en = f["per"], f["th"], f["en"]
     total = n(complete["total"])
-    previous = (date.fromisoformat(per + "-01") - timedelta(days=1)).strftime("%Y-%m")
+    previous = f"{int(per[:4]) - 1}{per[4:]}"
     prev_th, prev_en = month_names(previous)
-    mom = pct(complete["mom_pct"])
-    compare_th = f"{mom} เทียบกับ {prev_th}" if complete["mom_pct"] else f"ไม่มีฐานเปรียบเทียบสำหรับ {prev_th}"
-    compare_en = f"{mom} vs {prev_en}" if complete["mom_pct"] else f"Comparison unavailable for {prev_en}"
+    yoy = pct(complete["yoy_pct"])
+    compare_th = f"{yoy} เทียบกับ {prev_th}" if complete["yoy_pct"] else "ไม่มีข้อมูลเทียบกับปีก่อน"
+    compare_en = f"{yoy} vs {prev_en}" if complete["yoy_pct"] else "Year-over-year comparison unavailable"
+    leader = f["top_b"][0]
+    leader_name = escape(f["brands"][leader["brand_id"]])
+    leader_units = n(leader["units"])
     provisional = ""
     if latest["status"] == "provisional":
         pending_period = latest["period"]
@@ -102,22 +112,25 @@ def static_html(f):
     </div>"""
     return f"""<section class="card" id="seoStatic" data-page="overview" aria-labelledby="seoStaticH">
     <h2 id="seoStaticH"><span class="locale-copy" lang="th">เดือนล่าสุดที่ข้อมูลครบ · <time datetime="{per}">{th}</time></span><span class="locale-copy" lang="en">Latest complete month · <time datetime="{per}">{en}</time></span></h2>
-    <p class="note locale-copy" lang="th"><strong class="latest-count">{total} คัน</strong> จดทะเบียนใหม่ทั่วประเทศ (ร.ย.1–3) · {compare_th}</p>
-    <p class="note locale-copy" lang="en"><strong class="latest-count">{total} vehicles</strong> newly registered nationwide (RY1–3) · {compare_en}</p>
+    <p class="note locale-copy" lang="th"><strong class="latest-count">{total} คัน</strong> จดทะเบียนใหม่ทั่วประเทศ · {compare_th}</p>
+    <p class="note locale-copy" lang="en"><strong class="latest-count">{total} vehicles</strong> newly registered nationwide · {compare_en}</p>
     <p class="note locale-copy" lang="th">ที่มา <a href="https://web.dlt.go.th/statistics/">กรมการขนส่งทางบก</a> · <a href="data/sources.csv">ทะเบียนแหล่งข้อมูล</a></p>
     <p class="note locale-copy" lang="en">Source <a href="https://web.dlt.go.th/statistics/">Department of Land Transport</a> · <a href="data/sources.csv">Source register</a></p>{provisional}
+    <p class="note locale-copy" lang="th">ยี่ห้อที่จดทะเบียนมากที่สุด <strong>{leader_name} · {leader_units} คัน</strong></p>
+    <p class="note locale-copy" lang="en">Most-registered brand <strong>{leader_name} · {leader_units} vehicles</strong></p>
     <div class="controls">
-      <a class="btn" href="#/ranking"><span class="locale-copy" lang="th">ดูอันดับ</span><span class="locale-copy" lang="en">View rankings</span></a>
+      <a class="btn" href="#/ranking?range=custom&amp;from={per}&amp;to={per}"><span class="locale-copy" lang="th">ดูอันดับ</span><span class="locale-copy" lang="en">View rankings</span></a>
       <a class="btn" href="#/compare/"><span class="locale-copy" lang="th">เปรียบเทียบรุ่น</span><span class="locale-copy" lang="en">Compare models</span></a>
-      <a class="btn" href="#/data"><span class="locale-copy" lang="th">ข้อมูลและการอ้างอิง</span><span class="locale-copy" lang="en">Data and citation</span></a>
+      <a class="btn" href="#/prices"><span class="locale-copy" lang="th">ดูตามช่วงราคา</span><span class="locale-copy" lang="en">Browse by budget</span></a>
+      <a class="btn" href="#/powertrain"><span class="locale-copy" lang="th">สัดส่วนรถไฟฟ้า</span><span class="locale-copy" lang="en">Electric vehicle share</span></a>
     </div>
     <details>
       <summary><span class="locale-copy" lang="th">10 อันดับยี่ห้อและรุ่น เดือน{f['th']}</span><span class="locale-copy" lang="en">Top 10 brands and models in {f['en']}</span></summary>
       <p class="note locale-copy" lang="th"><a href="brands/">อันดับยี่ห้อ</a> · <a href="models/">อันดับรุ่น</a> · <a href="ev/">ยอดจดทะเบียน EV</a> · <a href="summaries/market_monthly.csv">ยอดรายเดือน CSV</a></p>
-      <p class="note locale-copy" lang="en"><a href="brands/">Brand rankings</a> · <a href="models/">Model rankings</a> · <a href="ev/">EV registrations</a> · <a href="summaries/market_monthly.csv">Monthly totals CSV</a></p>
+      <p class="note locale-copy" lang="en"><a href="#/ranking?rank=brand&amp;range=custom&amp;from={per}&amp;to={per}&amp;lang=en">Brand rankings</a> · <a href="#/ranking?rank=model&amp;range=custom&amp;from={per}&amp;to={per}&amp;lang=en">Model rankings</a> · <a href="#/powertrain?range=custom&amp;from={per}&amp;to={per}&amp;lang=en">EV registrations</a> · <a href="summaries/market_monthly.csv">Monthly totals CSV</a></p>
       <div class="two">
-        <div>{table(f"10 อันดับยี่ห้อ · Top brands, {f['per']}", ["#", "Brand · ยี่ห้อ", "Units · คัน", "Share · ส่วนแบ่ง"], b_body)}</div>
-        <div>{table(f"10 อันดับรุ่น · Top models, {f['per']}", ["#", "Model · รุ่น", "Brand · ยี่ห้อ", "Units · คัน", "Share · ส่วนแบ่ง"], m_body)}</div>
+        <div>{brand_table}</div>
+        <div>{model_table}</div>
       </div>
     </details>
   </section>"""
@@ -168,9 +181,9 @@ def fuel_mix(f):
                    f"<td class=\"n\">{u / t * 100:.1f}%</td></tr>" for (th, en), u in mix.most_common())
     top = "".join(f"<tr><td>{i}</td><td>{escape(name)}</td><td class=\"n\">{n(u)}</td><td class=\"n\">{u / b * 100:.1f}%</td></tr>"
                   for i, (name, u) in enumerate(bev.most_common(10), 1))
-    per = f["per"]
-    t1 = table(f"Registrations by fuel, {per} · แยกตามเชื้อเพลิง", ["Fuel · เชื้อเพลิง", "Units · คัน", "Share · ส่วนแบ่ง"], fuel)
-    t2 = table(f"Top 10 BEV brands, {per} · 10 อันดับยี่ห้อ EV", ["#", "Brand · ยี่ห้อ", "Units · คัน", "Share of BEV · ส่วนแบ่ง"], top)
+    period = f"{f['th']} · {f['en']}"
+    t1 = table(f"แยกตามเชื้อเพลิง · Registrations by fuel · {period}", ["Fuel · เชื้อเพลิง", "Units · คัน", "Share · ส่วนแบ่ง"], fuel)
+    t2 = table(f"10 อันดับยี่ห้อ EV · Top 10 BEV brands · {period}", ["#", "Brand · ยี่ห้อ", "Units · คัน", "Share of BEV · ส่วนแบ่ง"], top)
     return f"<div class=\"two\"><div>{t1}</div><div>{t2}</div></div>"
 
 
@@ -179,19 +192,19 @@ def pages(f):
         return dict(h1=h1, app=app, csv=csv, body=body, desc=desc,
                     th=f"{what_th} {f['th']} จากทั้งหมด {n(f['total'])} คัน (ร.ย.1–3) เป็นยอดจดทะเบียน ไม่ใช่ยอดขาย",
                     en=f"{what_en} in {f['en']}, out of {n(f['total'])} new vehicles (DLT categories RY1–3). Registrations, not sales.")
-    cap = lambda s: f"{s}, {f['per']}"
+    cap = lambda s: f"{s} · {f['th']} · {f['en']}"
     return {
         "brands": one("ยี่ห้อรถยนต์ใหม่ยอดนิยม · Top car brands", "25 ยี่ห้อที่จดทะเบียนใหม่มากที่สุดในเดือน", "The 25 brands with the most new registrations",
                       f"อันดับ 25 ยี่ห้อรถยนต์ใหม่ที่จดทะเบียนมากที่สุดในไทย {f['th']} · Top 25 car brands by new registrations, {f['en']}",
                       table(cap("Top 25 brands · 25 อันดับยี่ห้อ"), ["#", "Brand · ยี่ห้อ", "Units · คัน", "Share · ส่วนแบ่ง"], b_rows(f, f["top_b"])),
-                      "#/ranking", ["summaries/brand_monthly.csv", "data/brands.csv"]),
+                      f"#/ranking?range=custom&amp;from={f['per']}&amp;to={f['per']}", ["summaries/brand_monthly.csv", "data/brands.csv"]),
         "models": one("รุ่นรถยนต์ใหม่ยอดนิยม · Top car models", "25 รุ่นที่จดทะเบียนใหม่มากที่สุดในเดือน", "The 25 models with the most new registrations",
                       f"อันดับ 25 รุ่นรถยนต์ใหม่ที่จดทะเบียนมากที่สุดในไทย {f['th']} · Top 25 car models by new registrations, {f['en']}",
                       table(cap("Top 25 models · 25 อันดับรุ่น"), ["#", "Model · รุ่น", "Brand · ยี่ห้อ", "Units · คัน", "Share · ส่วนแบ่ง"], m_rows(f, f["top_m"])),
-                      "#/ranking", ["summaries/model_monthly.csv", "data/models.csv"]),
+                      f"#/ranking?rank=model&amp;range=custom&amp;from={f['per']}&amp;to={f['per']}", ["summaries/model_monthly.csv", "data/models.csv"]),
         "ev": one("รถยนต์ไฟฟ้า EV และเชื้อเพลิง · EV and fuel mix", "สัดส่วนรถยนต์ใหม่ตามเชื้อเพลิง (BEV, HEV, PHEV, ดีเซล, เบนซิน) ในเดือน", "New registrations by fuel type, with the leading EV brands",
                   f"รถยนต์ใหม่จดทะเบียนตามเชื้อเพลิง (BEV, HEV, PHEV, ดีเซล, เบนซิน) และยี่ห้อ EV อันดับต้น {f['th']} · Thai registrations by fuel, {f['en']}",
-                  fuel_mix(f), "#/powertrain", [f"data/registrations_by_fuel/{f['per']}.csv", "data/fuel_types.csv"]),
+                  fuel_mix(f), f"#/powertrain?range=custom&amp;from={f['per']}&amp;to={f['per']}", [f"data/registrations_by_fuel/{f['per']}.csv", "data/fuel_types.csv"]),
     }
 
 
@@ -201,6 +214,13 @@ def page_html(slug, p):
         {"@type": "ListItem", "position": 1, "name": "thai-auto-data", "item": SITE},
         {"@type": "ListItem", "position": 2, "name": p["h1"], "item": url}]})
     csv = " · ".join(f"<a href=\"{RAW}{c}\">{c}</a>" for c in p["csv"])
+    share_script = ('<script>if (location.hash.startsWith("#/ranking?")) location.replace("../" + location.hash);</script>'
+                    if slug in {"brands", "models"} else "")
+    social_desc = escape({
+        "brands": "อันดับยี่ห้อรถจดทะเบียนใหม่ในไทย · Thai car brand rankings by new registrations. Source: DLT.",
+        "models": "อันดับรุ่นรถจดทะเบียนใหม่ในไทย · Thai car model rankings by new registrations. Source: DLT.",
+        "ev": p["desc"],
+    }[slug])
     return f"""<!doctype html>
 <html lang="th">
 <head>
@@ -211,11 +231,22 @@ def page_html(slug, p):
 <link rel="canonical" href="{url}">
 <link rel="alternate" hreflang="th" href="{url}">
 <link rel="alternate" hreflang="x-default" href="{url}">
+<meta property="og:type" content="website">
 <meta property="og:title" content="{escape(title)}">
+<meta property="og:description" content="{social_desc}">
 <meta property="og:url" content="{url}">
+<meta property="og:image" content="{SITE}site/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Thai new-vehicle registrations · ยอดจดทะเบียนรถใหม่ในไทย">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{escape(title)}">
+<meta name="twitter:description" content="{social_desc}">
+<meta name="twitter:image" content="{SITE}site/og-image.png">
+<meta name="twitter:image:alt" content="Thai new-vehicle registrations · ยอดจดทะเบียนรถใหม่ในไทย">
 <meta property="og:locale" content="th_TH">
-<meta property="og:locale:alternate" content="en_US">
-<link rel="stylesheet" href="../site/style.css">
+<link rel="stylesheet" href="../site/style.css?v=27">
+{share_script}
 <script type="application/ld+json">{ld}</script>
 </head>
 <body>

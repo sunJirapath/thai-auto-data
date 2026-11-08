@@ -22,7 +22,6 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Thai Car Market: monthly new vehicle registrations in Thailand">
 <meta property="og:locale" content="th_TH">
-<meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://sunjirapath.github.io/thai-auto-data/site/og-image.png">
 <meta name="twitter:image:alt" content="Thai Car Market: monthly new vehicle registrations in Thailand">
@@ -134,7 +133,19 @@
  ]
 }
 </script>
-<link rel="stylesheet" href="site/style.css?v=26">
+<script>
+{
+  const [initialRoute, hashQuery] = location.hash.split('?');
+  if (/^#\/(?!overview\/?$).+/.test(initialRoute)) document.documentElement.dataset.deepLink = '';
+  const hashLang = new URLSearchParams(hashQuery).get('lang');
+  const queryLang = new URLSearchParams(location.search).get('lang');
+  let savedLang;
+  try { savedLang = localStorage.getItem('lang'); } catch {}
+  document.documentElement.lang = [hashLang, queryLang, savedLang].find(lang => lang === 'th' || lang === 'en') || 'th';
+  if (document.documentElement.lang === 'en') document.title = 'New Car Registrations in Thailand | thai-auto-data';
+}
+</script>
+<link rel="stylesheet" href="site/style.css?v=27">
 <noscript><style>#status{display:none}#status.loading ~ .foot{display:block}</style></noscript>
 </head>
 <body>
@@ -171,7 +182,7 @@
       <p class="lede locale-copy" lang="en">Monthly new registrations by brand, model, province and fuel. <strong>All figures are registrations, not sales.</strong></p>
     </div>
     <nav class="links">
-      <span class="lang-switch" role="group" aria-label="Language / ภาษา"><a href="#/?lang=en" data-lang="en" lang="en" hreflang="en">EN</a><a href="#/?lang=th" data-lang="th" lang="th" hreflang="th">ไทย</a></span>
+      <span class="lang-switch" role="group" aria-label="Language"><a href="?lang=en" data-lang="en" lang="en" hreflang="en">English</a><a href="?lang=th" data-lang="th" lang="th" hreflang="th">ไทย</a></span>
       <a href="https://github.com/sunJirapath/thai-auto-data">GitHub</a>
       <a href="#/data">Cite & download</a>
     </nav>
@@ -182,30 +193,35 @@
   <!-- seo:static:start -->
   <section class="card" id="seoStatic" data-page="overview" aria-labelledby="seoStaticH">
     <h2 id="seoStaticH"><span class="locale-copy" lang="th">เดือนล่าสุดที่ข้อมูลครบ · <time datetime="2026-10">ตุลาคม 2569</time></span><span class="locale-copy" lang="en">Latest complete month · <time datetime="2026-10">October 2026</time></span></h2>
-    <p class="note locale-copy" lang="th"><strong class="latest-count">53,750 คัน</strong> จดทะเบียนใหม่ทั่วประเทศ (ร.ย.1–3) · -10.6% เทียบกับ กันยายน 2569</p>
-    <p class="note locale-copy" lang="en"><strong class="latest-count">53,750 vehicles</strong> newly registered nationwide (RY1–3) · -10.6% vs September 2026</p>
+    <p class="note locale-copy" lang="th"><strong class="latest-count">53,750 คัน</strong> จดทะเบียนใหม่ทั่วประเทศ · +16.8% เทียบกับ ตุลาคม 2568</p>
+    <p class="note locale-copy" lang="en"><strong class="latest-count">53,750 vehicles</strong> newly registered nationwide · +16.8% vs October 2025</p>
     <p class="note locale-copy" lang="th">ที่มา <a href="https://web.dlt.go.th/statistics/">กรมการขนส่งทางบก</a> · <a href="data/sources.csv">ทะเบียนแหล่งข้อมูล</a></p>
     <p class="note locale-copy" lang="en">Source <a href="https://web.dlt.go.th/statistics/">Department of Land Transport</a> · <a href="data/sources.csv">Source register</a></p>
+    <p class="note locale-copy" lang="th">ยี่ห้อที่จดทะเบียนมากที่สุด <strong>Toyota · 17,472 คัน</strong></p>
+    <p class="note locale-copy" lang="en">Most-registered brand <strong>Toyota · 17,472 vehicles</strong></p>
     <div class="controls">
-      <a class="btn" href="#/ranking"><span class="locale-copy" lang="th">ดูอันดับ</span><span class="locale-copy" lang="en">View rankings</span></a>
+      <a class="btn" href="#/ranking?range=custom&amp;from=2026-10&amp;to=2026-10"><span class="locale-copy" lang="th">ดูอันดับ</span><span class="locale-copy" lang="en">View rankings</span></a>
       <a class="btn" href="#/compare/"><span class="locale-copy" lang="th">เปรียบเทียบรุ่น</span><span class="locale-copy" lang="en">Compare models</span></a>
-      <a class="btn" href="#/data"><span class="locale-copy" lang="th">ข้อมูลและการอ้างอิง</span><span class="locale-copy" lang="en">Data and citation</span></a>
+      <a class="btn" href="#/prices"><span class="locale-copy" lang="th">ดูตามช่วงราคา</span><span class="locale-copy" lang="en">Browse by budget</span></a>
+      <a class="btn" href="#/powertrain"><span class="locale-copy" lang="th">สัดส่วนรถไฟฟ้า</span><span class="locale-copy" lang="en">Electric vehicle share</span></a>
     </div>
     <details>
       <summary><span class="locale-copy" lang="th">10 อันดับยี่ห้อและรุ่น เดือนตุลาคม 2569</span><span class="locale-copy" lang="en">Top 10 brands and models in October 2026</span></summary>
       <p class="note locale-copy" lang="th"><a href="brands/">อันดับยี่ห้อ</a> · <a href="models/">อันดับรุ่น</a> · <a href="ev/">ยอดจดทะเบียน EV</a> · <a href="summaries/market_monthly.csv">ยอดรายเดือน CSV</a></p>
-      <p class="note locale-copy" lang="en"><a href="brands/">Brand rankings</a> · <a href="models/">Model rankings</a> · <a href="ev/">EV registrations</a> · <a href="summaries/market_monthly.csv">Monthly totals CSV</a></p>
+      <p class="note locale-copy" lang="en"><a href="#/ranking?rank=brand&amp;range=custom&amp;from=2026-10&amp;to=2026-10&amp;lang=en">Brand rankings</a> · <a href="#/ranking?rank=model&amp;range=custom&amp;from=2026-10&amp;to=2026-10&amp;lang=en">Model rankings</a> · <a href="#/powertrain?range=custom&amp;from=2026-10&amp;to=2026-10&amp;lang=en">EV registrations</a> · <a href="summaries/market_monthly.csv">Monthly totals CSV</a></p>
       <div class="two">
-        <div><div class="table-wrap"><table><caption>10 อันดับยี่ห้อ · Top brands, 2026-10</caption><thead><tr><th scope="col">#</th><th scope="col">Brand · ยี่ห้อ</th><th scope="col" class="n">Units · คัน</th><th scope="col" class="n">Share · ส่วนแบ่ง</th></tr></thead><tbody><tr><td>1</td><td>Toyota</td><td class="n">17,472</td><td class="n">32.5%</td></tr><tr><td>2</td><td>Honda</td><td class="n">5,752</td><td class="n">10.7%</td></tr><tr><td>3</td><td>Isuzu</td><td class="n">4,186</td><td class="n">7.8%</td></tr><tr><td>4</td><td>BYD</td><td class="n">3,881</td><td class="n">7.2%</td></tr><tr><td>5</td><td>JAECOO</td><td class="n">3,227</td><td class="n">6.0%</td></tr><tr><td>6</td><td>MG</td><td class="n">2,412</td><td class="n">4.5%</td></tr><tr><td>7</td><td>Mitsubishi</td><td class="n">1,956</td><td class="n">3.6%</td></tr><tr><td>8</td><td>Geely</td><td class="n">1,566</td><td class="n">2.9%</td></tr><tr><td>9</td><td>GWM</td><td class="n">1,304</td><td class="n">2.4%</td></tr><tr><td>10</td><td>AION</td><td class="n">1,235</td><td class="n">2.3%</td></tr></tbody></table></div></div>
-        <div><div class="table-wrap"><table><caption>10 อันดับรุ่น · Top models, 2026-10</caption><thead><tr><th scope="col">#</th><th scope="col">Model · รุ่น</th><th scope="col">Brand · ยี่ห้อ</th><th scope="col" class="n">Units · คัน</th><th scope="col" class="n">Share · ส่วนแบ่ง</th></tr></thead><tbody><tr><td>1</td><td>Yaris ATIV</td><td>Toyota</td><td class="n">5,164</td><td class="n">9.6%</td></tr><tr><td>2</td><td>D-Max</td><td>Isuzu</td><td class="n">3,428</td><td class="n">6.4%</td></tr><tr><td>3</td><td>Yaris Cross</td><td>Toyota</td><td class="n">2,698</td><td class="n">5.0%</td></tr><tr><td>4</td><td>Hilux Travo</td><td>Toyota</td><td class="n">2,691</td><td class="n">5.0%</td></tr><tr><td>5</td><td>Hilux Revo</td><td>Toyota</td><td class="n">1,968</td><td class="n">3.7%</td></tr><tr><td>6</td><td>Jaecoo 5</td><td>JAECOO</td><td class="n">1,738</td><td class="n">3.2%</td></tr><tr><td>7</td><td>Atto 3</td><td>BYD</td><td class="n">1,592</td><td class="n">3.0%</td></tr><tr><td>8</td><td>City</td><td>Honda</td><td class="n">1,471</td><td class="n">2.7%</td></tr><tr><td>9</td><td>HR-V</td><td>Honda</td><td class="n">1,464</td><td class="n">2.7%</td></tr><tr><td>10</td><td>EX2</td><td>Geely</td><td class="n">1,433</td><td class="n">2.7%</td></tr></tbody></table></div></div>
+        <div><div class="table-wrap"><table><caption><span class="locale-copy" lang="th">10 อันดับยี่ห้อ</span><span class="locale-copy" lang="en">Top 10 brands</span></caption><thead><tr><th scope="col">#</th><th scope="col"><span class="locale-copy" lang="th">ยี่ห้อ</span><span class="locale-copy" lang="en">Brand</span></th><th scope="col" class="n"><span class="locale-copy" lang="th">คัน</span><span class="locale-copy" lang="en">Vehicles</span></th><th scope="col" class="n"><span class="locale-copy" lang="th">ส่วนแบ่ง</span><span class="locale-copy" lang="en">Share</span></th></tr></thead><tbody><tr><td>1</td><td>Toyota</td><td class="n">17,472</td><td class="n">32.5%</td></tr><tr><td>2</td><td>Honda</td><td class="n">5,752</td><td class="n">10.7%</td></tr><tr><td>3</td><td>Isuzu</td><td class="n">4,186</td><td class="n">7.8%</td></tr><tr><td>4</td><td>BYD</td><td class="n">3,881</td><td class="n">7.2%</td></tr><tr><td>5</td><td>JAECOO</td><td class="n">3,227</td><td class="n">6.0%</td></tr><tr><td>6</td><td>MG</td><td class="n">2,412</td><td class="n">4.5%</td></tr><tr><td>7</td><td>Mitsubishi</td><td class="n">1,956</td><td class="n">3.6%</td></tr><tr><td>8</td><td>Geely</td><td class="n">1,566</td><td class="n">2.9%</td></tr><tr><td>9</td><td>GWM</td><td class="n">1,304</td><td class="n">2.4%</td></tr><tr><td>10</td><td>AION</td><td class="n">1,235</td><td class="n">2.3%</td></tr></tbody></table></div></div>
+        <div><div class="table-wrap"><table><caption><span class="locale-copy" lang="th">10 อันดับรุ่น</span><span class="locale-copy" lang="en">Top 10 models</span></caption><thead><tr><th scope="col">#</th><th scope="col"><span class="locale-copy" lang="th">รุ่น</span><span class="locale-copy" lang="en">Model</span></th><th scope="col"><span class="locale-copy" lang="th">ยี่ห้อ</span><span class="locale-copy" lang="en">Brand</span></th><th scope="col" class="n"><span class="locale-copy" lang="th">คัน</span><span class="locale-copy" lang="en">Vehicles</span></th><th scope="col" class="n"><span class="locale-copy" lang="th">ส่วนแบ่ง</span><span class="locale-copy" lang="en">Share</span></th></tr></thead><tbody><tr><td>1</td><td>Yaris ATIV</td><td>Toyota</td><td class="n">5,164</td><td class="n">9.6%</td></tr><tr><td>2</td><td>D-Max</td><td>Isuzu</td><td class="n">3,428</td><td class="n">6.4%</td></tr><tr><td>3</td><td>Yaris Cross</td><td>Toyota</td><td class="n">2,698</td><td class="n">5.0%</td></tr><tr><td>4</td><td>Hilux Travo</td><td>Toyota</td><td class="n">2,691</td><td class="n">5.0%</td></tr><tr><td>5</td><td>Hilux Revo</td><td>Toyota</td><td class="n">1,968</td><td class="n">3.7%</td></tr><tr><td>6</td><td>Jaecoo 5</td><td>JAECOO</td><td class="n">1,738</td><td class="n">3.2%</td></tr><tr><td>7</td><td>Atto 3</td><td>BYD</td><td class="n">1,592</td><td class="n">3.0%</td></tr><tr><td>8</td><td>City</td><td>Honda</td><td class="n">1,471</td><td class="n">2.7%</td></tr><tr><td>9</td><td>HR-V</td><td>Honda</td><td class="n">1,464</td><td class="n">2.7%</td></tr><tr><td>10</td><td>EX2</td><td>Geely</td><td class="n">1,433</td><td class="n">2.7%</td></tr></tbody></table></div></div>
       </div>
     </details>
   </section>
   <!-- seo:static:end -->
 
-  <div id="status" class="status loading" role="status">Loading data…</div>
+  <div id="status" class="status loading" role="status"><span class="locale-copy" lang="th">กำลังโหลดข้อมูล…</span><span class="locale-copy" lang="en">Loading data…</span></div>
+  <p class="status" id="viewNotice" role="status"></p>
+  <p class="status" id="offlineNotice" role="status" hidden>Offline. Previously loaded data may still be available. Reconnect to refresh it.</p>
   <button type="button" class="btn" id="bootRetry" hidden>Retry</button>
-  <noscript><p class="status error">This page needs JavaScript for the charts; the CSV files are on <a href="https://github.com/sunJirapath/thai-auto-data">GitHub</a>. · หน้านี้ต้องเปิด JavaScript เพื่อแสดงกราฟ ดาวน์โหลดข้อมูล CSV ได้ที่ <a href="https://github.com/sunJirapath/thai-auto-data">GitHub</a></p></noscript>
+  <noscript><p class="status error">เปิด JavaScript เพื่อใช้กราฟ หรือดาวน์โหลดข้อมูล CSV จาก <a href="https://github.com/sunJirapath/thai-auto-data">GitHub</a></p></noscript>
 
   <!-- Overview: what each page answers -->
   <section class="explore" data-page="overview" aria-label="Explore the data" hidden>
@@ -238,8 +254,11 @@
         <label class="field" for="fFrom">From <select id="fFrom"></select></label>
         <label class="field" for="fTo">To <select id="fTo"></select></label>
       </span>
-      <p class="note category-help" id="categoryHelp">RY1 · Private passenger cars, up to 7 seats. RY2 · Private passenger cars, over 7 seats. RY3 · Private trucks.</p>
     </div>
+    <details id="categoryHelp">
+      <summary>Vehicle categories explained</summary>
+      <p class="note">RY1 · Private passenger cars, up to 7 seats. RY2 · Private passenger cars, over 7 seats. RY3 · Private trucks.</p>
+    </details>
   </section>
   <div class="controls" id="areaState" hidden>
     <p class="status" id="areaMessage" role="status" tabindex="-1"></p>
@@ -257,29 +276,6 @@
     <div class="stats" id="mStats"></div>
     <div class="chart-box tall"><canvas id="marketChart" role="img" aria-label="Chart of new registrations for the selected filters"></canvas></div>
     <p class="note" id="mNote"></p>
-    <div class="seg" id="geoMetric" role="group" aria-label="Unit for the map and regions"></div>
-    <p class="note" id="populationBasis"></p>
-    <div class="two">
-      <div>
-        <div class="geo-head"><h3>By region <span class="sub">click a bar to filter</span></h3></div>
-        <div class="chart-box" id="regionBox"><canvas id="regionChart" role="img" aria-label="Registrations by region"></canvas></div>
-        <p class="note" id="regionBasis"></p>
-      </div>
-      <div>
-        <div class="geo-head"><h3>Province map <span class="sub">click a province to filter</span></h3></div>
-        <div class="controls">
-          <button type="button" class="btn" id="mapArea">Choose area</button>
-          <p class="note" id="mapAreaEcho"></p>
-        </div>
-        <p class="status" id="mapStatus" role="status"></p>
-        <button type="button" class="btn" id="mapRetry" hidden>Retry map</button>
-        <div class="map-wrap" id="mapWrap"></div>
-        <p class="note map-credit" id="mapUnit"></p>
-        <div class="map-legend" id="mapLegend"></div>
-        <p class="note map-credit">Province boundaries: <a href="https://www.geoboundaries.org/">geoBoundaries</a> © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (ODbL)</p>
-        <details><summary>Province table</summary><div class="table-wrap" id="provinceTable" tabindex="0"></div></details>
-      </div>
-    </div>
     <details><summary>Table</summary><div class="table-wrap" id="marketTable"></div></details>
   </section>
 
@@ -358,13 +354,17 @@
         <p class="note filter-echo"></p>
       </div>
     </div>
+    <p class="note">BEV runs on a battery alone. PHEV combines an engine and a battery that can be plugged in. HEV charges its battery while driving. The DLT groups full and mild hybrids together.</p>
+    <p class="note" id="bevTrend"></p>
+    <a class="btn" id="fuelCompare" href="#/compare/">Compare registrations by model</a>
     <div class="stats" id="fuelStats"></div>
     <div class="chart-box tall"><canvas id="fuelChart" role="img" aria-label="Share of registrations by fuel type over time"></canvas></div>
-    <p class="note">Fuel types as recorded by the DLT: electric = BEV · petrol/diesel-electric plug-in = PHEV · petrol/diesel-electric = HEV (the DLT does not separate full and mild hybrids) · change vs last year in percentage points</p>
+
   </section>
   <div class="two wide-left" data-page="powertrain" hidden>
     <section class="card">
       <div class="card-head"><div><h2>Battery-electric (BEV) brands</h2><p class="note filter-echo"></p></div></div>
+      <p class="note">The DLT fuel file identifies brands and provinces. It has no model identifiers, so an EV ranking by model is unavailable.</p>
       <div class="chart-box"><canvas id="bevChart" role="img" aria-label="Brands with the most battery-electric registrations"></canvas></div>
     </section>
     <section class="card">
@@ -423,13 +423,49 @@
     <details open><summary>Brands in each group</summary><div class="table-wrap" id="originMembers"></div></details>
   </section>
 
+  <section class="card" id="geography" data-page="overview regions" hidden>
+    <h2>Registrations by province and region</h2>
+    <p class="note filter-echo"></p>
+    <div class="seg" id="geoMetric" role="group" aria-label="Unit for the map and regions"></div>
+    <p class="note" id="populationBasis"></p>
+    <div class="two">
+      <div>
+        <div class="geo-head"><h3>Province map <span class="sub">click a province to filter</span></h3></div>
+        <div class="controls">
+          <button type="button" class="btn" id="mapArea">Choose area</button>
+          <p class="note" id="mapAreaEcho"></p>
+        </div>
+        <p class="note" id="mapAreaSummary"></p>
+        <a class="btn" id="mapRankings" href="#/ranking">Rankings for this area</a>
+        <button type="button" class="btn" id="mapLoad">Load province map</button>
+        <p class="status" id="mapStatus" role="status"></p>
+        <button type="button" class="btn" id="mapRetry" hidden>Retry map</button>
+        <div class="map-wrap" id="mapWrap"></div>
+        <p class="note map-credit" id="mapUnit"></p>
+        <div class="map-legend" id="mapLegend"></div>
+        <p class="note map-credit">Province boundaries: <a href="https://www.geoboundaries.org/">geoBoundaries</a> © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (ODbL)</p>
+        <details><summary>Province table</summary><div class="table-wrap" id="provinceTable" tabindex="0"></div></details>
+      </div>
+      <div>
+        <div class="geo-head"><h3>By region <span class="sub">click a bar to filter</span></h3></div>
+        <div class="chart-box" id="regionBox"><canvas id="regionChart" role="img" aria-label="Registrations by region"></canvas></div>
+        <p class="note" id="regionBasis"></p>
+      </div>
+    </div>
+  </section>
+  <section class="card" id="regionLocal" data-page="regions" hidden>
+    <h2>Most-registered brands in the selected area</h2>
+    <p class="note filter-echo"></p>
+    <div class="table-wrap" id="regionLocalTable"></div>
+  </section>
+
   <!-- Regions -->
   <section class="card" data-page="regions" hidden>
     <div class="card-head">
       <div>
         <h2>Brand/model × region</h2>
         <p class="note filter-echo"></p>
-        <p class="note">Every region is shown side by side, so this page has no area filter</p>
+        <p class="note">This table compares all regions. The province map and local ranking above follow the area filter.</p>
       </div>
       <div class="controls">
         <div class="seg" id="regionKind" role="group" aria-label="Brand or model"></div>
@@ -451,8 +487,8 @@
       </div>
       <div class="seg" id="seasonMode" role="group" aria-label="Value shown"></div>
     </div>
-    <div class="table-wrap heat-wrap" id="seasonHeat"></div>
-    <p class="note">Mode "vs year average": 100 = that year's monthly average; blue is higher, red lower · December is low and January high every year, a pattern in the DLT data</p>
+    <div class="table-wrap heat-wrap" id="seasonHeat" tabindex="0" role="region" aria-label="Monthly seasonality table"></div>
+    <p class="note">In the yearly average view, 100 is the average of the months with data. Values above 100 are stronger months and values below 100 are weaker.</p>
     <h3>Each year compared</h3>
     <div class="chart-box tall"><canvas id="seasonChart" role="img" aria-label="Monthly registrations, one line per year"></canvas></div>
   </section>
@@ -467,6 +503,12 @@
     </div>
     <p class="note">Registrations are from the selected period. Bands use the latest recorded official website starting price for each model. Price observation dates vary by model. Promotional prices are excluded.</p>
     <p class="note" id="priceCoverage"></p>
+    <div class="controls">
+      <label class="field">Starting price range <select id="budgetBand"></select></label>
+      <label class="field">Maximum starting price (THB) <input id="budgetMax" type="number" min="1" step="1" inputmode="numeric"></label>
+    </div>
+    <p class="note" id="budgetResult" role="status"></p>
+    <div id="budgetModels"></div>
     <div class="chart-box"><canvas id="priceBandChart" role="img" aria-label="Registrations by starting-price band"></canvas></div>
   </section>
   <section class="card" data-page="prices" hidden>
@@ -477,7 +519,7 @@
       </div>
     </div>
     <div class="chart-box tall"><canvas id="priceScatter" role="img" aria-label="Starting price vs registrations of each model"></canvas></div>
-    <details><summary>Priced models table</summary><div class="table-wrap" id="priceTable"></div></details>
+
   </section>
 
   <!-- New models -->
@@ -502,10 +544,8 @@
     <h2>How to cite</h2>
     <p>The data is published under <a href="https://github.com/sunJirapath/thai-auto-data/blob/main/LICENSE">CC BY 4.0</a>. If you use it, credit both thai-auto-data and the Department of Land Transport.</p>
     <pre id="citeText">Data: thai-auto-data by sunJirapath, https://doi.org/10.5281/zenodo.23348748, CC BY 4.0.
-Original source: Department of Land Transport, Thailand (web.dlt.go.th/statistics).
-
-ข้อมูลจาก thai-auto-data โดย sunJirapath, https://doi.org/10.5281/zenodo.23348748, สัญญาอนุญาต CC BY 4.0
-ข้อมูลต้นฉบับ: กรมการขนส่งทางบก, สถิติการจดทะเบียนรถใหม่ จำแนกตามยี่ห้อรถและรุ่นรถ (web.dlt.go.th/statistics)</pre>
+Original source: Department of Land Transport, Thailand (web.dlt.go.th/statistics).</pre>
+    <p><a href="CITATION.cff">Citation file (CFF)</a> · <a href="https://doi.org/10.5281/zenodo.23348748">Dataset DOI</a></p>
     <button type="button" id="copyCite" class="btn">Copy</button>
   </section>
   <section class="card prose" id="download" data-page="data" hidden>
@@ -523,15 +563,16 @@ Original source: Department of Land Transport, Thailand (web.dlt.go.th/statistic
       <li><a href="data/prices.csv">prices.csv</a> prices from official websites, with sources</li>
       <li><a href="https://github.com/sunJirapath/thai-auto-data/tree/main/data">data/</a> row-level data, brand/model IDs and the source registry</li>
     </ul>
+    <p class="note">New registrations are counted where the vehicle is registered. The dataset covers private passenger cars up to 7 seats (RY1), those with more than 7 seats (RY2), and private trucks (RY3).</p>
     <p class="note">Source details and how model names are matched: <a href="https://github.com/sunJirapath/thai-auto-data/blob/main/DATA_SOURCES.md">DATA_SOURCES.md</a></p>
   </section>
 
-  <footer class="foot">Source: thai-auto-data / Department of Land Transport · CC BY 4.0 · <a href="#/data">Cite & download</a><br><span lang="th">ยอดจดทะเบียนรถยนต์ใหม่ประเทศไทยรายเดือน แยกยี่ห้อ รุ่น จังหวัด และชนิดเชื้อเพลิง (รถยนต์ไฟฟ้า EV ไฮบริด เบนซิน ดีเซล) ตั้งแต่ ม.ค. 2564 จากกรมการขนส่งทางบก พร้อมส่วนแบ่งตลาดและราคารถยนต์จากเว็บไซต์ทางการ</span></footer>
+  <footer class="foot">Source: thai-auto-data / Department of Land Transport · CC BY 4.0 · <a href="#/data">Cite & download</a></footer>
   </main>
 </div>
 </div>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" integrity="sha512-CQBWl4fJHWbryGE+Pc7UAxWMUMNMWzWxF4SQo9CgkJIN1kx6djDQZjh3Y8SZ1d+6I+1zze6Z7kHXO7q3UyZAWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script defer src="site/i18n-th.js?v=4"></script>
-<script defer src="site/app.js?v=34"></script>
+<script defer src="site/i18n-th.js?v=5"></script>
+<script defer src="site/app.js?v=35"></script>
 </body>
 </html>
