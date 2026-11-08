@@ -37,7 +37,7 @@ Open data on the Thai car market: monthly new-vehicle registrations by brand and
 
 <!-- pending --><!-- /pending -->
 
-**Prices:** 622 official-website prices for 184 models so far, plus 19 unverified prices from non-official sources for 6 models (Toyota, Lexus, Honda, Isuzu, Mitsubishi, Ford, Nissan, Mazda, Subaru, Suzuki, BYD, MG, GWM/Haval/ORA/Tank/POER, Changan/Deepal, Chery, Omoda/Jaecoo, AION, Wuling, Tesla, Hyundai, Kia, XPENG, Zeekr, Denza, BMW, MINI, Mercedes-Benz, Porsche, Volvo and AVATR), covering 93% of the last 12 months' registrations, each linked to the page it came from. Price history starts from the first observation, so it is not complete back in time.
+**Prices:** 622 official-website prices for 184 models so far, plus 37 unverified prices from non-official sources for 12 models (Toyota, Lexus, Honda, Isuzu, Mitsubishi, Ford, Nissan, Mazda, Subaru, Suzuki, BYD, MG, GWM/Haval/ORA/Tank/POER, Changan/Deepal, Chery, Omoda/Jaecoo, AION, Wuling, Tesla, Hyundai, Kia, XPENG, Zeekr, Denza, BMW, MINI, Mercedes-Benz, Porsche, Volvo, AVATR, Geely, Riddara, Lepas and Leapmotor), covering 93% of the last 12 months' registrations, each linked to the page it came from. Price history starts from the first observation, so it is not complete back in time.
 
 If a month has no source data, it appears as `status=missing` with empty numbers, **not 0**. Details in [DATA_SOURCES.md](DATA_SOURCES.md). A month the DLT has published only as national totals (RY1-RY3, before the brand and model file) appears in `summaries/market_monthly.csv` as `status=provisional`, with no brand or model rows; the source is in `data/provisional_totals.csv`, and the row becomes `ok` when the full file arrives.
 
