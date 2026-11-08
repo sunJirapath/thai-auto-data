@@ -1,34 +1,34 @@
 period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
-2023-05,RY1,AUDI,A5 CP 40 TFSI S line,16,audi,,dlt-web-aeaaf410
-2023-05,RY1,AUDI,A5 CP 45 TFSI q S line BE,3,audi,,dlt-web-aeaaf410
-2023-05,RY1,AUDI,A5 SB 40 TFSI S line,18,audi,,dlt-web-aeaaf410
-2023-05,RY1,AUDI,A5 SB 45 TFSI q S line BE,2,audi,,dlt-web-aeaaf410
-2023-05,RY1,AUDI,A6 40 TFSI S line,1,audi,,dlt-web-aeaaf410
-2023-05,RY1,AUDI,A7 SB 45 TFSI,2,audi,,dlt-web-aeaaf410
-2023-05,RY1,AUDI,A7 SB 45 TFSI q,1,audi,,dlt-web-aeaaf410
-2023-05,RY1,AUDI,A7 SB 55 TFSI q S line,1,audi,,dlt-web-aeaaf410
-2023-05,RY1,AUDI,Q3 35 TFSI S line,4,audi,,dlt-web-aeaaf410
-2023-05,RY1,AUDI,Q3 40 TFSI q S line BE,4,audi,,dlt-web-aeaaf410
-2023-05,RY1,AUDI,Q3 SB 35 TFSI S line,2,audi,,dlt-web-aeaaf410
-2023-05,RY1,AUDI,Q3 SB 40 TFSI q S line BE,5,audi,,dlt-web-aeaaf410
-2023-05,RY1,AUDI,Q5 55 TFSI e q S line BE,2,audi,,dlt-web-aeaaf410
-2023-05,RY1,AUDI,Q5 SB 55 TFSIe q S lineBE,3,audi,,dlt-web-aeaaf410
-2023-05,RY1,AUDI,Q7 45 TDI q,1,audi,,dlt-web-aeaaf410
-2023-05,RY1,AUDI,RS 4 AV q,3,audi,,dlt-web-aeaaf410
-2023-05,RY1,AUDI,RS 5 Coupe quattro,3,audi,,dlt-web-aeaaf410
-2023-05,RY1,AUDI,TT Coupe 45 TFSI q S line,15,audi,,dlt-web-aeaaf410
-2023-05,RY1,AUDI,TT Coupe Final Icon Black,3,audi,,dlt-web-aeaaf410
-2023-05,RY1,AUDI,TT RD 45 TFSI q S line,1,audi,,dlt-web-aeaaf410
-2023-05,RY1,AUDI,TT RS Coupe q,1,audi,,dlt-web-aeaaf410
-2023-05,RY1,AUDI,e-tron GT quattro PF,2,audi,,dlt-web-aeaaf410
-2023-05,RY1,BENTLEY,BENTAYGA HYBRID,5,bentley,,dlt-web-aeaaf410
-2023-05,RY1,BENTLEY,BENTAYGA V8,1,bentley,,dlt-web-aeaaf410
-2023-05,RY1,BENTLEY,CONTINENTAL GT,1,bentley,,dlt-web-aeaaf410
-2023-05,RY1,BENTLEY,FLYING SPUR AZURE HYBRID,1,bentley,,dlt-web-aeaaf410
-2023-05,RY1,BENTLEY,FLYING SPUR HYBRID,4,bentley,,dlt-web-aeaaf410
-2023-05,RY1,BENTLEY,FLYING SPUR MULLINER HYBRID,1,bentley,,dlt-web-aeaaf410
-2023-05,RY1,BENTLEY,FLYING SPUR V8,1,bentley,,dlt-web-aeaaf410
-2023-05,RY1,BMW,118i M Sport,1,bmw,,dlt-web-aeaaf410
+2023-05,RY1,AUDI,A5 CP 40 TFSI S line,16,audi,audi-a5,dlt-web-aeaaf410
+2023-05,RY1,AUDI,A5 CP 45 TFSI q S line BE,3,audi,audi-a5,dlt-web-aeaaf410
+2023-05,RY1,AUDI,A5 SB 40 TFSI S line,18,audi,audi-a5,dlt-web-aeaaf410
+2023-05,RY1,AUDI,A5 SB 45 TFSI q S line BE,2,audi,audi-a5,dlt-web-aeaaf410
+2023-05,RY1,AUDI,A6 40 TFSI S line,1,audi,audi-a6,dlt-web-aeaaf410
+2023-05,RY1,AUDI,A7 SB 45 TFSI,2,audi,audi-a7,dlt-web-aeaaf410
+2023-05,RY1,AUDI,A7 SB 45 TFSI q,1,audi,audi-a7,dlt-web-aeaaf410
+2023-05,RY1,AUDI,A7 SB 55 TFSI q S line,1,audi,audi-a7,dlt-web-aeaaf410
+2023-05,RY1,AUDI,Q3 35 TFSI S line,4,audi,audi-q3,dlt-web-aeaaf410
+2023-05,RY1,AUDI,Q3 40 TFSI q S line BE,4,audi,audi-q3,dlt-web-aeaaf410
+2023-05,RY1,AUDI,Q3 SB 35 TFSI S line,2,audi,audi-q3,dlt-web-aeaaf410
+2023-05,RY1,AUDI,Q3 SB 40 TFSI q S line BE,5,audi,audi-q3,dlt-web-aeaaf410
+2023-05,RY1,AUDI,Q5 55 TFSI e q S line BE,2,audi,audi-q5,dlt-web-aeaaf410
+2023-05,RY1,AUDI,Q5 SB 55 TFSIe q S lineBE,3,audi,audi-q5,dlt-web-aeaaf410
+2023-05,RY1,AUDI,Q7 45 TDI q,1,audi,audi-q7,dlt-web-aeaaf410
+2023-05,RY1,AUDI,RS 4 AV q,3,audi,audi-rs4,dlt-web-aeaaf410
+2023-05,RY1,AUDI,RS 5 Coupe quattro,3,audi,audi-rs5,dlt-web-aeaaf410
+2023-05,RY1,AUDI,TT Coupe 45 TFSI q S line,15,audi,audi-tt,dlt-web-aeaaf410
+2023-05,RY1,AUDI,TT Coupe Final Icon Black,3,audi,audi-tt,dlt-web-aeaaf410
+2023-05,RY1,AUDI,TT RD 45 TFSI q S line,1,audi,audi-tt,dlt-web-aeaaf410
+2023-05,RY1,AUDI,TT RS Coupe q,1,audi,audi-tt-rs,dlt-web-aeaaf410
+2023-05,RY1,AUDI,e-tron GT quattro PF,2,audi,audi-e-tron-gt,dlt-web-aeaaf410
+2023-05,RY1,BENTLEY,BENTAYGA HYBRID,5,bentley,bentley-bentayga,dlt-web-aeaaf410
+2023-05,RY1,BENTLEY,BENTAYGA V8,1,bentley,bentley-bentayga,dlt-web-aeaaf410
+2023-05,RY1,BENTLEY,CONTINENTAL GT,1,bentley,bentley-continental-gt,dlt-web-aeaaf410
+2023-05,RY1,BENTLEY,FLYING SPUR AZURE HYBRID,1,bentley,bentley-flying-spur,dlt-web-aeaaf410
+2023-05,RY1,BENTLEY,FLYING SPUR HYBRID,4,bentley,bentley-flying-spur,dlt-web-aeaaf410
+2023-05,RY1,BENTLEY,FLYING SPUR MULLINER HYBRID,1,bentley,bentley-flying-spur,dlt-web-aeaaf410
+2023-05,RY1,BENTLEY,FLYING SPUR V8,1,bentley,bentley-flying-spur,dlt-web-aeaaf410
+2023-05,RY1,BMW,118i M Sport,1,bmw,bmw-1-series,dlt-web-aeaaf410
 2023-05,RY1,BMW,220i Gran Coupe M Sport,100,bmw,bmw-2-series-gran-coupe,dlt-web-aeaaf410
 2023-05,RY1,BMW,220i Gran Coupe Sport,2,bmw,bmw-2-series-gran-coupe,dlt-web-aeaaf410
 2023-05,RY1,BMW,320Li Limousine LWB RHD,7,bmw,bmw-3-series,dlt-web-aeaaf410
@@ -80,25 +80,25 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-05,RY1,BMW,iX3 M Sport RHD,42,bmw,bmw-ix3,dlt-web-aeaaf410
 2023-05,RY1,BYD,BYD ATTO 3,1812,byd,byd-atto-3,dlt-web-aeaaf410
 2023-05,RY1,BYD,BYD ATTO 3 (410KM),213,byd,byd-atto-3,dlt-web-aeaaf410
-2023-05,RY1,CHEVROLET,CAPTIVA,3,chevrolet,,dlt-web-aeaaf410
-2023-05,RY1,CHEVROLET,COLORADO,1,chevrolet,,dlt-web-aeaaf410
-2023-05,RY1,CHEVROLET,CORVETTE STINGRAY CONVERTIBLE,1,chevrolet,,dlt-web-aeaaf410
-2023-05,RY1,CHEVROLET,CORVETTE STINGRAY COUPE,2,chevrolet,,dlt-web-aeaaf410
-2023-05,RY1,CHEVROLET,TRAILBLAZER,2,chevrolet,,dlt-web-aeaaf410
-2023-05,RY1,DAIHATSU,COPEN GR SPORT,1,daihatsu,,dlt-web-aeaaf410
-2023-05,RY1,DAIHATSU,MOVE CANBUS G MAKEUP LIMITED,1,daihatsu,,dlt-web-aeaaf410
-2023-05,RY1,DAIHATSU,MOVE CANBUS THEORY G TURBO,1,daihatsu,,dlt-web-aeaaf410
-2023-05,RY1,DFSK,GLORY 560,1,dfsk,,dlt-web-aeaaf410
-2023-05,RY1,DFSK,GLORY 580 I-AUTO,1,dfsk,,dlt-web-aeaaf410
-2023-05,RY1,FERRARI,296 GTB,2,ferrari,,dlt-web-aeaaf410
-2023-05,RY1,FERRARI,812 GTS,1,ferrari,,dlt-web-aeaaf410
-2023-05,RY1,FERRARI,F8 SPIDER,3,ferrari,,dlt-web-aeaaf410
-2023-05,RY1,FERRARI,F8 TRIBUTO,1,ferrari,,dlt-web-aeaaf410
-2023-05,RY1,FERRARI,PORTOFINO M,2,ferrari,,dlt-web-aeaaf410
-2023-05,RY1,FERRARI,ROMA,2,ferrari,,dlt-web-aeaaf410
+2023-05,RY1,CHEVROLET,CAPTIVA,3,chevrolet,chevrolet-captiva,dlt-web-aeaaf410
+2023-05,RY1,CHEVROLET,COLORADO,1,chevrolet,chevrolet-colorado,dlt-web-aeaaf410
+2023-05,RY1,CHEVROLET,CORVETTE STINGRAY CONVERTIBLE,1,chevrolet,chevrolet-corvette,dlt-web-aeaaf410
+2023-05,RY1,CHEVROLET,CORVETTE STINGRAY COUPE,2,chevrolet,chevrolet-corvette,dlt-web-aeaaf410
+2023-05,RY1,CHEVROLET,TRAILBLAZER,2,chevrolet,chevrolet-trailblazer,dlt-web-aeaaf410
+2023-05,RY1,DAIHATSU,COPEN GR SPORT,1,daihatsu,daihatsu-copen,dlt-web-aeaaf410
+2023-05,RY1,DAIHATSU,MOVE CANBUS G MAKEUP LIMITED,1,daihatsu,daihatsu-move-canbus,dlt-web-aeaaf410
+2023-05,RY1,DAIHATSU,MOVE CANBUS THEORY G TURBO,1,daihatsu,daihatsu-move-canbus,dlt-web-aeaaf410
+2023-05,RY1,DFSK,GLORY 560,1,dfsk,dfsk-glory-560,dlt-web-aeaaf410
+2023-05,RY1,DFSK,GLORY 580 I-AUTO,1,dfsk,dfsk-glory-580,dlt-web-aeaaf410
+2023-05,RY1,FERRARI,296 GTB,2,ferrari,ferrari-296,dlt-web-aeaaf410
+2023-05,RY1,FERRARI,812 GTS,1,ferrari,ferrari-812,dlt-web-aeaaf410
+2023-05,RY1,FERRARI,F8 SPIDER,3,ferrari,ferrari-f8,dlt-web-aeaaf410
+2023-05,RY1,FERRARI,F8 TRIBUTO,1,ferrari,ferrari-f8,dlt-web-aeaaf410
+2023-05,RY1,FERRARI,PORTOFINO M,2,ferrari,ferrari-portofino,dlt-web-aeaaf410
+2023-05,RY1,FERRARI,ROMA,2,ferrari,ferrari-roma,dlt-web-aeaaf410
 2023-05,RY1,FORD,EVEREST,1171,ford,ford-everest,dlt-web-aeaaf410
 2023-05,RY1,FORD,FORD EVEREST zJAE9BC,1,ford,ford-everest,dlt-web-aeaaf410
-2023-05,RY1,FORD,Focus,1,ford,,dlt-web-aeaaf410
+2023-05,RY1,FORD,Focus,1,ford,ford-focus,dlt-web-aeaaf410
 2023-05,RY1,FORD,MUSTANG,4,ford,ford-mustang,dlt-web-aeaaf410
 2023-05,RY1,FORD,MUSTANG 2.3L ECOBOOST FASTBACK,2,ford,ford-mustang,dlt-web-aeaaf410
 2023-05,RY1,FORD,MUSTANG SHELBY SUPER SNAKE,1,ford,ford-mustang,dlt-web-aeaaf410
@@ -118,13 +118,13 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-05,RY1,HONDA,CIVIC,1536,honda,honda-civic,dlt-web-aeaaf410
 2023-05,RY1,HONDA,CIVIC TYPE R,7,honda,honda-civic-type-r,dlt-web-aeaaf410
 2023-05,RY1,HONDA,CR-V,374,honda,honda-cr-v,dlt-web-aeaaf410
-2023-05,RY1,HONDA,E ADVANCE,1,honda,,dlt-web-aeaaf410
+2023-05,RY1,HONDA,E ADVANCE,1,honda,honda-e,dlt-web-aeaaf410
 2023-05,RY1,HONDA,HR-V,2547,honda,honda-hr-v,dlt-web-aeaaf410
 2023-05,RY1,HONDA,JAZZ,8,honda,honda-jazz,dlt-web-aeaaf410
-2023-05,RY1,HONDA,N-BOX CUSTOM L TURBO,1,honda,,dlt-web-aeaaf410
+2023-05,RY1,HONDA,N-BOX CUSTOM L TURBO,1,honda,honda-n-box,dlt-web-aeaaf410
 2023-05,RY1,HONDA,ODYSSEY ABSOLUTE,1,honda,honda-odyssey,dlt-web-aeaaf410
 2023-05,RY1,HONDA,ODYSSEY ABSOLUTE EX,1,honda,honda-odyssey,dlt-web-aeaaf410
-2023-05,RY1,HONDA,S660 6AT,1,honda,,dlt-web-aeaaf410
+2023-05,RY1,HONDA,S660 6AT,1,honda,honda-s660,dlt-web-aeaaf410
 2023-05,RY1,HONDA,STEP WGN AIR,1,honda,honda-step-wgn,dlt-web-aeaaf410
 2023-05,RY1,HONDA,STEP WGN E HEV SPADA,1,honda,honda-step-wgn,dlt-web-aeaaf410
 2023-05,RY1,HONDA,STEP WGN E HEV SPADA PREMIUM,1,honda,honda-step-wgn,dlt-web-aeaaf410
@@ -136,24 +136,24 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-05,RY1,HONDA,WR-V,138,honda,honda-wr-v,dlt-web-aeaaf410
 2023-05,RY1,HYUNDAI,CRETA,47,hyundai,hyundai-creta,dlt-web-aeaaf410
 2023-05,RY1,HYUNDAI,GRAND STAREX,1,hyundai,hyundai-h-1,dlt-web-aeaaf410
-2023-05,RY1,HYUNDAI,IONIQ EV,1,hyundai,,dlt-web-aeaaf410
+2023-05,RY1,HYUNDAI,IONIQ EV,1,hyundai,hyundai-ioniq,dlt-web-aeaaf410
 2023-05,RY1,HYUNDAI,STARGAZER,23,hyundai,hyundai-stargazer,dlt-web-aeaaf410
 2023-05,RY1,ISUZU,CAB4 SL 2.5,1,isuzu,,dlt-web-aeaaf410
 2023-05,RY1,ISUZU,D-MAX,7085,isuzu,isuzu-d-max,dlt-web-aeaaf410
 2023-05,RY1,ISUZU,MU-X,2156,isuzu,isuzu-mu-x,dlt-web-aeaaf410
 2023-05,RY1,ISUZU,mu-X,1,isuzu,isuzu-mu-x,dlt-web-aeaaf410
 2023-05,RY1,ISUZU,ไม่ระบุ,4,isuzu,,dlt-web-aeaaf410
-2023-05,RY1,JEEP,GLADIATOR RUBICON,1,jeep,,dlt-web-aeaaf410
-2023-05,RY1,JEEP,GLADIATOR RUBICON 4dr,1,jeep,,dlt-web-aeaaf410
-2023-05,RY1,JEEP,WRANGLER RUBICON,2,jeep,,dlt-web-aeaaf410
-2023-05,RY1,JEEP,WRANGLER RUBICON 2 DOOR,1,jeep,,dlt-web-aeaaf410
-2023-05,RY1,JEEP,WRANGLER RUBICON 4 DOOR,1,jeep,,dlt-web-aeaaf410
-2023-05,RY1,LAMBORGHINI,HURACAN EVO RWD,1,lamborghini,,dlt-web-aeaaf410
-2023-05,RY1,LAMBORGHINI,HURACAN PERFORMANTE,1,lamborghini,,dlt-web-aeaaf410
-2023-05,RY1,LAND ROVER,DEFENDER 2.0L T/C PETROL PHEV,2,land-rover,,dlt-web-aeaaf410
-2023-05,RY1,LAND ROVER,RANGE ROVER 3.0 LITRE T/C,2,land-rover,,dlt-web-aeaaf410
-2023-05,RY1,LAND ROVER,RANGE ROVER EVOQUE 1.5LITRE,1,land-rover,,dlt-web-aeaaf410
-2023-05,RY1,LAND ROVER,RANGE ROVER SPORT 3.0 LITRE,3,land-rover,,dlt-web-aeaaf410
+2023-05,RY1,JEEP,GLADIATOR RUBICON,1,jeep,jeep-gladiator,dlt-web-aeaaf410
+2023-05,RY1,JEEP,GLADIATOR RUBICON 4dr,1,jeep,jeep-gladiator,dlt-web-aeaaf410
+2023-05,RY1,JEEP,WRANGLER RUBICON,2,jeep,jeep-wrangler,dlt-web-aeaaf410
+2023-05,RY1,JEEP,WRANGLER RUBICON 2 DOOR,1,jeep,jeep-wrangler,dlt-web-aeaaf410
+2023-05,RY1,JEEP,WRANGLER RUBICON 4 DOOR,1,jeep,jeep-wrangler,dlt-web-aeaaf410
+2023-05,RY1,LAMBORGHINI,HURACAN EVO RWD,1,lamborghini,lamborghini-huracan,dlt-web-aeaaf410
+2023-05,RY1,LAMBORGHINI,HURACAN PERFORMANTE,1,lamborghini,lamborghini-huracan,dlt-web-aeaaf410
+2023-05,RY1,LAND ROVER,DEFENDER 2.0L T/C PETROL PHEV,2,land-rover,land-rover-defender,dlt-web-aeaaf410
+2023-05,RY1,LAND ROVER,RANGE ROVER 3.0 LITRE T/C,2,land-rover,land-rover-range-rover,dlt-web-aeaaf410
+2023-05,RY1,LAND ROVER,RANGE ROVER EVOQUE 1.5LITRE,1,land-rover,land-rover-range-rover-evoque,dlt-web-aeaaf410
+2023-05,RY1,LAND ROVER,RANGE ROVER SPORT 3.0 LITRE,3,land-rover,land-rover-range-rover-sport,dlt-web-aeaaf410
 2023-05,RY1,LEXUS,ES300H,9,lexus,lexus-es,dlt-web-aeaaf410
 2023-05,RY1,LEXUS,IS300H,4,lexus,lexus-is,dlt-web-aeaaf410
 2023-05,RY1,LEXUS,LM300h,21,lexus,lexus-lm,dlt-web-aeaaf410
@@ -164,8 +164,8 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-05,RY1,LEXUS,RX450H+,11,lexus,lexus-rx,dlt-web-aeaaf410
 2023-05,RY1,LEXUS,UX250H,8,lexus,lexus-ux,dlt-web-aeaaf410
 2023-05,RY1,LEXUS,UX300E,1,lexus,lexus-ux,dlt-web-aeaaf410
-2023-05,RY1,MASERATI,LEVANTE DIESEL GRANSPORT,3,maserati,,dlt-web-aeaaf410
-2023-05,RY1,MASERATI,QUATTROPORTE GT,1,maserati,,dlt-web-aeaaf410
+2023-05,RY1,MASERATI,LEVANTE DIESEL GRANSPORT,3,maserati,maserati-levante,dlt-web-aeaaf410
+2023-05,RY1,MASERATI,QUATTROPORTE GT,1,maserati,maserati-quattroporte,dlt-web-aeaaf410
 2023-05,RY1,MAZDA,MAZDA 2,1079,mazda,mazda-mazda2,dlt-web-aeaaf410
 2023-05,RY1,MAZDA,MAZDA 3,133,mazda,mazda-mazda3,dlt-web-aeaaf410
 2023-05,RY1,MAZDA,MAZDA BT-50,107,mazda,mazda-bt-50,dlt-web-aeaaf410
@@ -174,7 +174,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-05,RY1,MAZDA,MAZDA CX-5,54,mazda,mazda-cx-5,dlt-web-aeaaf410
 2023-05,RY1,MAZDA,MAZDA CX-8,151,mazda,mazda-cx-8,dlt-web-aeaaf410
 2023-05,RY1,MAZDA,MX-5 ROADSTER 990S,7,mazda,mazda-mx-5,dlt-web-aeaaf410
-2023-05,RY1,MCLAREN,765LT SPIDER V8 4.0L,1,mclaren,,dlt-web-aeaaf410
+2023-05,RY1,MCLAREN,765LT SPIDER V8 4.0L,1,mclaren,mclaren-765lt,dlt-web-aeaaf410
 2023-05,RY1,MERCEDES BENZ,A 200,92,mercedes-benz,mercedes-benz-a-class,dlt-web-aeaaf410
 2023-05,RY1,MERCEDES BENZ,AMG C43 4MATIC Coupe,11,mercedes-benz,mercedes-benz-c-class,dlt-web-aeaaf410
 2023-05,RY1,MERCEDES BENZ,AMG CLS 53 4MATIC,19,mercedes-benz,mercedes-benz-cls,dlt-web-aeaaf410
@@ -211,13 +211,13 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-05,RY1,MERCEDES BENZ,GLE 300 d 4MATIC,22,mercedes-benz,mercedes-benz-gle,dlt-web-aeaaf410
 2023-05,RY1,MERCEDES BENZ,GLE 350 de 4MATIC,13,mercedes-benz,mercedes-benz-gle,dlt-web-aeaaf410
 2023-05,RY1,MERCEDES BENZ,GLS 350 d 4MATIC,7,mercedes-benz,mercedes-benz-gls,dlt-web-aeaaf410
-2023-05,RY1,MERCEDES BENZ,MAYBACH GLS600 4MATIC,1,mercedes-benz,,dlt-web-aeaaf410
+2023-05,RY1,MERCEDES BENZ,MAYBACH GLS600 4MATIC,1,mercedes-benz,mercedes-benz-maybach-gls,dlt-web-aeaaf410
 2023-05,RY1,MERCEDES BENZ,Maybach S 580 4MATIC,1,mercedes-benz,mercedes-benz-maybach-s-class,dlt-web-aeaaf410
 2023-05,RY1,MERCEDES BENZ,S 350 d,4,mercedes-benz,mercedes-benz-s-class,dlt-web-aeaaf410
 2023-05,RY1,MERCEDES BENZ,S 560 e,3,mercedes-benz,mercedes-benz-s-class,dlt-web-aeaaf410
 2023-05,RY1,MERCEDES BENZ,S 580 e,27,mercedes-benz,mercedes-benz-s-class,dlt-web-aeaaf410
 2023-05,RY1,MERCEDES BENZ,S580E L AMG,1,mercedes-benz,mercedes-benz-s-class,dlt-web-aeaaf410
-2023-05,RY1,MERCEDES BENZ,SLC300,1,mercedes-benz,,dlt-web-aeaaf410
+2023-05,RY1,MERCEDES BENZ,SLC300,1,mercedes-benz,mercedes-benz-slc,dlt-web-aeaaf410
 2023-05,RY1,MERCEDES BENZ,V 250 d,11,mercedes-benz,mercedes-benz-v-class,dlt-web-aeaaf410
 2023-05,RY1,MERCEDES BENZ,ไม่ระบุ,2,mercedes-benz,,dlt-web-aeaaf410
 2023-05,RY1,MG,EP,346,mg,mg-ep,dlt-web-aeaaf410
@@ -225,7 +225,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-05,RY1,MG,HS,78,mg,mg-hs,dlt-web-aeaaf410
 2023-05,RY1,MG,HS PHEV,65,mg,mg-hs,dlt-web-aeaaf410
 2023-05,RY1,MG,MG EXTENDER,89,mg,mg-extender,dlt-web-aeaaf410
-2023-05,RY1,MG,MG GS,1,mg,,dlt-web-aeaaf410
+2023-05,RY1,MG,MG GS,1,mg,mg-gs,dlt-web-aeaaf410
 2023-05,RY1,MG,MG4 ELECTRIC,407,mg,mg-mg4,dlt-web-aeaaf410
 2023-05,RY1,MG,MG5,833,mg,mg-mg5,dlt-web-aeaaf410
 2023-05,RY1,MG,NEW MG3,6,mg,mg-mg3,dlt-web-aeaaf410
@@ -235,12 +235,12 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-05,RY1,MINI,Cooper D RHD,1,mini,mini-cooper,dlt-web-aeaaf410
 2023-05,RY1,MINI,Cooper Hatch RHD,7,mini,mini-cooper,dlt-web-aeaaf410
 2023-05,RY1,MINI,Cooper S Cabrio RHD,4,mini,mini-cooper,dlt-web-aeaaf410
-2023-05,RY1,MINI,Cooper S Clubman RHD,1,mini,,dlt-web-aeaaf410
+2023-05,RY1,MINI,Cooper S Clubman RHD,1,mini,mini-clubman,dlt-web-aeaaf410
 2023-05,RY1,MINI,Cooper S Countryman RHD,70,mini,mini-countryman,dlt-web-aeaaf410
 2023-05,RY1,MINI,Cooper S Hatch RHD,6,mini,mini-cooper,dlt-web-aeaaf410
 2023-05,RY1,MINI,Cooper SE Hatch RHD,20,mini,mini-cooper,dlt-web-aeaaf410
-2023-05,RY1,MINI,John Cooper Works ALL4 Cl,1,mini,,dlt-web-aeaaf410
-2023-05,RY1,MINI,John Cooper Works ALL4 Co,2,mini,,dlt-web-aeaaf410
+2023-05,RY1,MINI,John Cooper Works ALL4 Cl,1,mini,mini-clubman,dlt-web-aeaaf410
+2023-05,RY1,MINI,John Cooper Works ALL4 Co,2,mini,mini-countryman,dlt-web-aeaaf410
 2023-05,RY1,MINI,John Cooper Works All4 RH,1,mini,,dlt-web-aeaaf410
 2023-05,RY1,MINI,John Cooper Works Hatch R,5,mini,mini-cooper,dlt-web-aeaaf410
 2023-05,RY1,MINI,John Cooper Works cabrio,1,mini,mini-cooper,dlt-web-aeaaf410
@@ -253,7 +253,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-05,RY1,MITSUBISHI,ไม่ระบุ,1,mitsubishi,,dlt-web-aeaaf410
 2023-05,RY1,NETA,NETA V,686,neta,neta-v,dlt-web-aeaaf410
 2023-05,RY1,NISSAN,ALMERA,600,nissan,nissan-almera,dlt-web-aeaaf410
-2023-05,RY1,NISSAN,FAIRLADY Z PROTO,1,nissan,,dlt-web-aeaaf410
+2023-05,RY1,NISSAN,FAIRLADY Z PROTO,1,nissan,nissan-fairlady-z,dlt-web-aeaaf410
 2023-05,RY1,NISSAN,GT-R,2,nissan,nissan-gt-r,dlt-web-aeaaf410
 2023-05,RY1,NISSAN,GT-R PREMIUM EDITION,1,nissan,nissan-gt-r,dlt-web-aeaaf410
 2023-05,RY1,NISSAN,GT-R PURE EDITION,1,nissan,nissan-gt-r,dlt-web-aeaaf410
@@ -267,11 +267,11 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-05,RY1,NISSAN,TERRA,120,nissan,nissan-terra,dlt-web-aeaaf410
 2023-05,RY1,NISSAN,X-TRAIL,2,nissan,nissan-x-trail,dlt-web-aeaaf410
 2023-05,RY1,ORA,GOOD CAT,430,ora,ora-good-cat,dlt-web-aeaaf410
-2023-05,RY1,PEUGEOT,2008 P24 BG,19,peugeot,,dlt-web-aeaaf410
-2023-05,RY1,PEUGEOT,3008 P84 AG,1,peugeot,,dlt-web-aeaaf410
-2023-05,RY1,PEUGEOT,3008 P84 BG,13,peugeot,,dlt-web-aeaaf410
-2023-05,RY1,PEUGEOT,5008 P87 AG,1,peugeot,,dlt-web-aeaaf410
-2023-05,RY1,PEUGEOT,5008 P87 BG,9,peugeot,,dlt-web-aeaaf410
+2023-05,RY1,PEUGEOT,2008 P24 BG,19,peugeot,peugeot-2008,dlt-web-aeaaf410
+2023-05,RY1,PEUGEOT,3008 P84 AG,1,peugeot,peugeot-3008,dlt-web-aeaaf410
+2023-05,RY1,PEUGEOT,3008 P84 BG,13,peugeot,peugeot-3008,dlt-web-aeaaf410
+2023-05,RY1,PEUGEOT,5008 P87 AG,1,peugeot,peugeot-5008,dlt-web-aeaaf410
+2023-05,RY1,PEUGEOT,5008 P87 BG,9,peugeot,peugeot-5008,dlt-web-aeaaf410
 2023-05,RY1,PORSCHE,718 BOXSTER,1,porsche,porsche-718,dlt-web-aeaaf410
 2023-05,RY1,PORSCHE,718 BOXSTER T,1,porsche,porsche-718,dlt-web-aeaaf410
 2023-05,RY1,PORSCHE,718 CAYMAN GT4,1,porsche,porsche-718,dlt-web-aeaaf410
@@ -306,13 +306,13 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-05,RY1,PORSCHE,TAYCAN 4S,11,porsche,porsche-taycan,dlt-web-aeaaf410
 2023-05,RY1,PORSCHE,TAYCAN 4S CROSS TURISMO,3,porsche,porsche-taycan,dlt-web-aeaaf410
 2023-05,RY1,PORSCHE,TAYCAN SPORT TURISMO,1,porsche,porsche-taycan,dlt-web-aeaaf410
-2023-05,RY1,ROLLS-ROYCE,Ghost,1,rolls-royce,,dlt-web-aeaaf410
-2023-05,RY1,SUBARU,BRZ 2.4 RWD 6MT,4,subaru,,dlt-web-aeaaf410
-2023-05,RY1,SUBARU,BRZ 2.4 RWD EyeSight 6AT,4,subaru,,dlt-web-aeaaf410
+2023-05,RY1,ROLLS-ROYCE,Ghost,1,rolls-royce,rolls-royce-ghost,dlt-web-aeaaf410
+2023-05,RY1,SUBARU,BRZ 2.4 RWD 6MT,4,subaru,subaru-brz,dlt-web-aeaaf410
+2023-05,RY1,SUBARU,BRZ 2.4 RWD EyeSight 6AT,4,subaru,subaru-brz,dlt-web-aeaaf410
 2023-05,RY1,SUBARU,FORESTER 2.0i-L ES,3,subaru,subaru-forester,dlt-web-aeaaf410
 2023-05,RY1,SUBARU,FORESTER 2.0i-S,1,subaru,subaru-forester,dlt-web-aeaaf410
 2023-05,RY1,SUBARU,FORESTER 2.0i-S ES,213,subaru,subaru-forester,dlt-web-aeaaf410
-2023-05,RY1,SUBARU,WRX STI RA-R,1,subaru,,dlt-web-aeaaf410
+2023-05,RY1,SUBARU,WRX STI RA-R,1,subaru,subaru-wrx,dlt-web-aeaaf410
 2023-05,RY1,SUBARU,XV 2.0i-P ES,31,subaru,subaru-xv,dlt-web-aeaaf410
 2023-05,RY1,SUZUKI,CELERIO GA 1.0L,69,suzuki,suzuki-celerio,dlt-web-aeaaf410
 2023-05,RY1,SUZUKI,CELERIO GA 1.0L MT,3,suzuki,suzuki-celerio,dlt-web-aeaaf410
@@ -330,16 +330,16 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-05,RY1,SUZUKI,JIMNY SIERRA,1,suzuki,suzuki-jimny,dlt-web-aeaaf410
 2023-05,RY1,SUZUKI,JIMNY SIERRA 1.5L,1,suzuki,suzuki-jimny,dlt-web-aeaaf410
 2023-05,RY1,SUZUKI,JIMNY SIERRA JC,2,suzuki,suzuki-jimny,dlt-web-aeaaf410
-2023-05,RY1,SUZUKI,SPACIA CUSTOM HYBRID XS TURBO,1,suzuki,,dlt-web-aeaaf410
-2023-05,RY1,SUZUKI,SPACIA GEAR HYBRID XZ TURBO,1,suzuki,,dlt-web-aeaaf410
-2023-05,RY1,SUZUKI,SPACIA GEAR MY STYLE HYBRID,2,suzuki,,dlt-web-aeaaf410
+2023-05,RY1,SUZUKI,SPACIA CUSTOM HYBRID XS TURBO,1,suzuki,suzuki-spacia,dlt-web-aeaaf410
+2023-05,RY1,SUZUKI,SPACIA GEAR HYBRID XZ TURBO,1,suzuki,suzuki-spacia,dlt-web-aeaaf410
+2023-05,RY1,SUZUKI,SPACIA GEAR MY STYLE HYBRID,2,suzuki,suzuki-spacia,dlt-web-aeaaf410
 2023-05,RY1,SUZUKI,SWIFT GL 1.2L CVT,151,suzuki,suzuki-swift,dlt-web-aeaaf410
 2023-05,RY1,SUZUKI,SWIFT GL NEXT 1.2L CVT,38,suzuki,suzuki-swift,dlt-web-aeaaf410
 2023-05,RY1,SUZUKI,SWIFT GL PLUS 1.2L CVT,287,suzuki,suzuki-swift,dlt-web-aeaaf410
 2023-05,RY1,SUZUKI,SWIFT GLX 1.2L CVT,235,suzuki,suzuki-swift,dlt-web-aeaaf410
 2023-05,RY1,SUZUKI,SWIFT GLX-Navi 1.2L CVT,1,suzuki,suzuki-swift,dlt-web-aeaaf410
 2023-05,RY1,SUZUKI,XL7 1.5L,104,suzuki,suzuki-xl7,dlt-web-aeaaf410
-2023-05,RY1,TATA,XENON,1,tata,,dlt-web-aeaaf410
+2023-05,RY1,TATA,XENON,1,tata,tata-xenon,dlt-web-aeaaf410
 2023-05,RY1,TESLA,MODEL 3,1,tesla,tesla-model-3,dlt-web-aeaaf410
 2023-05,RY1,TESLA,MODEL 3 LONG RANGE,1,tesla,tesla-model-3,dlt-web-aeaaf410
 2023-05,RY1,TESLA,MODEL Y LONG RANGE,6,tesla,tesla-model-y,dlt-web-aeaaf410
@@ -457,7 +457,7 @@ period,category,brand_raw,model_raw,count,brand_id,model_id,source_id
 2023-05,RY2,TOYOTA,HIACE MAJESTY,4,toyota,toyota-hiace-majesty,dlt-web-aeaaf410
 2023-05,RY2,TOYOTA,HILUX REVO,112,toyota,toyota-hilux-revo,dlt-web-aeaaf410
 2023-05,RY2,VOLKSWAGEN,CARAVELLE COMFORTLINE2.0L,16,volkswagen,,dlt-web-aeaaf410
-2023-05,RY2,VOLKSWAGEN,CARAVELLE T69 2.0 L,4,volkswagen,,dlt-web-aeaaf410
+2023-05,RY2,VOLKSWAGEN,CARAVELLE T69 2.0 L,4,volkswagen,volkswagen-caravelle,dlt-web-aeaaf410
 2023-05,RY3,BYD,T3,2,byd,byd-t3,dlt-web-aeaaf410
 2023-05,RY3,CHEVROLET,COLORADO X-CAB,2,chevrolet,,dlt-web-aeaaf410
 2023-05,RY3,DAIHATSU,HIJET CARGO,8,daihatsu,,dlt-web-aeaaf410

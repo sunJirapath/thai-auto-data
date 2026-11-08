@@ -2,11 +2,11 @@
 
 **English** | [ภาษาไทย](README.th.md)
 
-**ยอดจดทะเบียนรถยนต์ใหม่ประเทศไทย รายเดือน** แยกยี่ห้อ รุ่น จังหวัด และชนิดเชื้อเพลิง (รถยนต์ไฟฟ้า EV ไฮบริด) ตั้งแต่ ม.ค. 2564 จากกรมการขนส่งทางบก พร้อมราคารถยนต์จากเว็บไซต์ทางการ ดาวน์โหลด CSV ฟรี · [อ่านภาษาไทย](README.th.md)
+**ยอดจดทะเบียนรถยนต์ใหม่ประเทศไทย รายเดือน** แยกยี่ห้อ รุ่น จังหวัด และชนิดเชื้อเพลิง (รถยนต์ไฟฟ้า EV ไฮบริด) ตั้งแต่ ม.ค. 2564 จากกรมการขนส่งทางบก พร้อมราคารถยนต์จากเว็บไซต์ทางการ (บางรุ่นใช้แหล่งไม่ทางการและระบุว่ายังไม่ยืนยัน) ดาวน์โหลด CSV ฟรี · [อ่านภาษาไทย](README.th.md)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23348748.svg)](https://doi.org/10.5281/zenodo.23348748) [![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](LICENSE) ![Data: 2021-01 to 2026-10](https://img.shields.io/badge/data-2021--01%20to%202026--10-green.svg) ![Format: CSV](https://img.shields.io/badge/format-CSV-orange.svg) [![Site](https://img.shields.io/badge/site-GitHub%20Pages-black.svg)](https://sunjirapath.github.io/thai-auto-data/)
 
-Open data on the Thai car market: monthly new-vehicle registrations by brand and model, plus prices from official manufacturer websites, as plain CSV files you can download and use directly.
+Open data on the Thai car market: monthly new-vehicle registrations by brand and model, plus prices from official manufacturer websites (non-official sources are marked unverified), as plain CSV files you can download and use directly.
 
 **Interactive site:** https://sunjirapath.github.io/thai-auto-data/ with pages for the overview (totals, regions, map in units or per 1,000 people), rankings with the fastest-growing and fastest-declining models, trends and market share over time, powertrain / EV, segments (body type), parent-company country, brand × region, seasonality, price bands, new launches, model comparison, and brand and model detail. Every page, including brand, model and compare pages, uses the same date range, category and area filters, and each page's link keeps those filters, so a view can be shared. The site is in Thai by default and in English with the switch at the top right (or `lang=en` in the link).
 
@@ -20,7 +20,7 @@ Open data on the Thai car market: monthly new-vehicle registrations by brand and
 | [`summaries/brand_monthly.csv`](summaries/brand_monthly.csv) | Registrations per brand per month, market share, rank and YoY |
 | [`summaries/model_monthly.csv`](summaries/model_monthly.csv) | Registrations per model per month, market share, rank and YoY |
 | [`summaries/variant_monthly.csv`](summaries/variant_monthly.csv) | Registrations per month by the variant name the DLT records (matched models only) |
-| [`data/prices.csv`](data/prices.csv) | Prices from official manufacturer websites by variant, append-only, every row linked to its source |
+| [`data/prices.csv`](data/prices.csv) | Prices by variant, append-only, every row linked to its source. `status=verified` rows come from official manufacturer websites; `status=unverified` rows come from a non-official page named in `note` |
 | [`data/registrations_by_province/YYYY-MM.csv`](data/registrations_by_province) | Row-level monthly data by province (province, category, brand, model); summed over provinces it equals the national file row by row |
 | [`summaries/province_monthly.csv`](summaries/province_monthly.csv) | Registrations per month by province and category |
 | [`summaries/areas/`](summaries/areas) | Brand and model units per month for one area: the whole country (`all`), everywhere but Bangkok (`upcountry`), 6 regions (`region-*`) and 77 provinces (`TH-xx`) |
@@ -37,7 +37,7 @@ Open data on the Thai car market: monthly new-vehicle registrations by brand and
 
 <!-- pending --><!-- /pending -->
 
-**Prices:** 622 official-website prices for 184 models so far (Toyota, Lexus, Honda, Isuzu, Mitsubishi, Ford, Nissan, Mazda, Subaru, Suzuki, BYD, MG, GWM/Haval/ORA/Tank/POER, Changan/Deepal, Chery, Omoda/Jaecoo, AION, Wuling, Tesla, Hyundai, Kia, XPENG, Zeekr, Denza, BMW, MINI, Mercedes-Benz, Porsche, Volvo and AVATR), covering 93% of the last 12 months' registrations, each linked to the page it came from. Price history starts from the first observation, so it is not complete back in time.
+**Prices:** 622 official-website prices for 184 models so far, plus 41 unverified prices from non-official sources for 13 models (Toyota, Lexus, Honda, Isuzu, Mitsubishi, Ford, Nissan, Mazda, Subaru, Suzuki, BYD, MG, GWM/Haval/ORA/Tank/POER, Changan/Deepal, Chery, Omoda/Jaecoo, AION, Wuling, Tesla, Hyundai, Kia, XPENG, Zeekr, Denza, BMW, MINI, Mercedes-Benz, Porsche, Volvo, AVATR, Geely, Riddara, Lepas, Leapmotor and Foton), covering 93% of the last 12 months' registrations, each linked to the page it came from. Price history starts from the first observation, so it is not complete back in time.
 
 If a month has no source data, it appears as `status=missing` with empty numbers, **not 0**. Details in [DATA_SOURCES.md](DATA_SOURCES.md). A month the DLT has published only as national totals (RY1-RY3, before the brand and model file) appears in `summaries/market_monthly.csv` as `status=provisional`, with no brand or model rows; the source is in `data/provisional_totals.csv`, and the row becomes `ok` when the full file arrives.
 
@@ -79,7 +79,7 @@ Or clone the whole repository: `git clone https://github.com/sunJirapath/thai-au
 - **Provinces count where a vehicle is registered.** Company and leasing vehicles registered in Bangkok make Bangkok more than half the country.
 - **Model level only.** The DLT names vehicles inconsistently. Some brands report the model (`YARIS ATIV`), others report a variant (`BYD ATTO3 (480KM-EXT)`). Everything is grouped at model level, and counts are never split down to trims.
 - **Brand totals follow the DLT brand; models follow the car.** A few GWM-group cars are recorded under GWM but sold as Haval or POER (Haval H6, POER Sahar). They count in GWM's brand total and in the Haval H6 / POER Sahar model, so a brand's models need not add up to its total.
-- **An empty `model_id`** means the string has not been matched yet. Those units still count toward market and brand totals, but not toward model rankings. The unmatched amount is in the `unmatched_model_units` column; across the whole period 99.0% of units are matched (recent months are lower until new models get aliases).
+- **An empty `model_id`** means the string has not been matched yet. Those units still count toward market and brand totals, but not toward model rankings. The unmatched amount is in the `unmatched_model_units` column; across the whole period 99.5% of units are matched (recent months are lower until new models get aliases).
 - **Market share (`share_pct`)** is calculated against the month's total of RY1 to RY3.
 - **`yoy_pct` / `mom_pct` are empty** when the comparison month is missing or had zero units.
 - **Years:** the source files use the Buddhist Era (BE = CE + 543). Files here use the Gregorian calendar, formatted `YYYY-MM`.
@@ -92,7 +92,7 @@ The data is updated when the DLT publishes a new monthly file. Every file is che
 
 The data comes from the DLT Transport Statistics website (web.dlt.go.th/statistics), which updates monthly. On every import, each category total must match the DLT's own monthly totals file to the vehicle. As of 8 November 2026, the latest month is October 2026 (processed by the DLT on 4 November 2026).
 
-**After every data refresh** (right after the summarize step of the collector job on the NAS, which lives outside this repo) run `python scripts/build_seo.py`. It rebuilds the crawlable HTML in `index.html`, the static summary pages `brands/`, `models/` and `ev/`, and `sitemap.xml`; commit them with the data. `python scripts/build_seo.py --check` exits 1 if any of them is out of date (no writes). There is no CI in this repo, so run it by hand.
+**After every data refresh** (right after the summarize step of the collector job on the NAS, which lives outside this repo) run `python scripts/build_seo.py`. It rebuilds the crawlable HTML in `index.html`, the static summary pages `brands/`, `models/`, `ev/`, `monthly/` and one `monthly/YYYY-MM/` page per data month, and `sitemap.xml`; commit them with the data (a new month adds a new untracked `monthly/YYYY-MM/` folder, so stage with `git add -A`, not by file name). `python scripts/build_seo.py --check` exits 1 if any of them is out of date (no writes). There is no CI in this repo, so run it by hand.
 
 ## Questions this data can answer
 
@@ -101,7 +101,7 @@ The data comes from the DLT Transport Statistics website (web.dlt.go.th/statisti
 - How fast are electric vehicles (BEV), plug-in hybrids (PHEV) and hybrids (HEV) growing in Thailand?
 - How has the share of Chinese versus Japanese brands changed?
 - Which provinces register the most new cars, in total and per 1,000 people?
-- What are the official list prices of each variant, with a source link?
+- What are the list prices of each variant, with a source link (official or, where marked, non-official)?
 
 **Note:** these are registrations, a close proxy for "car sales in Thailand" but not the same thing. When quoting a number, call it registrations.
 

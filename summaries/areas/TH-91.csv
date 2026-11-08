@@ -3807,6 +3807,7 @@ period,category,kind,id,units
 2026-07,RY1,f,hev,8
 2026-07,RY1,f,petrol,11
 2026-07,RY1,f,phev,3
+2026-07,RY1,m,audi-q5,1
 2026-07,RY1,m,bmw-3-series,2
 2026-07,RY1,m,bmw-5-series,1
 2026-07,RY1,m,bmw-x3,1

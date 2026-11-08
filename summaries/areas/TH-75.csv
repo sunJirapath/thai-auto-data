@@ -104,6 +104,7 @@ period,category,kind,id,units
 2021-02,RY1,m,nissan-march,1
 2021-02,RY1,m,suzuki-ciaz,2
 2021-02,RY1,m,suzuki-swift,1
+2021-02,RY1,m,toyota-avanza,1
 2021-02,RY1,m,toyota-camry,1
 2021-02,RY1,m,toyota-commuter,1
 2021-02,RY1,m,toyota-corolla-cross,1
@@ -344,6 +345,7 @@ period,category,kind,id,units
 2021-07,RY1,f,diesel,17
 2021-07,RY1,f,petrol,11
 2021-07,RY1,m,ford-ranger,2
+2021-07,RY1,m,foton-tunland,1
 2021-07,RY1,m,honda-city,1
 2021-07,RY1,m,honda-city-hatchback,1
 2021-07,RY1,m,isuzu-d-max,8
@@ -740,6 +742,7 @@ period,category,kind,id,units
 2022-03,RY1,m,mitsubishi-triton,2
 2022-03,RY1,m,mitsubishi-xpander,1
 2022-03,RY1,m,nissan-march,1
+2022-03,RY1,m,peugeot-3008,1
 2022-03,RY1,m,suzuki-celerio,1
 2022-03,RY1,m,toyota-corolla-cross,1
 2022-03,RY1,m,toyota-fortuner,2
@@ -1101,6 +1104,7 @@ period,category,kind,id,units
 2022-10,RY1,f,diesel,28
 2022-10,RY1,f,hev,2
 2022-10,RY1,f,petrol,20
+2022-10,RY1,m,chevrolet-captiva,1
 2022-10,RY1,m,ford-everest,1
 2022-10,RY1,m,ford-ranger,1
 2022-10,RY1,m,ford-ranger-raptor,1
@@ -1208,6 +1212,7 @@ period,category,kind,id,units
 2022-12,RY1,f,diesel,8
 2022-12,RY1,f,hev,1
 2022-12,RY1,f,petrol,12
+2022-12,RY1,m,audi-tt-rs,1
 2022-12,RY1,m,ford-ranger,2
 2022-12,RY1,m,honda-city,1
 2022-12,RY1,m,honda-city-hatchback,1

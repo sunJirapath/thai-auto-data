@@ -195,12 +195,20 @@
     return Object.keys(latest).map(function (k) { return latest[k]; })
       .sort(function (a, b) { return a.price_type.localeCompare(b.price_type) || (+a.price_thb - +b.price_thb); });
   }
-  function priceRange(modelId) {
-    var list = currentPrices(modelId).filter(function (p) { return p.price_type === 'list'; }).map(function (p) { return +p.price_thb; });
+  function priceRange(modelId, verifiedOnly) {
+    var list = currentPrices(modelId).filter(function (p) {
+      return p.price_type === 'list' && (!verifiedOnly || p.status === 'verified');
+    });
     if (!list.length) return null;
-    return [Math.min.apply(null, list), Math.max.apply(null, list), list.length];
+    var values = list.map(function (p) { return +p.price_thb; });
+    return [Math.min.apply(null, values), Math.max.apply(null, values), values.length,
+      list.some(function (p) { return p.status === 'unverified'; })];
   }
-  function rangeText(r) { return r ? (r[0] === r[1] ? baht(r[0]) : baht(r[0]) + ' – ' + baht(r[1])) : L('No data yet', 'ยังไม่มีข้อมูล'); }
+  function priceCaveat(r) { return r[3] ? L(' · includes unverified prices', ' · รวมราคาที่ยังไม่ยืนยัน') : ''; }
+  function rangeText(r) {
+    if (!r) return L('No data yet', 'ยังไม่มีข้อมูล');
+    return (r[0] === r[1] ? baht(r[0]) : baht(r[0]) + ' – ' + baht(r[1])) + priceCaveat(r);
+  }
 
   // Hatched band behind months with no source data, so a gap never reads as zero.
   var missingBands = {
@@ -1030,7 +1038,9 @@
     if (data.unit === 'price') { from = ''; to = ''; scope = [L('Latest recorded list prices · observation dates vary', 'ราคาล่าสุดที่บันทึก · วันที่เก็บราคาต่างกันตามรุ่น')]; }
     scope.push(chartExportUnit(data.unit || 'registrations'));
     if (data.exportNote) scope.push(data.exportNote);
-    var source = isPrice ? L('thai-auto-data / DLT / official manufacturer websites', 'thai-auto-data / กรมการขนส่งทางบก / เว็บไซต์ทางการผู้ผลิต')
+    var source = id === 'priceScatter' || id === 'priceBandChart'
+      ? L('thai-auto-data / DLT / official manufacturer websites', 'thai-auto-data / กรมการขนส่งทางบก / เว็บไซต์ทางการผู้ผลิต')
+      : isPrice ? L('thai-auto-data / DLT / manufacturer websites and linked price sources', 'thai-auto-data / กรมการขนส่งทางบก / เว็บไซต์ผู้ผลิตและแหล่งราคาที่อ้างอิง')
       : L('thai-auto-data / Department of Land Transport', 'thai-auto-data / กรมการขนส่งทางบก');
     var key = data.exportKey || id.replace(/Chart$/, '') || D.page;
     var filename = ['thai-auto-data', key, ['brand', 'model', 'compare'].includes(D.page) ? D.detailArg : '',
@@ -1046,7 +1056,7 @@
       rank: L('Rank', 'อันดับ'), increase: L('Registrations gained (vehicles)', 'ยอดจดทะเบียนเพิ่ม (คัน)'),
       decrease: L('Registrations lost (vehicles)', 'ยอดจดทะเบียนลด (คัน)'),
       percap: L('Registrations per 1,000 people', 'ยอดจดทะเบียนต่อประชากร 1,000 คน'),
-      price: L('List price range (THB)', 'ช่วงราคาบนเว็บไซต์ทางการ (บาท)')
+      price: L('List price range (THB)', 'ช่วงราคาที่มีแหล่งอ้างอิง (บาท)')
     }[unit];
   }
 
@@ -1060,7 +1070,7 @@
     function cell(v) { return v === null || v === undefined ? '' : Array.isArray(v) ? v.join('–') : typeof v === 'number' && v % 1 ? +v.toFixed(2) : v; }
     var head, rows;
     if (chart.config.type === 'scatter') {
-      head = [L('Model', 'รุ่น'), L('Starting list price (THB)', 'ราคาเริ่มต้นบนเว็บไซต์ทางการ (บาท)'), chartExportUnit('registrations')];
+      head = [L('Model', 'รุ่น'), L('Starting list price (THB)', 'ราคาเริ่มต้นที่มีแหล่งอ้างอิง (บาท)'), chartExportUnit('registrations')];
       rows = ds.flatMap(function (d) { return d.data.map(function (pt) { return [modelName(pt.id), cell(pt.x), cell(pt.y)]; }); });
     } else {
       head = [dimensions[context.dimension]].concat(ds.map(function (d) {
@@ -1955,18 +1965,21 @@
   function renderPricePage(idx) {
     var months = selectedMonths(), cats = selCats();
     var units = sumById(idx, 'm', months, cats), total = sumValues(sumById(idx, 'b', months, cats));
-    var priced = Object.keys(D.pricesBy).filter(function (id) { return priceRange(id); });
+    var ranges = Object.fromEntries(Object.keys(D.pricesBy).map(function (id) {
+      return [id, priceRange(id, true)];
+    }).filter(function (entry) { return entry[1]; }));
+    var priced = Object.keys(ranges);
     var band = PRICE_BANDS.map(function () { return { units: 0, models: [] }; }), covered = 0;
     priced.forEach(function (id) {
-      var r = priceRange(id), u = units[id] || 0;
+      var r = ranges[id], u = units[id] || 0;
       covered += u;
       PRICE_BANDS.forEach(function (b, i) { if (r[0] >= b[0] && r[0] < b[1]) { band[i].units += u; band[i].models.push(id); } });
     });
     // the last bar holds every unit without a price, so empty bands are not read as zero sales
-    var missing = { units: Math.max(0, total - covered), models: sortedIds(units).filter(function (id) { return !priceRange(id); }) };
+    var missing = { units: Math.max(0, total - covered), models: sortedIds(units).filter(function (id) { return !ranges[id]; }) };
     band.push(missing);
-    document.getElementById('priceCoverage').textContent = L('Official-website prices for ', 'มีราคาจากเว็บไซต์ทางการ ') + priced.length + L(' models, covering ', ' รุ่น คิดเป็น ') +
-      (total ? (100 * covered / total).toFixed(1) : 0) + L('% of registrations under these filters · bands use each model\'s starting price · % is of all registrations; the grey bar is everything without a price yet', '% ของยอดจดทะเบียนในตัวกรองนี้ · จัดช่วงตามราคาเริ่มต้นของแต่ละรุ่น · % คิดจากยอดทั้งหมด แท่งสีเทาคือยอดที่ยังไม่มีราคา');
+    document.getElementById('priceCoverage').textContent = L('Verified official prices for ', 'มีราคาที่ยืนยันจากเว็บไซต์ทางการ ') + priced.length + L(' models, covering ', ' รุ่น คิดเป็น ') +
+      (total ? (100 * covered / total).toFixed(1) : 0) + L('% of registrations under these filters · bands use each model\'s starting price · % is of all registrations; the grey bar shows registrations without a verified price', '% ของยอดจดทะเบียนในตัวกรองนี้ · จัดช่วงตามราคาเริ่มต้นของแต่ละรุ่น · % คิดจากยอดทั้งหมด แท่งสีเทาคือยอดที่ยังไม่มีราคายืนยัน');
     var o = baseOptions();
     o.plugins.legend.display = false;
     o.scales.y.ticks.callback = kTicks;
@@ -1976,15 +1989,15 @@
     o.plugins.tooltip.callbacks.afterLabel = function (c) {
       var ms = band[c.dataIndex].models;
       if (band[c.dataIndex] !== missing) return ms.map(modelName).join(', ');
-      return L('Biggest without a price: ', 'รุ่นใหญ่ที่ยังไม่มีราคา: ') + ms.slice(0, 8).map(modelName).join(', ') + L(' · also units with unmatched model names', ' · รวมยอดที่ยังจับคู่ชื่อรุ่นไม่ได้');
+      return L('Most registered without a verified price · ', 'รุ่นที่จดทะเบียนมากที่สุดในกลุ่มที่ยังไม่มีราคายืนยัน · ') + ms.slice(0, 8).map(modelName).join(', ') + L(' · also units with unmatched model names', ' · รวมยอดที่ยังจับคู่ชื่อรุ่นไม่ได้');
     };
     var priceCanvas = document.getElementById('priceBandChart');
     priceCanvas.dataset.dimension = 'band';
-    priceCanvas.dataset.exportNote = L('Grouped by latest recorded official website starting prices', 'จัดกลุ่มตามราคาเริ่มต้นล่าสุดที่บันทึกจากเว็บไซต์ทางการ');
+    priceCanvas.dataset.exportNote = L('Grouped by latest verified official starting prices. Promotions excluded.', 'จัดกลุ่มตามราคาเริ่มต้นล่าสุดที่ยืนยันจากเว็บไซต์ทางการ ไม่รวมโปรโมชัน');
     if (charts.priceBand) charts.priceBand.destroy();
     charts.priceBand = new Chart(priceCanvas, {
       type: 'bar', options: o,
-      data: { labels: PRICE_BANDS.map(function (b) { return b[2]; }).concat(L('No price data', 'ยังไม่มีราคา')), datasets: [{ data: band.map(function (b) { return b.units; }),
+      data: { labels: PRICE_BANDS.map(function (b) { return b[2]; }).concat(L('No verified price', 'ยังไม่มีราคายืนยัน')), datasets: [{ data: band.map(function (b) { return b.units; }),
         backgroundColor: band.map(function (b) { return b === missing ? css('--hatch') : css('--accent'); }), borderRadius: { topLeft: 4, topRight: 4 }, borderSkipped: 'start', maxBarThickness: 56 }] },
       plugins: [{ id: 'bandLabels', afterDatasetsDraw: function (ch) {
         var ctx = ch.ctx, meta = ch.getDatasetMeta(0);
@@ -1997,7 +2010,7 @@
       } }]
     });
 
-    var pts = priced.map(function (id) { var r = priceRange(id); return { x: r[0], y: units[id] || 0, id: id }; });
+    var pts = priced.map(function (id) { var r = ranges[id]; return { x: r[0], y: units[id] || 0, id: id }; });
     var so = baseOptions();
     so.plugins.legend.display = false;
     so.interaction = { mode: 'nearest', intersect: true };
@@ -2005,7 +2018,7 @@
       title: { display: true, text: L('Starting price (official website)', 'ราคาเริ่มต้น (เว็บไซต์ทางการ)'), color: css('--muted') } };
     so.scales.y.ticks.callback = kTicks;
     so.scales.y.title = { display: true, text: L('Registrations in the selected period', 'ยอดจดทะเบียนในช่วงที่เลือก'), color: css('--muted') };
-    so.plugins.tooltip.callbacks.label = function (c) { var p = c.raw; return ' ' + modelName(p.id) + ': ' + rangeText(priceRange(p.id)) + ' · ' + fmt(p.y) + L(' units', ' คัน'); };
+    so.plugins.tooltip.callbacks.label = function (c) { var p = c.raw; return ' ' + modelName(p.id) + ': ' + rangeText(ranges[p.id]) + ' · ' + fmt(p.y) + L(' units', ' คัน'); };
     so.onClick = function (e, els) { if (els.length) location.hash = '#/model/' + pts[els[0].index].id + filterQuery(); };
     document.getElementById('priceScatter').dataset.exportNote = priceCanvas.dataset.exportNote;
     if (charts.priceScatter) charts.priceScatter.destroy();
@@ -2044,7 +2057,7 @@
 
     function showBudget() {
       var scope = budget.band === 'all' ? priced : band[+budget.band].models;
-      var ids = scope.filter(function (id) { return units[id] > 0 && (budget.max === null || priceRange(id)[0] <= budget.max); })
+      var ids = scope.filter(function (id) { return units[id] > 0 && (budget.max === null || ranges[id][0] <= budget.max); })
         .sort(function (a, b) { return units[b] - units[a]; });
       var box = document.getElementById('budgetModels');
       var status = document.getElementById('budgetResult');
@@ -2057,7 +2070,7 @@
       box.appendChild(el('h3', {}, L('Models with the most registrations', 'รุ่นที่จดทะเบียนมากที่สุด')));
       var rows = ids.slice(0, 10).map(function (id) {
         return add(el('tr'), add(el('td'), link(hrefFor('m', id), modelName(id))),
-          el('td', { class: 'n' }, baht(priceRange(id)[0])), el('td', { class: 'n' }, fmt(units[id])));
+          el('td', { class: 'n' }, baht(ranges[id][0])), el('td', { class: 'n' }, fmt(units[id])));
       });
       box.appendChild(add(el('div', { class: 'table-wrap' }), table([[L('Model', 'รุ่น')], [L('Starting price (THB)', 'ราคาเริ่มต้น (บาท)'), 1], [L('Registrations (vehicles)', 'ยอดจดทะเบียน (คัน)'), 1]], rows)));
       if (ids.length > 1) box.appendChild(link(compareHref('m', ids.slice(0, 3)), L('Compare the first ', 'เปรียบเทียบ ') + Math.min(3, ids.length) + L(' models', ' รุ่นแรก'), 'btn'));
@@ -2361,7 +2374,7 @@
         pctCell(prev && prev[id] ? (100 * (mUnits[id] - prev[id]) / prev[id]).toFixed(2) : ''), el('td', { class: 'n' }, rangeText(priceRange(id))));
       return tr;
     });
-    wrap.appendChild(trs.length ? table([[L('Select', 'เลือก')], [L('Model', 'รุ่น')], [L('Units', 'คัน'), 1], [L('% of brand', '% ของยี่ห้อ'), 1], [L('Model rank', 'อันดับรุ่น'), 1], [priorText(months, 'short'), 1], [L('Price (official)', 'ราคา (ทางการ)'), 1]], trs)
+    wrap.appendChild(trs.length ? table([[L('Select', 'เลือก')], [L('Model', 'รุ่น')], [L('Units', 'คัน'), 1], [L('% of brand', '% ของยี่ห้อ'), 1], [L('Model rank', 'อันดับรุ่น'), 1], [priorText(months, 'short'), 1], [L('Sourced price', 'ราคาที่มีแหล่งอ้างอิง'), 1]], trs)
       : el('p', { class: 'note' }, L('No matched model has units under these filters', 'ไม่มียอดจดทะเบียนของรุ่นที่จับคู่ได้ในตัวกรองนี้')));
     updateCompare();
 
@@ -2393,7 +2406,7 @@
       tile(L('Registrations · ', 'ยอดจดทะเบียน · ') + area, fmt(s.units) + L(' units', ' คัน'), monthLabel(months[0]) + ' – ' + monthLabel(last) + (s.yoy === null ? '' : ' · ' + s.priorShort + ' ' + pctText(s.yoy))),
       tile(L('Market share', 'ส่วนแบ่งตลาด'), s.share.toFixed(2) + '%', rankText(s, L('models', 'รุ่น'))),
       tile(L('Share of brand', 'สัดส่วนในยี่ห้อ'), brandUnits ? (100 * s.units / brandUnits).toFixed(1) + '%' : '—', L('of ', 'ของยอด ') + brandLabel(info.brand_id)),
-      tile(L('Price (official website)', 'ราคา (เว็บไซต์ทางการ)'), range ? rangeText(range) : L('No data yet', 'ยังไม่มีข้อมูล'), range ? range[2] + L(' variants', ' รุ่นย่อย') : L('Help add it on GitHub', 'ช่วยเพิ่มได้ที่ GitHub'))));
+      tile(L('Price (sourced)', 'ราคา (มีแหล่งอ้างอิง)'), range ? rangeText(range) : L('No data yet', 'ยังไม่มีข้อมูล'), range ? range[2] + L(' variants', ' รุ่นย่อย') : L('Help add it on GitHub', 'ช่วยเพิ่มได้ที่ GitHub'))));
     root.appendChild(add(el('div', { class: 'controls' }), link(compareHref('m', [modelId]), L('Compare with other models →', 'เปรียบเทียบกับรุ่นอื่น →'), 'btn')));
 
     var totals = b.order.map(function (k) { return sumValues(sumById(idx, 'b', b.months[k], cats)); }), cache = {};
@@ -2453,21 +2466,28 @@
     }
   }
 
+  // source link; a status=unverified row (non-official source) carries a visible marker
+  function srcLink(p, label) {
+    var a = add(link(p.source_url, ''), sourceLabel(label || p.source_publisher));
+    if (p.status !== 'unverified') return a;
+    return add(el('span'), a, el('span', { class: 'note', title: p.note || '' }, L(' · non-official source, unverified', ' · แหล่งไม่ทางการ ยังไม่ยืนยัน')));
+  }
+
   function renderPrices(root, modelId) {
-    var pc = card(L('Price', 'ราคา'), null, L('Prices shown on the manufacturer\'s official website on the date recorded; actual prices vary with promotions and dealers', 'ราคาที่แสดงบนเว็บไซต์ทางการของค่ายรถ ณ วันที่บันทึก ราคาจริงอาจต่างตามโปรโมชันและตัวแทนจำหน่าย'));
+    var pc = card(L('Price', 'ราคา'), null, L('Prices are shown as observed. Official manufacturer prices and unverified non-official prices are identified by source. Actual prices vary with promotions and dealers.', 'แสดงราคาตามวันที่บันทึก โดยระบุแหล่งที่มาของราคาทางการและราคาที่ไม่เป็นทางการซึ่งยังไม่ยืนยัน ราคาจริงอาจต่างกันตามโปรโมชันและตัวแทนจำหน่าย'));
     root.appendChild(pc);
     var all = (D.pricesBy[modelId] || []).slice();
     if (!all.length) {
-      pc.appendChild(add(el('p', { class: 'note' }, L('No price verified from an official website yet for this model. ', 'ยังไม่มีข้อมูลราคาที่ยืนยันจากเว็บไซต์ทางการสำหรับรุ่นนี้ ')),
+      pc.appendChild(add(el('p', { class: 'note' }, L('No sourced price for this model yet. ', 'ยังไม่มีข้อมูลราคาที่มีแหล่งอ้างอิงสำหรับรุ่นนี้ ')),
         link('https://github.com/sunJirapath/thai-auto-data/issues', L('Send a price with its source link', 'ส่งข้อมูลราคาพร้อมลิงก์แหล่งที่มา'))));
       return;
     }
     var cur = currentPrices(modelId);
     pc.appendChild(el('h3', {}, L('Latest recorded prices', 'ราคาล่าสุดที่บันทึก')));
     pc.appendChild(add(el('div', { class: 'table-wrap' }), table([[L('Variants', 'รุ่นย่อย')], [L('Category', 'ประเภท')], [L('Price', 'ราคา'), 1], [L('Observed on', 'วันที่บันทึก'), 1], [L('Source', 'แหล่งที่มา')]], cur.map(function (p) {
-      return add(el('tr'), add(el('td'), sourceLabel(p.variant)), el('td', {}, p.price_type === 'list' ? L('Website price', 'ราคาบนเว็บ') : L('Promotion until ', 'โปรโมชัน ถึง ') + dateLabel(p.effective_to)),
+      return add(el('tr'), add(el('td'), sourceLabel(p.variant)), el('td', {}, p.price_type === 'list' ? L('List price', 'ราคาปกติ') : L('Promotion until ', 'โปรโมชัน ถึง ') + dateLabel(p.effective_to)),
         el('td', { class: 'n' }, baht(p.price_thb)), el('td', { class: 'n' }, dateLabel(p.observed_on)),
-        add(el('td'), add(link(p.source_url, ''), sourceLabel(p.source_publisher))));
+        add(el('td'), srcLink(p)));
     }))));
 
     // history: every observation, oldest first, with change vs the previous one for the same variant and type
@@ -2477,10 +2497,10 @@
       var k = p.price_type + '|' + p.variant, d = prev[k] !== undefined ? +p.price_thb - prev[k] : null;
       prev[k] = +p.price_thb;
       return add(el('tr'), el('td', {}, dateLabel(priceDate(p))), add(el('td'), sourceLabel(p.variant)),
-        el('td', {}, p.price_type === 'list' ? L('Website price', 'ราคาบนเว็บ') : L('Promotion', 'โปรโมชัน')),
+        el('td', {}, p.price_type === 'list' ? L('List price', 'ราคาปกติ') : L('Promotion', 'โปรโมชัน')),
         el('td', { class: 'n' }, baht(p.price_thb)),
         el('td', { class: 'n ' + (d > 0 ? 'down' : d < 0 ? 'up' : 'na') }, d === null ? '—' : d === 0 ? L('Unchanged', 'เท่าเดิม') : (d > 0 ? '+' : '−') + fmt(Math.abs(d))),
-        add(el('td'), add(link(p.source_url, ''), sourceLabel(p.source_publisher))));
+        add(el('td'), srcLink(p)));
     }).reverse();
     var det = add(el('details'), el('summary', {}, L('Full price history (', 'ประวัติราคาทั้งหมด (') + all.length + L(' records)', ' รายการ)')),
       add(el('div', { class: 'table-wrap' }), table([[L('Date', 'วันที่')], [L('Variants', 'รุ่นย่อย')], [L('Category', 'ประเภท')], [L('Price', 'ราคา'), 1], [L('Change', 'เปลี่ยนแปลง'), 1], [L('Source', 'แหล่งที่มา')]], rows)),
@@ -2749,17 +2769,17 @@
       [L('Battery electric (BEV)', 'ไฟฟ้า (BEV)'), function (id) { return pctOrDash(S[id].bev); }],
       [L('Hybrid and plug-in hybrid', 'ไฮบริดและปลั๊กอินไฮบริด'), function (id) { return pctOrDash(S[id].hybrid); }]
     ]]);
-    else groups.push([L('Price (official website)', 'ราคา (เว็บไซต์ทางการ)'), [
-      [L('Starting price', 'ราคาเริ่มต้น'), function (id) { return S[id].price ? baht(S[id].price[0]) : L('No data yet', 'ยังไม่มีข้อมูล'); }, function (id) { return S[id].price ? -S[id].price[0] : null; }],
-      [L('Highest price', 'ราคาสูงสุด'), function (id) { return S[id].price ? baht(S[id].price[1]) : L('No data yet', 'ยังไม่มีข้อมูล'); }],
+    else groups.push([L('Price (sourced)', 'ราคา (มีแหล่งอ้างอิง)'), [
+      [L('Starting price', 'ราคาเริ่มต้น'), function (id) { return S[id].price ? baht(S[id].price[0]) + priceCaveat(S[id].price) : L('No data yet', 'ยังไม่มีข้อมูล'); }, function (id) { return S[id].price ? -S[id].price[0] : null; }],
+      [L('Highest price', 'ราคาสูงสุด'), function (id) { return S[id].price ? baht(S[id].price[1]) + priceCaveat(S[id].price) : L('No data yet', 'ยังไม่มีข้อมูล'); }],
       [L('Variants with a price', 'จำนวนรุ่นย่อยที่มีราคา'), function (id) { return S[id].price ? String(S[id].price[2]) : '—'; }]
     ]]);
 
     var tc = card(L('Comparison table', 'ตารางเปรียบเทียบ'), areaLabel(M.area) + ' · ' + span,
       L('The best value in each comparable row is highlighted; missing data shows as —, never zero', 'ค่าที่ดีที่สุดในแถวที่เทียบกันได้ถูกเน้นไว้ ข้อมูลที่ไม่มีแสดงเป็น — ไม่ใช่ศูนย์'));
     if (kind === 'm') tc.appendChild(el('p', { class: 'note' }, L(
-      'Prices use the latest official list prices we recorded. Observation dates vary by model and promotions are excluded.',
-      'ราคาอ้างอิงจากราคาปกติล่าสุดที่บันทึกจากเว็บไซต์ทางการ วันที่บันทึกต่างกันตามรุ่นและไม่รวมราคาโปรโมชัน')));
+      'Prices use the latest list prices we recorded. Non-official sources are marked unverified. Observation dates vary by model and promotions are excluded.',
+      'ราคาอ้างอิงจากราคาปกติล่าสุดที่บันทึก แหล่งไม่ทางการระบุว่ายังไม่ยืนยัน วันที่บันทึกต่างกันตามรุ่นและไม่รวมราคาโปรโมชัน')));
     var t = el('table', { class: 'compare' }), thead = el('thead'), htr = el('tr'), csv = [[L('metric', 'รายการ')].concat(ids.map(function (id) { return nameFor(kind, id); }))];
     htr.appendChild(el('th', { scope: 'col' }, L('Measure', 'รายการเปรียบเทียบ')));
     ids.forEach(function (id, i) {
@@ -2899,12 +2919,14 @@
   // models only: price ranges as floating bars (one axis: baht) and the variant prices behind them
   function comparePrices(root, ids) {
     var priced = ids.filter(function (id) { return priceRange(id); });
-    var pc = card(L('Price range', 'ช่วงราคา'), L('Price on the official website', 'ราคาบนเว็บไซต์ทางการ'), priced.length ? L('Bars span the lowest to highest price of the variants with data', 'แท่งคือช่วงราคาต่ำสุดถึงสูงสุดของรุ่นย่อยที่มีข้อมูล') : L('None of the selected models has a verified price yet', 'รุ่นที่เลือกยังไม่มีข้อมูลราคาที่ยืนยัน'));
+    var pc = card(L('Price range', 'ช่วงราคา'), L('Sourced price', 'ราคาที่มีแหล่งอ้างอิง'), priced.length ? L('Bars span the lowest to highest price of the variants with data', 'แท่งคือช่วงราคาต่ำสุดถึงสูงสุดของรุ่นย่อยที่มีข้อมูล') : L('None of the selected models has a sourced price yet', 'รุ่นที่เลือกยังไม่มีข้อมูลราคาพร้อมแหล่งอ้างอิง'));
     root.appendChild(pc);
     if (!priced.length) return;
     var pbox = add(el('div', { class: 'chart-box' }), el('canvas', { 'aria-label': L('Price ranges of the selected models', 'ช่วงราคาของรุ่นที่เลือก'), 'data-dimension': 'model', 'data-unit': 'price', 'data-export-key': 'compare-price' }));
     pbox.style.height = (70 + 48 * priced.length) + 'px';
     pc.appendChild(pbox);
+    var unverified = priced.filter(function (id) { return priceRange(id)[3]; }).map(modelName);
+    if (unverified.length) pbox.firstChild.dataset.exportNote = L('Includes non-official, unverified prices for ', 'รวมราคาจากแหล่งไม่ทางการที่ยังไม่ยืนยันสำหรับ ') + unverified.join(', ');
     var po = baseOptions();
     po.indexAxis = 'y';
     po.interaction = { mode: 'nearest', intersect: true };
@@ -2924,7 +2946,7 @@
     priced.forEach(function (id) {
       pc.appendChild(add(el('details'), el('summary', {}, L('Variant prices: ', 'ราคารุ่นย่อย ') + modelName(id)),
         add(el('div', { class: 'table-wrap' }), table([[L('Variants', 'รุ่นย่อย')], [L('Price', 'ราคา'), 1], [L('Source', 'แหล่งที่มา')]], currentPrices(id).filter(function (p) { return p.price_type === 'list'; }).map(function (p) {
-          return add(el('tr'), add(el('td'), sourceLabel(p.variant)), el('td', { class: 'n' }, baht(p.price_thb)), add(el('td'), link(p.source_url, p.source_publisher + ' · ' + dateLabel(p.observed_on))));
+          return add(el('tr'), add(el('td'), sourceLabel(p.variant)), el('td', { class: 'n' }, baht(p.price_thb)), add(el('td'), srcLink(p, p.source_publisher + ' · ' + dateLabel(p.observed_on))));
         })))));
     });
   }
