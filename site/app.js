@@ -2771,6 +2771,8 @@
       try { D.detailArg = decodeURIComponent(D.detailArg); } catch (e) { /* invalid ID */ }
     } else {
       page = PAGES.indexOf(path || 'overview') >= 0 ? path || 'overview' : 'overview';
+      // unknown route (e.g. #/models): show the overview and make the URL say so, instead of a soft-404 under a wrong address
+      if (path && page === 'overview' && path !== 'overview') history.replaceState(null, '', '#/overview' + (parts.length > 1 ? '?' + parts[1] : ''));
       D.detailArg = '';
     }
     if (parts.length > 1) {
