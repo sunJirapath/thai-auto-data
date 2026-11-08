@@ -296,7 +296,7 @@ def page_html(slug, p):
 <meta name="twitter:image" content="{SITE}site/og-image.png">
 <meta name="twitter:image:alt" content="Thai new-vehicle registrations · ยอดจดทะเบียนรถใหม่ในไทย">
 <meta property="og:locale" content="th_TH">
-<link rel="stylesheet" href="{up}site/style.css?v=28">
+<link rel="stylesheet" href="{up}site/style.css?v=33">
 {share_script}
 <script type="application/ld+json">{ld}</script>
 </head>
@@ -306,9 +306,10 @@ def page_html(slug, p):
   <h1>{p['h1']}</h1>
   <p>{p['th']}</p>
   <p lang="en">{p['en']}</p>
+  <p><a class="btn" href="{up}{p['app']}">ดูแบบโต้ตอบ · Open in the interactive dashboard</a></p>
   {p['body']}
   <p class="note">Source: Department of Land Transport (กรมการขนส่งทางบก), new registrations RY1–3 · CC BY 4.0 · CSV: {csv}</p>
-  <p class="note"><a href="{up}">ยอดจดทะเบียนรถยนต์ล่าสุดทั่วประเทศ</a> · <a href="{up}{p['app']}">ดูแบบโต้ตอบ · Open in the interactive app</a></p>
+  <p class="note"><a href="{up}">ยอดจดทะเบียนรถยนต์ล่าสุดทั่วประเทศ</a></p>
 </section>
 </main>
 </body>

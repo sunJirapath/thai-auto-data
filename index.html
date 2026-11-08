@@ -146,7 +146,7 @@
   if (document.documentElement.lang === 'en') document.title = 'New Car Registrations in Thailand | thai-auto-data';
 }
 </script>
-<link rel="stylesheet" href="site/style.css?v=28">
+<link rel="stylesheet" href="site/style.css?v=33">
 <noscript><style>#status{display:none}#status.loading ~ .foot{display:block}</style></noscript>
 </head>
 <body>
@@ -275,6 +275,7 @@
         <h2>New vehicle registrations</h2>
         <p class="note">New vehicles only, RY1–3, from the DLT new-registration statistics; counted in the province of registration; not sales</p>
       </div>
+      <button type="button" class="btn" id="jumpMap">Province map ↓</button>
     </div>
     <div class="stats" id="mStats"></div>
     <div class="chart-box tall"><canvas id="marketChart" role="img" aria-label="Chart of new registrations for the selected filters"></canvas></div>
@@ -292,6 +293,7 @@
         </div>
         <div class="seg" id="rankKind" role="group" aria-label="Rank brands or models"></div>
       </div>
+      <input type="search" id="rankSearch" autocomplete="off">
       <p class="note" id="rankEmpty" hidden>No data for these filters</p>
       <div class="chart-box"><canvas id="rankChart" role="img" aria-label="Top 15 by registrations"></canvas></div>
       <p class="note" id="rankNote"></p>
@@ -400,7 +402,7 @@
       </div>
     </div>
     <div class="chart-box tall"><canvas id="segmentRegionChart" role="img" aria-label="Share of each body type in each region"></canvas></div>
-    <details open><summary>Models in each body type</summary><div class="table-wrap" id="segmentMembers"></div></details>
+    <details open><summary>Models in each body type</summary><div class="table-wrap stick-first" id="segmentMembers"></div></details>
   </section>
 
   <!-- Brand origin -->
@@ -423,7 +425,7 @@
       </div>
     </div>
     <div class="chart-box tall"><canvas id="originRegionChart" role="img" aria-label="Share of each origin in each region"></canvas></div>
-    <details open><summary>Brands in each group</summary><div class="table-wrap" id="originMembers"></div></details>
+    <details open><summary>Brands in each group</summary><div class="table-wrap stick-first" id="originMembers"></div></details>
   </section>
 
   <section class="card" id="geography" data-page="overview regions" hidden>
@@ -440,7 +442,6 @@
         </div>
         <p class="note" id="mapAreaSummary"></p>
         <a class="btn" id="mapRankings" href="#/ranking">Rankings for this area</a>
-        <button type="button" class="btn" id="mapLoad">Load province map</button>
         <p class="status" id="mapStatus" role="status"></p>
         <button type="button" class="btn" id="mapRetry" hidden>Retry map</button>
         <div class="map-wrap" id="mapWrap"></div>
@@ -451,8 +452,8 @@
       </div>
       <div>
         <div class="geo-head"><h3>By region <span class="sub">click a bar to filter</span></h3></div>
-        <div class="chart-box" id="regionBox"><canvas id="regionChart" role="img" aria-label="Registrations by region"></canvas></div>
         <p class="note" id="regionBasis"></p>
+        <div class="chart-box" id="regionBox"><canvas id="regionChart" role="img" aria-label="Registrations by region" aria-describedby="regionBasis"></canvas></div>
       </div>
     </div>
   </section>
@@ -476,7 +477,7 @@
         <div class="seg" id="regionShade" role="group" aria-label="Shading"></div>
       </div>
     </div>
-    <div class="table-wrap heat-wrap" id="regionHeat"></div>
+    <div class="table-wrap heat-wrap stick-first" id="regionHeat"></div>
     <p class="note" id="regionHeatNote"></p>
   </section>
 
@@ -490,7 +491,7 @@
       </div>
       <div class="seg" id="seasonMode" role="group" aria-label="Value shown"></div>
     </div>
-    <div class="table-wrap heat-wrap" id="seasonHeat" tabindex="0" role="region" aria-label="Monthly seasonality table"></div>
+    <div class="table-wrap heat-wrap stick-first" id="seasonHeat" tabindex="0" role="region" aria-label="Monthly seasonality table"></div>
     <p class="note">In the yearly average view, 100 is the average of the months with data. Values above 100 are stronger months and values below 100 are weaker.</p>
     <h3>Each year compared</h3>
     <div class="chart-box tall"><canvas id="seasonChart" role="img" aria-label="Monthly registrations, one line per year"></canvas></div>
@@ -538,7 +539,7 @@
     <div class="chart-box tall"><canvas id="launchChart" role="img" aria-label="Monthly registrations counted from each new model's launch month"></canvas></div>
     <p class="note" id="launchEmpty" hidden></p>
     <p class="note" id="launchNote"></p>
-    <details open><summary>New models table</summary><div class="table-wrap" id="launchTable"></div></details>
+    <details open><summary>New models table</summary><div class="table-wrap stick-first" id="launchTable"></div></details>
   </section>
 
   <div id="detail" hidden></div>
@@ -555,16 +556,16 @@ Original source: Department of Land Transport, Thailand (web.dlt.go.th/statistic
   <section class="card prose" id="download" data-page="data" hidden>
     <h2>Download the data</h2>
     <ul>
-      <li><a href="summaries/market_monthly.csv">market_monthly.csv</a> monthly totals</li>
-      <li><a href="summaries/brand_monthly.csv">brand_monthly.csv</a> by brand</li>
-      <li><a href="summaries/model_monthly.csv">model_monthly.csv</a> by model</li>
+      <li><a href="summaries/market_monthly.csv">market_monthly.csv</a> monthly totals<br><span class="note">Total new registrations per month and vehicle category. Start here for market-size charts.</span></li>
+      <li><a href="summaries/brand_monthly.csv">brand_monthly.csv</a> by brand<br><span class="note">One row per brand per month. For brand share and ranking over time.</span></li>
+      <li><a href="summaries/model_monthly.csv">model_monthly.csv</a> by model<br><span class="note">One row per model per month. For model trends and ranking.</span></li>
       <li><a href="summaries/variant_monthly.csv">variant_monthly.csv</a> variant names as recorded by the DLT</li>
       <li><a href="summaries/province_monthly.csv">province_monthly.csv</a> registrations by province per month (<a href="data/provinces.csv">provinces.csv</a> province codes and regions)</li>
       <li><a href="https://github.com/sunJirapath/thai-auto-data/tree/main/summaries/areas">summaries/areas/</a> brand/model units by area (country, region, province)</li>
       <li><a href="data/brands.csv">brands.csv</a> brands, IDs and parent-company country</li>
       <li><a href="https://github.com/sunJirapath/thai-auto-data/tree/main/data/registrations_by_fuel">data/registrations_by_fuel/</a> brand units by fuel type and province (<a href="data/fuel_types.csv">fuel_types.csv</a>)</li>
       <li><a href="data/population.csv">population.csv</a> population by province, from the Department of Provincial Administration</li>
-      <li><a href="data/prices.csv">prices.csv</a> prices with sources (official websites; non-official ones marked unverified)</li>
+      <li><a href="data/prices.csv">prices.csv</a> prices with sources (official websites; non-official ones marked unverified)<br><span class="note">Every price observation with its date and source link. Filter on status to separate verified from unverified.</span></li>
       <li><a href="https://github.com/sunJirapath/thai-auto-data/tree/main/data">data/</a> row-level data, brand/model IDs and the source registry</li>
     </ul>
     <p class="note">New registrations are counted where the vehicle is registered. The dataset covers private passenger cars up to 7 seats (RY1), those with more than 7 seats (RY2), and private trucks (RY3).</p>
@@ -577,6 +578,6 @@ Original source: Department of Land Transport, Thailand (web.dlt.go.th/statistic
 </div>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" integrity="sha512-CQBWl4fJHWbryGE+Pc7UAxWMUMNMWzWxF4SQo9CgkJIN1kx6djDQZjh3Y8SZ1d+6I+1zze6Z7kHXO7q3UyZAWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script defer src="site/i18n-th.js?v=6"></script>
-<script defer src="site/app.js?v=38"></script>
+<script defer src="site/app.js?v=41"></script>
 </body>
 </html>
