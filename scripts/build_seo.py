@@ -3,7 +3,7 @@
 
 Run from anywhere after each data refresh (no dependencies, standard library only):
 
-    python scripts/build_seo.py          # rewrite index.html, brands/ models/ ev/ monthly/ YYYY-MM/ and sitemap.xml
+    python scripts/build_seo.py          # rewrite index.html, brands/ models/ ev/ monthly/ monthly/YYYY-MM/ and sitemap.xml
     python scripts/build_seo.py --check  # exit 1 if any of them is out of date (no writes)
 
 In index.html it rewrites only the regions between <!-- seo:NAME:start --> ... <!-- seo:NAME:end -->,
@@ -215,17 +215,17 @@ def monthly(f):
         nav = " · ".join(x for x in (
             f'<a href="../{periods[i - 1]}/">← {month_names(periods[i - 1])[0]}</a>' if i else "",
             f'<a href="../{periods[i + 1]}/">{month_names(periods[i + 1])[0]} →</a>' if i + 1 < len(periods) else "",
-            '<a href="../monthly/">ยอดจดทะเบียนรายเดือนย้อนหลัง</a>') if x)
+            '<a href="../">ยอดจดทะเบียนรายเดือนย้อนหลัง</a>') if x)
         body = (f'<p class="note">{nav}</p>'
                 + table(f"10 อันดับยี่ห้อ · Top 10 brands, {per}", ["#", "Brand · ยี่ห้อ", "Units · คัน", "Share · ส่วนแบ่ง"], b_rows(m, m["top_b"][:10]))
                 + table(f"10 อันดับรุ่น · Top 10 models, {per}", ["#", "Model · รุ่น", "Brand · ยี่ห้อ", "Units · คัน", "Share · ส่วนแบ่ง"], m_rows(m, m["top_m"][:10])))
-        out[per] = dict(
+        out[f"monthly/{per}"] = dict(
             h1=f"ยอดจดทะเบียนรถยนต์ใหม่ในประเทศไทย {m['th']} รวม {t} คัน", app="#/ranking", body=body,
             csv=["summaries/market_monthly.csv", "summaries/brand_monthly.csv", "summaries/model_monthly.csv"],
             desc=f"ยอดจดทะเบียนรถยนต์ใหม่ในไทย {m['th']} รวม {t} คัน (ร.ย.1–3) พร้อมอันดับยี่ห้อและรุ่น จากกรมการขนส่งทางบก · Thai new car registrations, {m['en']}",
             th=f"{m['th']} มีรถยนต์ใหม่จดทะเบียนทั่วประเทศ {t} คัน (ร.ย.1–3){mom}{yoy} เป็นยอดจดทะเบียน ไม่ใช่ยอดขาย",
             en=f"Thailand registered {t} new vehicles (DLT categories RY1–3) in {m['en']}. Registrations, not sales.")
-        hub_rows = (f'<tr><td><a href="../{per}/">{m["th"]}</a></td><td class="n">{t}</td>'
+        hub_rows = (f'<tr><td><a href="{per}/">{m["th"]}</a></td><td class="n">{t}</td>'
                     f'<td class="n">{pct(r["mom_pct"])}</td><td class="n">{pct(r["yoy_pct"])}</td></tr>') + hub_rows
     span = f"{month_names(periods[0])[0]} – {f['th']}"
     hub = dict(
@@ -239,6 +239,7 @@ def monthly(f):
 
 def page_html(slug, p):
     url, title = f"{SITE}{slug}/", f"{p['h1']} · thai-auto-data"
+    up = "../" * (slug.count("/") + 1)  # path from this page back to the repo root
     ld = json_str({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "thai-auto-data", "item": SITE},
         {"@type": "ListItem", "position": 2, "name": p["h1"], "item": url}]})
@@ -257,7 +258,7 @@ def page_html(slug, p):
 <meta property="og:url" content="{url}">
 <meta property="og:locale" content="th_TH">
 <meta property="og:locale:alternate" content="en_US">
-<link rel="stylesheet" href="../site/style.css">
+<link rel="stylesheet" href="{up}site/style.css">
 <script type="application/ld+json">{ld}</script>
 </head>
 <body>
@@ -268,7 +269,7 @@ def page_html(slug, p):
   <p lang="en">{p['en']}</p>
   {p['body']}
   <p class="note">Source: Department of Land Transport (กรมการขนส่งทางบก), new registrations RY1–3 · CC BY 4.0 · CSV: {csv}</p>
-  <p class="note"><a href="../">ยอดจดทะเบียนรถยนต์ล่าสุดทั่วประเทศ</a> · <a href="../{p['app']}">ดูแบบโต้ตอบ · Open in the interactive app</a></p>
+  <p class="note"><a href="{up}">ยอดจดทะเบียนรถยนต์ล่าสุดทั่วประเทศ</a> · <a href="{up}{p['app']}">ดูแบบโต้ตอบ · Open in the interactive app</a></p>
 </section>
 </main>
 </body>
@@ -322,7 +323,7 @@ def main():
         out[ROOT / slug / "index.html"] = h = page_html(slug, p)
         urls[ROOT / slug / "index.html"] = f"{SITE}{slug}/"
         assert json.loads(re.search(r'ld\+json">(.*?)</script>', h, re.S).group(1))["@type"] == "BreadcrumbList"
-        assert h.count("<h1") == 1 and "<table>" in h and 'href="../"' in h, f"{slug}: h1/table/home link"
+        assert h.count("<h1") == 1 and "<table>" in h and f'href="{"../" * (slug.count("/") + 1)}"' in h, f"{slug}: h1/table/home link"
     for h in out.values():
         desc = re.search(r'<meta name="description" content="([^"]*)"', h)
         assert desc and len(desc.group(1)) <= 160, f"meta description missing or over 160 chars: {desc and len(desc.group(1))}"
@@ -337,7 +338,7 @@ def main():
             print("seo: out of date: " + ", ".join(stale), file=sys.stderr)
         sys.exit(1 if stale else 0)
     for p_ in map(ROOT.joinpath, stale):
-        p_.parent.mkdir(exist_ok=True)
+        p_.parent.mkdir(parents=True, exist_ok=True)
         p_.write_text(out[p_], encoding="utf-8", newline="\n")
     print(f"seo: latest month {f['per']}, {f['total']:,} registrations; updated: {', '.join(stale) or 'nothing'}")
 
