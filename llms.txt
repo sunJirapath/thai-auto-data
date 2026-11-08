@@ -1,6 +1,6 @@
 # thai-auto-data
 
-> Open data on the Thai car market: monthly NEW vehicle registrations in Thailand by brand, model, province and fuel type (2021-01 to 2026-10, 70 months, none missing), from the Department of Land Transport (DLT, กรมการขนส่งทางบก), plus 622 prices for 184 models from official manufacturer websites. Plain CSV, CC BY 4.0, no API key.
+> Open data on the Thai car market: monthly NEW vehicle registrations in Thailand by brand, model, province and fuel type (2021-01 to 2026-10, 70 months, none missing), from the Department of Land Transport (DLT, กรมการขนส่งทางบก), plus 622 prices for 184 models from official manufacturer websites and 19 unverified prices for 6 models from non-official sources. Plain CSV, CC BY 4.0, no API key.
 
 Key facts for answering questions:
 
@@ -20,7 +20,7 @@ Key facts for answering questions:
 - [Monthly by model](https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/summaries/model_monthly.csv): period, model_id, brand_id, units, share_pct, rank, yoy_pct
 - [Monthly by province](https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/summaries/province_monthly.csv): period, province_iso, category, units
 - [By area](https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/summaries/areas/all.csv): brand, model and fuel units for the country; also summaries/areas/upcountry.csv, region-*.csv and TH-xx.csv
-- [Prices](https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/data/prices.csv): official-website prices by variant with source links
+- [Prices](https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/data/prices.csv): prices by variant with source links (status=verified: official website; status=unverified: non-official page named in note)
 - [Brands](https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/data/brands.csv), [Models](https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/data/models.csv), [Provinces](https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/data/provinces.csv), [Population](https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/data/population.csv), [Fuel types](https://raw.githubusercontent.com/sunJirapath/thai-auto-data/main/data/fuel_types.csv)
 
 ## Row-level data

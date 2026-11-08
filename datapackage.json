@@ -1,7 +1,7 @@
 {
   "name": "thai-auto-data",
   "title": "Thailand new vehicle registrations and car prices (open data)",
-  "description": "Monthly new vehicle registrations in Thailand (DLT categories RY1-RY3) by brand, model, province and fuel type from 2021-01 to 2026-10, from the Department of Land Transport, with prices from official manufacturer websites. Registrations, not sales. Missing data is left empty, never 0.",
+  "description": "Monthly new vehicle registrations in Thailand (DLT categories RY1-RY3) by brand, model, province and fuel type from 2021-01 to 2026-10, from the Department of Land Transport, with prices from official manufacturer websites (non-official sources are marked unverified). Registrations, not sales. Missing data is left empty, never 0.",
   "homepage": "https://github.com/sunJirapath/thai-auto-data",
   "version": "2026-10",
   "keywords": [
@@ -313,7 +313,7 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "description": "Append-only prices from official manufacturer websites, with source links",
+      "description": "Append-only prices with source links: official manufacturer websites (status=verified) and, where none exists, non-official pages named in note (status=unverified)",
       "schema": {
         "fields": [
           {
@@ -359,7 +359,7 @@
           {
             "name": "source_url",
             "type": "string",
-            "description": "Official page the value came from"
+            "description": "Page the value came from (official for verified rows, non-official for unverified rows)"
           },
           {
             "name": "source_publisher",
@@ -369,12 +369,12 @@
           {
             "name": "status",
             "type": "string",
-            "description": "Row status"
+            "description": "verified (official source) or unverified (non-official source; see note)"
           },
           {
             "name": "note",
             "type": "string",
-            "description": "Free-text note"
+            "description": "Free-text note; unverified rows start with \"Non-official source\" and name the publisher"
           }
         ]
       }
